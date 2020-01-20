@@ -10,14 +10,19 @@
 	<script type="text/javascript" src="js/wow.min.js"></script>
 </head>
 <body>
-	<div class="load">
-		<div class="load__text">
-			<p class="wow" data-wow-delay="2s">Loading</p>
-			<span class="load__dots">.</span>
+	<div class="load wow zoomOut" data-wow-delay='5s'>
+		<div class="load__filter">
+			<div class="load__text">
+				<p class="wow" data-wow-delay="2s">Loading</p>
+				<span class="load__dots"></span>
+			</div>
+			<div class="load__bar">
+				<span class="load__bar_color"></span>
+			</div>
 		</div>
-		<div class="load__bar">
-			<span class="load__bar_color"></span>
-		</div>
+	</div>
+	<div class="wrapper">
+		
 	</div>
 <script>
 	new WOW().init();
@@ -36,7 +41,7 @@
 			};
 		}
 			, 600);
-		setTimeout(() => { clearInterval(dotsAnimate); }, 10000);
+		setTimeout(() => { clearInterval(dotsAnimate); }, 5000);
 	});
 </script>
 </body>
