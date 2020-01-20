@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+</head>
+<body>
+	<div class="load">
+		<div class="load__text">
+			<p class="wow" data-wow-delay="2s">Loading</p>
+			<span class="load__dots">.</span>
+		</div>
+		<div class="load__bar">
+			<span class="load__bar_color"></span>
+		</div>
+	</div>
+<script>
+	new WOW().init();
+</script>
+<script type="text/javascript">
+	$(function() {
+    	let dots = ['.','..','...'];
+		let n = 0;
+
+		let dotsAnimate = setInterval(function(){
+			$('.load__dots').html(dots[n]);
+			if (n == 2) {
+				n = 0;
+			}else{
+				n++;
+			};
+		}
+			, 600);
+		setTimeout(() => { clearInterval(dotsAnimate); }, 10000);
+	});
+</script>
+</body>
+</html>

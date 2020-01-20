@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.load{
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background: #085078;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E55D87, #5FC3E4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E55D87, #5FC3E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.load__text{
+	display: flex;
+	font-size: 3em;
+}
+.load__dots{
+	width: 56px;
+}
+.load__bar{
+	overflow: hidden;
+	width: 80%;
+	height: 3%;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.load__bar_color{
+	animation-name: loading;
+	-webkit-animation-name: loading;
+	animation-duration: 6s;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(-266deg,#fccb38 0,#d8993b 30%,#ff4d75 100%);
+}
+@-webkit-keyframes loading {
+  from {
+    width: 0%;
+  }
+
+  30% {
+    width: 30%;
+  }
+
+  50% {
+    width: 50%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes loading {
+  from {
+    width: 0%;
+  }
+
+  50% {
+    width: 50%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
