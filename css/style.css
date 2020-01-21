@@ -3,6 +3,10 @@
 	padding: 0;
 	font-family: 'Lato', sans-serif;
 }
+:root {
+	--circle-size: 40px;
+	--load-w: 600px;
+}
 .load{
 	position: fixed;
 	width: 100vw;
@@ -10,6 +14,26 @@
 	background: url('../img/fon.png');
 	background-size: cover;
     background-repeat: no-repeat;
+}
+.load__circle{
+  margin: 20px;
+  width: var(--load-w);
+  height: 40px;
+  position: relative;
+  padding: 5px;
+}
+.load__circle_child{
+	-webkit-animation-name: loader;
+	-o-animation-name: loader;
+	animation-name: loader;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	height: var(--circle-size);
+	width: var(--circle-size);
+	border-radius: 50%;
+	background: black;
+	position: absolute;
+	border: 3px solid white;
 }
 .load__filter{
 	width: 100%;
@@ -74,4 +98,15 @@
   to {
     width: 100%;
   }
+}
+@keyframes loader{
+	0% {
+		transform: translateX(0)
+	}
+    45% {
+    	transform: translateX( calc(600px - 40px) )
+	}
+	90%{
+		transform: translateX(0)
+	}
 }
