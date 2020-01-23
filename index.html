@@ -6,31 +6,51 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
 </head>
 <body>
-	<div class="load wow" data-wow-delay='5s'>
-		<div class="load__filter">
-			<div class="load__circle">
-				<div class="load__circle_child" style="animation-delay: 0s"></div>
-				<div class="load__circle_child" style="animation-delay: .2s"></div>
-				<div class="load__circle_child" style="animation-delay: .4s"></div>
-				<div class="load__circle_child" style="animation-delay: .6s"></div>
-				<div class="load__circle_child" style="animation-delay: .8s"></div>
-			</div>
-			<div class="load__text">
-				<p class="wow" data-wow-delay="2s">Loading</p>
-				<span class="load__dots"></span>
-			</div>
-			<div class="load__bar">
-				<span class="load__bar_color"></span>
-			</div>
+	<div class="load wow zoomOut" data-wow-delay='5s'>
+		<div class="load__circle">
+			<div class="load__circle_child" style="animation-delay: 0s; background-color: #8cc759;"></div>
+			<div class="load__circle_child" style="animation-delay: .1s; background-color: #8c6daf;"></div>
+			<div class="load__circle_child" style="animation-delay: .2s; background-color: #ef5d74;"></div>
+			<div class="load__circle_child" style="animation-delay: .3s; background-color: #f9a74b;"></div>
+			<div class="load__circle_child" style="animation-delay: .4s; background-color: #60beeb;"></div>
+			<div class="load__circle_child" style="animation-delay: .5s; background-color: #fbef5a;"></div>
 		</div>
+		<div class="load__text">
+			<p>Loading</p>
+			<span class="load__dots"></span>
+		</div>
+		<!-- <div class="load__bar">
+			<span class="load__bar_color"></span>
+		</div> -->
 	</div>
 	<div class="wrapper">
-		
+		<div class="wrapper__head">
+			<div class="wrapper__menu">
+				<div class="wrapper__logo">
+					<img src="img/logo.png">
+					<p class="wrapper__logo_text">инвестиционная компания</p>
+				</div>
+				<div class="wrapper__nav">
+					<nav>
+						<ul>
+							<li class="wow bounceInDown" data-wow-delay='5s'><a href="#" >Главная</a></li>
+							<li class="wow bounceInDown" data-wow-delay='5.2s'><a href="#" >Подукты</a></li>
+							<li class="wow bounceInDown" data-wow-delay='5.4s'><a href="#" >Arim Partners</a></li>
+							<li class="wow bounceInDown" data-wow-delay='5.6s'><a href="#" >О нас</a></li>
+							<li class="wow bounceInDown" data-wow-delay='5.8s'><a href="#" >Галерея</a></li>
+							<li class="wow bounceInDown" data-wow-delay='6s'><a href="#" >Academy</a></li>
+							<li class="wow bounceInDown" data-wow-delay='6.2s'><a href="#" >Wallet</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="wrapper__undermenu"></div>
+		</div>
 	</div>
 <script>
 	new WOW().init();
@@ -49,7 +69,8 @@
 			};
 		}
 			, 600);
-		setTimeout(() => { clearInterval(dotsAnimate); }, 5000);
+		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); }, 7000);
+
 	});
 </script>
 </body>
