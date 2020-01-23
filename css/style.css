@@ -89,6 +89,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+	cursor: pointer;
 }
 .wrapper__logo img{
 	object-fit: contain;
@@ -99,7 +100,6 @@ body{
 	justify-content: space-between;
 	height: 25%;
 	margin-top: 20px;
-
 }
 .wrapper__logo_text{
 	text-transform: uppercase;
@@ -127,7 +127,6 @@ body{
 	list-style: none;
 	font-size: 20px;
 }
-
 @-webkit-keyframes loading {
   from {
     width: 0%;

@@ -31,7 +31,7 @@
 	<div class="wrapper">
 		<div class="wrapper__head">
 			<div class="wrapper__menu">
-				<div class="wrapper__logo">
+				<div class="wrapper__logo wow bounceInDown" data-wow-delay='5s'>
 					<img src="img/logo.png">
 					<p class="wrapper__logo_text">инвестиционная компания</p>
 				</div>
@@ -49,7 +49,9 @@
 					</nav>
 				</div>
 			</div>
-			<div class="wrapper__undermenu"></div>
+			<div class="wrapper__undermenu">
+
+			</div>
 		</div>
 	</div>
 <script>
@@ -69,8 +71,13 @@
 			};
 		}
 			, 600);
-		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); }, 7000);
-
+		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); }, 6000);
+		$(document).on('mousemove', function(e) {
+		    $('.text').css({
+		      marginLeft: -e.pageX/10 + 50,
+		      marginTop: -e.pageY/10 + 50
+		    })
+  })
 	});
 </script>
 </body>
