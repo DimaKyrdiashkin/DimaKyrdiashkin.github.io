@@ -145,6 +145,7 @@ body{
 	height: 80%;
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 .wrapper__undermenu_left{
 	width: 40%;
@@ -176,9 +177,42 @@ body{
 .undermenu__left_button img{
 	height: 60px;
 }
+.wrapper__undermenu_paralax{
+	position: absolute;
+	background: url('../img/paralax.png');
+	background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.wrapper__undermenu_wave{
+	position: absolute;
+	background: url('../img/contur.webp');
+	background-size: contain;
+    background-repeat: no-repeat;
+    height: 120%;
+    width: 120%;
+    z-index: -1;
+}
 .wrapper__undermenu_right{
+	position: relative;
 	height: 100%;
 	width: 60%;
+}
+.undermenu__right_square{
+	border: 5px solid;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.undermenu__right_square img{
+	height: 500px;
+    position: absolute;
+    z-index: -1;
+    margin-left: -100px;
 }
 .wrapper__contentOne{
 	height: 100vh;
