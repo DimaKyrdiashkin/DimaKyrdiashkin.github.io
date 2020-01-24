@@ -66,6 +66,10 @@
 					<div class="undermenu__right_square">
 						<img src="img/sonne.png">
 					</div>
+					<div class="undermenu__right_man">
+						<img src="img/man.png">
+						<img src="img/element.png" class="right__man_element">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -92,8 +96,12 @@
 		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); $("body").css("overflow-y", "scroll"); }, 7000);
 		$(document).on('mousemove', function(e) {
 		    $('.wrapper__undermenu_paralax').css({
-		      marginLeft: -e.pageX/10,
-		      marginTop: -e.pageY/10 + 50
+		      marginLeft: -e.pageX/15,
+		      marginTop: -e.pageY/15 + 50
+		    })
+		    $('.undermenu__right_man').css({
+		    	marginLeft: -e.pageX/10,
+		        marginTop: -e.pageY/10 + 50
 		    })
   })
 	});

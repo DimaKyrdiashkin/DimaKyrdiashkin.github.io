@@ -207,12 +207,29 @@ body{
     position: absolute;
     top: 20%;
     left: 40%;
+    z-index: -1;
 }
 .undermenu__right_square img{
 	height: 500px;
     position: absolute;
     z-index: -1;
     margin-left: -100px;
+}
+.undermenu__right_man{
+	height: 500px;
+	position: absolute;
+    top: 35%;
+    left: 35%;
+}
+.undermenu__right_man img{
+	height: 100%;
+}
+.right__man_element{
+    height: 60% !important;
+    position: absolute;
+    left: 31%;
+    z-index: -1;
+    top: 50%;
 }
 .wrapper__contentOne{
 	height: 100vh;
