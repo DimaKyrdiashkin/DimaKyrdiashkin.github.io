@@ -34,7 +34,6 @@
 				<div class="wrapper__logo wow bounceInDown" data-wow-delay='5s'>
 					<img src="img/logo.png">
 					<!-- <a href="#" class="text">logo</a> -->
-					<p class="wrapper__logo_text">инвестиционная компания</p>
 				</div>
 				<div class="wrapper__nav">
 					<nav>
@@ -57,7 +56,7 @@
 						<div class="left__text_hr"></div>
 						<p>Что излучаешь, то и получаешь</p>
 					</div>
-					<div class="undermenu__left_button">
+					<div class="undermenu__left_button wow rollIn" data-wow-delay='6s'>
 						<a href="#"><img src="img/more.png"></a>
 					</div>
 				</div>
@@ -65,6 +64,8 @@
 					<div class="undermenu__right_square"></div>
 				</div>
 			</div>
+		</div>
+		<div class="wrapper__contentOne">
 		</div>
 	</div>
 <script>
@@ -84,7 +85,7 @@
 			};
 		}
 			, 600);
-		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); }, 7000);
+		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); $("body").css("overflow-y", "scroll"); }, 7000);
 		$(document).on('mousemove', function(e) {
 		    $('').css({
 		      marginLeft: -e.pageX/10 + 50,
