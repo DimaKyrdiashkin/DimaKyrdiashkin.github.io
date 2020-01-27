@@ -29,6 +29,7 @@
 		</div> -->
 	</div>
 	<div class="wrapper">
+		<div class="wrapper__bg"></div>
 		<div class="wrapper__head">
 			<div class="wrapper__menu">
 				<div class="wrapper__logo wow bounceInDown" data-wow-delay='5s'>
@@ -74,6 +75,33 @@
 			</div>
 		</div>
 		<div class="wrapper__contentOne">
+			<div class="wrapper__contentOne_text">
+				<h1>Как стать участником Sunrise</h1>
+			</div>
+			<div class="wrapper__contentOne_row">
+				<div class="contentOne__row_left wow fadeInLeft" data-wow-offset="200">
+					<img src="img/blockchein_01.png" alt="">
+					<p class="row__text wow fadeInLeft" data-wow-delay='1s'>Пополнить счет в Amir Capital на 100$ и более</p>
+					<p class="row__num">1</p>					
+				</div>
+				<div class="contentOne__row_right wow fadeInRight" data-wow-offset="200">
+					<img src="img/blockchein_02.png" alt="">
+					<p class="row__text wow fadeInRight" data-wow-delay='1s'>Согласиться с условиями Sunrise Program</p>
+					<p class="row__num">2</p>					
+				</div>
+			</div>
+		</div>
+		<div class="wrapper__contentTwo">
+			<div class="wrapper__contentTwo_row">
+				<div class="contentTwo__row_text">
+					<h2>Как рассчитываются уровни в Sunrise Program?</h2>
+					<div class="row__text_hr"></div>
+					<p>Ваш уровень зависит от двух параметров. <br> <b>Первый параметр</b> - Ваши личные инвестиции. <br><b> Второй параметр</b> - Сумма ваших инвестиций и инвестиций приглашенных вами инвесторов. Для выполнения уровня необходимо, чтобы оба параметра соответствовали таблице или были больше. После пополнения счетов на необходимые суммы уровень автоматически появится в вашем личном кабинете.</p>
+				</div>
+				<div class="contentTwo__row_img">
+					<img src="img/grafik-min.png">
+				</div>
+			</div>
 		</div>
 	</div>
 <script>
@@ -93,7 +121,7 @@
 			};
 		}
 			, 600);
-		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); $("body").css("overflow-y", "scroll"); }, 7000);
+		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); $("body").css("overflow-y", "scroll"); }, 1000);
 		$(document).on('mousemove', function(e) {
 		    $('.wrapper__undermenu_paralax').css({
 		      marginLeft: -e.pageX/15,
@@ -104,6 +132,7 @@
 		        marginTop: -e.pageY/10 + 50
 		    })
   })
+
 	});
 </script>
 </body>
