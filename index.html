@@ -113,6 +113,7 @@
 		let n = 0;
 
 		let dotsAnimate = setInterval(function(){
+			$(window).scrollTop(0);
 			$('.load__dots').html(dots[n]);
 			if (n == 2) {
 				n = 0;
@@ -121,7 +122,7 @@
 			};
 		}
 			, 600);
-		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); $("body").css("overflow-y", "scroll"); }, 1000);
+		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); $("body").css("overflow-y", "scroll");  }, 7000);
 		$(document).on('mousemove', function(e) {
 		    $('.wrapper__undermenu_paralax').css({
 		      marginLeft: -e.pageX/15,
