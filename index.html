@@ -324,7 +324,7 @@
 			<div class="wrapper__contentSix_row">
     			<div class="contentSix__row_left">
 			      <div class="c-block">  
-			          <label class="calc_label">Сумма ваших инвестиций на счете накопительный</label>  
+			          <label class="calc_label">Сумма ваших инвестиций на счете<br> накопительный</label>  
 			          <input class="calc_input calc_input_dollar" type="text" id="deposit" data-val="10000" value="10 000 $">
 			      </div>
 			      <div class="c-block">  
@@ -345,11 +345,11 @@
 			      </div>
 		    	</div>
 			    <div class="contentSix__row_right">
-			      <div class="row" style="align-items: center">
-			       <div class="col-sm-4">  
-			          <label class="calc_label">Ваш уровень</label>  
+			      <div class="row__right_stat">
+			       <div class="row__right_label">  
+			          <label class="calc_label">Ваш уровень:</label>  
 			        </div>
-			        <div class="col-sm-8 status-container">
+			        <div class="status-container">
 			          <img class="status-img" src="https://static.tildacdn.com/tild3031-6464-4364-a434-386430376438/spark.png" alt="spark" id="status-img-bronze" style="display: none;">
 			          <img class="status-img" src="https://static.tildacdn.com/tild3539-3065-4032-a335-656635663830/ray.png" alt="ray" id="status-img-ser" style="display: none;">
 			          <img class="status-img" src="https://static.tildacdn.com/tild3963-6162-4338-b237-306138336665/light.png" alt="light" id="status-img-gold" style="display: inline-block;">
@@ -369,9 +369,44 @@
 			      <div class="c-result-block">  
 			          <label class="micro_label">ОБЩИЙ ДОХОД</label>  
 			          <div id="income">1 240 $</div>
+				  </div>	
 				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	new WOW().init();
+</script>
+<script type="text/javascript">
+	$(function() {
+    	let dots = ['.','..','...'];
+		let n = 0;
 
- <script>
+		let dotsAnimate = setInterval(function(){
+			$(window).scrollTop(0);
+			$('.load__dots').html(dots[n]);
+			if (n == 2) {
+				n = 0;
+			}else{
+				n++;
+			};
+		}
+			, 600);
+		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); $("body").css("overflow-y", "scroll");  }, 1000);
+		$(document).on('mousemove', function(e) {
+		    $('.wrapper__undermenu_paralax').css({
+		      marginLeft: -e.pageX/15,
+		      marginTop: -e.pageY/15 + 50
+		    })
+		    $('.undermenu__right_man').css({
+		    	marginLeft: -e.pageX/10,
+		        marginTop: -e.pageY/10 + 50
+		    })
+  })
+
+	});
+</script>
+<script>
     jQuery(document).ready(function($) {
       $('#deposit, #depref1, #depref2,  #depref3, #percent').keydown(keydownprev).change(checkNum).keyup(calc);
     });
@@ -560,40 +595,5 @@
     calc();
 
   </script>
-</div></div>
-		</div>
-	</div>
-<script>
-	new WOW().init();
-</script>
-<script type="text/javascript">
-	$(function() {
-    	let dots = ['.','..','...'];
-		let n = 0;
-
-		let dotsAnimate = setInterval(function(){
-			$(window).scrollTop(0);
-			$('.load__dots').html(dots[n]);
-			if (n == 2) {
-				n = 0;
-			}else{
-				n++;
-			};
-		}
-			, 600);
-		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); $("body").css("overflow-y", "scroll");  }, 1000);
-		$(document).on('mousemove', function(e) {
-		    $('.wrapper__undermenu_paralax').css({
-		      marginLeft: -e.pageX/15,
-		      marginTop: -e.pageY/15 + 50
-		    })
-		    $('.undermenu__right_man').css({
-		    	marginLeft: -e.pageX/10,
-		        marginTop: -e.pageY/10 + 50
-		    })
-  })
-
-	});
-</script>
 </body>
 </html>
