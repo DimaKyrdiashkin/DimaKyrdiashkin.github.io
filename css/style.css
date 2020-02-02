@@ -113,6 +113,7 @@ body{
 	font-weight: 300;
 	height: 100vh;
 	width: 70%;
+	overflow: hidden;
 }
 .wrapper__logo{
 	width: 30%;
@@ -249,6 +250,7 @@ body{
 	align-items:center;
 	flex-direction: column;
 	padding-bottom: 50px;
+	overflow: hidden;
 }
 .wrapper__contentOne_text h1{
 	color: #4e4193;
@@ -464,7 +466,6 @@ body{
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 100vh;
 	width: 100%;
 	background: url(../img/fon_02.webp);
 	background-repeat: no-repeat;
@@ -757,6 +758,89 @@ body{
 .wrapper__contentSeven_img img{
 	height: 100%
 }
+.wrapper__footer{
+    padding: 5% 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper__footer_head{
+	background: linear-gradient(45deg, #bb37ae, #f6b1bd);
+    border-radius: 10px;
+    background-size: cover;
+    padding: 1% 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.footer__head_text{
+	color: #fff;
+	font-size: 20px;
+}
+.footer__head_hr{
+	height: 2px;
+    background: #fff;
+    width: 15%;
+    align-self: flex-end;
+}
+.wrapper__footer_main{
+	display: flex;
+    margin-top: 50px;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.footer__main_text{
+	font-size: 30px;
+	color: #471164;
+	font-weight: 700;
+}
+.footer__main_btn{
+	align-self: flex-end;
+	height: 50%;
+}
+.footer__main_btn img{
+	height: 100%;
+}
+.wrapper__footer_under{
+	width: 80%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__under_row{
+	display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    height: 8vh;
+    width: 90%;
+    align-self: flex-start;
+}
+.footer__under_mail,
+.footer__under_soc,
+.footer__under_blog{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.footer__under_mail p,
+.footer__under_soc p,
+.footer__under_blog p{
+	font-weight: 100;
+}
+.footer__under_mail a,
+.footer__under_blog a{
+	color: #351992;
+    font-size: 20px;
+    font-weight: 700;
+}
+.cos__icon{
+	height: 22px;
+}
+
 
 
 
