@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
+	<meta name="viewport" content="width=device-width">
 </head>
 <body>
 	<div class="load wow zoomOut" data-wow-delay='5s'>
@@ -40,7 +41,7 @@
 					<nav>
 						<ul>
 							<li class="wow bounceInDown" data-wow-delay='5s'><a href="#" >Главная</a></li>
-							<li class="wow bounceInDown" data-wow-delay='5.2s'><a href="#" >Подукты</a></li>
+							<li class="wow bounceInDown" data-wow-delay='5.2s'><a href="#" >Продукты</a></li>
 							<li class="wow bounceInDown" data-wow-delay='5.4s'><a href="#" >Amir Partners</a></li>
 							<li class="wow bounceInDown" data-wow-delay='5.6s'><a href="#" >О нас</a></li>
 							<li class="wow bounceInDown" data-wow-delay='5.8s'><a href="#" >Галерея</a></li>
@@ -458,7 +459,7 @@
 				</div>
 			</div>
 			<div class="wrapper__footer_main">
-				<div class="footer__main_text">Посмотрите видео<br> презентацию Sunrise <br> Program</div>
+				<div class="footer__main_text">Посмотрите видео презентацию Sunrise Program</div>
 				<div class="footer__main_btn">
 					<img src="img/footer/button_02-min.png">
 				</div>
@@ -475,8 +476,8 @@
 							<a href="#"><img src="img/footer/facebook.png" alt=""></a>
 							<a href="#"><img src="img/footer/instagram.png" alt=""></a>
 							<a href="#"><img src="img/footer/vk.png" alt=""></a>
-							<img src="img/footer/youtube.png" alt="">
-							<img src="img/footer/twitter.png" alt="">
+							<a href="#"><img src="img/footer/youtube.png" alt=""></a>
+							<a href="#"><img src="img/footer/twitter.png" alt=""></a>
 						</div>
 					</div>
 					<div class="footer__under_blog">
@@ -506,7 +507,7 @@
 			};
 		}
 			, 600);
-		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); $("body").css("overflow-y", "scroll");  }, 7000);
+		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); $("body").css("overflow-y", "scroll");  }, 1000);
 		$(document).on('mousemove', function(e) {
 		    $('.wrapper__undermenu_paralax').css({
 		      marginLeft: -e.pageX/15,
