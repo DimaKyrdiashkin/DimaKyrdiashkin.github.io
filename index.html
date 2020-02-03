@@ -29,6 +29,24 @@
 			<span class="load__bar_color"></span>
 		</div> -->
 	</div>
+	<div class="mob_menu">
+		<div class="wrapper__nav_mob">
+			<nav>
+				<ul>
+					<li><a href="#" >Главная</a></li>
+					<li><a href="#" >Продукты</a></li>
+					<li><a href="#" >Amir Partners</a></li>
+					<li><a href="#" >О нас</a></li>
+					<li><a href="#" >Галерея</a></li>
+					<li><a href="#" >Academy</a></li>
+					<li><a href="#" >Wallet</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="cross__wrapper">
+			<div class="cross"></div>
+		</div>
+	</div>
 	<div class="wrapper">
 		<div class="wrapper__bg"></div>
 		<div class="wrapper__head">
@@ -36,6 +54,9 @@
 				<div class="wrapper__logo wow bounceInDown" data-wow-delay='5s'>
 					<img src="img/logo.png">
 					<!-- <a href="#" class="text">logo</a> -->
+				</div>
+				<div class="wrapper__menu_mob">
+					<div class="wrapper__smallMenu"></div>
 				</div>
 				<div class="wrapper__nav">
 					<nav>
@@ -507,7 +528,7 @@
 			};
 		}
 			, 600);
-		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); $("body").css("overflow-y", "scroll");  }, 7000);
+		setTimeout(() => { clearInterval(dotsAnimate); $('.load').hide(); $("body").css("overflow-y", "scroll");  }, 1000);
 		$(document).on('mousemove', function(e) {
 		    $('.wrapper__undermenu_paralax').css({
 		      marginLeft: -e.pageX/15,
@@ -516,8 +537,14 @@
 		    $('.undermenu__right_man').css({
 		    	marginLeft: -e.pageX/10,
 		        marginTop: -e.pageY/10 + 50
-		    })
-  })
+		    })		    
+  		})
+  		$(".wrapper__menu_mob").click(function(){
+  			$(".mob_menu").toggleClass("show");
+		});
+		$('.cross__wrapper').click(function(){
+  			$(".mob_menu").toggleClass("show")
+		});
 
 	});
 </script>
