@@ -1922,6 +1922,15 @@ body{
 		margin: 0 auto;
    		text-align: center;
 	}
+	.footer__head_text p{
+		padding: 5px;
+	}
+	.footer__head_hr{
+		display: none;
+	}
+	.footer__head_telega img{
+		height: 50px;
+	}
 	@keyframes loader{
 	0% {
 		transform: translateX(0)
