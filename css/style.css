@@ -34,7 +34,6 @@ a{
 }
 body{
 	overflow: hidden;
-	max-width: 1650px;
 	min-width: 320px;
 }
 .show{
