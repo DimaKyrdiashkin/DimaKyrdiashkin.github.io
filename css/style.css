@@ -4,6 +4,14 @@
 	font-family: 'Roboto Condensed', sans-serif;
 	box-sizing: border-box;
 }
+ul{
+	list-style: none;
+}
+li{
+	font-family: 'Roboto';
+	font-size: 16px;
+	color: #666;
+}
 h1{
 	font-family: 'Roboto Condensed';
 	font-weight: bold;
@@ -21,10 +29,12 @@ h3{
 	font-weight: 500;
 	font-size: 18px;
 	text-align: center;
+	color: #666;
 }
 p{
 	font-family: 'Roboto';
 	font-size: 16px;
+	color: #666;
 }
 a{
 	text-decoration: none;
@@ -82,6 +92,7 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 90vh;
 }
 .contentBlock_h1{
 	display: flex;
@@ -126,14 +137,13 @@ body{
 }
 .rollBlockRow_block:hover .rollBlockRow_block_text{
 	margin-top: -0;
-	transition: 1s;
+	transition: .3s;
 }
 .contentBlockTwo_text{
 	display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #666;
 }
 .contentBlockTwo{
 	display: flex;
@@ -166,7 +176,7 @@ body{
 .contentBlockTwo_button__yellow{
 	position: absolute;
 	top: 0;
-	transition: 1s;
+	transition: .3s;
 	left: 50%;
 	transform: translate(-50%, 0);
 	width: 75%;
@@ -174,7 +184,7 @@ body{
 .contentBlockTwo_button__blue{
 	position: absolute;
 	bottom: 0;
-	transition: 1s;
+	transition: .3s;
 	left: 50%;
 	transform: translate(-50%, 0);
 	width: 75%;
@@ -187,7 +197,7 @@ body{
 	border-radius: 8px;
 	box-shadow: 0px 5px #ccc;
 	border: 2px solid #FDB900;
-	transition: 1s;
+	transition: .3s;
 }
 .contentBlockTwo_button__blue a{
 	color: #122861;
@@ -197,30 +207,217 @@ body{
 	border-radius: 8px;
 	box-shadow: 0px 5px #ccc;
 	border: 2px solid #122861;
-	transition: 1s;
+	transition: .3s;
 }
 .contentBlockTwo_button__yellow a:hover{
 	box-shadow: none;
-	transition: 1s;
+	transition: .3s;
 }
 .contentBlockTwo_button__yellow:hover{
 	box-shadow: none;
-	transition: 1s;
+	transition: .3s;
 	top: 5px;
 }
 .contentBlockTwo_button__blue a:hover{
 	box-shadow: none;
-	transition: 1s;
+	transition: .3s;
 }
 .contentBlockTwo_button__blue:hover{
 	box-shadow: none;
-	transition: 1s;
+	transition: .3s;
 	bottom: -5px;
 }
 .contentBlockTwo_h2{
 	margin-top: 5%;
+	height: 30vh;
+    position: relative;
+}
+.contentBlockTwo_SingButton{
+	margin: 5% 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 5px;
+    transition: .3s;
 }
 .contentBlockTwo_SingButton a{
+	margin-top: 20px;
 	font-size: 24px;
 	font-weight: 500;
+	color: #fff;
+	font-family: 'Roboto';
+	padding: 15px 80px;
+	border-radius: 10px;
+	box-shadow: 0px 5px #ccc;
+	background: #FDB900;
+	transition: .3s;
+}
+.contentBlockTwo_SingButton:hover{
+	bottom: 0;
+	transition: .3s;
+}
+.contentBlockTwo_SingButton a:hover{
+	box-shadow: none;
+	transition: .3s;
+}
+.contentBlockThree{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	align-items: center;
+	justify-content: space-around;
+}
+.contentBlockThree_row{
+	display: flex;
+	width: 75%;
+	justify-content: space-between;
+}
+.contentBlockThree_row__left{
+	width: 35vw;
+    height: 85%;
+    align-self: center;
+}
+.contentBlockThree_row__left img{
+	height: 100%;
+}
+.contentBlockThree_right__list{
+	height: 70%;
+}
+.contentBlockThree_right__list ul{
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contentBlockThree_right__list li{
+	display: flex;
+	position: relative;
+}
+.contentBlockThree_right__list li span{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+.contentBlockThree_row__right{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    align-self: center;
+}
+.contentBlockThree_row__right h3{
+	text-align: left;
+}
+.circle{
+	display: block;
+	height: 16px;
+	width: 16px;
+	border: 2px solid #122861;
+	border-radius: 50%;
+	margin-left: -30px;
+}
+.contentBlockThree_buttons{
+	position: relative;
+	width: 80%;
+	height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.contentBlockThree_buttons a{
+	transition: .3s;
+	font-family: 'Roboto';
+    padding: 15px 80px;
+    font-weight: 500;
+    box-shadow: 0px 5px #ccc;
+}
+.contentBlockThree_buttons a:hover{
+	margin-top: 5px;
+	transition: .3s;
+	box-shadow: none;
+}
+.contentBlockThree_button__blue{
+	color: #122861;
+	border: 2px solid #122861;
+	border-radius: 15px;
+}
+.contentBlockThree_button__yellow{
+	color: #FDB900;
+	border: 2px solid #FDB900;
+	border-radius: 15px;
+}
+.contentBlockFour{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.contentBlockFour_h1_text{
+
+}
+.contentBlockFour_h1_text p{
+	width: fit-content;
+}
+.contentBlockFour_img{
+	margin-top: 3%;
+}
+.contentBlockFour_img img{
+	height: 100%;
+}
+.contentBlockFour_text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contentBlockFour_text p{
+	width: 50%;
+	text-align: center;
+	margin: 1% 0;
+}
+.contentBlockFour_img__under{
+	position: relative;
+    margin-top: 5%;
+}
+.contentBlockFour_img__under h2{
+	color: #122861;
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+.contentBlockFour_buttons{
+	width: 30%;
+}
+.contentBlockFour_buttons__SingButton{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.contentBlockFour_button__yellow{
+	color: #FDB900;
+	font-family: 'Roboto';
+	font-size: 20px;
+	padding: 15px 80px;
+	border-radius: 15px;
+	box-shadow: 0px 5px #ccc;
+	border: 2px solid #FDB900;
+	transition: .3s;
+}
+.contentBlockFour_button__yellow:hover{
+	margin-top: 5px;
+	transition: .3s;
+	box-shadow: none;
+}
+.contentBlockFife{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.contentBlockFife_row{
+	display: flex;
+	margin-top: 3%;
+}
+.contentBlockFife_text p{
+	margin: 5% 0;
 }
