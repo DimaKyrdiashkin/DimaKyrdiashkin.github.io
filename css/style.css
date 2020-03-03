@@ -529,6 +529,7 @@ body{
 	display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .contentBlockSeven_text{
 	display: flex;
@@ -549,4 +550,74 @@ body{
 .contentBlockSeven_text img:last-child{
 	align-self: flex-end;
 	margin-right: -60px;
+}
+.contentBlockEight{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentBlockEight_row1,
+.contentBlockEight_row2,
+.contentBlockEight_row3,
+.contentBlockEight_row4{
+	display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+.contentBlockEight_row1__head,
+.contentBlockEight_row2__middle,
+.contentBlockEight_row3__bottom{
+	width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.contentBlockEight_row2__middle:last-child{
+	align-self: flex-end;
+}
+.contentBlockEight_row2{
+	margin-top: 40px;
+}
+.contentBlockEight_row3{
+	margin-top: 60px;
+}
+.contentBlockEight_row3__bottom{
+	width: 20%;
+    background: #122861;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.contentBlockEight_row3__bottom a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 15px 70px;
+}
+.coin{
+	width: 24px;
+	height: 24px;
+	background: #FDB900;
+	border-radius: 50%;
+	position: absolute;
+    bottom: -25%;
+    z-index: -1;
+}
+.contentBlockNine{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	margin-top: 10%;
+}
+.contentBlock_h2_text{
+	align-self: center;
+    width: 70%;
+}
+.contentBlock_h2_text h2{
+	color: #666;
+	width: fit-content;
 }
