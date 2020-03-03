@@ -194,7 +194,7 @@ body{
 	font-family: 'Roboto';
 	font-size: 20px;
 	padding: 15px 80px;
-	border-radius: 8px;
+	border-radius: 10px;
 	box-shadow: 0px 5px #ccc;
 	border: 2px solid #FDB900;
 	transition: .3s;
@@ -204,7 +204,7 @@ body{
 	font-family: 'Roboto';
 	font-size: 20px;
 	padding: 15px 70px;
-	border-radius: 8px;
+	border-radius: 10px;
 	box-shadow: 0px 5px #ccc;
 	border: 2px solid #122861;
 	transition: .3s;
@@ -320,14 +320,14 @@ body{
 .contentBlockThree_buttons{
 	position: relative;
 	width: 80%;
-	height: 50px;
+	height: 58px;
     display: flex;
     justify-content: space-around;
 }
 .contentBlockThree_buttons a{
 	transition: .3s;
 	font-family: 'Roboto';
-    padding: 15px 80px;
+    padding: 17px 80px;
     font-weight: 500;
     box-shadow: 0px 5px #ccc;
 }
@@ -339,12 +339,12 @@ body{
 .contentBlockThree_button__blue{
 	color: #122861;
 	border: 2px solid #122861;
-	border-radius: 15px;
+	border-radius: 10px;
 }
 .contentBlockThree_button__yellow{
 	color: #FDB900;
 	border: 2px solid #FDB900;
-	border-radius: 15px;
+	border-radius: 10px;
 }
 .contentBlockFour{
 	display: flex;
@@ -352,12 +352,6 @@ body{
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-}
-.contentBlockFour_h1_text{
-
-}
-.contentBlockFour_h1_text p{
-	width: fit-content;
 }
 .contentBlockFour_img{
 	margin-top: 3%;
@@ -399,7 +393,7 @@ body{
 	font-family: 'Roboto';
 	font-size: 20px;
 	padding: 15px 80px;
-	border-radius: 15px;
+	border-radius: 10px;
 	box-shadow: 0px 5px #ccc;
 	border: 2px solid #FDB900;
 	transition: .3s;
@@ -417,7 +411,142 @@ body{
 .contentBlockFife_row{
 	display: flex;
 	margin-top: 3%;
+	width: 75%;
+    align-self: center;
+    justify-content: space-between;
+}
+.contentBlockFife_row__left{
+	height: 80vh;
+}
+.contentBlockFife_row__left img{
+	height: 100%;
+}
+.contentBlockFife_row__right{
+	width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
 }
 .contentBlockFife_text p{
-	margin: 5% 0;
+	margin-top: 3%;
+}
+.contentBlockFife_h3{
+	padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: 8px 8px #85ACD6;
+}
+.contentBlockFife_h3 h3{
+	color: #122861;
+}
+.contentBlockFife_button{
+	transition: .3s;
+	position: relative;
+}
+.contentBlockFife_button a{
+	color: #fff;
+	font-family: 'Roboto';
+	font-size: 20px;
+	padding: 15px 80px;
+	border-radius: 10px;
+	box-shadow: 0px 5px #ccc;
+	background: #FDB900;
+	transition: .3s;
+	position: absolute;
+}
+.contentBlockFife_button a:hover{
+	box-shadow: none;
+	transition: .3s;
+	margin-top: 5px;
+}
+.contentBlockSix{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.contentBlockSix_img{
+	display: flex;
+	justify-content: center;
+	margin-top: 3%;
+}
+.contentBlockSix_row{
+	display: flex;
+    width: 70%;
+    align-self: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.contentBlockSix_row__info{
+	width: 30%;
+	display: flex;
+    flex-direction: column;
+    height: 45vh;
+    box-shadow: 5px 8px #85ACD6;
+    border-radius: 20px;
+}
+.contentBlockSix_row__info p{
+	margin-top: 20px;
+	text-align: center;
+	padding: 0px 20px;
+}
+.contentBlockSix_button{
+	transition: .3s;
+	align-self: center;
+	margin-top: 50px;
+	position: relative;
+	width: 100%;
+}
+.contentBlockSix_button a{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0);
+	color: #fff;
+	font-family: 'Roboto';
+	font-size: 20px;
+	padding: 15px 80px;
+	border-radius: 10px;
+	box-shadow: 0px 5px #ccc;
+	background: #FDB900;
+	transition: .3s;
+}
+.contentBlockSix_button a:hover{
+	top: 5px;
+	transition: .3s;
+	box-shadow: none;
+}
+.contentBlockSix_underButton_text{
+	display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.contentBlockSeven{
+	background: url(../img/Comment.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 35vh;
+	margin-top: 5%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentBlockSeven_text{
+	display: flex;
+    flex-direction: column;
+}
+.contentBlockSeven_text p{
+	color: #fff;
+	font-family: 'Roboto Condensed';
+	font-weight: bold;
+	font-size: 24px;
+}
+.contentBlockSeven_text img{
+	width: fit-content;
+}
+.contentBlockSeven_text img:first-child{
+	margin-left: -60px;
+}
+.contentBlockSeven_text img:last-child{
+	align-self: flex-end;
+	margin-right: -60px;
 }
