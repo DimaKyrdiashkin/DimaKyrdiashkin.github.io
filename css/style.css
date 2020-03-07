@@ -87,6 +87,60 @@ body{
 	color: #fff;
 	text-align: center;
 }
+.menu{
+	background: #fff;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 1;
+}
+.back{
+	display: flex;
+	width: 99vw;
+	height: 95vh;
+	background: #FDB900;
+	border-radius: 0 0 390px 0;
+}
+.logo img{
+	width: 60%
+}
+.menu_text p{
+	transform: rotate(90deg);
+	font-size: 32px;
+    font-weight: lighter;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    width: 130px;
+}
+.menu_text{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.menu_text img{
+	width: fit-content;
+}
+.logo{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+.col1{
+	width: 15%;
+	height: 100%;
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.varHr{
+	height: 100%;
+	width: 1px;
+	display: block;
+	background: #1222862b;
+}
 .contentBlockOne{
 	display: flex;
 	flex-direction: column;
@@ -98,6 +152,7 @@ body{
 	display: flex;
 	overflow-x: hidden;
 	width: 100vw;
+	line-height: 1.55;
 }
 .leftMark {
 	width: 15%;
@@ -576,12 +631,37 @@ body{
     width: 65%;
     justify-content: space-between;
 }
+.contentBlockEight_row1,
+.contentBlockEight_row2{
+	width: 70%;
+}
 .contentBlockEight_row1__head,
 .contentBlockEight_row2__middle,
 .contentBlockEight_row3__bottom{
 	width: 25%;
     display: flex;
     justify-content: center;
+    align-self: center;
+    position: relative;
+}
+.contentBlockEight_row3__bottom p.desc{
+	position: absolute;
+	opacity: 0;
+    padding: 40px 20px;
+    background: #5A74B7;
+    font-size: 16px;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 20px;
+    height: 150px;
+    text-align: center;
+    font-weight: normal;
+    transition: .3s;
+}
+.contentBlockEight_row3__bottom p.desc_open{
+	opacity: 1;
+	transition: .3s;
 }
 .contentBlockEight_row2__middle:last-child{
 	align-self: flex-end;
@@ -591,6 +671,10 @@ body{
 }
 .contentBlockEight_row3{
 	margin-top: 60px;
+}
+.contentBlockEight_row3__bottom .coin_open{
+	bottom: -137px;
+	transition: .3s;
 }
 .contentBlockEight_row3__bottom{
 	width: 20%;
@@ -602,11 +686,12 @@ body{
     align-items: center;
     position: relative;
 }
-.contentBlockEight_row3__bottom a{
+.contentBlockEight_row3__bottom p{
 	color: #fff;
 	font-size: 18px;
 	font-weight: 500;
-	padding: 15px 70px;
+	padding: 15px 65px;
+	cursor: pointer;
 }
 .coin{
 	width: 24px;
@@ -616,6 +701,7 @@ body{
 	position: absolute;
     bottom: -25%;
     z-index: -1;
+    transition: .3s;
 }
 .contentBlockNine{
 	display: flex;
@@ -823,6 +909,7 @@ body{
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 0;
+	width: 35%;
 }
 .contentBlockTen_calc__first label{
 	display: flex;
@@ -834,25 +921,61 @@ body{
 }
 .contentBlockTen_calc__second{
 	display: flex;
+	width: 45%;
 }
 .contentBlockTen_calc__second img{
 	height: fit-content;
 }
 .second_coin{
-	height: 80%;
-		display: flex;
+	display: flex;
     align-items: flex-end;
+}
+.second_coin:first-child{
+	margin-right: 10px;
 }
 .calc_second_text{
 	display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80%;
+    height: 100%;
+    position: relative;
+    padding-top: 10%;
+}
+.calc_thrid__head{
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #fdb900;
+	width: 100%;
+	height: 35%;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
+}
+.calc_thrid__head h2{
+	margin-top: -10%;
+}
+.resoult{
+	text-align: center;
+	padding: 40px 50px;
+	border: 10px solid #122861;
+	border-radius: 20px;
+	font-size: 64px;
+	font-weight: bold;
+	background: #fff;
+	font-family: Roboto Condensed;
+	width: 360px;	
 }
 .calc_first__button{
 	align-self: center;
 	position: relative;
 	width: 100%;
+	cursor: pointer;
 }
 .calc_first__button p{
     position: absolute;
@@ -938,9 +1061,11 @@ input[type=radio]:checked + .checkmark{
 	background: #122861;
 	border-radius: 10px;
 	display: flex;
+	justify-content: space-between;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
 	user-select: none;
+	width: 150px;
 }
 .checkP{
 	color: #fff;
@@ -1007,4 +1132,122 @@ input[type=radio]:checked + .checkmark{
 #s4 p:hover,
 #s5 p:hover{
 	color: #fff;
+}
+.contentBlockEleven{
+	overflow: hidden;
+	background: url(../img/Partner.svg);
+	height: 80vh;
+	background-repeat: no-repeat;
+	background-position-y: 50px;
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+}
+}
+.contentBlockEleven_h1{
+	display: flex;
+	justify-content: center;
+}
+.lastLeftMark{
+	position: absolute;
+    top: 30%;
+    width: 100%;
+    z-index: 5;
+}
+.contentBlockEleven_popup{
+	width: 65%;
+	margin-top: 5%;
+	display: flex;
+    justify-content: space-between;
+}
+.contentBlockEleven_popup__column{
+	width: 25%;
+	background: #122861;
+	border-radius: 20px;
+	position: relative;
+	padding: 15px;
+	height: fit-content;
+	cursor: pointer;
+}
+.contentBlockEleven_popup__column h3{
+	color: #fff;
+}
+.contentBlockEleven_popup__column p{
+	opacity: 0;
+	position: absolute;
+    background: #5A74B7;
+    width: 100%;
+    left: 0;
+    color: #fff;
+    padding: 10% 15px 0 15px;
+    text-align: center;
+    z-index: -1;
+    border-radius: 0 0 20px 20px;
+    height: 100px;
+    transition: .3s;
+    /*height: 0px;*/
+}
+.col2 p{
+	/*height: 0px;*/
+	height: 130px;
+}
+.opacity{
+	opacity: 1 !important;
+	transition: .3s;
+}
+.contentBlockEleven_popup__column .coin{
+	left: 50%;
+    transform: translateX(-50%);
+    transition: .3s;
+}
+.col2{
+	margin-top: 10%;
+}
+.col3{
+	margin-top: 20%;
+}
+.col4{
+	margin-top: 29%;
+}
+.coin_open{
+	bottom: -97px;
+}
+.coin_open2{
+	bottom: -127px;
+}
+.contentBottom{
+	height: 90vh;
+	overflow: hidden;
+	background-size: cover; 
+	background: url(../img/bottom.png);
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentBottom .contentBlock_h1{
+	margin-top: 10%;
+}
+.contentBottom .contentBlock_h1 h1{
+	color: #fff;
+}
+.bottom_qr{
+	display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.bottom_qr_col{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.bottom_qr_col img{
+	width: fit-content;
+}
+.bottom_qr_col p,
+.bottom_qr_col h3{
+	color: #fff;
+	margin-top: 10%;
 }
