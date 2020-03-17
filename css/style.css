@@ -2909,6 +2909,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockFife_row__left img{
 		width: 70%;
+		max-height: 435px;
 	}
 	.contentBlockFife_row__right{
 		width: 100%;
@@ -3020,7 +3021,7 @@ input[type=radio]:checked + .checkmark{
 		width: 350px;
 	}
 	.contentBlockEight_column__middle img{
-		width: 100%;
+		width: fit-content;
 	}
 	.contentBlockEight_column__bottom .coin_open{
 		bottom: -145px;
