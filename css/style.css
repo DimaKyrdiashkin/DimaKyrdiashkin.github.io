@@ -105,7 +105,7 @@ body{
     margin: 20px 0 20px 48%;
 }
 .popup img{
-    margin: 5px 0 15px 48%;
+    margin: 5px 0 35px 48%;
     cursor: pointer;
 }
 .popup2 p,
@@ -124,7 +124,7 @@ body{
 	display: none;
 	flex-direction: column;
 	align-items: center;
-	padding: 20px;
+	padding: 30px 50px;
 	border-radius: 20px;
 	overflow-y: auto;
 }
@@ -156,7 +156,7 @@ body{
 	align-items: center;
 	background: url(../img/background.svg);
 	background-size: cover;
-	background-position: center;
+	background-position: center -20px;
 	background-repeat: no-repeat;
 
 }
@@ -304,7 +304,7 @@ body{
 	justify-content: space-around;
 	width: 100%;
 	align-items: center;
-	overflow-y: auto;
+	/*overflow-y: auto;*/
 }
 .varHr{
 	height: 100%;
@@ -371,6 +371,7 @@ body{
 	justify-content: center;
 	align-self: center;
 	z-index: -2;
+	margin-top: -30px;
 }
 .leftMark {
 	width: 15%;
@@ -382,7 +383,7 @@ body{
 }
 .contentBlockOne_rollBlockRow{
 	display: flex;
-	width: 75%;
+	width: 65%;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -528,7 +529,7 @@ body{
 }
 .contentBlockTwo_h2{
 	margin-top: 5%;
-	height: 30vh;
+	height: 200px;
     position: relative;
 }
 .contentBlockTwo_SingButton{
@@ -564,12 +565,13 @@ body{
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	height: 75vh;
 	align-items: center;
 	justify-content: space-around;
 }
 .contentBlockThree_row{
 	display: flex;
+	margin-top: 25px;
 	width: 65%;
 	justify-content: space-between;
 }
@@ -679,6 +681,7 @@ body{
 .contentBlockFour_img__under{
 	position: relative;
     margin-top: 5%;
+    margin-bottom: 25px;
 }
 .contentBlockFour_img__under h2{
 	color: #122861;
@@ -774,7 +777,7 @@ body{
 	margin-top: 5px;
 }
 .contentBlockSix{
-	overflow: hidden;
+	/*overflow: hidden;*/
 	display: flex;
 	flex-direction: column;
 }
@@ -795,7 +798,7 @@ body{
 	display: flex;
 	padding-bottom: 20px;
     flex-direction: column;
-    box-shadow: 5px 8px #85ACD6;
+    box-shadow: 5px 15px #85ACD6;
     border-radius: 20px;
 }
 .contentBlockSix_row__info p{
@@ -806,7 +809,7 @@ body{
 .contentBlockSix_button{
 	transition: .3s;
 	align-self: center;
-	margin-top: 50px;
+	margin: 50px;
 	position: relative;
 	width: 100%;
 }
@@ -919,7 +922,7 @@ body{
 	align-self: flex-end;
 }
 .contentBlockEight_row2__middle img{
-	width: 100%;
+	width: 260px;
 }
 .contentBlockEight_row2{
 	margin-top: 40px;
@@ -1082,7 +1085,7 @@ body{
 .contentBlockNine_underRow__left{
 	display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 60%;
     justify-content: space-around;
 }
 .contentBlockNine_underRow__left h3{
@@ -1102,8 +1105,8 @@ body{
     justify-content: space-between;
 }
 .underRow_left__h3{
-	width: 30%;
-	margin: 30px
+	width: 50%;
+	margin: 15px
 }
 .underRow_left__h3 h3{
 	font-size: 18px;
@@ -1335,7 +1338,7 @@ input[type=radio]:checked + .checkmark{
 }
 .arrow{
 	position: relative;
-	width: 30px;
+	width: 40px;
 }
 .arrow span{
 	display: block;
@@ -1350,7 +1353,6 @@ input[type=radio]:checked + .checkmark{
     transition: .3s;
 }
 .arrow span.open{
-	left: 35%;
 	transform: rotate(225deg);
 }
 .arrow span:before{
@@ -1360,9 +1362,9 @@ input[type=radio]:checked + .checkmark{
     height: 11px;
     background: #fff;
     position: absolute;
-    right: -5px;
+    left: -5px;
     transform: rotate(-90deg);
-    top: -5px;
+    top: 5px;
     border-radius: 0 0 5px 5px;
 }
 .select{
@@ -1398,7 +1400,7 @@ input[type=radio]:checked + .checkmark{
 .contentBlockEleven{
 	overflow: hidden;
 	background: url(../img/Partner.svg);
-	height: 85vh;
+	height: 90vh;
 	background-repeat: no-repeat;
 	background-position: center 50px;
 	background-size: cover;
@@ -1499,8 +1501,7 @@ input[type=radio]:checked + .checkmark{
 	line-height: 1.55;
 }
 .col2 p{
-	/*height: 0px;*/
-	height: 130px;
+	height: 135px;
 }
 .opacity{
 	opacity: 1 !important;
@@ -1524,7 +1525,7 @@ input[type=radio]:checked + .checkmark{
 	bottom: -97px;
 }
 .coin_open2{
-	bottom: -127px;
+	bottom: -132px;
 }
 .contentBottom{
 	height: 90vh;
@@ -1611,7 +1612,7 @@ input[type=radio]:checked + .checkmark{
 		width: 85%;
 	}
 	.contentBlockNine_underRow__left{
-		width: 60%;
+		width: 75%;
 	}
 	.contentBlockTen_calc{
 		width: 65%;
@@ -1768,6 +1769,9 @@ input[type=radio]:checked + .checkmark{
 	.contentBlockSeven_text p{
 		font-size: 20px;
 	}
+	.underRow_left__h3{
+		width: 75%;
+	}
 	.contentBlockEight_row3__bottom p.desc{
 		height: 190px;
 	}
@@ -1846,6 +1850,7 @@ input[type=radio]:checked + .checkmark{
 @media all and (min-width: 768px) and (max-width: 959px) {
 	.list{
 		display: block;
+		overflow-y: auto;
 	}
 	.verHr{
 		display: none;
@@ -2107,7 +2112,7 @@ input[type=radio]:checked + .checkmark{
 		width: 85%;
 	}
 	.contentBlockEleven{
-		height: 650px;
+		height: 700px;
 	}
 	.contentBlockEleven_popup{
 		width: 95%;
@@ -2138,6 +2143,10 @@ input[type=radio]:checked + .checkmark{
 	h1{
 		font-size: 34px;
 	}
+	.popup img{
+		width: 20px;
+		margin: 15px 0 15px 48%;
+	}
 	.promoContent_menuButton{
 		width: 20%;
 	}
@@ -2150,6 +2159,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.list{
 		display: block;
+		overflow-y: auto;
 	}
 	.verHr{
 		display: none;
@@ -2642,6 +2652,10 @@ input[type=radio]:checked + .checkmark{
 	p{
 		font-size: 14px;
 	}
+	.popup img{
+		width: 20px;
+		margin: 15px 0 15px 48%;
+	}
 	.promoContent{
 		height: 80vh;
 	}
@@ -2674,6 +2688,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.list{
 		display: block;
+		overflow-y: auto;
 	}
 	.verHr{
 		display: none;
