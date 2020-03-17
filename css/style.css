@@ -3233,4 +3233,8 @@ input[type=radio]:checked + .checkmark{
 	.partner4{
 		width: 75%;
 	}
+	.rollBlockRow_block_text{
+		margin-top: -0;
+		transition: .3s;
+	}
 }
