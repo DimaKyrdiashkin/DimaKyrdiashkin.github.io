@@ -26,6 +26,9 @@
 .list::-webkit-scrollbar-thumb{
 	background: #ffc831;
 }
+div:active, div:focus{
+	outline: none;
+}
 img{
 	user-select: none;
 }
@@ -2852,11 +2855,17 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockFour_img__under{
 		width: 85%;
-		height: 500px;
+		height: 325px;
 		background: url(../img/test.png);
     	background-repeat: no-repeat;
     	background-position-x: center;
     	background-size: 645px;
+	}
+	.contentBlockFour_buttons__SingButton img{
+		width: 45px;
+	}
+	.contentBlockFour_button__yellow{
+		padding: 15px 25px;
 	}
 	.contentBlockFour_img__under h2{
 		display: none;
@@ -2865,7 +2874,7 @@ input[type=radio]:checked + .checkmark{
 		display: none;
 	}
 	.contentBlockFour_buttons{
-		width: 100%;
+		width: 300px;
 		transform: translateX(-50%);
 	}
 	.contentBlockFife_row{
@@ -2887,6 +2896,11 @@ input[type=radio]:checked + .checkmark{
 	.contentBlockFife_button{
 		margin-top: 50px;
 		width: 355px;
+		display: flex;
+    	justify-content: center;
+	}
+	.contentBlockFife_button a{
+		padding: 15px 40px;
 	}
 	.contentBlockSix_row{
 		flex-direction: column;
@@ -2903,6 +2917,9 @@ input[type=radio]:checked + .checkmark{
 	.contentBlockSix_underButton_text p{
 		width: 85%;
 	}
+	.contentBlockSix_button a{
+		padding: 15px 40px;
+	}
 	.contentBlockSeven{
 		background: url(../img/Comment.png);
 	    height: 55vh;
@@ -2914,6 +2931,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockSeven_text p{
 		text-align: center;
+		font-size: 20px;
 	}
 	.contentBlockEight_row1,
 	.contentBlockEight_row2,
