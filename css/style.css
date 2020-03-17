@@ -2856,6 +2856,7 @@ input[type=radio]:checked + .checkmark{
 		background: url(../img/test.png);
     	background-repeat: no-repeat;
     	background-position-x: center;
+    	background-size: 645px;
 	}
 	.contentBlockFour_img__under h2{
 		display: none;
