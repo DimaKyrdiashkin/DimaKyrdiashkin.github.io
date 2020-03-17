@@ -102,10 +102,10 @@ body{
 }
 .popup .circle{
 	border: 2px solid #00E8D3;
-    margin: 20px 0;
+    margin: 20px 0 20px 48%;
 }
 .popup img{
-    margin: 5px 0 15px 0;
+    margin: 5px 0 15px 48%;
     cursor: pointer;
 }
 .popup2 p,
@@ -116,7 +116,8 @@ body{
 .popup2,
 .popup3,
 .popup4,
-.popup5{
+.popup5,
+.question{
 	background: #122861;
 	z-index: 3;
 	width: 30%;
@@ -125,18 +126,24 @@ body{
 	align-items: center;
 	padding: 20px;
 	border-radius: 20px;
+	overflow-y: auto;
 }
-.popup3 .circle{
+.circle{
 	margin-left: 49%;
 }
-.popup3 .cross{
+ .cross{
 	margin-left: 49%;
 }
 .popup3{
 	overflow-y: auto;
 	height: 85vh;
 }
-.popup3::-webkit-scrollbar{
+.popup1::-webkit-scrollbar,
+.popup2::-webkit-scrollbar,
+.popup3::-webkit-scrollbar,
+.popup4::-webkit-scrollbar,
+.popup5::-webkit-scrollbar,
+.question::-webkit-scrollbar{
 	width: 0;
 }
 .other{
@@ -2125,6 +2132,9 @@ input[type=radio]:checked + .checkmark{
 	}
 }
 @media all and (min-width: 550px) and (max-width: 767px){
+	*{
+		cursor: default;
+	}
 	h1{
 		font-size: 34px;
 	}
@@ -2620,6 +2630,9 @@ input[type=radio]:checked + .checkmark{
 	}
 }
 @media all and (max-width: 549px) {
+	*{
+		cursor: default;
+	}
 	h1{
 		font-size: 24px;
 	}
@@ -2782,9 +2795,11 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockTwo_button__yellow p{
 		padding: 15px 40px;
+		cursor: default;
 	}
 	.contentBlockTwo_button__blue p{
 		padding: 15px 30px;
+		cursor: default;
 	}
 	.contentBlockTwo_SingButton a{
 		padding: 15px 30px;
@@ -2796,6 +2811,8 @@ input[type=radio]:checked + .checkmark{
 	.popup5,
 	.question{
 		width: 75%;
+		max-height: 450px;
+		padding: 10px;
 	}
 	.contentBlockThree_row{
 		flex-direction: column;
@@ -2826,13 +2843,19 @@ input[type=radio]:checked + .checkmark{
 		height: 300px
 	}
 	#popup3{
-		top: 30%
+		top: 30%;
+		cursor: default;
 	}
 	#popup4{
 		top: 0;
+		cursor: default;
 	}
 	#popup5{
 		bottom: 5px;
+		cursor: default;
+	}
+	#question{
+		cursor: default;
 	}
 	.contentBlockThree_buttons p:hover{
 		margin-top: 35px;
@@ -2972,7 +2995,7 @@ input[type=radio]:checked + .checkmark{
 	    width: 200px;
 	    text-align: center;
 	    color: #fff;
-	    cursor: pointer;
+	    cursor: default;
 	}
 	.contentBlockEight_column__bottom 
 	.contentBlockEight_column__head,
@@ -2983,6 +3006,7 @@ input[type=radio]:checked + .checkmark{
 	    justify-content: center;
 	    align-self: center;
 	    position: relative;
+	    cursor: default;
 	}
 	.contentBlockEight_column__head{
 		margin: 40px 0 20px 0;
@@ -3073,10 +3097,20 @@ input[type=radio]:checked + .checkmark{
 		width: 90%;
 	}
 	.contentBlockNine_secondRow{
-		height: 60px;
+		height: 100%;
+		flex-direction: column;
+	}
+	.contentBlockNine_secondRow__column{
+		width: 100%;
+		flex-direction: row;
+		border: 0;
+		margin: 5px 0;
 	}
 	.contentBlockNine_row{
 		margin-bottom: 0;
+	}
+	.contentBlockNine_secondRow h3{
+		width: 50%;
 	}
 	.underRow_left__block{
 		flex-direction: column;
@@ -3090,18 +3124,24 @@ input[type=radio]:checked + .checkmark{
 		height: 150px;
 	}
 	.contentBlockNine_underRow__right{
-		width: 80%;
+		width: 95%;
+	}
+	.contentBlockNine_button{
+		margin-top: 10px;
 	}
 	.contentBlockNine_button a{
-		padding: 15px 50px;
+		padding: 15px 40px;
+	    width: 80%;
+	    text-align: center;
 	}
 	.contentBlockTen{
-		margin-top: 10%;
+		margin-top: 100px;
 	}
 	.second_coin{
 		display: none;
 	}
 	.contentBlockTen_calc{
+		width: 100%;
 		flex-direction: column;
 		height: fit-content;
     	align-items: center;
@@ -3109,14 +3149,14 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockTen_calc__first{
 		height: 350px;
-		width: 80%;
+		width: 90%;
 	}
 	.calc_first__radio1{
 		height: 35%;
 	}
 	.contentBlockTen_calc__second{
 		width: 70%;
-		margin-top: 20%;
+		margin-top: 100px;
 		justify-content: center;
 		height: 300px;
 	}
@@ -3130,8 +3170,11 @@ input[type=radio]:checked + .checkmark{
 	.calc_first__button{
 		width: 85%;
 	}
+	.resoult{
+		width: 300px;
+	}
 	.contentBlockEleven{
-		height: 850px;
+		height: 675px;
 	}
 	.contentBlockEleven_popup{
 		width: 95%;
@@ -3139,9 +3182,14 @@ input[type=radio]:checked + .checkmark{
 	.contentBlockEleven_popup__column{
 		width: 300px;
 		margin: 40px 0;
+		cursor: default;
+	}
+	.contentBlockEleven_popup__column h3{
+		cursor: default;
 	}
 	.contentBlockEleven_popup__column p{
 		height: 135px;
+		cursor: default;
 	}
 	.contentBlockEleven_popup{
 		flex-direction: column;
@@ -3163,13 +3211,17 @@ input[type=radio]:checked + .checkmark{
 		bottom: -206px !important;
 	}
 	.contentBottom{
-		height: 600px;
+		height: 850px;
 	}
 	.contentBottom .contentBlock_h1{
-		margin-top: 20%;
+		margin-top: 125px;
 	}
 	.bottom_qr{
 		width: 90%;
+		flex-direction: column;
+	}
+	.bottom_qr_col{
+		margin: 20px 0;
 	}
 	.bottom_qr_col img{
 		width: 150px;
@@ -3178,6 +3230,6 @@ input[type=radio]:checked + .checkmark{
 	.partner2,
 	.partner3,
 	.partner4{
-		width: 50%;
+		width: 75%;
 	}
 }
