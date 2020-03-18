@@ -1885,7 +1885,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBottom{
 		padding-top: 30px;
-		height: 60vh;
+		height: 550px;
 	}
 	.promoContent_menuButton {
 		width: 20%;
