@@ -2047,6 +2047,9 @@ input[type=radio]:checked + .checkmark{
 	.contentBlockNine_row__left span{
 		margin: 20px 0;
 	}
+	.contentBlockNine_secondRow__column h3{
+		padding: 10px 0;
+	}
 	.contentBlockNine_row__right{
 		flex-direction: column;
 		margin-top: 5%;
@@ -2223,19 +2226,19 @@ input[type=radio]:checked + .checkmark{
     	display: none;
 	}
 	.rollBlock1{
-		background: url(../img/RollImg1Small.png);
+		background: url(../img/RollImg1.png);
     	background-size: cover;
     	background-position-y: 50%;
     	background-repeat: no-repeat;
 	}
 	.rollBlock2{
-		background: url(../img/RollImg2Small.png);
+		background: url(../img/RollImg2.png);
     	background-size: cover;
     	background-position-y: 50%;
     	background-repeat: no-repeat;
 	}
 	.rollBlock3{
-		background: url(../img/RollImg3Small.png);
+		background: url(../img/RollImg3.png);
     	background-size: cover;
     	background-position-y: 50%;
     	background-repeat: no-repeat;
@@ -2760,7 +2763,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.rollBlockRow_block{
 		width: 100%;
-		height: 220px;
+		height: 360px;
 		margin: 10px 0;
 	}
 	.rollBlockRow_block img{
@@ -2769,21 +2772,21 @@ input[type=radio]:checked + .checkmark{
     	display: none;
 	}
 	.rollBlock1{
-		background: url(../img/RollImg1Small.png);
+		background: url(../img/RollImg1.png);
     	background-size: cover;
     	background-position-y: 50%;
     	background-position-x: center;
     	background-repeat: no-repeat;
 	}
 	.rollBlock2{
-		background: url(../img/RollImg2Small.png);
+		background: url(../img/RollImg2.png);
     	background-size: cover;
     	background-position-y: 50%;
     	background-position-x: center;
     	background-repeat: no-repeat;
 	}
 	.rollBlock3{
-		background: url(../img/RollImg3Small.png);
+		background: url(../img/RollImg3.png);
     	background-size: cover;
     	background-position-y: 50%;
     	background-position-x: center;
@@ -3104,6 +3107,8 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockNine_right__secondHalf{
 		width: -webkit-fill-available;
+		border-top: 1px solid #425EA7;
+		margin: 0 !important;
 	}
 	.contentBlockNine_underRow{
 		flex-direction: column;
@@ -3122,6 +3127,8 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockNine_secondRow__column h3.headH3{
 		font-size: 14px;
+		padding: 15px 0;
+		border-bottom: 1px solid #425EA7;
 	}
 	.contentBlockNine_secondRow__column h3{
 		font-size: 18px;
@@ -3133,9 +3140,6 @@ input[type=radio]:checked + .checkmark{
 	.contentBlockNine_right__firstHalf{
 		margin-top: 15px;
 	}
-	.contentBlockNine_right__secondHalf{
-		margin-bottom: 15px;
-	}
 	.contentBlockNine_row__left,
 	.contentBlockNine_row__right{
 		width: 90%;
@@ -3144,11 +3148,13 @@ input[type=radio]:checked + .checkmark{
 		height: 100%;
 		flex-direction: column;
 	}
+	.contentBlockNine_secondRow .last_h3{
+		padding: 5px 0 25px 0;
+	}
 	.contentBlockNine_secondRow__column{
 		width: 100%;
 		flex-direction: row;
 		border: 0;
-		margin: 5px 0;
 	}
 	.contentBlockNine_secondRow__column h3:first-child{
 		border-right: 1px solid #425EA7;
@@ -3156,8 +3162,13 @@ input[type=radio]:checked + .checkmark{
 	.contentBlockNine_row{
 		margin-bottom: 0;
 	}
+	.contentBlockNine_secondRow .first_persent h3{
+		padding: 20px 0 5px 0;
+	}
 	.contentBlockNine_secondRow h3{
 		width: 50%;
+		padding: 5px 0;
+		font-weight: 400;
 	}
 	.underRow_left__block{
 		flex-direction: column;
@@ -3216,6 +3227,9 @@ input[type=radio]:checked + .checkmark{
 	}
 	.calc_first__button{
 		width: 85%;
+	}
+	.calc_first__select{
+		flex-direction: row-reverse;
 	}
 	.resoult{
 		width: 300px;
