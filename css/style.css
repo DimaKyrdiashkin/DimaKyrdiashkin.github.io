@@ -167,11 +167,11 @@ body{
     user-select: none;
 }
 .promoContent_menuButton:hover{
-	height: 100px;
+	height: 100px !important;
 	transition: .3s;
 }
 .promoContent_menuButton:hover img{
-	opacity: 1;
+	opacity: 1 !important;
 	transition: .3s;
 }
 .promoContent_menuButton img{

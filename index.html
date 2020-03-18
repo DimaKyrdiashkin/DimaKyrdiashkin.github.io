@@ -95,7 +95,7 @@
 			</div>
 		</div>
 		<div class="promoContent" id="head">
-			<div class="promoContent_menuButton wow fadeInDown">
+			<div class="promoContent_menuButton">
 				<img src="img/MenuButton.svg">
 			</div>
 			<div class="promoContent_logo wow fadeInDown">
@@ -827,6 +827,13 @@
 
 		let wid = document.documentElement.clientWidth;
 		let positionY = window.pageYOffset;
+		if(positionY > 200 && wid > 1200){
+				$(".promoContent_menuButton").css("height", 25);
+				$(".promoContent_menuButton img").css("opacity", 0);
+			}else if(positionY <= 200 && wid > 1200){
+				$(".promoContent_menuButton").css("height", 100);
+				$(".promoContent_menuButton img").css("opacity", 1);
+			};
 		$(window).resize(function(){
 			wid = document.documentElement.clientWidth;
 			if(wid <= 762){
