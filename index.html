@@ -826,11 +826,22 @@
 		});
 
 		let wid = document.documentElement.clientWidth;
+		let positionY = window.pageYOffset;
 		$(window).resize(function(){
 			wid = document.documentElement.clientWidth;
 			if(wid <= 762){
 				$(".contentBlockEleven_popup__column .coin").removeClass("coin_open coin_open2");
 				$(".contentBlockEleven_popup__column p").removeClass("opacity");
+			};
+		});
+		$(window).scroll(function(){
+			positionY = window.pageYOffset;
+			if(positionY > 200 && wid > 1200){
+				$(".promoContent_menuButton").css("height", 25);
+				$(".promoContent_menuButton img").css("opacity", 0);
+			}else if(positionY <= 200 && wid > 1200){
+				$(".promoContent_menuButton").css("height", 100);
+				$(".promoContent_menuButton img").css("opacity", 1);
 			};
 		});
 		

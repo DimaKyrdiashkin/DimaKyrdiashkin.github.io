@@ -120,7 +120,7 @@ body{
 .question{
 	background: #122861;
 	z-index: 3;
-	width: 30%;
+	width: 25%;
 	display: none;
 	flex-direction: column;
 	align-items: center;
@@ -166,7 +166,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 14%;
-    height: 25px;
+    height: 100px;
     border-radius: 0 0 20px 20px;
     background: #FDB900;
     z-index: 1;
@@ -184,7 +184,7 @@ body{
 }
 .promoContent_menuButton img{
 	height: 20px;
-	opacity: 0;
+	opacity: 1;
 	transition: .3s;
 }
 .promoContent_logo{
@@ -902,7 +902,7 @@ body{
 .contentBlockEight_row3__bottom p.desc{
 	position: absolute;
 	opacity: 0;
-    padding: 40px 20px;
+    padding: 50px 20px;
     background: #5A74B7;
     font-size: 16px;
     top: 30%;
@@ -1423,7 +1423,7 @@ input[type=radio]:checked + .checkmark{
 }
 .contentBlockEleven_popup{
 	width: 65%;
-	margin-top: 5%;
+	margin-top: 8%;
 	display: flex;
     justify-content: space-between;
 }
@@ -1682,7 +1682,7 @@ input[type=radio]:checked + .checkmark{
 		bottom: -166px;
 	}
 	.contentBlockTwo_right__text p{
-		margin-top: 15px;
+		margin-top: 15px 0;
 	}
 	.contentBlockTwo_right__button{
 		height: 170px;
@@ -1885,6 +1885,10 @@ input[type=radio]:checked + .checkmark{
 	}
 	.promoContent_menuButton {
 		width: 20%;
+		height: 25px;
+	}
+	.promoContent_menuButton img{
+		opacity: 0;
 	}
 	.hide{
 		width: 20%;
@@ -2149,6 +2153,10 @@ input[type=radio]:checked + .checkmark{
 	}
 	.promoContent_menuButton{
 		width: 20%;
+		height: 25px;
+	}
+	.promoContent_menuButton img{
+		opacity: 0;
 	}
 	.promoContent_menuButton:hover{
 		height: 80px;
@@ -2659,6 +2667,9 @@ input[type=radio]:checked + .checkmark{
 	.promoContent{
 		height: 80vh;
 	}
+	.promoContent_logo{
+		margin-top: 20px;
+	}
 	.promoContent_text h1{
 		width: 90%;
 		font-size: 24px;
@@ -2669,6 +2680,11 @@ input[type=radio]:checked + .checkmark{
 	}
 	.promoContent_menuButton{
 		width: 25%;
+		border-radius: 0 0 15px 15px;
+		height: 25px;
+	}
+	.promoContent_menuButton img{
+		opacity: 0;
 	}
 	.promoContent_menuButton:hover{
 		height: 50px;
@@ -2800,6 +2816,7 @@ input[type=radio]:checked + .checkmark{
 
 	.contentBlock_h1_text{
 		width: 95%;
+		margin-top: 0;
 	}
 	.contentBlockTwo_h2 {
 		height: 225px
@@ -2818,6 +2835,9 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockTwo_SingButton a{
 		padding: 15px 30px;
+	}
+	.contentBlockTwo_right__button{
+		margin: 50px 0;
 	}
 	.popup1,
 	.popup2,
@@ -2880,6 +2900,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockThree{
 		height: fit-content;
+		margin-top: 30px;
 	}
 	.contentBlockFour_img{
 		width: 95%;
@@ -2952,9 +2973,15 @@ input[type=radio]:checked + .checkmark{
 		width: 100%;
 		display: flex;
 		justify-content: center;
+		margin-top: 50px;
 	}
 	.contentBlockSix_underButton_text p{
 		width: 85%;
+		text-align: center;
+	}
+	.contentBlockSix_button{
+		margin: 30px;
+    	margin-bottom: 100px;
 	}
 	.contentBlockSix_button a{
 		padding: 15px 40px;
@@ -2967,6 +2994,9 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockSeven_text{
 		width: 60%;
+	}
+	.contentBlockSeven_text img{
+		width: 40px;
 	}
 	.contentBlockSeven_text p{
 		text-align: center;
@@ -3036,7 +3066,7 @@ input[type=radio]:checked + .checkmark{
 		width: 350px;
 	}
 	.contentBlockEight_column__middle img{
-		width: fit-content;
+		width: 250px;
 	}
 	.contentBlockEight_column__bottom .coin_open{
 		bottom: -145px;
