@@ -752,7 +752,7 @@ body{
 .contentBlockFife_button{
 	transition: .3s;
 	position: relative;
-	margin-top: -50px;
+	/*margin-top: -50px;*/
 }
 .contentBlockFife_button a{
 	color: #fff;
@@ -1094,7 +1094,7 @@ body{
     border-radius: 20px;
     margin-top: 20px;
     display: flex;
-    height: 20vh;
+    height: 150px;
     align-items: center;
     justify-content: space-between;
 }
@@ -1566,7 +1566,7 @@ input[type=radio]:checked + .checkmark{
 		width: 85%;
 	}
 	.contentBlockTwo_h2{
-		height: 25vh;
+		height: 200px;
 	}
 	.contentBlockThree_row{
 		width: 85%;
@@ -1761,7 +1761,7 @@ input[type=radio]:checked + .checkmark{
 		width: 70%;
 	}
 	.contentBlockFife_button{
-		margin: 0;
+		margin: 30px 0;
 	}
 	.contentBlockSeven_text p{
 		font-size: 20px;
