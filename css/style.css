@@ -567,6 +567,7 @@ body{
 	display: flex;
 	margin-top: 25px;
 	width: 65%;
+	height: fit-content;
 	justify-content: space-between;
 }
 .contentBlockThree_row__left{
@@ -577,7 +578,7 @@ body{
 	width: 100%;
 }
 .contentBlockThree_right__list{
-	height: 70%;
+	height: 240px;
 }
 .contentBlockThree_right__list ul{
 	height: 100%;
@@ -736,7 +737,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50vh;
+    height: 450px;
 }
 .contentBlockFife_text p{
 	margin-top: 3%;
@@ -916,7 +917,8 @@ body{
 	align-self: flex-end;
 }
 .contentBlockEight_row2__middle img{
-	width: 260px;
+	width: 100%;
+	height: 50%
 }
 .contentBlockEight_row2{
 	margin-top: 40px;
@@ -1394,7 +1396,7 @@ input[type=radio]:checked + .checkmark{
 .contentBlockEleven{
 	overflow: hidden;
 	background: url(../img/Partner.svg);
-	height: 90vh;
+	height: 850px;
 	background-repeat: no-repeat;
 	background-position: center 50px;
 	background-size: cover;
@@ -1645,7 +1647,7 @@ input[type=radio]:checked + .checkmark{
 		height: 90vh;
 	}
 	.contentBlockOne{
-		height: 70vh;
+		height: fit-content;
 	}
 	.rollBlockRow_block{
 		height: 300px;
@@ -1717,6 +1719,9 @@ input[type=radio]:checked + .checkmark{
 	.popup5,
 	.question{
 		width: 50%;
+	}
+	.contentBlockOne{
+		height: fit-content;
 	}
 	.promoContent_menuButton{
 		width: 20%;
@@ -1895,7 +1900,7 @@ input[type=radio]:checked + .checkmark{
 		height: 200px;
 	}
 	.contentBlockOne{
-		height: 55vh;
+		height: fit-content;
 	}
 	.contentBlock_h1_text{
 		width: 80%;
