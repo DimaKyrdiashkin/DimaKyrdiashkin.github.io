@@ -3076,6 +3076,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockEight_column__middle img{
 		width: 250px;
+		height: 100%;
 	}
 	.contentBlockEight_column__bottom .coin_open{
 		bottom: -145px;
