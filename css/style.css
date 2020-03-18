@@ -276,6 +276,8 @@ body{
     flex-direction: column;
     align-items: center;
     width: 50%;
+    overflow: hidden;
+    padding-top: 200px;
 }
 .menu_text img{
 	width: fit-content;
@@ -1558,6 +1560,7 @@ input[type=radio]:checked + .checkmark{
 @media all and (max-width: 1690px) {
 	.contentBlockOne_rollBlockRow{
 		width: 85%;
+		height: fit-content;
 	}
 	.contentBlockTwo_row{
 		width: 85%;
@@ -1580,6 +1583,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockFife_row__left img{
 		width: 35vw;
+		max-height: 780px;
 	}
 	.contentBlockSix_row{
 		width: 85%;
@@ -1663,6 +1667,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockFife_row__left img{
 		width: 40vw;
+		max-height: 770px;
 	}
 	.contentBlockSix_img img{
 		width: 65%;
@@ -1863,7 +1868,7 @@ input[type=radio]:checked + .checkmark{
 		margin-top: 50px;
 	}
 	.promoContent{
-		height: 75vh;
+		height: 600px;
 	}
 	.leftMark{
 		display: none;
@@ -1980,6 +1985,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockFife_row__left img{
 		width: 45vw;
+		max-height: 575px;
 	}
 	.contentBlockFife_row__right{
 		width: 90%;
@@ -2356,6 +2362,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockFife_row__left img{
 		width: 70%;
+		max-height: 600px;
 	}
 	.contentBlockFife_row__right{
 		width: 100%;
