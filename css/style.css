@@ -964,7 +964,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: 10%;
+	margin-top: 150px;
 }
 .contentBlock_h2_text{
 	align-self: center;
@@ -1425,7 +1425,7 @@ input[type=radio]:checked + .checkmark{
     justify-content: space-between;
 }
 .contentBlockEleven_popup__column{
-	width: 25%;
+	width: 24%;
 	background: #122861;
 	border-radius: 20px;
 	position: relative;
@@ -1525,7 +1525,7 @@ input[type=radio]:checked + .checkmark{
 	bottom: -132px;
 }
 .contentBottom{
-	height: 90vh;
+	height: 600px;
 	overflow: hidden;
 	background-size: cover; 
 	background: url(../img/bottom.png);
@@ -1991,8 +1991,7 @@ input[type=radio]:checked + .checkmark{
     	justify-content: center;
 	}
 	.contentBlockFife_row__left img{
-		width: 45vw;
-		max-height: 575px;
+		display: none;
 	}
 	.contentBlockFife_row__right{
 		width: 90%;
@@ -2368,8 +2367,7 @@ input[type=radio]:checked + .checkmark{
 		justify-content: center;
 	}
 	.contentBlockFife_row__left img{
-		width: 70%;
-		max-height: 600px;
+		display: none;
 	}
 	.contentBlockFife_row__right{
 		width: 100%;
@@ -2954,8 +2952,7 @@ input[type=radio]:checked + .checkmark{
 		justify-content: center;
 	}
 	.contentBlockFife_row__left img{
-		width: 70%;
-		max-height: 435px;
+		display: none;
 	}
 	.contentBlockFife_row__right{
 		width: 100%;
