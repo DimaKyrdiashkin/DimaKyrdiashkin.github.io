@@ -662,6 +662,7 @@ body{
 }
 .contentBlockFour_img img{
 	width: 100%;
+	height: 100%;
 }
 .contentBlockFour_text{
 	display: flex;
