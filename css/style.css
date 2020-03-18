@@ -1525,7 +1525,7 @@ input[type=radio]:checked + .checkmark{
 	bottom: -132px;
 }
 .contentBottom{
-	height: 600px;
+	height: 800px;
 	overflow: hidden;
 	background-size: cover; 
 	background: url(../img/bottom.png);
