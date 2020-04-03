@@ -1397,7 +1397,8 @@ input[type=radio]:checked + .checkmark{
 .contentBlockEleven{
 	overflow: hidden;
 	background: url(../img/Partner.svg);
-	height: 850px;
+	/*height: 850px;*/
+	height: 51vw;
 	background-repeat: no-repeat;
 	background-position: center 50px;
 	background-size: cover;
@@ -1525,10 +1526,12 @@ input[type=radio]:checked + .checkmark{
 	bottom: -132px;
 }
 .contentBottom{
-	height: 800px;
+	height: 50vw;
 	overflow: hidden;
 	background-size: cover; 
-	background: url(../img/bottom.png);
+	background-image: url(../img/bottom.png);
+	background-repeat: no-repeat;
+	background-position: center top;
 	display: flex;
     flex-direction: column;
     align-items: center;
@@ -1541,6 +1544,7 @@ input[type=radio]:checked + .checkmark{
 	z-index: 0;
 }
 .bottom_qr{
+	margin-top: 5%;
 	display: flex;
     width: 50%;
     justify-content: space-between;
@@ -1703,6 +1707,9 @@ input[type=radio]:checked + .checkmark{
 	.contentBlockTen_calc__first{
 		width: 40%;
 	}
+	.contentBlockEleven{
+		height: 60vw;
+	}
 	.contentBlockEleven_popup{
 		width: 85%;
 	}
@@ -1818,6 +1825,9 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockTen_calc{
 		width: 90%;
+	}
+	.contentBlockEleven{
+		height: 75vw;
 	}
 	.second_coin{
 		display: none;
