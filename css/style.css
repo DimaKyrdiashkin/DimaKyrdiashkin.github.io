@@ -1649,7 +1649,7 @@ input[type=radio]:checked + .checkmark{
 		font-size: 40px;
 	}
 	.promoContent{
-		height: 90vh;
+		height: 800px;
 	}
 	.contentBlockOne{
 		height: fit-content;
