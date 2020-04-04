@@ -2893,8 +2893,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockThree_buttons{
 		width: 85%;
-		height: 300px;
-		margin-top: 90px;
+		height: 300px
 	}
 	#popup3{
 		top: 30%;
