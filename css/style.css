@@ -127,6 +127,7 @@ body{
 	padding: 30px 50px;
 	border-radius: 20px;
 	overflow-y: auto;
+	max-height: 80vh;
 }
 .circle{
 	margin-left: 49%;
@@ -146,7 +147,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: url(../img/background.svg);
+	background: url(../img/Promo_background.png);
 	background-size: cover;
 	background-position: center -20px;
 	background-repeat: no-repeat;
@@ -676,20 +677,33 @@ body{
 }
 .contentBlockFour_img__under{
 	position: relative;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 25px;
+}
+.contentBlockFour .description{
+	font-family: 'Roboto';
+	font-size: 16px;
+	color: #666;
+	cursor: default;
+	text-align: center;
+	margin-top: 5%;
+	width: 90%;
+}
+.contentBlockFour_img__under img{
+	margin-top: 100px;
 }
 .contentBlockFour_img__under h2{
 	color: #122861;
 	position: absolute;
     left: 50%;
     width: 35%;
-    transform: translate(-50%, 25%);
+	transform: translate(-50%, 25%);
+	margin-top: 100px;
 }
 .contentBlockFour_buttons{
 	width: 25%;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 50%;
     transform: translateX(-65%);
     user-select: none;
@@ -719,6 +733,7 @@ body{
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 50px;
 }
 .contentBlockFife_row{
 	display: flex;
@@ -737,8 +752,13 @@ body{
 	width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 450px;
+    justify-content: space-around;
+    height: 550px;
+}
+.contentBlockFife_row__right .description{
+	width: 90%;
+	text-align: center;
+	align-self: center;
 }
 .contentBlockFife_text p{
 	margin-top: 3%;
@@ -754,7 +774,8 @@ body{
 .contentBlockFife_button{
 	transition: .3s;
 	position: relative;
-	/*margin-top: -50px;*/
+	left: 50%;
+    transform: translateX(-25%);
 }
 .contentBlockFife_button a{
 	color: #fff;
@@ -847,13 +868,15 @@ body{
 }
 .contentBlockSeven_text{
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
+	width: 40%;
 }
 .contentBlockSeven_text p{
 	color: #fff;
 	font-family: 'Roboto Condensed';
 	font-weight: bold;
 	font-size: 24px;
+	text-align: center;
 }
 .contentBlockSeven_text img{
 	width: fit-content;
@@ -1001,7 +1024,8 @@ body{
     background: #fff;
     width: fit-content;
     padding: 15px 30px;
-    border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
 }
 .contentBlockNine_row__left span{
 	font-size: 32px;
@@ -1408,7 +1432,6 @@ input[type=radio]:checked + .checkmark{
     align-items: center;
     z-index: 0;
 }
-}
 .contentBlockEleven_h1{
 	display: flex;
 	justify-content: center;
@@ -1455,13 +1478,16 @@ input[type=radio]:checked + .checkmark{
     transition: .3s;
     /*height: 0px;*/
 }
+#question{
+	margin: 0 !important;
+}
 .question{
 	display: none;
 	width: 30%;
 	flex-direction: column;
 	background: #fff;
     padding: 25px;
-    border-radius: 20px;
+	border-radius: 20px;
 }
 .question_text p{
 	width: 80%;
@@ -1559,9 +1585,12 @@ input[type=radio]:checked + .checkmark{
 	width: 12vw;
 }
 .bottom_qr_col p,
-.bottom_qr_col h3{
+.bottom_qr_col .h3{
 	color: #fff;
 	margin-top: 40px;
+}
+.bottom_qr_col .h3{
+	font-size: 22px;
 }
 
 @media all and (max-width: 1690px) {
@@ -1682,6 +1711,7 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockEight_row3__bottom p.desc{
 		height: 190px;
+		padding: 45px 15px;
 	}
 	.contentBlockEight_row3__bottom .coin_open{
 		bottom: -166px;
@@ -1691,6 +1721,9 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockTwo_right__button{
 		height: 170px;
+	}
+	.contentBlockSeven_text{
+		width: 50%;
 	}
 	.contentBlockNine_row__left{
 		width: 25%;
@@ -1714,7 +1747,7 @@ input[type=radio]:checked + .checkmark{
 		width: 85%;
 	}
 	.colM2{
-		width: 60%;
+		width: 65%;
 	}
 	.colM3{
 		width: 15%;
@@ -1776,6 +1809,9 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockFife_button{
 		margin: 30px 0;
+	}
+	.contentBlockSeven_text{
+		width: 70%;
 	}
 	.contentBlockSeven_text p{
 		font-size: 20px;
@@ -1862,9 +1898,12 @@ input[type=radio]:checked + .checkmark{
 	}
 }
 @media all and (min-width: 768px) and (max-width: 959px) {
+	.back{
+		border-radius: 0 0 200px 0;
+	}
 	.list{
 		display: block;
-		overflow-y: auto;
+		overflow-y: scroll;
 	}
 	.verHr{
 		display: none;
@@ -1987,6 +2026,10 @@ input[type=radio]:checked + .checkmark{
 	.contentBlock_h1 h1{
 		font-size: 32px
 	}
+	.contentBlockFour .contentBlock_h1 h1{
+		margin-left: 30%;
+		transform: translate(-18%, 0);
+	}
 	.contentBlockFour_img{
 		width: 70%;
 	}
@@ -2005,7 +2048,6 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockFife_row__right{
 		width: 90%;
-		height: fit-content;
 	}
 	.contentBlockFife_text{
 		padding: 0 15px;
@@ -2014,6 +2056,10 @@ input[type=radio]:checked + .checkmark{
 		margin-bottom: 100px;
 		padding: 25px 15px;
 	}
+	.contentBlockFife_button{
+		left: 50%;
+    	transform: translateX(-25%);
+	}
 	.contentBlockSix_row{
 		flex-direction: column;
 		align-items: center;
@@ -2021,6 +2067,9 @@ input[type=radio]:checked + .checkmark{
 	.contentBlockSix_row__info{
 		width: 60%;
 		margin: 15px 0;
+	}
+	.contentBlockSeven_text{
+		width: 70%;
 	}
 	.contentBlockSeven_text p{
 		font-size: 16px;
@@ -2164,9 +2213,15 @@ input[type=radio]:checked + .checkmark{
 	h1{
 		font-size: 34px;
 	}
+	.back{
+		border-radius: 0 0 200px 0;
+	}
 	.popup img{
 		width: 20px;
 		margin: 15px 0 15px 48%;
+	}
+	.promoContent{
+		height: 700px;
 	}
 	.promoContent_menuButton{
 		width: 20%;
@@ -2342,6 +2397,10 @@ input[type=radio]:checked + .checkmark{
 	.contentBlockThree{
 		height: fit-content;
 	}
+	.contentBlockFour .contentBlock_h1 h1{
+		margin-left: 30%;
+		transform: translate(-18%, 0);
+	}
 	.contentBlockFour_img{
 		width: 75%;
 	}
@@ -2354,10 +2413,10 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockFour_img__under{
 		width: 85%;
-		height: 500px;
+		height: 475px;
 		background: url(../img/test.png);
     	background-repeat: no-repeat;
-    	background-position-x: center;
+    	background-position: center bottom;
 	}
 	.contentBlockFour_img__under h2{
 		display: none;
@@ -2366,8 +2425,14 @@ input[type=radio]:checked + .checkmark{
 		display: none;
 	}
 	.contentBlockFour_buttons{
-		width: 100%;
+		width: 75%;
 		transform: translateX(-50%);
+	}
+	.contentBlockFour_button__yellow{
+		padding: 15px 50px;
+	}
+	.contentBlockFife{
+		padding: 0;
 	}
 	.contentBlockFife_row{
 		flex-direction: column;
@@ -2381,13 +2446,13 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockFife_row__right{
 		width: 100%;
-		height: fit-content;
 		margin-bottom: 80px;
 		align-items: center;
 	}
 	.contentBlockFife_button{
-		margin-top: 50px;
 		width: 355px;
+		left: 0;
+		transform: translateX(0);
 	}
 	.contentBlockSix_row{
 		flex-direction: column;
@@ -2678,12 +2743,15 @@ input[type=radio]:checked + .checkmark{
 	p{
 		font-size: 14px;
 	}
+	.back{
+		border-radius: 0 0 100px 0;
+	}
 	.popup img{
 		width: 20px;
 		margin: 15px 0 15px 48%;
 	}
 	.promoContent{
-		height: 550px;
+		height: 400px;
 	}
 	.promoContent_logo{
 		margin-top: 20px;
@@ -2723,6 +2791,8 @@ input[type=radio]:checked + .checkmark{
 	.list{
 		display: block;
 		overflow-y: auto;
+		height: 50%;
+
 	}
 	.verHr{
 		display: none;
@@ -2746,7 +2816,7 @@ input[type=radio]:checked + .checkmark{
 		margin-top: 50px;
 	}
 	.promoContent_logo img{
-		width: 40vw;
+		width: 125px;
 	}
 	.promoContent_text{
 		margin-top: 10%;
@@ -2782,11 +2852,11 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockOne_rollBlockRow{
 		flex-direction: column;
-		width: 95%;
+		width: 90%;
 	}
 	.rollBlockRow_block{
 		width: 100%;
-		height: 360px;
+		height: 340px;
 		margin: 10px 0;
 	}
 	.rollBlockRow_block img{
@@ -2814,6 +2884,9 @@ input[type=radio]:checked + .checkmark{
     	background-position-y: 50%;
     	background-position-x: center;
     	background-repeat: no-repeat;
+	}
+	.rollBlockRow_block_text p{
+		font-size: 16px;
 	}
 	.contentBlockTwo_row{
 		width: 90%;
@@ -2893,7 +2966,8 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockThree_buttons{
 		width: 85%;
-		height: 300px
+		height: 300px;
+		margin-top: 100px;
 	}
 	#popup3{
 		top: 30%;
@@ -2935,7 +3009,7 @@ input[type=radio]:checked + .checkmark{
 		height: 325px;
 		background: url(../img/test.png);
     	background-repeat: no-repeat;
-    	background-position-x: center;
+    	background-position: center bottom;
     	background-size: 645px;
 	}
 	.contentBlockFour_buttons__SingButton img{
@@ -2954,6 +3028,9 @@ input[type=radio]:checked + .checkmark{
 		width: 300px;
 		transform: translateX(-50%);
 	}
+	.contentBlockFife{
+		padding: 0;
+	}
 	.contentBlockFife_row{
 		flex-direction: column;
 	}
@@ -2966,15 +3043,16 @@ input[type=radio]:checked + .checkmark{
 	}
 	.contentBlockFife_row__right{
 		width: 100%;
-		height: fit-content;
 		margin-bottom: 80px;
 		align-items: center;
+		height: 650px;
 	}
 	.contentBlockFife_button{
-		margin-top: 50px;
 		width: 355px;
 		display: flex;
-    	justify-content: center;
+		justify-content: center;
+		left: 0;
+		transform: translateX(0);
 	}
 	.contentBlockFife_button a{
 		padding: 15px 40px;
@@ -3050,7 +3128,7 @@ input[type=radio]:checked + .checkmark{
 	    margin-top: 80px;
 	    opacity: 0;
 	    height: 160px;
-	    padding: 35px 5px;
+	    padding: 50px 5px;
 	    transition: .3s;
 	    border-radius: 0 0 20px 20px;
 	}
