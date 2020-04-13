@@ -70,6 +70,18 @@
 				<p class="other">По итогам обучения через 2 месяца Вам предоставится доступ  к закрытой Telegram группе для общения и обмена опытом со  всеми выпускниками обучения трейдингу в «Amir&nbspAcademy».</p>
 				<h3 class="other">Всем студентам, прошедшим обучение трейдингу  в «Amir&nbspAcademy», выдается именной  Электронный Сертификат!</h3>
 			</div>
+			<div class="popup6">
+				<img src="img/Cross.png" class="cross" alt="">
+				<p>Постоянные скидки и скидки по специальным предложениям 
+					суммируются и отнимаются от полной стоимости обучения 
+					трейдингу на Базовом модуле в утвержденной «Amir Academy» 
+					последовательности:</p>
+				<ol>
+					<li>Скидка за прохождение Начального Бесплатного модуля;</li>
+					<li>Скидка за уровень по Sunrise Program;</li>
+					<li>Скидка по специальному предложению.</li>
+				</ol>
+			</div>
 			<div class="question">
 				<div class="question_text">
 					<span class="circle"></span>
@@ -510,6 +522,9 @@
 						</div>
 					</div>
 				</div>
+				<div class="contentBlockNine_button">
+					<a href="#" class="contentBlockNine_row__button">Зарегистрироваться</a>
+				</div>
 			</div>
 			<div class="contentBlockNine_underRow">
 				<div class="contentBlockNine_underRow__left">
@@ -528,7 +543,7 @@
 				</div>
 			</div>
 			<div class="contentBlockNine_button">
-				<a href="#">Как это работает</a>
+				<a id="popup6">Как это работает</a>
 			</div>
 		</div>
 		<div class="contentBlockTen" id="BlockTen">
@@ -678,6 +693,7 @@
 			</div>
 		</div>
 	</div>
+	<script id="43c8afe6ff41e1b94e4e8cca6a86d1daf34048c9" src="https://amir.academy/pl/lite/widget/script?id=183814"></script>
 <script>
 	new WOW().init();
 </script>
@@ -713,6 +729,10 @@
 		$( "#popup5" ).click(function() {
 			$(".popup").css("left","0");
 			$(".popup5").css("display","block");
+		});
+		$( "#popup6" ).click(function() {
+			$(".popup").css("left","0");
+			$(".popup6").css("display","block");
 		});
 		$( "#question" ).click(function() {
 			$(".popup").css("left","0");
@@ -854,7 +874,7 @@
 				$(".arrow_Up").css("opacity", 1)
 			}else if(positionY <= 200){
 				if (wid > 1200) {
-					$(".promoContent_menuButton").css("height", 100);
+					$(".promoContent_menuButton").css("height", 80);
 					$(".promoContent_menuButton img").css("opacity", 1);	
 				}
 				$(".arrow_Up").css("opacity", 0)
