@@ -2465,8 +2465,13 @@ p.circle_yellow{
 		width: 90%;
 	}
 	/* device */
+	.device_triangle_left_1,
+	.device_triangle_right_2,
+	.device_triangle_left_5{
+		display: none;
+	}
 	.device_img_mob{
-		left: 100px;
+		left: 15px;
 	}
 	.promoContent_info__up p{
 		font-size: 18px;
