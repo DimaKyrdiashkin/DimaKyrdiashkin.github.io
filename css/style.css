@@ -1573,7 +1573,7 @@ p.first{
 footer{
     height: 255px;
     width: 100%;
-    background: url(../img/Footer.png);
+    background: url(../img/index/Footer.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left center;
@@ -2597,7 +2597,7 @@ p.circle_yellow{
 		        align-items: center;
 	}
 	.footer_row__right{
-		background: url(../img/Footer2.png);
+		background: url(../img/index/Footer2.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		height: 160px;
