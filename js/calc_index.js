@@ -1,4 +1,151 @@
-(function($) {
+/* first */
+$("#c-income-slider").val(0.0001);
+		var min_income_for_pam = 500000;
+		var income_specify_step = 500;
+
+		let calc = {
+			defaults: {
+				interestSavings:{  	// накопительный процент в неделю
+					btc:  '1.75',
+					eth:  '2.09',
+					usdt: '2.08',
+				},
+				interestPam:{ 		// pam процент в неделю
+					btc:  '2.62',
+					eth:  '3.14',
+					usdt: '3.12',
+				},
+				// interestBright:{  	// стабильный процент в неделю только usdt
+				// 	6:  '33.8225578',
+				// 	12: '89.8298558',
+				// 	18: '169.2772786',
+				// 	24: '281.9749662',
+				// 	36: '668.6086792',
+				// 	60: '3012.046307',
+				// 	96: '26775.90303',
+				// },
+				currencyList: ['btc', 'eth', 'usdt'],
+				accountList: ['savings','pam'],
+				// periodStable:[6, 12, 18, 24, 36, 60, 96],   , 'stable'
+				minSum: 0.0001,				// минимальная сумма
+				maxSum: 100000000,		// максимальная сумма
+				minPam: 500000,			// минимальная сумма на счете pam
+			},
+
+			inArray: function(arr, elem) {
+			   	return arr.indexOf(elem) != -1;
+			},
+
+			isAccount: function(account){
+				return this.inArray(this.defaults.accountList, account);
+			},
+
+			isCurrency: function(currency){
+				return this.inArray(this.defaults.currencyList, currency);
+			},
+
+			// isPeriodStable: function(period){
+			// 	return this.inArray(this.defaults.periodStable, period);
+			// },
+
+			// getPeriodStable: function(){return this.defaults.periodStable;},
+
+			do: function(account, sum, term, currency, refill){
+				if(!this.isAccount(account)){
+					console.log('account name error, valid accounts: ',
+						this.defaults.accountList);
+					return;
+				}
+				// console.log(this.defaults.minSum);
+				// console.log($('#c-income-slider').val());
+				if($('#c-income-slider').val() < this.defaults.minSum || $('#c-income-slider').val() >
+				 this.defaults.maxSum){
+					console.log('error: sum not in range, min = '+
+						this.defaults.minSum+', max = '+this.defaults.maxSum);
+					return;
+				}
+				refill = refill || 0;
+				return this.roundPlus(this[account](sum, term, currency, refill), 2);
+			},
+
+			savings: function(sum, term, currency, refill){
+				if(!this.isCurrency(currency)){
+					console.log('currency name error, valid currency: ',
+						this.defaults.currencyList);
+					return;
+				}
+				let total = sum;
+				let interest = this.defaults.interestSavings[currency];
+				let income = sum * interest / 100;
+
+				let c = 1;
+				for (let i = 1; i <= term; i++) {
+					total += income;
+					income = total * interest / 100;
+					if(c == 4){
+						total += refill;
+						c = 1;
+					}
+					c++;
+				}
+				return total;
+			},
+
+			pam: function(sum, term, currency, refill){
+				if(!this.isCurrency(currency)){
+					console.log('currency name error, valid currency: ',
+						this.defaults.currencyList);
+					return;
+				}
+				if(sum < this.defaults.minPam){
+					console.log('error: min sum for pam = '+
+						this.defaults.minPam);
+
+					return;
+				}
+				let total = sum;
+				let interest = this.defaults.interestPam[currency];
+				let income = sum * interest / 100;
+
+				let c = 1;
+				for (let i = 1; i <= term; i++) {
+					total += income;
+					if(c == 4){
+						total += refill;
+						income = total * interest / 100;
+						c = 1;
+					}
+					c++;
+				}
+				return total;
+			},
+
+			// stable: function(sum, term){
+			// 	if(!this.isPeriodStable(term)){
+			// 		console.log('term error, valid terms: ',
+			// 			this.defaults.periodStable);
+			// 		return;
+			// 	}
+			// 	let total = sum;
+			// 	let interest = this.defaults.interestBright[term];
+			// 	let income = sum * interest / 100;
+			// 	return total + income;
+			// },
+
+			roundPlus: function(x, n) {
+				if(!$("#c-savings").prop("checked")){
+				    if(isNaN(x) || isNaN(n)) return 'round problem';
+				    var m = Math.pow(10,n);
+				    var r = Math.round(x*m)/m;
+				    return r.toFixed(n);
+				}else{
+					if(isNaN(x) || isNaN(n)) return 'round problem';
+				    return x;
+				};
+		    }
+		}
+	
+		$(function($) {
     $.fn.inputFilter = function(inputFilter) {
         return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function() {
             if (inputFilter(this.value)) {
@@ -376,8 +523,8 @@ $(function() {
         $(".c-info-field").addClass("close");
         $(".calc_select").addClass("open");
         $(".c-result-block-2").css("height", "15%");
-        $(".c-result-block-4").css("height", "15%");
-        $(".c-result-block-1, .c-result-block-3").css("margin-top", "10px");
+		$(".c-result-block-4").css("height", "15%");
+		$(".c-result-block-1, .c-result-block-3").css("margin-top", "10px");
         $(".c-result-block-3").css("display", "flex");
         $(".c-result-block-4").css("display", "flex");
         $("span.hr").css("display", "block");
@@ -408,8 +555,8 @@ $(function() {
         $(".c-info-field").removeClass("close");
         $(".calc_select").removeClass("open");
         $("#capotalization").attr("disabled", true);
-        $("#capotalization").prop("checked", false);
-        $(".c-result-block-1, .c-result-block-3").css("margin-top", "85px");
+		$("#capotalization").prop("checked", false);
+		$(".c-result-block-1, .c-result-block-3").css("margin-top", "85px");
         $(".c-result-block-2").css("height", "fit-content");
         $("span.hr").css("display", "none");
         $(".c-result-block-1 .c-primary-title").text("Ваш результат");
@@ -585,148 +732,3 @@ $(function() {
     });
 
 });
-$("#c-income-slider").val(0.0001);
-var min_income_for_pam = 500000;
-var income_specify_step = 500;
-
-let calc = {
-    defaults: {
-        interestSavings:{  	// накопительный процент в неделю
-            btc:  '1.75',
-            eth:  '2.09',
-            usdt: '2.08',
-        },
-        interestPam:{ 		// pam процент в неделю
-            btc:  '2.62',
-            eth:  '3.14',
-            usdt: '3.12',
-        },
-        // interestBright:{  	// стабильный процент в неделю только usdt
-        // 	6:  '33.8225578',
-        // 	12: '89.8298558',
-        // 	18: '169.2772786',
-        // 	24: '281.9749662',
-        // 	36: '668.6086792',
-        // 	60: '3012.046307',
-        // 	96: '26775.90303',
-        // },
-        currencyList: ['btc', 'eth', 'usdt'],
-        accountList: ['savings','pam'],
-        // periodStable:[6, 12, 18, 24, 36, 60, 96],   , 'stable'
-        minSum: 0.0001,				// минимальная сумма
-        maxSum: 100000000,		// максимальная сумма
-        minPam: 500000,			// минимальная сумма на счете pam
-    },
-
-    inArray: function(arr, elem) {
-        return arr.indexOf(elem) != -1;
-    },
-
-    isAccount: function(account){
-        return this.inArray(this.defaults.accountList, account);
-    },
-
-    isCurrency: function(currency){
-        return this.inArray(this.defaults.currencyList, currency);
-    },
-
-    // isPeriodStable: function(period){
-    // 	return this.inArray(this.defaults.periodStable, period);
-    // },
-
-    // getPeriodStable: function(){return this.defaults.periodStable;},
-
-    do: function(account, sum, term, currency, refill){
-        if(!this.isAccount(account)){
-            console.log('account name error, valid accounts: ',
-                this.defaults.accountList);
-            return;
-        }
-        // console.log(this.defaults.minSum);
-        // console.log($('#c-income-slider').val());
-        if($('#c-income-slider').val() < this.defaults.minSum || $('#c-income-slider').val() >
-            this.defaults.maxSum){
-            console.log('error: sum not in range, min = '+
-                this.defaults.minSum+', max = '+this.defaults.maxSum);
-            return;
-        }
-        refill = refill || 0;
-        return this.roundPlus(this[account](sum, term, currency, refill), 2);
-    },
-
-    savings: function(sum, term, currency, refill){
-        if(!this.isCurrency(currency)){
-            console.log('currency name error, valid currency: ',
-                this.defaults.currencyList);
-            return;
-        }
-        let total = sum;
-        let interest = this.defaults.interestSavings[currency];
-        let income = sum * interest / 100;
-
-        let c = 1;
-        for (let i = 1; i <= term; i++) {
-            total += income;
-            income = total * interest / 100;
-            if(c == 4){
-                total += refill;
-                c = 1;
-            }
-            c++;
-        }
-        return total;
-    },
-
-    pam: function(sum, term, currency, refill){
-        if(!this.isCurrency(currency)){
-            console.log('currency name error, valid currency: ',
-                this.defaults.currencyList);
-            return;
-        }
-        if(sum < this.defaults.minPam){
-            console.log('error: min sum for pam = '+
-                this.defaults.minPam);
-
-            return;
-        }
-        let total = sum;
-        let interest = this.defaults.interestPam[currency];
-        let income = sum * interest / 100;
-
-        let c = 1;
-        for (let i = 1; i <= term; i++) {
-            total += income;
-            if(c == 4){
-                total += refill;
-                income = total * interest / 100;
-                c = 1;
-            }
-            c++;
-        }
-        return total;
-    },
-
-    // stable: function(sum, term){
-    // 	if(!this.isPeriodStable(term)){
-    // 		console.log('term error, valid terms: ',
-    // 			this.defaults.periodStable);
-    // 		return;
-    // 	}
-    // 	let total = sum;
-    // 	let interest = this.defaults.interestBright[term];
-    // 	let income = sum * interest / 100;
-    // 	return total + income;
-    // },
-
-    roundPlus: function(x, n) {
-        if(!$("#c-savings").prop("checked")){
-            if(isNaN(x) || isNaN(n)) return 'round problem';
-            var m = Math.pow(10,n);
-            var r = Math.round(x*m)/m;
-            return r.toFixed(n);
-        }else{
-            if(isNaN(x) || isNaN(n)) return 'round problem';
-            return x;
-        };
-    }
-}
