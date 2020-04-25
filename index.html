@@ -5,10 +5,11 @@
 	<title>Инвестционная компания Amir Capitel - Главная страница</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/calc_home_d.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/menu&footer.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Russo+One&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<link rel="stylesheet" href="css/animate.css">
 	<script type="text/javascript" src="js/wow.min.js"></script>
 	<meta name="viewport" content="width=device-width">
 	</head>
@@ -31,14 +32,14 @@
 						<a href="" class="logOut hide">Вход</a>
 					</div>
 					<ul class="hide">
-						<li>главная</li>
-						<li>продукты</li>
-						<li>amir partners</li>
-						<li>sunrise program</li>
-						<li>sollar gifts</li>
-						<li>амбассадоры</li>
-						<li>amir pro</li>
-						<li>галерея</li>
+						<li><a href="index.html">главная</a></li>
+						<li><a href="bright.html">brigth</a></li>
+						<li><a href="wallet.html">amir wallet</a></li>
+						<li><a href="">sunrise program</a></li>
+						<li><a href="">sollar gifts</a></li>
+						<li><a href="">амбассадоры</a></li>
+						<li><a href="">amir pro</a></li>
+						<li><a href="">галерея</a></li>
 					</ul>
 					<div class="licens hide">
 						<p>лицензия</p>
@@ -1274,6 +1275,8 @@
 				</div>
 			</footer>
 		</div>
+	<script src="js/menu.js"></script>
+	<script src="js/calc_index.js"></script>
 	<script>
 		new WOW().init();
 		/*! rangeslider.js - v2.3.0 | (c) 2016 @andreruffert | MIT license | https://github.com/andreruffert/rangeslider.js */
@@ -2029,44 +2032,6 @@ $(function() {
   				$(event.target).parents(".month_head").siblings(".week, .day, .eventDesc").toggleClass("opacity_calendar");
 			}, 300);
 		});
-				 //menu
-				 let click = false;
-		$(".menu_button").on("click", function(even){
-			console.log();
-			if(document.documentElement.clientWidth > 480){
-				if(!click){
-					$(".menu_button").addClass("isFlip");
-					$(".menu").addClass("menu_open");
-					$("header").delay(1000).addClass("menu_open", 1000);
-					$(".menu ul, .menu a, .licens").delay(2000).removeClass("hide", 1000);
-					setTimeout(function(){click = true;}, 3000);
-				}else{
-					$(".menu ul, .menu a, .licens").addClass("hide", 1000);
-					$("header").delay(1000).removeClass("menu_open", 1000);
-					$(".menu").delay(2000).removeClass("menu_open", 1000);
-					$(".menu_button").delay(2000).removeClass("isFlip", 1000);
-					setTimeout(function(){click = false;}, 3000);
-				};
-			}else{
-				if(!click){
-					$(".menu_button").addClass("isFlip");
-					$(".menu_button").delay(1000).addClass("isFlip_right",1000);
-					$(".menu").addClass("menu_open");
-					$("header").delay(1000).addClass("menu_open", 1000);
-					$(".menu ul, .menu a, .licens").delay(2000).removeClass("hide", 1000);
-					setTimeout(function(){click = true;}, 3000);
-				}else{
-					$(".menu ul, .menu a, .licens").addClass("hide", 1000);
-					$(".menu_button").delay(1000).removeClass("isFlip_right",1000);
-					$(".menu_button").delay(1000).removeClass("isFlip", 1000);
-					$("header").delay(2000).removeClass("menu_open", 1000);
-					$(".menu").delay(3000).removeClass("menu_open", 1000);
-					setTimeout(function(){click = false;}, 3000);
-				};
-			};
-			
-		});
-		//menu/
 
 		$(".arrow_calendar__left").click(function(event){
 			let a = $(event.target).parents(".month").attr('class');
