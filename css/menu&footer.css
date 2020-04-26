@@ -196,8 +196,9 @@ header.menu_open{
 /* footer */
 footer{
     height: 255px;
-    width: 100%;
-    background: url(../img/index/Footer.png);
+	width: 100%;
+	background: #06338B;
+    /* background: url(../img/index/Footer.png); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left center;
@@ -229,6 +230,7 @@ footer{
 	max-width: 1400px;
 	width: 100%;
 	margin-left: 10%;
+	z-index: 1;
 }
 .footer_row__left{
 	display: -webkit-box;
@@ -275,12 +277,22 @@ footer{
 	height: 45%;
 	background: #263F98;
 }
+.footer_img{
+	z-index: 0;
+    background: url(../img/index/footer_right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 255px;
+    width: 40vw;
+    position: absolute;
+    right: 0;
+}
 .footer_row__right{
 	max-width: 285px;
 	width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+	display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -317,6 +329,9 @@ footer{
 }
 /* /footer */
 @media (max-width: 1440px) {
+	.footer_img{
+		width: 45vw;
+	}
     .footer_row{
 		margin-left: 0;
 	}
@@ -333,14 +348,26 @@ footer{
 		left: 49%;
 		top: 7%;
 	}
+	.footer_left__column{
+		margin: 0 30px;
+	}
 }
 @media (max-width: 1199px) {
     .footer_row__left{
-		margin-left: 5%;
 		width: 55%;
 	}
 	.footer_row__right{
-		margin-right: 5%;
+		margin-right: 0%;
+	}
+	.footer_row__right h3{
+		font-size: 22px;
+	}
+	.soc_icon img{
+		height: 30px;
+		width: 30px;
+	}
+	.footer_row__right .info{
+		font-size: 22px;
 	}
 }
 @media (max-width: 992px) {
@@ -359,7 +386,7 @@ footer{
 		width: 60%;
 	}
 	.footer_row__right{
-		margin-right: 5%;
+		max-width: 250px;
 	}
 	.soc_icon{
 		width: 200px;
@@ -367,6 +394,9 @@ footer{
 	.soc_icon img{
 		width: 30px;
 		height: 30px;
+	}
+	.footer_left__column{
+		margin: 0 25px;
 	}
 }
 @media (max-width: 768px) {
@@ -415,6 +445,9 @@ footer{
     .verHr{
 		display: none;
 	}
+	.footer_img{
+		display: none;
+	}
 	.footer_row{
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
@@ -444,7 +477,7 @@ footer{
 		display: -ms-flexbox;
 		display: flex;
 		height: 215px;
-		width: 70%;
+		width: 75%;
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
