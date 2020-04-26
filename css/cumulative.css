@@ -1,8 +1,4 @@
-
-
-
 /* home */
-
 .home{
     overflow: hidden;
     position: relative;
@@ -12,7 +8,6 @@
     max-width: 1080px;
     margin: auto;
 }
-
 .home video{
     position: absolute;
     z-index: 2;
@@ -23,7 +18,6 @@
 .home_videoTabl,.home_videoMob{
     display: none;
 }
-
 .home .container{
     position: relative;
     z-index: 4;
@@ -32,13 +26,11 @@
     flex-direction: column;
     display: flex;
 }
-
 .home_logo{
     max-width: 480px;
     width: 80%;
     margin: 60px auto;
 }
-
 .home_h1{
     font-family: "Futura Md BT", sans-serif;
     max-width: 540px;
@@ -48,13 +40,8 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
 /* /home */
-
-
-
 /* cumulative */
-
 .cumulative{
     margin-top: 50px;
     min-height: 1273px;
@@ -71,15 +58,12 @@
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
-
 }
-
 .cumulative .container{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-
 .cumulative_h2{
     text-align: center;
     margin: auto;
@@ -94,12 +78,11 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 50px;
 }
-
 .cumulative_item{
     display: flex;
 }
-
 .cumulative_item_text{
     cursor: default;
     transition: .7s;
@@ -113,7 +96,6 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
 }
-
 .cumulative_item_text span{
     transition: .4s;
     font-family: "Futura Md BT", sans-serif;
@@ -128,17 +110,13 @@
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
-
 }
-
 .st_1{
     align-items: flex-end;
 }
-
 .st_1_img{
     width: 280px;
 }
-
 .st_1_text{
     margin-left: 90px;
     padding: 20px 90px 30px 60px;
@@ -150,15 +128,12 @@
     top: 50%;
     left: -5%;
 }
-
-
 .st_2{
     margin-right: 79px;
     align-items: center;
     align-self: flex-end;
     margin-top: 36px;
 }
-
 .st_2_img{
     width: 280px;
 }
@@ -174,18 +149,15 @@
     top: 50%;
     right: -5%;
 }
-
 .st_3{
     margin-top: -2%;
     margin-left: 7%;
     align-items: flex-end;
     align-self: flex-start;
 }
-
 .st_3_img{
     width: 200px;
 }
-
 .st_3_text{
     margin-left: 75px;
     padding: 21px 30px 34px 60px;
@@ -197,18 +169,15 @@
     top: 50%;
     left: -5%;
 }
-
 .st_4{
     margin-top: 50px;
     margin-right: 86px;
     align-items: center;
     align-self: flex-end;
 }
-
 .st_4_img{
     width: 245px;
 }
-
 .st_4_text{
     margin-right: 90px;
     padding: 20px 30px 35px 60px;
@@ -220,8 +189,6 @@
     top: 50%;
     right: -5%;
 }
-
-
 .cumulative_item:hover .cumulative_item_text{
     background: #3881C5;
     color: #FFFFFF;
@@ -230,14 +197,9 @@
 .cumulative_item:hover span{
     background: radial-gradient(100% 154.31% at 0% 4.2%, #045AA9 0%, #2B8CE6 100%);
     box-shadow: 3px 4px 10px rgba(106, 36, 255, 0.14), -5px -7px 10px rgba(20, 156, 255, 0.28);
-
 }
-
-
 /* /cumulative */
-
 /* cumulativeFooter*/
-
 .cumulativeFooter{
     position: relative;
     padding-top: 73px;
@@ -261,11 +223,10 @@
     flex-flow: row wrap;
     justify-content: space-between;
     width: 100%;
-
 }
 .cumulativeFooter_item{
     height: 276px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
@@ -283,7 +244,6 @@
     letter-spacing: 0.05em;
     color: #444444;
 }
-
 .cumulativeFooter_item_imgT:after,.cumulativeFooter_item_imgT:before,.cumulativeFooter_item:before, .cumulativeFooter_item:after{
     position: absolute;
     content: "";
@@ -308,18 +268,18 @@
     bottom: 20px;
     right: 20px;
 }
-
 .cumulativeFooter_item_imgT__i{
-    width: 50px;
-    margin-bottom: 15px;
+    width: 60px;
+    margin-top: -30px;
+    margin-bottom: 30px;
     padding: 3px;
     border-radius: 50%;
     background: linear-gradient(180deg, #E3E3E3 0%, #FFFFFF 100.16%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .cumulativeFooter_t_1 > img{
     width: 58px;
 }
-
 .cumulativeFooter_t_2 > img{
     width: 62px;
 }
@@ -329,7 +289,6 @@
 .cumulativeFooter_t_4 > img{
     width: 62px;
 }
-
 .cumulativeFooter_circle{
     animation-direction: alternate;
     animation: device_bg 7s cubic-bezier(0.4, 0.02, 0.5, 0.98) reverse infinite;
@@ -361,7 +320,6 @@
     animation-direction: alternate;
 }
 .cumulativeFooter_cross2{
-
     left: 53px;
     bottom: 124px;
     width: 20px;
@@ -375,10 +333,6 @@
     width: 38px;
     animation: device_bg_5 7s cubic-bezier(0.4, 0.02, 0.5, 0.98) reverse infinite;
 }
-
-
-
-
 @keyframes device_bg {
     25%{
         transform: translateX(-25px) translateY(0px);
@@ -440,16 +394,12 @@
         transform:  translateY(0);
     }
 }
-
-
-
 /* /cumulativeFooter*/
 
 /* calc_cum */
 .calc_head{
     margin-top: 16px;
 }
-
 .calc_cum{
     position: relative;
 }
@@ -460,13 +410,8 @@
     z-index: -1;
     right: 40px;
 }
-
-
-
 /* /calc_cum */
-
 /* video */
-
 .video{
     background-image: url(./../img/cumulative/video_bg.png);
     background-size: contain;
@@ -479,32 +424,32 @@
     height: 500px;
     width: 90%;
     margin: auto;
-
     background: #C4C4C4;
     border-radius: 25px;
 }
-
-
 /* /video */
-
 .profitability{
     background-color: #0A4DB4;
     margin-top: 0!important;
 }
-
-
-
+@media (max-width: 1900px){
+    .cumulativePlane{
+        background-size: cover;
+    }
+}
 @media (max-width: 1440px) {
     .cumulativePlane{
         background-size: cover;
     }
 }
+
 /* Portrait tablets and medium desktops */
 @media (max-width: 1199px) {
     .home video{
         left: 27%;
     }
 }
+
 @media (max-width: 1016px){
     .container{
         width: 90%;
@@ -540,7 +485,6 @@
     .cumulative_item_text span{
         left: -4%!important;
     }
-
     .cumulativeFooter_items{
         justify-content: space-around;
     }
@@ -548,12 +492,8 @@
         margin-left: 10px;
         margin-right: 10px;
     }
-
 }
-/* Portrait tablets and small desktops */
-@media (max-width: 991px) {
 
-}
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
     .home .container{
@@ -598,7 +538,6 @@
     .calc_cum_video{
         display: none;
     }
-
 }
 
 @media (max-width: 535px) {

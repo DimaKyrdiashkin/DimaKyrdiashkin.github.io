@@ -223,10 +223,6 @@ if( window.innerWidth > 589){
     $('.contentBlockOne_row__element').removeClass('wow');
 }
 
-
-
-
-
 // slider
 
 // slider contentBlockOne_row
