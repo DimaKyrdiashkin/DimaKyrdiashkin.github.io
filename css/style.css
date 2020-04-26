@@ -1895,7 +1895,7 @@ p.circle_yellow{
 .device_img_mob{
 	display: block;
 	position: absolute;
-	width: 160px;
+	width: 30%;
 	left: 0;
 	top: 65px;
 }
