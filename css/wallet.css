@@ -555,46 +555,37 @@
 	.down_right_img_ul_u{
 		margin-left: 10%;
 	}
-	/* /appendix 991*/
+	/* /appendix */
 }
-
-
 @media (max-width: 835px) {
 	.home_textVideo{
 		padding-top: 49%;
 	}
 }
-
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-
-
-	/* home 767 */
-
+@media (max-width: 768px) {
+	/* home */
 	.home video{
 		height: 100%;
 		width: auto;
 		top: 0;
 	}
-
 	.home_textVideo{
 		padding-top: 100%;
 	}
-
-	/* /home 767 */
-
-
-	/* appendix 767*/
+	/* /home */
+	/* appendix */
 	.appendix video{
 		width: 100%;
 	}
 	.appendix_text_item_text{
-		font-size: 12px;
+		font-size: 14px;
 	}
-
-	/* /appendix 767*/
-
-	/* down 767*/
+	/* /appendix */
+	/* down */
+	.down{
+		background-position-y: -100px;
+	}
 	.down_left{
 		margin-top: 40px;
 	}
@@ -607,6 +598,7 @@
 	.down_right_img_ul_u{
 		width: 100%;
 		flex-direction: column;
+		margin-left: 0;
 	}
 	.down_right_img_ul_u a{
 		color: #fff;
@@ -636,17 +628,9 @@
 	.down_and_ios a{
 		max-width: none;
 	}
-	/* /down 767*/
+	/* /down */
 }
-
-
-@media (max-width: 700px) {
-
-}
-
-/* Landscape phones and smaller */
 @media (max-width: 480px) {
-
 	.home{
 		min-height: 0;
 	}
@@ -676,31 +660,33 @@
 	.home_text_video_text_footer{
 		margin-bottom: 23px;
 	}
-	/* appendix 480*/
-
-
+	/* appendix */
+	.appendix .container{
+		margin: 30px auto 35px;
+	}
 	.appendix_text_itemsFooter{
 		justify-content: space-between;
+		max-width: 330px;
 	}
 	.appendix_text_itemFooter{
 		margin-left: 0;
-		width: 103px;
-		height: 103px;
-		padding: 6px 6px 22px 15px ;
-
+		width: 90px;
+		height: 90px;
+		padding: 6px 3px 0px 12px;
 	}
 	.appendix_text_item_img{
-		padding: 20px 23px 20px;
+		padding: 30px 22px;
 	}
-
 	.appendix_text_itemFooter, .appendix_text_item{
 		border-radius: 15px;
 	}
 	.appendix_text_item:last-child .appendix_text_item_img{
-		padding: 26px 17px;
+		padding: 42px 17px;
 	}
 	.appendix_text_item_text{
-		margin: 0 0 0 10px;
+		margin: 20px 0 20px 10px;
+		max-width: 350px;
+		font-size: 12px;
 	}
 	.appendix_text_itemFooter_text_img{
 		margin: 6px 4px 21px;
@@ -719,21 +705,26 @@
 	.appendix_text_item:last-child img{
 		width: 38px;
 	}
-	/* /appendix 480*/
-
-
-	/* down_h 480*/
-
+	.appendix_text{
+		padding: 0 10px;
+	}
+	.appendix_text_item:last-child .appendix_text_item_text{
+		margin: 20px 0 20px 10px;
+	}
+	/* /appendix */
+	/* down_h */
 	.down_h{
 		font-size: 24px;
 	}
 	.down_left, .down_right{
 		width: 100%;
 	}
-
-	/* /down_h 480*/
-
-	/* tree 480*/
+	.down_right_img_ul,
+	.down_and_ios{
+		padding: 0 10px;
+	}
+	/* /down_h */
+	/* tree */
 	.tree_text{
 		width: 100%;
 	}
