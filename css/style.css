@@ -241,7 +241,7 @@ h1{
 	font-size: 42px;
 	font-weight: bold;
 }
-.green{
+.circle_element.green{
 	border: 3px solid #67CA7C;
 }
 .green span{
@@ -253,7 +253,7 @@ h1{
 .orange span{
 	color: #FD965C;
 }
-.blue{
+.circle_element.blue{
 	border: 3px solid #68B8F2;
 	width: 180px;
 	height: 180px;
@@ -261,7 +261,7 @@ h1{
 .blue span{
 	color: #90C2F0;
 }
-.purple{
+.circle_element.purple{
 	border: 3px solid #B568B7;
 	width: 180px;
 	height: 180px;
