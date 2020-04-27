@@ -203,7 +203,7 @@
 .cumulativeFooter{
     position: relative;
     padding-top: 73px;
-    padding-bottom: 178px;
+    padding-bottom: 140px;
     background-image: url(../img/cumulative/cumulative_2_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -430,7 +430,7 @@
 /* /video */
 .profitability{
     background-color: #0A4DB4;
-    margin-top: 0!important;
+    margin-top: -3px !important;
 }
 @media (max-width: 1900px){
     .cumulativePlane{
@@ -495,7 +495,7 @@
 }
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .home .container{
         height: 100%;
         flex-direction: column;
@@ -503,8 +503,8 @@
     }
     .home_h1{
         margin-bottom: 50px;
-        font-size: 16px;
-        line-height: 19px
+        font-size: 36px;
+        text-align: center;
     }
     .home_logo{
         margin-top: 44px;
@@ -523,17 +523,21 @@
     .cumulative_item_text{
         border-radius: 15px;
         width: 90%;
+        max-width: 450px;
         font-size: 14px;
         padding: 15px 30px;
+    }
+    .cumulative_item_text p{
+        max-width: none;
     }
     .cumulative_item img{
         width: 73%;
     }
     .cumulative_item_text span{
-        width: 28px;
-        height: 28px;
+        width: 40px;
+        height: 40px;
         border: 2px solid #A8D5FF;
-        font-size: 10px;
+        font-size: 14px;
     }
     .calc_cum_video{
         display: none;
@@ -567,11 +571,13 @@
         font-size: 24px;
         line-height: 29px;
     }
-}
-
-@media (max-width: 428px) {
-    .home video{
-        height: 100%;
-        width: auto;
+    .cumulative_items{
+        padding: 0 15px;
+    }
+    .cumulative_item_text p{
+        font-size: 14px;
+    }
+    .cumulative_item_text span{
+        left: -6% !important;
     }
 }
