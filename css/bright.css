@@ -1,11 +1,3 @@
-.wrapper{
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.promoContent{
-	width: 100%;
-}
 /* home */
 .promoContent_info__up img{
 	width: 450px;
@@ -28,15 +20,16 @@
 }
 .dream{
 	display: flex;
-	width: 100%;
+	max-width: 1600px;
 	justify-content: center;
+	margin: 0 auto;
 	padding: 120px 0;
-	background: linear-gradient(122.89deg, #FFFFFF 0.26%, #B3C8F2 100.31%);
+	border-bottom: 1px solid #000;
 }
 .dream_row{
 	display: flex;
-	max-width: 1600px;
-
+	justify-content: space-between;
+	width: 100%;
 }
 .dream_row__left-head{
 	font-family: 'Futura Md BT', sans-serif;
@@ -60,13 +53,14 @@
 }
 .dream_content-element__img{
 	background: #0A4DB4;
-	width: 50px;
+	max-width: 50px;
 	height: 80px;
 	margin-left: 20px;
 	border-radius: 0px 0px 7px 7px;
 	display: flex;
     justify-content: center;
-    align-items: center;
+	align-items: center;
+	padding: 20px;
 }
 .vertHr{
 	width: 1px;
@@ -133,8 +127,7 @@
 	border-radius: 30px;
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	height: 450px;
-	align-self: flex-end;
-	margin: 0 100px;
+    align-self: flex-end;
 }
 .dream_row__middle>img{
 	width: 100%;
@@ -158,3 +151,36 @@
 	margin-right: 15px;
 }
 /* /dream */
+/* payOut */
+.payOut{
+	background: linear-gradient(232.47deg, #DDE9FF 0%, #E9E9E9 100%);
+	display: flex;
+	justify-content: center;
+	padding: 30px 0 80px 0;
+}
+.payOut_row{
+	display: flex;
+	justify-content: space-between;
+	max-width: 1575px;
+	max-height: 370px;
+}
+.payOut_row__left{
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.payOut_row__left>h2{
+	font-family: 'Futura Md BT', sans-serif;
+	font-size: 48px;
+	color: #0050C9;
+	width: 100%;
+}
+.payOut_row__left-block{
+	border: 1px solid #3062C3;
+	border-radius: 25px;
+}
+.payOut_row__right img{
+	max-width: 550px;
+}
+/* /payOut */
