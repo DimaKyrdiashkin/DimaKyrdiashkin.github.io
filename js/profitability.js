@@ -366,8 +366,9 @@ function parallax_device() {
     let h = window.pageYOffset + window.innerHeight/2;
     // console.log("center w",h);
     // console.log("block - cen/2 ",parallax_deviceBlockEl);
-    if(h>=parallax_deviceBlockEl){
-        let n = (h-parallax_deviceBlockEl)/4 - 100;
+    n = (h-parallax_deviceBlockEl)/4 - 100;
+    if(h>=parallax_deviceBlockEl && n<=110){
+        // let n = (h-parallax_deviceBlockEl)/4 - 100;
         // let i = -102;
         // console.log($(".device .container").css("top"));
         // for(i ; i<=n ;i++){

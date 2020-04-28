@@ -455,7 +455,7 @@ ul{
 	z-index: 5;
 	position: relative;
 	border-top: 10px solid #fff;
-	margin:  0 0 -1px;
+	margin:  10px 0 -1px;
 	background-color: #06338B;
 }
 
@@ -2333,6 +2333,7 @@ p.circle_yellow{
 		margin-top: 20px;
 	}
 	.contentBlockTwo_row__element{
+		height: 600px;
 		width: 270px;
 		margin: 20px 0;
 		border-radius: 15px;
@@ -2360,6 +2361,9 @@ p.circle_yellow{
 	}
 	
 	/* device 480*/
+	.container{
+		padding-top: 30px;
+	}
 	.device{
 		background: none;
 		padding-bottom: 30px;
