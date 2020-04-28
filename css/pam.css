@@ -1040,6 +1040,8 @@ z-index: 10;
 }
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {
+
+    /* pam */
     .pam{
         background-image: url(./../img/pam/sec_2bg_mob.png);
 
@@ -1108,6 +1110,9 @@ z-index: 10;
     .pam_s4 .pam_item_imgText_text_header{
         margin-left: 0;
     }
+
+    /* /pam */
+
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
@@ -1129,26 +1134,14 @@ z-index: 10;
 }
 
 @media (max-width: 480px) {
+
+    /* home 480 */
+
     .home video{
         left: -49%;
     }
-    /*video.home_videoTabl{*/
-    /*    display: none;*/
-    /*}*/
-    /*.home video{*/
-    /*    height: auto;*/
-    /*    width: 100%;*/
-    /*    left: 0;*/
-    /*    transform: none;*/
-    /*}*/
-    /*.home_videoMob{*/
-    /*    display: block;*/
-    /*}*/
-    /*.home_h1{*/
-    /*    font-size: 16px;*/
-    /*    line-height: 19px;*/
-    /*}*/
 
+    /* /home 480 */
 
     /* pam 480 */
 
@@ -1184,10 +1177,13 @@ z-index: 10;
     }
     /* /pam 480 */
 
+    /* contentBlockTwo 480 */
+
     .contentBlockTwo{
         margin-top: 10px;
     }
 
+    /* /contentBlockTwo 480 */
 
 }
 
