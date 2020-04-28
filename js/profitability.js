@@ -362,12 +362,20 @@ $(function() {
 // parallax
 const parallax_deviceBlockEl = $("#parallax_deviceBlock").offset().top;
 function parallax_device() {
-    let h = window.pageYOffset + window.innerHeight;
-    if(h>=parallax_deviceBlockEl -10){
-        parallax_deviceBlock.classList.add("active")
+    let h = window.pageYOffset + window.innerHeight/2;
+    // console.log("center w",h);
+    // console.log("block - cen/2 ",parallax_deviceBlockEl);
+    if(h>=parallax_deviceBlockEl){
+        let n = (h-parallax_deviceBlockEl)/4;
+        // let i = -102;
+        console.log($("section.device .container").css("top"));
+        // for(i ; i<=n ;i++){
+        $("section.device .container").css({top: `${parseInt(n)}px`})
+        // }
+        // if(n<=102)$("section.device").css({paddingTop: `${parseInt(n)}px`})
     }
     else{
-        parallax_deviceBlock.classList.remove("active")
+        $("section.device").css({paddingTop: `0px`})
     }
 }
 

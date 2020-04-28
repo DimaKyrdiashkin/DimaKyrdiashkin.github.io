@@ -193,8 +193,10 @@ header.menu_open{
 	text-transform: uppercase;
 }
 /* /menu */
+
 /* footer */
 footer{
+	border-top: 10px solid #fff;
     height: 255px;
 	width: 100%;
 	background: #06338B;
