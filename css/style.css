@@ -28,6 +28,9 @@ h1{
 	    -ms-user-select: none;
 	        user-select: none;
 }
+section{
+	width: 100%;
+}
 .wrapper{
 	overflow: hidden;
 	width: 100%;
