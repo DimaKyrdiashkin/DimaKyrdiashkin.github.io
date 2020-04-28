@@ -303,6 +303,7 @@ section{
 /*contentBlockTwo*/
 .contentBlockTwo{
 	position: relative;
+	border-bottom: 10px solid #fff;
 	z-index: 5;
 	background-color: #fff;
 	background-image: url(./../img/index/ideal_bg.png);
@@ -453,7 +454,8 @@ ul{
 .profitability{
 	z-index: 5;
 	position: relative;
-	margin: 10px 0 -1px;
+	border-top: 10px solid #fff;
+	margin:  0 0 -1px;
 	background-color: #06338B;
 }
 
@@ -859,7 +861,6 @@ ul{
 	padding-bottom: 111px;
 	background: -o-radial-gradient(0% 0%, 98.31% 100%, #FFFFFF 0%, #D1FFF7 100%);
 	background: radial-gradient(98.31% 100% at 0% 0%, #FFFFFF 0%, #D1FFF7 100%);
-	margin-top: 10px;
 }
 
 .device>img{
@@ -873,7 +874,6 @@ ul{
 	width: 300px;
 	animation: device_bg 7s cubic-bezier(0.4, 0.02, 0.5, 0.98) reverse infinite;
 }
-
 .device_triangle_left_2{
 	bottom: 288px;
 	left: 212px;
@@ -932,11 +932,8 @@ ul{
 	animation: device_bg_5 7s cubic-bezier(0.4, 0.02, 0.5, 0.98) reverse infinite;
 }
 
-
-
 .device .container{
 	top: -102px;
-	transition: .7s;
 	position: relative;
 	z-index: 4;
 	margin: auto;
@@ -1130,21 +1127,7 @@ ul{
 }
 
 
-/* parallax */
-.device_parallax{
-	/*min-height: 10vh;*/
-	/*width: 100%;*/
-}
-.parallax.active{
-	position: fixed;
-	top: 0;
-	height: 100vh;
-	width: 100%;
-}
-.parallax.active .device{
-	height: 100vh;
-}
-/* /parallax */
+
 
 
 
