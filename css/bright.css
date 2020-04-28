@@ -1,3 +1,11 @@
+.wrapper{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.promoContent{
+	width: 100%;
+}
 /* home */
 .promoContent_info__up img{
 	width: 450px;
@@ -20,15 +28,15 @@
 }
 .dream{
 	display: flex;
-	max-width: 1600px;
+	width: 100%;
 	justify-content: center;
-	margin: 0 auto;
-	padding: 200px 0;
+	padding: 120px 0;
+	background: linear-gradient(122.89deg, #FFFFFF 0.26%, #B3C8F2 100.31%);
 }
 .dream_row{
 	display: flex;
-	justify-content: space-between;
-	width: 100%;
+	max-width: 1600px;
+
 }
 .dream_row__left-head{
 	font-family: 'Futura Md BT', sans-serif;
@@ -46,8 +54,9 @@
 .dream_content-element{
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 15px;
-	height: 115px;
 	position: relative;
+	display: flex;
+	max-width: 440px;
 }
 .dream_content-element__img{
 	background: #0A4DB4;
@@ -102,6 +111,18 @@
 	background: #DEB8B8;
 	border-radius: 50%;
 }
+.dream_content-element_text h2{
+	font-size: 24px;
+	color: #F26A08;
+	line-height: 29px;
+	margin-bottom: 15px;
+}
+.dream_content-element_text p{
+	line-height: 20px;
+}
+.dream_content-element_text{
+	padding: 15px 95px 15px 30px;
+}
 .dream_row__middle{
 	background: #2C78D4;
 	max-width: 450px;
@@ -111,9 +132,13 @@
 	justify-content: space-between;
 	border-radius: 30px;
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	height: 450px;
+	align-self: flex-end;
+	margin: 0 100px;
 }
 .dream_row__middle>img{
 	width: 100%;
+	margin-top: -50px;
 }
 .dream_row__middle-ul{
 	background: #fff;
@@ -121,7 +146,7 @@
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 30px;
 	padding: 5px 25px;
-	margin-top: -100px;
+	margin-top: -50px;
 }
 .dream_row__middle-ul li{
 	font-weight: bold;
