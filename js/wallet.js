@@ -3,7 +3,7 @@ $(function() {
     setTimeout(() => {
         $(".second_video").css("display", "none");
         $('.first_video').trigger('play');
-    }, 2100);
+    }, 2200);
 });
 
 
