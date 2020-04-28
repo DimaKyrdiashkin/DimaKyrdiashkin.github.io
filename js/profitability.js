@@ -285,8 +285,10 @@ document.querySelector(".contentBlockTwo_row").addEventListener("touchend", func
 
 
 //profitability
+
 let offset = $(".profitability_right_static").offset();
-$(window).on("scroll", function(){
+$(window).on("scroll", () => {
+    parallax_device();
     if($(document).scrollTop() > offset.top - 400){
         if(!$(".profitability_right_static").hasClass("clear_open")){
             $(".profitability_right_static_usdt").addClass("slide_profitability", 500);
@@ -355,3 +357,18 @@ $(function() {
 });
 
 // /video
+
+
+// parallax
+const parallax_deviceBlockEl = $("#parallax_deviceBlock").offset().top;
+function parallax_device() {
+    let h = window.pageYOffset + window.innerHeight;
+    if(h>=parallax_deviceBlockEl -10){
+        parallax_deviceBlock.classList.add("active")
+    }
+    else{
+        parallax_deviceBlock.classList.remove("active")
+    }
+}
+
+// /parallax
