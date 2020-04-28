@@ -205,7 +205,6 @@ window.addEventListener("resize", ()=>{
             li.innerHTML= key;
             static_mounts.append(li);
         }
-        $('.contentBlockOne_row__element').removeClass('wow');
     }
 });
 if( window.innerWidth > 589){
@@ -220,7 +219,6 @@ if( window.innerWidth > 589){
         li.innerHTML= key;
         static_mounts.append(li);
     }
-    $('.contentBlockOne_row__element').removeClass('wow');
 }
 
 // slider
