@@ -24,7 +24,6 @@
 	justify-content: center;
 	margin: 0 auto;
 	padding: 120px 0;
-	border-bottom: 1px solid #000;
 }
 .dream_row{
 	display: flex;
@@ -168,7 +167,9 @@
 	display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-end;
+	align-items: flex-end;
+	max-width: 910px;
+	margin-right: 100px;
 }
 .payOut_row__left>h2{
 	font-family: 'Futura Md BT', sans-serif;
@@ -179,8 +180,25 @@
 .payOut_row__left-block{
 	border: 1px solid #3062C3;
 	border-radius: 25px;
+	max-width: 445px;
+	height: 150px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	text-align: center;
+	padding: 30px 40px;
 }
 .payOut_row__right img{
 	max-width: 550px;
+}
+.payOut_row__left-block>h2{
+	text-align: center;
+	margin-bottom: 30px;
+	color: #F26A08;
+	font-size: 28px;
+	font-family: 'Futura Md BT', sans-serif;
+}
+.payOut_row__left-block{
+	font-weight: bold;
 }
 /* /payOut */

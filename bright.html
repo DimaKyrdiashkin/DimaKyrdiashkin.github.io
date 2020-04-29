@@ -381,5 +381,14 @@
 	</script>
 	<script src="js/menu.js"></script>
 	<script src="js/calc_index.js"></script>
+	<script>
+		$(function() {
+			$(".second_video").trigger('play');
+			setTimeout(function() {
+				$(".second_video").css("display", "none");
+				$('.first_video').trigger('play');
+			}, 2100);
+		});
+	</script>
 	</body>
 </html>
