@@ -245,3 +245,165 @@
 	margin-top: 30px;
 }
 /* /education */
+/* millionaires */
+
+.millionaires{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	padding: 86px 0 100px;
+	min-height: 1500px;
+	background-color: #003581;
+}
+.millionaires_h2{
+	font-family: "Futura Md BT", sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 58px;
+	text-align: center;
+	color: #FFFFFF;
+	max-width: 613px;
+}
+.millionaires_people{
+	position: absolute;
+	z-index: 2;
+	height: 80%;
+	bottom: 0;
+}
+.millionaires_footer{
+	position: relative;
+	z-index: 10;
+}
+.millionaires_options{
+	width: 100%;
+}
+
+.millionaires_footer_block{
+	overflow: hidden;
+	background: #0063D1;
+	display: flex;
+	max-width: 1084px;
+	width: 90%;
+	margin: 40px auto 0;
+	box-shadow: 0 4px 15px #CBD2DD, 0 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 25px;
+}
+.millionaires_footer_left{
+	width: 50%;
+	background: #FFFFFF;
+	border-radius: 25px;
+	text-align: center;
+}
+
+.millionaires_footer_left_top{
+	padding: 35px 34px 22px;
+}
+.millionaires_footer_left_top p{
+	font-family: Lato, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	color: #F26A08;
+	max-width: 340px;
+	margin: auto;
+}
+
+.millionaires_footer_left_bottom{
+	padding: 25px 60px;
+	background: #2289FC;
+	border-radius: 25px 0 0 0;
+	font-family: Lato,sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.millionaires_footer_right{
+	width: 50%;
+	text-align: center;
+	color: #E8A200;
+}
+.millionaires_footer_right_top{
+	display: inline-block;
+	padding: 10px 55px;
+	background: linear-gradient(270deg, #E8A200 -0.03%, #FFF068 49.43%, #E8A200 95.25%);
+	border-radius: 0 0 10px 10px;
+	margin: auto;
+	font-family: Lato, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #0C509C;
+}
+.millionaires_footer_right p{
+	background: linear-gradient(270deg, #E8A200 -0.03%, #FFF068 49.43%, #E8A200 95.25%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin: 30px auto 15px;
+	display: table;
+	font-family: "Futura Md BT", sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 38px;
+}
+.millionaires_footer_right h2{
+	background: linear-gradient(270deg, #E8A200 -0.03%, #FFF068 49.43%, #E8A200 95.25%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: table;
+	text-transform: uppercase;
+	font-family: "Futura Md BT", sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 58px;
+	margin: auto;
+}
+
+.millionaires_lanternLeft, .millionaires_lanternRight{
+	position: absolute;
+	width: 45%;
+	top: 0;
+	z-index: 6;
+	animation-direction: alternate;
+}
+.millionaires_lanternLeft{
+	transform-origin: left top;
+	left: -3%;
+	animation: lantern_Left 7s cubic-bezier(0.4, 0.02, 0.5, 0.98) reverse infinite;
+}
+.millionaires_lanternRight{
+	transform-origin: right top;
+	right: -3%;
+	animation: lantern_Right 9s cubic-bezier(0.4, 0.02, 0.5, 0.98) reverse infinite;
+}
+
+/* animation */
+
+@-webkit-keyframes lantern_Left {
+	50%{
+		-webkit-transform: rotate(-45grad);
+		transform: rotate(-45grad);
+	}
+	100% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+}
+@-webkit-keyframes lantern_Right {
+	50%{
+		-webkit-transform: rotate(45grad);
+		transform: rotate(45grad);
+	}
+	100% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+}
+
+/* /animation */
+/* /millionaires */
