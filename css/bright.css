@@ -24,7 +24,6 @@
 	justify-content: center;
 	margin: 0 auto;
 	padding: 120px 0;
-	border-bottom: 1px solid #000;
 }
 .dream_row{
 	display: flex;
@@ -330,13 +329,43 @@
 	width: 45%;
 	top: 0;
 	z-index: 6;
+	animation-direction: alternate;
 }
 .millionaires_lanternLeft{
+	transform-origin: left top;
 	left: -3%;
+	animation: lantern_Left 7s cubic-bezier(0.4, 0.02, 0.5, 0.98) reverse infinite;
 }
 .millionaires_lanternRight{
+	transform-origin: right top;
 	right: -3%;
+	animation: lantern_Right 9s cubic-bezier(0.4, 0.02, 0.5, 0.98) reverse infinite;
 }
+
+/* animation */
+
+@-webkit-keyframes lantern_Left {
+	50%{
+		-webkit-transform: rotate(-45grad);
+		transform: rotate(-45grad);
+	}
+	100% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+}
+@-webkit-keyframes lantern_Right {
+	50%{
+		-webkit-transform: rotate(45grad);
+		transform: rotate(45grad);
+	}
+	100% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+}
+
+/* /animation */
 
 
 /* /millionaires */
