@@ -225,8 +225,10 @@
 }
 .study_first{
 	width: 100%;
-	height: 650px;
 	background: url(../img/bright/first.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 .study_first__head{
 	margin-top: 80px;
@@ -243,6 +245,37 @@
 .study_first__head img{
 	width: 375px;
 	margin-top: 30px;
+}
+.study_first__row{
+	margin: 400px auto 180px;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1500px;
+}
+.study_first__column>img{
+	height: 370px;
+}
+.study_first__column-text{
+	height: 110px;
+	max-width: 350px;
+    width: fit-content;
+	display: flex;
+	align-items: center;
+	background: #fff;
+	border-radius: 15px;
+	padding: 20px;
+}
+.study_first__column:first-child p{
+	font-size: 18px;
+}
+.study_first__column-text>img{
+	width: 50px;
+	margin-right: 20px;
+}
+.study_first__column-text .orange_text{
+	color: #F26A08;
+	font-size: 28px;
+	font-weight: bold;
 }
 /* /education */
 /* millionaires */
