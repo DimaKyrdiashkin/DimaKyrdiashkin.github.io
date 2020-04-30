@@ -520,6 +520,8 @@ $(function() {
         }
     });
     $("#c-stable").click(function() {
+        $(".c-result-block-4 #c-result-sum").text("Выберите период");
+        $(".checkP").text("Период");
         $(".c-info-field").addClass("close");
         $(".calc_select").addClass("open");
         $(".c-result-block-2").css("height", "15%");
@@ -552,6 +554,7 @@ $(function() {
         };
     })
     $("#c-savings, #c-pam").click(function() {
+        $("select").val(0);
         $(".c-info-field").removeClass("close");
         $(".calc_select").removeClass("open");
         $("#capotalization").attr("disabled", true);
