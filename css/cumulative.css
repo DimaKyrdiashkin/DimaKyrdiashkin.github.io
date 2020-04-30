@@ -652,6 +652,7 @@
         font-size: 14px;
     }
     .cumulativeFooter_item{
+        top: 0;
         position: relative;
         left: 0;
         transform: none;
