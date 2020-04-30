@@ -180,10 +180,11 @@
 	padding: 30px 0 80px 0;
 }
 .payOut_row{
+	width: 90%;
 	display: flex;
 	justify-content: space-between;
 	max-width: 1575px;
-	max-height: 370px;
+	/*max-height: 370px;*/
 }
 .payOut_row__left{
 	display: flex;
@@ -212,6 +213,7 @@
 }
 .payOut_row__right img{
 	max-width: 550px;
+	width: 100%;
 }
 .payOut_row__left-block>h2{
 	text-align: center;
@@ -341,6 +343,9 @@
 /* /education */
 /* millionaires */
 
+.people_mob, .millionaires_options_mob{
+	display: none;
+}
 .millionaires{
 	display: flex;
 	flex-direction: column;
@@ -501,3 +506,134 @@
 
 /* /animation */
 /* /millionaires */
+
+
+
+@media (max-width: 1440px) {
+/*	payOut */
+	.payOut_row{
+		flex-direction: column;
+	}
+	.payOut_row__left{
+		text-align: center;
+		margin-right: 0;
+	}
+	.payOut_row__right{
+		order: -1;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+/*	/payOut */
+}
+/* Portrait tablets and medium desktops */
+@media (max-width: 1199px) {
+
+
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+	/*	payOut */
+	.payOut_row__left{
+		justify-content: center;
+	}
+	.payOut_row__left-block_1{
+		margin: 30px auto 20px;
+	}
+	/*	/payOut */
+
+	/* millionaires */
+	.millionaires{
+		min-height: 0;
+	}
+
+	.people_pc,.millionaires_options{
+		display: none;
+	}
+	.people_mob{
+		position: relative;
+		width: 90%;
+		height: auto;
+		display: block;
+	}
+	.millionaires_options_mob{
+		display: block;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+	.millionaires_footer{
+		width: 90%;
+		margin-top: -20%;
+	}
+	.millionaires_options_mob li{
+
+		background-color: #DCEFFF;
+		font-family: Lato, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 40px;
+		text-align: center;
+		color: #444444;
+		margin: 15px auto 0;
+		width: 90%;
+		position: relative;
+	}
+	.millionaires_options_mob li:before{
+		position: absolute;
+		content: "";
+		left: -40px;
+		border: 20px solid transparent;
+		border-right: 20px solid #DCEFFF;
+	}
+	.millionaires_options_mob li span{
+		color: #F26A08;
+	}
+	.millionaires_options_mob li:after{
+		position: absolute;
+		content: "";
+		right: -40px;
+		border: 20px solid transparent;
+		border-left: 20px solid #DCEFFF;
+	}
+	.millionaires_options_mob li:nth-child(2){
+		background: linear-gradient(270deg, #E8A200 -0.03%, #FFF068 49.43%, #E8A200 95.25%);
+	}
+	.millionaires_options_mob li:nth-child(2) span{
+		color: #94450C;
+	}
+	.millionaires_options_mob li:nth-child(2):after{
+		border-left: 20px solid #E8A200;
+	}
+	.millionaires_options_mob li:nth-child(2):before{
+		border-right: 20px solid #E8A200;
+	}
+
+
+	/* /millionaires */
+
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 480px) {
+	.payOut_row__left>h2{
+		font-size: 24px;
+		line-height: 29px;
+	}
+	.payOut_row__left-block>h2{
+		font-size: 16px;
+		line-height: 100%;
+	}
+	.payOut_row__left-block p{
+		font-size: 14px;
+	}
+	.payOut{
+		padding-bottom: 30px;
+	}
+}
