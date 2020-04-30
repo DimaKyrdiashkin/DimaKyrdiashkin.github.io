@@ -206,6 +206,7 @@
 .study{
 	display: flex;
 	position: relative;
+	flex-direction: column;
 }
 .cloudL,
 .cloudR{
@@ -252,6 +253,12 @@
 	justify-content: space-between;
 	max-width: 1500px;
 }
+.study_first__column{
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .study_first__column>img{
 	height: 370px;
 }
@@ -264,6 +271,10 @@
 	background: #fff;
 	border-radius: 15px;
 	padding: 20px;
+	margin-bottom: 20px;
+}
+.study_first__column:last-child .study_first__column-text{
+	padding: 20px 40px;
 }
 .study_first__column:first-child p{
 	font-size: 18px;
@@ -276,6 +287,34 @@
 	color: #F26A08;
 	font-size: 28px;
 	font-weight: bold;
+}
+.study_second{
+	background: url(../img/bright/second.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 50px;
+}
+.study_second>img{
+	width: 280px;
+	position: absolute;
+	bottom: -75px;
+	left: 500px;
+}
+.study_second__text{
+	text-align: left;
+	font-size: 48px;
+	color: #0050C9;
+	font-family: 'Futura Md BT', sans-serif;
+	margin-top: 25%;
+	margin-bottom: 800px;
+	display: flex;
+    justify-content: center;
+    margin-left: 100px;
+}
+.study_second__text .green_text{
+	color: #009A2B;
+	font-size: 72px;
 }
 /* /education */
 /* millionaires */
