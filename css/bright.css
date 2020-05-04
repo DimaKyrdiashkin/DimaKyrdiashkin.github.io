@@ -1,13 +1,18 @@
 .promoContent video{
-	height: auto;
-	width: 100vw;
+	height: 100%;
+	/*width: 100vw;*/
 }
 .promoContent_info__up{
 	margin-right: 0;
 }
 /* home */
+
+.first_video_mob{
+	display: none;
+}
 .promoContent_info__up img{
-	width: 450px;
+	max-width: 450px;
+	width: 100%;
 	margin-bottom: 30px;
 }
 .promoContent_info__up{
@@ -24,6 +29,9 @@
 }
 .dream_row_right{
 	max-width: 450px;
+}
+.dream_row__mob{
+	display: none;
 }
 .dream{
 	display: flex;
@@ -150,9 +158,15 @@
 	z-index: 1;
 	margin-left: 120px;
 }
-.dream_row__middle>img{
+.dream_row__middle_img{
+	margin-top: -20px;
+	position: relative;
+	overflow: hidden;
+}
+.dream_row__middle_img>img{
 	width: 100%;
-	margin-top: -50px;
+
+
 }
 .dream_row__middle-ul{
 	background: #fff;
@@ -174,6 +188,8 @@
 /* /dream */
 /* payOut */
 .payOut{
+	border-top: 10px solid #FFFFFF;
+	border-bottom: 10px solid #FFFFFF;
 	background: linear-gradient(232.47deg, #DDE9FF 0%, #E9E9E9 100%);
 	display: flex;
 	justify-content: center;
@@ -274,20 +290,24 @@
 .study_first__row{
 	margin: 400px auto 180px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	max-width: 1500px;
+	width: 90%;
+	flex-wrap: wrap;
 }
 .study_first__column{
 	display: flex;
 	flex-direction: column;
     justify-content: center;
     align-items: center;
+	margin: 20px 0 0;
 }
 .study_first__column>img{
-	height: 370px;
+	max-height: 370px;
+	max-width: 90%;
 }
 .study_first__column-text{
-	height: 110px;
+	min-height: 110px;
 	max-width: 350px;
     width: fit-content;
 	display: flex;
@@ -316,7 +336,7 @@
 	background: url(../img/bright/second.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: bottom right;
 	margin-bottom: 50px;
 }
 .study_second>img{
@@ -352,8 +372,9 @@
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	padding: 86px 0 100px;
-	min-height: 1500px;
+	padding: 86px 0 46px;
+	min-height: 940px;
+	overflow: hidden;
 	background-color: #003581;
 }
 .millionaires_h2{
@@ -368,7 +389,9 @@
 .millionaires_people{
 	position: absolute;
 	z-index: 2;
-	height: 80%;
+	width: 90%;
+	max-width: 1257px;
+	margin: auto;
 	bottom: 0;
 }
 .millionaires_footer{
@@ -386,7 +409,7 @@
 	max-width: 1084px;
 	width: 90%;
 	margin: 40px auto 0;
-	box-shadow: 0 4px 15px #CBD2DD, 0 4px 4px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 25px;
 }
 .millionaires_footer_left{
@@ -510,13 +533,43 @@
 
 
 @media (max-width: 1440px) {
+
+	/* promoContent */
+
+	.promoContent_info {
+		width: 90%	;
+	}
+
+	/* /promoContent */
+
+	/*	dream */
+	.dream{
+		background-color: #D1DEF7;
+
+		flex-direction: column;
+	}
+	.dream_video{
+		right: -9%;
+	}
+	.dream_row{
+		width: 90%;
+		margin: auto;
+		justify-content: flex-start;
+	}
+	.dream_row__middle{
+		margin-left: 50px;
+	}
+	/*	/dream */
+
+
+
 /*	payOut */
 	.payOut_row{
 		flex-direction: column;
 	}
 	.payOut_row__left{
 		text-align: center;
-		margin-right: 0;
+		margin: auto;
 	}
 	.payOut_row__right{
 		order: -1;
@@ -527,18 +580,84 @@
 }
 /* Portrait tablets and medium desktops */
 @media (max-width: 1199px) {
+	.promoContent_info__up{
+		width: auto;
+	}
+
+
+
 
 
 }
 
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {
+
+	/* promoContent */
+	.promoContent{
+		background-color: #23498e;
+	}
+	.first_video{
+		display: none;
+	}
+	.first_video_mob{
+		display: block;
+	}
+
+	/* /promoContent */
+
+
+
+	.promoContent_info__up{
+		width: 90%;
+		margin: 0 auto 30px;
+		padding: 0;
+		text-align: center;
+	}
+
+
+	/* dream */
+	.dream_video{
+		position: relative;
+		width: 130%;
+		right: 50%;
+		top: 0;
+		transform: none;
+	}
+	.dream_row{
+		padding-top: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.dream_row__left-headPc{
+		display: none;
+	}
+	.dream_row__mob{
+		margin-bottom: 150px;
+		position: relative;
+		order: 10;
+		display: block;
+
+	}
+	.dream_row__left{
+		order: 30;
+	}
+	.dream_row__middle{
+
+		order: 20;
+		margin: auto;
+		align-self: auto;
+	}
+
+	/* /dream */
+
+
 	/*	payOut */
 	.payOut_row__left{
 		justify-content: center;
 	}
-	.payOut_row__left-block_1{
-		margin: 30px auto 20px;
+	.payOut_row__left-block{
+		margin: 30px 1% 0;
 	}
 	/*	/payOut */
 
@@ -619,15 +738,107 @@
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
+	/* millionaires */
+
+
+	.millionaires_footer_block{
+		flex-direction: column;
+		border-radius: 15px;
+	}
+	.millionaires_footer_block >div{
+		width: 100%;
+	}
+	.millionaires_footer_left_bottom{
+		border-radius: 15px;
+	}
+	.millionaires_footer_right h2{
+		padding-bottom: 30px;
+	}
+
+	/* /millionaires */
+
+	/* study */
+
+	.study_first__column{
+		margin-top: 40px;
+	}
+
+	/* /study */
 }
 
 @media (max-width: 480px) {
+	.promoContent video{
+		top: 50%;
+		height: auto;
+		transform: translateY(-50%) translateX(-50%);
+	}
+
+	.promoContent_logo{
+		padding-top: 30px;
+	}
+	.promoContent_info__up img{
+		margin-bottom: 4px;
+	}
+
+	/* dream */
+	.dream_row{
+		padding: 0  0 50px;
+	}
+	.dream_video{
+		width: 200%;
+		right: 100%;
+	}
+
+	.dream_row__mob{
+		font-size: 24px;
+		line-height: 29px;
+	}
+	.dream_row__middle-ul{
+		border-radius: 15px;
+	}
+
+	.dream_row__middle-ul li{
+		font-size: 14px;
+		line-height: 25px;
+	}
+	.dream_row__middle_img>img{
+		bottom: -2px;
+		position: relative;
+	}
+	.dream_row__left{
+		width: 100%;
+	}
+	.dream_content-element_text{
+		padding: 15px 40px 25px 30px;
+	}
+	.dream_content-element_text h2{
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.dream_content-element_text p{
+		font-size: 14px;
+		line-height: 17px;
+	}
+	.dream_row__left-content{
+		margin-top: 30px;
+	}
+
+
+	/* /dream */
+
+
+	/* payOut */
 	.payOut_row__left>h2{
 		font-size: 24px;
 		line-height: 29px;
 	}
+	.payOut_row__left-block{
+		padding: 15px;
+		height: auto;
+	}
 	.payOut_row__left-block>h2{
 		font-size: 16px;
+		margin-bottom: 10px;
 		line-height: 100%;
 	}
 	.payOut_row__left-block p{
@@ -636,4 +847,39 @@
 	.payOut{
 		padding-bottom: 30px;
 	}
+	/* /payOut */
+
+/*	millionaires */
+
+	.millionaires{
+		padding: 30px 0 46px;
+	}
+
+	.millionaires_h2{
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.millionaires_footer_block{
+		width: 100%;
+	}
+	.millionaires_footer_left_top p{
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.millionaires_footer_left_bottom{
+		font-size: 14px;
+		line-height: 17px;
+	}
+	.millionaires_footer_right p{
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.millionaires_footer_right h2{
+		font-size: 32px;
+		line-height: 38px;
+	}
+
+/*	/millionaires */
+
+
 }
