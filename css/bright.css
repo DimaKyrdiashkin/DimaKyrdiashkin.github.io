@@ -5,6 +5,10 @@
 .promoContent_info__up{
 	margin-right: 0;
 }
+
+footer{
+	border: none!important;
+}
 /* home */
 
 .first_video_mob{
@@ -256,6 +260,7 @@
 	top: 200px;
 	transform: scale(4);
 	transition: 2s;
+	z-index: 30;
 }
 .cloudL img,
 .cloudR img{
@@ -268,6 +273,7 @@
 	right: 500px;
 }
 .study_first{
+	position: relative;
 	width: 100%;
 	background: url(../img/bright/first.png);
 	background-size: cover;
@@ -275,7 +281,11 @@
     background-position: center bottom;
 }
 .study_second_mob{
-	display: none;
+	position: relative;
+	z-index: 10;
+	margin-top: -37%;
+	display: block;
+	width: 100%;
 }
 .study_first__head{
 	margin-top: 80px;
@@ -340,26 +350,25 @@
 	font-weight: bold;
 }
 .study_second{
-	background: url(../img/bright/second.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: bottom center;
+	background: linear-gradient(180.14deg, #4e9df7 0.07%, #FFFFFF 79.02%);
 	margin-bottom: 50px;
+	margin-top: -3px;
 	border-radius: 0 0 300px 0;
 }
 .study_second_girl{
 	max-width: 280px;
-	width: 30%;
+	width: 15%;
 	position: absolute;
 	bottom: -75px;
-	left: 500px;
+	left: 20%;
+	z-index: 15;
 }
 .study_second__text{
-
+	position: relative;
+	z-index: 20;
 	color: #0050C9;
 	font-family: 'Futura Md BT', sans-serif;
-	margin-top: 25%;
-	margin-bottom: 800px;
+	margin-top:20%;
 	display: flex;
     justify-content: center;
     margin-left: 100px;
@@ -542,6 +551,9 @@
 /* /millionaires */
 
 
+.calc_bright{
+	padding-bottom: 100px;
+}
 
 @media (max-width: 1440px) {
 
@@ -740,7 +752,11 @@
 
 	/* /millionaires */
 
-
+	/*	study */
+	.study_second__text{
+		margin-left: 240px;
+	}
+	/*	/study */
 }
 
 /* Landscape phones and portrait tablets */
