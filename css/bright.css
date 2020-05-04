@@ -247,22 +247,25 @@
 	display: flex;
 	position: relative;
 	flex-direction: column;
+	overflow: hidden;
 }
 .cloudL,
 .cloudR{
 	width: 600px;
 	position: absolute;
 	top: 200px;
+	transform: scale(4);
+	transition: 2s;
 }
 .cloudL img,
 .cloudR img{
 	width: 100%;
 }
 .cloudL{
-	left: 0;
+	left: 500px;
 }
 .cloudR{
-	right: 0;
+	right: 500px;
 }
 .study_first{
 	width: 100%;
