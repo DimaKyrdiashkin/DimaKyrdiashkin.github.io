@@ -287,8 +287,9 @@
 	margin-top: 15px;
 }
 .study_first__head img{
-	width: 375px;
-	margin-top: 30px;
+	max-width: 375px;
+	width: 90%;
+	margin: 30px auto 0;
 }
 .study_first__row{
 	margin: 400px auto 180px;
@@ -303,7 +304,7 @@
 	flex-direction: column;
     justify-content: center;
     align-items: center;
-	margin: 20px 0 0;
+	margin: 40px 0 0;
 }
 .study_first__column>img{
 	max-height: 370px;
@@ -601,9 +602,6 @@
 @media (max-width: 991px) {
 
 	/* promoContent */
-	.promoContent{
-		background-color: #23498e;
-	}
 	.first_video{
 		display: none;
 	}
@@ -792,13 +790,16 @@
 		z-index: 2;
 	}
 	.study_second__text{
-		margin-top: 32px;
-		margin-bottom: 0;
+		margin: 32px 0 0 130px;
 		justify-content: flex-end;
 		margin-right: 32px;
 	}
 	.study_first__column{
 		margin-top: 40px;
+	}
+	.study_second__text p,.study_second__text .green_text{
+		font-size: 24px;
+		line-height: 29px;
 	}
 	.study_second{
 		border-radius: 0px 0px 33px 0px;
@@ -813,19 +814,26 @@
 	}
 
 	.study_second_mob{
-		margin-top: -25%;
+		margin-top: -20%;
 		display: block;
 		width: 100%;
 	}
 
 	/* /study */
+
+/*	calc*/
+	.calc_head{
+		margin-top: 30px;
+	}
+
+/*	/calc*/
 }
 
 @media (max-width: 480px) {
 	.promoContent video{
 		top: 50%;
-		height: auto;
-		transform: translateY(-50%) translateX(-50%);
+		height: 100%;
+		transform: translateY(-50%) translateX(-52%);
 	}
 
 	.promoContent_logo{
@@ -936,5 +944,23 @@
 
 /*	/millionaires */
 
+
+	/* study*/
+	.study_first__head{
+		margin-top: 30px;
+	}
+	.study_first__head h3{
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.study_first__head h2{
+		font-size: 24px;
+		line-height: 29px;
+	}
+	.study_first__column:last-child .study_first__column-text,.study_first__column .study_first__column-text{
+		padding: 20px 12px 20px 20px;
+		width: 100%;
+	}
+	/* /study*/
 
 }
