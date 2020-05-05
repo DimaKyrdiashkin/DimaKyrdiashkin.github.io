@@ -1,6 +1,7 @@
 .promoContent video{
-	height: 100%;
-	/*width: 100vw;*/
+	min-width: 100vw;
+	min-height: 100vh;
+    height: auto;
 }
 .promoContent_info__up{
 	margin-right: 0;
@@ -216,9 +217,9 @@ footer{
 }
 .payOut_row__left>h2{
 	font-family: 'Futura Md BT', sans-serif;
-	font-size: 48px;
+	font-size: 46px;
 	color: #0050C9;
-	width: 100%;
+	width: fit-content;
 }
 .payOut_row__left-block{
 	border: 1px solid #3062C3;
@@ -231,9 +232,12 @@ footer{
 	text-align: center;
 	padding: 30px 40px;
 }
+.payOut_row__right{
+	display: flex;
+	align-items: center;
+}
 .payOut_row__right img{
 	max-width: 550px;
-	width: 100%;
 }
 .payOut_row__left-block>h2{
 	text-align: center;
@@ -244,6 +248,7 @@ footer{
 }
 .payOut_row__left-block{
 	font-weight: bold;
+	margin-top: 25px;
 }
 /* /payOut */
 /* education */
@@ -252,6 +257,7 @@ footer{
 	position: relative;
 	flex-direction: column;
 	overflow: hidden;
+	padding-bottom: 135px;
 }
 .cloudL,
 .cloudR{
@@ -259,7 +265,7 @@ footer{
 	position: absolute;
 	top: 200px;
 	transform: scale(4);
-	transition: 2s;
+	transition: 1.5s;
 	z-index: 30;
 }
 .cloudL img,
@@ -286,6 +292,7 @@ footer{
 	margin-top: -37%;
 	display: block;
 	width: 100%;
+	border-radius: 0 0 300px 0;
 }
 .study_first__head{
 	margin-top: 80px;
@@ -381,8 +388,12 @@ footer{
 	font-size: 72px;
 }
 /* /education */
-/* millionaires */
 
+.calc_head{
+	margin: 80px 0 60px 0;
+}
+
+/* millionaires */
 .people_mob, .millionaires_options_mob{
 	display: none;
 }
@@ -393,7 +404,7 @@ footer{
 	align-items: center;
 	position: relative;
 	padding: 86px 0 46px;
-	min-height: 940px;
+	min-height: 1200px;
 	overflow: hidden;
 	background-color: #003581;
 }
@@ -409,10 +420,10 @@ footer{
 .millionaires_people{
 	position: absolute;
 	z-index: 2;
-	width: 90%;
-	max-width: 1257px;
+	width: 65%;
+	max-width: 1600px;
 	margin: auto;
-	bottom: 0;
+	bottom: 20px;
 }
 .millionaires_footer{
 	position: relative;
@@ -452,7 +463,6 @@ footer{
 	max-width: 340px;
 	margin: auto;
 }
-
 .millionaires_footer_left_bottom{
 	padding: 25px 60px;
 	background: #2289FC;
@@ -554,7 +564,18 @@ footer{
 .calc_bright{
 	padding-bottom: 100px;
 }
-
+@media (max-width: 1700px) {}
+	.payOut_row__left{
+		max-width: 500px;
+	}
+	.payOut_row{
+		justify-content: center;
+	}
+@media (max-width: 1600px) {
+	.millionaires_people{
+		width: 80%;
+	}
+}
 @media (max-width: 1440px) {
 
 	/* promoContent */
@@ -596,8 +617,9 @@ footer{
 	}
 	.payOut_row__right{
 		order: -1;
-		text-align: center;
 		margin-bottom: 20px;
+		display: flex;
+		justify-content: center;
 	}
 /*	/payOut */
 }
