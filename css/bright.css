@@ -259,7 +259,7 @@ footer{
 	position: absolute;
 	top: 200px;
 	transform: scale(4);
-	transition: 2s;
+	transition: 1.5s;
 	z-index: 30;
 }
 .cloudL img,
