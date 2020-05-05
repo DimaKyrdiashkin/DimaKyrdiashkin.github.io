@@ -1,3 +1,8 @@
+
+footer{
+    border: none!important;
+}
+
 /* home */
 
 .home{
@@ -321,10 +326,9 @@
 .contentBlockTwo{
     overflow: hidden;
     position: relative;
-    margin-top: 0;
+    margin: 0;
     background: radial-gradient(98.31% 100% at 0% 0%, #FFFFFF 0%, #B9DDFF 100%);
     padding: 90px 0 ;
-    margin-bottom: 10px;
 }
 .contentBlockOne_row{
     margin-bottom: 0;

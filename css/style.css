@@ -203,21 +203,21 @@ section{
 
 .contentBlockOne_row__element:first-child{
 	top: -25px;
-	transform: rotateY(30deg) rotateX(15deg) translateZ(-100px);
+	transform: rotateY(20deg) rotateX(10deg) translateZ(-50px)
 }
 .contentBlockOne_row__element:nth-child(2){
 	top: -47px;
-	left: 60px;
-	transform: rotateY(30deg) rotateX(15deg) translateZ(-170px);
+	left: 0;
+	transform: rotateY(16deg) rotateX(11deg) translateZ(-186px)
 }
 .contentBlockOne_row__element:nth-child(3){
 	top: -47px;
-	left: -60px;
-	transform: rotateY(-30deg) rotateX(15deg) translateZ(-170px);
+	left: 0;
+	transform: rotateY(-16deg) rotateX(11deg) translateZ(-186px)
 }
 .contentBlockOne_row__element:last-child{
 	top: -25px;
-	transform: rotateY(-30deg) rotateX(15deg) translateZ(-100px);
+	transform: rotateY(-20deg) rotateX(10deg) translateZ(-50px);
 }
 
 .circle_element span{
@@ -225,7 +225,7 @@ section{
 }
 
 .contentBlockOne_row{
-	width: 100%;
+	margin-top: 70px;
 	perspective: 1500px;
 	perspective-origin: top;
 	display: -webkit-box;
@@ -264,6 +264,7 @@ section{
 	top: 0;
 	left: 0;
 	z-index: 20;
+	transition: all .5s;
 	transform: rotateY(0) rotateX(0) translateZ(0) scale(1.1)!important;
 }
 .circle_element p{
@@ -410,8 +411,8 @@ section{
 }
 .contentBlockTwo_row__element:hover{
 	-webkit-transform: scale(1.1);
-	    -ms-transform: scale(1.1);
-	        transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
 	-webkit-transition: .7s;
 	-o-transition: .7s;
 	transition: .7s;
@@ -1922,7 +1923,6 @@ p.circle_yellow{
 		font-size: 1.3vw;
 	}
 	.contentBlockOne_row{
-		margin-top: 0;
 		-ms-flex-pack: distribute;
 		    justify-content: space-around;
 	}
@@ -2171,6 +2171,17 @@ p.circle_yellow{
     	transition: 1s;
 	}
 }
+@media (max-width: 900px) {
+	.contentBlockOne_row{
+		flex-wrap: wrap;
+	}
+	.contentBlockOne_row__element{
+		position: relative;
+		left: 0!important;
+		top: 0!important;
+		transform: none!important;
+	}
+}
 @media (max-width: 768px) {
 	h1{
 		font-size: 24px;
@@ -2198,18 +2209,6 @@ p.circle_yellow{
     	margin-bottom: 13%;
 	}
 
-	.contentBlockOne_row__element:first-child{
-		left: -2%;
-	}
-	.contentBlockOne_row__element:nth-child(2){
-		left: 24%;
-	}
-	.contentBlockOne_row__element:nth-child(3){
-		left: 27%;
-	}
-	.contentBlockOne_row__element:last-child{
-		left: 53%;
-	}
 
 
 	.profitability_right_static_btc img,
@@ -2455,7 +2454,7 @@ p.circle_yellow{
 		width: 270px;
 		margin: 20px 0;
 		border-radius: 15px;
-		padding: 0px 0 45px 0;
+		padding: 0 0 45px 0;
 	}
 	.contentBlockOne_row__element{
 		margin: 0;
@@ -2485,7 +2484,6 @@ p.circle_yellow{
 	.container{
 		padding-top: 30px;
 	}
-	.device
 	.device{
 		background: none;
 		padding-bottom: 30px;
