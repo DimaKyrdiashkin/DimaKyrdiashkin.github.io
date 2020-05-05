@@ -351,7 +351,7 @@ footer{
 }
 .study_second{
 	background: linear-gradient(180.14deg, #4e9df7 0.07%, #FFFFFF 79.02%);
-	margin-bottom: 50px;
+	margin-bottom: 135px;
 	margin-top: -3px;
 	border-radius: 0 0 300px 0;
 }
@@ -359,7 +359,7 @@ footer{
 	max-width: 280px;
 	width: 15%;
 	position: absolute;
-	bottom: -75px;
+	bottom: 0;
 	left: 20%;
 	z-index: 15;
 }
@@ -823,7 +823,6 @@ footer{
 	.study_second{
 		border-radius: 0px 0px 33px 0px;
 		background: #3293FF;
-		overflow: hidden;
 	}
 	.study_second_girl{
 		left: auto;
