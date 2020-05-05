@@ -231,6 +231,7 @@ footer{
     justify-content: center;
 	text-align: center;
 	padding: 30px 40px;
+	font-family: "Lato-Medium", sans-serif;
 }
 .payOut_row__right{
 	display: flex;
@@ -238,6 +239,7 @@ footer{
 }
 .payOut_row__right img{
 	max-width: 550px;
+	width: 90%;
 }
 .payOut_row__left-block>h2{
 	text-align: center;
@@ -257,7 +259,6 @@ footer{
 	position: relative;
 	flex-direction: column;
 	overflow: hidden;
-	padding-bottom: 135px;
 }
 .cloudL,
 .cloudR{
@@ -438,7 +439,7 @@ footer{
 	background: #0063D1;
 	display: flex;
 	max-width: 1084px;
-	width: 90%;
+	width: 100%;
 	margin: 40px auto 0;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 25px;
@@ -571,6 +572,9 @@ footer{
 	.payOut_row{
 		justify-content: center;
 	}
+	.millionaires{
+		min-height: 960px;
+	}
 @media (max-width: 1600px) {
 	.millionaires_people{
 		width: 80%;
@@ -614,6 +618,7 @@ footer{
 	.payOut_row__left{
 		text-align: center;
 		margin: auto;
+		justify-content: center;
 	}
 	.payOut_row__right{
 		order: -1;
@@ -716,6 +721,7 @@ footer{
 		width: 90%;
 		height: auto;
 		display: block;
+		margin-top: 50px;
 	}
 	.millionaires_options_mob{
 		display: block;
@@ -728,7 +734,6 @@ footer{
 		margin-top: -20%;
 	}
 	.millionaires_options_mob li{
-
 		background-color: #DCEFFF;
 		font-family: Lato, sans-serif;
 		font-style: normal;
@@ -739,6 +744,7 @@ footer{
 		color: #444444;
 		margin: 15px auto 0;
 		width: 90%;
+		max-width: 500px;
 		position: relative;
 	}
 	.millionaires_options_mob li:before{
@@ -784,9 +790,11 @@ footer{
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
+
+	.payOut_row__left>h2{
+		font-size: 40px;
+	}
 	/* millionaires */
-
-
 	.millionaires_footer_block{
 		flex-direction: column;
 		border-radius: 15px;
@@ -816,6 +824,8 @@ footer{
 	}
 	.cloudL, .cloudR{
 		z-index: 30;
+		width: 300px;
+		top: 300px;
 	}
 	.study_first_mob{
 		position: absolute;
@@ -905,8 +915,9 @@ footer{
 		line-height: 25px;
 	}
 	.dream_row__middle_img>img{
-		bottom: -2px;
+		bottom: -3px;
 		position: relative;
+		border-radius: 0 0 30px 30px;
 	}
 	.dream_row__left{
 		width: 100%;
@@ -924,6 +935,7 @@ footer{
 	}
 	.dream_row__left-content{
 		margin-top: 30px;
+		height: 380px;
 	}
 
 
@@ -936,8 +948,9 @@ footer{
 		line-height: 29px;
 	}
 	.payOut_row__left-block{
-		padding: 15px;
+		padding: 15px 40px;
 		height: auto;
+		width: 100%;
 	}
 	.payOut_row__left-block>h2{
 		font-size: 16px;
@@ -946,6 +959,7 @@ footer{
 	}
 	.payOut_row__left-block p{
 		font-size: 14px;
+		font-weight: 100;
 	}
 	.payOut{
 		padding-bottom: 30px;
@@ -981,7 +995,9 @@ footer{
 		font-size: 32px;
 		line-height: 38px;
 	}
-
+	.people_mob{
+		margin-top: 50px;
+	}
 /*	/millionaires */
 
 
