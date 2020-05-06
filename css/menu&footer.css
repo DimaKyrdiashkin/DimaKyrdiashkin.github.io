@@ -531,8 +531,8 @@ footer{
 	.menu_header{
 		height: 40px;
 		font-size: 14px;
-		margin-left: 30px;
-		margin-right: 75px;
+		margin-left: 25px;
+		margin-right: 80px;
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: reverse;
 		    -ms-flex-direction: row-reverse;

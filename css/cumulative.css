@@ -702,3 +702,26 @@
         left: -6% !important;
     }
 }
+@media all and (max-width: 992px) and (orientation : landscape) {
+    .home{
+		height: 200vh;
+	}
+	.home video{
+		height: 100%;
+	}
+	.calc_head {
+		margin: 80px 0 0 0;
+	}
+	.study_second{
+		margin-bottom: 0;
+	}
+	.study_second_girl{
+		display: none;
+	}
+	.study_second_mob{
+		border-radius: 0 0 100px 0;
+	}
+	.promoContent_info__up img{
+		margin-bottom: 0;
+	}
+}
