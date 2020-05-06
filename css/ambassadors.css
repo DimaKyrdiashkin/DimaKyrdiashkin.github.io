@@ -182,7 +182,7 @@
 .ambassadorPeople .container{
     max-width: 1840px;
     margin: auto;
-    width: 90%;
+    width: 95%;
 }
 .ambassadorPeople_h1{
     margin-bottom: 50px;
@@ -366,7 +366,13 @@
     padding: 20px 52px;
     position: relative;
     top: -20px;
+    cursor: pointer;
 }
+
+
+
+
+
 
 /* ambassadorPeople_info */
 
@@ -381,7 +387,301 @@
     box-shadow: 0 4px 15px #CBD2DD, 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     min-width: 445px;
-    height: 755px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
+.ambassadorPeople_item_photo{
+    position: relative;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 15px #CBD2DD, 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+.ambassadorPeople_item_photo_container{
+    width: 314px;
+    margin: auto;
+    text-align: center;
+}
+.ambassadorPeople_item_photo_container_img{
+    max-width: 100%;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-radius: 5px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 100%, 0 100%, 0 25%);
+    z-index: 20;
+    position: relative;
+}
+.ambassadorPeople_item_photo_container:before, .ambassadorPeople_item_photo_container:after{
+    width: 131px;
+    height: 113px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 100%, 0 100%, 0 25%);
+    position: absolute;
+    z-index: 1;
+    content: "";
+    left: 0;
+}
+.ambassadorPeople_item_photo_container:before{
+    top: 92px;
+}
+.ambassadorPeople_item_photo_container:after{
+    top: 207px;
+}
+
+.ambassadorPeople_item_photo_container_name{
+    font-family: Lato,sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+    color: #F26A08;
+    margin: 30px auto 10px;
+}
+.ambassadorPeople_item_photo_container_phone{
+    font-family: Lato,sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}
+
+
+.ambassadorPeople_item_photo_container_name:before, .ambassadorPeople_item_photo_container_name:after{
+    width: 131px;
+    height: 113px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 100%, 0 100%, 0 25%);
+    position: absolute;
+    z-index: 1;
+    content: "";
+    right: 0;
+}
+
+
+.ambassadorPeople_item_photo_container_name:before{
+    top: 92px;
+}
+.ambassadorPeople_item_photo_container_name:after{
+    top: 207px;
+}
+
+
+
+.ambassadorPeople_item_footer_info{
+    background: linear-gradient(180deg, rgba(210, 227, 253, 0) 0%, #D9E8FE 100%);
+    border-radius: 0 0 15px 15px;
+    padding: 25px 15px 20px 30px;
+    max-width: 357px;
+    width: 100%;
+    margin: 0 auto 20px;
+}
+
+.ambassadorPeople_item_footer_info_text_center{
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    color: #6B7E91;
+}
+.ambassadorPeople_item_footer_info_text_right{
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 100%;
+    color: #5C7287;
+}
+.ambassadorPeople_item_footer_info_grid_4 img{
+    width: 31px;
+}
+.ambassadorPeople_item_footer_info_grid_7{
+    color: #6B7E91;
+}
+
+
+.ambassadorPeople_item_footer_network{
+    max-width: 357px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ambassadorPeople_item_footer_network_a{
+    width: 32px;
+    height: 32px;
+    padding: 0 10px;
+}
+.ambassadorPeople_item_but{
+    display: inline-block;
+    margin: 20px auto;
+    padding: 16px 130px;
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    background: #0066FF;
+    border-radius: 15px;
+}
+
+
+
+
+
+/* grid */
+
+.ambassadorPeople_item_footer_info{
+    display: grid;
+    grid-template-columns: .5fr 2fr 3fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+}
+.ambassadorPeople_item_footer_info_grid_1 { grid-area: 1 / 1 / 2 / 2; }
+.ambassadorPeople_item_footer_info_grid_2 { grid-area: 1 / 2 / 2 / 3; }
+.ambassadorPeople_item_footer_info_grid_3 { grid-area: 1 / 3 / 2 / 4; }
+.ambassadorPeople_item_footer_info_grid_4 { grid-area: 2 / 1 / 3 / 2; }
+.ambassadorPeople_item_footer_info_grid_5 { grid-area: 2 / 2 / 3 / 3; }
+.ambassadorPeople_item_footer_info_grid_6 { grid-area: 2 / 3 / 3 / 4; }
+.ambassadorPeople_item_footer_info_grid_7 { grid-area: 3 / 1 / 4 / 2; }
+.ambassadorPeople_item_footer_info_grid_8 { grid-area: 3 / 2 / 4 / 3; }
+.ambassadorPeople_item_footer_info_grid_9 { grid-area: 3 / 3 / 4 / 4; }
+
+.ambassadorPeople_item_footer_info > div{
+    align-self: center;
+}
+.ambassadorPeople_item_footer_info_grid_7{
+    justify-self: center;
+}
+.ambassadorPeople_item_footer_info_grid_2{
+}
+
+/* /grid */
+
+
+
+
+
+
+
+
+
+
+/* color ambassador */
+
+/* TOP_Ambassador */
+
+.TOP_Ambassador .ambassadorPeople_item_photo_container_img{
+    border-bottom-color: #0066FF;
+}
+.TOP_Ambassador  .ambassadorPeople_item_photo_container_name:before,.TOP_Ambassador .ambassadorPeople_item_photo_container_name:after,
+.TOP_Ambassador .ambassadorPeople_item_photo_container:before, .TOP_Ambassador .ambassadorPeople_item_photo_container:after{
+    background: #D2E3FD;
+}
+.TOP_Ambassador .ambassadorPeople_item_footer_info_grid_1 path{
+    fill: #0EA0DE;
+
+}
+.TOP_Ambassador .ambassadorPeople_item_footer_network a{
+    color: #0066FF;
+}
+.TOP_Ambassador .ambassadorPeople_item_but{
+    background: #0066FF;
+}
+
+/* /TOP_Ambassador */
+
+/* Ambassador */
+
+.Ambassador .ambassadorPeople_item_photo_container_img{
+    border-bottom-color: #00A100;
+}
+.Ambassador  .ambassadorPeople_item_photo_container_name:before,.Ambassador .ambassadorPeople_item_photo_container_name:after,
+.Ambassador .ambassadorPeople_item_photo_container:before, .Ambassador .ambassadorPeople_item_photo_container:after{
+    background: #CEE4CE;
+}
+.Ambassador .ambassadorPeople_item_footer_info_grid_1 path{
+    fill: #00A100;
+
+}
+.Ambassador .ambassadorPeople_item_footer_network a{
+    color: #00A100;
+}
+.Ambassador .ambassadorPeople_item_but{
+    background: #00A100;
+}
+
+/* /Ambassador */
+
+/* Regional_Ambassador */
+
+.Regional_Ambassador .ambassadorPeople_item_photo_container_img{
+    border-bottom-color: #5064C8;
+}
+.Regional_Ambassador  .ambassadorPeople_item_photo_container_name:before,.Regional_Ambassador .ambassadorPeople_item_photo_container_name:after,
+.Regional_Ambassador .ambassadorPeople_item_photo_container:before, .Regional_Ambassador .ambassadorPeople_item_photo_container:after{
+    background: #CECADB;
+}
+.Regional_Ambassador .ambassadorPeople_item_footer_info_grid_1 path{
+    fill: #5064C8;
+
+}
+.Regional_Ambassador .ambassadorPeople_item_footer_network a{
+    color: #5064C8;
+}
+.Regional_Ambassador .ambassadorPeople_item_but{
+    background: #5064C8;
+}
+
+/* /Regional_Ambassador */
+
+/* International_Ambassador */
+
+.International_Ambassador .ambassadorPeople_item_photo_container_img{
+    border-bottom-color: #F78C1C;
+}
+.International_Ambassador  .ambassadorPeople_item_photo_container_name:before, .International_Ambassador .ambassadorPeople_item_photo_container_name:after,
+.International_Ambassador .ambassadorPeople_item_photo_container:before, .International_Ambassador .ambassadorPeople_item_photo_container:after{
+    background: #FFDFC7;
+}
+.International_Ambassador .ambassadorPeople_item_footer_info_grid_1 path{
+    fill: #F78C1C;
+
+}
+.International_Ambassador .ambassadorPeople_item_footer_network a{
+    color: #F78C1C;
+}
+.International_Ambassador .ambassadorPeople_item_but{
+    background: #F78C1C;
+}
+
+/* /International Ambassador */
+
+/* Boards */
+
+.Boards .ambassadorPeople_item_photo_container_img{
+    border-bottom-color: #F20001;
+}
+.Boards  .ambassadorPeople_item_photo_container_name:before, .Boards .ambassadorPeople_item_photo_container_name:after,
+.Boards .ambassadorPeople_item_photo_container:before, .Boards .ambassadorPeople_item_photo_container:after{
+    background: #EFD4CE;
+}
+.Boards .ambassadorPeople_item_footer_info_grid_1 path{
+    fill: #F20001;
+
+}
+.Boards .ambassadorPeople_item_footer_network a{
+    color: #F20001;
+}
+.Boards .ambassadorPeople_item_but{
+    background: #F20001;
+}
+
+
+/* /Boards */
+
+/* /color ambassador */
+
 
 /* /ambassadorPeople_info */
