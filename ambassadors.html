@@ -6,10 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/menu&footer.css">
     <link rel="stylesheet" href="css/ambassadors.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
 
     <title>Document</title>
 </head>
@@ -59,11 +61,120 @@
         </video>
         <div class="promoContent_info">
             <div class="promoContent_logo">
-                <img src="img/index/logo.png" alt="">
+                <img src="img/index/logo.png" alt="logo" class="wow bounceInDown">
             </div>
-            <div class="promoContent_info__up">
-                <h4>Инвестиционная компания</h4>
-                <p>Доход 50/50 с&nbspкомпанией <br>Прозрачность.<br>Еженедельный отчет.</p>
+        </div>
+    </section>
+    <section class="ambassadorInfo">
+
+        <img src="img/pam/triangle.svg" class="triangle_left_bg">
+        <div class="cross_bg cross_left1"><span class="cross_bg_adBf"></span></div>
+        <div class="cross_bg cross_left2"><span class="cross_bg_adBf"></span></div>
+        <div class="cross_bg cross_left3"><span class="cross_bg_adBf"></span></div>
+        <div class="circle_bg circle_left_1"></div>
+        <img src="img/pam/triangle.svg" class="triangle_right_bg">
+        <div class="cross_bg cross_right1"><span class="cross_bg_adBf"></span></div>
+        <div class="cross_bg cross_right2"><span class="cross_bg_adBf"></span></div>
+        <div class="cross_bg cross_right3"><span class="cross_bg_adBf"></span></div>
+        <div class="circle_bg circle_right_1"></div>
+
+
+        <div class="ambassadorInfo_row">
+            <img src="img/ambassadors/info.png" class="ambassadorInfo_row_img">
+            <div class="ambassadorInfo_row_text">
+                <h2 class="ambassadorInfo_row_text_h2">Ambassador</h2>
+                <p class="ambassadorInfo_row_text_p">
+                    <span>Амбассадоры</span> — финансовая интеллигенция
+                    сообщества Amir Partners,  которая занимается
+                    просветительским трудом в достижении
+                    финансового благополучия, сохраняет и несёт
+                    ценности и миссию группы компаний.
+                </p>
+                <p class="ambassadorInfo_row_text_p">
+                    Обладает высокой финансовой грамотностью
+                    и достаточным инвест-портфелем для
+                    финансовой свободы.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ambassadorPeople">
+        <div class="container">
+            <h1 class="ambassadorPeople_h1">
+                Найди своего амбассадора
+            </h1>
+            <form id="search" class="ambassadorPeople_form">
+                <div class="ambassadorPeople_form_inputSearch">
+                    <div class="ambassadorPeople_form_people">
+                        <img src="img/ambassadors/search.png" class="ambassadorPeople_form_people_search">
+                        <input type="text" id="name" class="ambassadorPeople_input" placeholder="Показать амбассадора по имени">
+                        <a type="button" class="ambassadorPeople_del" id="del"></a>
+                    </div>
+                    <div class="ambassadorPeople_form_quickSearchDiv" id="quickSearchPeopleDiv">
+                        <ul id="quickSearchPeople" class="ambassadorPeople_form_quickSearch">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="ambassadorPeople_form_country">
+                    <a class="ambassadorPeople_form_country_a" id="search_country_a">
+                        <span class="ambassadorPeople_form_country_a_text" id="search_country_text">
+                            Страна
+                        </span>
+                        <span class="ambassadorPeople_form_country_a_down"></span>
+                    </a>
+                    <div class="ambassadorPeople_form_quickSearchDiv" id="quickSearchС">
+                        <ul id="quickSearchСountry" class="ambassadorPeople_form_quickSearch">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="ambassadorPeople_form_country">
+                    <a class="ambassadorPeople_form_country_a" id="search_city_a">
+                        <span class="ambassadorPeople_form_country_a_text" id="search_city_text">
+                            Город
+                        </span>
+                        <span class="ambassadorPeople_form_country_a_down"></span>
+                    </a>
+                    <div class="ambassadorPeople_form_quickSearchDiv" id="quickSearchСi">
+                        <ul id="quickSearchСity" class="ambassadorPeople_form_quickSearch">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="ambassadorPeople_form_country">
+                    <a class="ambassadorPeople_form_country_a" id="search_status_a">
+                        <span class="ambassadorPeople_form_country_a_text" id="search_status_text">
+                            Статус
+                        </span>
+                        <span class="ambassadorPeople_form_country_a_down"></span>
+                    </a>
+                    <div class="ambassadorPeople_form_quickSearchDiv" id="quickSearchSt">
+                        <ul id="quickSearchStatus" class="ambassadorPeople_form_quickSearch">
+
+                        </ul>
+                    </div>
+                </div>
+                <a type="button" id="searchButton" class="searchButton">Найти</a>
+
+            </form>
+            <div class="ambassadorPeople_info">
+                <div class="ambassadorPeople_item">
+
+                </div>
+                <div class="ambassadorPeople_item">
+
+                </div>
+                <div class="ambassadorPeople_item">
+
+                </div>
+                <div class="ambassadorPeople_item">
+
+                </div>
+                <div class="ambassadorPeople_item">
+
+                </div>
             </div>
         </div>
     </section>
@@ -124,7 +235,7 @@
         <div class="footer_img"></div>
     </footer>
 </div>
-
+<script>new WOW().init();</script>
 <script src="js/menu.js"></script>
 <script src="js/ambassadors.js"></script>
 

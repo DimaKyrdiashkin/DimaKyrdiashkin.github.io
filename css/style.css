@@ -2663,6 +2663,8 @@ p.circle_yellow{
 	}
 	/* /device 400 */
 }
+
+
 @media all and (max-width: 992px) and (orientation : landscape) {
 	.promoContent{
 		height: 200vh;

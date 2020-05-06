@@ -49,6 +49,8 @@ footer{
     font-size: 30px;
     line-height: 36px;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
 
 }
 .home_h1 li{
@@ -340,6 +342,11 @@ footer{
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
+
+
+
+/* cross global */
+
 .triangle_left_bg{
     bottom: 317px;
     left: 110px;
@@ -347,8 +354,6 @@ footer{
     animation: device_bg 7s cubic-bezier(0.4, 0.02, 0.5, 0.98) reverse infinite;
 }
 
-
-/* cross global */
 .cross_bg{
     position: absolute;
     z-index: 2;
@@ -1141,9 +1146,14 @@ z-index: 10;
 @media (max-width: 480px) {
 
     /* home 480 */
-
+    .home .container{
+        width: 90%;
+    }
     .home video{
         left: -49%;
+    }
+    .home_h1{
+        align-self: flex-end;
     }
 
     /* /home 480 */
@@ -1192,9 +1202,29 @@ z-index: 10;
 
 }
 
-/*@media (max-width: 428px) {*/
-/*    .home video{*/
-/*        height: 100%;*/
-/*        width: auto;*/
-/*    }*/
-/*}*/
+
+@media all and (max-width: 992px) and (orientation : landscape) {
+    .home{
+        height: 185vh;
+    }
+    .home video{
+        min-width: 100vw;
+        height: 200vh;
+        max-height: 200vh;
+    }
+    .home_h1{
+        position: relative;
+        left: -50px;
+    }
+}
+
+@media all and (max-width: 800px) and (orientation : landscape) {
+
+    .home_h1{
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-self: flex-end;
+    }
+}
