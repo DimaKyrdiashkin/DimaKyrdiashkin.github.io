@@ -264,6 +264,7 @@
 }
 .ambassadorPeople_form_quickSearchDiv{
     display: none;
+    z-index: 30;
     position: absolute;
     padding: 10px 0 0 12px;
     width: 100%;
@@ -279,16 +280,16 @@
     overflow-y: scroll;
     height: 100%;
 }
+
 .ambassadorPeople_form_quickSearch::-webkit-scrollbar {
     width: 6px;
-
 }
-
 .ambassadorPeople_form_quickSearch::-webkit-scrollbar-thumb {
     background: #B7CBDE;
     border-radius: 5px;
 }
 .ambassadorPeople_form_quickSearch li{
+    cursor: pointer;
     font-family: Lato,sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -399,12 +400,13 @@
     padding-bottom: 10px;
 }
 .ambassadorPeople_item_photo_container{
-    width: 314px;
+    width: 315px;
     margin: auto;
     text-align: center;
 }
 .ambassadorPeople_item_photo_container_img{
-    max-width: 100%;
+    max-height: 356px;
+    width: 100%;
     border-bottom-width: 10px;
     border-bottom-style: solid;
     border-radius: 5px;
@@ -439,11 +441,17 @@
 .ambassadorPeople_item_photo_container_phone{
     font-family: Lato,sans-serif;
     font-size: 18px;
+    cursor: pointer;
     line-height: 22px;
     text-align: center;
     color: #000000;
 }
-
+.ambassadorPeople_item_photo_container_phone span{
+    cursor: pointer;
+}
+.ambassadorPeople_item_photo_container_phone i{
+    color: #6B7E91;
+}
 
 .ambassadorPeople_item_photo_container_name:before, .ambassadorPeople_item_photo_container_name:after{
     width: 131px;
@@ -508,8 +516,9 @@
 }
 .ambassadorPeople_item_footer_network_a{
     width: 32px;
+    display: block;
     height: 32px;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 .ambassadorPeople_item_but{
     display: inline-block;

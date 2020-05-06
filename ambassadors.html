@@ -110,12 +110,12 @@
             <h1 class="ambassadorPeople_h1">
                 Найди своего амбассадора
             </h1>
-            <form id="search" class="ambassadorPeople_form">
+            <form onsubmit="alert(true);return false" id="search" class="ambassadorPeople_form">
                 <div class="ambassadorPeople_form_inputSearch">
                     <div class="ambassadorPeople_form_people">
                         <img src="img/ambassadors/search.png" class="ambassadorPeople_form_people_search">
-                        <input type="text" id="name" class="ambassadorPeople_input" placeholder="Показать амбассадора по имени">
-                        <a type="button" class="ambassadorPeople_del" id="del"></a>
+                        <input type="text"  id="name" name="name" class="ambassadorPeople_input" placeholder="Показать амбассадора по имени">
+                        <a type="button" class="ambassadorPeople_del" id="clearAmb"></a>
                     </div>
                     <div class="ambassadorPeople_form_quickSearchDiv" id="quickSearchPeopleDiv">
                         <ul id="quickSearchPeople" class="ambassadorPeople_form_quickSearch">
@@ -128,6 +128,7 @@
                         <span class="ambassadorPeople_form_country_a_text" id="search_country_text">
                             Страна
                         </span>
+                        <input type="hidden" name="country">
                         <span class="ambassadorPeople_form_country_a_down"></span>
                     </a>
                     <div class="ambassadorPeople_form_quickSearchDiv" id="quickSearchС">
@@ -141,6 +142,7 @@
                         <span class="ambassadorPeople_form_country_a_text" id="search_city_text">
                             Город
                         </span>
+                        <input type="hidden" name="city">
                         <span class="ambassadorPeople_form_country_a_down"></span>
                     </a>
                     <div class="ambassadorPeople_form_quickSearchDiv" id="quickSearchСi">
@@ -154,6 +156,7 @@
                         <span class="ambassadorPeople_form_country_a_text" id="search_status_text">
                             Статус
                         </span>
+                        <input type="hidden" name="status">
                         <span class="ambassadorPeople_form_country_a_down"></span>
                     </a>
                     <div class="ambassadorPeople_form_quickSearchDiv" id="quickSearchSt">
@@ -162,10 +165,10 @@
                         </ul>
                     </div>
                 </div>
-                <a type="button" id="searchButton" class="searchButton">Найти</a>
+                <a type="submit" id="searchButton" class="searchButton">Найти</a>
 
             </form>
-            <div class="ambassadorPeople_info">
+            <div class="ambassadorPeople_info" id="ambassadorPeople_info">
                 <div class="ambassadorPeople_item TOP_Ambassador">
                     <div class="ambassadorPeople_item_photo">
                         <div class="ambassadorPeople_item_photo_container">
@@ -173,10 +176,8 @@
                             <h2 class="ambassadorPeople_item_photo_container_name">
                                 Максим Петров
                             </h2>
-                            <a href="" class="ambassadorPeople_item_photo_container_phone">
-                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.47134 1.00338C2.7775 0.950003 2.03027 1.32361 1.54992 1.80397C0.695949 2.71131 0.215592 4.09901 0.322338 4.8996C0.962814 9.48968 7.04733 16.0012 11.584 16.9619C12.3313 17.122 13.7723 16.7484 14.733 15.9478C15.2668 15.4675 15.6404 14.7736 15.6938 14.0798C15.6938 13.2258 12.3313 10.8774 11.3172 11.1976C10.8368 11.3577 10.6233 12.0516 10.4098 12.4786C9.98285 13.1724 9.44912 13.0123 8.91539 12.5319C7.47432 11.3577 5.60626 9.38293 4.5388 7.83512C4.11182 7.30139 3.9517 6.71428 4.69892 6.39405C5.12591 6.18055 5.81976 6.02044 6.03325 5.54008C6.46023 4.57937 4.32531 1.00338 3.47134 1.00338Z" fill="#6B7E91"/>
-                                </svg>
+                            <a href="tel:+7 (914) 938 5 888" class="ambassadorPeople_item_photo_container_phone">
+                                <i class="fas fa-phone-alt"></i>
                                 <span>+7 (914) 938 5 888</span>
                             </a>
                         </div>
@@ -212,8 +213,6 @@
                             <div class="ambassadorPeople_item_footer_info_grid_9 ambassadorPeople_item_footer_info_text_right">
                                 Иркутск
                             </div>
-
-
                         </div>
                         <ul class="ambassadorPeople_item_footer_network">
                             <li>
@@ -223,10 +222,11 @@
                                 <a href="" class="ambassadorPeople_item_footer_network_a"><i class="fab fa-instagram fa-2x"></i></a>
                             </li>
                         </ul>
+                        <a class="ambassadorPeople_item_but" href="">
+                            Перейти
+                        </a>
                     </div>
-                    <a href="" class="ambassadorPeople_item_but">
-                        Перейти
-                    </a>
+
                 </div>
                 <div class="ambassadorPeople_item Ambassador">
                     <div class="ambassadorPeople_item_photo">
