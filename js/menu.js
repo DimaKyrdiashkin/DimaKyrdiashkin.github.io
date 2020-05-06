@@ -4,7 +4,7 @@ $(".menu_button").on("click", function(even){
     console.log();
     if(!click){
         $(".menu_button").addClass("isFlip");
-        $(".menu_button").delay(500).addClass("isFlip_right",800);
+        $(".menu_button").delay(500).addClass("isFlip_right",1000);
         $(".menu").addClass("menu_open");
         $("header").delay(500).addClass("menu_open", 500);
         $(".menu ul, .menu a, .licens").delay(1000).removeClass("hide", 500);

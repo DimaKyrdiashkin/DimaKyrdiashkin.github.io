@@ -784,11 +784,32 @@ footer{
 	.study_second__text{
 		margin-left: 240px;
 	}
+	.cloudL,
+	.cloudR{
+		width: 350px;
+		top: 300px;
+	}
+	.study_first__column{
+		margin: 75px 0 0;
+		animation-delay: .5s;
+	}
+	.study_second_mob{
+		border-radius: 0 0 200px 0;
+	}
+	.study_second__text p{
+		font-size: 38px;
+	}
+	.study_second__text .green_text{
+		font-size: 56px;
+	}
+	.study_first__row{
+		margin: 250px auto 180px;
+	}
 	/*	/study */
 }
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
 
 	.payOut_row__left>h2{
@@ -842,18 +863,20 @@ footer{
 	}
 	.study_second__text{
 		margin: 32px 0 0 130px;
-		justify-content: flex-end;
+		justify-content: center;
 		margin-right: 32px;
 	}
 	.study_first__column{
 		margin-top: 40px;
 	}
 	.study_second__text p,.study_second__text .green_text{
-		font-size: 24px;
-		line-height: 29px;
+		font-size: 32px;
+	}
+	.study_second__text .green_text{
+		font-size: 48px;
 	}
 	.study_second{
-		border-radius: 0px 0px 33px 0px;
+		border-radius: 0px 0px 200px 0px;
 		background: #3293FF;
 	}
 	.study_second_girl{
@@ -867,6 +890,8 @@ footer{
 		margin-top: -20%;
 		display: block;
 		width: 100%;
+		position: relative;
+		bottom: -2px;
 	}
 
 	/* /study */
@@ -1013,9 +1038,58 @@ footer{
 		font-size: 24px;
 		line-height: 29px;
 	}
-	.study_first__column:last-child .study_first__column-text,.study_first__column .study_first__column-text{
+	.study_first__head img{
+		max-width: 200px;
+	}
+	.cloudL,
+	.cloudR{
+		width: 150px;
+		top: 200px;
+	}
+	.study_first__column:first-child p{
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.study_first__column-text .orange_text{
+		text-transform: inherit;
+	}
+	.study_first__column:last-child .study_first__column-text,
+	.study_first__column .study_first__column-text{
 		padding: 20px 12px 20px 20px;
 		width: 100%;
+	}
+	.study_first__column:nth-child(2) .study_first__column-text{
+		padding: 20px 12px 20px 8px;
+		font-size: 14px;
+	}
+	.study_first__column:nth-child(2) p{
+		font-size: 14px;
+	}
+	.study_first__column:last-child p{
+		font-family: 'Lato-Semibold', sans-serif;
+	}
+	.study_second__text{
+		margin: 32px 0 75px;
+	}
+	.study_second__text p{
+		font-size: 24px;
+		color: #fff;
+		font-family: 'Lato-Semibold', sans-serif;
+	}
+	.study_second__text .green_text{
+		font-size: 32px;
+		color: #fff;
+	}
+	.study_second_girl{
+		display: none;
+	}
+	.study_second{
+		border-radius: 0px 0px 30px 0px;
+		margin-bottom: 25px;
+	}
+	.study_second_mob{
+		border-radius: 0px 0px 30px 0px;
 	}
 	/* /study*/
 

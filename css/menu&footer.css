@@ -132,7 +132,8 @@ header.menu_open{
 }
 .button_middle{
 	position: absolute;
-    display: block;
+	display: block;
+	cursor: pointer;
     height: 30px;
     width: 5px;
     background: #fff;
@@ -144,6 +145,7 @@ header.menu_open{
 }
 .button_top{
 	display: block;
+	cursor: pointer;
 	background: #fff;
 	height: 15px;
 	left: 30%;
@@ -159,6 +161,7 @@ header.menu_open{
 }
 .button_bottom{
 	display: block;
+	cursor: pointer;
 	background: #fff;
 	height: 15px;
 	right: 30%;
@@ -189,6 +192,12 @@ header.menu_open{
 	padding: 6px 0 20px 0;
 	border-bottom: 1px solid  #397BDF;
 	text-align: center;
+	transition: .2s;
+}
+.menu ul li:hover{
+	background: #4381DE;
+	transition: .2s;
+	text-shadow: 3px 3px 3px #666;
 }
 .licens p{
 	color: #fff;
