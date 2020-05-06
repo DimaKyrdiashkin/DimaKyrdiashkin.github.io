@@ -27,5 +27,6 @@ $(window).on('scroll', function(){
 $(window).on('load', function(){
     if(document.documentElement.clientWidth <= 1200){
         $('.study_first__column').attr('data-wow-delay', '0s');
+        $('.study_first__column').attr('data-wow-offset', '200');
     };
 });
