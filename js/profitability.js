@@ -351,7 +351,7 @@ $(".profitability_right_naw a").on("click", (e)=>{
 $(function() {
     $(".second_video").trigger('play');
     setTimeout(function() {
-        $(".second_video").css("display", "none");
+        $(".second_video").css("z-index", "-111");
         $('.first_video').trigger('play');
     }, 2100);
 });
