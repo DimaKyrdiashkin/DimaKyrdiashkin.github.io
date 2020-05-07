@@ -1,7 +1,6 @@
 //menu
 let click = false;
 $(".menu_button").on("click", function(even){
-    console.log();
     if(!click){
         $(".menu_button").addClass("isFlip");
         $(".menu_button").delay(500).addClass("isFlip_right",1000);
