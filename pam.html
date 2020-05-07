@@ -211,6 +211,15 @@
 										<input id="c-period-slider" type="range" min="1" max="52" step="1" value="1">
 									</div>
 								</div>
+
+								<div class="invest chb">
+									<input type="checkbox" id="c-refill-check">
+									<label for="c-refill-check"><div class="tick"></div></label>
+									<span class="c-label">Ежемесячное пополнение</span>
+								</div>
+								<div class="invest-field" id="invest_field">
+									<input type="text" id="c-refill-amount" disabled="disabled" placeholder="Введите сумму платежа">
+								</div>
 								<div class="calc_select">
 									<select>
 										<option value="0">Период</option>
@@ -257,19 +266,19 @@
 							</div>
 							<div id="c-options-block">
 								<div class="choice-group">
-									<span class='c-primary-title'>Счет</span>
+<!--									<span class='c-primary-title'>Счет</span>-->
+<!--									<div class="choice-box rb">-->
+<!--										<input type="checkbox" class="c-account-check" value="savings" id="c-savings">-->
+<!--										<label for="c-savings"><div class="tick"></div></label>-->
+<!--										<span class="c-label">Накопительный</span>-->
+<!--									</div>-->
+<!--									<div class="choice-box rb">-->
+<!--										<input type="checkbox" class="c-account-check" value="stable" id="c-stable">-->
+<!--										<label for="c-stable"><div class="tick"></div></label>-->
+<!--										<span class="c-label">Bright</span>-->
+<!--									</div>-->
 									<div class="choice-box rb">
-										<input type="checkbox" checked="checked" class="c-account-check" value="savings" id="c-savings">
-										<label for="c-savings"><div class="tick"></div></label>
-										<span class="c-label">Накопительный</span>
-									</div>
-									<div class="choice-box rb">
-										<input type="checkbox" class="c-account-check" value="stable" id="c-stable">
-										<label for="c-stable"><div class="tick"></div></label>
-										<span class="c-label">Bright</span>
-									</div>
-									<div class="choice-box rb">
-										<input type="checkbox" class="c-account-check" value="pam" id="c-pam">
+										<input type="checkbox" checked="checked"  class="c-account-check" value="pam" id="c-pam">
 										<label for="c-pam"><div class="tick"></div></label>
 										<span class="c-label">PAM</span>
 									</div>
@@ -315,14 +324,7 @@
 							</div>
 							<div class="add-field">
 								<div class="add-field-col">
-									<div class="invest-field" id="invest_field">
-										<input type="text" id="c-refill-amount" disabled="disabled" placeholder="Введите сумму платежа">
-									</div>
-									<div class="invest chb">
-										<input type="checkbox" id="c-refill-check">
-										<label for="c-refill-check"><div class="tick"></div></label>
-										<span class="c-label">Ежемесячное пополнение</span>
-									</div>
+
 									<div class="chb capotalization">
 										<input type="checkbox" id="capotalization" disabled>
 										<label for="capotalization"><div class="tick"></div></label>

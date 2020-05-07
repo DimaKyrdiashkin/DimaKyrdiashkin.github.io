@@ -936,7 +936,18 @@ footer{
 		height: 100%;
 		transform: translateY(-50%) translateX(-52%);
 	}
-
+	.promoContent_info__up{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.promoContent_info__up img{
+		max-width: 173px;
+	}
+	.promoContent_info__up p{
+		padding-bottom: 10px;
+		order: -1;
+	}
 	.promoContent_logo{
 		padding-top: 30px;
 	}
