@@ -11,7 +11,8 @@
 .home video{
     position: absolute;
     z-index: 2;
-    height: 100%;
+    min-width: 100vw;
+    min-height: 100%;
     left: 50%;
     transform: translateX(-50%);
 }
