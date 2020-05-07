@@ -289,6 +289,7 @@ document.querySelector(".contentBlockTwo_row").addEventListener("touchend", func
 let offset = $(".profitability_right_static").offset();
 $(window).on("scroll", () => {
     parallax_device();
+    parallax_home();
     if($(document).scrollTop() > offset.top - 400){
         if(!$(".profitability_right_static").hasClass("clear_open")){
             $(".profitability_right_static_usdt").addClass("slide_profitability", 500);
@@ -357,3 +358,22 @@ function parallax_device() {
     }
 }
 // /parallax
+
+
+// parallax_home
+
+const home_y = 0;
+function parallax_home() {
+    let h = window.pageYOffset;
+    console.log("fun");
+    if(h >= home_y && h<=1000){
+        console.log(true);
+        $(".promoContent .promoContent_info").css({top: `${parseInt(h)}px`})
+        $(".promoContent video").css({top: `${parseInt(h-200)}px`})
+    }
+    if(h === home_y){
+        $(".promoContent video").css({top: `${parseInt(0)}px`})
+    }
+}
+
+// /parallax_home

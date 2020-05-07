@@ -933,6 +933,7 @@ footer{
 @media (max-width: 480px) {
 	.promoContent video{
 		top: 50%;
+		left: 50%;
 		height: 100%;
 		transform: translateY(-50%) translateX(-52%);
 	}
