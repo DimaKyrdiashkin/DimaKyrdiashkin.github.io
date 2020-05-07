@@ -6,10 +6,18 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/menu&footer.css">
     <link rel="stylesheet" href="css/ambassadors.css">
+
+    <!-- Favicon -->
+    <link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+
 
     <title>Document</title>
 </head>
@@ -59,11 +67,416 @@
         </video>
         <div class="promoContent_info">
             <div class="promoContent_logo">
-                <img src="img/index/logo.png" alt="">
+                <img src="img/index/logo.png" alt="logo" class="wow bounceInDown">
             </div>
-            <div class="promoContent_info__up">
-                <h4>Инвестиционная компания</h4>
-                <p>Доход 50/50 с&nbspкомпанией <br>Прозрачность.<br>Еженедельный отчет.</p>
+        </div>
+    </section>
+    <section class="ambassadorInfo">
+
+        <img src="img/pam/triangle.svg" class="triangle_left_bg">
+        <div class="cross_bg cross_left1"><span class="cross_bg_adBf"></span></div>
+        <div class="cross_bg cross_left2"><span class="cross_bg_adBf"></span></div>
+        <div class="cross_bg cross_left3"><span class="cross_bg_adBf"></span></div>
+        <div class="circle_bg circle_left_1"></div>
+        <img src="img/pam/triangle.svg" class="triangle_right_bg">
+        <div class="cross_bg cross_right1"><span class="cross_bg_adBf"></span></div>
+        <div class="cross_bg cross_right2"><span class="cross_bg_adBf"></span></div>
+        <div class="cross_bg cross_right3"><span class="cross_bg_adBf"></span></div>
+        <div class="circle_bg circle_right_1"></div>
+
+
+        <div class="ambassadorInfo_row">
+            <img src="img/ambassadors/info.png" class="ambassadorInfo_row_img">
+            <div class="ambassadorInfo_row_text">
+                <h2 class="ambassadorInfo_row_text_h2">Ambassador</h2>
+                <p class="ambassadorInfo_row_text_p">
+                    <span>Амбассадоры</span> — финансовая интеллигенция
+                    сообщества Amir Partners,  которая занимается
+                    просветительским трудом в достижении
+                    финансового благополучия, сохраняет и несёт
+                    ценности и миссию группы компаний.
+                </p>
+                <p class="ambassadorInfo_row_text_p">
+                    Обладает высокой финансовой грамотностью
+                    и достаточным инвест-портфелем для
+                    финансовой свободы.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ambassadorPeople">
+        <div class="container">
+            <h1 class="ambassadorPeople_h1">
+                Найди своего амбассадора
+            </h1>
+            <form onsubmit="alert(true);return false" id="search" class="ambassadorPeople_form">
+                <div class="ambassadorPeople_form_inputSearch">
+                    <div class="ambassadorPeople_form_people">
+                        <img src="img/ambassadors/search.png" class="ambassadorPeople_form_people_search">
+                        <input type="text"  id="name" name="name" class="ambassadorPeople_input" placeholder="Показать амбассадора по имени">
+                        <a type="button" class="ambassadorPeople_del" id="clearAmb"></a>
+                    </div>
+                    <div class="ambassadorPeople_form_quickSearchDiv" id="quickSearchPeopleDiv">
+                        <ul id="quickSearchPeople" class="ambassadorPeople_form_quickSearch">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="ambassadorPeople_form_country">
+                    <a class="ambassadorPeople_form_country_a" id="search_country_a">
+                        <span class="ambassadorPeople_form_country_a_text" id="search_country_text">
+                            Страна
+                        </span>
+                        <input type="hidden" name="country">
+                        <span class="ambassadorPeople_form_country_a_down"></span>
+                    </a>
+                    <div class="ambassadorPeople_form_quickSearchDiv" id="quickSearchС">
+                        <ul id="quickSearchСountry" class="ambassadorPeople_form_quickSearch">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="ambassadorPeople_form_country">
+                    <a class="ambassadorPeople_form_country_a" id="search_city_a">
+                        <span class="ambassadorPeople_form_country_a_text" id="search_city_text">
+                            Город
+                        </span>
+                        <input type="hidden" name="city">
+                        <span class="ambassadorPeople_form_country_a_down"></span>
+                    </a>
+                    <div class="ambassadorPeople_form_quickSearchDiv" id="quickSearchСi">
+                        <ul id="quickSearchСity" class="ambassadorPeople_form_quickSearch">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="ambassadorPeople_form_country">
+                    <a class="ambassadorPeople_form_country_a" id="search_status_a">
+                        <span class="ambassadorPeople_form_country_a_text" id="search_status_text">
+                            Статус
+                        </span>
+                        <input type="hidden" name="status">
+                        <span class="ambassadorPeople_form_country_a_down"></span>
+                    </a>
+                    <div class="ambassadorPeople_form_quickSearchDiv" id="quickSearchSt">
+                        <ul id="quickSearchStatus" class="ambassadorPeople_form_quickSearch">
+
+                        </ul>
+                    </div>
+                </div>
+                <a type="submit" id="searchButton" class="searchButton">Найти</a>
+
+            </form>
+            <div class="ambassadorPeople_info" id="ambassadorPeople_info">
+                <div class="ambassadorPeople_item TOP_Ambassador">
+                    <div class="ambassadorPeople_item_photo">
+                        <div class="ambassadorPeople_item_photo_container">
+                            <img src="img/ambassadors/people.png" alt="ambassador" class="ambassadorPeople_item_photo_container_img">
+                            <h2 class="ambassadorPeople_item_photo_container_name">
+                                Максим Петров
+                            </h2>
+                            <a href="tel:+7 (914) 938 5 888" class="ambassadorPeople_item_photo_container_phone">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+7 (914) 938 5 888</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ambassadorPeople_item_footer">
+                        <div class="ambassadorPeople_item_footer_info">
+                            <div class="ambassadorPeople_item_footer_info_grid_1">
+                                <svg width="32" height="23"  viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.6134 22.9981V15.6703C24.6134 15.1799 24.6982 12.7392 26.3613 12.7392C26.675 12.7392 27.466 12.8106 28.0105 13.4663C28.1447 13.6298 28.2729 13.7932 28.3972 13.9511C28.9042 14.5993 29.2376 14.9939 29.5808 14.9939C30.4725 14.9939 31.4668 13.5584 31.4668 11.4991C31.4668 9.43975 30.4725 8.00425 29.5808 8.00425C29.2376 8.00425 28.9062 8.39883 28.3972 9.04706C28.2729 9.20489 28.1447 9.36836 28.0105 9.53183C27.466 10.1895 26.675 10.259 26.3613 10.259C24.6963 10.259 24.6134 7.81635 24.6134 7.32783V0H16.9196C14.9912 0 10.0889 0 8.16057 0H0.466797V23H24.6134V22.9981Z"/>
+                                </svg>
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_2 ambassadorPeople_item_footer_info_text_center">
+                                Статус —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_3 ambassadorPeople_item_footer_info_text_right">
+                                International Ambassador
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_4">
+                                <img src="img/ambassadors/rus.png" class="ambassadorPeople_item_footer_info_flag">
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_5 ambassadorPeople_item_footer_info_text_center">
+                                Страна —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_6 ambassadorPeople_item_footer_info_text_right">
+                                Россия
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_7">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_8 ambassadorPeople_item_footer_info_text_center">
+                                Город —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_9 ambassadorPeople_item_footer_info_text_right">
+                                Иркутск
+                            </div>
+                        </div>
+                        <ul class="ambassadorPeople_item_footer_network">
+                            <li>
+                                <a href="" class="ambassadorPeople_item_footer_network_a"><i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="" class="ambassadorPeople_item_footer_network_a"><i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                        </ul>
+                        <a class="ambassadorPeople_item_but" href="">
+                            Перейти
+                        </a>
+                    </div>
+
+                </div>
+                <div class="ambassadorPeople_item Ambassador">
+                    <div class="ambassadorPeople_item_photo">
+                        <div class="ambassadorPeople_item_photo_container">
+                            <img src="img/ambassadors/people.png" alt="ambassador" class="ambassadorPeople_item_photo_container_img">
+                            <h2 class="ambassadorPeople_item_photo_container_name">
+                                Максим Петров
+                            </h2>
+                            <a href="" class="ambassadorPeople_item_photo_container_phone">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.47134 1.00338C2.7775 0.950003 2.03027 1.32361 1.54992 1.80397C0.695949 2.71131 0.215592 4.09901 0.322338 4.8996C0.962814 9.48968 7.04733 16.0012 11.584 16.9619C12.3313 17.122 13.7723 16.7484 14.733 15.9478C15.2668 15.4675 15.6404 14.7736 15.6938 14.0798C15.6938 13.2258 12.3313 10.8774 11.3172 11.1976C10.8368 11.3577 10.6233 12.0516 10.4098 12.4786C9.98285 13.1724 9.44912 13.0123 8.91539 12.5319C7.47432 11.3577 5.60626 9.38293 4.5388 7.83512C4.11182 7.30139 3.9517 6.71428 4.69892 6.39405C5.12591 6.18055 5.81976 6.02044 6.03325 5.54008C6.46023 4.57937 4.32531 1.00338 3.47134 1.00338Z" fill="#6B7E91"/>
+                                </svg>
+                                <span>+7 (914) 938 5 888</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ambassadorPeople_item_footer">
+                        <div class="ambassadorPeople_item_footer_info">
+                            <div class="ambassadorPeople_item_footer_info_grid_1">
+                                <svg width="32" height="23"  viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.6134 22.9981V15.6703C24.6134 15.1799 24.6982 12.7392 26.3613 12.7392C26.675 12.7392 27.466 12.8106 28.0105 13.4663C28.1447 13.6298 28.2729 13.7932 28.3972 13.9511C28.9042 14.5993 29.2376 14.9939 29.5808 14.9939C30.4725 14.9939 31.4668 13.5584 31.4668 11.4991C31.4668 9.43975 30.4725 8.00425 29.5808 8.00425C29.2376 8.00425 28.9062 8.39883 28.3972 9.04706C28.2729 9.20489 28.1447 9.36836 28.0105 9.53183C27.466 10.1895 26.675 10.259 26.3613 10.259C24.6963 10.259 24.6134 7.81635 24.6134 7.32783V0H16.9196C14.9912 0 10.0889 0 8.16057 0H0.466797V23H24.6134V22.9981Z"/>
+                                </svg>
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_2 ambassadorPeople_item_footer_info_text_center">
+                                Статус —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_3 ambassadorPeople_item_footer_info_text_right">
+                                International Ambassador
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_4">
+                                <img src="img/ambassadors/rus.png" class="ambassadorPeople_item_footer_info_flag">
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_5 ambassadorPeople_item_footer_info_text_center">
+                                Страна —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_6 ambassadorPeople_item_footer_info_text_right">
+                                Россия
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_7">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_8 ambassadorPeople_item_footer_info_text_center">
+                                Город —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_9 ambassadorPeople_item_footer_info_text_right">
+                                Иркутск
+                            </div>
+
+
+                        </div>
+                        <ul class="ambassadorPeople_item_footer_network">
+                            <li>
+                                <a href="" class="ambassadorPeople_item_footer_network_a"><i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="" class="ambassadorPeople_item_footer_network_a"><i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="ambassadorPeople_item_but">
+                        Перейти
+                    </a>
+                </div>
+                <div class="ambassadorPeople_item Regional_Ambassador">
+                    <div class="ambassadorPeople_item_photo">
+                        <div class="ambassadorPeople_item_photo_container">
+                            <img src="img/ambassadors/people.png" alt="ambassador" class="ambassadorPeople_item_photo_container_img">
+                            <h2 class="ambassadorPeople_item_photo_container_name">
+                                Максим Петров
+                            </h2>
+                            <a href="" class="ambassadorPeople_item_photo_container_phone">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.47134 1.00338C2.7775 0.950003 2.03027 1.32361 1.54992 1.80397C0.695949 2.71131 0.215592 4.09901 0.322338 4.8996C0.962814 9.48968 7.04733 16.0012 11.584 16.9619C12.3313 17.122 13.7723 16.7484 14.733 15.9478C15.2668 15.4675 15.6404 14.7736 15.6938 14.0798C15.6938 13.2258 12.3313 10.8774 11.3172 11.1976C10.8368 11.3577 10.6233 12.0516 10.4098 12.4786C9.98285 13.1724 9.44912 13.0123 8.91539 12.5319C7.47432 11.3577 5.60626 9.38293 4.5388 7.83512C4.11182 7.30139 3.9517 6.71428 4.69892 6.39405C5.12591 6.18055 5.81976 6.02044 6.03325 5.54008C6.46023 4.57937 4.32531 1.00338 3.47134 1.00338Z" fill="#6B7E91"/>
+                                </svg>
+                                <span>+7 (914) 938 5 888</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ambassadorPeople_item_footer">
+                        <div class="ambassadorPeople_item_footer_info">
+                            <div class="ambassadorPeople_item_footer_info_grid_1">
+                                <svg width="32" height="23"  viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.6134 22.9981V15.6703C24.6134 15.1799 24.6982 12.7392 26.3613 12.7392C26.675 12.7392 27.466 12.8106 28.0105 13.4663C28.1447 13.6298 28.2729 13.7932 28.3972 13.9511C28.9042 14.5993 29.2376 14.9939 29.5808 14.9939C30.4725 14.9939 31.4668 13.5584 31.4668 11.4991C31.4668 9.43975 30.4725 8.00425 29.5808 8.00425C29.2376 8.00425 28.9062 8.39883 28.3972 9.04706C28.2729 9.20489 28.1447 9.36836 28.0105 9.53183C27.466 10.1895 26.675 10.259 26.3613 10.259C24.6963 10.259 24.6134 7.81635 24.6134 7.32783V0H16.9196C14.9912 0 10.0889 0 8.16057 0H0.466797V23H24.6134V22.9981Z"/>
+                                </svg>
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_2 ambassadorPeople_item_footer_info_text_center">
+                                Статус —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_3 ambassadorPeople_item_footer_info_text_right">
+                                International Ambassador
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_4">
+                                <img src="img/ambassadors/rus.png" class="ambassadorPeople_item_footer_info_flag">
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_5 ambassadorPeople_item_footer_info_text_center">
+                                Страна —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_6 ambassadorPeople_item_footer_info_text_right">
+                                Россия
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_7">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_8 ambassadorPeople_item_footer_info_text_center">
+                                Город —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_9 ambassadorPeople_item_footer_info_text_right">
+                                Иркутск
+                            </div>
+
+
+                        </div>
+                        <ul class="ambassadorPeople_item_footer_network">
+                            <li>
+                                <a href="" class="ambassadorPeople_item_footer_network_a"><i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="" class="ambassadorPeople_item_footer_network_a"><i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="ambassadorPeople_item_but">
+                        Перейти
+                    </a>
+                </div>
+                <div class="ambassadorPeople_item International_Ambassador">
+                    <div class="ambassadorPeople_item_photo">
+                        <div class="ambassadorPeople_item_photo_container">
+                            <img src="img/ambassadors/people.png" alt="ambassador" class="ambassadorPeople_item_photo_container_img">
+                            <h2 class="ambassadorPeople_item_photo_container_name">
+                                Максим Петров
+                            </h2>
+                            <a href="" class="ambassadorPeople_item_photo_container_phone">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.47134 1.00338C2.7775 0.950003 2.03027 1.32361 1.54992 1.80397C0.695949 2.71131 0.215592 4.09901 0.322338 4.8996C0.962814 9.48968 7.04733 16.0012 11.584 16.9619C12.3313 17.122 13.7723 16.7484 14.733 15.9478C15.2668 15.4675 15.6404 14.7736 15.6938 14.0798C15.6938 13.2258 12.3313 10.8774 11.3172 11.1976C10.8368 11.3577 10.6233 12.0516 10.4098 12.4786C9.98285 13.1724 9.44912 13.0123 8.91539 12.5319C7.47432 11.3577 5.60626 9.38293 4.5388 7.83512C4.11182 7.30139 3.9517 6.71428 4.69892 6.39405C5.12591 6.18055 5.81976 6.02044 6.03325 5.54008C6.46023 4.57937 4.32531 1.00338 3.47134 1.00338Z" fill="#6B7E91"/>
+                                </svg>
+                                <span>+7 (914) 938 5 888</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ambassadorPeople_item_footer">
+                        <div class="ambassadorPeople_item_footer_info">
+                            <div class="ambassadorPeople_item_footer_info_grid_1">
+                                <svg width="32" height="23"  viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.6134 22.9981V15.6703C24.6134 15.1799 24.6982 12.7392 26.3613 12.7392C26.675 12.7392 27.466 12.8106 28.0105 13.4663C28.1447 13.6298 28.2729 13.7932 28.3972 13.9511C28.9042 14.5993 29.2376 14.9939 29.5808 14.9939C30.4725 14.9939 31.4668 13.5584 31.4668 11.4991C31.4668 9.43975 30.4725 8.00425 29.5808 8.00425C29.2376 8.00425 28.9062 8.39883 28.3972 9.04706C28.2729 9.20489 28.1447 9.36836 28.0105 9.53183C27.466 10.1895 26.675 10.259 26.3613 10.259C24.6963 10.259 24.6134 7.81635 24.6134 7.32783V0H16.9196C14.9912 0 10.0889 0 8.16057 0H0.466797V23H24.6134V22.9981Z"/>
+                                </svg>
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_2 ambassadorPeople_item_footer_info_text_center">
+                                Статус —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_3 ambassadorPeople_item_footer_info_text_right">
+                                International Ambassador
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_4">
+                                <img src="img/ambassadors/rus.png" class="ambassadorPeople_item_footer_info_flag">
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_5 ambassadorPeople_item_footer_info_text_center">
+                                Страна —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_6 ambassadorPeople_item_footer_info_text_right">
+                                Россия
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_7">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_8 ambassadorPeople_item_footer_info_text_center">
+                                Город —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_9 ambassadorPeople_item_footer_info_text_right">
+                                Иркутск
+                            </div>
+
+
+                        </div>
+                        <ul class="ambassadorPeople_item_footer_network">
+                            <li>
+                                <a href="" class="ambassadorPeople_item_footer_network_a"><i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="" class="ambassadorPeople_item_footer_network_a"><i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="ambassadorPeople_item_but">
+                        Перейти
+                    </a>
+                </div>
+                <div class="ambassadorPeople_item Boards">
+                    <div class="ambassadorPeople_item_photo">
+                        <div class="ambassadorPeople_item_photo_container">
+                            <img src="img/ambassadors/people.png" alt="ambassador" class="ambassadorPeople_item_photo_container_img">
+                            <h2 class="ambassadorPeople_item_photo_container_name">
+                                Максим Петров
+                            </h2>
+                            <a href="" class="ambassadorPeople_item_photo_container_phone">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.47134 1.00338C2.7775 0.950003 2.03027 1.32361 1.54992 1.80397C0.695949 2.71131 0.215592 4.09901 0.322338 4.8996C0.962814 9.48968 7.04733 16.0012 11.584 16.9619C12.3313 17.122 13.7723 16.7484 14.733 15.9478C15.2668 15.4675 15.6404 14.7736 15.6938 14.0798C15.6938 13.2258 12.3313 10.8774 11.3172 11.1976C10.8368 11.3577 10.6233 12.0516 10.4098 12.4786C9.98285 13.1724 9.44912 13.0123 8.91539 12.5319C7.47432 11.3577 5.60626 9.38293 4.5388 7.83512C4.11182 7.30139 3.9517 6.71428 4.69892 6.39405C5.12591 6.18055 5.81976 6.02044 6.03325 5.54008C6.46023 4.57937 4.32531 1.00338 3.47134 1.00338Z" fill="#6B7E91"/>
+                                </svg>
+                                <span>+7 (914) 938 5 888</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ambassadorPeople_item_footer">
+                        <div class="ambassadorPeople_item_footer_info">
+                            <div class="ambassadorPeople_item_footer_info_grid_1">
+                                <svg width="32" height="23"  viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.6134 22.9981V15.6703C24.6134 15.1799 24.6982 12.7392 26.3613 12.7392C26.675 12.7392 27.466 12.8106 28.0105 13.4663C28.1447 13.6298 28.2729 13.7932 28.3972 13.9511C28.9042 14.5993 29.2376 14.9939 29.5808 14.9939C30.4725 14.9939 31.4668 13.5584 31.4668 11.4991C31.4668 9.43975 30.4725 8.00425 29.5808 8.00425C29.2376 8.00425 28.9062 8.39883 28.3972 9.04706C28.2729 9.20489 28.1447 9.36836 28.0105 9.53183C27.466 10.1895 26.675 10.259 26.3613 10.259C24.6963 10.259 24.6134 7.81635 24.6134 7.32783V0H16.9196C14.9912 0 10.0889 0 8.16057 0H0.466797V23H24.6134V22.9981Z"/>
+                                </svg>
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_2 ambassadorPeople_item_footer_info_text_center">
+                                Статус —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_3 ambassadorPeople_item_footer_info_text_right">
+                                International Ambassador
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_4">
+                                <img src="img/ambassadors/rus.png" class="ambassadorPeople_item_footer_info_flag">
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_5 ambassadorPeople_item_footer_info_text_center">
+                                Страна —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_6 ambassadorPeople_item_footer_info_text_right">
+                                Россия
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_7">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_8 ambassadorPeople_item_footer_info_text_center">
+                                Город —
+                            </div>
+                            <div class="ambassadorPeople_item_footer_info_grid_9 ambassadorPeople_item_footer_info_text_right">
+                                Иркутск
+                            </div>
+
+
+                        </div>
+                        <ul class="ambassadorPeople_item_footer_network">
+                            <li>
+                                <a href="" class="ambassadorPeople_item_footer_network_a"><i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="" class="ambassadorPeople_item_footer_network_a"><i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="ambassadorPeople_item_but">
+                        Перейти
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -124,7 +537,7 @@
         <div class="footer_img"></div>
     </footer>
 </div>
-
+<script>new WOW().init();</script>
 <script src="js/menu.js"></script>
 <script src="js/ambassadors.js"></script>
 

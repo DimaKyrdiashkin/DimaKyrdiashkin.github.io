@@ -515,7 +515,30 @@ footer{
 	font-size: 48px;
 	line-height: 58px;
 	margin: auto;
+	background-size: 369px 200px;
+	color: transparent;
+	-webkit-background-clip: text;
+	-webkit-animation: animate-logo;
+	-webkit-animation-delay: 0;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-direction: alternate;
+	transition: font-size 500ms ease-in-out;
 }
+@-webkit-keyframes animate-logo {
+	0% {
+		background-position: 0 369px;
+	}
+	50% {
+		background-position: 369px 0;
+	}
+	100%{
+		background-position: 0 369px;
+	}
+}
+
 
 .millionaires_lanternLeft, .millionaires_lanternRight{
 	position: absolute;
