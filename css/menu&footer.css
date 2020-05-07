@@ -45,15 +45,13 @@ header{
 	-o-transition: 1s;
 	transition: 1s;
 	left: 150px;
+	overflow: hidden;
 }
 .menu.menu_open{
 	left: 0;
-	overflow: hidden;
 }
 header.menu_open{
 	right: 0;
-	overflow: hidden;
-	overflow-y: auto;
 }
 .menu_header{
 	display: -webkit-box;
@@ -81,8 +79,6 @@ header.menu_open{
 	position: fixed;
 	cursor: pointer;
 	border-radius: 50%;
-	-webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-	        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	-webkit-transform-style: preserve-3d;
 	        transform-style: preserve-3d;
 	-webkit-transition: -webkit-transform 1s;
@@ -91,7 +87,7 @@ header.menu_open{
 	transition: transform 1s;
 	transition: transform 1s, -webkit-transform 1s;
 	z-index: 1;
-    top: 25px;
+    top: 26px;
     left: 25px;
 }
 .front_button{
@@ -177,11 +173,14 @@ header.menu_open{
 	transition: .5s;
 }
 .logOut{
-	background: radial-gradient(80.07% 154.58% at 5.64% 16.68%, #27416A 0%, #2A446F 63.36%, #264068 90.75%, #29456F 100%);
-	box-shadow: 5px 5px 15px #0C1A30, -3px -3px 75px #4C6FA3, -4px -3px 15px #324F7B;
+	background:  #27416A;
+	box-shadow: 0px -6px 10px rgb(50, 73, 109), 5px 5px 17px rgba(0, 0, 0, 0.45);
 	border-radius: 10px;
 	padding: 11px 12px;
 	color: #7993B8;
+}
+.logOut:hover{
+	box-shadow: inset 0px -2px 5px rgb(53, 83, 128), inset 0px 2px 5px rgba(0, 0, 0, 0.47);
 }
 .menu ul{
 	font-size: 15px;
