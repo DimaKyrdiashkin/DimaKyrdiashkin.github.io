@@ -48,10 +48,12 @@ header{
 }
 .menu.menu_open{
 	left: 0;
-	
+	overflow: hidden;
 }
 header.menu_open{
 	right: 0;
+	overflow: hidden;
+	overflow-y: auto;
 }
 .menu_header{
 	display: -webkit-box;
@@ -70,7 +72,7 @@ header.menu_open{
 	height: 100px;
 	background: #223C64;
 	box-shadow: 0px 25px 85px rgba(6, 18, 38, 0.9);
-	border-radius: 42px 0 0 0;
+	border-radius: 35px 0 0 0;
 	overflow: hidden;
 }
 .menu_button{
@@ -446,7 +448,7 @@ footer{
 	}
 	.menu_header{
 		font-size: 14px;
-		margin-left: 90px;
+		padding: 10px 20px 15px 100px;
 	}
 	.button_top{
 		height: 9px;
@@ -588,7 +590,6 @@ footer{
 	header{
 		top: 0;
 		height: 100vh;
-		overflow-y: auto;
-		overflow-x: hidden;
+		overflow: hidden;
 	}
 }
