@@ -353,7 +353,7 @@ $(function() {
     setTimeout(function() {
         $(".second_video").css("z-index", "-111");
         $('.first_video').trigger('play');
-    }, 2100);
+    }, 2000);
 });
 
 // /video
