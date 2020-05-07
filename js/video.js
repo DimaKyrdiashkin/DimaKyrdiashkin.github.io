@@ -14,7 +14,7 @@ function play() {
         time = setTimeout(function() {
             $(".second_video").css("z-index", "-1");
             $('.first_video').trigger('play');
-        }, 1955);
+        }, 2000);
     }
 };
 
