@@ -149,8 +149,6 @@ section{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-transition: .4s;
-    -o-transition: .4s;
     transition: .4s;
     cursor: default;
     -webkit-user-select: none;
@@ -264,7 +262,7 @@ section{
 	top: 0;
 	left: 0;
 	z-index: 20;
-	transition: all .5s;
+	transition: all 1.4s;
 	transform: rotateY(0) rotateX(0) translateZ(0) scale(1.1)!important;
 }
 .circle_element p{
@@ -327,7 +325,6 @@ section{
 /*contentBlockTwo*/
 .contentBlockTwo{
 	position: relative;
-	border-bottom: 10px solid #fff;
 	z-index: 5;
 	background-color: #fff;
 	background-image: url(./../img/index/ideal_bg.png);
@@ -478,7 +475,6 @@ ul{
 .profitability{
 	z-index: 5;
 	position: relative;
-	border-top: 10px solid #fff;
 	margin:  0 0 -1px;
 	background-color: #06338B;
 }
@@ -2372,6 +2368,10 @@ p.circle_yellow{
 	}
 }
 @media (max-width: 480px) {
+	.promoContent video{
+		left: 101%;
+	}
+
 	.c-top-title{
 		font-size: 16px !important;
 		display: block;
@@ -2446,6 +2446,9 @@ p.circle_yellow{
 		color: #FFFFFF;
 		margin-top: 100px;
 	}
+	.contentBlockOne_row__element{
+		margin: 0;
+	}
 	.contentBlockTwo_row{
 		margin-top: 20px;
 	}
@@ -2456,8 +2459,8 @@ p.circle_yellow{
 		border-radius: 15px;
 		padding: 0 0 45px 0;
 	}
-	.contentBlockOne_row__element{
-		margin: 0;
+	.contentBlockTwo_row__element:hover{
+		transform: none;
 	}
 	.contentBlockTwo_row__head{
 		height: 280px;

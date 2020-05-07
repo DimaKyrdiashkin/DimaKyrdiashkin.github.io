@@ -340,6 +340,12 @@ span.c-label{
     flex-wrap: wrap;
     width: 65%;
 }
+.invest-field{
+    display: none!important;
+}
+.invest-field-active{
+    display: block!important;
+}
 .c-result-block-1, .c-result-block-3{
     text-align: center;
     padding: 3% 6%;

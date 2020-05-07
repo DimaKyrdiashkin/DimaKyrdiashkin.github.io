@@ -489,6 +489,15 @@
 .calc_cum{
     position: relative;
 }
+.invest.chb{
+    margin-top: 25px;
+}
+.invest-field{
+    margin-top: 20px;
+}
+#c-options-block,.add-field{
+    display: none;
+}
 
 /* /calc_cum */
 /* video */
@@ -700,6 +709,10 @@
     }
     .cumulative_item_text span{
         left: -6% !important;
+    }
+
+    #c-refill-amount,.invest-field{
+        margin-top: 0!important;
     }
 }
 @media all and (max-width: 992px) and (orientation : landscape) {
