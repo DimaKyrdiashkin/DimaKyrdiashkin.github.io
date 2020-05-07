@@ -1,5 +1,5 @@
-let videoFlag = false;
 let time;
+let flag = true;
 
 $(function(){
         play();
@@ -8,18 +8,26 @@ $(function(){
 
 function play() {
     $(".second_video").trigger('play');
-    time = setTimeout(function() {
-        $(".second_video").css("z-index", "-1");
-        $('.first_video').trigger('play');
-    }, 2000);
+    if(flag){
+        clearTimeout(time);
+        flag = false;
+        time = setTimeout(function() {
+            $(".second_video").css("z-index", "-1");
+            $('.first_video').trigger('play');
+        }, 1955);
+    }
 };
 
 $(window).on('scroll', function(){
-    if(pageYOffset >= $('.calc_head').offset().top){
-        videoFlag = true;
-        clearTimeout(time);
+    if(pageYOffset >= document.documentElement.clientHeight){
+        $(".first_video").removeAttr('loop');
+        document.querySelector('.first_video').currentTime = 0;
+        document.querySelector('.second_video').currentTime = 0;
+        $(".first_video").trigger('pause');
         $(".second_video").css("z-index", "2");
-    }else if(pageYOffset < $('.calc_head').offset().top-400){
+    }else if(pageYOffset < document.documentElement.clientHeight){
+        $(".first_video").attr('loop', true);
+        flag = true;
         play();
     };
 });
