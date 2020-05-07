@@ -199,18 +199,21 @@ $(function() {
         let income = parseFloat($('#c-income-slider').val());
         let period = parseInt($('#c-period-slider').val());
         if($('#c-refill-check').prop('checked')){
+
             var refill = parseFloat($('#c-refill-amount').val());
         } else {
             var refill = 0;
         }
         let result = parseFloat(calc.do(account, income, period, currency, refill)).format(2, 3, ' ', '.');
         if($("#c-btc").prop("checked") && !$("#c-pam").prop("checked")){
+
             $('#result_calc_vv').html("Ваш результат BTC");
             $('#c-result-sum').html( result.toString());
         }else if($("#c-eth").prop("checked") && !$("#c-pam").prop("checked")){
             $('#result_calc_vv').html("Ваш результат ETH");
             $('#c-result-sum').html(result.toString());
         }else if (!$("#c-stable").prop("checked")) {
+
             $('#result_calc_vv').html("Ваш результат USDT");
             $('#c-result-sum').html(result.toString());
         };
@@ -241,6 +244,7 @@ $(function() {
 
     $('#c-refill-check').bind('click', function(){
         $('#c-refill-amount').prop("disabled", !$(this).prop("checked"));
+        document.getElementById("invest_field").classList.toggle("invest-field-active");
         calculate();
     });
 
@@ -520,6 +524,7 @@ $(function() {
         }
     });
     $("#c-stable").click(function() {
+        document.getElementById("invest_field").classList.remove("invest-field-active");
         $(".c-result-block-4 #c-result-sum").text("Выберите период");
         $(".checkP").text("Период");
         $(".c-info-field").addClass("close");

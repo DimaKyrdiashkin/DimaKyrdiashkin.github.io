@@ -242,7 +242,7 @@
 					</div>
 
 					<img src="img/bright/second_mob.png" class="study_second_mob"/>
-					<img src="img/bright/girl.png" class="study_second_girl">
+					<img src="img/bright/girl.png" class="study_second_girl wow bounceInRight">
 				</div>
 			</section>
 			<section class="calc_bright">
@@ -274,6 +274,15 @@
 										<input id="c-period-slider" type="range" min="1" max="52" step="1" value="1">
 									</div>
 								</div>
+								<div class="chb capotalization">
+									<input type="checkbox" id="capotalization" disabled>
+									<label for="capotalization"><div class="tick"></div></label>
+									<span class="c-label">Капитализация</span>
+									<div class="desc">
+										<p>Доступно только для Bright счета</p>
+									</div>
+									<div class="addTriangle"></div>
+								</div>
 								<div class="calc_select">
 									<select>
 										<option value="0">Период</option>
@@ -292,6 +301,7 @@
 												<span></span>
 											</div>
 										</div>
+
 										<div class="select_option">
 											<div class="option" id="s1">
 												<p>6 мес. +2.5% за месяц</p>
@@ -378,23 +388,15 @@
 							</div>
 							<div class="add-field">
 								<div class="add-field-col">
-									<div class="invest-field">
-										<input type="text" id="c-refill-amount" disabled="disabled" placeholder="">
+									<div class="invest-field" id="invest_field">
+										<input type="text" id="c-refill-amount" disabled="disabled" placeholder="Введите сумму платежа">
 									</div>
 									<div class="invest chb">
 										<input type="checkbox" id="c-refill-check">
 										<label for="c-refill-check"><div class="tick"></div></label>
 										<span class="c-label">Ежемесячное пополнение</span>
 									</div>
-									<div class="chb capotalization">
-										<input type="checkbox" id="capotalization" disabled>
-										<label for="capotalization"><div class="tick"></div></label>
-										<span class="c-label">Капитализация</span>
-										<div class="desc">
-											<p>Доступно только для Bright счета</p>
-										</div>
-										<div class="addTriangle"></div>
-									</div>
+
 
 								</div>
 							</div>
