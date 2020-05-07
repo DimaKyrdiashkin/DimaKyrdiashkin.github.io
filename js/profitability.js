@@ -346,19 +346,6 @@ $(".profitability_right_naw a").on("click", (e)=>{
 // /profitability
 
 
-
-// video
-$(function() {
-    $(".second_video").trigger('play');
-    setTimeout(function() {
-        $(".second_video").css("display", "none");
-        $('.first_video').trigger('play');
-    }, 2100);
-});
-
-// /video
-
-
 // parallax
 
 const parallax_deviceBlockEl = $("#parallax_deviceBlock").offset().top;

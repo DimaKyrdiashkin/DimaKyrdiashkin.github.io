@@ -714,6 +714,9 @@
     #c-refill-amount,.invest-field{
         margin-top: 0!important;
     }
+    .video{
+        padding: 80px 0 155px;
+    }
 }
 @media all and (max-width: 992px) and (orientation : landscape) {
     .home{
@@ -721,7 +724,12 @@
 	}
 	.home video{
 		height: 100%;
-	}
+    }
+    video.home_videoTabl{
+        min-width: 100vw;
+        height: auto;
+        top: -90vh;
+    }
 	.calc_head {
 		margin: 80px 0 0 0;
 	}
@@ -737,4 +745,24 @@
 	.promoContent_info__up img{
 		margin-bottom: 0;
 	}
+}
+@media all and (max-width: 568px) and (orientation : landscape) {
+    .home_h1{
+        font-size: 22px;
+    }
+    .cumulativeFooter{
+        padding-bottom: 0;
+    }
+    .calc_head{
+        margin: 50px 0 0 0;
+    }
+    .video .container{
+        height: 500px;
+    }
+    .video .container iframe{
+        height: 100%;
+    }
+    .video{
+        padding: 80px 0 155px;
+    }
 }
