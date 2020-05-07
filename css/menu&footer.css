@@ -192,6 +192,7 @@ header.menu_open{
 	border-bottom: 1px solid  #1D3D6C;
 	text-align: center;
 	transition: .2s;
+	cursor: pointer;
 }
 .menu ul li:hover{
 	background: #294166;
@@ -209,7 +210,9 @@ header.menu_open{
 	transform: translateX(-50%);
 	bottom: 0;
 	padding: 15px 30px 20px 30px;
-	border: 1px dashed #1D3D6C;
+	margin: auto;
+	border: 1px dotted  #47556A;
+	border-bottom: none;
 	border-radius: 15px 15px 0 0;
 }
 /* /menu */
