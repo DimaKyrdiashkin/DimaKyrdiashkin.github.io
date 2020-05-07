@@ -31,8 +31,8 @@ header{
 	height: 565px;
 	position: fixed;
 	border-radius: 62px 0px 0px 62px;
-	background: -o-linear-gradient(301.82deg, #287AF4 1.58%, #0550C0 100%);
-	background: #0E274E;
+	background: #1F2D43;
+	
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -69,6 +69,7 @@ header.menu_open{
 	padding: 10px 20px 15px 124px;
 	height: 100px;
 	background: #223C64;
+	box-shadow: 0px 25px 85px rgba(6, 18, 38, 0.9);
 	border-radius: 42px 0 0 0;
 }
 .menu_button{
@@ -173,11 +174,11 @@ header.menu_open{
 	transition: .5s;
 }
 .logOut{
-	background: -o-linear-gradient(345.95deg, #35B6FF 2.02%, #378FE0 100%);
-	background: linear-gradient(97.27deg, #193153 2.02%, #2C466D 100%);
-	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.35), -3px -3px 16px #2A4978;
+	background: radial-gradient(80.07% 154.58% at 5.64% 16.68%, #27416A 0%, #2A446F 63.36%, #264068 90.75%, #29456F 100%);
+	box-shadow: 5px 5px 15px #0C1A30, -3px -3px 75px #4C6FA3, -4px -3px 15px #324F7B;
 	border-radius: 10px;
 	padding: 11px 12px;
+	color: #7993B8;
 }
 .menu ul{
 	font-size: 15px;
@@ -189,14 +190,13 @@ header.menu_open{
 }
 .menu ul li{
 	padding: 13px 0 13px 0;
-	border-bottom: 1px solid  #1D3D6C;
 	text-align: center;
 	transition: .2s;
 	cursor: pointer;
 }
 .menu ul li:hover{
-	background: #294166;
-	box-shadow: inset 0px 4px 75px #1A283D, inset 0px -4px 75px #122647;
+	background: #FFFFFF;
+	box-shadow: inset 0px 4px 75px rgba(68, 84, 109, 0.6), inset 0px -4px 75px rgba(91, 120, 168, 0.38);
 	transition: .2s;
 }
 .licens p{
