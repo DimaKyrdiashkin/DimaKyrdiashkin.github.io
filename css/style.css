@@ -91,19 +91,6 @@ section{
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-.promoContent_logo{
-	padding-top: 60px;
-	width: 75%;
-	max-width: 480px;
-	margin: 0 auto;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-}
-.promoContent_logo img{
-	width: 100%;
-}
 .promoContent_info__up{
 	font-family: "Futura Md BT";
 	padding-bottom: 5%;
