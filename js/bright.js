@@ -198,3 +198,27 @@ function fun_calc () {
 setTimeout(fun_calc, 100)
 
 // /calc
+
+
+// parallax_home
+let mob_home = "0px";
+if(window.innerWidth <=480){
+    mob_home ="50%"
+}
+
+const home_y = "0";
+function parallax_home() {
+    let h = window.pageYOffset;
+    if(h >= home_y && h<=1000){
+        $(".promoContent .promoContent_info").css({top: `${parseInt(h)}px`});
+        $(".promoContent video").css({top: `calc(${mob_home} + ${parseInt(h)}px)`});
+    }
+    if(h === home_y){
+        $(".promoContent video").css({top: mob_home})
+    }
+}
+
+// /parallax_home
+
+
+$(window).on("scroll", parallax_home);
