@@ -2,6 +2,8 @@
 let centerW =  window.innerWidth /2,
     centeH = sollar.offsetHeight/4;
 sollar.addEventListener("mousemove", (e)=>{
+    console.log(e.offsetY);
+    console.log(centeH);
     if(e.pageX > centerW){
         sollar.style.backgroundPositionX = `-${(e.pageX-centerW)/5}px`
     }

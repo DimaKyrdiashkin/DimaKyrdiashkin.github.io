@@ -365,7 +365,9 @@ function parallax_device() {
 const home_y = 0;
 function parallax_home() {
     let h = window.pageYOffset;
+    console.log("fun");
     if(h >= home_y && h<=1000){
+        console.log(true);
         $(".promoContent .promoContent_info").css({top: `${parseInt(h)}px`})
         $(".promoContent video").css({top: `${parseInt(h-200)}px`})
     }
