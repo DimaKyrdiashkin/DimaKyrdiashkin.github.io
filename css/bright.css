@@ -929,7 +929,10 @@ footer{
 
 /*	/calc*/
 }
-
+.parallax-window {
+	min-height: 100vh;
+	background: transparent;
+}
 @media (max-width: 480px) {
 	.promoContent video{
 		top: 50%;
@@ -1150,4 +1153,9 @@ footer{
 	.promoContent_info__up img{
 		margin-bottom: 0;
 	}
+}
+
+
+html, body{
+
 }
