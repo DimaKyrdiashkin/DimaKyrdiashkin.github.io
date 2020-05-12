@@ -1,14 +1,82 @@
 @font-face {
-    font-family: Futura Md BT;
-    src: url(../fonts/Futura_Md_BT.otf);
+    font-family: Gilroy-Black;
+    src: url(../fonts/Gilroy-Black.ttf);
 }
 @font-face {
-	font-family: Lato-Semibold;
-	src: url(../fonts/Lato-Semibold.ttf);
+	font-family: Gilroy-BlackItalic;
+	src: url(../fonts/Gilroy-BlackItalic.ttf);
 }
 @font-face {
-	font-family: Lato-Medium;
-	src: url(../fonts/lato_medium.ttf);
+	font-family: Gilroy-Bold;
+	src: url(../fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+	font-family: Gilroy-BoldItalic;
+	src: url(../fonts/Gilroy-BoldItalic.ttf);
+}
+@font-face {
+	font-family: Gilroy-ExtraBold;
+	src: url(../fonts/Gilroy-ExtraBold.ttf);
+}
+@font-face {
+	font-family: Gilroy-ExtraBoldItalic;
+	src: url(../fonts/Gilroy-ExtraBoldItalic.ttf);
+}
+@font-face {
+	font-family: Gilroy-Heavy;
+	src: url(../fonts/Gilroy-Heavy.ttf);
+}
+@font-face {
+	font-family: Gilroy-HeavyItalic;
+	src: url(../fonts/Gilroy-HeavyItalic.ttf);
+}
+@font-face {
+	font-family: Gilroy-Light;
+	src: url(../fonts/Gilroy-Light.ttf);
+}
+@font-face {
+	font-family: Gilroy-LightItalic;
+	src: url(../fonts/Gilroy-LightItalic.ttf);
+}
+@font-face {
+	font-family: Gilroy-Medium;
+	src: url(../fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+	font-family: Gilroy-MediumItalic;
+	src: url(../fonts/Gilroy-MediumItalic.ttf);
+}
+@font-face {
+	font-family: Gilroy-Regular;
+	src: url(../fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+	font-family: Gilroy-RegularItalic;
+	src: url(../fonts/Gilroy-RegularItalic.ttf);
+}
+@font-face {
+	font-family: Gilroy-SemiBold;
+	src: url(../fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+	font-family: Gilroy-SemiBoldItalic;
+	src: url(../fonts/Gilroy-SemiBoldItalic.ttf);
+}
+@font-face {
+	font-family: Gilroy-Thin;
+	src: url(../fonts/Gilroy-Thin.ttf);
+}
+@font-face {
+	font-family: Gilroy-ThinItalic;
+	src: url(../fonts/Gilroy-ThinItalic.ttf);
+}
+@font-face {
+	font-family: Gilroy-UltraLight;
+	src: url(../fonts/Gilroy-UltraLight.ttf);
+}
+@font-face {
+	font-family: Gilroy-UltraLightItalic;
+	src: url(../fonts/Gilroy-UltraLightItalic.ttf);
 }
 *{
 	margin: 0;
@@ -16,6 +84,7 @@
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	scroll-behavior: smooth;
+	font-family: "Gilroy-Regular";
 }
 a{
 	text-decoration: none;
@@ -28,6 +97,21 @@ h1{
 	    -ms-user-select: none;
 	        user-select: none;
 }
+h2{
+	font-family: "Gilroy-SemiBold";
+	font-size: 1.75em;
+	line-height: 36px;
+}
+h3{
+	font-family: "Gilroy-SemiBold";
+	font-size: 1.5em;
+	line-height: 32px;
+}
+p{
+	font-family: "Gilroy-Medium";
+	font-size: 1em;
+	line-height: 24px;
+}
 section{
 	width: 100%;
 }
@@ -35,7 +119,6 @@ section{
 	overflow: hidden;
 	width: 100%;
 	position: relative;
-	font-family: 'Lato', sans-serif;
 }
 /* promo */
 .promoContent{
@@ -75,7 +158,6 @@ section{
 	position: relative;
 	margin: 0 auto;
 	width: 70%;
-	font-family: 'Russo One', sans-serif;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -92,7 +174,7 @@ section{
 	        align-items: center;
 }
 .promoContent_info__up{
-	font-family: "Futura Md BT";
+
 	padding-bottom: 5%;
 	-ms-flex-item-align: end;
 	    align-self: flex-end;
@@ -295,12 +377,10 @@ section{
 	margin: 140px 0 60px 0;
 }
 .calc_head h1{
-	font-family: "Futura Md BT", sans-serif;
 	text-align: center;
 	color: #0050C9;
 }
 .calc_head p{
-	font-family: "Lato-Semibold";
 	font-size: 24px;
 	color: #444444;
 	text-align: center;
@@ -332,7 +412,6 @@ section{
 	        align-items: center;
 }
 .contentBlockTwo_head h1{
-	font-family: "Futura Md BT", sans-serif;
 	color: #0050C9;
 	text-align: center;
 }
@@ -439,7 +518,6 @@ section{
 }
 .contentBlockTwo_row__button a{
 	color: #0E43FF;
-	font-family: Russo One;
 	text-transform: uppercase;
 	border: 1px solid #0E43FF;
 	-webkit-box-sizing: border-box;
@@ -500,14 +578,12 @@ ul{
 .profitability_left_head{
 	margin-top: 70px;
 	color: #FFFFFF;
-	font-family: "Roboto",sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 21px;
 }
 .profitability_left_head h2{
-	font-family: 'Futura Md BT', sans-serif;
 	font-weight: bold;
 	font-size: 48px;
 	line-height: 58px;
@@ -639,7 +715,6 @@ ul{
 }
 
 .profitability_right_naw h3{
-	font-family: 'Futura Md BT', sans-serif;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -862,7 +937,6 @@ ul{
 /* device */
 
 .device{
-	font-family: 'Lato', sans-serif;
 	position: relative;
 	padding-top: 102px;
 	transition: padding-top .7s;
@@ -1029,7 +1103,6 @@ ul{
 }
 
 .device h2{
-	font-family: 'Futura Md BT', sans-serif;
 	-webkit-box-ordinal-group:1;
 	    -ms-flex-order:0;
 	        order:0;
@@ -2563,7 +2636,6 @@ p.circle_yellow{
 	}
 	.profitability_left_head p{
 		text-align: center;
-		font-family: 'Lato-Semibold', sans-serif;
 		font-size: 15px;
 		width: 70%;
 		margin: 20px auto 0;

@@ -1,4 +1,5 @@
 /* first */
+$('.btc').css('display', 'block');
 $("#c-income-slider").val(0.0001);
 		var min_income_for_pam = 500000;
 		var income_specify_step = 500;
@@ -196,10 +197,10 @@ $(function() {
         let account = $('.c-account-check:checked').val();
         validate(account);
         let currency = $('.c-currency-check:checked').val();
-        let income = parseFloat($('#c-income-slider').val());
+        let income = parseFloat($('#c-income-edit').val());
+        
         let period = parseInt($('#c-period-slider').val());
         if($('#c-refill-check').prop('checked')){
-
             var refill = parseFloat($('#c-refill-amount').val());
         } else {
             var refill = 0;
@@ -264,17 +265,12 @@ $(function() {
         calculate();
     }
 
-    /*$('#c-plus').bind('click', function(event) {
-        let income = parseInt($('#c-income-slider').val());
-        $('#c-income-slider').val(income += income_specify_step).change();
+    $('#c-income-slider, #c-period-slider').change(function(event) {
+        calculate();
     });
 
-    $('#c-minus').bind('click', function(event) {
-        let income = parseInt($('#c-income-slider').val());
-        $('#c-income-slider').val(income -= income_specify_step).change();
-    });*/
-
-    $('#c-income-slider, #c-period-slider').change(function(event) {
+    $('#c-income-edit').change(function(){
+        $('#c-income-slider').val($('#c-income-edit').val());       
         calculate();
     });
 
@@ -310,7 +306,16 @@ $(function() {
             $('#c-income-slider').attr(attributes);
             $('#c-income-slider').rangeslider('update', true);
         }
-        if(name == 'savings' && !$("#c-usdt").prop("checked")){
+        if(name == 'savings' && $("#c-btc").prop("checked")){
+            var attributes = {
+                min: 0.0001,
+                max: 100,
+                step: 0.0001
+            };
+            $('#c-income-slider').attr(attributes);
+            $('#c-income-slider').rangeslider('update', true);
+        }
+        if(name == 'savings' && $("#c-eth").prop("checked")){
             var attributes = {
                 min: 0.0001,
                 max: 1000,
@@ -350,19 +355,19 @@ $(function() {
 
 
             if($("#c-btc").prop("checked") && !$("#c-pam").prop("checked")){
-                $("#text_calc_vv").html("Инвестировать BTC");
+                $("#text_calc_vv").html("Инвестировать");
                 label = amount.format(0, 4, ' ', '.');
                 $("#c-income-edit").val(amount);
-                $('#c-income').html(label);
+                // $('#c-income').html(label);
             }else if($("#c-eth").prop("checked") && !$("#c-pam").prop("checked")){
                 $("#c-income-edit").val(amount);
-                $("#text_calc_vv").html("Инвестировать ETH");
+                $("#text_calc_vv").html("Инвестировать");
                 label = amount.format(0, 4, ' ', '.');
-                $('#c-income').html(label);
+                // $('#c-income').html(label);
             }else{
-                $("#text_calc_vv").html("Инвестировать USDT");
+                $("#text_calc_vv").html("Инвестировать");
                 label = amount.format(0, 3, ' ', '.');
-                $('#c-income').html(label);
+                // $('#c-income').html(label);
             };
         },
         onSlide: function(position, value) {
@@ -371,16 +376,16 @@ $(function() {
             let label;
 
             if($("#c-btc").prop("checked") && !$("#c-pam").prop("checked")){
-                $("#text_calc_vv").html("Инвестировать BTC");
+                $("#text_calc_vv").html("Инвестировать");
                 label = parseFloat($("#c-income-edit").val()).format(0, 4, ' ', '.');
                 $('#c-income').html(label);
             }else if($("#c-eth").prop("checked") && !$("#c-pam").prop("checked")){
                 label = amount.format(0, 4, ' ', '.');
-                $("#text_calc_vv").html("Инвестировать ETH");
+                $("#text_calc_vv").html("Инвестировать");
                 $('#c-income').html(label);
             }else{
                 label = amount.format(0, 3, ' ', '.');
-                $("#text_calc_vv").html("Инвестировать USDT");
+                $("#text_calc_vv").html("Инвестировать");
                 $('#c-income').html(label);
             };
         },
@@ -403,24 +408,24 @@ $(function() {
         }
     });
 
-    $('.c-editable').click(function(){
-        let edit = $($(this).data('edit-id'));
-        let label = $(this);
-        let slider = $($(this).data('slider-id'));
-        edit.val(slider.val());
-        edit.show();
-        edit.focus();
-        label.hide();
+    // $('.c-editable').click(function(){
+    //     let edit = $($(this).data('edit-id'));
+    //     let label = $(this);
+    //     let slider = $($(this).data('slider-id'));
+    //     edit.val(slider.val());
+    //     edit.show();
+    //     edit.focus();
+    //     label.hide();
 
-        edit.bind('change, focusout',function(){
-            let amount = parseFloat($(this).val());
-            slider.val(amount);
-            slider.change();
-            $(this).hide();
-            label.show();
-        });
+    //     edit.bind('change, focusout',function(){
+    //         let amount = parseFloat($(this).val());
+    //         slider.val(amount);
+    //         slider.change();
+    //         $(this).hide();
+    //         label.show();
+    //     });
 
-    });
+    // });
 
     calculate();
     $( ".check" ).click(function() {
@@ -520,7 +525,7 @@ $(function() {
         if($("#capotalization").prop("checked")){
             $(".c-result-block-1 .c-primary-title").text("Сумма в конце срока");
         }else{
-            $(".c-result-block-1 .c-primary-title").text("Ежемесячный доход USDT");
+            $(".c-result-block-1 .c-primary-title").text("Ежемесячный доход");
         }
     });
     $("#c-stable").click(function() {
@@ -543,14 +548,14 @@ $(function() {
         $("#c-usdt").prop("checked", true);
         $('#c-result-sum').html('Выберите период');
         let amount = parseInt($('#c-income-slider').val());
-        $("#text_calc_vv").html("Инвестировать USDT")
+        $("#text_calc_vv").html("Инвестировать")
 
         label =  amount.format(0, 3, ' ', '.');
         $('#c-income').html(label);
         if($("#capotalization").prop("checked")){
             $(".c-result-block-1 .c-primary-title").text("Сумма в конце срока");
         }else{
-            $(".c-result-block-1 .c-primary-title").text("Ежемесячный доход USDT");
+            $(".c-result-block-1 .c-primary-title").text("Ежемесячный доход");
         }
         if($("#capotalization").prop("checked")){
             BrightCap();
@@ -564,41 +569,48 @@ $(function() {
         $(".calc_select").removeClass("open");
         $("#capotalization").attr("disabled", true);
 		$("#capotalization").prop("checked", false);
-		$(".c-result-block-1, .c-result-block-3").css("margin-top", "85px");
         $(".c-result-block-2").css("height", "fit-content");
         $("span.hr").css("display", "none");
-        $(".c-result-block-1 .c-primary-title").text("Ваш результат");
         $(".c-result-block-3").css("display", "none");
         $(".c-result-block-4").css("display", "none");
         let amount = parseInt($('#c-income-slider').val());
         if($("#c-btc").prop("checked") && !$("#c-pam").prop("checked")){
             label = amount.format(0, 3, ' ', '.');
-            $("#text_calc_vv").html("Инвестировать BTC");
+            $("#text_calc_vv").html("Инвестировать");
             $('#c-income').html(label);
+            $(".c-result-block-1 .c-primary-title").text("Ваш результат BTC");
         }else if($("#c-eth").prop("checked") && !$("#c-pam").prop("checked")){
             label = amount.format(0, 4, ' ', '.');
-            $("#text_calc_vv").html("Инвестировать ETH");
+            $("#text_calc_vv").html("Инвестировать");
             $('#c-income').html(label);
+            $(".c-result-block-1 .c-primary-title").text("Ваш результат ETH");
         }else{
-            $("#text_calc_vv").html("Инвестировать USDT");
+            $("#text_calc_vv").html("Инвестировать");
             label = amount.format(0, 3, ' ', '.');
             $('#c-income').html(label);
+            $(".c-result-block-1 .c-primary-title").text("Ваш результат USDT");
         };
     });
     $("#c-btc, #c-eth, #c-usdt").click(function(){
         let amount = parseFloat($('#c-income-slider').val());
         if($("#c-btc").prop("checked") && !$("#c-pam").prop("checked")){
             label =  amount.format(0, 4, ' ', '.');
-            $("#text_calc_vv").html("Инвестировать BTC");
+            $("#text_calc_vv").html("Инвестировать");
             $('#c-income').html(label);
+            $('.eth, .usdt').css('display', 'none');
+            $('.btc').css('display', 'block');
         }else if($("#c-eth").prop("checked") && !$("#c-pam").prop("checked")){
             label =  amount.format(0, 4, ' ', '.');
-            $("#text_calc_vv").html("Инвестировать ETH");
+            $("#text_calc_vv").html("Инвестировать");
             $('#c-income').html(label);
+            $('.btc, .usdt').css('display', 'none');
+            $('.eth').css('display', 'block');
         }else{
-            $("#text_calc_vv").html("Инвестировать USDT");
+            $("#text_calc_vv").html("Инвестировать");
             label =  amount.format(0, 3, ' ', '.');
             $('#c-income').html(label);
+            $('.eth, .btc').css('display', 'none');
+            $('.usdt').css('display', 'block');
         };
     });
 
@@ -610,12 +622,8 @@ $(function() {
         let position = $(".rangeslider__handle").offset();
         let sum = 0;
 
-        // if(invest !== parseInt($('#c-income-slider').val())){
-        // 	// alert(1);
-        // };
         switch (persent) {
             case "0":
-                // $('#c-result-sum').html('Выберите период');
                 break;
             case "1":
                 sum += invest*0.025*6;
