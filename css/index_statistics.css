@@ -1,11 +1,23 @@
 .statistics{
-    background: #8C46FF;
     width: 100%;
     min-height: 375px;
 }
 .statistics .container{
     max-width: 1512px;
+    width: 90%;
     margin: auto;
+}
+.statistics_h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #F8F8FB;
+}
+.statistics_p{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: #F1E9FF;
 }
 .statistics_ul{
     display: flex;
@@ -25,13 +37,14 @@
     right: 0;
     top: 0;
 }
+
 .statistics_ul p{
     position: absolute;
     font-family: Gilroy,sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
-    color: #22232D;
+    color: #fff;
 }
 .statistics_ul span{
     font-weight: bold;

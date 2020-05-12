@@ -4,6 +4,7 @@
 }
 .advantages .container{
     max-width: 1512px;
+    width: 90%;
     margin: auto;
 }
 .advantages_h2{
@@ -53,4 +54,8 @@
 }
 .advantages_ul li:nth-child(2) img{
     width: 56px;
+    padding: 12px 0 5px;
+}
+.advantages_ul li:last-child img{
+    width: 70px;
 }
