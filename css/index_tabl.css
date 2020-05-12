@@ -1,0 +1,106 @@
+.tabl{
+    width: 100%;
+    min-height: 375px;
+    height: 100%;
+}
+.tabl_year_header{
+    font-family: 'Gilroy',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 40px;
+    text-align: center;
+    color: #22232D;
+}
+
+.tabl_year_body_ul li{
+    font-family: 'Gilroy',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 2px 0;
+    /*text-align: center;*/
+}
+
+.tabl_year_left{
+    background: #8C46FF;
+    border-radius: 7px;
+}
+
+
+.tabl_year_img{
+    height: 35px;
+    width: 35px;
+    padding: 36px 0 23px;
+    border-bottom: none;
+}
+.tabl_year_body_ul li:last-child{
+    border-bottom: none;
+    padding-bottom: 20px;
+
+}
+.tabl_year_body_ul img{
+    height: 100%;
+}
+
+.tabl_year_body_ul li{
+    padding-left: 25px;
+    color: #FFFFFF;
+}
+
+
+
+/* grid */
+.tabl_year{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 155px repeat(3, 1fr);
+    grid-template-rows: 40px 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+.tabl_year_d1 { grid-area: 1 / 1 / 2 / 2; }
+.tabl_year_d2 { grid-area: 1 / 2 / 2 / 3; }
+.tabl_year_d3 { grid-area: 1 / 3 / 2 / 4; }
+.tabl_year_d4 { grid-area: 1 / 4 / 2 / 5; }
+.tabl_year_d5 { grid-area: 2 / 1 / 3 / 2; }
+.tabl_year_d6 { grid-area: 2 / 2 / 3 / 3; }
+.tabl_year_d7 { grid-area: 2 / 3 / 3 / 4; }
+.tabl_year_d8 { grid-area: 2 / 4 / 3 / 5; }
+
+
+
+.tabl_year_body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+/* /grid */
+
+
+
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
+}

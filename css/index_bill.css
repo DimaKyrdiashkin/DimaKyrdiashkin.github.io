@@ -1,0 +1,130 @@
+.bill{
+    width: 100%;
+    min-height: 375px;
+    height: 100%;
+    clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+}
+.bill .container{
+    width: 90%;
+    max-width: 1512px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill_left{
+    width: 30%;
+    max-width: 360px;
+}
+
+.bill_left_h2{
+    font-family: 'Gilroy',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 21px 0 30px;
+}
+.bill_left_p{
+    font-family: 'Gilroy',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF
+}
+.bill_right{
+    width: 65%;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    /*flex-wrap: wrap;*/
+}
+
+.bill_right_svg{
+    width: 721px;
+    height: 722px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+}
+
+.bill_right_li{
+    border-radius: 7px;
+    position: relative;
+    z-index: 10;
+    background-color: #3D3D50;
+    padding: 45px 156px 75px 60px;
+}
+
+.bill_right_li_h2{
+    font-family: "Gilroy",sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.bill_right_li_p{
+    font-family: 'Gilroy',sans-serif;
+    font-size: 16px;
+    width: 203px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    max-width: 203px;
+    margin: 20px auto;
+}
+.bill_right_li_a{
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8C46FF;
+}
+
+
+.bill_active{
+    z-index: 20;
+    padding-top: 50px;
+    padding-bottom: 125px;
+    top: -25px;
+    left: -108px;
+    background-color: #1E1E25;
+}
+.bill_active .bill_right_li_a{
+    color: #fff;
+    background-color: #A168FF;
+}
+.bill_right_li:last-child{
+    left: calc(-156px + 45px - 108px);
+    padding-right: 64px;
+    padding-left: 156px;
+}
+
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
+}

@@ -9,13 +9,20 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/menu&footer.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Russo+One&display=swap" rel="stylesheet">
-<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" />
 <!--	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
 <!--	<script type="text/javascript" src="js/wow.min.js"></script>-->
+
+
+
+
+
 	<meta name="viewport" content="width=device-width">
 	</head>
 	<body>
-		<div class="wrapper">
+		<div class="wrapper" id="fullpage">
 			<header>
 				<div class="menu_button">
 					<div class="front_button">
@@ -47,7 +54,7 @@
 					</div>
 				</div>
 			</header>
-			<section class="promoContent scrollActive">
+			<section class="promoContent scrollActive  section">
 				<video loop muted autoplay class="first_video">
 					<source src="video/Bright/brighthome.webm" type='video/webm'>
 					<source src="video/Bright/brighthome.mp4" type='video/mp4'>
@@ -65,7 +72,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="dream">
+			<section class="dream section">
 				<video loop muted autoplay class="dream_video">
 					<source src="video/Bright/brightBlock.mp4" type='video/mp4'>
 					<source src="video/Bright/brightBlock.mp4" type='video/webm'>
@@ -143,7 +150,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="payOut ">
+			<section class="payOut  section">
 				<div class="payOut_row">
 					<div class="payOut_row__left">
 						<h2>Варианты<br>
@@ -162,7 +169,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="millionaires">
+			<section class="millionaires section">
 				<h2 class="millionaires_h2">Вариант применения<br>96 мес. + 6.0% за месяц</h2>
 				<img src="img/bright/people.png" class="millionaires_people people_pc">
 				<img src="img/bright/people_mob.png" class="millionaires_people people_mob">
@@ -196,7 +203,7 @@
 				<img src="img/bright/lanternLeft.png" class="millionaires_lanternLeft"/>
 				<img src="img/bright/lanternRight.png" class="millionaires_lanternRight"/>
 			</section>
-			<section class="study">
+			<section class="study section">
 				<div class="cloudL">
 					<img src="img/bright/cloudL.png" alt="">
 				</div>
@@ -245,7 +252,7 @@
 					<img src="img/bright/girl.png" class="study_second_girl wow bounceInRight">
 				</div>
 			</section>
-			<section class="calc_bright">
+			<section class="calc_bright section">
 				<div class="calc_head">
 					<h1>Калькулятор доходности</h1>
 					<p>Прогноз доходности по результатам прошедшего периода</p>
@@ -467,6 +474,93 @@
 <!--		<script src="js/menu.js"></script>-->
 <!--		<script src="js/calc_index.js"></script>-->
 <!--		<script src="js/bright.js"></script>-->
-	<script src="js/scroll.js"></script>
+<!--	<script src="js/scroll.js"></script>-->
+
+
+		<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/easings.js"></script>
+
+
+		<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"></script>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"></script>
+		<script>
+			var myFullpage = new fullpage('#fullpage', {
+				//Navigation
+				menu: '#menu',
+				lockAnchors: false,
+				anchors:['firstPage', 'secondPage'],
+				navigation: false,
+				navigationPosition: 'right',
+				navigationTooltips: ['firstSlide', 'secondSlide'],
+				showActiveTooltip: false,
+				slidesNavigation: false,
+				slidesNavPosition: 'bottom',
+
+				//Scrolling
+				css3: true,
+				scrollingSpeed: 700,
+				autoScrolling: true,
+				fitToSection: true,
+				fitToSectionDelay: 1000,
+				scrollBar: false,
+				easing: 'easeInOutCubic',
+				easingcss3: 'ease',
+				loopBottom: false,
+				loopTop: false,
+				loopHorizontal: true,
+				continuousVertical: false,
+				continuousHorizontal: false,
+				scrollHorizontally: false,
+				interlockedSlides: false,
+				dragAndMove: false,
+				offsetSections: false,
+				resetSliders: false,
+				fadingEffect: false,
+				normalScrollElements: '#element1, .element2',
+				scrollOverflow: false,
+				scrollOverflowReset: false,
+				scrollOverflowOptions: null,
+				touchSensitivity: 15,
+				bigSectionsDestination: null,
+
+				//Accessibility
+				keyboardScrolling: true,
+				animateAnchor: true,
+				recordHistory: true,
+
+				//Design
+				controlArrows: true,
+				verticalCentered: true,
+				sectionsColor : ['#ccc', '#fff'],
+				paddingTop: '3em',
+				paddingBottom: '10px',
+				fixedElements: '#header, .footer',
+				responsiveWidth: 0,
+				responsiveHeight: 0,
+				responsiveSlides: false,
+				parallax: false,
+				parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+				cards: false,
+				cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
+
+				//Custom selectors
+				sectionSelector: '.section',
+				slideSelector: '.slide',
+
+				lazyLoading: true,
+
+				//events
+				onLeave: function(origin, destination, direction){},
+				afterLoad: function(origin, destination, direction){},
+				afterRender: function(){},
+				afterResize: function(width, height){},
+				afterReBuild: function(){},
+				afterResponsive: function(isResponsive){},
+				afterSlideLoad: function(section, origin, destination, direction){},
+				onSlideLeave: function(section, origin, destination, direction){}
+			});
+		</script>
 	</body>
 </html>

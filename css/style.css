@@ -31,7 +31,11 @@ h1{
 section{
 	width: 100%;
 }
+body{
+	background-color: #E5E5E5!important;
+}
 .wrapper{
+
 	overflow: hidden;
 	width: 100%;
 	position: relative;
