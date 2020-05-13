@@ -3,7 +3,7 @@
     padding: 0 0 80px ;
 }
 .advantages .container{
-    max-width: 1512px;
+    max-width: 1600px;
     width: 90%;
     margin: auto;
 }
@@ -23,7 +23,7 @@
 
 }
 .advantages_ul li{
-    width: 30%;
+    width: 23%;
     max-width: 420px;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
     background: #FFFFFF;
     box-shadow: 0 4px 15px #CBD2DD, 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
-    padding: 20px 49px 38px;
+    padding: 15px 40px 35px;
 }
 .advantages_ul h3{
     font-style: normal;

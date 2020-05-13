@@ -3,7 +3,8 @@ h1, h2, h3, h4, h5, h6, p, span, li{
 	cursor: default;
 }
 .logo{
-	height: 30px;
+	width: 215px;
+	margin-left: 150px;
 }
 .logo img{
 	height: 100%;
@@ -11,14 +12,48 @@ h1, h2, h3, h4, h5, h6, p, span, li{
 /* menu */
 .desctop-menu{
 	position: fixed;
-	height: 70px;
+	display: flex;
+	justify-content: space-between;
 	top: 0;
 	width: 100vw;
-	background: #05479945;
 	z-index: 9999;
 	overflow: hidden;
+	padding: 26px 38px;
+	background: #f8f9ffa1;
+}
+.desctop-menu ul li a{
+	color: #22232D;
+	font-size: 1em;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-family: 'Gilroy-Medium';
+}
+.desctop-menu ul li{
+	margin-left: 30px;
+}
+.desctop-menu ul li:nth-child(6){
+	margin-left: 200px;
+}
+.desctop-menu ul li:last-child{
+	margin-left: 16px;
+}
+a.logIn{
+	background: #8C46FF;
+	padding: 14px 25px;
+	color: #fff !important;
+	border-radius: 4px;
+	font-family: 'Gilroy-SemiBold';
+}
+a.registration{
+	color: #6231D6 !important;
+	padding: 14px 27px;
+	border: 1px solid #6231D6;
+	border-radius: 4px;
+	font-family: 'Gilroy-SemiBold';
 }
 header{
+	display: none;
 	position: fixed;
 	z-index: 500;
 	width: 385px;
@@ -38,7 +73,8 @@ header{
 	        transform: translateX(0px);
 }
 .hide{
-	opacity: 0;
+	/* opacity: 0; */
+	display: flex;
 }
 .menu{
 	width: 100%;
