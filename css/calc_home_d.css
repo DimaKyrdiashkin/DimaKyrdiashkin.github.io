@@ -1,5 +1,5 @@
 .settings .fp-tableCell{
-    vertical-align: none;
+    vertical-align: baseline;
 }
 .calc_side{
     width: 400px;
