@@ -760,7 +760,12 @@
 				</ul>
 			</div>
 		</section>
-	<!--    /say-->
+		<!--    /say-->
+		<div id="fp-nav" class="fp-right" style="margin-top: -43.5px;">
+			<ul>
+				
+			</ul>
+		</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/easings.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"></script>
@@ -768,12 +773,12 @@
 	<script>
 		var myFullpage = new fullpage('#fullpage', {
 			//Navigation
-			menu: '#menu',
+			menu: '#fp-nav',
 			lockAnchors: false,
 			anchors:['promoContent', 'statistics', "threeSlide", 'advantages', 'bill','calc','tabl','say'],
-			navigation: false,
+			navigation: true,
 			navigationPosition: 'right',
-			navigationTooltips: ['promoContent', 'statistics', "threeSlide", 'advantages', 'bill', 'calc', 'tabl','say'],
+			navigationTooltips: [],//название для поинтов навигации
 			showActiveTooltip: false,
 			slidesNavigation: false,
 			slidesNavPosition: 'bottom',
@@ -816,7 +821,7 @@
 			sectionsColor: ['#0000', '#353742', '#F8F9FF', '#F8F9FF','#542AC8','#F8F9FF','#F8F9FF','#542AC8'],
 			// paddingTop: '3em',
 			// paddingBottom: '10px',
-			fixedElements: '#header, .footer',
+			fixedElements: '#header, #marks, #fp-nav',
 			responsiveWidth: 0,
 			responsiveHeight: 0,
 			responsiveSlides: false,
@@ -841,6 +846,16 @@
 			afterSlideLoad: function(section, origin, destination, direction){},
 			onSlideLeave: function(section, origin, destination, direction){}
 		});
+
+
+		// add marks
+		
+		// console.log(myFullpage.test.options.anchors);
+		
+		for(let i of myFullpage.test.options.anchors){
+			$('.marks').append(`<div class="mark"><a href="#${i}"></a></div>`);
+		};
+		// /add marks
 	</script>
 	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/say_slider.js"></script>

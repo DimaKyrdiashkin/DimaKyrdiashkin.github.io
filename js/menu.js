@@ -22,3 +22,6 @@ $(".menu_button").on("click", function(even){
 $(".menu ul li").on('click', function(event){    
     window.location.href = $(event.target.children).attr('href');
 });
+$('document').on('scroll', function(){
+    alert(1)
+});
