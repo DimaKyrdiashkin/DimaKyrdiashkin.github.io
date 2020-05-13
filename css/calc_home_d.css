@@ -53,6 +53,14 @@
 .add-field-col label{
     padding: 0;
 }
+.choice-box input[type="checkbox"]:disabled + label{
+    background: #7A7F8A;
+    color: #fff;
+    border: 1px solid #7A7F8A;
+}
+.choice-group input[type="checkbox"]:disabled + label svg path{
+    fill: #fff;
+}
 /* calc Dima*/
 .calc-body{
     width: 100%;
