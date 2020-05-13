@@ -1,4 +1,5 @@
 /* first */
+$('#c-income-edit').attr('maxlength', 8)
 $('.btc').css('display', 'block');
 $("#c-income-slider").val(0.0001);
 		var min_income_for_pam = 500000;
@@ -270,6 +271,9 @@ $(function() {
     });
 
     $('#c-income-edit').change(function(){
+        if($('#c-pam').prop("checked") && $('#c-income-edit').val() > 10000000){
+            $('#c-income-edit').val('10000000');
+        }
         $('#c-income-slider').val($('#c-income-edit').val());       
         calculate();
     });
@@ -549,6 +553,8 @@ $(function() {
         $('#c-result-sum').html('Выберите период');
         let amount = parseInt($('#c-income-slider').val());
         $("#text_calc_vv").html("Инвестировать")
+        $('.end').html('500 000');
+        $('#c-usdt').attr("disabled", false);
 
         label =  amount.format(0, 3, ' ', '.');
         $('#c-income').html(label);
@@ -566,6 +572,14 @@ $(function() {
     $("#c-pam").click(function() {
         $('.eth, .btc').css('display', 'none');
         $('.usdt').css('display', 'block');
+        $('.end').html('10 000 000');
+        var attributes = {
+            min: 1,
+            max: 10000000,
+            step: 1
+        };
+        $('#c-income-slider').attr(attributes);
+        $('#c-income-slider').rangeslider('update', true);
     });
     $("#c-savings, #c-pam").click(function() {
         $("select").val(0);
