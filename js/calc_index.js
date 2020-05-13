@@ -609,6 +609,30 @@ $(function() {
             $(".c-result-block-1 .c-primary-title").text("Ваш результат USDT");
         };
     });
+    $('#c-savings').click(function(){
+        if($("#c-btc").prop("checked")){
+            $('.end').html("100");
+            label =  amount.format(0, 4, ' ', '.');
+            $("#text_calc_vv").html("Инвестировать");
+            $('#c-income').html(label);
+            $('.eth, .usdt').css('display', 'none');
+            $('.btc').css('display', 'block');
+        }else if($("#c-eth").prop("checked")){
+            $('.end').html("1 000");
+            label =  amount.format(0, 4, ' ', '.');
+            $("#text_calc_vv").html("Инвестировать");
+            $('#c-income').html(label);
+            $('.btc, .usdt').css('display', 'none');
+            $('.eth').css('display', 'block');
+        }else{
+            $('.end').html("500 000");
+            $("#text_calc_vv").html("Инвестировать");
+            label =  amount.format(0, 3, ' ', '.');
+            $('#c-income').html(label);
+            $('.eth, .btc').css('display', 'none');
+            $('.usdt').css('display', 'block');
+        };
+    });
     $("#c-btc, #c-eth, #c-usdt").click(function(){
         let amount = parseFloat($('#c-income-slider').val());
         if($("#c-btc").prop("checked") && !$("#c-pam").prop("checked")){
@@ -632,6 +656,9 @@ $(function() {
             $('.end').html("500 000");
             $('.eth, .btc').css('display', 'none');
             $('.usdt').css('display', 'block');
+        };
+        if($("#c-pam").prop("checked")){
+            $('.end').html('10 000 000');
         };
     });
 

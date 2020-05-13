@@ -382,7 +382,7 @@ span.c-label{
     height: fit-content;
 }
 .add-field-col label{
-    background: #fff;
+    background: #F8F9FF;
 }
 .add-field-col{
     display: -ms-flexbox;
@@ -552,7 +552,7 @@ input[type="checkbox"] {
 
 .choice-group input[type="checkbox"]:checked + label{
     border: 1px solid #8C46FF;
-    background: #fff;
+    background: #F8F9FF;
     z-index: 1;
 }
 .add-field-col input[type="checkbox"]:checked + label .switch::before{
