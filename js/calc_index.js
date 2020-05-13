@@ -562,7 +562,11 @@ $(function() {
         }else{
             BrightNotCap();
         };
-    })
+    });
+    $("#c-pam").click(function() {
+        $('.eth, .btc').css('display', 'none');
+        $('.usdt').css('display', 'block');
+    });
     $("#c-savings, #c-pam").click(function() {
         $("select").val(0);
         $(".c-info-field").removeClass("close");
@@ -597,18 +601,21 @@ $(function() {
             label =  amount.format(0, 4, ' ', '.');
             $("#text_calc_vv").html("Инвестировать");
             $('#c-income').html(label);
+            $('.end').html("100");
             $('.eth, .usdt').css('display', 'none');
             $('.btc').css('display', 'block');
         }else if($("#c-eth").prop("checked") && !$("#c-pam").prop("checked")){
             label =  amount.format(0, 4, ' ', '.');
             $("#text_calc_vv").html("Инвестировать");
             $('#c-income').html(label);
+            $('.end').html("1 000");
             $('.btc, .usdt').css('display', 'none');
             $('.eth').css('display', 'block');
         }else{
             $("#text_calc_vv").html("Инвестировать");
             label =  amount.format(0, 3, ' ', '.');
             $('#c-income').html(label);
+            $('.end').html("500 000");
             $('.eth, .btc').css('display', 'none');
             $('.usdt').css('display', 'block');
         };

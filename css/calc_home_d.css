@@ -1,3 +1,6 @@
+.settings .fp-tableCell{
+    vertical-align: none;
+}
 .calc_side{
     width: 400px;
 }
