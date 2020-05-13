@@ -37,9 +37,8 @@
 .bill_right{
     width: 65%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
-    /*flex-wrap: wrap;*/
 }
 
 .bill_right_svg{
@@ -55,6 +54,7 @@
     border-radius: 7px;
     position: relative;
     z-index: 10;
+    transition: background-color .7s, z-index .4s;
     background-color: #3D3D50;
     padding: 45px 156px 75px 60px;
 }
@@ -89,24 +89,27 @@
     color: #8C46FF;
 }
 
+.bill_right_li:nth-child(3){
+    left: -108px!important;
+}
+
+.bill_right_li:last-child{
+    left: calc(-156px + 45px - 108px);
+    padding-right: 64px;
+    padding-left: 156px;
+}
 
 .bill_active{
     z-index: 20;
     padding-top: 50px;
     padding-bottom: 125px;
-    top: -25px;
-    left: -108px;
     background-color: #1E1E25;
 }
 .bill_active .bill_right_li_a{
     color: #fff;
     background-color: #A168FF;
 }
-.bill_right_li:last-child{
-    left: calc(-156px + 45px - 108px);
-    padding-right: 64px;
-    padding-left: 156px;
-}
+
 
 
 @media (max-width: 1440px) {
