@@ -270,7 +270,32 @@ header.menu_open{
 /* /menu */
 
 /*marks*/
-
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+	transform: translate(-50%, -50%) !important;
+}
+#fp-nav ul li, .fp-slidesNav ul li{
+	transition: 1s;
+	margin: 10px !important;
+}
+#fp-nav ul li a span{
+	width: 10px !important;
+	height: 10px !important;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+	margin: 0 !important;
+	background: #e4e4ec00 !important;
+	border: 1px solid #2B2C35 !important;
+	mix-blend-mode: color !important;
+	cursor: pointer;
+}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{
+	background: url(../img/index/active.png) !important;
+	background-size: cover !important;
+	background-position: center !important;
+	width: 26px !important;
+	height: 29px !important;
+	border: none !important;
+}
 /* /marks */
 
 /* footer */
