@@ -3,13 +3,25 @@
     min-height: 375px;
     height: 100%;
     clip-path: polygon(0 0%, 100% 15%, 100% 100%, 0% 85%);
+    position: relative;
 }
 .say .container{
     width: 90%;
     max-width: 1512px;
+    position: relative;
+    z-index: 10;
     margin: auto;
 }
-
+.bf_left{
+    position: absolute;
+    z-index: 1;
+}
+.bg_center{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: rotateX(-50%);
+}
 .say_slider_item{
     background: #3D3D50;
     border-radius: 7px;
@@ -45,6 +57,33 @@
 }
 .slick-slide {
     margin: 0 10px;
+}
+.slider-box {
+    position: relative;
+}
+
+/*li {*/
+/*    margin-top: 20px;*/
+/*    position: relative;*/
+/*    float: left;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+.prev,
+.next {
+    position: absolute;
+    top: 30%;
+    height: 60px;
+    width: 60px;
+    z-index: 1;
+    cursor: pointer;
+}
+.prev{
+    left: -70px;
+    transform: rotate(-200grad);
+}
+.next {
+    right: -70px;
 }
 
 @media (max-width: 1440px) {
