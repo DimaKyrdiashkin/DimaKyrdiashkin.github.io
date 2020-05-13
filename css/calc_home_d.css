@@ -57,9 +57,11 @@
     background: #7A7F8A;
     color: #fff;
     border: 1px solid #7A7F8A;
+    transition: .4s;
 }
 .choice-group input[type="checkbox"]:disabled + label svg path{
     fill: #fff;
+    transition: .4s;
 }
 /* calc Dima*/
 .calc-body{
@@ -332,6 +334,7 @@ select{
 .choice-group svg{
     height: 20px;
     margin-right: 10px;
+    transition: .4s;
 }
 .choice-box:last-child svg{
     height: 16px;
