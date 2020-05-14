@@ -2730,7 +2730,6 @@ p.circle_yellow{
 }
 
 @media (max-width: 400px){
-
 	.profitability_right_static_btc img, .profitability_right_static_usdt img, .profitability_right_static_eth img{
 		left: 67%;
 	}

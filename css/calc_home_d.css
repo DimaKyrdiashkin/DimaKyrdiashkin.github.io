@@ -774,8 +774,34 @@ i.down {
     }
 }
 @media (max-width: 1200px) {
+    .calc-body{
+        height: 100%;
+        padding: 0;
+    }
+    .calc_bg{
+        padding-top: 0 !important;
+    }
     .calc_side{
         width: 30%;
+    }
+    #c-options-block{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .choice-group:first-child{
+        margin-top: 10px;
+    }
+    .f-row{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .invest_button{
+        display: none;
+    }
+    .select,
+    .add-field{
+        margin-top: 5%;
     }
 }
 @media (max-width: 768px) {
