@@ -1,11 +1,13 @@
 .advantages{
     width: 100%;
-    padding: 0 0 80px ;
 }
 .advantages .container{
-    max-width: 1600px;
     width: 90%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 .advantages_h2{
     font-style: normal;
@@ -23,7 +25,8 @@
 
 }
 .advantages_ul li{
-    width: 23%;
+    font-family: "Gilroy", sans-serif;
+    width: 24%;
     max-width: 420px;
     display: flex;
     flex-direction: column;
@@ -31,31 +34,50 @@
     background: #FFFFFF;
     box-shadow: 0 4px 15px #CBD2DD, 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
-    padding: 15px 40px 35px;
+    padding: 40px 24px 35px;
 }
-.advantages_ul h3{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 36px;
-    text-align: center;
-    color: #22232D;
-    margin: 31px auto 8px;
+.advantages_ul svg{
+    height: 101px;
 }
+/*.advantages_ul h3{*/
+/*    font-style: normal;*/
+/*    font-weight: 600;*/
+/*    font-size: 28px;*/
+/*    line-height: 36px;*/
+/*    text-align: center;*/
+/*    color: #22232D;*/
+/*    margin: 31px auto 8px;*/
+/*}*/
 .advantages_ul p{
+
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 16px;
     text-align: center;
     color: #353742;
+    margin-top: 50px;
 }
-.advantages_ul li:first-child img{
-    width: 45px;
+
+
+
+@media (max-width: 1440px) {
+
 }
-.advantages_ul li:nth-child(2) img{
-    width: 56px;
-    padding: 12px 0 5px;
+
+@media (max-width: 1199px) {
+    /*.advantages_ul li{*/
+    /*    width: 48%;*/
+    /*}*/
 }
-.advantages_ul li:last-child img{
-    width: 70px;
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
 }

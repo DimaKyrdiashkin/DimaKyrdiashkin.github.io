@@ -267,6 +267,7 @@
     position: relative;
     -ms-flex-item-align: start;
     align-self: flex-start;
+    margin-top: 5px;
 }
 .capotalization .c-label:hover + .desc, .addTriangle{
     opacity: 1;
