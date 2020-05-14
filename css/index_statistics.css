@@ -9,15 +9,12 @@
 }
 .statistics_h2{
     font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
     color: #F8F8FB;
 }
 .statistics_p{
     font-weight: 600;
-    font-size: 28px;
-    line-height: 36px;
     color: #F1E9FF;
+    margin-top: 17px;
 }
 .statistics_ul{
     display: flex;
@@ -42,13 +39,13 @@
     position: absolute;
     font-family: Gilroy,sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1em;
     line-height: 28px;
     color: #fff;
 }
 .statistics_ul span{
-    font-weight: bold;
-    font-size: 80px;
+    font-family: 'Gilroy-Bold';
+    font-size: 4em;
     line-height: 97px;
     text-align: right;
     color: #F1E9FF;
@@ -61,8 +58,12 @@
     transform: translateY(-50%) translateX(-50%);
 }
 .statistics_ul_textFooter{
+    position: absolute;
     bottom: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    color: #fff;
 }
 
 

@@ -1,10 +1,4 @@
-
-
 .container_bloc_team_h2{
-    font-family: 'Gilroy',sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 40px;
     color: #FFFFFF;
     margin-bottom: 51px;
 }
@@ -14,30 +8,16 @@
 .footer_slider_item_img{
     width: 100%;
     margin-bottom: 35px;
-
 }
 .footer_slider_item_h2{
-    font-family: 'Gilroy-Light';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 15px;
 }
 .footer_slider_item_p{
-    font-family: 'Gilroy',sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
     text-align: center;
     color: #FFFFFF;
 }
-
-
-
 .slick-prev:before, .slick-next:before{
     color: #CCAFFF!important;
 }

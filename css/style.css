@@ -95,11 +95,9 @@ a{
 	color: #fff;
 }
 h1{
-	font-size: 48px;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
+	font-family: 'Gilroy-Bold';
+	font-size: 2em;
+	line-height: 40px;
 }
 h2{
 	font-family: "Gilroy-SemiBold";
@@ -110,6 +108,16 @@ h3{
 	font-family: "Gilroy-SemiBold";
 	font-size: 1.5em;
 	line-height: 32px;
+}
+h4{
+	font-size: 1.25em;
+	font-family: 'Gilroy-Light';
+	line-height: 28px;
+}
+h5{
+	font-size: 1.125em;
+	font-family: 'Gilroy-Light';
+	line-height: 24px;
 }
 p{
 	font-family: "Gilroy-Medium";
