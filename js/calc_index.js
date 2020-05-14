@@ -554,6 +554,8 @@ $(function() {
         let amount = parseInt($('#c-income-slider').val());
         $("#text_calc_vv").html("Инвестировать")
         $('.end').html('500 000');
+        $('.eth, .btc').css('display', 'none');
+        $('.usdt').css('display', 'block');
         $('#c-usdt').attr("disabled", false);
 
         label =  amount.format(0, 3, ' ', '.');
