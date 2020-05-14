@@ -70,10 +70,11 @@
     border-bottom-color: #7A7F8A;
     background-color: #F1E9FF;
 }
+
 .tabl_cript td{
-    padding: 10px;
     border: none!important;
     border-radius: 0 7px 0 0;
+    padding: 36px 0 10px!important;
 }
 .tabl table tr td:first-child{
     text-align: left;

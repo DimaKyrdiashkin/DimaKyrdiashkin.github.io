@@ -21,6 +21,10 @@ setInterval(()=> {
             n_2 = 0,
             n_3 = 0,
             n_4 = 0;
+        investors_full.innerText = 0;
+        analysts_full.innerText = 0;
+        income_full.innerText = 0;
+        company_full.innerText = 0;
         investors_full_fun = setInterval( function () {
             n_1++;
 
@@ -29,7 +33,7 @@ setInterval(()=> {
             if( n_1 === parseInt(investors_full_n) ) {
                 clearInterval( investors_full_fun );
             }
-        }, 1000 );
+        }, 1500 );
         analysts_full_fun = setInterval( function () {
             n_2++;
 
@@ -49,7 +53,7 @@ setInterval(()=> {
             }
         }, 100 );
         company_full_fun = setInterval( function () {
-            n_4++;
+            n_4+=4;
 
             company_full.innerText = n_4;
 
