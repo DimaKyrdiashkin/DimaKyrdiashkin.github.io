@@ -6,9 +6,11 @@
 }
 .bill .container{
     width: 90%;
+    height: 100%;
     max-width: 1512px;
     margin: auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -51,12 +53,14 @@
 }
 
 .bill_right_li{
+    color: #FFFFFF;
     border-radius: 7px;
     position: relative;
     z-index: 10;
-    transition: background-color .7s, z-index .4s;
+    transition: all .7s;
+    height: 100%;
     background-color: #3D3D50;
-    padding: 45px 156px 75px 60px;
+    padding: 45px 48px 75px 60px;
 }
 
 .bill_right_li_h2{
@@ -64,7 +68,6 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    color: #FFFFFF;
 }
 .bill_right_li_p{
     font-family: 'Gilroy',sans-serif;
@@ -73,7 +76,6 @@
     line-height: 24px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
     max-width: 203px;
     margin: 20px auto;
 }
@@ -88,32 +90,29 @@
     line-height: 20px;
     color: #8C46FF;
 }
-
-.bill_right_li:nth-child(3){
-    left: -108px!important;
-}
-
 .bill_right_li:last-child{
-    left: calc(-156px + 45px - 108px);
     padding-right: 64px;
-    padding-left: 156px;
 }
-
 .bill_active{
     z-index: 20;
-    padding-top: 50px;
-    padding-bottom: 125px;
-    background-color: #1E1E25;
+    transform: scale(1.1);
+    background-color: #FFFFFF;
+    color: #1E1E25;
 }
 .bill_active .bill_right_li_a{
-    color: #fff;
+    color: #FFFFFF;
     background-color: #A168FF;
 }
 
 
 
 @media (max-width: 1440px) {
-
+    .bill_right{
+        width: 70%;
+    }
+    .bill_right_li{
+        padding: 40px;
+    }
 }
 
 @media (max-width: 1199px) {
