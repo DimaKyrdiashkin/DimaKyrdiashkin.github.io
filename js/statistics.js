@@ -29,7 +29,7 @@ setInterval(()=> {
             if( n_1 === parseInt(investors_full_n) ) {
                 clearInterval( investors_full_fun );
             }
-        }, 100 );
+        }, 1000 );
         analysts_full_fun = setInterval( function () {
             n_2++;
 
@@ -38,7 +38,7 @@ setInterval(()=> {
             if( n_2 === parseInt(analysts_full_n)) {
                 clearInterval( analysts_full_fun );
             }
-        }, 30 );
+        }, 700 );
         income_full_fun = setInterval( function () {
             n_3++;
 
@@ -47,7 +47,7 @@ setInterval(()=> {
             if( n_3 === parseInt(income_full_n) ) {
                 clearInterval( income_full_fun );
             }
-        }, 20 );
+        }, 100 );
         company_full_fun = setInterval( function () {
             n_4++;
 
