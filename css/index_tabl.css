@@ -145,6 +145,9 @@
 .tabl_body> li:hover{
     background: #542AC8;
 }
+.tabl_body> li:hover .tabl_body_col li{
+    color: #fff;
+}
 
 @media (max-width: 1440px) {
 

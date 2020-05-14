@@ -574,6 +574,14 @@ input[type="checkbox"]:disabled + label .switch{
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
 }
+.invest_button{
+    margin-top: 30px;
+}
+.invest_button a{
+    background: #8C46FF;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
 
 @-webkit-keyframes cb-pop {
     0% {
