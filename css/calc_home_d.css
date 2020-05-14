@@ -1,8 +1,12 @@
 .settings .fp-tableCell{
     vertical-align: baseline;
 }
+.settings .fp-tableCell, .setting .slide{
+    height: fit-content !important;
+}
 .calc_side{
-    width: 400px;
+    width: 25%;
+    max-width: 400px;
 }
 .calc_side h2{
     margin-bottom: 20px;
@@ -65,7 +69,7 @@
 }
 /* calc Dima*/
 .calc-body{
-    width: 100%;
+    width: 68%;
     height: fit-content;
     display: -webkit-box;
     display: -webkit-flex;
@@ -311,6 +315,7 @@
     color: #1E1E25;
     font-size: 18px;
     font-weight: bold;
+    font-family: 'Gilroy-Light';
 }
 .c-primary-title{
     font-family: "Gilroy-Light";
@@ -331,6 +336,7 @@ select{
     display: flex;
     flex-wrap: wrap;
     width: 47%;
+    min-width: 335px;
 }
 .choice-group svg{
     height: 20px;
@@ -576,7 +582,7 @@ input[type="checkbox"]:disabled + label .switch{
     animation-timing-function: linear;
 }
 .invest_button{
-    margin-top: 30px;
+    margin-top: -200px;
 }
 .invest_button a{
     background: #8C46FF;
@@ -757,101 +763,19 @@ i.down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
-
+@media (max-width: 1690px) {
+    .capotalization{
+        margin: 15px 0 5px 0;
+    }
+}
+@media (max-width: 1440px) {
+    .calc_bg{
+        padding: 0 5%;
+    }
+}
 @media (max-width: 1200px) {
-    .t-col{
-        height: fit-content;
-    }
-    .f-row{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        width: 100%;
-        height: fit-content;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .result{
-        width: 70%;
-        height: fit-content;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
-    }
-    .settings{
-        width: 60%;
-        height: fit-content;
-    }
-    .open{
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    .choice-group{
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-    }
-    .c-result-block-wrapper {
-        width: 80%;
-        min-width: 250px;
-        height: 300px;
-        min-height: 250px;
-    }
-    .c-result-block {
-        width: 230px;
-        min-width: 230px;
-        height: 230px;
-        min-height: 230px;
-    }
-    #c-options-block{
-        padding: 10px 10px;
-        height: 160px
-    }
-    #c-result-sum {
-        font-size: x-large;
-    }
-    .c-label{
-        font-size: smaller;
-    }
-    .add-field{
-        width: 100%;
-        height: fit-content;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
-        height: fit-content;
-    }
-    .calc-body{
-        width: 100%;
-        height: fit-content;
-    }
-    .add-field-col{
-        width: 80%;
-        height: fit-content;
-        margin: 0 0  40px 0;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-    }
-    .invest-field{
-        width: 100%;
-    }
-    .c-result-block-1 span.c-primary-title,
-    .c-result-block-3 span.c-primary-title{
-        font-size: 18px;
+    .calc_side{
+        width: 30%;
     }
 }
 @media (max-width: 768px) {

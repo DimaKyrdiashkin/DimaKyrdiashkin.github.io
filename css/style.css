@@ -78,6 +78,10 @@
 	font-family: Gilroy-UltraLightItalic;
 	src: url(../fonts/Gilroy-UltraLightItalic.ttf);
 }
+canvas{
+	display: block;
+	z-index: 9999999999;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -144,6 +148,14 @@ body{
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	overflow: hidden;
+}
+.promoContent .container{
+	top: 101px;
+	position: absolute;
+}
+iframe{
+	width: 100vw;
+    height: 120vh;
 }
 .promoContent video{
 	position: absolute;
@@ -1961,9 +1973,6 @@ p.circle_yellow{
 	.contentBlockTwo_row__text p{
 		font-size: 1.4vw;
 	}
-	.calc-body .f-row{
-		width: 85%;
-	}
 	.contentBlockTwo_row__element{
 		width: 330px;
 	}
@@ -1971,7 +1980,7 @@ p.circle_yellow{
 		width: 90%;
 	}
 }
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
 	h1{
 		font-size: 3.5vw;
 	}
