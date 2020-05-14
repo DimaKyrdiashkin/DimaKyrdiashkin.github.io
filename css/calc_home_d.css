@@ -2,7 +2,7 @@
     vertical-align: baseline;
 }
 .settings .fp-tableCell, .setting .slide{
-    height: fit-content !important;
+    height: 650px !important;
 }
 .calc_side{
     width: 25%;
@@ -582,7 +582,7 @@ input[type="checkbox"]:disabled + label .switch{
     animation-timing-function: linear;
 }
 .invest_button{
-    margin-top: -200px;
+    margin-top: -300px;
 }
 .invest_button a{
     background: #8C46FF;

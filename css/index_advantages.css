@@ -39,6 +39,13 @@
 .advantages_ul svg{
     height: 101px;
 }
+.advantages_ul li svg path{
+    transition: .5s;
+}
+.advantages_ul li:hover svg path{
+    fill: #542AC8;
+    transition: .5s;
+}
 /*.advantages_ul h3{*/
 /*    font-style: normal;*/
 /*    font-weight: 600;*/
@@ -53,7 +60,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    text-align: center;
+    text-align: left;
     color: #353742;
     margin-top: 50px;
 }
