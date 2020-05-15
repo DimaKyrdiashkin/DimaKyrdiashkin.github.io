@@ -833,14 +833,8 @@ i.down {
     }
 }
 @media (max-width: 768px) {
-    .settings{
-        width: 80%;
-    }
-    .add-field-col{
-        width: 95%;
-    }
-    .result{
-        width: 80%;
+    .calc_bg{
+        flex-direction: column;
     }
     .c-result-block-wrapper{
         width: 100%;

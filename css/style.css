@@ -2179,6 +2179,9 @@ p.circle_yellow{
 	}
 }
 @media (max-width: 768px) {
+	body{
+		font-size: 12px;
+	}
 	.promoContent_info{
 		width: 90%;
 	}

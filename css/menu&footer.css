@@ -439,74 +439,23 @@ header.menu_open{
 	}
 }
 @media (max-width: 768px) {
-    header{
-		width: 300px;
-		right: -200px;
+    body{
+		font-size: 12px;
 	}
-	.menu{
-		height: 500px;
-		border-radius: 40px 0 0 40px;
-	}
-	.menu_button{
-		width: 39px;
-		height: 39px;
-	}
-	.menu_header{
-		padding: 10px 20px 15px 100px;
-	}
-	.button_top{
-		height: 9px;
-		width: 3px;
-		left: 35%;
-    	top: 25%;
-	}
-	.button_middle{
-		height: 19px;
-		width: 3px;
-	}
-	.button_bottom{
-		height: 9px;
-		width: 3px;
-		right: 33%;
-		bottom: 20%;
-    }
-}
 @media (max-width: 480px) {
-    .isFlip_right{
+    /* .isFlip_right{
 		right: 20px;
     	left: auto;
-	}
-	.menu_button{
-		width: 30px;
-		height: 30px;
-		top: 15px;
-	}
+	} */
 	header{
-		top: 5px;
-		right: -230px;
+		width: 320px;
 	}
 	.menu_header{
-		height: 40px;
-		margin-left: 25px;
-		margin-right: 82px;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: reverse;
-		    -ms-flex-direction: row-reverse;
-		        flex-direction: row-reverse;
+		padding: 10px 10px 15px 65px;
 	}
-	.button_top{
-		left: 30%;
-		top: 15%;
-		height: 10px;
+	.menu_button{
+		left: 14px;
 	}
-	.button_middle{
-		height: 18px;
-	}
-	.button_bottom{
-		right: 30%;
-		bottom: 15%;
-		height: 10px;
-    }
 }
 @media all and (max-width: 992px) and (orientation : landscape) {
 	header{
