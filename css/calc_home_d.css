@@ -777,17 +777,22 @@ i.down {
     .calc-body{
         height: 950px;
         padding: 0;
+        width: 50%;
     }
     .calc_bg{
         height: fit-content;
         padding-top: 0 !important;
     }
     .calc_side{
-        width: 30%;
+        width: 35%;
     }
     #c-options-block{
         flex-direction: column-reverse;
-        align-items: center;
+        width: 75%;
+    }
+    .settings,
+    .result{
+        width: 75%;
     }
     .choice-group:first-child{
         margin-top: 10px;
@@ -805,6 +810,9 @@ i.down {
     .select,
     .add-field{
         margin-top: 5%;
+    }
+    .choice-group{
+        min-width: fit-content;
     }
 }
 @media (max-width: 768px) {
