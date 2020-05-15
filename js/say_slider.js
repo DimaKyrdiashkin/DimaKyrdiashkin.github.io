@@ -25,7 +25,7 @@ if(window.innerWidth <= 991){
     });
 }
 else{
-    $("say .say_slider").slick({
+    $(".say .say_slider").slick({
         dots: true,
         infinite: true,
         slidesToShow: 3,
