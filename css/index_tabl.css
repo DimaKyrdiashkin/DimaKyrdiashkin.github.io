@@ -146,11 +146,15 @@
 }
 
 @media (max-width: 1200px) {
-
+    .tabl{
+        padding: 0 0 100px;
+    }
 }
 
 @media (max-width: 991px) {
-
+    .tabl_year{
+        text-align: left;
+    }
 }
 
 @media (max-width: 768px) {

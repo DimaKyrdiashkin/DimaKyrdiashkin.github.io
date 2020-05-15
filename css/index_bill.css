@@ -126,10 +126,14 @@
         justify-content: center;
     }
     .bill_right_li:last-child{
-        padding-right: 20px;
+        padding-right: 22px;
     }
     .bill_active{
         transform: scale(1);
+    }
+    .bill_right_li{
+        padding: 50px 22px;
+        text-align: center;
     }
 }
 

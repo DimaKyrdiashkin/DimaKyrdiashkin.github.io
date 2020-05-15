@@ -25,7 +25,8 @@ $(".bill_right_li").on("mouseenter",(e)=>{
 function sliderBill() {
     if(window.outerWidth<= 991){
         document.querySelector(".bill_right_svg").remove();
-        $("#bill_right").slick({
+        document.querySelector(".bill_right").classList.add("bill_right_slider")
+        $(".bill_right_slider").slick({
             dots: true,
             // autoplay:true,
             autoplaySpeed: 5000,
@@ -35,8 +36,13 @@ function sliderBill() {
             slidesToScroll: 1,
         });
         document.querySelector(".bill_active").classList.remove("bill_active")
+
     }
-    
+    else {
+        document.querySelectorAll(".bill_right_li")[1].classList.add("bill_active")
+        document.querySelector(".bill_right").classList.remove("bill_right_slider")
+    }
+
 
 }
 sliderBill();
