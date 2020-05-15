@@ -168,6 +168,9 @@
     .tabl_h2{
         margin-bottom: 40px;
     }
+    .tabl{
+        padding-bottom: 30px;
+    }
 }
 
 @media (max-width: 768px) {
