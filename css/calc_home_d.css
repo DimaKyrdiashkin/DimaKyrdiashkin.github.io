@@ -782,6 +782,7 @@ i.down {
     .calc_bg{
         height: fit-content;
         padding-top: 0 !important;
+        margin-bottom: 75px;
     }
     .calc_side{
         width: 35%;
@@ -813,6 +814,22 @@ i.down {
     }
     .choice-group{
         min-width: fit-content;
+    }
+}
+@media (max-width: 992px) {
+    #c-options-block{
+        width: 100%;
+    }
+    .settings,
+    .result,
+    .invest_button{
+        width: 100%;
+    }
+    .calc_side{
+        width: 45%;
+    }
+    .calc_bg{
+        margin-bottom: 75px;
     }
 }
 @media (max-width: 768px) {

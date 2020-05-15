@@ -124,6 +124,9 @@ p{
 	font-size: 1em;
 	line-height: 24px;
 }
+.slick-dots li button:before{
+	color: #fff !important;
+}
 section{
 	width: 100%;
 }
@@ -1942,6 +1945,10 @@ p.circle_yellow{
 	.contentBlockOne_row{
 		-ms-flex-pack: distribute;
 		    justify-content: space-around;
+	}
+	.slick-track{
+		margin-top: 20px !important;
+		height: 500px !important;
 	}
 
 
