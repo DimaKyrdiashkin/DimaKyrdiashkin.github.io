@@ -6,6 +6,10 @@ const investors_full = document.getElementById("investors"),
     investors_full_n = investors_full.innerText,
     analysts_full_n = analysts_full.innerText,
     income_full_n = income_full.innerText;
+    investors_full.innerText = 0;
+    analysts_full.innerText = 0;
+    income_full.innerText = 0;
+    company_full.innerText = 0;
 function activeStatistics() {
     const url = window.location.href;
     console.log('fun')
@@ -33,7 +37,7 @@ setInterval(()=> {
             if( n_1 === parseInt(investors_full_n) ) {
                 clearInterval( investors_full_fun );
             }
-        }, 1500 );
+        }, 300 );
         analysts_full_fun = setInterval( function () {
             n_2++;
 
@@ -42,7 +46,7 @@ setInterval(()=> {
             if( n_2 === parseInt(analysts_full_n)) {
                 clearInterval( analysts_full_fun );
             }
-        }, 700 );
+        }, 200 );
         income_full_fun = setInterval( function () {
             n_3++;
 
@@ -51,14 +55,15 @@ setInterval(()=> {
             if( n_3 === parseInt(income_full_n) ) {
                 clearInterval( income_full_fun );
             }
-        }, 100 );
+        }, 30 );
         company_full_fun = setInterval( function () {
-            n_4+=4;
+            n_4+=52;
 
             company_full.innerText = n_4;
 
-            if( n_4 === parseInt(company_full_n) ) {
+            if( n_4 >= parseInt(company_full_n) ) {
                 clearInterval(company_full_fun);
+                company_full.innerText = company_full_n;
             }
         }, 1 );
         flagg = false
