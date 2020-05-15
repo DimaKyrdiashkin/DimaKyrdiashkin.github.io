@@ -2470,6 +2470,9 @@ p.circle_yellow{
 	}
 }
 @media (max-width: 480px) {
+	body{
+		font-size: 12px;
+	}
 	.promoContent video{
 		left: 101%;
 	}
@@ -2585,9 +2588,6 @@ p.circle_yellow{
 	/* device 480*/
 	.device .cross_bg, .triangle_left_bg, .circle_bg{
 		display: none;
-	}
-	.container{
-		padding-top: 30px;
 	}
 	.device{
 		background: none;

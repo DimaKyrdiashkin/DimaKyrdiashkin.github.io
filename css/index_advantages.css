@@ -22,6 +22,7 @@
 
 }
 .advantages_ul li{
+    min-width: 290px;
     width: 24%;
     max-width: 420px;
     display: flex;
@@ -31,6 +32,7 @@
     box-shadow: 0 4px 15px #CBD2DD, 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     padding: 40px 24px 35px;
+    margin-bottom: 25px;
 }
 .advantages_ul svg{
     height: 101px;
@@ -69,7 +71,13 @@
 }
 
 @media (max-width: 991px) {
+    .advantages_ul svg{
+        height: 50px;
+    }
 
+    .advantages_ul p{
+        margin-top: 14px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -77,5 +85,12 @@
 }
 
 @media (max-width: 480px) {
-
+    .advantages_h2{
+        font-size: 1.15em;
+        margin-bottom: 40px;
+    }
+    .advantages_ul p{
+        font-size: .9em;
+        text-align: center;
+    }
 }

@@ -1,6 +1,8 @@
 .statistics{
     width: 100%;
+    background-color: #7038E4;
     min-height: 375px;
+    padding: 25px 0 43px;
 }
 .statistics .container{
     max-width: 1512px;
@@ -71,7 +73,7 @@
 
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
 
 }
 
