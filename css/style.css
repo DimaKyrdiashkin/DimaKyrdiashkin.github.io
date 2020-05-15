@@ -171,6 +171,7 @@ body{
     transform: translateY(-50%);
 }
 .promoContent_text{
+	max-width: 410px;
 	position: absolute;
     top: 50%;
 	left: 10%;
