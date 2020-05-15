@@ -6,7 +6,7 @@
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Title</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/easings.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/easings.js"></script> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/calc_home_d.css">
     <link rel="stylesheet" href="css/index_statistics.css">
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/index_tabl.css">
     <link rel="stylesheet" href="css/index_say.css">
     <link rel="stylesheet" href="css/index_footerSlider.css">
-
     <link rel="stylesheet" href="css/menu&footer.css">
 	<!--    slick-->
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
@@ -95,14 +94,20 @@
 		</header>
 		<section class="section promoContent">
 			<div class="container">
-				<div class="sketchfab-embed-wrapper">
-					<iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/8762cad95c764cf88f379de4a7291ae9/embed?autostart=1&amp;preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-					<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-						<a href="https://sketchfab.com/3d-models/planet-hologram-8762cad95c764cf88f379de4a7291ae9?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Planet Hologram</a>
-						by <a href="https://sketchfab.com/pablobs182?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Pablo D. Becerril</a>
-						on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-					</p>
-				</div>				
+				<video loop muted autoplay class="first_video">
+					<source src="video/index/index.webm" type='video/webm'>
+					<source src="video/index/index.mp4" type='video/mp4'>
+				</video>
+				<div class="promoContent_svg">
+					<svg width="780" height="722" viewBox="0 0 780 722" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M490.95 99.7354L680.126 288.912C681.011 289.797 681.356 291.087 681.031 292.295L611.454 551.062C611.13 552.267 610.188 553.209 608.983 553.533L350.216 623.111C349.008 623.436 347.718 623.09 346.833 622.206L157.656 433.029C156.771 432.144 156.426 430.854 156.751 429.645L226.329 170.879C226.653 169.674 227.595 168.732 228.8 168.408L487.566 98.8304C488.775 98.5054 490.065 98.8505 490.95 99.7354Z" stroke="#F1E9FF" stroke-width="3"/>
+						<path d="M251.668 266.314L359.718 374.364C360.603 375.249 360.949 376.539 360.624 377.748L320.882 525.552C320.557 526.758 319.616 527.699 318.41 528.024L170.606 567.766C169.397 568.091 168.107 567.745 167.222 566.861L59.1719 458.81C58.287 457.925 57.9419 456.635 58.2669 455.427L98.0088 307.622C98.333 306.417 99.2746 305.475 100.48 305.151L248.285 265.409C249.493 265.084 250.783 265.429 251.668 266.314Z" stroke="#F1E9FF" stroke-width="3"/>
+					</svg>
+				</div>
+				<div class="promoContent_text">
+					<h1>Международная <br>инвестиционная компания</h1>
+					<h5>Сделаем вас богаче просто</h5>
+				</div>
 			</div>
 		</section>
 		<section class="section statistics">
@@ -175,9 +180,9 @@
 		<section class="section threeSlide">
 			<div class="container">
 				<div class="threeSlide_left">
-					<h1 class="threeSlide_left_h2">Автоматизированная </h1>
-					<h1 class="threeSlide_left_h3">Торговля</h1>
-					<h1 class="threeSlide_left_h3">Криптовалютами</h1>
+					<h2 class="threeSlide_left_h2">Автоматизированная </h2>
+					<h2 class="threeSlide_left_h3">Торговля</h2>
+					<h2 class="threeSlide_left_h3">Криптовалютами</h2>
 					<img src="" class="threeSlide_left_img">
 
 				</div>
@@ -279,11 +284,11 @@
 
 <!--						<h3>Управления риском</h3>-->
 						<p>
-							Автоматическая система управления <br>
-							риском контролирует все запросы,<br>
-							сделанные ботами фонда, добиваясь<br>
-							минимального риска при<br>
-							максимальной прибыльности.<br>
+							Автоматическая система управления 
+							риском контролирует все запросы,
+							сделанные ботами фонда, добиваясь
+							минимального риска при
+							максимальной прибыльности.
 						</p>
 					</li>
 				</ul>
@@ -1054,7 +1059,7 @@
 			controlArrows: true,
 			verticalCentered: true,
 			sectionsColor: ['#0000', '#7038E4', '#F8F9FF', '#F8F9FF','#542AC8','#F8F9FF','#F8F9FF','#542AC8'],
-			paddingTop: '3em',
+			// paddingTop: '3em',
 			// paddingBottom: '10px',
 			fixedElements: '#header, #marks, #fp-nav',
 			responsiveWidth: 0,

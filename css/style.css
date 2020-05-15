@@ -158,8 +158,26 @@ body{
 	overflow: hidden;
 }
 .promoContent .container{
-	top: 101px;
+	position: relative;
+	width: 100vw;
+    height: 100vh;
+}
+.promoContent_svg{
+	display: none;
+	z-index: 2;
+    position: relative;
+    top: 62%;
+    transform: translateY(-50%);
+}
+.promoContent_text{
 	position: absolute;
+    top: 50%;
+	left: 10%;
+	transform: translateY(-50%);
+    z-index: 3;
+}
+.promoContent_text h5{
+	margin-top: 20px;
 }
 iframe{
 	width: 100vw;
