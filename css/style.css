@@ -1934,7 +1934,7 @@ p.circle_yellow{
 		width: 90%;
 	}
 }
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
 	body{
 		font-size: 14px;
 	}
