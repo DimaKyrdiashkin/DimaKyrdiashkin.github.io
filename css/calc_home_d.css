@@ -914,11 +914,16 @@ i.down {
     .c-result-block-wrapper{
         min-width: fit-content;
     }
+    .calc_side__head,
+    .calc_side h2{
+        margin-bottom: 10px;
+    }
     .calc_side{
         width: 85%;
     }
     .calc_side__text:first-child{
         margin-bottom: 0;
+        margin-top: 20px;
     }
     .settings{
         width: 95%;
