@@ -36,5 +36,7 @@ function sliderBill() {
         });
         document.querySelector(".bill_active").classList.remove("bill_active")
     }
+    
+
 }
 sliderBill();
