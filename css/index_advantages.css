@@ -44,15 +44,6 @@
     fill: #542AC8;
     transition: .5s;
 }
-/*.advantages_ul h3{*/
-/*    font-style: normal;*/
-/*    font-weight: 600;*/
-/*    font-size: 28px;*/
-/*    line-height: 36px;*/
-/*    text-align: center;*/
-/*    color: #22232D;*/
-/*    margin: 31px auto 8px;*/
-/*}*/
 .advantages_ul p{
     font-size: 0.875em;
     text-align: left;
@@ -66,7 +57,7 @@
 
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
 
 }
 

@@ -388,7 +388,7 @@ span.c-label{
     height: fit-content;
 }
 .add-field-col label{
-    background: #F8F9FF;
+    background: rgb(248, 249, 255);
 }
 .add-field-col{
     display: -ms-flexbox;
@@ -775,18 +775,24 @@ i.down {
 }
 @media (max-width: 1200px) {
     .calc-body{
-        height: 100%;
+        height: 950px;
         padding: 0;
+        width: 50%;
     }
     .calc_bg{
+        height: fit-content;
         padding-top: 0 !important;
     }
     .calc_side{
-        width: 30%;
+        width: 35%;
     }
     #c-options-block{
         flex-direction: column-reverse;
-        align-items: center;
+        width: 75%;
+    }
+    .settings,
+    .result{
+        width: 75%;
     }
     .choice-group:first-child{
         margin-top: 10px;
@@ -795,13 +801,18 @@ i.down {
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
+        height: fit-content;
     }
-    .invest_button{
-        display: none;
+    .invest_button {
+        margin-top: 20px;
+        width: 75%;
     }
     .select,
     .add-field{
         margin-top: 5%;
+    }
+    .choice-group{
+        min-width: fit-content;
     }
 }
 @media (max-width: 768px) {
@@ -1008,8 +1019,9 @@ i.down {
 }
 .c-info .usdt{
     height: 16px;
-    top: 17px;
+    top: 50%;
     left: 12px;
+    transform: translateY(-50%);
 }
 #c-period{
     font-family: 'Gilroy-Regular';
