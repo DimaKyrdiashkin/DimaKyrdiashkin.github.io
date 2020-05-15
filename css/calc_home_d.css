@@ -782,6 +782,7 @@ i.down {
     .calc_bg{
         height: fit-content;
         padding-top: 0 !important;
+        margin-bottom: 75px;
     }
     .calc_side{
         width: 35%;
