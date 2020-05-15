@@ -135,6 +135,9 @@
     z-index: 2;
     left: -55px;
 }
+.profitability_right{
+    display: none!important;
+}
 
 @media (max-width: 1440px) {
     .tabl_h2{
@@ -154,7 +157,7 @@
 @media (max-width: 991px) {
     .tabl_year{
         text-align: left;
-    }
+     }
 }
 
 @media (max-width: 768px) {

@@ -70,7 +70,9 @@ footer .slick-initialized .slick-slide{
 }
 
 @media (max-width: 768px) {
-
+    .container_bloc_team_h2{
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 480px) {
