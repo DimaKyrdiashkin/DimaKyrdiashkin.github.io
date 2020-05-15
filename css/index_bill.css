@@ -134,7 +134,12 @@
     .bill_right_li{
         padding: 50px 22px;
         text-align: center;
+        height: fit-content !important;
     }
+    .slick-track{
+        height: fit-content !important;
+    }
+    
 }
 
 @media (max-width: 768px) {
