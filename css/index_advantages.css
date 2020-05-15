@@ -20,7 +20,7 @@
     justify-content: space-around;
 }
 .advantages_ul li{
-    min-width: 290px;
+    /* min-width: 290px; */
     width: 23%;
     max-width: 420px;
     display: flex;
@@ -70,7 +70,9 @@
 }
 
 @media (max-width: 768px) {
-
+    .advantages_ul li{
+        min-width: 290px;
+    }
 }
 
 @media (max-width: 480px) {
