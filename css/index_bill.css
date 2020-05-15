@@ -20,20 +20,10 @@
 }
 
 .bill_left_h2{
-    font-family: 'Gilroy',sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 36px;
     color: #FFFFFF;
     margin: 21px 0 30px;
 }
 .bill_left_p{
-    font-family: 'Gilroy',sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
     color: #FFFFFF
 }
 .bill_right{
@@ -64,16 +54,10 @@
 }
 
 .bill_right_li_h2{
-    font-family: "Gilroy",sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
+   font-size: 1.5em;
 }
 .bill_right_li_p{
-    font-family: 'Gilroy',sans-serif;
-    font-size: 16px;
     width: 203px;
-    line-height: 24px;
     display: flex;
     align-items: center;
     max-width: 203px;
@@ -83,11 +67,6 @@
     background: #FFFFFF;
     border-radius: 4px;
     padding: 12px 16px;
-    font-family: 'Gilroy', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
     color: #8C46FF;
 }
 .bill_right_li:last-child{

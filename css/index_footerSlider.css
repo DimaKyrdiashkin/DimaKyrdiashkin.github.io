@@ -1,6 +1,8 @@
 .container_bloc_team_h2{
     color: #FFFFFF;
     margin-bottom: 51px;
+    font-size: 2em;
+    /* padding-left: 20%; */
 }
 .footer_slider_item{
     max-width: 264px;
@@ -10,6 +12,9 @@
     margin-bottom: 35px;
 }
 .footer_slider_item_h2{
+    font-family: "Gilroy-SemiBold";
+	font-size: 1.5em;
+	line-height: 32px;
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 15px;
@@ -17,6 +22,7 @@
 .footer_slider_item_p{
     text-align: center;
     color: #FFFFFF;
+    font-family: 'Gilroy-Regular';
 }
 .slick-prev:before, .slick-next:before{
     color: #CCAFFF!important;
