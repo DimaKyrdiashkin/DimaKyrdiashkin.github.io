@@ -124,6 +124,9 @@ p{
 	font-size: 1em;
 	line-height: 24px;
 }
+.first_video__mob{
+	display: none;
+}
 .slick-dots li button:before{
 	color: #fff !important;
 }
@@ -185,7 +188,7 @@ iframe{
 	position: absolute;
 	z-index: 2;
 	min-width: 100vw;
-	min-height: 100%;
+	height: 100%;
 	left: 50%;
 	bottom: 0;
     -webkit-transform: translateX(-50%);
@@ -2352,10 +2355,12 @@ p.circle_yellow{
 	body{
 		font-size: 12px;
 	}
-	.promoContent video{
-		left: 101%;
+	.first_video__mob{
+		display: block;
 	}
-
+	.first_video{
+		display: none;
+	}
 	.c-top-title{
 		display: block;
 		text-align: center;

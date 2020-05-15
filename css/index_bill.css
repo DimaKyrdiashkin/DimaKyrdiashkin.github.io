@@ -147,5 +147,14 @@
 }
 
 @media (max-width: 480px) {
-
+    .bill{
+        clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+        padding: 50px 0;
+    }
+    .bill_left{
+        margin-bottom: 0;
+    }
+    .bill .slick-slide li{
+        height: 250px !important;
+    }
 }
