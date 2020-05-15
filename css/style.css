@@ -2611,7 +2611,7 @@ p.circle_yellow{
 
 @media all and (max-width: 992px) and (orientation : landscape) {
 	.promoContent{
-		height: 200vh;
+		/*height: 200vh;*/
 	}
 	.promoContent video{
 		min-width: 100vw;
