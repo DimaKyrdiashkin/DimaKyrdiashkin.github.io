@@ -328,7 +328,7 @@ $(".profitability_right_naw a").on("click", (e)=>{
             document.querySelectorAll(".profitability_right_naw a")[1].style.opacity= "1";
             if (year === 2018) e.target.style.opacity = ".5";
             click = false;
-        },1500);
+        },100);
     }
     else if(a === "right" && year !== 2020 && !click){
         year++;
@@ -339,7 +339,7 @@ $(".profitability_right_naw a").on("click", (e)=>{
             document.querySelectorAll(".profitability_right_naw a")[0].style.opacity = "1";
             if (year === 2020) e.target.style.opacity = ".5";
             click = false;
-        },1500)
+        },100)
     }
     else console.log(false)
 });

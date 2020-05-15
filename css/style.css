@@ -803,7 +803,7 @@ ul{
 }
 
 .profitability_right_static_btc li{
-	border-bottom: 1px solid #9CAFD3;
+	border-bottom: 1px solid #7A7F8A;
 	padding-left: 55px;
 }
 
@@ -847,12 +847,12 @@ ul{
 	width: 31% !important;
 }
 .profitability_right_static_usdt li{
-	border-bottom: 1px solid #9CAFD3;
+	border-bottom: 1px solid #7A7F8A;
 	padding-left: 55px;
 	margin-left: 40px;
 }
 .profitability_right_static_eth li{
-	border-bottom: 1px solid #9CAFD3;
+	border-bottom: 1px solid #7A7F8A;
 	padding-left: 55px;
 	margin-left: 40px;
 }

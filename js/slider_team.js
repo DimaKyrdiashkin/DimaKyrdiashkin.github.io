@@ -1,8 +1,3 @@
-
-
-
-
-
 if(window.innerWidth <= 500  ){
     $("#footer_slider").slick({
         dots: true,

@@ -6,10 +6,13 @@ const investors_full = document.getElementById("investors"),
     investors_full_n = investors_full.innerText,
     analysts_full_n = analysts_full.innerText,
     income_full_n = income_full.innerText;
-investors_full.innerText = 0;
-analysts_full.innerText = 0;
-income_full.innerText = 0;
-company_full.innerText = 0;
+if(window.innerWidth >1200){
+    investors_full.innerText = 0;
+    analysts_full.innerText = 0;
+    income_full.innerText = 0;
+    company_full.innerText = 0;
+}
+
 let flagg = true
 const static = setInterval(()=> {
     const url = window.location.href;
