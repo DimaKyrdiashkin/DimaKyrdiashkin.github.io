@@ -61,18 +61,10 @@ header{
 	width: 350px;
 	top: 35px;
 	right: -250px;
-	-webkit-perspective: 600px;
-	        perspective: 600px;
-	-webkit-transition: 1s;
-	-o-transition: 1s;
+	perspective: 600px;
 	transition: 1s;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-	-webkit-transform: translateX(0px);
-	    -ms-transform: translateX(0px);
-	        transform: translateX(0px);
+	user-select: none;
+	transform: translateX(0px);
 }
 .hide{
 	/* opacity: 0; */
@@ -84,16 +76,9 @@ header{
 	position: fixed;
 	border-radius: 62px 0px 0px 62px;
 	background: #1E1E25;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+	flex-direction: column;
 	padding-bottom: 25px;
-	-webkit-transition: 1s;
-	-o-transition: 1s;
 	transition: 1s;
 	left: 150px;
 	overflow: hidden;
@@ -105,15 +90,9 @@ header.menu_open{
 	right: 0;
 }
 .menu_header{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	justify-content: space-between;
+	align-items: center;
 	text-transform: uppercase;
 	padding: 10px 20px 15px 124px;
 	height: 100px;
@@ -127,21 +106,15 @@ header.menu_open{
 	position: fixed;
 	cursor: pointer;
 	border-radius: 50%;
-	-webkit-transform-style: preserve-3d;
-	        transform-style: preserve-3d;
-	-webkit-transition: -webkit-transform 1s;
-	transition: -webkit-transform 1s;
-	-o-transition: transform 1s;
+	transform-style: preserve-3d;
 	transition: transform 1s;
-	transition: transform 1s, -webkit-transform 1s;
 	z-index: 1;
-    top: 26px;
-    left: 25px;
+	top: 26px;
+	left: 25px;
 }
 .front_button{
 	position: absolute;
-	-webkit-backface-visibility: hidden;
-	        backface-visibility: hidden;
+	backface-visibility: hidden;
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
@@ -149,43 +122,32 @@ header.menu_open{
 }
 .back_button{
 	position: absolute;
-	-webkit-backface-visibility: hidden;
-	        backface-visibility: hidden;
+	backface-visibility: hidden;
 	width: 100%;
 	height: 100%;
-	-webkit-transform: rotateY(180deg);
-	        transform: rotateY(180deg);
+	transform: rotateY(180deg);
 	border-radius: 50%;
 	background: #CCAFFF;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
 .back_button img{
 	width: 40%;
 }
 .isFlip{
-	-webkit-transform:  rotateY(180deg);
-	        transform:  rotateY(180deg);
+	transform:  rotateY(180deg);
 }
 .button_middle{
 	position: absolute;
 	display: block;
 	cursor: pointer;
-    height: 24px;
-    width: 1.5px;
-    background: #fff;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) rotate(45deg);
-        -ms-transform: translate(-50%, -50%) rotate(45deg);
-            transform: translate(-50%, -50%) rotate(45deg);
+	height: 24px;
+	width: 1.5px;
+	background: #fff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
 }
 .button_top{
 	display: block;
@@ -196,11 +158,7 @@ header.menu_open{
 	top: 20%;
 	width: 1.5px;
 	position: absolute;
-	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
-	-webkit-transition: .5s;
-	-o-transition: .5s;
+	transform: rotate(45deg);
 	transition: .5s;
 }
 .button_bottom{
@@ -212,19 +170,15 @@ header.menu_open{
 	bottom: 20%;
 	width: 1.5px;
 	position: absolute;
-	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
-	-webkit-transition: .5s;
-	-o-transition: .5s;
+	transform: rotate(45deg);
 	transition: .5s;
 }
 .logOut{
 	background: #8C46FF;
-    padding: 14px 25px;
-    color: #fff !important;
-    border-radius: 4px;
-    font-family: 'Gilroy-SemiBold';
+	padding: 14px 25px;
+	color: #fff !important;
+	border-radius: 4px;
+	font-family: 'Gilroy-SemiBold';
 }
 
 
@@ -232,7 +186,7 @@ header.menu_open{
 
 
 
-}
+
 
 .menu ul{
 	text-transform: uppercase;
@@ -385,7 +339,7 @@ header.menu_open{
 		background-position: left 20px;
 	}
 	.footer_menu_social li{
-        margin-right: 10px;
+		margin-right: 10px;
 	}
 	.footer .container{
 		width: 93%;
@@ -469,14 +423,15 @@ header.menu_open{
 	}
 }
 @media (max-width: 768px) {
-    body{
+	body {
 		font-size: 12px;
 	}
+}
 @media (max-width: 480px) {
-    /* .isFlip_right{
-		right: 20px;
-    	left: auto;
-	} */
+	/* .isFlip_right{
+        right: 20px;
+        left: auto;
+    } */
 	.promoContent video{
 		min-width: 200vw;
 		min-height: 150%;

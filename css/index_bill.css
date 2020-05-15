@@ -56,7 +56,7 @@
 }
 
 .bill_right_li_h2{
-   font-size: 1.5em;
+    font-size: 1.5em;
 }
 .bill_right_li_p{
     width: 203px;
@@ -144,7 +144,7 @@
     .slick-track{
         height: fit-content !important;
     }
-    
+
 }
 
 @media (max-width: 768px) {
