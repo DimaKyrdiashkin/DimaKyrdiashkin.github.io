@@ -10,11 +10,8 @@
     height: 100%;
 }
 .advantages_h2{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 40px;
     text-align: center;
+    font-size: 2em;
     color: #22232D;
     margin-bottom: 50px;
 }
@@ -25,7 +22,6 @@
 
 }
 .advantages_ul li{
-    font-family: "Gilroy", sans-serif;
     width: 24%;
     max-width: 420px;
     display: flex;
@@ -56,10 +52,7 @@
 /*    margin: 31px auto 8px;*/
 /*}*/
 .advantages_ul p{
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 0.875em;
     text-align: left;
     color: #353742;
     margin-top: 50px;
@@ -72,9 +65,7 @@
 }
 
 @media (max-width: 1199px) {
-    /*.advantages_ul li{*/
-    /*    width: 48%;*/
-    /*}*/
+
 }
 
 @media (max-width: 991px) {
