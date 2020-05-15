@@ -905,6 +905,21 @@ i.down {
     }
 }
 @media (max-width: 499px) {
+    label{
+        padding: 6px 14px;
+    }
+    .calc-body{
+        width: 95%;
+    }
+    .c-result-block-wrapper{
+        min-width: fit-content;
+    }
+    .calc_side{
+        width: 85%;
+    }
+    .calc_side__text:first-child{
+        margin-bottom: 0;
+    }
     .settings{
         width: 95%;
     }

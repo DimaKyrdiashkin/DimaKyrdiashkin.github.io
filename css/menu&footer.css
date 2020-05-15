@@ -477,6 +477,9 @@ header.menu_open{
 		right: 20px;
     	left: auto;
 	} */
+	footer .slick-dots{
+		display: none !important;
+	}
 	.apendixLogo{
 		width: 70%;
 	}
