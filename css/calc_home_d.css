@@ -815,6 +815,22 @@ i.down {
         min-width: fit-content;
     }
 }
+@media (max-width: 992px) {
+    #c-options-block{
+        width: 100%;
+    }
+    .settings,
+    .result,
+    .invest_button{
+        width: 100%;
+    }
+    .calc_side{
+        width: 45%;
+    }
+    .calc_bg{
+        margin-bottom: 75px;
+    }
+}
 @media (max-width: 768px) {
     .settings{
         width: 80%;

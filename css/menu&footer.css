@@ -57,7 +57,7 @@ header{
 	display: none;
 	position: fixed;
 	z-index: 500;
-	width: 385px;
+	width: 350px;
 	top: 35px;
 	right: -250px;
 	-webkit-perspective: 600px;
@@ -79,11 +79,10 @@ header{
 }
 .menu{
 	width: 100%;
-	height: 565px;
+	height: 400px;
 	position: fixed;
 	border-radius: 62px 0px 0px 62px;
-	background: #1F2D43;
-	
+	background: #1E1E25;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -117,8 +116,7 @@ header.menu_open{
 	text-transform: uppercase;
 	padding: 10px 20px 15px 124px;
 	height: 100px;
-	background: #223C64;
-	box-shadow: 0px 25px 85px rgba(6, 18, 38, 0.9);
+	background: #3D3D50;
 	border-radius: 35px 0 0 0;
 	overflow: hidden;
 }
@@ -146,8 +144,7 @@ header.menu_open{
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	background: -o-linear-gradient(305.9deg, #3083FF 10.54%, #004AB9 90.78%);
-	background: linear-gradient(144.1deg, #3083FF 10.54%, #004AB9 90.78%);
+	background: #542AC8;
 }
 .back_button{
 	position: absolute;
@@ -158,7 +155,7 @@ header.menu_open{
 	-webkit-transform: rotateY(180deg);
 	        transform: rotateY(180deg);
 	border-radius: 50%;
-	background: #FF7627;
+	background: #CCAFFF;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -181,7 +178,7 @@ header.menu_open{
 	display: block;
 	cursor: pointer;
     height: 30px;
-    width: 5px;
+    width: 3px;
     background: #fff;
     top: 50%;
     left: 50%;
@@ -196,7 +193,7 @@ header.menu_open{
 	height: 15px;
 	left: 30%;
 	top: 15%;
-	width: 5px;
+	width: 3px;
 	position: absolute;
 	-webkit-transform: rotate(45deg);
 	    -ms-transform: rotate(45deg);
@@ -212,7 +209,7 @@ header.menu_open{
 	height: 15px;
 	right: 30%;
 	bottom: 15%;
-	width: 5px;
+	width: 3px;
 	position: absolute;
 	-webkit-transform: rotate(45deg);
 	    -ms-transform: rotate(45deg);
@@ -222,15 +219,20 @@ header.menu_open{
 	transition: .5s;
 }
 .logOut{
-	background:  #27416A;
-	box-shadow: 0px -6px 10px rgb(50, 73, 109), 5px 5px 17px rgba(0, 0, 0, 0.45);
-	border-radius: 10px;
-	padding: 11px 12px;
-	color: #7993B8;
+	background: #8C46FF;
+    padding: 14px 25px;
+    color: #fff !important;
+    border-radius: 4px;
+    font-family: 'Gilroy-SemiBold';
 }
-.logOut:hover{
-	box-shadow: inset 0px -2px 5px rgb(53, 83, 128), inset 0px 2px 5px rgba(0, 0, 0, 0.47);
+
+
+
+
+
+
 }
+
 .menu ul{
 	text-transform: uppercase;
 	color: #fff;
@@ -246,7 +248,6 @@ header.menu_open{
 }
 .menu ul li:hover{
 	background: #FFFFFF;
-	box-shadow: inset 0px 4px 75px rgba(68, 84, 109, 0.6), inset 0px -4px 75px rgba(91, 120, 168, 0.38);
 	transition: .2s;
 }
 .licens p{
@@ -257,11 +258,11 @@ header.menu_open{
 	left: 50%;
 	transform: translateX(-50%);
 	bottom: 0;
-	padding: 15px 30px 20px 30px;
+	padding: 15px 50px 20px 50px;
 	margin: auto;
 	border: 1px dotted  #47556A;
 	border-bottom: none;
-	border-radius: 15px 15px 0 0;
+	border-radius: 4px 4px 0 0;
 }
 /* /menu */
 
@@ -418,7 +419,24 @@ header.menu_open{
 	}
 }
 @media (max-width: 992px) {
-
+	.desctop-menu{
+		display: none;
+	}
+	header{
+		display: block;
+		top: 0;
+	}
+	.menu_header{
+		border-radius: 4px 0 0 0;
+		padding: 10px 15px 15px 85px;
+	}
+	.menu{
+		border-radius: 0 0 0 4px;
+	}
+	a.registration{
+		color: #fff !important;
+		border: 1px solid #ffffff;
+	}
 }
 @media (max-width: 768px) {
     header{
