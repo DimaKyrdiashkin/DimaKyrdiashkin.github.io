@@ -167,7 +167,7 @@ header.menu_open{
             justify-content: center;
 }
 .back_button img{
-	width: 35%;
+	width: 40%;
 }
 .isFlip{
 	-webkit-transform:  rotateY(180deg);
@@ -178,7 +178,7 @@ header.menu_open{
 	display: block;
 	cursor: pointer;
     height: 30px;
-    width: 3px;
+    width: 1.5px;
     background: #fff;
     top: 50%;
     left: 50%;
@@ -193,7 +193,7 @@ header.menu_open{
 	height: 15px;
 	left: 30%;
 	top: 15%;
-	width: 3px;
+	width: 1.5px;
 	position: absolute;
 	-webkit-transform: rotate(45deg);
 	    -ms-transform: rotate(45deg);
@@ -209,7 +209,7 @@ header.menu_open{
 	height: 15px;
 	right: 30%;
 	bottom: 15%;
-	width: 3px;
+	width: 1.5px;
 	position: absolute;
 	-webkit-transform: rotate(45deg);
 	    -ms-transform: rotate(45deg);
