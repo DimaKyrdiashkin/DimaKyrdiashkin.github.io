@@ -437,6 +437,35 @@ header.menu_open{
 		color: #fff !important;
 		border: 1px solid #ffffff;
 	}
+	.footer_menu{
+		padding: 15px 0 15px;
+	}
+	.footer_menu .container{
+		flex-direction: column;
+	}
+	.footer_menu_mail svg{
+		display: none;
+	}
+	nav{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-self: center;
+	}
+	.footer_menu_nav a{
+		width: 30%;
+		margin-top: 10px;
+		text-align: center;
+		margin-right: 0;
+	}
+	.footer_menu_mail{
+		align-self: center;
+		margin: 25px 0 15px;
+		font-size: 1.5em;
+	}
+	.footer_menu_social{
+		align-self: center;
+	}
 }
 @media (max-width: 768px) {
     body{
@@ -447,6 +476,12 @@ header.menu_open{
 		right: 20px;
     	left: auto;
 	} */
+	.apendixLogo{
+		width: 70%;
+	}
+	.menu{
+		border-radius: 0 0 0 15px;
+	}
 	header{
 		width: 320px;
 	}
@@ -456,15 +491,4 @@ header.menu_open{
 	.menu_button{
 		left: 14px;
 	}
-}
-@media all and (max-width: 992px) and (orientation : landscape) {
-	header{
-		top: 0;
-		height: 100vh;
-		overflow: hidden;
-	}
-	header.menu_open{
-		overflow-y: auto;
-	}
-
 }
