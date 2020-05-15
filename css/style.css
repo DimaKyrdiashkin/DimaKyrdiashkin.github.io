@@ -159,6 +159,7 @@ body{
 	overflow: hidden;
 }
 .promoContent .container{
+	overflow: hidden;
 	position: relative;
 	width: 100vw;
     height: 100vh;
@@ -1934,9 +1935,6 @@ p.circle_yellow{
 	.profitability .container{
 		width: 90%;
 	}
-	.promoContent video{
-		height: 100%;
-	}
 }
 @media (max-width: 1280px) {
 	body{
@@ -2188,6 +2186,9 @@ p.circle_yellow{
 @media (max-width: 768px) {
 	body{
 		font-size: 12px;
+	}
+	.promoContent video{
+		height: 100%;
 	}
 	.promoContent_info{
 		width: 90%;

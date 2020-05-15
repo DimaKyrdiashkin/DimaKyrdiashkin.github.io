@@ -17,13 +17,11 @@
 }
 .advantages_ul{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-
 }
 .advantages_ul li{
     min-width: 290px;
-    width: 24%;
+    width: 23%;
     max-width: 420px;
     display: flex;
     flex-direction: column;
