@@ -387,6 +387,18 @@ header.menu_open{
 	}
 }
 @media (max-width: 1200px) {
+	.desctop-menu{
+		padding: 26px 20px;
+	}
+	.logo{
+		margin-left: 5%;
+	}
+	.footer .container_bloc{
+		padding-top: 30px;
+	}
+	.footer{
+		background-position: center top;
+	}
 	.footer_menu_logo{
 		display: none;
 	}
