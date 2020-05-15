@@ -1,6 +1,6 @@
 if(window.innerWidth <= 500  ){
     $("#footer_slider").slick({
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,

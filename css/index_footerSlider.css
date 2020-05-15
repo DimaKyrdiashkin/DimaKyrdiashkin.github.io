@@ -76,5 +76,16 @@ footer .slick-initialized .slick-slide{
 }
 
 @media (max-width: 480px) {
-
+    .footer_slider_item img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer_slider_item_h2{
+        margin-bottom: -3px!important;
+    }
+    .footer_slider .prev,
+    .footer_slider .next {
+        height: 40px!important;
+        width: 40px!important;
+    }
 }

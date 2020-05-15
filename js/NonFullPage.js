@@ -91,7 +91,7 @@ if(window.outerWidth > 1200) {
         //Navigation
         menu: '#fp-nav',
         lockAnchors: false,
-        anchors: ['promoContent', 'statistics', "threeSlide", 'advantages', 'bill', 'calc', 'tabl', 'say', "footer"],
+        anchors: ['promoContent', 'statistics', "threeSlide", 'advantages', 'bill', 'calc1', 'tabl', 'say', "footer"],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: [],//название для поинтов навигации
