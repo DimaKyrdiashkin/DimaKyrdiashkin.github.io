@@ -265,10 +265,10 @@
     flex-direction: column;
 }
 .capotalization{
+    margin-top: 5px;
     position: relative;
     -ms-flex-item-align: start;
     align-self: flex-start;
-    margin-top: 5px;
 }
 .capotalization .c-label:hover + .desc, .addTriangle{
     opacity: 1;
@@ -309,6 +309,7 @@
     transition: .3s;
 }
 .invest{
+    margin-top: 5px;
     -ms-flex-item-align: start;
     align-self: flex-start;
 }
