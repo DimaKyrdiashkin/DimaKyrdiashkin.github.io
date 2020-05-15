@@ -17,6 +17,7 @@
 }
 .calc_side__head svg{
     width: 28px;
+    height: 28px;
 }
 .calc_side__text:first-child{
     margin-bottom: 75px;
