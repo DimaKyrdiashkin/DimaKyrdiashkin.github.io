@@ -124,6 +124,9 @@ p{
 	font-size: 1em;
 	line-height: 24px;
 }
+.slick-dots li button:before{
+	color: #fff !important;
+}
 section{
 	width: 100%;
 }
