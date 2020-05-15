@@ -158,6 +158,16 @@
     .tabl_year{
         text-align: left;
      }
+    .tabl table{
+        display: none;
+    }
+    .profitability_right{
+        display: block!important;
+        margin: auto;
+    }
+    .tabl_h2{
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 768px) {

@@ -683,7 +683,7 @@ ul{
 	width: 70px;
 	height: 80px;
 	position: relative;
-	background: #347BFF;
+	background: #542AC8;
 }
 .profitability_right_naw a:before,.profitability_right_naw a:after	{
 	content: "";
@@ -772,12 +772,12 @@ ul{
 .profitability_right_static_mounts{
 	z-index: 10;
 	width: 25%;	
-	background: -o-linear-gradient(204.21deg, #39A0FF 0%, #305DFF 100.39%);	
-	background: linear-gradient(245.79deg, #39A0FF 0%, #305DFF 100.39%);
+	background: #8C46FF;
+	/*background: linear-gradient(245.79deg, #39A0FF 0%, #305DFF 100.39%);*/
 	-webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 30px;
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
 }
 .profitability_right_static_mounts li{
 	padding-left: 23px;
@@ -790,9 +790,9 @@ ul{
 	-o-transition: 1s;
 	transition: 1s;
 	margin-left: -100px;
-	color: #0A4DB4;
+	color: #353742;
 	width: 100px;
-	background: #F6EFE6;
+	background: #EBDFFF;
 	-webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 0px 35px 35px 0px;
@@ -810,9 +810,9 @@ ul{
 .profitability_right_static_usdt{
 	z-index: 6;
 	margin-left: -100px;
-	color: #00870E;
+	color: #353742;
 	width: 100px;
-	background: #DAE6F4;
+	background: #CCAFFF;
 	-webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 0px 35px 35px 0px;
@@ -822,9 +822,9 @@ ul{
 .profitability_right_static_eth{
 	z-index: 2;
 	margin-left: -100px;
-	color: #00870E;
+	color: #353742;
 	width: 100px;
-	background: #DAE6F4;
+	background: #F1E9FF;
 	-webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 0px 35px 35px 0px;
