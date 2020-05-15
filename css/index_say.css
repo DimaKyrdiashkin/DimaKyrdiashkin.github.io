@@ -112,5 +112,8 @@
 }
 
 @media (max-width: 480px) {
-
+    .say{
+        clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
+        padding: 100px 0;
+    }
 }

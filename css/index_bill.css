@@ -60,8 +60,9 @@
 }
 .bill_right_li_p{
     width: 203px;
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    text-align: center;
+    /* align-items: center; */
     max-width: 203px;
     margin: 20px auto;
 }
