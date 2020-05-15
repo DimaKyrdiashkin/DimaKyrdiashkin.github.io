@@ -1,4 +1,4 @@
-if(window.outerWidth >= 1199) {
+if(window.outerWidth > 1200) {
     let myFullpage = new fullpage('.fullpageId', {
         //Navigation
         menu: '#fp-nav',
