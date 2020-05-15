@@ -36,6 +36,7 @@
 }
 .tabl_bg_color td{
     position: relative;
+    transition: color .7s, background-color .7s;
     width: 10%;
     padding: 10px;
     border-bottom-style: solid;
@@ -83,6 +84,10 @@
 }
 .tabl_bg_color:last-child td{
     border: none;
+}
+.tabl_bg_color td:hover{
+    background-color: #542AC8;
+    color: #FFFFFF;
 }
 .tabl_cript img{
     width: 100%;
