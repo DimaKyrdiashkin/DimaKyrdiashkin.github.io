@@ -629,7 +629,7 @@ $(function() {
         }else{
             $('.end').html("500 000");
             $("#text_calc_vv").html("Инвестировать");
-            label =  amount.format(0, 3, ' ', '.');
+            label =  amount.format(0, 4, ' ', '.');
             $('#c-income').html(label);
             $('.eth, .btc').css('display', 'none');
             $('.usdt').css('display', 'block');

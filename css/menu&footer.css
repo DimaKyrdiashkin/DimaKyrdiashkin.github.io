@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6, p, span, li{
 }
 .logo{
 	width: 215px;
-	margin-left: 150px;
+	margin-left: 8%;
 	display: flex;
 }
 .logo>svg{
@@ -366,6 +366,12 @@ header.menu_open{
 
 
 @media (max-width: 1440px) {
+	.logo{
+		margin-top: -9px;
+	}
+	.desctop-menu ul li:nth-child(6){
+		margin-left: 50px;
+	}
 	.footer{
 		background-size: cover;
 		background-position: left 20px;
