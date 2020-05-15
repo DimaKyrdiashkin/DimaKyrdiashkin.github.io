@@ -94,6 +94,16 @@
 }
 
 @media (max-width: 991px) {
+    .say_slider_item{
+        min-width: 340px !important;
+    }
+    .slick-slide{
+        display: flex !important;
+        justify-content: center;
+    }
+    .footer{
+        margin-top: 100px;
+    }
 
 }
 
