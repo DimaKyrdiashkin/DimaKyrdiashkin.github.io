@@ -328,7 +328,15 @@ header.menu_open{
 	display: flex;
 	justify-content: space-between;
 }
-
+.footer_menu_mail{
+	font-family: 'Gilroy-Light', sans-serif;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	color: #FFFFFF;
+}
 .footer_menu_nav a{
 	text-transform: capitalize;
 	font-family: 'Gilroy',sans-serif;

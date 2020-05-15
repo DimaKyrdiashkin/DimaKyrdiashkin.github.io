@@ -43,6 +43,10 @@
 .footer_slider .next {
     right: 0;
 }
+footer .slick-initialized .slick-slide{
+    display: flex!important;
+    justify-content: center;
+}
 
 @media (max-width: 1440px) {
     .container_bloc_team_h2{
