@@ -68,6 +68,14 @@
 
 /* bill */
 
+.bill_right{
+    background: #F6F5FA;
+    height: 100%;
+    width: 40%;
+}
+.bill_right_row{
+    background: #3D3D50;
+}
 /* /bill */
 
 /* tabl */
