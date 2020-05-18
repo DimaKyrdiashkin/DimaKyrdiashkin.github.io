@@ -84,6 +84,9 @@
 .bill_head h2{
     font-size: 2em;
 }
+.bill_textG{
+    position: relative;
+}
 .bill_left{
     position: relative;
     display: flex;
@@ -123,7 +126,7 @@
     color: #7A7F8A;
     text-transform: uppercase;
 }
-.bill_left svg{
+#bill_svgG{
     width: 593px;
     height: 593px;
 }
