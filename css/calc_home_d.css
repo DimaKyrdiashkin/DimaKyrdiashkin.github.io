@@ -39,9 +39,10 @@
     position: relative;
     width: 48px;
     height: 24px;
-    background: #8C46FF;
+    background: #DFDCE9;
     border-radius: 16px;
     margin-right: 20px;
+    transition: .4s;
 }
 .switch::before{
     content: '';
@@ -564,11 +565,16 @@ input[type="checkbox"] {
     background: #F8F9FF;
     z-index: 1;
 }
+
 .add-field-col input[type="checkbox"]:checked + label .switch::before{
     transform: translate(27px, -50%);
     transition: .4s;
 }
 
+.add-field-col input[type="checkbox"]:checked + label .switch{
+    background: #8C46FF;
+    transition: .4s;
+}
 input[type="checkbox"]:disabled + label .switch{
     background: #7A7F8A;
 }
@@ -584,7 +590,8 @@ input[type="checkbox"]:disabled + label .switch{
     animation-timing-function: linear;
 }
 .invest_button{
-    margin-top: -300px;
+    margin-top: -280px;
+    z-index: 1;
 }
 .invest_button a{
     background: #8C46FF;

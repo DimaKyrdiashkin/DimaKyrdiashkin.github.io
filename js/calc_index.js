@@ -267,6 +267,7 @@ $(function() {
     }
 
     $('#c-income-slider, #c-period-slider').change(function(event) {
+        $('#c-range-edit').val($('#c-period-slider').val());
         calculate();
     });
 
@@ -275,6 +276,12 @@ $(function() {
             $('#c-income-edit').val('10000000');
         }
         $('#c-income-slider').val($('#c-income-edit').val());       
+        calculate();
+    });
+    $('#c-range-edit').change(function(){
+        $('#c-period-slider').val($('#c-range-edit').val());
+        $('#c-period').css('display', 'block');
+        $('#c-range-edit').css('display', 'none');
         calculate();
     });
 
@@ -436,6 +443,20 @@ $(function() {
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
     });
+
+    $('#c-period').on('click', function(){
+        $('#c-range-edit').val('');
+        $('#c-period').css('display', 'none');
+        $('#c-range-edit').css('display', 'block');
+        $('#c-range-edit').val($('#c-period-slider').val());
+        $('#c-range-edit').focus();
+    });
+    $('#c-range-edit').on( "focusout", function(){
+        $('#c-period').css('display', 'block');
+        $('#c-range-edit').css('display', 'none');
+        $('#c-range-edit').focus().val(this.value);
+    });
+
     $("#s1").click(function() {
         let a = $("#s1").text();
         $("select").val($("#s1").attr("id")[1]);
@@ -533,6 +554,7 @@ $(function() {
         }
     });
     $("#c-stable").click(function() {
+        $('.invest_button a').text('Инвестировать');
         document.getElementById("invest_field").classList.remove("invest-field-active");
         $(".c-result-block-4 #c-result-sum").text("Выберите период");
         $(".checkP").text("Период");
@@ -582,6 +604,7 @@ $(function() {
         };
         $('#c-income-slider').attr(attributes);
         $('#c-income-slider').rangeslider('update', true);
+        $('.invest_button a').text('Связаться с менеджером');
     });
     $("#c-savings, #c-pam").click(function() {
         $("select").val(0);
@@ -612,6 +635,7 @@ $(function() {
         };
     });
     $('#c-savings').click(function(){
+        $('.invest_button a').text('Инвестировать');
         if($("#c-btc").prop("checked")){
             $('.end').html("100");
             label =  amount.format(0, 4, ' ', '.');
