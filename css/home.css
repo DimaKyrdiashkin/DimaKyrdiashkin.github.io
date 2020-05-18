@@ -75,6 +75,9 @@
 }
 .bill_right_row{
     background: #3D3D50;
+    padding: 15px 30px;
+    border-radius: 4px;
+    color: #fff;
 }
 /* /bill */
 
