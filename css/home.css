@@ -71,9 +71,23 @@
     display: flex;
     height: 100%;
 }
+.bill_head{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 10% 15%;
+}
+.bill_head svg{
+    width: 22px !important;
+    height: 22px !important;
+}
+.bill_head h2{
+    font-size: 2em;
+}
 .bill_left{
     position: relative;
     display: flex;
+    flex-direction: column;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -83,8 +97,8 @@
     width: 593px;
     height: 593px;
 }
-.bill_left svg:first-child,
-.bill_left svg:last-child{
+.bill_left>svg:first-child,
+.bill_left>svg:last-child{
     width: 150px;
     height: 100px;
     position: absolute;
