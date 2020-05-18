@@ -49,7 +49,7 @@ function fun_Full() {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        sectionsColor: ['#0000', '#F8F9FF', '#7038E4', '#F8F9FF', '#F8F9FF', '#F8F9FF', '#542AC8', '#542AC8'],
+        sectionsColor: ['#0000', '#F8F9FF', '#ffffff', '#F8F9FF', '#F8F9FF', '#F8F9FF', '#542AC8', '#542AC8'],
         // paddingTop: '3em',
         // paddingBottom: '10px',
         fixedElements: '#header, #marks, #fp-nav',
