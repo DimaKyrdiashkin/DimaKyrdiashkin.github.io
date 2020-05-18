@@ -1,1 +1,3 @@
-document.getElementById('bill_svgG').addEventListener()
+document.getElementById('bill_svgG').addEventListener("mouseover", (e)=>{
+    console.log(e.target)
+})
