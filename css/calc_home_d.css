@@ -106,6 +106,7 @@
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding-top: 15px;
 }
 .calc_select{
     display: none;
@@ -253,7 +254,7 @@
     justify-content: space-between;
 }
 .result{
-    width: 47%;
+    width: 46%;
     height: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -266,7 +267,8 @@
     flex-direction: column;
 }
 .capotalization{
-    margin-top: 5px;
+    display: none;
+    margin-top: 15px;
     position: relative;
     -ms-flex-item-align: start;
     align-self: flex-start;
@@ -310,7 +312,7 @@
     transition: .3s;
 }
 .invest{
-    margin-top: 5px;
+    margin-top: 15px;
     -ms-flex-item-align: start;
     align-self: flex-start;
 }
@@ -337,7 +339,7 @@ select{
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    width: 47%;
+    width: 46%;
     min-width: 335px;
 }
 .choice-group svg{
@@ -723,7 +725,6 @@ input[type="checkbox"]:disabled + label .switch{
     justify-content: space-between;
     margin-top: 30px;
     width: 100%;
-    margin-bottom: 20px;
 }
 
 #c-plus, #c-minus{
@@ -845,6 +846,9 @@ i.down {
     .calc_bg{
         flex-direction: column;
     }
+    .calc-body{
+        width: 65%;
+    }
     .c-result-block-wrapper{
         width: 100%;
     }
@@ -864,7 +868,7 @@ i.down {
         margin-top:10px;
     }
     .c-result-block-wrapper{
-        height: 290px;
+        /* height: 290px; */
     }
     .c-result-block-1 span.c-primary-title,
     .c-result-block-3 span.c-primary-title{
@@ -874,12 +878,13 @@ i.down {
 @media (max-width: 500px) {
     .calc-body{
         padding: 0;
+        width: 70%;
     }
     .settings{
-        width: 80%;
+        width: 100%;
     }
     .result{
-        width: 90%;
+        width: 100%;
     }
     .t-col{
         height: fit-content;
