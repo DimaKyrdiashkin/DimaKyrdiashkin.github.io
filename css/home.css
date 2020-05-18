@@ -80,6 +80,7 @@
     position: relative;
 }
 .bill_left_text{
+    display: none;
     position: absolute;
     z-index: 20;
     top: 50%;
@@ -92,6 +93,10 @@
     line-height: 28px;
     text-align: center;
 }
+.bill_left_text_h2_activ{
+    display: block;
+}
+
 .bill_left_text_h2_span{
     font-weight: 600;
     font-size: 3em;

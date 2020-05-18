@@ -22,7 +22,7 @@ const mass={
     },
     color:{
         bill_saving: '#FECE63',
-        bill_bright: '#4E33F8',
+        bill_bright: '#6951FE',
         bill_pam: '#5DBC96',
         bill_AmirWallet: '#F55365',
         bill_investments: '#0683F7',
@@ -44,15 +44,17 @@ const mass={
 };
 const bill_h2 = document.getElementById('bill_left_pr'),
     bill_span = document.getElementById('bill_left_span'),
+    bill_body = document.getElementById('bill_left_body'),
     bill_text = document.getElementById('bill_left_text');
 
 function hov_svg(idSvg) {
+    bill_body.classList.add('bill_left_text_h2_activ')
     document.getElementById(idSvg).setAttribute('d',mass.hover[idSvg]);
     bill_h2.style.color = mass.color[idSvg];
     bill_span.innerText = mass.percent[idSvg];
     bill_text.innerText = mass.title[idSvg];
-
 }
 function normar_svg(idSvg) {
+    bill_body.classList.remove('bill_left_text_h2_activ')
     document.getElementById(idSvg).setAttribute('d',mass.normal[idSvg]);
 }
