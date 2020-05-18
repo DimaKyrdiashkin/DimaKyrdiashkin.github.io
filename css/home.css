@@ -67,7 +67,12 @@
 /* /threeSlide */
 
 /* bill */
-
+.bill_cntG{
+    display: flex;
+}
+.bill_left{
+    width: 60%;
+}
 .bill_right{
     background: #F6F5FA;
     height: 100%;
