@@ -25,7 +25,7 @@ else{
         nextArrow: "<img src='img/home/slider_slick_next.svg' class='next' alt='2'>",
     });
 }
-$(window).on('resize', () =>{
+$(window).resize( ()=>{
     if(window.innerWidth <= 991){
         $(".say_slider").slick({
             dots: true,

@@ -258,9 +258,8 @@ header.menu_open{
 	background-image: url(./../img/home/bf_footer.png);
 	background-position: center bottom;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	position: relative;
-
 }
 .footer .container{
 	width: 90%;

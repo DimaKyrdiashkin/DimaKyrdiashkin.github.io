@@ -1,4 +1,4 @@
-$(window).on("resize",() =>{
+$(window).resize(() =>{
     if(window.outerWidth > 1200) {
         var myFullpage = new fullpage('.fullpageId', {
             //Navigation
