@@ -432,6 +432,7 @@
     min-height: 375px;
     height: 100%;
     clip-path: polygon(0 0%, 100% 15%, 100% 100%, 0% 85%);
+    -webkit-clip-path: polygon(0 0%, 100% 15%, 100% 100%, 0% 85%);
     position: relative;
     background-color: #542AC8;
     overflow: hidden;
@@ -798,6 +799,7 @@ footer .slick-initialized .slick-slide{
 
     .bill{
         clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+        -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
         padding: 50px 0;
     }
     .bill_left{
@@ -831,6 +833,7 @@ footer .slick-initialized .slick-slide{
     /* say */
     .say{
         clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
+        -webkit-clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
         padding: 100px 0;
     }
     /*    /say*/
