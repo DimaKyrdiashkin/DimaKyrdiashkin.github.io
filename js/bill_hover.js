@@ -28,18 +28,29 @@ const mass={
         bill_investments: '#0683F7',
     },
     percent:{
-        bill_saving: '31',
+        bill_saving: '37',
         bill_bright: '4,5',
         bill_pam: '51',
         bill_AmirWallet: '2,5',
         bill_investments: '5',
+    },
+    title:{
+        bill_saving: 'Накопительный',
+        bill_bright: 'Брайт',
+        bill_pam: 'pam',
+        bill_AmirWallet: 'кошелек',
+        bill_investments: 'Прямые инвестиции',
     }
 };
+const bill_h2 = document.getElementById('bill_left_pr'),
+    bill_span = document.getElementById('bill_left_span'),
+    bill_text = document.getElementById('bill_left_text');
 
 function hov_svg(idSvg) {
     document.getElementById(idSvg).setAttribute('d',mass.hover[idSvg]);
-
-
+    bill_h2.style.color = mass.color[idSvg];
+    bill_span.innerText = mass.percent[idSvg];
+    bill_text.innerText = mass.title[idSvg];
 
 }
 function normar_svg(idSvg) {

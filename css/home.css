@@ -77,10 +77,38 @@
     justify-content: center;
     align-items: center;
     width: 60%;
+    position: relative;
+}
+.bill_left_text{
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.bill_left_text_h2{
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 28px;
+    text-align: center;
+}
+.bill_left_text_h2_span{
+    font-weight: 600;
+    font-size: 3em;
+}
+.bill_left_text_text{
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 32px;
+    color: #7A7F8A;
+    text-transform: uppercase;
 }
 .bill_left svg{
     width: 593px;
     height: 593px;
+}
+.bill_left svg path{
+    transition: .4s;
 }
 .bill_right{
     background: #7A7F8A;
