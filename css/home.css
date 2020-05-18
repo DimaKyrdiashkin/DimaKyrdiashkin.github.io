@@ -67,7 +67,14 @@
 /* /threeSlide */
 
 /* bill */
+.bill_left{
+    width: 60%;
 
+}
+.bill_left svg{
+    width: 593px;
+    height: 593px;
+}
 .bill_right{
     background: #F6F5FA;
     height: 100%;
