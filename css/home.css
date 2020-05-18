@@ -633,7 +633,9 @@ footer .slick-initialized .slick-slide{
 }
 
 @media (max-width: 1440px) {
-
+    .say_slider_item{
+        min-height: 350px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -698,7 +700,8 @@ footer .slick-initialized .slick-slide{
     /*  /tebl 1200  */
     /* say*/
     .say{
-        padding: 200px 0;
+        padding: 100px 0;
+        margin: 50px 0;
     }
     /* /say */
 }
