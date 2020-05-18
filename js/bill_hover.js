@@ -4,6 +4,12 @@ $('.bill_path').on("mouseover", (e)=>{
 $('.bill_path').on("mouseout", (e)=>{
     normar_svg(e.target.id)
 })
+$('.bill_right_row').on("mouseover", (e)=>{
+    hov_svg(e.target.closest('.bill_right_row').classList[1])
+})
+$('.bill_right_row').on("mouseout", (e)=>{
+    normar_svg(e.target.closest('.bill_right_row').classList[1])
+})
 
 const mass={
     hover:{
