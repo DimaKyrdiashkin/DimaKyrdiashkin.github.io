@@ -88,14 +88,16 @@
     position: relative;
 }
 .bill_left{
+    left: 0;
+    transition: all 1.7s;
     position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
     align-items: center;
+    background-color: #FFFFFF;
     width: 60%;
-    position: relative;
 }
 .bill_left_text{
     display: none;
@@ -121,6 +123,7 @@
 }
 .bill_left_text_text{
     font-weight: 600;
+    text-align: center;
     font-size: 1em;
     line-height: 32px;
     color: #7A7F8A;
@@ -147,6 +150,8 @@
     padding: 0 5%;
     display: flex;
     align-items: center;
+    transition: 1.7s;
+    left: 0;
     box-shadow: 0px 4px 15px #CBD2DD, 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .bill_right svg{
@@ -183,7 +188,7 @@
     width: 50px;
     left: 0;
     bottom: 0;
-    border-radius: 0px 4px;
+    border-radius: 0 4px;
 }
 .bill .info{
     text-align: center;
@@ -193,6 +198,7 @@
     justify-content: center;
 }
 .bill .info p{
+    cursor: pointer;
     background: #8C46FF;
     padding: 14px 50px;
     width: fit-content;
@@ -222,6 +228,40 @@
     background: #FFFFFF;
     color: #22232D;
     transition: .4s;
+}
+
+.bill_to_left{
+    width: 40%;
+}
+.bill_to_right{
+    left: 200%;
+}
+.bill_left,
+.bill_right{
+    z-index: 20;
+}
+
+.bill_container {
+    position: absolute;
+    z-index: 10;
+    width: 60%;
+    left: 200%;
+    transition: all 2.4s;
+    height: 100%;
+}
+.bill_container_active{
+    left: 40%;
+}
+.bill_container_rel{
+    padding-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.bill_container_rel>svg{
+    width: 150px;
+    height: 100px;
+    position: absolute;
 }
 /* /bill */
 
