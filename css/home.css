@@ -69,20 +69,77 @@
 /* bill */
 .bill_cntG{
     display: flex;
+    height: 100%;
 }
 .bill_left{
     width: 60%;
 }
 .bill_right{
-    background: #F6F5FA;
+    background: #7A7F8A;
     height: 100%;
     width: 40%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+}
+.bill_right__conteiner{
+    width: 100%;
 }
 .bill_right_row{
     background: #3D3D50;
-    padding: 15px 30px;
     border-radius: 4px;
     color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 0 0;
+}
+.bill .title{
+    margin-left: 5%;
+}
+.bill .title,
+.bill .info{
+    padding: 15px 0;
+}
+.bill_right_row:first-child{
+    margin-top: 0;
+}
+.bill_right_row span{
+    position: absolute;
+    height: 10px;
+    width: 50px;
+    left: 0;
+    bottom: 0;
+    border-radius: 0px 4px;
+}
+.bill .info{
+    text-align: center;
+    width: 60%;
+    border-left: 1px solid #535366;
+    display: flex;
+    justify-content: center;
+}
+.bill .info p{
+    background: #8C46FF;
+    padding: 14px 50px;
+    width: fit-content;
+    border-radius: 4px;
+}
+.yellow{
+    background: #FECE63;
+}
+.purple{
+    background: #4E33F8;
+}
+.green{
+    background: #5DBC96;
+}
+.red{
+    background: #F55365;
+}
+.blue{
+    background: #0683F7;
 }
 /* /bill */
 
