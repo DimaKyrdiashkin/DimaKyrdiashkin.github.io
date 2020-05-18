@@ -194,8 +194,6 @@ body{
 	transform: translateX(-50%);
 }
 /* / promoContent*/
-
-
 /* profitability */
 .profitability{
 	z-index: 5;
@@ -880,7 +878,7 @@ p.circle_yellow{
 @media (max-width: 1440px) {
 
 }
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
 	body{
 		font-size: 14px;
 	}
@@ -888,6 +886,10 @@ p.circle_yellow{
 		margin-top: 20px !important;
 		height: 500px !important;
 	}
+	section{
+		min-height: 80vh;
+	}
+
 }
 @media (max-width: 992px) {
 	.calendar{

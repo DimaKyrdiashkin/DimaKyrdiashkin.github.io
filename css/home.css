@@ -73,6 +73,7 @@
     height: 100%;
     background-color: #542AC8;
     clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
 }
 .bill .container{
     width: 90%;
@@ -571,7 +572,11 @@ footer .slick-initialized .slick-slide{
 }
 
 @media (max-width: 1200px) {
-
+    .threeSlide{
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
 }
 
 @media (max-width: 991px) {
@@ -615,10 +620,6 @@ footer .slick-initialized .slick-slide{
 
 @media (max-width: 1200px) {
     /*threeSlide 1200*/
-
-    .threeSlide{
-        padding: 30px 0 153px;
-    }
     .threeSlide_left{
         width: 45%;
     }
