@@ -347,6 +347,7 @@ header.menu_open{
 }
 @media (max-width: 1200px) {
 	.desctop-menu{
+		position: inherit;
 		padding: 26px 20px;
 	}
 	.logo{

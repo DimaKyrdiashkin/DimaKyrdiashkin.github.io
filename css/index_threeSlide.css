@@ -72,6 +72,12 @@
     .threeSlide{
         padding: 30px 0 153px;
     }
+    .threeSlide_left{
+        width: 45%;
+    }
+    .threeSlide_right{
+        width: 50%;
+    }
 }
 
 @media (max-width: 991px) {
