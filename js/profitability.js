@@ -1,5 +1,6 @@
-
-const mounse = {
+;
+'user script'
+const monthTabl = {
     displayPc:[
         "Январь",
         "Февраль",
@@ -194,13 +195,13 @@ profitability_calendar("y2019");
 window.addEventListener("resize", ()=>{
     static_mounts.innerHTML='';
     if( window.innerWidth > 589){
-        for(let key  of  mounse.displayPc ){
+        for(let key  of  monthTabl.displayPc ){
             let li = document.createElement("li");
             li.innerHTML= key;
             static_mounts.append(li);
         }
     }else{
-        for(let key  of  mounse.displayMob ){
+        for(let key  of  monthTabl.displayMob ){
             let li = document.createElement("li");
             li.innerHTML= key;
             static_mounts.append(li);
@@ -208,99 +209,18 @@ window.addEventListener("resize", ()=>{
     }
 });
 if( window.innerWidth > 589){
-    for(let key  of  mounse.displayPc ){
+    for(let key  of  monthTabl.displayPc ){
         let li = document.createElement("li");
         li.innerHTML= key;
         static_mounts.append(li);
     }
 }else{
-    for(let key  of  mounse.displayMob ){
+    for(let key  of  monthTabl.displayMob ){
         let li = document.createElement("li");
         li.innerHTML= key;
         static_mounts.append(li);
     }
 }
-
-// slider
-
-
-
-// slider contentBlockTwo_row
-class SliderMass {
-    constructor() {
-    }
-    sliderToLeft(){
-        let finish = document.querySelector(".contentBlockTwo_row .element_active");
-        let sliderLeft = document.querySelector(".contentBlockTwo_row .element_left");
-        let sliderRight = document.querySelector(".contentBlockTwo_row .element_right");
-        finish.classList.remove("element_active");
-        finish.classList.add("element_left");
-        sliderLeft.classList.add("element_right");
-        sliderLeft.classList.remove("element_left");
-        sliderRight.classList.add("element_active");
-        sliderRight.classList.remove("element_right");
-    }
-    sliderToRight(){
-        let finish = document.querySelector(".contentBlockTwo_row .element_active");
-        let sliderLeft = document.querySelector(".contentBlockTwo_row .element_left");
-        let sliderRight = document.querySelector(".contentBlockTwo_row .element_right");
-        finish.classList.remove("element_active");
-        finish.classList.add("element_right");
-        sliderLeft.classList.add("element_active");
-        sliderLeft.classList.remove("element_left");
-        sliderRight.classList.add("element_left");
-        sliderRight.classList.remove("element_right");
-    }
-}
-const sliderMass = new SliderMass();
-let sliderAutoSt;
-    function sliderAuto() {
-        clearInterval(sliderAutoSt);
-        sliderAutoSt = setInterval(function() {
-            sliderMass.sliderToRight();
-        }, 6000);
-    }
-    sliderAuto();
-function leftRight(x) {
-    if(x === 'left') sliderMass.sliderToRight();
-    else if(x === 'right') sliderMass.sliderToLeft();
-    sliderAuto();
-}
-// тач
-let wMouse;
-document.querySelector(".contentBlockTwo_row").addEventListener("touchstart",(e)=>{
-    wMouse = e.changedTouches[0].pageX;
-});
-document.querySelector(".contentBlockTwo_row").addEventListener("touchend", function(e) {
-    if (wMouse > e.changedTouches[0].pageX + 50) leftRight("right");
-    else if(wMouse < e.changedTouches[0].pageX - 50) leftRight("left");
-});
-// slider /contentBlockTwo_row
-
-// /slider
-
-
-
-
-
-
-//profitability
-
-let offset = $(".profitability_right_static").offset();
-$(window).on("scroll", () => {
-    parallax_device();
-    parallax_home();
-    if($(document).scrollTop() > offset.top - 400){
-        if(!$(".profitability_right_static").hasClass("clear_open")){
-            $(".profitability_right_static_usdt").addClass("slide_profitability", 500);
-            $(".profitability_right_static_btc").delay(500).addClass("slide_profitability", 500);
-            $(".profitability_right_static_eth").delay(1000).addClass("slide_profitability", 500);
-            $(".profitability_right_static").addClass("clear_open");
-        }
-    }
-});
-
-
 
 //profitability_animation
 function profitability_animation(year = 2019){
@@ -313,6 +233,21 @@ function profitability_animation(year = 2019){
     document.querySelector(".profitability_right_naw h3").innerHTML = year;
 }
 // /profitability_animation
+
+
+//profitability
+
+let offset = $(".profitability_right_static").offset();
+$(window).on("scroll", () => {
+    if($(document).scrollTop() > offset.top - 400){
+        if(!$(".profitability_right_static").hasClass("clear_open")){
+            $(".profitability_right_static_usdt").addClass("slide_profitability", 500);
+            $(".profitability_right_static_btc").delay(500).addClass("slide_profitability", 500);
+            $(".profitability_right_static_eth").delay(1000).addClass("slide_profitability", 500);
+            $(".profitability_right_static").addClass("clear_open");
+        }
+    }
+});
 click = false;
 
 $(".profitability_right_naw a").on("click", (e)=>{
@@ -347,33 +282,22 @@ $(".profitability_right_naw a").on("click", (e)=>{
 // /profitability
 
 
-// parallax
-
-const parallax_deviceBlockEl = $("#parallax_deviceBlock").offset().top;
-function parallax_device() {
-    let h = window.pageYOffset + window.innerHeight/2;
-    n = (h-parallax_deviceBlockEl)/4 - 100;
-    if(h>=parallax_deviceBlockEl && n<=110){
-        $(".device .container").css({top: `${parseInt(n)}px`})
-    }
-}
-// /parallax
 
 
-// parallax_home
-
-const home_y = 0;
-function parallax_home() {
-    let h = window.pageYOffset;
-    console.log("fun");
-    if(h >= home_y && h<=1000){
-        console.log(true);
-        $(".promoContent .promoContent_info").css({top: `${parseInt(h)}px`})
-        $(".promoContent video").css({top: `${parseInt(h-200)}px`})
-    }
-    if(h === home_y){
-        $(".promoContent video").css({top: `${parseInt(0)}px`})
-    }
-}
-
-// /parallax_home
+// // parallax_home
+//
+// const home_y = 0;
+// function parallax_home() {
+//     let h = window.pageYOffset;
+//     console.log("fun");
+//     if(h >= home_y && h<=1000){
+//         console.log(true);
+//         $(".promoContent .promoContent_info").css({top: `${parseInt(h)}px`})
+//         $(".promoContent video").css({top: `${parseInt(h-200)}px`})
+//     }
+//     if(h === home_y){
+//         $(".promoContent video").css({top: `${parseInt(0)}px`})
+//     }
+// }
+//
+// // /parallax_home
