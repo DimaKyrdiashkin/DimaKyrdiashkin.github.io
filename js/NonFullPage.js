@@ -1,4 +1,5 @@
 var myFullpage;
+let flag = true;
 // fullpage_api.setLockAnchors(false);
 function fun_Full() {
     const myFullpage = new fullpage('.fullpageId', {
@@ -77,10 +78,12 @@ function fun_Full() {
         afterRender: function () {
         },
         afterResize: function (width, height) {
+            // console.clear();
         },
         afterReBuild: function () {
         },
         afterResponsive: function (isResponsive) {
+            flag = false;
             fullpage_api.destroy('all');
             $('.fullpageId').css('transform', 'none')
         },
@@ -91,4 +94,11 @@ function fun_Full() {
     });
     return myFullpage;
 }
-myFullpag = fun_Full()
+myFullpag = fun_Full();
+
+window.addEventListener("resize", function(){
+   if(document.documentElement.clientWidth > 1200 && flag == false){
+    myFullpag = fun_Full();
+    flag = true;
+   }; 
+});

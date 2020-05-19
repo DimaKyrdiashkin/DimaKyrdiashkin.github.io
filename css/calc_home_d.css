@@ -5,24 +5,20 @@
     height: 650px !important;
 }
 .calc_side{
-    width: 25%;
-    max-width: 400px;
-    align-self: baseline;
-    margin-top: 50px;
-}
-.calc_side h2{
-    margin-bottom: 20px;
+    position: absolute;
+    top: 50px;
+    left: 10%;
 }
 .calc_side__head{
     display: flex;
-    margin-bottom: 20px;
+    align-items: center;
 }
 .calc_side__head svg{
     width: 28px;
     height: 28px;
 }
-.calc_side__text:first-child{
-    margin-bottom: 75px;
+.calc_side__head h2{
+    font-size: 2em;
 }
 .calc_bg{
     display: flex;
@@ -73,7 +69,7 @@
 }
 /* calc Dima*/
 .calc-body{
-    width: 68%;
+    width: 100%;
     height: fit-content;
     display: -webkit-box;
     display: -webkit-flex;
