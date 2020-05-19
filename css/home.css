@@ -981,6 +981,7 @@ footer .slick-initialized .slick-slide{
     }
     .bill_cntG{
         height: 100vh;
+        overflow: hidden;
     }
     /*threeSlide 1200*/
     .threeSlide_left{

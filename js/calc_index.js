@@ -575,7 +575,6 @@ $(function() {
         $(".calc_select").addClass("open");
         $(".c-result-block-2").css("height", "15%");
 		$(".c-result-block-4").css("height", "15%");
-		$(".c-result-block-1, .c-result-block-3").css("margin-top", "10px");
         $(".c-result-block-3").css("display", "flex");
         $(".c-result-block-4").css("display", "flex");
         $("span.hr").css("display", "block");
@@ -669,7 +668,7 @@ $(function() {
         }else{
             $('.end').html("500 000");
             $("#text_calc_vv").html("Инвестировать");
-            label =  amount.format(0, 4, ' ', '.');
+            // label =  amount.format(0, 4, ' ', '.');
             $('#c-income').html(label);
             $('.eth, .btc').css('display', 'none');
             $('.usdt').css('display', 'block');

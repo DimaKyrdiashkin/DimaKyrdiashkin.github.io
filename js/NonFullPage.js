@@ -54,7 +54,7 @@ function fun_Full() {
         // paddingTop: '3em',
         // paddingBottom: '10px',
         fixedElements: '#header, #marks, #fp-nav',
-        responsiveWidth: 1200,
+        responsiveWidth: 1201,
         responsiveHeight: 0,
         responsiveSlides: true,
         parallax: false,

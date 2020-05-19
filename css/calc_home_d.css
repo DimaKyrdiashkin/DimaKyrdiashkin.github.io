@@ -25,7 +25,6 @@
     padding: 0 10%;
     height: 100vh;
     justify-content: space-between;
-    align-items: center;
 }
 .range{
     display: flex;
@@ -79,6 +78,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     padding: 40px 0;
+    margin-top: 80px;
 }
 .f-row{
     display: -webkit-box;
@@ -104,7 +104,7 @@
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 15px;
+    padding-top: 45px;
 }
 .calc_select{
     display: none;
@@ -147,7 +147,7 @@
     margin: 15px;
 }
 .select{
-    margin-top: 10%;
+    margin-top: 68px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -176,7 +176,7 @@
     z-index: 1;
 }
 .select_option__open{
-    height: 400px;
+    height: 330px;
 }
 .option{
     color: #455A69;
@@ -185,12 +185,13 @@
     cursor: pointer;
 }
 .option p{
-    padding: 10px 0;
+    padding: 5px 0;
     margin: 0;
     font-family: 'Gilroy-Light';
+    font-size: .875em;
 }
 .option p:first-child{
-    padding-top: 15px;
+    padding-top: 10px;
 }
 .option:hover{
     background: linear-gradient(213.27deg, #8C46FF 0%, #8C46FF 100%);
@@ -590,7 +591,7 @@ input[type="checkbox"]:disabled + label .switch{
     animation-timing-function: linear;
 }
 .invest_button{
-    margin-top: -280px;
+    margin-top: -295px;
     z-index: 1;
 }
 .invest_button a{
@@ -783,33 +784,16 @@ i.down {
 }
 @media (max-width: 1200px) {
     .calc-body{
-        height: 950px;
         padding: 0;
-        width: 50%;
+        margin-top: 50px;
     }
     .calc_bg{
         height: fit-content;
-        padding-top: 0 !important;
+        padding: 75px 5%;
         margin-bottom: 75px;
-    }
-    .calc_side{
-        width: 35%;
-    }
-    #c-options-block{
-        flex-direction: column-reverse;
-        width: 75%;
-    }
-    .settings,
-    .result{
-        width: 75%;
-    }
-    .choice-group:first-child{
-        margin-top: 10px;
+        justify-content: center;
     }
     .f-row{
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
         height: fit-content;
     }
     .invest_button {
@@ -822,6 +806,23 @@ i.down {
     }
     .choice-group{
         min-width: fit-content;
+    }
+    .c-result-block-1,
+    .c-result-block-3{
+        padding: 10px 0 5px;
+    }
+    .c-primary-title{
+        margin-bottom: 5px;
+    }
+    .c-result-block-2,
+    .c-result-block-4{
+        padding: 15px 44px;
+    }
+    .settings{
+        padding-top: 30px;
+    }
+    .invest-field{
+        margin-top: 30px;
     }
 }
 @media (max-width: 992px) {
