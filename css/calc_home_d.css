@@ -7,6 +7,8 @@
 .calc_side{
     width: 25%;
     max-width: 400px;
+    align-self: baseline;
+    margin-top: 50px;
 }
 .calc_side h2{
     margin-bottom: 20px;
