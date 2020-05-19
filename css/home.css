@@ -717,12 +717,95 @@
 }
 .device_logo{
     width: 30%;
+    margin-bottom: 50px;
     max-width: 295px;
 }
 .device_logo svg{
     width: 100%;
 }
+.device_ul{
+    background-image: url(./../img/home/bg_device.png);
+    background-repeat: no-repeat;
+    background-position: left 85%;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.device_ul img{
+    width: 100%;
+}
+.device_ul_phone{
+    width: 30%;
+    max-width: 300px;
+}
+.device_ul_PC{
+    width: 50%;
+    max-width: 550px;
+    position: relative;
+    left: 40px;
+}
+.device_ul_body{
+    text-align: center;
+    margin-bottom: 7%;
 
+}
+.device_ul_body_h2{
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 36px;
+    color: #22232D;
+    text-align: center;
+}
+.device_ul_body_p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 16px;
+    color: #22232D;
+    margin-bottom: 85px;
+}
+.device_ul_body_btn{
+    display: flex;
+    justify-content: center;
+}
+.device_ul_body_btn a{
+    margin-right: 50px;
+    max-width: 195px;
+}
+.device_ul_body_btn a:last-child{
+    margin-right: 0;
+}
+.device_ul_body_btn img{
+    width: 100%;
+}
+
+
+.device_ul_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+}
+.device_ul_footer_li{
+    max-width: 426px;
+    width: 46%;
+    margin-bottom: 22px;
+    border: 1px solid #F25B00;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.device_ul_footer_li p{
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 16px;
+    color: #000000;
+}
 
 /* /device */
 
