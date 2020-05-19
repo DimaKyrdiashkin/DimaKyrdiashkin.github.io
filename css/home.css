@@ -37,16 +37,32 @@
 }
 .threeSlide_left_img{
     width: 100%;
-    margin-bottom: 38px;
 }
 .threeSlide_right_block{
     max-width: 665px;
     border-top: 4px solid #542AC8;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 30px 0 0;
     margin-bottom: 31px;
     flex-direction: row-reverse;
+}
+.threeSlide_right_block_button{
+    display: flex;
+}
+.license{
+    color: #fff;
+    padding: 14px 25px;
+    background: #8C46FF;
+    border-radius: 4px;
+}
+.presentation{
+    color: #6231D6;
+    padding: 14px 25px;
+    background: #fff;
+    border: 1px solid #542AC8;
+    border-radius: 4px;
+    margin-left: 25px;
 }
 .threeSlide_right_block_left_p{
     margin-top: 7px;
@@ -76,7 +92,9 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 0 0 10% 15%;
+    position: absolute;
+    top: 50px;
+    left: 15%;
 }
 .bill_head svg{
     width: 22px !important;
@@ -768,34 +786,7 @@ footer .slick-initialized .slick-slide{
     .say_slider_item{
         min-height: 350px;
     }
-}
-
-@media (max-width: 1200px) {
-    .threeSlide{
-        display: flex;
-        align-items: center;
-        padding: 0;
-    }
-    .bill_cntG{
-        height: 100vh;
-    }
-}
-
-@media (max-width: 991px) {
-
-}
-
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 480px) {
-
-}
-/* /footerSlider*/
-
-@media (max-width: 1440px) {
-    /* bill 1440*/
+     /* bill 1440*/
     /* /bill 1440*/
     /*  tabl 1440  */
     .tabl_h2{
@@ -811,10 +802,17 @@ footer .slick-initialized .slick-slide{
         padding-left: 311px;
     }
     /*/footerSlider*/
-
 }
 
 @media (max-width: 1200px) {
+    .threeSlide{
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    .bill_cntG{
+        height: 100vh;
+    }
     /*threeSlide 1200*/
     .threeSlide_left{
         width: 45%;
@@ -847,6 +845,9 @@ footer .slick-initialized .slick-slide{
 
 @media (max-width: 991px) {
     /*threeSlide 991*/
+    .threeSlide{
+        padding: 0 0 100px 0;
+    }
     .threeSlide .container{
         flex-direction: column;
         justify-content: flex-start;
@@ -854,8 +855,10 @@ footer .slick-initialized .slick-slide{
     .threeSlide_left, .threeSlide_right{
         width: 100%;
     }
-    .threeSlide_right_block{
-        flex-direction: row;
+    .threeSlide_left{
+        margin: 50px 0 20px;
+        width: 80%;
+        align-self: center;
     }
     .threeSlide_right_block, .threeSlide_right_block_right{
         max-width: none;

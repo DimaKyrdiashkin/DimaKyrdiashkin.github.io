@@ -138,6 +138,7 @@ section{
 }
 body{
 	background-color: #F8F9FF!important;
+	overflow-x: hidden;
 }
 .wrapper{
 
