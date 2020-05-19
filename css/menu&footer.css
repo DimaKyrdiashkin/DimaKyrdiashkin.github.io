@@ -335,7 +335,7 @@ header.menu_open{
 	}
 	.footer{
 		background-size: cover;
-		background-position: left 20px;
+		background-position: center bottom;
 	}
 	.footer_menu_social li{
 		margin-right: 10px;

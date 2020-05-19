@@ -503,11 +503,14 @@
     background-color: #7038E4;
     min-height: 375px;
     padding: 25px 0 43px;
+    clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
+    -webkit-clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
 }
 .statistics .container{
     max-width: 1512px;
-    width: 90%;
-    margin: auto;
+    padding: 0 5%;
+    margin: 0 auto;
+    background: rgb(84, 42, 200);
 }
 .statistics_h2{
     font-weight: 600;
@@ -722,6 +725,9 @@ footer .slick-initialized .slick-slide{
         align-items: center;
         padding: 0;
     }
+    .bill_cntG{
+        height: 100vh;
+    }
 }
 
 @media (max-width: 991px) {
@@ -782,6 +788,10 @@ footer .slick-initialized .slick-slide{
         margin: 50px 0;
     }
     /* /say */
+    .statistics{
+        clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
+        -webkit-clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
+    }
 }
 
 @media (max-width: 991px) {

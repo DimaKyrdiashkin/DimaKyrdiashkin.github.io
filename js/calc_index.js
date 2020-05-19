@@ -579,6 +579,7 @@ $(function() {
         $('.eth, .btc').css('display', 'none');
         $('.usdt').css('display', 'block');
         $('#c-usdt').attr("disabled", false);
+        $('.capotalization').css('display', 'block');
 
         label =  amount.format(0, 3, ' ', '.');
         $('#c-income').html(label);
@@ -607,6 +608,7 @@ $(function() {
         $('.invest_button a').text('Связаться с менеджером');
     });
     $("#c-savings, #c-pam").click(function() {
+        $('.capotalization').css('display', 'none');
         $("select").val(0);
         $(".c-info-field").removeClass("close");
         $(".calc_select").removeClass("open");
