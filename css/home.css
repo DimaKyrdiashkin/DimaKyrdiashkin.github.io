@@ -150,12 +150,13 @@
 }
 #bill_svgG{
     height: 80vh;
+    max-width: 500px;
+    margin: auto;
 }
 .bill_left>svg:first-child,
 .bill_left>svg:last-child{
     z-index: 1;
     width: 150px;
-    height: 100px;
     position: absolute;
 }
 .bill_left svg path{
@@ -263,13 +264,13 @@
 .bill_container {
     position: absolute;
     z-index: 10;
-    width: 60%;
+    width: 55%;
     left: 200%;
     transition: all 2s;
     height: 100%;
 }
 .bill_container_active{
-    left: 40%;
+    left: 45%;
 }
 .bill_container_rel{
     position: relative;
