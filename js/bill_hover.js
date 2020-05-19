@@ -66,7 +66,7 @@ $('.bill_open_p').on('click',(e)=>{
     billOpen(e.target.closest('.bill_right_row').classList[1])
 })
 document.querySelector('#bill_close').addEventListener('click',(e)=>{
-    billClose()
+    billClose();
 })
 
 
@@ -105,6 +105,7 @@ function billOpen(id) {
     document.getElementById(`container_${id}`).classList.add("contendBodyActive");
 }
 function billClose() {
+    bill_head.innerText = 'Инвестиционные счета';
     bill_body.classList.remove('bill_left_text_h2_activ')
     bill_left.classList.remove("bill_to_left");
     bill_right.classList.remove("bill_to_right");

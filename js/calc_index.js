@@ -442,6 +442,11 @@ $(function() {
     $( ".check" ).click(function() {
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
+        if($('.invest_button').css('z-index') == "1"){
+            $('.invest_button').css('z-index', 0);
+        }else{
+            $('.invest_button').deley(200).css('z-index', 1);
+        };
     });
 
     $('#c-period').on('click', function(){
@@ -463,6 +468,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
+        $('.invest_button').deley(200).css('z-index', 1);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -475,6 +481,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
+        $('.invest_button').deley(200).css('z-index', 1);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -487,6 +494,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
+        $('.invest_button').deley(200).css('z-index', 1);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -499,6 +507,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
+        $('.invest_button').deley(200).css('z-index', 1);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -511,6 +520,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
+        $('.invest_button').deley(200).css('z-index', 1);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -523,6 +533,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
+        $('.invest_button').deley(200).css('z-index', 1);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -535,6 +546,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
+        $('.invest_button').deley(200).css('z-index', 1);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -554,6 +566,7 @@ $(function() {
         }
     });
     $("#c-stable").click(function() {
+        $('.invest').css('display', 'none');
         $('.invest_button a').text('Инвестировать');
         document.getElementById("invest_field").classList.remove("invest-field-active");
         $(".c-result-block-4 #c-result-sum").text("Выберите период");
@@ -608,6 +621,7 @@ $(function() {
         $('.invest_button a').text('Связаться с менеджером');
     });
     $("#c-savings, #c-pam").click(function() {
+        $('.invest').css('display', 'block');
         $('.capotalization').css('display', 'none');
         $("select").val(0);
         $(".c-info-field").removeClass("close");
