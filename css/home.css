@@ -567,7 +567,74 @@
 /* /advantages */
 
 
-/* statistics*/
+/* garbage */
+.garbage{
+    background-color: #7038E4;
+
+}
+.garbage .container{
+    max-width: 1511px;
+    width: 90%;
+    margin: auto;
+    max-height: 100%;
+}
+.garbage_ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.garbage_ul_li{
+    width: 45%;
+    margin-bottom: 15px;
+    display: flex;
+    padding: 40px 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    position: relative;
+}
+.garbage_ul_li_number{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #8C46FF;
+    padding: 20px 25px;
+    color: #FFFFFF;
+    border-radius: 4px 0 4px 4px;
+}
+.garbage_ul_li_text{
+    align-self: center;
+    font-size: 1.5em;
+    line-height: 28px;
+
+    text-align: center;
+    color: #22232D;
+}
+.garbage_ul_li_text span{
+    color: #F08200;
+    font-weight: 900;
+}
+.garbage_ul_li_footer{
+    padding: 0 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background: #F1E9FF;
+}
+.garbage_ul_li_footer .garbage_ul_li_text{
+    max-width: 481px;
+}
+.garbage_ul_li_footer_img{
+    height: 100%;
+    width: 50%;
+    max-width: 644px;
+}
+/* /garbage */
+
+/* statistics del*/
 .statistics{
     width: 100%;
     background-color: #7038E4;
