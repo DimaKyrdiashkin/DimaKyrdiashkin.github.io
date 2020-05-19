@@ -1,18 +1,18 @@
 var myFullpage;
-
-
+// fullpage_api.setLockAnchors(false);
 function fun_Full() {
     const myFullpage = new fullpage('.fullpageId', {
         //Navigation
         menu: '#fp-nav',
         lockAnchors: false,
-        anchors: ['promoContent', "threeSlide", 'bill', 'calc1', 'tabl',"advantages", 'statistics', 'say', "footer"],
+        // anchors: ['promoContent', "threeSlide", 'bill', 'calc1', 'tabl',"advantages", 'statistics', 'say', "footer"],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: [],//название для поинтов навигации
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
+        // setLockAnchors: false,
 
         //Scrolling
         css3: true,
@@ -53,9 +53,9 @@ function fun_Full() {
         // paddingTop: '3em',
         // paddingBottom: '10px',
         fixedElements: '#header, #marks, #fp-nav',
-        responsiveWidth: 0,
+        responsiveWidth: 1200,
         responsiveHeight: 0,
-        responsiveSlides: false,
+        responsiveSlides: true,
         parallax: false,
         parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
         cards: false,
@@ -64,11 +64,13 @@ function fun_Full() {
         //Custom selectors
         sectionSelector: '.section',
         slideSelector: '.slide',
+        
 
         lazyLoading: true,
 
         //events
         onLeave: function (origin, destination, direction) {
+            // alert(1);
         },
         afterLoad: function (origin, destination, direction) {
         },
@@ -79,6 +81,8 @@ function fun_Full() {
         afterReBuild: function () {
         },
         afterResponsive: function (isResponsive) {
+            fullpage_api.destroy('all');
+            $('.fullpageId').css('transform', 'none')
         },
         afterSlideLoad: function (section, origin, destination, direction) {
         },
@@ -87,9 +91,4 @@ function fun_Full() {
     });
     return myFullpage;
 }
-if(window.outerWidth > 1200) {
-    myFullpag = fun_Full()
-}
-
-
-
+myFullpag = fun_Full()
