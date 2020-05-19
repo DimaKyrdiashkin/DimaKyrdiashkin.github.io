@@ -573,8 +573,6 @@
     background-color: #7038E4;
     min-height: 375px;
     padding: 25px 0 43px;
-    clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
-    -webkit-clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
 }
 .statistics .container{
     max-width: 1512px;
