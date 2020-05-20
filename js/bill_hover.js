@@ -1,3 +1,6 @@
+
+
+
 const mass={
     id:['bill_saving','bill_bright','bill_pam','bill_AmirWallet','bill_investments'],
     hover:{
@@ -110,6 +113,7 @@ function billOpen(id) {
     setTimeout(()=>{
         document.getElementById(`container_${id}`).classList.add("contendBodyActive");
     },200)
+
 }
 function billClose() {
     bill_head.innerText = 'Инвестиционные счета';
@@ -127,3 +131,10 @@ function billClose() {
         $('.contendBodyActive').removeClass('contendBodyActive')
     },2000);
 }
+
+$('#investments_project_slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+});
+
