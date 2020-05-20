@@ -278,6 +278,7 @@
 }
 .bill .title{
     margin-left: 5%;
+    width: 50%;
 }
 .bill .title,
 .bill .info{
@@ -310,10 +311,9 @@
 .bill .info p{
     cursor: pointer;
     background: #8C46FF;
-    padding: 14px 50px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    text-align: center;
+    padding: 14px 0;
+    width: 90%;
     border-radius: 4px;
     -webkit-transition: .4s;
     -o-transition: .4s;
@@ -397,12 +397,19 @@
 }
 
 .bill_container_rel_close{
-    background-color: #CCAFFF;
-    padding: 10px 15px;
-    position: absolute;
+    background: #7E3FF1;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
     left: 0;
-    top: 50px;
+    top: -50px;
+    width: fit-content;
     cursor: pointer;
+}
+.bill_container_rel_close_svg{
+    padding: 10px 15px 10px 0;
 }
 
 .bill_ContainerActive{
@@ -897,8 +904,8 @@
     max-height: 100%;
 }
 .device_logo{
-    width: 10%;
-    margin-bottom: 50px;
+    width: 45%;
+    margin: 0 auto 10px;
     max-width: 295px;
 }
 .device_logo svg{
@@ -928,14 +935,17 @@
 .device_ul_phone{
     width: 15%;
     max-width: 300px;
+    position: relative;
+    left: 3.5%;
 }
 .device_ul_PC{
-    width: 30%;
+    width: 24%;
     max-width: 550px;
     position: relative;
-    left: 40px;
+    left: 5%;
 }
 .device_ul_body{
+    margin-left: 9%;
     text-align: center;
     margin-bottom: 5%;
 }
@@ -966,7 +976,8 @@
 }
 .device_ul_body_btn a{
     margin-right: 50px;
-    max-width: 195px;
+    max-width: 265px;
+    width: 50%;
 }
 .device_ul_body_btn a:last-child{
     margin-right: 0;
@@ -985,16 +996,15 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between;
     max-width: 900px;
     margin: auto;
+    justify-content: center;
 }
 .device_ul_footer_li{
     max-width: 426px;
-    width: 46%;
-    margin-bottom: 22px;
+    margin: 0 25px 22px ;
+    width: 44%;
     border: 1px solid #F25B00;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1254,10 +1264,10 @@ footer .slick-initialized .slick-slide{
         margin: 50px 0;
     }
     /* /say */
-    .statistics{
-        clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
-        -webkit-clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
-    }
+    /*.statistics{*/
+    /*    clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);*/
+    /*    -webkit-clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);*/
+    /*}*/
 }
 
 @media (max-width: 991px) {
