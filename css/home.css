@@ -569,6 +569,7 @@
     display: flex!important;
     justify-content: center;
     align-items: center!important;
+    margin-right: 15px;
     background: #FFFFFF;
     box-shadow: 0 4px 15px #CBD2DD, 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
@@ -576,6 +577,28 @@
 .project_slider_item img{
     width: 90%!important;
 }
+.project_slider
+.project_slider .slider-box {
+    position: relative;
+}
+.project_slider .prev,
+.project_slider .next {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.project_slider .prev{
+    left: -70px;
+    transform: rotate(-200grad) translateY(50%);
+}
+.project_slider .next{
+    right: -70px;
+}
+
 /* /bill */
 
 /* tabl */
@@ -1256,9 +1279,6 @@
     text-align: center;
     color: #FFFFFF;
     font-family: 'Gilroy-Regular';
-}
-.footer_slider_item_p .slick-prev:before, .slick-next:before{
-    color: #CCAFFF!important;
 }
 .footer_slider .slick-slide {
     margin: 0 10px;
