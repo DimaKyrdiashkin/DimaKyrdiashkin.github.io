@@ -274,7 +274,10 @@ $(function() {
     $('#c-income-edit').change(function(){
         if($('#c-pam').prop("checked") && $('#c-income-edit').val() > 10000000){
             $('#c-income-edit').val('10000000');
-        }
+        };
+        if($('#c-stable').prop("checked")){
+            BrightCap();
+        };
         $('#c-income-slider').val($('#c-income-edit').val());       
         calculate();
     });
@@ -443,9 +446,10 @@ $(function() {
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
         if($('.invest_button').css('z-index') == "1"){
-            $('.invest_button').css('z-index', 0);
+            $('.invest_button').toggleClass('invest_button_z');
         }else{
-            $('.invest_button').deley(200).css('z-index', 1);
+            $('.invest_button').delay(200).toggleClass('invest_button_z', 200);
+
         };
     });
 
@@ -468,7 +472,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
-        $('.invest_button').deley(200).css('z-index', 1);
+        $('.invest_button').delay(200).toggleClass('invest_button_z', 200);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -481,7 +485,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
-        $('.invest_button').deley(200).css('z-index', 1);
+        $('.invest_button').delay(200).toggleClass('invest_button_z', 200);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -494,7 +498,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
-        $('.invest_button').deley(200).css('z-index', 1);
+        $('.invest_button').delay(200).toggleClass('invest_button_z', 200);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -507,7 +511,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
-        $('.invest_button').deley(200).css('z-index', 1);
+        $('.invest_button').delay(200).toggleClass('invest_button_z', 200);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -520,7 +524,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
-        $('.invest_button').deley(200).css('z-index', 1);
+        $('.invest_button').delay(200).toggleClass('invest_button_z', 200);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -533,7 +537,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
-        $('.invest_button').deley(200).css('z-index', 1);
+        $('.invest_button').delay(200).toggleClass('invest_button_z', 200);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -546,7 +550,7 @@ $(function() {
         $(".checkP").text(a);
         $(".select_option").toggleClass("select_option__open");
         $(".arrow span").toggleClass("open");
-        $('.invest_button').deley(200).css('z-index', 1);
+        $('.invest_button').delay(200).toggleClass('invest_button_z', 200);
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
@@ -571,6 +575,7 @@ $(function() {
         document.getElementById("invest_field").classList.remove("invest-field-active");
         $(".c-result-block-4 #c-result-sum").text("Выберите период");
         $(".checkP").text("Период");
+        $("select").val(0);
         $(".c-info-field").addClass("close");
         $(".calc_select").addClass("open");
         $(".c-result-block-2").css("height", "15%");
@@ -763,7 +768,7 @@ $(function() {
 
     function BrightCap() {
         let persent = $("select").val();
-        let invest = parseInt($('#c-income-slider').val());
+        let invest = parseInt($('#c-income-edit').val());
         let position = $(".rangeslider__handle").offset();
 
         switch (persent) {
