@@ -62,7 +62,7 @@ function fun_Full() {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        sectionsColor: ['#0000', '#F8F9FF', '#ffffff', '#F8F9FF', '#F8F9FF', '#F8F9FF', '#542AC8','#F8F9FF', '#542AC8'],
+        sectionsColor: ['#0000', '#F8F9FF', '#ffffff', '#F8F9FF', '#F8F9FF', '#F8F9FF', '#542AC8','#F8F9FF','#F8F9FF', '#542AC8'],
         // paddingTop: '3em',
         // paddingBottom: '10px',
         fixedElements: '#header, #marks, #fp-nav, .marker',
@@ -83,11 +83,6 @@ function fun_Full() {
 
         //events
         onLeave: function (origin, destination, direction) {
-            console.log(origin.index);
-            console.log(destination.index);
-            console.log(direction);
-            
-
             if(destination.index <= 1){
                 $('.marker').removeClass('marker_open', 500);
             }else if(destination.index <= 4){

@@ -557,6 +557,10 @@
     height: 28vh;
 }
 
+#container_bill_investments .bill_saving_body_text_li:last-child{
+    margin-left: 55px;
+}
+
 .project_slider{
     width: 500px!important;
     display: flex!important;
@@ -564,7 +568,6 @@
 }
 
 .project_slider_item{
-
     height: 80px!important;
     display: flex!important;
     justify-content: center;
@@ -583,19 +586,18 @@
 .project_slider .prev,
 .project_slider .next {
     position: absolute;
-    height: 50px;
-    width: 50px;
+    width: 35px;
     z-index: 1;
     cursor: pointer;
     top: 50%;
     transform: translateY(-50%);
 }
 .project_slider .prev{
-    left: -70px;
+    left: -55px;
     transform: rotate(-200grad) translateY(50%);
 }
 .project_slider .next{
-    right: -70px;
+    right: -55px;
 }
 
 .bill .slick-track{
@@ -856,11 +858,28 @@
 
 /* garbage */
 .garbage{
+    position: relative;
     background-color: #7038E4;
     clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 90%);
     -webkit-clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 90%);
 }
+.garbage> div{
+    position: relative;
+}
+.garbage_svg_1{
+    top: 10%;
+    left: 5%
+}
+.garbage_svg_2{
+    bottom: 10%;
+    right: 5%
+}
+.garbage_svg{
+    width:370px;
+    position: absolute;
+}
 .garbage .container{
+    position: relative;
     max-width: 1511px;
     width: 90%;
     margin: auto;
@@ -1159,10 +1178,7 @@
     width: 100%;
     min-height: 375px;
     height: 100%;
-    clip-path: polygon(0 0%, 100% 15%, 100% 100%, 0% 85%);
-    -webkit-clip-path: polygon(0 0%, 100% 15%, 100% 100%, 0% 85%);
     position: relative;
-    background-color: #542AC8;
     overflow: hidden;
 }
 .say .container{
@@ -1185,11 +1201,11 @@
     transform: translateX(-50%);
 }
 .say_h2{
-    color: #1E1E25;
+    color: #22232D;
 }
 .say_p{
     margin-bottom: 40px;
-    color: #FFFFFF;
+    color: #22232D;
 }
 .say_slider_item{
     -webkit-box-orient: vertical;
@@ -1209,7 +1225,7 @@
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    background: #3D3D50;
+    background: #8C46FF;
     border-radius: 7px;
     color: #FFFFFF;
     padding: 45px 60px 42px 60px;
@@ -1227,16 +1243,23 @@
     border-radius: 4px;
 }
 
-.say .slick-prev:before, .say .slick-next:before{
-    color: #CCAFFF!important;
-}
 .say .slick-slide {
     margin: 0 10px;
 }
 .say .slider-box {
     position: relative;
 }
-
+.say .slick-track {
+    display: flex !important;
+}
+.say .slick-slide {
+    height: inherit !important;
+    display: flex!important;
+}
+.say .slick-slide >div{
+    width: 100%;
+    display: flex;
+}
 .say .prev, .say .next {
     position: absolute;
     height: 60px;
@@ -1323,10 +1346,20 @@ footer .slick-initialized .slick-slide{
     justify-content: center;
 }
 
+
+.slide {
+    height: 100%;
+}
+
 @media (max-width: 1440px) {
-    .say_slider_item{
-        min-height: 350px;
+
+
+    .container_li_img{
+        /*right: -17vw;*/
     }
+    /*.say_slider_item{*/
+    /*    min-height: 350px;*/
+    /*}*/
     /* bill 1440*/
     /* /bill 1440*/
     /*  tabl 1440  */
@@ -1337,6 +1370,9 @@ footer .slick-initialized .slick-slide{
         padding-top: 0!important;
     }
     /*  /tabl 1440  */
+
+
+
     /*footerSlider*/
     .container_bloc_team_h2{
         margin-bottom: 20px;
@@ -1478,6 +1514,9 @@ footer .slick-initialized .slick-slide{
     .footer{
         margin-top: 100px;
     }
+    .say .slick-slide >div{
+        width: auto!important;
+    }
     /*    /say*/
 }
 
@@ -1570,6 +1609,6 @@ footer .slick-initialized .slick-slide{
     }
     /*    /footerSlider*/
 }
-@media all and (max-width: 1200) and (orientation : portrait) {
+@media all and (max-width: 1200px) and (orientation : portrait) {
 
 }
