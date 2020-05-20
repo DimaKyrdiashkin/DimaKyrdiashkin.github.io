@@ -447,6 +447,7 @@
 }
 .bill_container_rel_close{
     background-color: #3002AF;
+    cursor: pointer;
 }
 
 .bill_container_rel_close p{
