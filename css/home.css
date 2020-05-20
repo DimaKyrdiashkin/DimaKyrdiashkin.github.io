@@ -554,7 +554,7 @@
     position: absolute;
     bottom: -5px;
     right: -7vw;
-    height: 30vh;
+    height: 28vh;
 }
 
 .project_slider{
@@ -564,7 +564,7 @@
 }
 
 .project_slider_item{
-    width: 100px!important;
+    
     height: 80px!important;
     display: flex!important;
     justify-content: center;
@@ -575,6 +575,12 @@
 }
 .project_slider_item img{
     width: 90%!important;
+}
+.bill .slick-track{
+    padding: 10px 0px !important;
+}
+.bill .slick-slide{
+    margin: 0 10px !important;
 }
 /* /bill */
 
