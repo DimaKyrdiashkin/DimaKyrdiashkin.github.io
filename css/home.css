@@ -1,16 +1,29 @@
 .marker{
     position: fixed;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     top: 50%;
     left: -50px;
     z-index: 9;
+    -webkit-transform: rotate(-90deg) translate(69%, -125%);
+    -ms-transform: rotate(-90deg) translate(69%, -125%);
     transform: rotate(-90deg) translate(69%, -125%);
     background: #CCAFFF;
     width: 165px;
     height: 50px;
     border-radius: 0 0 4px 4px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
 }
 .marker_open{
@@ -438,12 +451,22 @@
 .bill_container_rel_close{
     background: #7E3FF1;
     border-radius: 4px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0 15px;
     position: relative;
     left: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    -webkit-transition:background-color .7s;
+    -o-transition:background-color .7s;
     transition:background-color .7s;
     cursor: pointer;
 }
@@ -525,7 +548,13 @@
 }
 .bill_saving_body_text_li{
     width: 100%!important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 40px;
     position: relative;
@@ -563,16 +592,29 @@
 
 .project_slider{
     width: 500px!important;
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
     display: flex!important;
     position: relative!important;
 }
 
 .project_slider_item{
     height: 80px!important;
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
     display: flex!important;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center!important;
+    -webkit-align-items: center!important;
+    -ms-flex-align: center!important;
     align-items: center!important;
     background: #FFFFFF;
+    -webkit-box-shadow: 0 4px 15px #CBD2DD, 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: 0 4px 15px #CBD2DD, 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
 }
@@ -590,10 +632,14 @@
     z-index: 1;
     cursor: pointer;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 .project_slider .prev{
     left: -55px;
+    -webkit-transform: rotate(-200grad) translateY(50%);
+    -ms-transform: rotate(-200grad) translateY(50%);
     transform: rotate(-200grad) translateY(50%);
 }
 .project_slider .next{
@@ -643,6 +689,9 @@
     text-align: center;
     border-spacing:0!important;
     cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 .tabl_year{
@@ -824,6 +873,8 @@
     border-radius: 7px;
     padding: 30px 24px;
     margin-bottom: 25px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
 }
 .advantages_ul svg{
@@ -851,6 +902,8 @@
     text-align: center;
     color: #353742;
     margin-top: 15px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
 }
 /* /advantages */
@@ -1139,6 +1192,9 @@
     -ms-flex-pack: justify;
     max-width: 900px;
     margin: auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .device_ul_footer_li{
@@ -1250,14 +1306,23 @@
     position: relative;
 }
 .say .slick-track {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
     display: flex !important;
 }
 .say .slick-slide {
     height: inherit !important;
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
     display: flex!important;
 }
 .say .slick-slide >div{
     width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 }
 .say .prev, .say .next {
