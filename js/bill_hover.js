@@ -49,10 +49,16 @@ const mass={
 $('.bill_path').on("mouseover", (e)=>{
     if(bill_container.classList.contains("bill_container_active")) return false;
     hov_svg(e.target.id)
+    document.querySelector(`.${e.target.id}`).classList.add('hover')
 })
 $('.bill_path').on("mouseout", (e)=>{
     if(bill_container.classList.contains("bill_container_active")) return false;
     normar_svg(e.target.id)
+    document.querySelector(`.${e.target.id}`).classList.remove('hover')
+})
+$('.bill_path').on("click", (e)=>{
+    if(bill_container.classList.contains("bill_container_active")) return false;
+    billOpen(e.target.id)
 })
 $('.bill_right_row').on("mouseover", (e)=>{
     if(bill_container.classList.contains("bill_container_active")) return false;
