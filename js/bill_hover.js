@@ -115,8 +115,8 @@ function billOpen(id) {
         if(id === 'bill_investments'){
             $('#investments_project_slider').slick({
                 infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToShow: 3,
+                slidesToScroll: 3,
                 prevArrow: "<img src='img/home/slider_slick_next.svg' class='prev' alt='1'>",
                 nextArrow: "<img src='img/home/slider_slick_next.svg' class='next' alt='2'>",
             });
