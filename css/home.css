@@ -288,6 +288,8 @@
 }
 .bill_right__conteiner{
     width: 100%;
+    position: relative;
+    z-index: 30;
 }
 .bill_right_row{
     background: #6231D6;
@@ -470,6 +472,8 @@
 }
 
 .contendBody{
+    position: relative;
+    z-index: 30;
     display: none;
 }
 
