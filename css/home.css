@@ -446,14 +446,16 @@
     width: fit-content;
     cursor: pointer;
     transition:background-color .7s;
-}
-.bill_container_rel_close{
-    background-color: #3002AF;
     cursor: pointer;
+}
+.bill_container_rel_close:hover{
+    background-color: #3002AF;
+
 }
 
 .bill_container_rel_close p{
     margin-left: 25px;
+    cursor: pointer;
 }
 .bill_container_rel_close_svg{
     padding: 10px 15px 10px 0;
