@@ -536,7 +536,9 @@
     font-size: 1.125em;
     margin-left: 20px;
 }
-
+.bill_investments_span{
+    margin-left: 62px !important;
+}
 .bill_saving_body_text_li svg{
     width: 42px;
 }
@@ -551,13 +553,20 @@
     right: -7vw;
     height: 30vh;
 }
-
-
 .contendBodyActive{
     margin-top: 40px;
     display: block;
 }
-
+.poject_slider{
+    display: flex;
+    position: relative;
+}
+.poject_slider_item{
+    width: 80px !important;
+    height: 80px;
+    box-shadow: 0px 4px 15px #CBD2DD, 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
 /* /bill */
 
 /* tabl */
