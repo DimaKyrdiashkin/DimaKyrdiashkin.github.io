@@ -564,7 +564,7 @@
 }
 
 .project_slider_item{
-    
+
     height: 80px!important;
     display: flex!important;
     justify-content: center;
@@ -576,6 +576,28 @@
 .project_slider_item img{
     width: 90%!important;
 }
+.project_slider
+.project_slider .slider-box {
+    position: relative;
+}
+.project_slider .prev,
+.project_slider .next {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.project_slider .prev{
+    left: -70px;
+    transform: rotate(-200grad) translateY(50%);
+}
+.project_slider .next{
+    right: -70px;
+}
+
 .bill .slick-track{
     padding: 10px 0px !important;
 }
