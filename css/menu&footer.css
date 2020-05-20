@@ -455,7 +455,7 @@ header.menu_open{
 		margin: 90px auto 0;
 	}
 	.promoContent_text{
-		top: 25%;
+		top: 30%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 3;

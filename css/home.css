@@ -314,7 +314,7 @@
     transition: .4s;
 }
 .bill .title{
-    margin-left: 5%;
+    margin: 0 5%;
     width: 50%;
 }
 .bill .title,
@@ -601,6 +601,8 @@
     width: 102%;
     text-align: center;
     border-spacing:0!important;
+    cursor: default;
+    user-select: none;
 }
 .tabl_year{
     color: #22232D;
@@ -1305,6 +1307,9 @@ footer .slick-initialized .slick-slide{
 }
 
 @media (max-width: 1200px) {
+    .threeSlide .container{
+        padding: 5% 0;
+    }
     .threeSlide{
         display: -webkit-box;
         display: -webkit-flex;
@@ -1350,11 +1355,8 @@ footer .slick-initialized .slick-slide{
     /*}*/
 }
 
-@media (max-width: 991px) {
-    /*threeSlide 991*/
-    .threeSlide{
-        padding: 0 0 100px 0;
-    }
+@media (max-width: 992px) {
+    /*threeSlide 992*/
     .threeSlide .container{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1385,13 +1387,13 @@ footer .slick-initialized .slick-slide{
     .threeSlide_left > *{
         text-align: right;
     }
-    /* threeSlide 991*/
+    /* threeSlide 992*/
 
-    /* bill 991*/
+    /* bill 992*/
 
-    /*  /bill 991 */
+    /*  /bill 992 */
 
-    /* tabl 991 */
+    /* tabl 992 */
     .tabl_year{
         text-align: left;
     }
@@ -1408,7 +1410,7 @@ footer .slick-initialized .slick-slide{
     .tabl{
         padding-bottom: 30px;
     }
-    /* /tabl 991*/
+    /* /tabl 992*/
 
     /*advantages*/
     .advantages_ul svg{
@@ -1469,6 +1471,9 @@ footer .slick-initialized .slick-slide{
     .threeSlide_right_block{
         padding-top: 15px;
     }
+    .threeSlide_right_block_button{
+        margin-top: -30px;
+    }
     .threeSlide{
         padding-bottom: 30px;
     }
@@ -1525,4 +1530,7 @@ footer .slick-initialized .slick-slide{
         width: 40px!important;
     }
     /*    /footerSlider*/
+}
+@media all and (max-width: 1200) and (orientation : portrait) {
+
 }
