@@ -444,13 +444,11 @@
     position: relative;
     left: 0;
     width: fit-content;
-    cursor: pointer;
     transition:background-color .7s;
     cursor: pointer;
 }
 .bill_container_rel_close:hover{
     background-color: #3002AF;
-
 }
 
 .bill_container_rel_close p{
@@ -461,10 +459,8 @@
     padding: 10px 15px 10px 0;
     border-right: 1px solid #8C46FF;
 }
-
 .bill_ContainerActive{
     display: block;
-
 }
 .bill_container_rel_btn_svg svg{
     height: 32vh;
@@ -473,15 +469,11 @@
 .bill_container_rel_btn_svg li{
     margin: 0 40px 50px 0;
 }
-
 .contendBody{
     position: relative;
     z-index: 30;
     display: none;
 }
-
-
-
 .bill_ContainerAmirWallet ul{
     display: -webkit-box;
     display: -webkit-flex;
