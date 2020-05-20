@@ -112,6 +112,15 @@ function billOpen(id) {
     $('.contendBodyActive').removeClass('contendBodyActive')
     setTimeout(()=>{
         document.getElementById(`container_${id}`).classList.add("contendBodyActive");
+        if(id === 'bill_investments'){
+            $('#investments_project_slider').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                prevArrow: "<img src='img/home/slider_slick_next.svg' class='prev' alt='1'>",
+                nextArrow: "<img src='img/home/slider_slick_next.svg' class='next' alt='2'>",
+            });
+        }
     },200)
 
 }
@@ -132,9 +141,10 @@ function billClose() {
     },2000);
 }
 
-$('#investments_project_slider').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
-});
-
+// $('#investments_project_slider').slick({
+//     infinite: true,
+//     slidesToShow: 4,
+//     slidesToScroll: 4,
+//     prevArrow: "<img src='img/home/slider_slick_next.svg' class='prev' alt='1'>",
+//     nextArrow: "<img src='img/home/slider_slick_next.svg' class='next' alt='2'>",
+// });

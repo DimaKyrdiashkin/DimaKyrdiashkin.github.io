@@ -524,6 +524,7 @@
     position: relative;
 }
 .bill_saving_body_text_li{
+    width: 100%!important;
     display: flex;
     align-items: center;
     margin-bottom: 40px;
@@ -557,10 +558,11 @@
 }
 
 .project_slider{
+    width: 500px!important;
     display: flex!important;
     position: relative!important;
-    width: 500px!important;
 }
+
 .project_slider_item{
     width: 100px!important;
     height: 80px!important;
@@ -568,7 +570,6 @@
     justify-content: center;
     align-items: center!important;
     background: #FFFFFF;
-    margin-right: 15px!important;
     box-shadow: 0 4px 15px #CBD2DD, 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
 }
