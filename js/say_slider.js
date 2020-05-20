@@ -64,8 +64,3 @@ $(window).resize( ()=>{
         });
     }
 })
-
-
-function saySlider(x) {
-
-}

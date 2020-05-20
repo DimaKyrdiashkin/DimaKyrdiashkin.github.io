@@ -474,6 +474,10 @@
     z-index: 30;
     display: none;
 }
+.contendBodyActive{
+    margin-top: 40px;
+    display: block;
+}
 .bill_ContainerAmirWallet ul{
     display: -webkit-box;
     display: -webkit-flex;
@@ -551,19 +555,25 @@
     right: -7vw;
     height: 30vh;
 }
-.contendBodyActive{
-    margin-top: 40px;
-    display: block;
+
+.project_slider{
+    display: flex!important;
+    position: relative!important;
+    width: 500px!important;
 }
-.poject_slider{
-    display: flex;
-    position: relative;
-}
-.poject_slider_item{
-    width: 80px !important;
-    height: 80px;
-    box-shadow: 0px 4px 15px #CBD2DD, 0px 4px 4px rgba(0, 0, 0, 0.25);
+.project_slider_item{
+    width: 100px!important;
+    height: 80px!important;
+    display: flex!important;
+    justify-content: center;
+    align-items: center!important;
+    background: #FFFFFF;
+    margin-right: 15px!important;
+    box-shadow: 0 4px 15px #CBD2DD, 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
+}
+.project_slider_item img{
+    width: 90%!important;
 }
 /* /bill */
 
@@ -1246,7 +1256,7 @@
     color: #FFFFFF;
     font-family: 'Gilroy-Regular';
 }
-.slick-prev:before, .slick-next:before{
+.footer_slider_item_p .slick-prev:before, .slick-next:before{
     color: #CCAFFF!important;
 }
 .footer_slider .slick-slide {
@@ -1426,7 +1436,7 @@ footer .slick-initialized .slick-slide{
     .say_slider_item{
         min-width: 340px !important;
     }
-    .slick-slide{
+    .say .slick-slide{
         display: -webkit-box !important;
         display: -webkit-flex !important;
         display: -ms-flexbox !important;
