@@ -65,7 +65,7 @@ function fun_Full() {
         sectionsColor: ['#0000', '#F8F9FF', '#ffffff', '#F8F9FF', '#F8F9FF', '#F8F9FF', '#542AC8','#F8F9FF', '#542AC8'],
         // paddingTop: '3em',
         // paddingBottom: '10px',
-        fixedElements: '#header, #marks, #fp-nav',
+        fixedElements: '#header, #marks, #fp-nav, .marker',
         responsiveWidth: 1201,
         responsiveHeight: 0,
         responsiveSlides: true,
@@ -83,7 +83,23 @@ function fun_Full() {
 
         //events
         onLeave: function (origin, destination, direction) {
-            // alert(1);
+            if(destination.index <= 1){
+                $('.marker').css('opacity', '0');
+            }else if(destination.index <= 4){
+                $('.marker').css('opacity', '1');
+                $('.marker h5').text('ВЫГОДНО');
+            }else if(destination.index <= 5){
+                $('.marker').css('opacity', '1');
+                $('.marker h5').text('НАДЕЖНО');
+            }else if(destination.index <= 6){
+                $('.marker').css('opacity', '1');
+                $('.marker h5').text('ПОЛЕЗНО');
+            }else if(destination.index <= 7){
+                $('.marker').css('opacity', '1');
+                $('.marker h5').text('УДОБНО');
+            }else{
+                $('.marker').css('opacity', '0');
+            }
         },
         afterLoad: function (origin, destination, direction) {
         },
