@@ -750,7 +750,7 @@
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .garbage_ul_li{
     width: 45%;
@@ -793,7 +793,7 @@
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
-    font-size: 1.5em;
+    font-size: 1.125em;
     line-height: 28px;
 
     text-align: center;
@@ -810,7 +810,7 @@
     padding: 0;
 }
 .garbage_ul_li_footer_img{
-    width: 100%;
+    width: 80%;
 }
 /* /garbage */
 

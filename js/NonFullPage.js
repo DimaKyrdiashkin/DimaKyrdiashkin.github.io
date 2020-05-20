@@ -1,12 +1,24 @@
 var myFullpage;
 let flag = true;
+
+window.addEventListener("resize", function(){
+    if(document.documentElement.clientWidth > 1200 && flag == false){
+         myFullpag = fun_Full();
+         flag = true;
+         console.log(flag);
+    }else{
+         flag = false;
+         
+    };
+ });
+
 // fullpage_api.setLockAnchors(false);
 function fun_Full() {
     const myFullpage = new fullpage('.fullpageId', {
         //Navigation
         menu: '#fp-nav',
         lockAnchors: false,
-        // anchors: ['promoContent', "threeSlide", 'bill', 'calc1', 'tabl',"advantages", 'statistics', 'say', "footer"],
+        anchors: ['promoContent', "threeSlide", 'bill', 'calc1', 'tabl',"advantages", 'statistics', 'say', "footer"],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: [],//название для поинтов навигации
@@ -95,10 +107,3 @@ function fun_Full() {
     return myFullpage;
 }
 myFullpag = fun_Full();
-
-window.addEventListener("resize", function(){
-   if(document.documentElement.clientWidth > 1200 && flag == false){
-    myFullpag = fun_Full();
-    flag = true;
-   }; 
-});
