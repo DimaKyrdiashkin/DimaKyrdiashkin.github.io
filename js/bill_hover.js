@@ -103,12 +103,13 @@ function billOpen(id) {
     $("#bill_svgG path").css({fill:"#E4E4EC"})
     $("#"+id).css({fill: mass.color[id]});
     document.getElementById(id).setAttribute('d',mass.hover[id]);
-
     bill_left.classList.add("bill_to_left");
     bill_right.classList.add("bill_to_right");
     bill_container.classList.add("bill_container_active");
     $('.contendBodyActive').removeClass('contendBodyActive')
-    document.getElementById(`container_${id}`).classList.add("contendBodyActive");
+    setTimeout(()=>{
+        document.getElementById(`container_${id}`).classList.add("contendBodyActive");
+    },200)
 }
 function billClose() {
     bill_head.innerText = 'Инвестиционные счета';
