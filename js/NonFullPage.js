@@ -18,7 +18,7 @@ function fun_Full() {
         //Navigation
         menu: '#fp-nav',
         lockAnchors: false,
-        anchors: ['promoContent', "threeSlide", 'bill', 'calc1', 'tabl',"advantages", 'statistics', 'say', "footer"],
+        anchors: ['promoContent', "threeSlide", 'bill', 'calc1', 'tabl',"advantages", 'statistics', 'device','say', "footer"],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: [],//название для поинтов навигации
@@ -83,22 +83,33 @@ function fun_Full() {
 
         //events
         onLeave: function (origin, destination, direction) {
+            console.log(origin.index);
+            console.log(destination.index);
+            console.log(direction);
+            
+
             if(destination.index <= 1){
-                $('.marker').css('opacity', '0');
+                $('.marker').removeClass('marker_open', 500);
             }else if(destination.index <= 4){
-                $('.marker').css('opacity', '1');
-                $('.marker h5').text('ВЫГОДНО');
+                if(destination.index == 4 && direction == 'up'){
+                    $('.marker').removeClass('marker_open', 500);
+                }
+                $('.marker').delay(500).addClass('marker_open', 500);
+                setTimeout(() => $('.marker h5').text('ВЫГОДНО'), 400);
             }else if(destination.index <= 5){
-                $('.marker').css('opacity', '1');
-                $('.marker h5').text('НАДЕЖНО');
+                $('.marker').removeClass('marker_open', 500);
+                $('.marker').delay(500).addClass('marker_open', 500);
+                setTimeout(() => $('.marker h5').text('НАДЕЖНО'), 400);
             }else if(destination.index <= 6){
-                $('.marker').css('opacity', '1');
-                $('.marker h5').text('ПОЛЕЗНО');
+                $('.marker').removeClass('marker_open', 500);
+                $('.marker').delay(500).addClass('marker_open', 500);
+                setTimeout(() => $('.marker h5').text('ПОЛЕЗНО'), 400);
             }else if(destination.index <= 7){
-                $('.marker').css('opacity', '1');
-                $('.marker h5').text('УДОБНО');
+                $('.marker').removeClass('marker_open', 500);
+                $('.marker').delay(500).addClass('marker_open', 500);
+                setTimeout(() => $('.marker h5').text('УДОБНО'), 400);
             }else{
-                $('.marker').css('opacity', '0');
+                $('.marker').removeClass('marker_open', 500);
             }
         },
         afterLoad: function (origin, destination, direction) {
