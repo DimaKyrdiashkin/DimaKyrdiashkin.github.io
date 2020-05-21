@@ -319,7 +319,7 @@ body{
 	width: 70px;
 	height: 5em;
 	position: relative;
-	background: #542AC8;
+	background: #7038E4;
 }
 .profitability_right_naw a:before,.profitability_right_naw a:after	{
 	content: "";
@@ -372,7 +372,7 @@ body{
 	-ms-flex: 2;
 	flex: 2;
 	margin: 0 10px;
-	color: #0050C9;
+	color: #7E3FF1;
 }
 .profitability_right_static{
 	width: 100%;

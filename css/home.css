@@ -1470,6 +1470,9 @@ footer .slick-initialized .slick-slide{
     .tabl_h2{
         margin-bottom: 0!important;
     }
+    .tabl .tabl_h2{
+        top: 10px;
+    }
     .tabl{
         padding-top: 0!important;
     }
@@ -1554,14 +1557,11 @@ footer .slick-initialized .slick-slide{
     }
     /* /threeSlide 1200 */
 
-    /*bill 1200*/
-
-    /* /bill 1200   */
-
     /*  tabl 1200  */
     .tabl .container{
         padding: 100px 5%;
     }
+
     /*  /tabl 1200  */
     /* say*/
     .say{
