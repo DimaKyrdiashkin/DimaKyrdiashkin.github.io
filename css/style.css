@@ -97,35 +97,38 @@ a{
 h1{
 	font-family: 'Gilroy-Bold';
 	font-size: 2em;
-	line-height: 40px;
+	line-height: 2.5em;
 }
 h2{
 	font-family: "Gilroy-SemiBold";
 	font-size: 1.75em;
-	line-height: 36px;
+	line-height: 2.25em;
 }
 h3{
 	font-family: "Gilroy-SemiBold";
 	font-size: 1.5em;
-	line-height: 32px;
+	line-height: 2em;
 }
 h4{
 	font-size: 1.25em;
 	font-family: 'Gilroy-Light';
-	line-height: 28px;
+	line-height: 1.75em;
 }
 h5{
 	font-size: 1.125em;
 	font-family: 'Gilroy-Light';
-	line-height: 24px;
+	line-height: 1.5em;
 }
 p{
 	font-family: "Gilroy-Medium";
 	font-size: 1em;
-	line-height: 24px;
+	line-height: 1.5em;
 }
 ul{
 	list-style-type:none ;
+}
+nobr{
+	font-family: "Gilroy-Medium";
 }
 .first_video__mob{
 	display: none;
@@ -314,7 +317,7 @@ body{
 .profitability_right_naw a{
 	cursor: pointer;
 	width: 70px;
-	height: 80px;
+	height: 5em;
 	position: relative;
 	background: #542AC8;
 }
@@ -380,7 +383,7 @@ body{
 	z-index: 19;
 	color: #FFFFFF;
 	overflow: hidden;
-	border-radius: 30px;
+	border-radius: 35px;
 }
 .profitability_right_static >div{
 	padding-top: 80px;
@@ -396,7 +399,7 @@ body{
 .profitability_right_static li{
 	padding-top: 10px;
 	padding-bottom: 7px;
-	height: 48px;
+	height: 3em;
 }
 .profitability_right_static_mounts{
 	z-index: 10;
@@ -1116,12 +1119,6 @@ p.circle_yellow{
 	.promoContent_info__up{
 		margin-bottom: 25px;
 	}
-	.promoContent_info__up h4{
-		line-height: 29px;
-	}
-	.promoContent_info__up p{
-		line-height: 19px;
-	}
 
 	.promoContent_logo{
 		padding-top: 45px;
@@ -1267,7 +1264,6 @@ p.circle_yellow{
 	.profitability_right_static_usdt img,
 	.profitability_right_static_eth img{
 		top: 15px;
-		left: 65%;
 	}
 	.profitability_right_static >div{
 		padding-top: 60px;
