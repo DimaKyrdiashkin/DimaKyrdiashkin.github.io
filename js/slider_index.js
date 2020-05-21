@@ -5,7 +5,7 @@ $(".say_slider").slick({
     slidesToShow: 3,
     slidesToScroll: 3,
     adaptiveHeight: true,
-    // autoplay:true,
+    autoplay:true,
     focusOnSelect:true,
     autoplaySpeed:5000,
     arrows: true,
@@ -57,7 +57,7 @@ $("#footer_slider").slick({
         {
             breakpoint: 600,
             settings: {
-
+                centerMode: true,
                 dots: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
