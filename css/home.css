@@ -1509,6 +1509,8 @@ footer .slick-initialized .slick-slide{
         padding: 35px 97px 40px 30px;
     }
     .bill_container_rel_close{
+        margin-left: 5%;
+        align-self: flex-start;
         top: 30px;
     }
     .bill_left, .bill_right{
@@ -1581,6 +1583,7 @@ footer .slick-initialized .slick-slide{
         -ms-flex-item-align: center;
         align-self: center;
     }
+
     .threeSlide_right_block, .threeSlide_right_block_right{
         max-width: none;
     }
@@ -1601,6 +1604,16 @@ footer .slick-initialized .slick-slide{
     }
     .bill_right{
         width: 100%;
+    }
+    .bill_saving_body_text{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .contendBody{
+        width: 90%;
+    }
+    .bill_saving_body_text_li span{
+        width: 300px;
     }
     .bill_container{
         width: 100%;
@@ -1689,8 +1702,42 @@ footer .slick-initialized .slick-slide{
         min-width: 290px;
     }
     /*    /advantages*/
-    /*    footerSlider*/
 
+    /* bill */
+    .bill_container_rel_btn{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .bill_container_rel_btn li{
+        margin-right: 0;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .bill_container_rel_btn li:last-child{
+        margin-bottom: 0;
+    }
+    .project_slider{
+        width: 300px!important;
+    }
+    .bill_container_rel_btn_svg li{
+        margin: 0;
+    }
+    #container_bill_investments .bill_saving_body_text_li:last-child{
+        margin-left: 0;
+    }
+    #container_bill_investments .bill_saving_body_text_li:nth-child(3){
+        margin-bottom: 0;
+    }
+    .bill_container_rel_btn a {
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+    }
+    /* /bill */
+
+    /*    footerSlider*/
     .container_bloc_team_h2{
         padding-left: 0;
     }
@@ -1726,7 +1773,16 @@ footer .slick-initialized .slick-slide{
 
 
     /* bill 480 */
-
+    .container_li_img{
+        display: none;
+    }
+    .bill_saving_body_text{
+        padding: 20px;
+    }
+    .project_slider{
+        margin: auto;
+        width: 200px!important;
+    }
     /*/bill 480 */
 
     /* tabl 480*/

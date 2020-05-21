@@ -101,6 +101,7 @@ function billOpen(id) {
     bill_h2.style.color = mass.color[id];
     bill_span.innerText = mass.percent[id];
     bill_text.innerText = "";
+    console.log(id)
     bill_head.innerText = mass.title[id];
     if(id === "bill_AmirWallet") document.getElementById("bill_head_p").classList.add('bill_head_pActive')
     $("#bill_svgG path").css({fill:"#E4E4EC"})
@@ -109,22 +110,41 @@ function billOpen(id) {
     bill_left.classList.add("bill_to_left");
     bill_right.classList.add("bill_to_right");
     bill_container.classList.add("bill_container_active");
-    $('.contendBodyActive').removeClass('contendBodyActive')
-    setTimeout(()=>{
-        document.getElementById(`container_${id}`).classList.add("contendBodyActive");
-        if(id === 'bill_investments'){
-            $('#investments_project_slider').slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                prevArrow: "<img src='img/home/slider_slick_next.svg' class='prev' alt='1'>",
-                nextArrow: "<img src='img/home/slider_slick_next.svg' class='next' alt='2'>",
-            });
-        }
-    },200)
-
+    $('#container_'+id).addClass("contendBodyActive");
+    if(id === 'bill_investments'){
+        $('#investments_project_slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            prevArrow: "<img src='img/home/slider_slick_next.svg' class='prev' alt='1'>",
+            nextArrow: "<img src='img/home/slider_slick_next.svg' class='next' alt='2'>",
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        autoplay:true,
+                        autoplaySpeed:3000,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        autoplay:true,
+                        autoplaySpeed:3000,
+                        arrows: false,
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+        ]
+        });
+    }
 }
 function billClose() {
+    setTimeout(()=>{
+        $('.contendBodyActive').removeClass('contendBodyActive')
+    },500);
     bill_head.innerText = 'Инвестиционные счета';
     bill_body.classList.remove('bill_left_text_h2_activ')
     bill_left.classList.remove("bill_to_left");
@@ -136,9 +156,7 @@ function billClose() {
         pathSgg.style.fill = mass.color[i];
         pathSgg.setAttribute('d', mass.normal[i]);
     }
-    setTimeout(()=>{
-        $('.contendBodyActive').removeClass('contendBodyActive')
-    },2000);
+
 }
 
 // $('#investments_project_slider').slick({
