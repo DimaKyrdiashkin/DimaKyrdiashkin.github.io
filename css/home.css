@@ -263,11 +263,13 @@
 #bill_svgG path{
     cursor: pointer;
 }
-.bill_left>svg:first-child,
-.bill_left>svg:last-child{
+.bill_left>svg{
     z-index: 1;
     width: 150px;
     position: absolute;
+}
+.bill_left_svg_right_top{
+    display: none;
 }
 .bill_left svg path{
     -webkit-transition: .4s;
@@ -1603,6 +1605,9 @@ footer .slick-initialized .slick-slide{
     /* threeSlide 992*/
 
     /* bill */
+    .bill_head{
+        left: 4%;
+    }
     .bill_cntG{
         flex-wrap: wrap;
     }
@@ -1619,8 +1624,24 @@ footer .slick-initialized .slick-slide{
     .contendBody{
         width: 90%;
     }
+    .bill_left_svg_left_bottom{
+        display: none;
+    }
+    .bill_left_svg_right_top{
+        display: block;
+    }
+    .bill_left>svg{
+        min-width: 70px;
+        width: 10%;
+    }
+    .bill_saving_body_text_li{
+        margin-bottom: 20px;
+    }
     .bill_saving_body_text_li span{
         width: 300px;
+    }
+    .bill_container_rel>svg{
+        display: none;
     }
     .bill_container{
         width: 100%;
@@ -1803,6 +1824,28 @@ footer .slick-initialized .slick-slide{
 
 
     /* bill 480 */
+    .bill_left{
+        display: none;
+    }
+    .bill_right{
+        padding-top: 100px;
+    }
+    .bill_right_row{
+        margin-top: 20px;
+    }
+    .contendBodyActive{
+        width: 100%;
+    }
+    .bill_container_rel_close{
+        left: 0;
+    }
+    .bill_container_rel>svg:first-child{
+        left: 1%;
+        right: auto;
+        width: 29%;
+        top: -10px!important;
+        display: block;
+    }
     .container_li_img{
         display: none;
     }
