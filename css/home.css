@@ -1247,7 +1247,7 @@
     font-family: 'Gilroy-SemiBold';
 }
 .device_ul_body_btn a{
-    margin-right: 20px;
+    margin-right: 50px;
 }
 /* /device */
 
@@ -1804,7 +1804,7 @@ footer .slick-initialized .slick-slide{
         text-align: center;
     }
     .device_ul_footer_li{
-        max-width: fit-content;
+        max-width: 80%;
         width: 80%;
         margin: 0 0 15px;
         padding: 10px 10px 20px;
@@ -1829,6 +1829,9 @@ footer .slick-initialized .slick-slide{
     }
     .device_ul_footer_li p{
         padding-left: 0;
+    }
+    .say{
+        padding: 100px 0 0;
     }
 }
 
