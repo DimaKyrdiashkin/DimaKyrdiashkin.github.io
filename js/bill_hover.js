@@ -95,13 +95,13 @@ function normar_svg(idSvg) {
 
 
 const contendBody = $(".contendBody");
+let flad_slider =true;
 
 function billOpen(id) {
     bill_body.classList.add('bill_left_text_h2_activ')
     bill_h2.style.color = mass.color[id];
     bill_span.innerText = mass.percent[id];
     bill_text.innerText = "";
-    console.log(id)
     bill_head.innerText = mass.title[id];
     if(id === "bill_AmirWallet") document.getElementById("bill_head_p").classList.add('bill_head_pActive')
     $("#bill_svgG path").css({fill:"#E4E4EC"})
@@ -111,7 +111,8 @@ function billOpen(id) {
     bill_right.classList.add("bill_to_right");
     bill_container.classList.add("bill_container_active");
     $('#container_'+id).addClass("contendBodyActive");
-    if(id === 'bill_investments'){
+    if(id === 'bill_investments' && flad_slider){
+        flad_slider= !flad_slider;
         $('#investments_project_slider').slick({
             infinite: true,
             slidesToShow: 3,
