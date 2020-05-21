@@ -95,13 +95,14 @@ function normar_svg(idSvg) {
 
 
 const contendBody = $(".contendBody");
+let flad_slider =true;
 
 function billOpen(id) {
+    $('.contendBodyActive').removeClass('contendBodyActive')
     bill_body.classList.add('bill_left_text_h2_activ')
     bill_h2.style.color = mass.color[id];
     bill_span.innerText = mass.percent[id];
     bill_text.innerText = "";
-    console.log(id)
     bill_head.innerText = mass.title[id];
     if(id === "bill_AmirWallet") document.getElementById("bill_head_p").classList.add('bill_head_pActive')
     $("#bill_svgG path").css({fill:"#E4E4EC"})
@@ -111,7 +112,8 @@ function billOpen(id) {
     bill_right.classList.add("bill_to_right");
     bill_container.classList.add("bill_container_active");
     $('#container_'+id).addClass("contendBodyActive");
-    if(id === 'bill_investments'){
+    if(id === 'bill_investments' && flad_slider){
+        flad_slider= !flad_slider;
         $('#investments_project_slider').slick({
             infinite: true,
             slidesToShow: 3,
@@ -123,15 +125,15 @@ function billOpen(id) {
                     breakpoint: 768,
                     settings: {
                         arrows: false,
-                        autoplay:true,
-                        autoplaySpeed:3000,
+                        // autoplay:true,
+                        // autoplaySpeed:3000,
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
-                        autoplay:true,
-                        autoplaySpeed:3000,
+                        // autoplay:true,
+                        // autoplaySpeed:3000,
                         arrows: false,
                         slidesToShow: 2,
                         slidesToScroll: 2,
@@ -142,9 +144,6 @@ function billOpen(id) {
     }
 }
 function billClose() {
-    setTimeout(()=>{
-        $('.contendBodyActive').removeClass('contendBodyActive')
-    },500);
     bill_head.innerText = 'Инвестиционные счета';
     bill_body.classList.remove('bill_left_text_h2_activ')
     bill_left.classList.remove("bill_to_left");
