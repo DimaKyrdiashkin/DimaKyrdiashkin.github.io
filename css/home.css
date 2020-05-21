@@ -1440,17 +1440,18 @@ footer .slick-initialized .slick-slide{
     .project_slider{
         width: 300px!important;
     }
-    /* /bill */
-
-
-
-    /*  tabl 1440  */
     .bill_head_pActive{
         max-width: 300px;
     }
     #bill_svgG{
         height: 42vh;
     }
+    /* /bill */
+
+
+
+    /*  tabl 1440  */
+
     .tabl_h2{
         margin-bottom: 0!important;
     }
@@ -1502,7 +1503,6 @@ footer .slick-initialized .slick-slide{
         margin-top: 100px;
     }
     .bill_cntG{
-        /*height: 100vh;*/
         overflow: hidden;
     }
     .container_li{
@@ -1551,7 +1551,15 @@ footer .slick-initialized .slick-slide{
     /* say*/
     .say{
         padding: 100px 0;
-        margin: 50px 0;
+    }
+    .garbage{
+        padding: 100px 0;
+    }
+    .garbage_ul_li_img{
+        justify-content: flex-end;
+    }
+    .garbage_ul_li_footer_img{
+        width: 100%;
     }
     /* /say */
     /*.statistics{*/
@@ -1583,7 +1591,6 @@ footer .slick-initialized .slick-slide{
         -ms-flex-item-align: center;
         align-self: center;
     }
-
     .threeSlide_right_block, .threeSlide_right_block_right{
         max-width: none;
     }
@@ -1662,7 +1669,16 @@ footer .slick-initialized .slick-slide{
         width: 80px;
     }
     /* /bill*/
-
+    /* garbage */
+    .garbage{
+        padding: 150px 0;
+        clip-path: polygon(0 5%, 100% 10%, 100% 95%, 0% 90%);
+        -webkit-clip-path: polygon(0 5%, 100% 10%, 100% 95%, 0% 90%);
+    }
+    .garbage_ul_li_img{
+        padding: 0 !important;
+    }
+    /* /garbage */
     /*advantages*/
     .advantages_ul svg{
         height: 50px;
@@ -1738,10 +1754,24 @@ footer .slick-initialized .slick-slide{
     /* /bill */
 
     /*    footerSlider*/
+    .garbage_ul_li{
+        width: 80%;
+        margin: 20px 0;
+        padding: 15px 45px;
+    }
     .container_bloc_team_h2{
         padding-left: 0;
     }
     /*    footerSlider*/
+    .device_ul_footer_li{
+        flex-direction: column;
+        text-align: center;
+    }
+    .device_ul_footer_li{
+        max-width: fit-content;
+        width: 100%;
+        margin: 0 0 22px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1805,6 +1835,13 @@ footer .slick-initialized .slick-slide{
         text-align: center;
     }
     /* /advantages*/
+    .garbage{
+        clip-path: polygon(0 7%, 100% 10%, 100% 93%, 0% 90%);
+        -webkit-clip-path: polygon(0 7%, 100% 10%, 100% 93%, 0% 90%);
+    }
+    .garbage_ul_li{
+        width: 95%;
+    }
     /* say */
     .say{
         clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);

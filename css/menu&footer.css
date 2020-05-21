@@ -409,7 +409,7 @@ header.menu_open{
 	.footer_menu_mail svg{
 		display: none;
 	}
-	nav{
+	.footer_menu nav{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
