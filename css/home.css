@@ -666,13 +666,21 @@
     min-height: 375px;
     height: 100%;
 }
+.tabl .fp-tableCell{
+    display: flex !important;
+    vertical-align: inherit !important;
+}
 .tabl .container{
-    width: 90%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
     margin: auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -680,10 +688,17 @@
     flex-direction: column;
 }
 .tabl_h2{
+    position: absolute;
+    top: 50px;
+    left: 10%;
     color: #22232D;
-    margin-bottom: 50px;
-    padding-left: 103px;
-    font-size: 2em;
+    font-size: 1.75em;
+    display: flex;
+    align-items: center;
+}
+.tabl_h2 svg{
+    width: 28px;
+    height: 28px;
 }
 .tabl_year td{
     font-size: 4.375em;
@@ -1483,11 +1498,11 @@ footer .slick-initialized .slick-slide{
 
     /* /bill 1200   */
 
-    /*  tebl 1200  */
-    .tabl{
-        padding: 0 0 100px;
+    /*  tabl 1200  */
+    .tabl .container{
+        padding: 100px 5%;
     }
-    /*  /tebl 1200  */
+    /*  /tabl 1200  */
     /* say*/
     .say{
         padding: 100px 0;
@@ -1539,6 +1554,9 @@ footer .slick-initialized .slick-slide{
     /*  /bill 992 */
 
     /* tabl 992 */
+    .tabl .container{
+        padding: 100px 5% 50px;
+    }
     .tabl_year{
         text-align: left;
     }
@@ -1550,10 +1568,17 @@ footer .slick-initialized .slick-slide{
         margin: auto;
     }
     .tabl_h2{
-        margin-bottom: 40px;
+        position: absolute;
+        top: 0;
+        left: 10%;
     }
     .tabl{
         padding-bottom: 30px;
+    }
+    .profitability_right_static_usdt li,
+    .profitability_right_static_btc li,
+    .profitability_right_static_eth li{
+        padding-left: 75px;
     }
     /* /tabl 992*/
 
@@ -1649,7 +1674,7 @@ footer .slick-initialized .slick-slide{
     /*advantages*/
     .advantages_h2{
         font-size: 1.15em;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
     .advantages_ul p{
         font-size: .9em;
@@ -1678,6 +1703,13 @@ footer .slick-initialized .slick-slide{
         width: 40px!important;
     }
     /*    /footerSlider*/
+}
+@media (max-width: 400px) {
+    .profitability_right_static_usdt li,
+    .profitability_right_static_btc li,
+    .profitability_right_static_eth li{
+        padding-left: 60px;
+    }
 }
 @media all and (max-width: 1200px) and (orientation : portrait) {
 
