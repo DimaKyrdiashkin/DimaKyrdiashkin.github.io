@@ -5,7 +5,7 @@ $(".say_slider").slick({
     slidesToShow: 3,
     slidesToScroll: 3,
     adaptiveHeight: true,
-    // autoplay:true,
+    autoplay:true,
     focusOnSelect:true,
     autoplaySpeed:5000,
     arrows: true,
@@ -17,7 +17,6 @@ $(".say_slider").slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
-                arrows: true,
             }
         },
         {
@@ -25,13 +24,11 @@ $(".say_slider").slick({
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                arrows: true,
+                arrows: false,
             }
         }
     ]
-}).on('setPosition', function (event, slick) {
-    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
-});
+})
 // /say_slider
 
 // footer_slider

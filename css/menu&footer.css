@@ -66,9 +66,10 @@ header{
 	user-select: none;
 	transform: translateX(0px);
 }
-.hide{
+.desctop-menu .hide{
 	/* opacity: 0; */
 	display: flex;
+	/*flex-direction: column;*/
 }
 .menu{
 	width: 100%;
