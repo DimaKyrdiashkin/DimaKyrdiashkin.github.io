@@ -98,6 +98,7 @@ const contendBody = $(".contendBody");
 let flad_slider =true;
 
 function billOpen(id) {
+    $('.contendBodyActive').removeClass('contendBodyActive')
     bill_body.classList.add('bill_left_text_h2_activ')
     bill_h2.style.color = mass.color[id];
     bill_span.innerText = mass.percent[id];
@@ -124,15 +125,15 @@ function billOpen(id) {
                     breakpoint: 768,
                     settings: {
                         arrows: false,
-                        autoplay:true,
-                        autoplaySpeed:3000,
+                        // autoplay:true,
+                        // autoplaySpeed:3000,
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
-                        autoplay:true,
-                        autoplaySpeed:3000,
+                        // autoplay:true,
+                        // autoplaySpeed:3000,
                         arrows: false,
                         slidesToShow: 2,
                         slidesToScroll: 2,
@@ -143,9 +144,6 @@ function billOpen(id) {
     }
 }
 function billClose() {
-    setTimeout(()=>{
-        $('.contendBodyActive').removeClass('contendBodyActive')
-    },500);
     bill_head.innerText = 'Инвестиционные счета';
     bill_body.classList.remove('bill_left_text_h2_activ')
     bill_left.classList.remove("bill_to_left");

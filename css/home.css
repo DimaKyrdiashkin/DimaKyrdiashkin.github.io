@@ -1859,7 +1859,9 @@ footer .slick-initialized .slick-slide{
     }
     .bill_container_rel_close{
         left: 0;
+        margin-left: 0;
     }
+
     .bill_container_rel>svg:first-child{
         left: 1%;
         right: auto;
