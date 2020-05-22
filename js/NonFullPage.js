@@ -83,6 +83,9 @@ function fun_Full() {
 
         //events
         onLeave: function (origin, destination, direction) {
+            if(destination.index === 0){
+                document.getElementById("promo_h1").style.zIndex = "12";
+            }
             if(destination.index <= 1){
                 $('.marker').removeClass('marker_open', 500);
             }else if(destination.index <= 4){

@@ -27,5 +27,6 @@ $('document').on('scroll', function(){
 });
 
 setInterval(() => {
-    if(document.querySelector("video").pause) document.querySelector("video").play();
+    if(document.querySelector("video").pause){} document.querySelector("video").play();
+
 }, 1);

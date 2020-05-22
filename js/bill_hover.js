@@ -125,16 +125,12 @@ function billOpen(id) {
                     breakpoint: 768,
                     settings: {
                         arrows: false,
-                        // autoplay:true,
-                        // autoplaySpeed:3000,
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
-                        // autoplay:true,
-                        // autoplaySpeed:3000,
-                        arrows: false,
+                        arrows: true,
                         slidesToShow: 2,
                         slidesToScroll: 2,
                     }
