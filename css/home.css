@@ -1327,7 +1327,7 @@
     font-family: 'Gilroy-SemiBold';
 }
 .say .slick-slide {
-    margin: 0 16px;
+    margin: 0 20px;
 }
 .say .slider-box {
     position: relative;
@@ -1936,6 +1936,9 @@ footer .slick-initialized .slick-slide{
         clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
         -webkit-clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
         padding: 60px 0 0;
+    }
+    .say .slick-slide{
+        /* width: 198px !important; */
     }
     .say_slider_item{
         padding: 20px 40px;

@@ -176,7 +176,7 @@
     z-index: 1;
 }
 .select_option__open{
-    height: 330px;
+    height: 309px;
 }
 .option{
     color: #455A69;
@@ -826,6 +826,9 @@ i.down {
     .calc_bg{
         padding: 0 5%;
     }
+    .select_option__open{
+        height: 288px;
+    }
 }
 @media (max-width: 1200px) {
     .calc-body{
@@ -895,6 +898,9 @@ i.down {
     .calc_bg{
         flex-direction: column;
     }
+    .select_option__open{
+        height: 267px;
+    }
     #c-options-block{
         width: 80%;
     }
@@ -947,6 +953,15 @@ i.down {
     }
     .settings{
         width: 100%;
+    }
+    .check{
+        height: 45px;
+    }
+    .select_option{
+        padding-top: 43px;
+    }
+    .select_option__open{
+        height: 256px;
     }
     .t-col{
         height: fit-content;
