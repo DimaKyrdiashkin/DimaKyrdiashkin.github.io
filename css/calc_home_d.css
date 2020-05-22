@@ -104,7 +104,7 @@
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 45px;
+    padding-top: 39px;
 }
 .calc_select{
     display: none;
@@ -147,7 +147,7 @@
     font-size: 1.125em;
 }
 .select{
-    margin-top: 68px;
+    margin-top: 65px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
