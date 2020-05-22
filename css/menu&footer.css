@@ -615,3 +615,8 @@ header.menu_open{
 		width: 60%;
 	}
 }
+@media (width: 768px) and (height: 1024px) {
+	.apendixLogo{
+		width: 45%;
+	}
+}
