@@ -1,11 +1,11 @@
 //say_slider
 $(".say_slider").slick({
-    dots: true,
+    // dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
     adaptiveHeight: true,
-    autoplay:true,
+    // autoplay:true,
     focusOnSelect:true,
     autoplaySpeed:5000,
     arrows: true,
@@ -25,6 +25,7 @@ $(".say_slider").slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false,
+                dots: true,
             }
         }
     ]

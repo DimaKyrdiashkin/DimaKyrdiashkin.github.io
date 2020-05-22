@@ -28,4 +28,5 @@ $('document').on('scroll', function(){
 
 setInterval(() => {
     if(document.querySelector("video").pause) document.querySelector("video").play();
+    document.getElementById("promo_h1").style.zIndex = "12";
 }, 1);

@@ -540,7 +540,6 @@
     background-color: #FFFFFF;
 }
 
-
 .bill_saving_body_text{
     display: inline-block;
     border: 1px solid #CBCAD6;
@@ -631,7 +630,7 @@
 .project_slider .prev,
 .project_slider .next {
     position: absolute;
-    width: 35px;
+    width: 25px;
     z-index: 1;
     cursor: pointer;
     top: 50%;
@@ -1276,6 +1275,13 @@
 .say .slick-list{
     padding: 0 15px;
 }
+.say .slick-slider{
+    display: flex;
+    align-items: center;
+}
+.say .slick-dots li button:before{
+    color: #8C46FF!important;
+}
 .say .container{
     width: 90%;
     max-width: 1512px;
@@ -1367,7 +1373,7 @@
     display: flex;
 }
 .say .prev, .say .next {
-    position: absolute;
+    position: relative;
     height: 60px;
     width: 60px;
     z-index: 1;
@@ -1874,6 +1880,8 @@ footer .slick-initialized .slick-slide{
 }
 
 @media (max-width: 480px) {
+
+
     /* threeSlide 480*/
     .threeSlide_left > *{
         text-align: left;
@@ -1918,7 +1926,22 @@ footer .slick-initialized .slick-slide{
         left: 0;
         margin-left: 0;
     }
-
+    .project_slider .prev,
+    .project_slider .next {
+        width: 25px;
+    }
+    .project_slider .prev{
+        -webkit-transform: rotate(-200grad);
+        -ms-transform: rotate(-200grad);
+        transform: rotate(-200grad);
+    }
+    .project_slider .prev{
+        left: -25px;
+    }
+    .project_slider .next{
+        right: -25px;
+        transform: none;
+    }
     .bill_container_rel>svg:first-child{
         left: 1%;
         right: auto;
