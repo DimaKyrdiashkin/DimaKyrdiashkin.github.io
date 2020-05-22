@@ -1018,31 +1018,38 @@
 .useful{
     overflow-x: hidden;
     position: relative;
-    background-color: #7038E4;
-    clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 90%);
-    -webkit-clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 90%);
 }
-.useful> div{
-    position: relative;
-}
-.useful_svg_1{
-    top: 10%;
-    left: 5%
-}
-.useful_svg_2{
-    bottom: 10%;
-    right: 5%
-}
-.useful_svg{
-    width:370px;
+.useful_bg_svg{
     position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
 }
 .useful .container{
+    z-index: 20;
     position: relative;
     max-width: 1511px;
     width: 90%;
     margin: auto;
     max-height: 100%;
+    background-size: 75%;
+    background-image: url("./../img/home/useful_bg.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+
+}
+
+.useful_svg_1{
+    top: 10%;
+    left: 5%
+
+}
+.useful_svg{
+    width:370px;
+    position: absolute;
+    z-index: 2;
 }
 .useful_ul{
     width: 100%;
@@ -1534,6 +1541,12 @@
 .footer_slider .next {
     right: 0;
 }
+
+.footer_slider2{
+
+}
+
+
 footer .slick-initialized .slick-slide{
     display: -webkit-box!important;
     display: -webkit-flex!important;
@@ -1544,8 +1557,6 @@ footer .slick-initialized .slick-slide{
     -ms-flex-pack: center;
     justify-content: center;
 }
-
-
 .slide {
     height: 100%;
 }
