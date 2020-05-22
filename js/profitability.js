@@ -123,9 +123,9 @@ const profitability ={
     },
     y2020:{
         btc:{
-            January : 0,
-            February : 0,
-            March  : 0,
+            January : 5.25,
+            February : 2.6,
+            March  : 4.85,
             April : 0,
             May : 0,
             June : 0,
@@ -137,9 +137,9 @@ const profitability ={
             December : 0,
         },
         usdt:{
-            January : 0,
-            February : 0,
-            March  : 0,
+            January : 5.17,
+            February : 6.13,
+            March  : 6.75,
             April : 0,
             May : 0,
             June : 0,
@@ -151,9 +151,9 @@ const profitability ={
             December : 0,
         },
         etc:{
-            January : 0,
-            February : 0,
-            March  : 0,
+            January : 7.25,
+            February : 4.27,
+            March  : 4.1,
             April : 0,
             May : 0,
             June : 0,
