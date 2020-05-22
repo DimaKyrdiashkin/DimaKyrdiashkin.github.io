@@ -5,7 +5,6 @@ window.addEventListener("resize", function(){
     if(document.documentElement.clientWidth > 1200 && flag == false){
          myFullpag = fun_Full();
          flag = true;
-         console.log(flag);
     }else{
          flag = false;
          

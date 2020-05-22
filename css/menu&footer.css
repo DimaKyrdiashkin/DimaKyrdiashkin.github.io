@@ -285,7 +285,8 @@ header.menu_open{
 	-o-transition: .2s;
 	transition: .2s;
 }
-.licens p{
+.licens a{
+	display: block;
 	color: #fff;
 	text-align: center;
 	text-transform: uppercase;
