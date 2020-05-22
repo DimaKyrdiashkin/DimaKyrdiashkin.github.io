@@ -942,9 +942,23 @@ p.circle_yellow{
 	section{
 		min-height: 50vh;
 	}
-
+	.promoContent_text{
+		text-align: center;
+		left: 50%;
+		top: 20%;
+		transform: translateX(-50%);
+	}
 }
 @media (max-width: 992px) {
+	#promo_h1{
+		font-family: 'Gilroy-Regular';
+	}
+	.first_video__mob{
+		display: block;
+	}
+	.promoContent video{
+		bottom: -50vh;
+	}
 	.calendar{
 		height: 125px;
 	}
@@ -1010,7 +1024,8 @@ p.circle_yellow{
 		font-size: 12px;
 	}
 	.promoContent video{
-		height: 100%;
+		height: 135%;
+		bottom: -7vh;
 	}
 	.promoContent_info{
 		width: 90%;
@@ -1166,9 +1181,6 @@ p.circle_yellow{
 @media (max-width: 480px) {
 	body{
 		font-size: 12px;
-	}
-	.first_video__mob{
-		display: block;
 	}
 	.first_video{
 		display: none;
@@ -1431,7 +1443,59 @@ p.circle_yellow{
 	}
 	/* /device 400 */
 }
-
+@media (width: 1366px) and (height: 1024px){
+	.promoContent_text{
+		top: 30%;
+	}
+	#promo_h1{
+		font-family: 'Gilroy-Regular';
+	}
+	.promoContent video{
+		bottom: 0vh;
+    	height: 130%;
+	}
+}
+@media (width: 1024px) and (height: 1366px){
+	.promoContent video {
+		bottom: -7vh;
+		display: block;
+	}
+	.promoContent_text{
+		top: 14%;
+	}
+	#promo_h1{
+		font-family: 'Gilroy-Regular';
+	}
+}
+@media (width: 1024px) and (height: 768px) {
+	.promoContent video{
+		bottom: -80vh;
+	}
+	#promo_h1{
+		font-family: 'Gilroy-Regular';
+	}
+	.first_video__mob{
+		display: block;
+	}
+}
+@media (width: 768px) and (height: 1024px) {
+	.first_video{
+		display: none;
+	}
+	.promoContent video{
+		bottom: -5vh;
+		display: block;
+	}
+	#promo_h1{
+		font-family: 'Gilroy-Regular';
+	}
+	.promoContent video{
+		height: 135%;
+	}
+	.promoContent_text{
+		top: 15%;
+	}
+}
 
 @media all and (max-width: 992px) and (orientation : landscape) {
 	.promoContent{
