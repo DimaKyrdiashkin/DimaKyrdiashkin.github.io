@@ -1978,6 +1978,25 @@ footer .slick-initialized .slick-slide{
     .say{
         padding: 100px 0 0;
     }
+
+    /* useful */
+    .useful{
+        background-color: #542AC8;
+        clip-path: polygon(0 5%, 100% 10%, 100% 95%, 0% 90%);
+        -webkit-clip-path: polygon(0 5%, 100% 10%, 100% 95%, 0% 90%);
+    }
+    .useful_bg_svg{
+        display: none;
+    }
+    .useful .container{
+        background-image: url("./../img/home/svg_bg_mob.svg");
+        background-position: center center;
+    }
+    .useful_svg_1{
+        display: none;
+    }
+    /* /useful */
+
 }
 
 @media (max-width: 480px) {
