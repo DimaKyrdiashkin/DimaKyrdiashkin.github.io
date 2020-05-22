@@ -57,6 +57,7 @@ $("#footer_slider").slick({
         {
             breakpoint: 600,
             settings: {
+                centerMode: true,
                 dots: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
