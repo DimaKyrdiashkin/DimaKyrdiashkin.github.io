@@ -1347,6 +1347,12 @@
     position: relative;
     overflow: hidden;
 }
+.say .fp-tableCell{
+    background: url(../img/home/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center 300px;
+    background-size: 150%;
+}
 .say .slick-list{
     padding: 0 15px;
 }
@@ -1454,15 +1460,12 @@
     z-index: 1;
     cursor: pointer;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 .say .prev{
     left: 0;
-    -webkit-transform: translateY(-50%) rotate(-200grad);
-    -ms-transform: translateY(-50%) rotate(-200grad);
-    transform: translateY(-50%) rotate(-200grad);
+    -webkit-transform: rotate(-200grad);
+    -ms-transform: rotate(-200grad);
+    transform: rotate(-200grad);
 }
 .say .slick-dotted.slick-slider{
     margin: 0 15px 30px;
