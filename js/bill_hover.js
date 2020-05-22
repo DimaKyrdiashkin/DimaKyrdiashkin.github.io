@@ -122,13 +122,29 @@ function billOpen(id) {
             nextArrow: "<img src='img/home/slider_slick_next.svg' class='next' alt='2'>",
             responsive: [
                 {
+                    breakpoint: 1691,
+                    settings: {
+                        arrows: true,
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+                {
                     breakpoint: 768,
                     settings: {
                         arrows: false,
                     }
                 },
                 {
-                    breakpoint: 480,
+                    breakpoint: 481,
+                    settings: {
+                        arrows: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                },
+                {
+                    breakpoint: 401,
                     settings: {
                         arrows: true,
                         slidesToShow: 2,
