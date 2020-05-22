@@ -1490,7 +1490,7 @@ footer .slick-initialized .slick-slide{
 @media (max-width: 1690px) {
     .container_li_img{
         bottom: -5px;
-        width: 20%;
+        width: 30%;
         right: 1vw;
         height: auto;
     }
