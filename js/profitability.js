@@ -230,7 +230,7 @@ function profitability_animation(year = 2019){
     $(".profitability_right_static_usdt").delay(900).addClass("slide_profitability", 300);
     $(".profitability_right_static_btc").delay(1200).addClass("slide_profitability", 300);
     $(".profitability_right_static_eth").delay(1500).addClass("slide_profitability", 300);
-    document.querySelector(".profitability_right_naw h3").innerHTML = year;
+    document.querySelector(".profitability_right_naw h2").innerHTML = year;
 }
 // /profitability_animation
 
