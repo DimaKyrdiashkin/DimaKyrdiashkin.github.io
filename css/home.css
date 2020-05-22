@@ -942,6 +942,7 @@
 
 /* garbage */
 .garbage{
+    overflow-x: hidden;
     position: relative;
     background-color: #7038E4;
     clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 90%);
