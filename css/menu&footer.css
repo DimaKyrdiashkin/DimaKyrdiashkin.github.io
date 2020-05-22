@@ -573,20 +573,24 @@ header.menu_open{
 	.promoContent video{
 		min-width: 200vw;
 		min-height: 150%;
-		bottom: -200px;
+		bottom: -150px;
 	}
 	footer .slick-dots{
 		display: none !important;
 	}
 	.promoContent .apendixLogo{
 		display: block;
-		width: 70%;
+		width: 60%;
 		z-index: 3;
 		position: relative;
-		margin: 90px auto 0;
+		margin: 65px auto 0;
+	}
+	#promo_h1{
+		font-family: 'Gilroy-Regular';
+		font-size: 1.5em;
 	}
 	.promoContent_text{
-		top: 30%;
+		top: 25%;
 		left: 50%;
 		-webkit-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
@@ -618,5 +622,15 @@ header.menu_open{
 @media (width: 768px) and (height: 1024px) {
 	.apendixLogo{
 		width: 45%;
+	}
+}
+@media (width: 375px) and (height: 812px) {
+	.promoContent_text{
+		top: 20%;
+	}
+	.promoContent video{
+		min-height: 130%;
+		height: 130%;
+		bottom: -40px;
 	}
 }

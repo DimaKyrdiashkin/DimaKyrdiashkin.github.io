@@ -936,17 +936,11 @@ p.circle_yellow{
 	body{
 		font-size: 14px;
 	}
-	.first_video__mob{
-		display: block;
-	}
 	.slick-track{
 		margin-top: 20px !important;
 	}
 	section{
 		min-height: 50vh;
-	}
-	.promoContent video{
-		bottom: -100vh;
 	}
 	.promoContent_text{
 		text-align: center;
@@ -956,6 +950,15 @@ p.circle_yellow{
 	}
 }
 @media (max-width: 992px) {
+	#promo_h1{
+		font-family: 'Gilroy-Regular';
+	}
+	.first_video__mob{
+		display: block;
+	}
+	.promoContent video{
+		bottom: -50vh;
+	}
 	.calendar{
 		height: 125px;
 	}
@@ -1021,7 +1024,8 @@ p.circle_yellow{
 		font-size: 12px;
 	}
 	.promoContent video{
-		height: 100%;
+		height: 135%;
+		bottom: -7vh;
 	}
 	.promoContent_info{
 		width: 90%;
@@ -1454,6 +1458,7 @@ p.circle_yellow{
 @media (width: 1024px) and (height: 1366px){
 	.promoContent video {
 		bottom: -7vh;
+		display: block;
 	}
 	.promoContent_text{
 		top: 14%;
@@ -1469,6 +1474,9 @@ p.circle_yellow{
 	#promo_h1{
 		font-family: 'Gilroy-Regular';
 	}
+	.first_video__mob{
+		display: block;
+	}
 }
 @media (width: 768px) and (height: 1024px) {
 	.first_video{
@@ -1476,6 +1484,7 @@ p.circle_yellow{
 	}
 	.promoContent video{
 		bottom: -5vh;
+		display: block;
 	}
 	#promo_h1{
 		font-family: 'Gilroy-Regular';
