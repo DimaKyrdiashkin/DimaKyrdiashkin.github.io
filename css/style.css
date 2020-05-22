@@ -349,7 +349,7 @@ body{
 	border-radius: 3px;
 }
 .profitability_right_naw_left{
-	border-radius: 15px 0 0 15px;
+	border-radius: 4px 0 0 4px;
 }
 .profitability_right_naw_left:before{
 	-webkit-transform: translateX(-50%) translateY(170%) rotate(45deg);
@@ -362,7 +362,7 @@ body{
 	transform: translateX(-50%) translateY(-100%) rotate(135deg);
 }
 .profitability_right_naw_right{
-	border-radius: 0 15px 15px 0;
+	border-radius: 0 4px 4px 0;
 }
 .profitability_right_naw_right:before{
 	-webkit-transform: translateX(-50%) translateY(170%) rotate(135deg);
@@ -374,7 +374,7 @@ body{
 	-ms-transform: translateX(-50%) translateY(-100%) rotate(-135deg);
 	transform: translateX(-50%) translateY(-100%) rotate(-135deg);
 }
-.profitability_right_naw h3{
+.profitability_right_naw h2{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -405,7 +405,7 @@ body{
 	z-index: 19;
 	color: #FFFFFF;
 	overflow: hidden;
-	border-radius: 35px;
+	border-radius: 4px;
 }
 .profitability_right_static >div{
 	padding-top: 80px;
@@ -429,7 +429,7 @@ body{
 	background: #8C46FF;
 	-webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 30px;
+	border-radius: 4px;
 }
 .profitability_right_static_mounts li{
 	padding-left: 23px;
@@ -446,7 +446,7 @@ body{
 	background: #EBDFFF;
 	-webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 0px 35px 35px 0px;
+	border-radius: 0px 4px 4px 0px;
 	overflow: hidden;
 }
 .profitability_right_static_btc li{
@@ -464,7 +464,7 @@ body{
 	background: #CCAFFF;
 	-webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 0px 35px 35px 0px;
+	border-radius: 0px 4px 4px 0px;
 	overflow: hidden;
 }
 .profitability_right_static_eth{
@@ -475,7 +475,7 @@ body{
 	background: #F1E9FF;
 	-webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 0px 35px 35px 0px;
+	border-radius: 0px 4px 4px 0px;
 	overflow: hidden;
 }
 .profitability_right_static_btc img,

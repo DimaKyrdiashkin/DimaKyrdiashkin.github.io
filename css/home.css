@@ -712,7 +712,7 @@
     height: 28px;
 }
 .tabl_year td{
-    font-size: 4.375em;
+    font-size: 4em;
 }
 
 .tabl table{
@@ -729,13 +729,13 @@
     color: #22232D;
 }
 .tabl_bg_color td{
-    font-size: 1.125em;
+    font-size: 1em;
     position: relative;
     -webkit-transition: color .7s, background-color .7s;
     -o-transition: color .7s, background-color .7s;
     transition: color .7s, background-color .7s;
     width: 10%;
-    padding: 10px;
+    padding: 9px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     color: #353742;
@@ -767,10 +767,10 @@
 .tabl_cript td{
     border: none!important;
     border-radius: 0 7px 0 0;
-    padding: 36px 0 10px!important;
+    padding: 20px 0 10px!important;
 }
 .tabl table tr td:first-child{
-    font-size: 1.25em;
+    font-size: 1.125em;
     text-align: left;
     padding-left: 30px;
     width: 140px;
@@ -1347,7 +1347,7 @@
     font-family: 'Gilroy-SemiBold';
 }
 .say .slick-slide {
-    margin: 0 16px;
+    margin: 0 20px;
 }
 .say .slider-box {
     position: relative;
@@ -1999,6 +1999,9 @@ footer .slick-initialized .slick-slide{
         clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
         -webkit-clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);
         padding: 60px 0 0;
+    }
+    .say .slick-slide{
+        /* width: 198px !important; */
     }
     .say_slider_item{
         padding: 20px 40px;
