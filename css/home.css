@@ -736,7 +736,7 @@
     -o-transition: color .7s, background-color .7s;
     transition: color .7s, background-color .7s;
     width: 10%;
-    padding: 10px;
+    padding: 9px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     color: #353742;
@@ -768,7 +768,7 @@
 .tabl_cript td{
     border: none!important;
     border-radius: 0 7px 0 0;
-    padding: 36px 0 10px!important;
+    padding: 20px 0 10px!important;
 }
 .tabl table tr td:first-child{
     font-size: 1.25em;
