@@ -29,6 +29,10 @@
 .marker_open{
     left: 0;
 }
+
+#promo_h1{
+    line-height: 1em!important;
+}
 /* threeSlide */
 .threeSlide{
     width: 100%;
@@ -416,7 +420,7 @@
 .bill_container {
     position: absolute;
     z-index: 10;
-    width: 55%;
+    width: 60%;
     left: 200%;
     -webkit-transition: all 2s;
     -o-transition: all 2s;
@@ -425,7 +429,7 @@
     height: 100%;
 }
 .bill_container_active{
-    left: 45%;
+    left: 40%;
 }
 .bill_container_rel{
     position: relative;
@@ -584,10 +588,9 @@
     z-index: 1;
     position: absolute;
     bottom: 0;
-    right: -7vw;
-    height: 28vh;
+    height: 20vh;
+    right: -6vw;
 }
-
 #container_bill_investments .bill_saving_body_text_li:last-child{
     margin-left: 55px;
 }
@@ -957,37 +960,37 @@
 /* /advantages */
 
 
-/* garbage */
-.garbage{
+/* useful */
+.useful{
     overflow-x: hidden;
     position: relative;
     background-color: #7038E4;
     clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 90%);
     -webkit-clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 90%);
 }
-.garbage> div{
+.useful> div{
     position: relative;
 }
-.garbage_svg_1{
+.useful_svg_1{
     top: 10%;
     left: 5%
 }
-.garbage_svg_2{
+.useful_svg_2{
     bottom: 10%;
     right: 5%
 }
-.garbage_svg{
+.useful_svg{
     width:370px;
     position: absolute;
 }
-.garbage .container{
+.useful .container{
     position: relative;
     max-width: 1511px;
     width: 90%;
     margin: auto;
     max-height: 100%;
 }
-.garbage_ul{
+.useful_ul{
     width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1001,7 +1004,7 @@
     -ms-flex-pack: justify;
     justify-content: space-around;
 }
-.garbage_ul_li{
+.useful_ul_li{
     width: 45%;
     margin-bottom: 10px;
     display: -webkit-box;
@@ -1029,7 +1032,7 @@
     overflow: hidden;
     position: relative;
 }
-.garbage_ul_li_number{
+.useful_ul_li_number{
     position: absolute;
     left: 0;
     top: 0;
@@ -1038,7 +1041,7 @@
     color: #FFFFFF;
     border-radius: 0 0 4px 4px;
 }
-.garbage_ul_li_text{
+.useful_ul_li_text{
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
@@ -1048,20 +1051,20 @@
     text-align: center;
     color: #22232D;
 }
-.garbage_ul_li_text span{
+.useful_ul_li_text span{
     color: #F08200;
     font-weight: 900;
 }
-.garbage_ul_li_img{
+.useful_ul_li_img{
     background-color: rgba(0,0,0,0);
     -webkit-box-shadow: none;
     box-shadow: none;
     padding: 0;
 }
-.garbage_ul_li_footer_img{
+.useful_ul_li_footer_img{
     width: 80%;
 }
-/* /garbage */
+/* /useful */
 
 /* statistics del*/
 /*.statistics{*/
@@ -1484,18 +1487,25 @@ footer .slick-initialized .slick-slide{
 .slide {
     height: 100%;
 }
+@media (max-width: 1690px) {
+    .container_li_img{
+        bottom: -5px;
+        width: 20%;
+        right: 1vw;
+        height: auto;
+    }
+}
 
 @media (max-width: 1440px) {
-    /*.say_slider_item{*/
-    /*    min-height: 350px;*/
-    /*}*/
     /* bill */
     .project_slider{
         width: 300px!important;
     }
+
     .bill_head_pActive{
         max-width: 300px;
     }
+
     #bill_svgG{
         height: 42vh;
     }
@@ -1606,16 +1616,16 @@ footer .slick-initialized .slick-slide{
     .say{
         padding: 100px 0;
     }
-    .garbage{
+    .useful{
         padding: 100px 0;
     }
-    .garbage_ul_li_img{
+    .useful_ul_li_img{
         -webkit-box-pack: end;
         -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
         justify-content: flex-end;
     }
-    .garbage_ul_li_footer_img{
+    .useful_ul_li_footer_img{
         width: 100%;
     }
     /* /say */
@@ -1753,16 +1763,16 @@ footer .slick-initialized .slick-slide{
         width: 80px;
     }
     /* /bill*/
-    /* garbage */
-    .garbage{
+    /* useful */
+    .useful{
         padding: 150px 0;
         clip-path: polygon(0 5%, 100% 10%, 100% 95%, 0% 90%);
         -webkit-clip-path: polygon(0 5%, 100% 10%, 100% 95%, 0% 90%);
     }
-    .garbage_ul_li_img{
+    .useful_ul_li_img{
         padding: 0 !important;
     }
-    /* /garbage */
+    /* /useful */
     /*advantages*/
     .advantages_ul svg{
         height: 50px;
@@ -1845,7 +1855,7 @@ footer .slick-initialized .slick-slide{
     /* /bill */
 
     /*    footerSlider*/
-    .garbage_ul_li{
+    .useful_ul_li{
         width: 80%;
         margin: 20px 0;
         padding: 15px 45px;
@@ -2005,11 +2015,11 @@ footer .slick-initialized .slick-slide{
         text-align: center;
     }
     /* /advantages*/
-    .garbage{
+    .useful{
         clip-path: polygon(0 7%, 100% 10%, 100% 93%, 0% 90%);
         -webkit-clip-path: polygon(0 7%, 100% 10%, 100% 93%, 0% 90%);
     }
-    .garbage_ul_li{
+    .useful_ul_li{
         width: 95%;
     }
     /* say */
