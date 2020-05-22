@@ -667,9 +667,11 @@
 
 .bill .slick-track{
     padding: 10px 0px !important;
+    display: flex !important;
 }
 .bill .slick-slide{
     margin: 0 10px !important;
+    /* min-width: 120px !important; */
 }
 /* /bill */
 
@@ -1973,7 +1975,7 @@ footer .slick-initialized .slick-slide{
     }
     .project_slider{
         margin: auto;
-        width: 200px!important;
+        width: 300px!important;
     }
     /*/bill 480 */
 
@@ -2053,6 +2055,9 @@ footer .slick-initialized .slick-slide{
     .profitability_right_static_btc li,
     .profitability_right_static_eth li{
         padding-left: 60px;
+    }
+    .project_slider{
+        width: 230px !important;
     }
 }
 @media all and (max-width: 1200px) and (orientation : portrait) {
