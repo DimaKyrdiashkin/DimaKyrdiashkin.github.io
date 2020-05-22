@@ -252,7 +252,7 @@ click = false;
 
 $(".profitability_right_naw a").on("click", (e)=>{
 
-    let year = parseInt(document.querySelector(".profitability_right_naw h3").innerHTML),
+    let year = parseInt(document.querySelector(".profitability_right_naw h2").innerHTML),
         a =e.target.getAttribute("data-profitability-a");
     if(a === "left" && year !== 2018 && !click){
         year--;
