@@ -936,13 +936,18 @@ p.circle_yellow{
 	body{
 		font-size: 14px;
 	}
+	.first_video__mob{
+		display: block;
+	}
 	.slick-track{
 		margin-top: 20px !important;
 	}
 	section{
 		min-height: 50vh;
 	}
-
+	.promoContent video{
+		bottom: -100vh;
+	}
 }
 @media (max-width: 992px) {
 	.calendar{
@@ -1166,9 +1171,6 @@ p.circle_yellow{
 @media (max-width: 480px) {
 	body{
 		font-size: 12px;
-	}
-	.first_video__mob{
-		display: block;
 	}
 	.first_video{
 		display: none;

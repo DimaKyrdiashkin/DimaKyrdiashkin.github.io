@@ -31,9 +31,8 @@ h1, h2, h3, h4, h5, h6, p, span, li{
 	width: 100vw;
 	z-index: 9999;
 	overflow: hidden;
-	padding: 26px 38px;
+	padding: 13px 38px;
 	background: #f8f9ffa1;
-	height: 98px;
 }
 .desctop-menu ul li a{
 	color: #22232D;
