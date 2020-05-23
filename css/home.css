@@ -2048,6 +2048,15 @@ footer .slick-initialized .slick-slide{
     .device .container{
         top: -180px;
     }
+    .device_ul_body_btn{
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 85%;
+    }
+    .device_ul_body_btn a{
+        margin: 0;
+        width: 45%;
+    }
     /* /device */
     /*advantages*/
     .advantages_h2{
