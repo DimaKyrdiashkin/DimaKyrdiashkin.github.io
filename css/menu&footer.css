@@ -590,7 +590,7 @@ header.menu_open{
 		font-size: 1.5em;
 	}
 	.promoContent_text{
-		top: 25%;
+		top: 140px;
 		left: 50%;
 		-webkit-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
