@@ -104,7 +104,7 @@ function billOpen(id) {
     bill_span.innerText = mass.percent[id];
     bill_text.innerText = "";
     bill_head.innerText = mass.title[id];
-    if(id === "bill_AmirWallet") document.getElementById("bill_head_p").classList.add('bill_head_pActive')
+    // if(id === "bill_AmirWallet") document.getElementById("bill_head_p").classList.add('bill_head_pActive')
     $("#bill_svgG path").css({fill:"#E4E4EC"})
     $("#"+id).css({fill: mass.color[id]});
     document.getElementById(id).setAttribute('d',mass.hover[id]);
@@ -160,7 +160,7 @@ function billClose() {
     bill_body.classList.remove('bill_left_text_h2_activ')
     bill_left.classList.remove("bill_to_left");
     bill_right.classList.remove("bill_to_right");
-    document.getElementById("bill_head_p").classList.remove('bill_head_pActive')
+    // document.getElementById("bill_head_p").classList.remove('bill_head_pActive')
     bill_container.classList.remove("bill_container_active");
     for(let i of mass.id){
         const pathSgg= document.getElementById(i);
