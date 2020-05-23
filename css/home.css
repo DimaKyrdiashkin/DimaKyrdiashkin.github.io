@@ -1957,6 +1957,7 @@ footer .slick-initialized .slick-slide{
     /* device*/
     .device .container{
         width: 100%;
+        margin: 0;
         padding: 150px 5% 100px;
         background-image: url(./../img/home/devise_bg.png);
         background-repeat: repeat;
