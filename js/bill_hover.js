@@ -170,14 +170,6 @@ function billClose() {
 
 }
 
-// $('#investments_project_slider').slick({
-//     infinite: true,
-//     slidesToShow: 4,
-//     slidesToScroll: 4,
-//     prevArrow: "<img src='img/home/slider_slick_next.svg' class='prev' alt='1'>",
-//     nextArrow: "<img src='img/home/slider_slick_next.svg' class='next' alt='2'>",
-// });
-
 const li_advantages = document.querySelectorAll('#advantages_ul li');
 function wowLeftRight(mass) {
     let flag = 1;
