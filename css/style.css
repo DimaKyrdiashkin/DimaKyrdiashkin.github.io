@@ -958,7 +958,8 @@ p.circle_yellow{
 		display: block;
 	}
 	.promoContent video{
-		bottom: -60vh;
+		bottom: -50vh;
+		height: 250vh;
 	}
 	.calendar{
 		height: 125px;
@@ -1500,8 +1501,8 @@ p.circle_yellow{
 
 @media all and (max-width: 768px) and (orientation : portrait) {
 	.promoContent video{
-		height: 135%;
-		bottom: -7vh;
+		height: 200%;
+		bottom: -25vh;
 	}
 }
 @media all and (max-width: 992px) and (orientation : landscape) {
@@ -1510,8 +1511,8 @@ p.circle_yellow{
 	}
 	.promoContent video{
 		min-width: 100vw;
-		height: auto;
-		max-height: 200vh;
+		/* height: auto; */
+		/* max-height: 200vh; */
 	}
 	.calc_head{
 		margin: 30px 0 0;
