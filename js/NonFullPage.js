@@ -121,6 +121,7 @@ function fun_Full() {
         afterResponsive: function (isResponsive) {
             flag = false;
             fullpage_api.destroy('all');
+            $('.marker').delay(200).removeClass('marker_open');
             $('.fullpageId').css('transform', 'none')
         },
         afterSlideLoad: function (section, origin, destination, direction) {
