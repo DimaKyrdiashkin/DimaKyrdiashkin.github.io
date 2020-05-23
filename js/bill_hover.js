@@ -169,22 +169,11 @@ function billClose() {
     }
 
 }
-
+// advantages
 const li_advantages = document.querySelectorAll('#advantages_ul li');
-function wowLeftRight(mass) {
-    let flag = 1;
-    for(let i of mass){
+if(window.innerWidth <= 768){
+    for(let i of li_advantages){
         i.classList.add("wow");
-        if( flag %2 === 0){
-            i.classList.add('fadeInRight')
-        }
-        else{
-            ;
-            i.classList.add('fadeInLeft');
-        }
-        flag++;
     }
 }
-if(window.innerWidth <= 768){
-    wowLeftRight(li_advantages);
-}
+// /advantages
