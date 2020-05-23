@@ -1529,3 +1529,8 @@ p.circle_yellow{
 		display: none;
 	}
 }
+@media all and (max-height: 480px) and (orientation : landscape) {
+	.promoContent video{
+		height: 230%;
+	}
+}
