@@ -1869,6 +1869,9 @@ footer .slick-initialized .slick-slide{
         background-image: url(./../img/home/devise_bg2.png);
         background-repeat: no-repeat;
         background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
         background-position: center;
         background-attachment: fixed;
         position: relative;
