@@ -1896,6 +1896,10 @@ footer .slick-initialized .slick-slide{
 }
 
 @media (max-width: 768px) {
+    .footer_slider .prev, .footer_slider .next{
+        height: 45px;
+        width: 45px;
+    }
     /*advantages*/
     .advantages_ul li{
         min-width: 290px;
@@ -2007,7 +2011,7 @@ footer .slick-initialized .slick-slide{
         padding-left: 0;
     }
     .say{
-        padding: 100px 0 0;
+        padding: 0 0 0;
     }
 
     /* useful */
