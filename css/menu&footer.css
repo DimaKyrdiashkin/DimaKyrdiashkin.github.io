@@ -12,9 +12,11 @@ h1, h2, h3, h4, h5, h6, p, span, li{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	align-items: center;
 }
 .logo>svg{
 	width: 100%;
+	max-height: 52px;
 }
 /* menu */
 .desctop-menu{
@@ -45,7 +47,6 @@ h1, h2, h3, h4, h5, h6, p, span, li{
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-	height: 100%;
 	font-family: 'Gilroy-Medium';
 }
 .desctop-menu ul li{
@@ -96,6 +97,7 @@ header{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
+	align-items: center;
 	display: flex;
 	/*flex-direction: column;*/
 }
