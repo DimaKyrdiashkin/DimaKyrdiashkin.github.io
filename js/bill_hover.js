@@ -177,26 +177,22 @@ function billClose() {
 //     prevArrow: "<img src='img/home/slider_slick_next.svg' class='prev' alt='1'>",
 //     nextArrow: "<img src='img/home/slider_slick_next.svg' class='next' alt='2'>",
 // });
-const li_advantages = document.querySelectorAll('#advantages_ul li');
-let flag_li_advantages = true
 
+const li_advantages = document.querySelectorAll('#advantages_ul li');
 function wowLeftRight(mass) {
-    for(let i =0; i< mass.length;i++){
-        mass[i].classList.add("wow");
-        if( i%2 === 0){
-            mass[i].classList.add('fadeInLeft');
-            continue;
+    let flag = 1;
+    for(let i of mass){
+        i.classList.add("wow");
+        if( flag %2 === 0){
+            i.classList.add('fadeInRight')
         }
         else{
-            mass[i].classList.add('fadeInRight');
+            ;
+            i.classList.add('fadeInLeft');
         }
-
+        flag++;
     }
-    flag_li_advantages = false;
 }
-
-
-
 if(window.innerWidth <= 768){
     wowLeftRight(li_advantages);
 }
