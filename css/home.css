@@ -1667,7 +1667,7 @@ footer .slick-initialized .slick-slide{
         top: 30px;
     }
     .bill_left, .bill_right{
-        padding-top: 20px;
+        padding-top: 100px;
         height: auto;
         padding-bottom: 20px;
     }
@@ -1960,7 +1960,7 @@ footer .slick-initialized .slick-slide{
         margin: 0;
         padding: 150px 5% 100px;
         background-image: url(./../img/home/devise_bg.png);
-        background-repeat: repeat;
+        background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         position: relative;
