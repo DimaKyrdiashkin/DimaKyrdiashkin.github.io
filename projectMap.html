@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project Map</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/map.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="side_bar close">
+			<div class="menu_button">
+				<span class="span_top"></span>
+				<span class="span_mid"></span>
+				<span class="span_bot"></span>
+			</div>
+			<div class="menu_h1">
+				<p>menu</p>
+			</div>
+			<div class="menu">
+				<h1>Welcome to Amir Group</h1>
+				<ul>
+					<li>Финансы
+						<ul class="subM subMenu1">
+							<li>Amir Capital</li>
+							<li>Amir Wallet</li>
+							<li>Amir Exchange</li>
+							<li>ACSI.fund</li>
+							<li>ACREI - ARX.company</li>
+							<li>FASTR</li>
+							<li>TAIR Motors</li>
+							<li>Sollar - blockchain</li>
+							<li>ACAI</li>
+						</ul>
+					</li>
+					<li>Сообщество, развитие и обучение
+						<ul class="subM subMenu2">
+							<li>Sunny Day</li>
+							<li>ГИФ</li>
+							<li>Sunny Club</li>
+							<li>Сообщество Amir Partners</li>
+							<li>Amir Academy</li>
+							<li>Amir Finance</li>
+							<li>SunnyMan</li>
+							<li>Sollar Desk </li>
+							<li>Amir Life</li>
+							<li>Amir Publishing YourAmir Publishing</li>
+							<li>Sunny Book</li>
+						</ul>
+					</li>
+					<li>Товары и услуги
+						<ul class="subM subMenu3">
+							<li>Sollar Gifts</li>
+							<li>Криптоинвестор</li>
+							<li>Amir Subscribe</li>
+							<li>AmirCell</li>
+							<li>Sollar</li>
+						</ul>
+					</li>
+					<li>Управление
+						<ul class="subM subMenu4">
+							<li>Amir Pro</li>
+						</ul>
+					</li>
+				</ul>		
+			</div>
+		</div>
+		<div class="city">
+			<div class="point p1">
+				<div class="front-side">
+					<p>1</p>
+				</div>
+				<div class="back-side">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</div>
+			<div class="point p2">
+				<div class="front-side">
+					<p>2</p>
+				</div>
+				<div class="back-side">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</div>
+			<div class="point p3">
+				<div class="front-side">
+					<p>3</p>
+				</div>
+				<div class="back-side">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</div>
+			<div class="point p4">
+				<div class="front-side">
+					<p>4</p>
+				</div>
+				<div class="back-side">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</div>
+			<div class="point p5">
+				<div class="front-side">
+					<p>5</p>
+				</div>
+				<div class="back-side">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</div>
+		</div>
+		<div class="content_p1">
+			<div class="content_p1-left">
+				<div class="content_p1-left__head">
+					<div class="part">
+						<p>1</p>
+						<span class="part_line"></span>
+						<p>5</p>
+					</div>
+					<div class="next_part"></div>
+					<div class="close_cross">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="content_p1-right">
+				<p class="close">close</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var mousePosition;
+		var offset = [0,0];
+		var div;
+		var isDown = false;
+		let scaleVal2 = 1;
+		let scaleVal = 0;
+		let sityW = $(".city").width()/200;
+		let sityH = $(".city").height()/200;
+
+		div = document.querySelector(".city");
+
+		div.addEventListener('mousedown', function(e) {
+			div.style.transition = "0s";
+			div.style.cursor = "grabbing";
+			isDown = true;
+    		offset = [
+				div.offsetLeft - e.clientX,
+				div.offsetTop - e.clientY
+			];
+		}, true);
+
+		document.addEventListener('mousemove', function(event) {
+			event.preventDefault();
+			if (isDown) {
+				mousePosition = {
+
+					x : event.clientX,
+					y : event.clientY
+
+				};
+				div.style.left = (mousePosition.x + offset[0]) + 'px';
+				div.style.top  = (mousePosition.y + offset[1]) + 'px';
+			}
+		}, true);	
+
+		document.addEventListener('mouseup', function() {
+		    isDown = false;
+		    div.style.transition = "1s";
+		    if(document.querySelector(".city").offsetTop > sityH*parseInt(scaleVal*100)){
+		    	div.style.top = sityH*parseInt(scaleVal*100)+"px";
+		    };
+		    if (document.querySelector(".city").offsetLeft > sityW*parseInt(scaleVal*100)+64){
+		    	div.style.left = sityW*parseInt(scaleVal*100)+64+"px";
+		    };
+		    if(document.querySelector(".city").offsetTop < (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)){
+		    	div.style.top = (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)+"px";
+		    };
+		    if (document.querySelector(".city").offsetLeft < (-2800+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)) {
+		    	div.style.left = (-2800+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)+"px";
+		    };
+		    div.style.cursor = "grab";
+		}, true);
+		
+		$(window).bind('mousewheel', function(event) {
+    		if (event.originalEvent.wheelDelta >= 0) {
+    			if (scaleVal2 <= 2) {
+    				scaleVal+=0.01;
+	    			scaleVal2+=0.01;
+	        		$(".city").css('transform', 'scale('+scaleVal2+')');
+    			}else{
+    				window.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
+    			};
+		    } else{
+		    	if (scaleVal2 >= 1.01) {
+		    		scaleVal-=0.01;
+	    			scaleVal2-=0.01;
+	        		$(".city").css('transform', 'scale('+scaleVal2+')');
+	        		if(document.querySelector(".city").offsetTop > sityH*parseInt(scaleVal*100)){
+				    	div.style.top = sityH*parseInt(scaleVal*100)+"px";
+				    };
+				    if (document.querySelector(".city").offsetLeft > sityW*parseInt(scaleVal*100)+64){
+				    	div.style.left = sityW*parseInt(scaleVal*100)+64+"px";
+				    };
+				    if(document.querySelector(".city").offsetTop < (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)){
+				    	div.style.top = (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)+"px";
+				    };
+				    if (document.querySelector(".city").offsetLeft < (-2800+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)) {
+				    	div.style.left = (-2800+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)+"px";
+				    };
+    			}else{
+    				window.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
+    				scaleVal = 0;
+    				if(document.querySelector(".city").offsetTop > sityH*parseInt(scaleVal*100)){
+				    	div.style.top = sityH*parseInt(scaleVal*100)+"px";
+				    };
+				    if (document.querySelector(".city").offsetLeft > sityW*parseInt(scaleVal*100)+64){
+				    	div.style.left = sityW*parseInt(scaleVal*100)+64+"px";
+				    };
+				    if(document.querySelector(".city").offsetTop < (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)){
+				    	div.style.top = (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)+"px";
+				    };
+				    if (document.querySelector(".city").offsetLeft < (-2800+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)) {
+				    	div.style.left = (-2800+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)+"px";
+				    };
+    			};
+    		};
+		});
+		$(".menu_button").on("click", function(){
+			if($(".menu").hasClass("opacity")){
+				$(".side_bar").delay(1000).toggleClass("menu_open", 1000);
+				$(".menu").delay(500).toggleClass("opacity", 500);
+				$("span").css("margin", "3px");
+				$(".span_bot").css("transform", "rotate(0deg)");
+				$(".span_top").css("transform", "rotate(0deg)");
+				$(".span_mid").css("opacity", 1);
+			}else{
+				$(".side_bar").toggleClass("menu_open");
+				$("span").css("margin", "2px");
+				$(".span_bot").css("transform", "rotate(32deg)");
+				$(".span_top").css("transform", "rotate(-32deg)");
+				$(".span_mid").css("opacity", 0);
+				$(".menu").delay(1000).toggleClass("opacity", 1200);
+			};
+		});
+		$('.menu ul>li').on('click', function(event){
+			const menuUlActive = $('.menuUlActive')[0];
+			const li = $(event.target).children('ul')[0]; 
+			
+			$('.subM').removeClass('subMenu1_open subMenu2_open subMenu3_open subMenu4_open menuUlActive');
+			let num = $(event.target).children('ul').attr('class')[12];
+			if(li != menuUlActive){			
+				if(num == 1){
+					$(event.target).children('ul').toggleClass('subMenu1_open menuUlActive');
+				}else if(num == 2){
+					$(event.target).children('ul').toggleClass('subMenu2_open menuUlActive');
+				}else if(num == 3){
+					$(event.target).children('ul').toggleClass('subMenu3_open menuUlActive');
+				}else if(num == 4){
+					$(event.target).children('ul').toggleClass('subMenu4_open menuUlActive');
+				};
+			};
+		});
+		$(".point, p.close").on("click", function(){
+			$(".content_p1-left").toggleClass("open_content-left", 1000);
+			$(".content_p1-right").toggleClass("open_content-right", 1000);
+		});
+	</script>
+</body>
+</html>
