@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6, p, span, li{
 	-ms-flex-align: center;
 	align-items: center;
 	font-family: 'Gilroy-Medium';
+	cursor: pointer;
 }
 .desctop-menu ul li{
 	margin-left: 30px;
