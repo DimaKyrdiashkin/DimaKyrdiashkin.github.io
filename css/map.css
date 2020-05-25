@@ -311,6 +311,7 @@ ul.subM{
 	padding: 0 2%;
 }
 .content-left__content{
+	overflow-y: scroll;
 	padding: 25vh 5% 5%;
 }
 .content-left__content .hr{
@@ -322,6 +323,9 @@ ul.subM{
 }
 .content-left__content h2{
 	color: #8C46FF;
+}
+.content-left__content_textStart{
+	margin-top: 50vh;
 }
 .guide{
 	display: flex;
