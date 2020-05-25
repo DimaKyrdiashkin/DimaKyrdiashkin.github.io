@@ -96,6 +96,6 @@ $(window).bind('mousewheel', function(event) {
 });
 
 $(".point, svg.close").on("click", function(){
-    $(".content_p1-left").toggleClass("open_content-left", 1000);
-    $(".content_p1-right").toggleClass("open_content-right", 1000);
+    $(".content-left").toggleClass("open_content-left", 1000);
+    $(".content-right").toggleClass("open_content-right", 1000);
 });

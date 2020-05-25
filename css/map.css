@@ -242,14 +242,14 @@ ul.subM{
     top: -60px;
     left: 25px;
     padding: 10px;
-    background: #8f3737;
+    background: #8C46FF;
     border-radius: 10px 10px 10px 0;
     transition: .5s;
 }
 .back-side p{
 	color: #fff;
 }
-.content_p1-left{
+.content-left{
 	position: fixed;
 	width: calc(60% - 64px);
 	left: -60%;
@@ -259,7 +259,7 @@ ul.subM{
 	z-index: 1;
 	background: #e6e6e6
 }
-.content_p1-right{
+.content-right{
 	position: fixed;
 	width: 40%;
 	right: -40%;
@@ -273,7 +273,7 @@ ul.subM{
 .open_content-right{
 	right: 0;
 }
-.content_p1-left__head{
+.content-left__head{
 	height: 64px;
 	width: 100%;
 	background: #eaeaebe6;
@@ -281,6 +281,21 @@ ul.subM{
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 2%;
+}
+.content-left__content{
+	background: #8C46FF;
+	height: 2px;
+	width: 20%;
+}
+.content-left__content h2{
+	color: #8C46FF;
+}
+.guide svg{
+	height: 40px;
+	width: 40px;
+	animation-name: doubleArrowVertical;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
 }
 .next_part{
 	display: flex;
@@ -291,7 +306,7 @@ ul.subM{
 .next_part svg{
 	height: 40px;
 	width: 40px;
-	animation-name: doubleArrow;
+	animation-name: doubleArrowHorizont;
 	animation-duration: 2.5s;
 	animation-iteration-count: infinite;
 }
@@ -300,7 +315,7 @@ ul.subM{
 	height: 40px;
 	cursor: pointer;
 }
-@keyframes doubleArrow {
+@keyframes doubleArrowHorizont {
 	0%{
 		transform: translateX(0);
 	}
@@ -309,5 +324,16 @@ ul.subM{
 	}
 	100%{
 		transform: translateX(0);
+	}
+}
+@keyframes doubleArrowVertical {
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(10px);
+	}
+	100%{
+		transform: translateY(0);
 	}
 }
