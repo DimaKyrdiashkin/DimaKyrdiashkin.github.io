@@ -200,8 +200,8 @@ ul.subM{
 	left: 115px;
 }
 .p20{
-	top: 1200px;
-	left: 2650px;
+	top: 1230px;
+	left: 2600px;
 }
 .p23{
 	top: 1700px;
@@ -221,6 +221,34 @@ ul.subM{
 }
 
 /* /community */
+/* productsAndService */
+.p5{
+	top: 870px;
+	left: 1050px;
+}
+.p11{
+	top: 770px;
+	left: 200px;
+}
+.p17{
+	top: 1600px;
+	left: 2350px;
+}
+.p18{
+	top: 250px;
+	left: 2050px;
+}
+.p210{
+	top: 800px;
+	left: 1240px;
+}
+/* /productsAndService */
+/* control */
+.p15{
+	top: 1300px;
+	left: 2300px;
+}
+/* /control */
 
 .front-side{
 	display: flex;
