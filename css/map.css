@@ -71,7 +71,6 @@ body{
 .menu h1{
 	font-family: 'Teko', sans-serif;
 	text-align: center;
-	font-size: 38px;
 	user-select: none;
 }
 .menu ul{
@@ -162,7 +161,6 @@ ul.subM{
 }
 .front-side p{
 	text-align: center;
-	font-size: 24px;
 }
 .front-side:hover + .back-side{
 	opacity: 1;

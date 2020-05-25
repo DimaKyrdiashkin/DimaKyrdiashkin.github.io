@@ -78,10 +78,6 @@
 	font-family: Gilroy-UltraLightItalic;
 	src: url(../fonts/Gilroy-UltraLightItalic.ttf);
 }
-canvas{
-	display: block;
-	z-index: 9999999999;
-}
 *{
 	margin: 0;
 	padding: 0;
@@ -125,7 +121,8 @@ p{
 	line-height: 1.5em;
 }
 ul{
-	list-style-type:none ;
+	list-style-type: none;
+	user-select: none;
 }
 nobr{
 	font-family: "Gilroy-Medium";
