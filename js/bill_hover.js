@@ -1,6 +1,6 @@
+"user script"
 
-
-
+// bill
 const mass={
     id:['bill_saving','bill_bright','bill_pam','bill_AmirWallet','bill_investments'],
     hover:{
@@ -77,8 +77,6 @@ $('.bill_open_p').on('click',(e)=>{
 document.querySelector('#bill_close').addEventListener('click',(e)=>{
     billClose();
 })
-
-
 function hov_svg(idSvg) {
     bill_body.classList.add('bill_left_text_h2_activ')
     document.getElementById(idSvg).setAttribute('d',mass.hover[idSvg]);
@@ -90,13 +88,7 @@ function normar_svg(idSvg) {
     bill_body.classList.remove('bill_left_text_h2_activ')
     document.getElementById(idSvg).setAttribute('d',mass.normal[idSvg]);
 }
-
-
-
-
-const contendBody = $(".contendBody");
 let flad_slider =true;
-
 function billOpen(id) {
     $('.contendBodyActive').removeClass('contendBodyActive')
     bill_body.classList.add('bill_left_text_h2_activ')
@@ -104,7 +96,6 @@ function billOpen(id) {
     bill_span.innerText = mass.percent[id];
     bill_text.innerText = "";
     bill_head.innerText = mass.title[id];
-    // if(id === "bill_AmirWallet") document.getElementById("bill_head_p").classList.add('bill_head_pActive')
     $("#bill_svgG path").css({fill:"#E4E4EC"})
     $("#"+id).css({fill: mass.color[id]});
     document.getElementById(id).setAttribute('d',mass.hover[id]);
@@ -156,11 +147,10 @@ function billOpen(id) {
     }
 }
 function billClose() {
-    bill_head.innerText = 'Инвестиционные счета';
+    bill_head.innerText = text_defolt_h2;
     bill_body.classList.remove('bill_left_text_h2_activ')
     bill_left.classList.remove("bill_to_left");
     bill_right.classList.remove("bill_to_right");
-    // document.getElementById("bill_head_p").classList.remove('bill_head_pActive')
     bill_container.classList.remove("bill_container_active");
     for(let i of mass.id){
         const pathSgg= document.getElementById(i);
@@ -169,6 +159,7 @@ function billClose() {
     }
 
 }
+// /bill
 // advantages
 const li_advantages = document.querySelectorAll('#advantages_ul li');
 if(window.innerWidth <= 768){
