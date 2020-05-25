@@ -277,4 +277,37 @@ ul.subM{
 	height: 64px;
 	width: 100%;
 	background: #eaeaebe6;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2%;
+}
+.next_part{
+	display: flex;
+	align-items: center;
+	user-select: none;
+	cursor: pointer;
+}
+.next_part svg{
+	height: 40px;
+	width: 40px;
+	animation-name: doubleArrow;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+}
+.close_cross{
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+@keyframes doubleArrow {
+	0%{
+		transform: translateX(0);
+	}
+	50%{
+		transform: translateX(10px);
+	}
+	100%{
+		transform: translateX(0);
+	}
 }
