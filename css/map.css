@@ -311,12 +311,21 @@ ul.subM{
 	padding: 0 2%;
 }
 .content-left__content{
+	padding: 25vh 5% 5%;
+}
+.content-left__content .hr{
 	background: #8C46FF;
+	margin: 40px 0;
 	height: 2px;
-	width: 20%;
+	display: flex;
+	width: 40%;
 }
 .content-left__content h2{
 	color: #8C46FF;
+}
+.guide{
+	display: flex;
+	align-items: center;
 }
 .guide svg{
 	height: 40px;
@@ -356,12 +365,12 @@ ul.subM{
 }
 @keyframes doubleArrowVertical {
 	0%{
-		transform: translateY(0);
+		transform: translateY(-5px);
 	}
 	50%{
-		transform: translateY(10px);
+		transform: translateY(5px);
 	}
 	100%{
-		transform: translateY(0);
+		transform: translateY(-5px);
 	}
 }
