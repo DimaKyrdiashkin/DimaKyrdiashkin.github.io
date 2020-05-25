@@ -116,7 +116,7 @@ ul.subM{
 	top: 0;
 	left: 50px;
 	cursor: grab;
-	width: 2800px;
+	width: 3000px;
 	height: 1900px;
 	background: url(../img/map/map.webp);
 	background-size: cover;
@@ -186,7 +186,7 @@ ul.subM{
 .back-side{
 	opacity: 0;
 	position: absolute;
-	width: 200px;
+	width: fit-content;
     top: -60px;
     left: 25px;
     padding: 10px;
@@ -225,8 +225,4 @@ ul.subM{
 	height: 64px;
 	width: 100%;
 	background: #eaeaebe6;
-}
-.part{
-	width: 64px;
-	height: 64px;
 }

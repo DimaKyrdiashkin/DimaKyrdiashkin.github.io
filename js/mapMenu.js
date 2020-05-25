@@ -1,5 +1,6 @@
 $(".menu_button").on("click", () => {
     if($(".menu").hasClass("opacity")){
+        $('.subM').removeClass('subMenu1_open subMenu2_open subMenu3_open subMenu4_open menuUlActive');
         $(".side_bar").delay(1000).toggleClass("menu_open", 1000);
         $(".menu").delay(500).toggleClass("opacity", 500);
         $("span").css("margin", "3px");

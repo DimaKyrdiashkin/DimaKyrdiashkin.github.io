@@ -44,8 +44,8 @@ document.addEventListener('mouseup', function() {
     if(document.querySelector(".city").offsetTop < (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)){
         div.style.top = (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)+"px";
     };
-    if (document.querySelector(".city").offsetLeft < (-2800+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)) {
-        div.style.left = (-2800+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)+"px";
+    if (document.querySelector(".city").offsetLeft < (-3000+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)) {
+        div.style.left = (-3000+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)+"px";
     };
     div.style.cursor = "grab";
 }, true);
