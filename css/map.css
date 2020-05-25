@@ -290,6 +290,23 @@ ul.subM{
 .content-left__content h2{
 	color: #8C46FF;
 }
+.content-right_top{
+	height: 70%;
+	width: 100%;
+}
+.content-right_bottom{
+	background: #3D3D50;
+	height: 30%;
+	width: 100%;
+	color: #fff;
+	padding: 0 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.content-right_top img{
+	height: 100%;
+}
 .guide svg{
 	height: 40px;
 	width: 40px;
