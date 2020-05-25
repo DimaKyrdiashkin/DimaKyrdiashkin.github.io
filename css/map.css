@@ -135,41 +135,93 @@ ul.subM{
 /* finance */
 .p1{
 	top: 1100px;
-	left: 1800px;
+	left: 1900px;
 }
 .p2{
-	left: 1520px;
 	top: 1055px;
+	left: 1620px;
 }
 .p3{
-	left: 1160px;
 	top: 1080px;
+	left: 1260px;
 }
 .p4{
-	left: 1060px;
 	top: 1300px;
+	left: 1160px;
 }
 .p6{
-	left: 1690px;
 	top: 890px;
+	left: 1790px;
 }
 .p16{
 	top: 1100px;
-	left: 2250px;
+	left: 2350px;
 }
 .p19{
 	top: 750px;
-	left: 630px;
+	left: 730px;
 }
 .p21{
 	top: 1020px;
-	left: 670px;
+	left: 770px;
 }
 .p22{
 	top: 550px;
-	left: 1750px;
+	left: 1850px;
 }
 /* /finance */
+/* community */
+.p7{
+	top: 830px;
+	left: 1880px;
+}
+.p8{
+	top: 600px;
+	left: 1040px;
+}
+.p9{
+	top: 1470px;
+	left: 460px;
+}
+.p10{
+	top: 890px;
+	left: 199px;
+}
+.p12{
+	top: 1550px;
+	left: 600px;
+}
+.p13{
+	top: 1250px;
+	left: 180px;
+}
+.p14{
+	top: 1600px;
+	left: 115px;
+}
+.p20{
+	top: 1200px;
+	left: 2650px;
+}
+.p23{
+	top: 1700px;
+	left: 500px;
+}
+.p24{
+	top: 1310px;
+	left: 370px;
+}
+.p25{
+	top: 850px;
+	left: 2350px;
+}
+.p26{
+	top: 750px;
+	left: 2280px;
+}
+
+/* /community */
+
 .front-side{
 	display: flex;
 	justify-content: center;
