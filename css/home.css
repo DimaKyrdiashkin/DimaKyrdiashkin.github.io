@@ -1048,7 +1048,6 @@
         align-self: center;
     font-size: 1.125em;
     line-height: 28px;
-
     text-align: center;
     color: #22232D;
 }
@@ -1066,85 +1065,7 @@
     width: 80%;
 }
 /* /useful */
-
-/* statistics del*/
-/*.statistics{*/
-/*    width: 100%;*/
-/*    background-color: #7038E4;*/
-/*    min-height: 375px;*/
-/*    padding: 25px 0 43px;*/
-/*}*/
-/*.statistics .container{*/
-/*    max-width: 1512px;*/
-/*    padding: 0 5%;*/
-/*    margin: 0 auto;*/
-/*    background: rgb(84, 42, 200);*/
-/*}*/
-/*.statistics_h2{*/
-/*    font-weight: 600;*/
-/*    color: #F8F8FB;*/
-/*}*/
-/*.statistics_p{*/
-/*    font-weight: 600;*/
-/*    color: #F1E9FF;*/
-/*    margin-top: 17px;*/
-/*}*/
-/*.statistics_ul{*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*    justify-content: space-around;*/
-/*    padding-bottom: 60px;*/
-/*}*/
-/*.statistics_ul li{*/
-/*    width: 221.33px;*/
-/*    height: 221.33px;*/
-/*    position: relative;*/
-
-/*}*/
-/*.statistics_ul svg{*/
-/*    width: 100%;*/
-/*    position: relative;*/
-/*    right: 0;*/
-/*    top: 0;*/
-/*}*/
-
-/*.statistics_ul p{*/
-/*    position: absolute;*/
-/*    font-family: Gilroy,sans-serif;*/
-/*    font-weight: 500;*/
-/*    font-size: 1em;*/
-/*    line-height: 28px;*/
-/*    color: #fff;*/
-/*}*/
-/*.statistics_ul span{*/
-/*    font-family: 'Gilroy-Bold';*/
-/*    font-size: 4em;*/
-/*    line-height: 97px;*/
-/*    text-align: right;*/
-/*    color: #F1E9FF;*/
-/*}*/
-/*.statistics_ul_textCenter{*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translateY(-50%) translateX(-50%);*/
-/*}*/
-/*.statistics_ul_textFooter{*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    left: 50%;*/
-/*    transform: translateX(-50%);*/
-/*    width: fit-content;*/
-/*    color: #fff;*/
-/*}*/
-/* /statistics*/
-
 /* device */
-.device{
-
-}
-
 .device .container{
     max-width: 1511px;
     width: 90%;
@@ -1625,10 +1546,6 @@ footer .slick-initialized .slick-slide{
         width: 100%;
     }
     /* /say */
-    /*.statistics{*/
-    /*    clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);*/
-    /*    -webkit-clip-path: polygon(0 10%, 100% 15%, 100% 100%, 0% 95%);*/
-    /*}*/
 }
 
 @media (max-width: 992px) {

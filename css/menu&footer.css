@@ -352,7 +352,7 @@ header.menu_open{
 	cursor: pointer;
 }
 #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{
-	background: url(../img/index/active.png) !important;
+	background: url(../img/home/active.png) !important;
 	background-size: cover !important;
 	background-position: center !important;
 	width: 26px !important;
