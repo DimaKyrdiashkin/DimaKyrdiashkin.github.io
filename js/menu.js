@@ -28,7 +28,3 @@ $(".menu ul li").on('click', function(event){
 $('document').on('scroll', function(){
     alert(1)
 });
-
-setInterval(() => {
-    if(document.querySelector("video").pause){} document.querySelector("video").play();
-}, 1);

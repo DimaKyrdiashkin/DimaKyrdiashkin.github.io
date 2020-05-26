@@ -1,3 +1,7 @@
+setInterval(() => {
+    if(document.querySelector("video").pause){} document.querySelector("video").play();
+}, 1);
+
 var myFullpage;
 let flag = true;
 
