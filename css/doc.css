@@ -23,14 +23,16 @@
 .doc_li .container{
     max-width: 1400px;
     margin: auto;
+    width: 100%;
+    padding: 0 5%;
 }
 .doc_ul{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .doc_ul_item{
-    margin: 0 50px 50px 0;
-    min-width: 317px;
+    min-width: 30px;
     width: 30%;
     margin-bottom: 30px;
 }
@@ -39,7 +41,8 @@
 }
 .doc_ul_item_a{
     position: relative;
-    height: 320px;
+    width: 100%;
+    height: 300px;
     background: #FFFFFF;
     box-shadow: 0 4px 15px #CBD2DD,
                 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -113,3 +116,49 @@
     width: 100%;
 }
 /* *bottom */
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1200px) {
+    .doc_ul{
+        justify-content: space-around;
+    }
+    .doc_ul_item_svg{
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .promoContent{
+        height: auto;
+        min-height: auto;
+        margin-bottom: 100px;
+    }
+    .promoContent .container{
+        height: auto;
+    }
+    .promoContent .container .img{
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .bottom{
+        flex-direction: column-reverse;
+    }
+    .bottom_right{
+        width: 50%;
+        margin: auto;
+    }
+}
+@media (max-width: 480px) {
+    .bottom_right{
+        width: 90%;
+        margin: auto;
+
+    }
+    .doc_ul_item{
+        min-width: 250px;
+    }
+}
+@media all and (max-width: 1200px) and (orientation : portrait) {
+
+}
