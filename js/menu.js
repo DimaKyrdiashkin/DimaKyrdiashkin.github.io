@@ -1,4 +1,7 @@
 //menu
+$('.mainSubmenu').on('click', function(){
+    $('.mainSubmenu ul').toggleClass('mainSubmenu_open');
+});
 let click = false;
 $(".menu_button").on("click", function(even){
     console.log();
