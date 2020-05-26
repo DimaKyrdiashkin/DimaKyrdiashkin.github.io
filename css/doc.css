@@ -52,7 +52,12 @@
 }
 .doc_ul_item_a:hover{
     background-color: #6231D6;
+
 }
+.doc_ul_item_a:hover .item_svg path{
+    fill: #FFFFFF;
+}
+
 .item_svg{
     margin-bottom: 50px;
 }
@@ -61,18 +66,30 @@
 }
 
 .doc_ul_item_a p{
+    text-align: center;
     font-family: "Gilroy-Light";
     font-weight: 500;
     font-size: 1em;
     line-height: 24px;
+    transition: all .7s;
     color: #3D3D50;
+}
+.doc_ul_item_a:hover p{
+    color: #FFFFFF;
 }
 .item_footer{
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -4px;
     transform: translateX(-50%);
 
+}
+.doc_ul_item_svg{
+    background: none;
+    box-shadow: none;
+}
+.doc_ul_item_svg svg{
+    width: 100%;
 }
 /* /doc*/
 /* bottom */
