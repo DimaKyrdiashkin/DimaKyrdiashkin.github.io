@@ -80,7 +80,7 @@
 .item_footer{
     position: absolute;
     left: 50%;
-    bottom: -4px;
+    bottom: 0;
     transform: translateX(-50%);
 
 }
