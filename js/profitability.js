@@ -33,20 +33,7 @@ const monthTabl = {
 
 const profitability ={
     y2018:{
-        btc:{
-            January : 0,
-            February : 0,
-            March  : 0,
-            April : 6.58,
-            May : 8.37,
-            June : 4.65,
-            July: 2.67,
-            August : 5.35,
-            September : 5.15,
-            October : 5.73,
-            November : 3.74,
-            December : 3,
-        },
+
         usdt:{
             January : 0,
             February : 0,
@@ -60,6 +47,20 @@ const profitability ={
             October : 7.13,
             November : 3.78,
             December : 3.41,
+        },
+        btc:{
+            January : 0,
+            February : 0,
+            March  : 0,
+            April : 6.58,
+            May : 8.37,
+            June : 4.65,
+            July: 2.67,
+            August : 5.35,
+            September : 5.15,
+            October : 5.73,
+            November : 3.74,
+            December : 3,
         },
         etc:{
             January : 0,
@@ -77,20 +78,6 @@ const profitability ={
         }
     },
     y2019:{
-        btc:{
-            January : 2.86,
-            February : 1.99,
-            March  : 2.36,
-            April : 6.58,
-            May : 8.37,
-            June : 4.65,
-            July: 2.67,
-            August : 5.35,
-            September : 5.15,
-            October : 5.73,
-            November : 3.74,
-            December : 3,
-        },
         usdt:{
             January : 3.65,
             February : 3.01,
@@ -105,8 +92,8 @@ const profitability ={
             November : 3.78,
             December : 3.41,
         },
-        etc:{
-            January : 0,
+        btc:{
+            January : 2.86,
             February : 1.99,
             March  : 2.36,
             April : 6.58,
@@ -118,13 +105,29 @@ const profitability ={
             October : 5.73,
             November : 3.74,
             December : 3,
-        }
+        },
+        etc:{
+            January : 5.17,
+            February : 4.2,
+            March  : 4.3,
+            April : 7.69,
+            May : 11.44,
+            June : 4.48,
+            July: 2.56,
+            August : 6.2,
+            September : 9.05,
+            October : 6.48,
+            November : 5.48,
+            December : 2.75,
+        },
+
     },
     y2020:{
-        btc:{
-            January : 5.25,
-            February : 2.6,
-            March  : 4.85,
+
+        usdt:{
+            January : 5.17,
+            February : 6.13,
+            March  : 6.75,
             April : 0,
             May : 0,
             June : 0,
@@ -135,10 +138,10 @@ const profitability ={
             November : 0,
             December : 0,
         },
-        usdt:{
-            January : 5.17,
-            February : 6.13,
-            March  : 6.75,
+        btc:{
+            January : 5.25,
+            February : 2.6,
+            March  : 4.85,
             April : 0,
             May : 0,
             June : 0,
