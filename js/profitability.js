@@ -33,7 +33,6 @@ const monthTabl = {
 
 const profitability ={
     y2018:{
-
         usdt:{
             January : 0,
             February : 0,
@@ -120,16 +119,14 @@ const profitability ={
             November : 5.48,
             December : 2.75,
         },
-
     },
     y2020:{
-
         usdt:{
             January : 5.17,
             February : 6.13,
             March  : 6.75,
-            April : 0,
-            May : 0,
+            April : 4.47,
+            May : 7.81,
             June : 0,
             July: 0,
             August : 0,
@@ -142,8 +139,8 @@ const profitability ={
             January : 5.25,
             February : 2.6,
             March  : 4.85,
-            April : 0,
-            May : 0,
+            April : 3.51,
+            May : 3.3,
             June : 0,
             July: 0,
             August : 0,
@@ -156,8 +153,8 @@ const profitability ={
             January : 7.25,
             February : 4.27,
             March  : 4.1,
-            April : 0,
-            May : 0,
+            April : 5.19,
+            May : 2.96,
             June : 0,
             July: 0,
             August : 0,
