@@ -1,15 +1,17 @@
-var mousePosition;
-var offset = [0,0];
-var div;
-var isDown = false;
-let scaleVal2 = 1;
-let scaleVal = 0;
-let sityW = $(".city").width()/200;
-let sityH = $(".city").height()/200;
+let mousePosition,
+    offset = [0,0],
+    isDown = false,
+    scaleVal2 = 1,
+    scaleVal = 0,
+    sityW = $(".city").width()/200,
+    sityH = $(".city").height()/200,
+    div = document.querySelector(".city"),
+    widthImg = -3000,
+    heightImg = -1898;
 
-div = document.querySelector(".city");
+let city = document.querySelector(".city");
 
-div.addEventListener('mousedown', function(e) {
+div.addEventListener('mousedown', (e) =>{
     div.style.transition = "0s";
     div.style.cursor = "grabbing";
     isDown = true;
@@ -19,12 +21,12 @@ div.addEventListener('mousedown', function(e) {
     ];
 }, true);
 
-document.addEventListener('mousemove', function(event) {
-    event.preventDefault();
+document.addEventListener('mousemove', (e) =>{
+    e.preventDefault();
     if (isDown) {
         mousePosition = {
-            x : event.clientX,
-            y : event.clientY
+            x : e.clientX,
+            y : e.clientY
 
         };
         div.style.left = (mousePosition.x + offset[0]) + 'px';
@@ -32,30 +34,30 @@ document.addEventListener('mousemove', function(event) {
     }
 }, true);
 
-document.addEventListener('mouseup', function() {
+document.addEventListener('mouseup', ()=> {
     isDown = false;
     div.style.transition = "1s";
-    if(document.querySelector(".city").offsetTop > sityH*parseInt(scaleVal*100)){
+    if(city.offsetTop > sityH*parseInt(scaleVal*100)){
         div.style.top = sityH*parseInt(scaleVal*100)+"px";
-    };
-    if (document.querySelector(".city").offsetLeft > sityW*parseInt(scaleVal*100)+64){
+    }
+    if (city.offsetLeft > sityW*parseInt(scaleVal*100)+64){
         div.style.left = sityW*parseInt(scaleVal*100)+64+"px";
+    }
+    if(city.offsetTop < (heightImg+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)){
+        div.style.top = (heightImg+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)+"px";
     };
-    if(document.querySelector(".city").offsetTop < (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)){
-        div.style.top = (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)+"px";
-    };
-    if (document.querySelector(".city").offsetLeft < (-3000+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)) {
-        div.style.left = (-3000+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)+"px";
+    if(city.offsetLeft < (widthImg+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)) {
+        div.style.left = (widthImg+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)+"px";
     };
     div.style.cursor = "grab";
 }, true);
 
-$(window).bind('mousewheel', function(event) {
-    if (event.originalEvent.wheelDelta >= 0) {
+$(window).bind('mousewheel', (e) => {
+    if (e.originalEvent.wheelDelta >= 0) {
         if (scaleVal2 <= 2) {
-            scaleVal+=0.01;
-            scaleVal2+=0.01;
-            $(".city").css('transform', 'scale('+scaleVal2+')');
+            scaleVal += 0.01;
+            scaleVal2 += 0.01;
+            city.style.transform = `scale(${scaleVal2})`
         }else{
             window.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
         };
@@ -63,39 +65,39 @@ $(window).bind('mousewheel', function(event) {
         if (scaleVal2 >= 1.01) {
             scaleVal-=0.01;
             scaleVal2-=0.01;
-            $(".city").css('transform', 'scale('+scaleVal2+')');
-            if(document.querySelector(".city").offsetTop > sityH*parseInt(scaleVal*100)){
+            city.style.transform = `scale(${scaleVal2})`
+            if(city.offsetTop > sityH*parseInt(scaleVal*100)){
                 div.style.top = sityH*parseInt(scaleVal*100)+"px";
-            };
-            if (document.querySelector(".city").offsetLeft > sityW*parseInt(scaleVal*100)+64){
-                div.style.left = sityW*parseInt(scaleVal*100)+64+"px";
-            };
-            if(document.querySelector(".city").offsetTop < (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)){
-                div.style.top = (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)+"px";
-            };
-            if (document.querySelector(".city").offsetLeft < (-2800+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)) {
-                div.style.left = (-2800+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)+"px";
-            };
+            }
+            if (city.offsetLeft > sityW * parseInt(scaleVal * 100) + 64){
+                div.style.left = sityW * parseInt(scaleVal * 100) + 64 + "px";
+            }
+            if(city.offsetTop < (heightImg+document.documentElement.clientHeight) - sityH * parseInt(scaleVal * 100)){
+                div.style.top = (heightImg+document.documentElement.clientHeight) - sityH * parseInt(scaleVal * 100) + "px";
+            }
+            if(city.offsetLeft < (widthImg+document.documentElement.clientWidth) - sityW * parseInt(scaleVal * 100)) {
+                div.style.left = (widthImg+document.documentElement.clientWidth) - sityW * parseInt(scaleVal * 100) + "px";
+            }
         }else{
             window.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
             scaleVal = 0;
-            if(document.querySelector(".city").offsetTop > sityH*parseInt(scaleVal*100)){
-                div.style.top = sityH*parseInt(scaleVal*100)+"px";
-            };
-            if (document.querySelector(".city").offsetLeft > sityW*parseInt(scaleVal*100)+64){
-                div.style.left = sityW*parseInt(scaleVal*100)+64+"px";
-            };
-            if(document.querySelector(".city").offsetTop < (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)){
-                div.style.top = (-1898+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)+"px";
-            };
-            if (document.querySelector(".city").offsetLeft < (-2800+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)) {
-                div.style.left = (-2800+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)+"px";
+            if(city.offsetTop > sityH * parseInt(scaleVal * 100)){
+                div.style.top = sityH * parseInt(scaleVal * 100) + "px";
+            }
+            if(city.offsetLeft > sityW * parseInt(scaleVal * 100) + 64){
+                div.style.left = sityW * parseInt(scaleVal * 100) + 64 + "px";
+            }
+            if(city.offsetTop < (-1898+document.documentElement.clientHeight) - sityH * parseInt(scaleVal * 100)){
+                div.style.top = (heightImg+document.documentElement.clientHeight) - sityH * parseInt(scaleVal * 100)+"px";
+            }
+            if(city.offsetLeft < (widthImg+document.documentElement.clientWidth) - sityW * parseInt(scaleVal * 100)) {
+                div.style.left = (widthImg+document.documentElement.clientWidth) - sityW * parseInt(scaleVal * 100)+"px";
             };
         };
     };
 });
 
-$(".point, svg.close").on("click", function(){
+$(".point, svg.close").on("click", () => {
     $(".content-left").toggleClass("open_content-left", 1000);
     $(".content-right").toggleClass("open_content-right", 1000);
 });

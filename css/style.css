@@ -297,13 +297,13 @@ body{
 	top: 3px;
 }
 .profitability_left_item li:first-child:before{
-	background-image: url(./../img/index/btc.png);
+	background-image: url(../img/home/btc.png);
 }
 .profitability_left_item li:nth-child(2):before{
-	background-image: url(./../img/index/eth.png);
+	background-image: url(../img/home/eth.png);
 }
 .profitability_left_item li:nth-child(3):before{
-	background-image: url(./../img/index/usdt.png);
+	background-image: url(../img/home/usdt.png);
 }
 .profitability_right{
 	overflow: hidden;
