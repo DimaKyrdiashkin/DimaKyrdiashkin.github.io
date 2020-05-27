@@ -1,3 +1,21 @@
+.desctop-menu{
+	background: transparent;
+}
+.promoContent .container{
+	background: url(../img/program/background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+}
+h1{
+	font-family: 'Gilroy-SemiBold';
+}
+.promoContent_svg{
+	display: block;
+	width: 40vw;
+	top: 50%;
+}
 .bill_head{
     z-index: 21;
     display: -webkit-box;
