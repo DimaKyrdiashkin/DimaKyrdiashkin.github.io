@@ -18,7 +18,7 @@ function fun_Full() {
         //Navigation
         menu: '#fp-nav',
         lockAnchors: false,
-        anchors: ['promoContent', 'participant', 'partner', 'calc',"footer"],
+        anchors: ['promoContent', 'participant', 'partner', 'gift', 'events', 'calc',"footer"],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: [],//название для поинтов навигации
@@ -62,7 +62,7 @@ function fun_Full() {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        sectionsColor: ['#0000',"#ffffff",'#FFFFFF',  '#542AC8'],
+        sectionsColor: ['#0000',"#ffffff",'#FFFFFF'],
         // paddingTop: '3em',
         // paddingBottom: '10px',
         fixedElements: '#header, #marks, #fp-nav, .marker',
