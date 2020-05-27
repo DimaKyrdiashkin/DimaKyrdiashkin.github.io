@@ -31,13 +31,14 @@ var affiliate = {
             own:1,
             ref:1
         },
-        name: "SPARK",
+        name: "Spark",
+        color: '#5AAB26',
         percentage:{
             1:5,
             2:2,
             3:1
         },
-        img: "status-img-bronze"
+        img: "1"
     },
 
     2:{
@@ -45,13 +46,14 @@ var affiliate = {
             own:100,
             ref:1000
         },
-        name: "RAY",
+        name: "Ray",
+        color: '#5F6DD4',
         percentage:{
             1:10,
             2:4,
             3:2
         },
-        img: "status-img-ser"
+        img: "2"
     },
 
     3:{
@@ -59,13 +61,14 @@ var affiliate = {
             own:1000,
             ref:10000
         },
-        name: "LIGHT",
+        name: "Light",
+        color: '#F39831',
         percentage:{
             1:15,
             2:6,
             3:3
         },
-        img: "status-img-gold"
+        img: "3"
     },
 
     4:{
@@ -73,13 +76,14 @@ var affiliate = {
             own:10000,
             ref:100000
         },
-        name: "SHINE",
+        name: "Shine",
+        color: '#00A3FF',
         percentage:{
             1:20,
             2:8,
             3:4
         },
-        img: "status-img-platin"
+        img: "4"
     },
 
     5:{
@@ -87,13 +91,14 @@ var affiliate = {
             own:50000,
             ref:500000
         },
-        name: "SUN",
+        name: "Sun",
+        color: '#F04564',
         percentage:{
             1:25,
             2:10,
             3:5
         },
-        img: "status-img-bril"
+        img: "5"
     },
 
 }
@@ -112,8 +117,9 @@ function calc(){
         var sumref = depref1+depref2+depref3;
         var statusid = getStatus(deposit, sumref);
         $(".status-img").css("display","none");
-        $("#"+affiliate[statusid].img).css("display","inline-block");
-
+        $("#l"+affiliate[statusid].img).css("display","inline-block");
+        $("#name").text(affiliate[statusid].name);
+        $("#name").css('color', affiliate[statusid].color);
 
         var depincref1 = depref1/100*percent;
         var depincref2 = depref2/100*percent;
