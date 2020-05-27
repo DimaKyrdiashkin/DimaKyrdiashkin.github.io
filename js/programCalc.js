@@ -107,7 +107,7 @@ function calc(){
 
     if(isNumeric(percent) && isNumeric(deposit)){
         var depincome = deposit/100*percent;
-        $("#depincome").html(depincome.format(0, 3, ' ', ',')+ " USDT");
+        $("#depincome").html("USDT " + depincome.format(0, 3, ' ', ','));
 
         var sumref = depref1+depref2+depref3;
         var statusid = getStatus(deposit, sumref);
@@ -122,10 +122,10 @@ function calc(){
         var refincome = depincref1/100*affiliate[statusid].percentage[1] +
                 depincref2/100*affiliate[statusid].percentage[2] +
                 depincref3/100*affiliate[statusid].percentage[3];
-        $("#refincome").html(refincome.format(0, 3, ' ', ',')+ " USDT");
+        $("#refincome").html( "USDT " + refincome.format(0, 3, ' ', ','));
         var income = parseFloat(depincome) + parseFloat(refincome);
 
-        $("#income").html(income.format(0, 3, ' ', ','));
+        $("#income").html( 'USDT ' + income.format(0, 3, ' ', ','));
 
     } else {
         clear_data();
@@ -173,7 +173,7 @@ $('.calc_input_dollar, .calc_input_percent').bind('change, keydown, keyup',funct
 
 $('.calc_input_dollar').focusout(function() {
     let val = parseInt($(this).val());
-    $(this).val(val.format(0, 3, ' ', ',')+ " USDT");
+    $(this).val( "USDT " + val.format(0, 3, ' ', ','));
 });
 
 $('.calc_input_dollar, .calc_input_percent').focusin(function(event) {
