@@ -18,12 +18,12 @@ function fun_Full() {
         //Navigation
         menu: '#fp-nav',
         lockAnchors: false,
-        anchors: ['promoContent',  "footer"],
+        anchors: ['promoContent', 'participant', 'partner', "footer"],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: [],//название для поинтов навигации
         showActiveTooltip: false,
-        slidesNavigation: false,
+        slidesNavigation: true,
         slidesNavPosition: 'bottom',
         // setLockAnchors: false,
 
@@ -62,7 +62,7 @@ function fun_Full() {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        sectionsColor: ['#0000',"#ffffff",  '#542AC8'],
+        sectionsColor: ['#0000',"#ffffff",'#FFFFFF',  '#542AC8'],
         // paddingTop: '3em',
         // paddingBottom: '10px',
         fixedElements: '#header, #marks, #fp-nav, .marker',
@@ -77,7 +77,7 @@ function fun_Full() {
         //Custom selectors
         sectionSelector: '.section',
         slideSelector: '.slide',
-        
+        // controlArrows: false,
 
         lazyLoading: true,
 

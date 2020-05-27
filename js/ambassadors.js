@@ -434,7 +434,6 @@ class Ambassador{
 
             ambassadorPeople_item_photo.append(ambassadorPeople_item_photo_container);
             ambassadorPeople_item.append(ambassadorPeople_item_photo);
-            console.log(ambassadorPeople_item);
             let ambassadorPeople_item_footer = this.creatediv("ambassadorPeople_item_footer");
             let ambassadorPeople_item_footer_info = this.creatediv("ambassadorPeople_item_footer_info")
 
