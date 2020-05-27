@@ -564,3 +564,10 @@ h1{
 	border-radius: 4px;
 }
 /* /calc */
+
+/* footer*/
+
+.footer{
+    background-image: none;
+    background-color: #542AC8;
+}
