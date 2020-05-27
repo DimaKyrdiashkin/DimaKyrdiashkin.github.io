@@ -57,6 +57,9 @@ h1{
         -ms-flex-align: center;
             align-items: center;
 }
+.calc_side__text h5{
+	margin-left: 29px;
+}
 .calc_side__head svg{
     width: 28px;
     height: 28px;
@@ -79,6 +82,41 @@ h1{
 .c-block{
 	display: flex;
 	flex-direction: column;
+}
+.c-block h2,
+#income{
+	color: #8C46FF;
+	font-family: 'Gilroy-SemiBold';
+	border-radius: 4px;
+	height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    background: #F1E9FF;
+}
+.calc_label{
+	font-size: .75em;
+	font-family: 'Gilroy-Medium';
+	width: fit-content;
+}
+.inputWrapp{
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.inputWrapp svg{
+	width: 15px;
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+}
+.inputWrapp input{
+	border: 1px solid #8C46FF;
+	border-radius: 4px;
+	padding: 12px 0 12px 30px;
+	width: 100%;
 }
 .c-result-block-wrapper span.hr{
 	width: 100%;

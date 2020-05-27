@@ -172,8 +172,12 @@ $('.calc_input_dollar, .calc_input_percent').bind('change, keydown, keyup',funct
 });
 
 $('.calc_input_dollar').focusout(function() {
-    let val = parseInt($(this).val());
-    $(this).val( "USDT " + val.format(0, 3, ' ', ','));
+    if(parseInt($(this).val()) == 0){
+        parseInt($(this).val(''));
+    }else{
+        let val = parseInt($(this).val());
+        $(this).val(val.format(0, 3, ' ', ','));
+    };
 });
 
 $('.calc_input_dollar, .calc_input_percent').focusin(function(event) {
@@ -181,8 +185,13 @@ $('.calc_input_dollar, .calc_input_percent').focusin(function(event) {
 });
 
 $('.calc_input_percent').focusout(function() {
-    let val = parseInt($(this).val());
-    $(this).val(val+' %');
+    // alert($(this).val());
+    if(parseInt($(this).val()) == 0){
+        parseInt($(this).val(''));
+    }else{
+        let val = parseInt($(this).val());
+        $(this).val(val+' %');
+    };
 });
 
 
