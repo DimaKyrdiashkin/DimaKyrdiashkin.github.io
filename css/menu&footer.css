@@ -647,10 +647,6 @@ header.menu_open{
 	}
 }
 @media (max-width: 480px) {
-	/* .isFlip_right{
-        right: 20px;
-        left: auto;
-    } */
 	.promoContent video{
 		min-width: 200vw;
 		min-height: 150%;

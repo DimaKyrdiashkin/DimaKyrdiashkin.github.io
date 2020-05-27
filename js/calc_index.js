@@ -33,7 +33,6 @@ $("#c-income-slider").val(0.0001);
 				maxSum: 100000000,		// максимальная сумма
 				minPam: 500000,			// минимальная сумма на счете pam
 			},
-
 			inArray: function(arr, elem) {
 			   	return arr.indexOf(elem) != -1;
 			},
