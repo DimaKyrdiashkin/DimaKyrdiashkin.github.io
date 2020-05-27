@@ -1,4 +1,4 @@
-//menu
+//menu;
 let click = false;
 $('.mainSubmenu').on('click', function(){
     $('.mainSubmenu ul').toggleClass('mainSubmenu_open');
@@ -25,7 +25,4 @@ $(".menu_button").on("click", function(even){
 //menu/
 $(".menu ul li").on('click', function(event){    
     window.location.href = $(event.target.children).attr('href');
-});
-$('document').on('scroll', function(){
-    alert(1)
 });
