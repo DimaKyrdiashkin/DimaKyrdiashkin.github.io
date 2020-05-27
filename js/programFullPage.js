@@ -18,7 +18,7 @@ function fun_Full() {
         //Navigation
         menu: '#fp-nav',
         lockAnchors: false,
-        anchors: ['promoContent', 'participant', 'partner', "footer"],
+        anchors: ['promoContent', 'participant', 'partner', 'calc',"footer"],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: [],//название для поинтов навигации
