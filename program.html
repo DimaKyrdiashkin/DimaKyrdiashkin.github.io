@@ -151,7 +151,51 @@
 				</div>
 			</div>
 		</section>
-
+		<section class="section calc">
+			<div class="container">
+				<div class="calc_main">
+					<div class="calc_main_aside">
+						<div class="c-block">
+							<label class="calc_label">Сумма ваших инвестиций <br>на счетенакопительный</label>
+							<input class=" calc_input_dollar" type="text" id="deposit" data-val="10000" value="1 000,00 USDT">
+						</div>
+						<div class="c-block">
+							<label class="calc_label">Сумма инвестиций <br>1 линии инвесторов</label>
+							<input class=" calc_input_dollar" type="text" id="depref1" data-val="10000" value="1 000,00 USDT">
+						</div>
+						<div class="c-block">
+							<label class="calc_label">Сумма инвестиций <br>2 линии инвесторов</label>
+							<input class=" calc_input_dollar" type="text" id="depref2" data-val="10000" value="1 000,00 USDT">
+						</div>
+						<div class="c-block">
+							<label class="calc_label">Сумма инвестиций <br>3 линии инвесторов</label>
+							<input class=" calc_input_dollar" type="text" id="depref3" data-val="10000" value="1 000,00 USDT">
+						</div>
+						<div class="c-block">
+							<label class="calc_label">Доходность за период</label>
+							<input class=" calc_input_percent" type="text" id="percent" data-val="10" value="10%">
+						</div>
+					</div>
+					<div class="calc_main_body">
+						<div class="c-block">
+							<label class="calc_label slim">Ваш доход инвестора</label>
+							<div class="calc_input" id="depincome">2 000,00 USDT</div>
+						</div>
+						<div class="c-block">
+							<label class="calc_label slim">Ваш доход партнера</label>
+							<div class="calc_input" id="refincome"></div>
+						</div>
+						<div class="calc_main_body_res">
+							<p>Общий доход usdt:</p>
+							<div class="calc_main_body_res_bl">
+								<div id="income">288 752</div>
+							</div>
+							<a href="#">Приступить</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<footer class="section footer">
 			<div class="container_bloc">
 				<div class="apendixLogo">
@@ -307,7 +351,7 @@
 	<script>
 		new WOW().init();
 	</script>
-
+	<script src="js/programCalc.js"></script>
 	<script src="js/menu.js"></script>
 </body>
 </html>
