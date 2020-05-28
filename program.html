@@ -1309,5 +1309,12 @@
 	<script src="js/programCalc.js"></script>
 	<script src="js/programSlider.js"></script>
 	<script src="js/menu.js"></script>
+<script>
+	if (/iPhone|iPad|iPod|/i.test(navigator.userAgent)) {
+		document.querySelector('.device .container').style.backgroundAttachment = 'none !important';
+	} else {
+		// код для обычных устройств
+	}
+</script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 body{
-	background: url(../img/map/cell.png);	
+	background: url(../img/map/cell.png);
 }
 .wrapper{
 	height: 100vh;
@@ -75,7 +75,7 @@ body{
 }
 .menu ul{
 	width: fit-content;
-	margin-left: -10%;
+	margin-left: 10%;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
@@ -88,15 +88,15 @@ body{
 	margin: 10px 0;
 }
 li ul.subMenu1_open{
-	height: 320px;
+	height: 675px;
 	transition: 1s;
 }
 li ul.subMenu2_open{
-	height: 400px;
+	height: 100px;
 	transition: 1s;
 }
 li ul.subMenu3_open{
-	height: 180px;
+	height: 270px;
 	transition: 1s;
 }
 li ul.subMenu4_open{
@@ -118,7 +118,7 @@ ul.subM{
 	cursor: grab;
 	width: 3000px;
 	height: 1900px;
-	background: url(../img/map/map.webp);
+	background: url(../img/map/AmirCity.jpg);
 	background-size: cover;
 	background-position: center bottom;
 	transform-origin: center;
