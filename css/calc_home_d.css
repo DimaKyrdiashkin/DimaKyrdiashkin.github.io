@@ -4,6 +4,9 @@
 .settings .fp-tableCell, .setting .slide{
     height: 650px !important;
 }
+.calc-body input:focus{
+    outline: none;
+}
 .calc_side{
     position: absolute;
     top: 50px;
@@ -634,6 +637,7 @@ span.c-label{
 input[type="range"]:focus + .rangeslider .rangeslider__handle {
     -webkit-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
     box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+    outline: none;
 }
 
 
