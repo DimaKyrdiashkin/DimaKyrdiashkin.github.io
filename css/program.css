@@ -5,6 +5,14 @@
 	background-size: cover;
 	color: #fff;
 }
+.apendixImg{
+    display: none;
+    z-index: 3;
+    position: absolute;
+}
+.apendixImg img{
+    width: 100%;
+}
 h1{
 	font-family: 'Gilroy-SemiBold';
 }
@@ -12,6 +20,9 @@ h1{
 	display: block;
 	width: 40vw;
 	top: 50%;
+}
+.apendixLogoW{
+    display: none;
 }
 .bill_head{
     z-index: 21;
@@ -790,6 +801,9 @@ h1{
     .footer .container_bloc{
         padding-top: 0;
     }
+    .desctop-menu>ul>li:nth-child(6) {
+        margin-left: 45px;
+    }
 }
 @media (max-width: 992px) {
     .promoContent .container{
@@ -799,19 +813,29 @@ h1{
         background-size: cover;
     }
     .promoContent_svg{
-        top: 35%;
-        width: 400px;
+        top: 40%;
+        width: 45vw;
+    }
+    .apendixImg{
+        display: block;
+        position: absolute;
+        width: 55%;
+        left: 40%;
+        top: 20%;
     }
 }
 @media (max-width: 768px) {
     .promoContent h5{
-        font-size: 1.25em;
+        font-size: 1.45em;
     }
     .promoContent_svg{
-        display: none;
+        top: 20%;
+        left: 50%;
+        width: 80vw;
+        transform: translateX(-50%);
     }
     .promoContent_text{
-        color:#000;
+        color:#353742;
         top: 150px;
         left: 50%;
         transform: translateX(-50%);
@@ -820,6 +844,12 @@ h1{
     h1{
         font-size: 3em;
         line-height: 150%;
+    }
+    .apendixImg{
+        width: 70%;
+        left: 50%;
+        top: 40%;
+        transform: translateX(-50%);
     }
 }
 @media (max-width: 480px) {
@@ -834,14 +864,63 @@ h1{
     }
     .promoContent_text{
         color: #fff;
-        top: 35%;
+        top: 37%;
     }
     .promoContent h5{
         font-size: 1em;
         margin-top: 5px;
     }
+    .apendixImg{
+        top: 50%;
+        width: 85%;
+    }
+    .promoContent_svg{
+        top: 25%;
+        width: 100vw;
+    }
 }
 @media all and (max-width: 850px) and (orientation : landscape) {
+    .promoContent .container{
+        background: url(../img/program/background_table_horizont.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .apendixLogo{
+        display: none;
+    }
+    .apendixLogoW{
+        display: block;
+        width: 25%;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    .promoContent_text{
+        left: 60px;
+        color: #fff;
+        top: 50%;
+        transform: translate(0, -50%);
+        text-align: left;
+    }
+    .promoContent_text h5{
+        font-size: 1.125em;
+    }
+    .promoContent_svg{
+        top: 60%;
+        transform: translate(0, -50%);
+        width: 45vw;
+        left: 0;
+    }
+    .apendixImg{
+        top: 5%;
+        width: 45%;
+        left: 45%;
+        transform: translateX(0);
+    }
+    h1{
+        font-size: 2em;
+    }
 
 }
 @media (height: 1366px) and (width: 1024px){
@@ -852,19 +931,31 @@ h1{
         background-size: cover;
     }
     .promoContent_svg{
-        display: none;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        top: 20%;
     }
     .promoContent_text{
-        color: #000;
+        color: #353742;
         top: 200px;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
+        max-width: fit-content;
     }
     h1{
-        font-size: 2.5em;
+        font-size: 4em;
     }
     .promoContent_text h5{
-        font-size: 1.5em;
+        font-size: 2em;
+    }
+    .apendixImg{
+        display: block;
+        width: 70vw;
+        left: 50%;
+        top: 35%;
+        transform: translateX(-50%);
     }
 }
