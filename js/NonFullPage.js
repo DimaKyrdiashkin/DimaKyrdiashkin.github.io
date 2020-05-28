@@ -11,7 +11,6 @@ window.addEventListener("resize", function(){
          flag = true;
     }else{
          flag = false;
-         
     };
  });
 
@@ -118,7 +117,6 @@ function fun_Full() {
         afterRender: function () {
         },
         afterResize: function (width, height) {
-            // console.clear();
         },
         afterReBuild: function () {
         },
@@ -126,7 +124,7 @@ function fun_Full() {
             flag = false;
             fullpage_api.destroy('all');
             $('.marker').delay(200).removeClass('marker_open');
-            $('.fullpageId').css('transform', 'none')
+            $('.fullpageId').css('transform', 'none');
         },
         afterSlideLoad: function (section, origin, destination, direction) {
         },

@@ -7,8 +7,7 @@ window.addEventListener("resize", function(){
          myFullpag = fun_Full();
          flag = true;
     }else{
-         flag = false;
-         
+         flag = false; 
     };
  });
 
@@ -115,15 +114,13 @@ function fun_Full() {
         afterRender: function () {
         },
         afterResize: function (width, height) {
-            // console.clear();
         },
         afterReBuild: function () {
         },
         afterResponsive: function (isResponsive) {
-            // flag = false;
-            // fullpage_api.destroy('all');
-            // $('.marker').delay(200).removeClass('marker_open');
-            // $('.fullpageId').css('transform', 'none')
+            flag = false;
+            fullpage_api.destroy('all');
+            $('.fullpageId').css('transform', 'none');
         },
         afterSlideLoad: function (section, origin, destination, direction) {
         },
