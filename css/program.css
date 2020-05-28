@@ -60,7 +60,7 @@ h1{
     background-image: url("./../img/program/participant_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: right 94%;
 }
 .participant_header .container{
     display: flex;
@@ -252,6 +252,10 @@ h1{
     margin-bottom: 40px;
 }
 
+.partner_right{
+    position: relative;
+    z-index: 5;
+}
 .partner_right_header{
 	display: flex;
 	align-items: flex-end;
@@ -652,4 +656,30 @@ h1{
 .footer{
     background-image: none;
     background-color: #542AC8;
+}
+@media (max-width: 1690px) {
+
+}
+@media (max-width: 1440px) {
+    /* partner */
+
+    .partner{
+        background-position: left 600px;
+    }
+    /* /partner */
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+
+}
+@media all and (max-width: 1200px) and (orientation : portrait) {
+
 }
