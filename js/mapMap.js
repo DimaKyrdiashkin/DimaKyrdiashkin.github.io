@@ -6,8 +6,8 @@ let mousePosition,
     sityW = $(".city").width()/200,
     sityH = $(".city").height()/200,
     div = document.querySelector(".city"),
-    widthImg = -3000,
-    heightImg = -1898;
+    widthImg = -4096,
+    heightImg = -2304;
 
 let city = document.querySelector(".city");
 
@@ -101,3 +101,55 @@ $(".point, svg.close").on("click", () => {
     $(".content-left").toggleClass("open_content-left", 1000);
     $(".content-right").toggleClass("open_content-right", 1000);
 });
+
+// point clicl
+let mapBD;
+$.ajax({
+    url: "./js/mapBd.json"
+}).done(function(data) {
+    mapBD=data;
+})
+const  fatherBlock = document.getElementById("father"),
+    titlePointBlock = document.getElementById('titlePoint'),
+    textHomePointBlock = document.getElementById('textHomePoint'),
+    logoPointerBlock = document.getElementById('logoPointer')
+
+$(".point").on("click",(e)=>{
+    const numberPoint = parseInt(e.target.closest('.point').children[0].children[0].innerHTML);
+    let father ='';
+    console.log(numberPoint)
+    const BdName = `p${numberPoint}`;
+    if(numberPoint<21){
+        father = "Экосистема Amir Capital";
+    }
+    else if(numberPoint<23){
+        father = "Cообщество Amir Partners (AmirID)";
+    }
+    else if(numberPoint<29){
+        father = "Social Evolution Company";
+    }
+    fatherBlock.innerHTML = father;
+    titlePointBlock.innerHTML = mapBD[BdName].title;
+    textHomePointBlock.innerHTML = mapBD[BdName].text;
+    logoPointerBlock.src = "img/map/logoPoint/"+mapBD[BdName].imgUrl;
+});
+
+// pointSvg random
+
+w_content_right_top = document.getElementById('content_right_top').clientWidth;
+h_content_right_top = document.getElementById('content_right_top').clientHeight;
+const  svg= document.querySelectorAll('.content-right_top_svg')
+
+setInterval(
+    ()=>{
+       // svg[0].css({"top":`${(Math.random()*h_content_right_top)}px`})
+        for(let i of svg){
+            i.style.top = `${(Math.random()*h_content_right_top)}px`;
+            i.style.left = `${(Math.random()*h_content_right_top)}px`;
+        }
+       // svg[1].css({"top":(Math.random()*h_content_right_top)+"px", "left": (Math.random()*w_content_right_top)+"px"})
+       // svg[2].css({"top":(Math.random()*h_content_right_top)+"px", "left": (Math.random()*w_content_right_top)+"px"})
+       // svg[3].css({"top":(Math.random()*h_content_right_top)+"px", "left": (Math.random()*w_content_right_top)+"px"})
+
+    },2000
+)
