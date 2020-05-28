@@ -566,10 +566,10 @@ h1{
     color: #fff;
 }
 .event_right ul li{
-    display: flex;
+    display: flex!important;
     flex-direction: column;
     align-items: center;
-    width: 360px;
+    width: 360px!important;
     height: 520px;
     background: url(../img/program/event6.png);
     border-radius: 4px;
@@ -603,6 +603,38 @@ h1{
     width: fit-content;
     margin-top: 270px;
 }
+.event_right_ul .slide-slide {
+    margin: 0 20px;
+    height: inherit;
+}
+.event_right_ul .slick-slide>div{
+    height: inherit;
+}
+.event_right_ul .slide-list {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.event_right_ul .slick-track, .event_right_ul .slick-list{
+    display: flex !important;
+}
+.event_right_ul{
+    width: 1120px;
+    position: relative;
+}
+.event_right_ul .prev, .event_right_ul .next{
+    position: absolute;
+    top: 50%;
+    z-index: 30;
+}
+.event_right_ul .prev{
+    transform: rotate(200grad) translateY(50%);
+    left: -70px;
+}
+.event_right_ul .next{
+    transform: translateY(-50%);
+    right: -50px;
+}
+
 /* /events */
 
 /* calc */
