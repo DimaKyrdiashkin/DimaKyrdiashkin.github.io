@@ -809,6 +809,7 @@ h2#income{
 @media (max-width: 1200px) {
     .calc_main{
         width: 95%;
+        margin: 125px auto;
     }
     .footer .container_bloc{
         padding-top: 0;
@@ -863,8 +864,14 @@ h2#income{
         top: 40%;
         transform: translateX(-50%);
     }
-    .calc_main_aside{
-        margin-right: 20px;
+    .calc_main{
+        margin: 125px auto 50px;
+    }
+    .calc_main_aside,
+    .calc_main_body{
+        margin-right: 0;
+        max-width: 410px;
+        width: 100%;
     }
     .c-block h2,
     #income{
@@ -905,6 +912,35 @@ h2#income{
     .promoContent_svg{
         top: 25%;
         width: 100vw;
+    }
+    .calc_main {
+        margin: 110px auto 50px;
+    }
+    .inputWrapp{
+        margin-top: 5px;
+    }
+    .inputWrapp input{
+        padding: 7px 0 7px 30px;
+        font-size: .85em;
+    }
+    .inputWrapp svg{
+        width: 12px;
+    }
+    .c-block{
+        margin-bottom: 10px;
+    }
+    .calc_main_body{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .c-top-title{
+        font-size: .833333em;
+        width: 95%;
+        text-align: center;
+    }
+    .c-block h2,
+    #income{
+        font-size: 1em;
     }
 }
 @media all and (max-width: 850px) and (orientation : landscape) {
