@@ -120,10 +120,10 @@ function fun_Full() {
         afterReBuild: function () {
         },
         afterResponsive: function (isResponsive) {
-            // flag = false;
-            // fullpage_api.destroy('all');
+            flag = false;я
+            fullpage_api.destroy('all');
             // $('.marker').delay(200).removeClass('marker_open');
-            // $('.fullpageId').css('transform', 'none')
+            $('.fullpageId').css('transform', 'none')
         },
         afterSlideLoad: function (section, origin, destination, direction) {
         },

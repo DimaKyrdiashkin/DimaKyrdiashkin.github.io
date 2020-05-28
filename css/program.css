@@ -670,6 +670,9 @@ h1{
 }
 .calc_main_body{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .calc input:focus{
     outline: none;
@@ -715,10 +718,17 @@ h1{
 .calc_main_aside{
 	margin-right: 50px;
 	width: 50%;
-	max-width: 420px;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 585px;
 }
 .c-block.first{
 	margin-top: 15px;
+}
+.c-block.last{
+    margin-bottom: 0;
 }
 .c-block{
 	display: flex;
@@ -736,7 +746,6 @@ h1{
     align-items: center;
     width: 100%;
 	background: #F1E9FF;
-	margin-bottom: 47px;
 }
 .calc_label{
 	font-size: .75em;
@@ -774,6 +783,9 @@ h1{
 	width: 100%;
 	box-shadow: 0px 4px 15px #CBD2DD, 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 4px;
+}
+h2#income{
+    margin-bottom: 20px;
 }
 /* /calc */
 
@@ -850,6 +862,22 @@ h1{
         left: 50%;
         top: 40%;
         transform: translateX(-50%);
+    }
+    .calc_main_aside{
+        margin-right: 20px;
+    }
+    .c-block h2,
+    #income{
+        height: 92px;
+    }
+    .level #name{
+        font-size: 1.5em;
+        left: 3%;
+        top: 15%;
+    }
+    .calc_main{
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media (max-width: 480px) {
@@ -958,4 +986,7 @@ h1{
         top: 35%;
         transform: translateX(-50%);
     }
+}
+@media (height: 1024px) and (width: 768px) {
+
 }
