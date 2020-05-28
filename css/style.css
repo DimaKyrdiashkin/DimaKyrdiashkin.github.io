@@ -895,7 +895,7 @@ p.circle_yellow{
 	section{
 		min-height: 50vh;
 	}
-	.promoContent_text{
+	.promoContent_text.index{
 		text-align: center;
 		left: 50%;
 		top: 135px;
@@ -1385,7 +1385,7 @@ p.circle_yellow{
 	/* /device 400 */
 }
 @media (width: 1366px) and (height: 1024px){
-	.promoContent_text{
+	.promoContent_text.index{
 		top: 30%;
 	}
 	#promo_h1{
