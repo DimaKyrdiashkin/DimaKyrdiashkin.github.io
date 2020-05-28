@@ -328,7 +328,7 @@ h1{
 	flex-grow: 3;
 }
 .partner_right_ul_item_body_ul_right{
-	flex-grow: 2;
+	width: 20%;
 	text-align: center;
 }
 .partnerGreenSpan{
@@ -393,7 +393,9 @@ h1{
 	transform: translateY(-50%);
 	right: -50px;
 }
-/*partner */
+
+
+
 
 
 /* /partner */
@@ -415,6 +417,13 @@ h1{
     width: -moz-fit-content;
     width: fit-content;
 }
+.gift_imgFooter{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
 .gift_head svg{
 	width: 28px;
 	height: 28px;
@@ -424,6 +433,79 @@ h1{
 .gift_head h2{
 	line-height: 120%;
 }
+.gift .container{
+    display: flex;
+    align-items: flex-end;
+}
+.gift_left{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+.gift_left li{
+    background-color: #FBFBFE;
+    padding: 30px 50px;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 24px;
+    color: #272831;
+}
+.gift_left li:first-child{
+    margin-bottom: 5px;
+}
+.gift_right{
+    display: flex;
+}
+.gift_right_item{
+    margin-right: 25px;
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.gift_right_item_header{
+    text-align: center;
+    padding: 20px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #F6F5FA;
+}
+.gift_right_item_body{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #535366;
+    height: 106px;
+    border-bottom: 4px solid #F6F5FA;
+}
+.gift_right_item_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 123px;
+}
+.gift_right_item_footer span{
+    background: #6231D6;
+    border-radius: 4px;
+    width: 80%;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+
 /* /gift */
 
 /* events */
