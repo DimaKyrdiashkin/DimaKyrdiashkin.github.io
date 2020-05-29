@@ -17,6 +17,11 @@ $(".menu_button").on("click", openMunu = () => {
     };
 });
 $('.menu a').on('click', (e) => {
+    const active = $(e.target).parent("li")[0];
+    if($(active).children('ul').hasClass('menuUlActive')){
+        $('.subM').removeClass('subMenu1_open subMenu2_open subMenu3_open subMenu4_open menuUlActive');
+        return;
+    }
     $('.subM').removeClass('subMenu1_open subMenu2_open subMenu3_open subMenu4_open menuUlActive');
     if($(e.target).parent("li").children('.subM').length<1) {
         openPoint(e.target.getAttribute('data-point'));
@@ -25,8 +30,7 @@ $('.menu a').on('click', (e) => {
         $(".content-right").addClass("open_content-right", 1000);
         return
     }
-    const active = $(e.target).parent("li")[0],
-        ulMenu = document.querySelectorAll('.menu>ul>li');
+    const ulMenu = document.querySelectorAll('.menu>ul>li');
     let num;
     for(let i in ulMenu){
         if(active == ulMenu[i]){

@@ -103,7 +103,8 @@ $(".point, svg.close").on("click",  () => {
 });
 
 // point clicl
-let mapBD;
+let mapBD,
+    numberPointActive = 1;
 $.ajax({
     url: "./js/mapBd.json"
 }).done(function(data) {
@@ -121,9 +122,9 @@ $(".point").on("click",(e)=>{
 
 openPoint = (numberPoint) => {
     let father ='';
-
+    numberPointActive = numberPoint;
+    if(28 < numberPoint) numberPoint=1
     const BdName = `p${numberPoint}`;
-    console.log(BdName)
     if(numberPoint<21){
         father = "Экосистема Amir Capital";
     }
@@ -138,6 +139,13 @@ openPoint = (numberPoint) => {
     textHomePointBlock.innerHTML = mapBD[BdName].text;
     logoPointerBlock.src = "img/map/logoPoint/"+mapBD[BdName].imgUrl;
 }
+
+document.getElementById('nextPoint').addEventListener('click', ()=>{
+    const textActive = titlePointBlock.innerHTML
+    for(let i in mapBD){
+        if(mapBD[i].title == textActive)openPoint(parseInt(i.split('p')[1])+1)
+    }
+})
 
 // pointSvg random
 
