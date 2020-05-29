@@ -97,7 +97,7 @@ $(window).bind('mousewheel', (e) => {
     };
 });
 
-$(".point, svg.close").on("click", () => {
+$(".point, svg.close").on("click",  () => {
     $(".content-left").toggleClass("open_content-left", 1000);
     $(".content-right").toggleClass("open_content-right", 1000);
 });
@@ -116,9 +116,14 @@ const  fatherBlock = document.getElementById("father"),
 
 $(".point").on("click",(e)=>{
     const numberPoint = parseInt(e.target.closest('.point').children[0].children[0].innerHTML);
+    openPoint(numberPoint)
+});
+
+openPoint = (numberPoint) => {
     let father ='';
-    console.log(numberPoint)
+
     const BdName = `p${numberPoint}`;
+    console.log(BdName)
     if(numberPoint<21){
         father = "Экосистема Amir Capital";
     }
@@ -132,7 +137,7 @@ $(".point").on("click",(e)=>{
     titlePointBlock.innerHTML = mapBD[BdName].title;
     textHomePointBlock.innerHTML = mapBD[BdName].text;
     logoPointerBlock.src = "img/map/logoPoint/"+mapBD[BdName].imgUrl;
-});
+}
 
 // pointSvg random
 
@@ -142,14 +147,9 @@ const  svg= document.querySelectorAll('.content-right_top_svg')
 
 setInterval(
     ()=>{
-       // svg[0].css({"top":`${(Math.random()*h_content_right_top)}px`})
         for(let i of svg){
             i.style.top = `${(Math.random()*h_content_right_top)}px`;
             i.style.left = `${(Math.random()*h_content_right_top)}px`;
         }
-       // svg[1].css({"top":(Math.random()*h_content_right_top)+"px", "left": (Math.random()*w_content_right_top)+"px"})
-       // svg[2].css({"top":(Math.random()*h_content_right_top)+"px", "left": (Math.random()*w_content_right_top)+"px"})
-       // svg[3].css({"top":(Math.random()*h_content_right_top)+"px", "left": (Math.random()*w_content_right_top)+"px"})
-
     },2000
 )
