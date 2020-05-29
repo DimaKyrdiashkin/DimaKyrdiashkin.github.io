@@ -531,6 +531,3 @@ class Ambassador{
 }
 let ambassadorClass = new Ambassador();
 ambassadorClass.getAmbassador(mass);
-
-
-
