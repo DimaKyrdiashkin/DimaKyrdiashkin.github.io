@@ -59,8 +59,9 @@ h1{
 }
 .participant .container{
     width: 100%;
-    max-width: 1535px;
+    max-width: 2000px;
     margin: auto;
+    padding: 0 10%;
 }
 .participant_header{
     min-height: 340px;
@@ -69,16 +70,19 @@ h1{
     background-image: url("./../img/program/participant_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right 94%;
+    background-position: right 70%;
 }
 .participant_header .container{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-end;
+    position: relative;
 }
 .participant_header_text{
-    margin-top: 80px;
+    margin-top: 115px;
     display: flex;
+    position: absolute;
+    left: 10%;
 }
 .participant_header_text_item{
     padding: 20px 30px;
@@ -105,6 +109,9 @@ h1{
     width: 28px;
     margin: 7px 10px 0 0;
 }
+.participant_body_header_text{
+    margin-bottom: 25px;
+}
 .participant_body_header_text h2{
     font-weight: 600;
     font-size: 2em;
@@ -117,17 +124,17 @@ h1{
     line-height: 24px;
 }
 .participant_body_info{
-    margin-top: 65px;
     display: flex;
     justify-content: space-between;
 }
 .participant_body_info_ul{
     margin-left: 67px;
+    margin-top: 20px;
 }
 .participant_body_info_ul_item{
     display: flex;
     align-items: flex-start;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .participant_body_info_ul_item_svg{
     margin-right: 20px;
@@ -153,15 +160,15 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 900px;
+    max-width: 800px;
     width: 70%;
 }
 .participant_body_info_right_item{
     border: 1px solid #DFDCE9;
     box-sizing: border-box;
     border-radius: 4px;
-    max-width: 264px;
-    width: 30%;
+    /* max-width: 264px; */
+    width: 32%;
     margin-bottom: 10px;
 }
 .participant_body_info_right_item_header{
@@ -199,9 +206,12 @@ h1{
 .participant_body_info_right_itemImg{
     border: none;
     box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 .participant_body_info_right_itemImg svg{
-    width: 100%;
+    width: 80%;
 }
 .participant_body_info_right_item_header h4{
     font-size: 1.2em;
@@ -815,6 +825,9 @@ h2#income{
     background-color: #542AC8;
 }
 @media (max-width: 1690px) {
+    .participant{
+        
+    }
     .gift_left{
         width: 15%;
     }
