@@ -113,6 +113,7 @@ function calc(){
     if(isNumeric(percent) && isNumeric(deposit)){
         var depincome = deposit/100*percent;
         $("#depincome").html("USDT " + depincome.format(0, 3, ' ', ','));
+        $("#depincome2").html(depincome.format(0, 3, ' ', ',') + "<br>USDT");
 
         var sumref = depref1+depref2+depref3;
         var statusid = getStatus(deposit, sumref);
@@ -129,10 +130,11 @@ function calc(){
                 depincref2/100*affiliate[statusid].percentage[2] +
                 depincref3/100*affiliate[statusid].percentage[3];
         $("#refincome").html( "USDT " + refincome.format(0, 3, ' ', ','));
+        $("#refincome2").html(refincome.format(0, 3, ' ', ',') + "<br>USDT");
         var income = parseFloat(depincome) + parseFloat(refincome);
 
         $("#income").html( 'USDT ' + income.format(0, 3, ' ', ','));
-
+        $("#income2").html(income.format(0, 3, ' ', ',') + '<br>USDT');
     } else {
         clear_data();
     }
