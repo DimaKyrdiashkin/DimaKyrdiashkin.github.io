@@ -960,7 +960,6 @@ h2#income{
     #income,
     #income2{
         font-size: 1em;
-        width: 86px;
     }
     #text_calc_vv{
         font-size: 1.166666em;
@@ -968,7 +967,10 @@ h2#income{
     }
     .res{
         height: 34px;
-        width: 86px;
+        width: 100%;
+    }
+    .calc_main_body>div{
+        width: 30%;
     }
 }
 @media all and (max-width: 850px) and (orientation : landscape) {
