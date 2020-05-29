@@ -33,7 +33,7 @@ body{
 	transition: 1s;
 }
 .menu_open{
-	width: 320px;
+	width: 330px;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
@@ -126,6 +126,7 @@ body{
 }
 .menu p{
 	padding-left: 20px;
+	margin-bottom: 20px;
 	color: #6231D6;
 	font-size: 1.125em;
 	font-weight: 600;
@@ -286,9 +287,6 @@ ul.subM{
 .back-side{
 	opacity: 0;
 	position: absolute;
-	width: -webkit-fit-content;
-	width: -moz-fit-content;
-	width: fit-content;
 	top: -60px;
 	left: 25px;
 	padding: 10px;
