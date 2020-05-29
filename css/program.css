@@ -662,6 +662,11 @@ h1{
 /* /events */
 
 /* calc */
+#depincome2,
+#refincome2,
+#income2{
+    display: none !important;
+}
 .calc .container{
 	position: relative;
 	height: 100%;
@@ -736,7 +741,8 @@ h1{
 	margin-bottom: 20px;
 }
 .c-block h2,
-#income{
+#income,
+#income2{
 	color: #8C46FF;
 	font-family: 'Gilroy-SemiBold';
 	border-radius: 4px;
@@ -874,7 +880,8 @@ h2#income{
         width: 100%;
     }
     .c-block h2,
-    #income{
+    #income,
+    #income2{
         height: 92px;
     }
     .level #name{
@@ -913,6 +920,17 @@ h2#income{
         top: 25%;
         width: 100vw;
     }
+    #depincome,
+    #refincome,
+    #income{
+        display: none !important;
+    }
+    #depincome2,
+    #refincome2,
+    #income2{
+        display: flex !important;
+        text-align: center;
+    }
     .calc_main {
         margin: 110px auto 50px;
     }
@@ -939,8 +957,20 @@ h2#income{
         text-align: center;
     }
     .c-block h2,
-    #income{
+    #income,
+    #income2{
         font-size: 1em;
+    }
+    #text_calc_vv{
+        font-size: 1.166666em;
+        text-align: left;
+    }
+    .res{
+        height: 34px;
+        width: 100%;
+    }
+    .calc_main_body>div{
+        width: 30%;
     }
 }
 @media all and (max-width: 850px) and (orientation : landscape) {
