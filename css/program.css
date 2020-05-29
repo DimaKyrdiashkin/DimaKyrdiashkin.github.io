@@ -454,27 +454,36 @@ h1{
 .gift .container{
     display: flex;
     align-items: flex-end;
+    justify-content: center;
+    padding-right: 30px;
 }
 .gift_left{
     display: flex;
     flex-direction: column;
-    margin-bottom: 14px;
+    margin-bottom: 21px;
+}
+.emptyLi{
+    height: 64px;
+    background-color: transparent !important;
 }
 .gift_left li{
     background-color: #FBFBFE;
     padding: 30px 50px;
     font-weight: 500;
     font-size: 1em;
-    line-height: 24px;
     color: #272831;
+    font-family: 'Gilroy-Medium';
 }
-.gift_left li:first-child{
-    margin-bottom: 5px;
+.gift_left li:nth-child(2){
+    margin-bottom: 4px;
 }
 .gift_right{
     display: flex;
+    max-width: 1400px;
+    width: 85%;
 }
 .gift_right_item{
+    max-width: 265px;
     margin-right: 25px;
     width: 265px;
     display: flex;
@@ -487,37 +496,32 @@ h1{
 .gift_right_item_header{
     text-align: center;
     padding: 20px 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 21px;
+    font-family: 'Gilroy-SemiBold';
     text-transform: uppercase;
     color: #F6F5FA;
 }
 .gift_right_item_body{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #535366;
     height: 106px;
     border-bottom: 4px solid #F6F5FA;
+    text-align: center;
 }
 .gift_right_item_footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 123px;
+    padding: 20px 0 35px 0;
 }
-.gift_right_item_footer span{
+.gift_right_item_footer>h3{
     background: #6231D6;
     border-radius: 4px;
     width: 80%;
+    max-width: 175px;
+    line-height: 100%;
     padding: 20px 0;
-    font-weight: 500;
-    font-size: 1.8em;
     color: #FFFFFF;
     text-align: center;
 }
@@ -632,8 +636,10 @@ h1{
     margin: 0 20px;
     height: inherit;
 }
-.event_right_ul .slick-slide>div{
+.event_right_ul .slick-slide>div>div{
     height: inherit;
+    display: flex !important;
+    justify-content: center;
 }
 .event_right_ul .slide-list {
     margin-left: -20px;
@@ -652,7 +658,7 @@ h1{
 }
 .event_right_ul .prev{
     transform: rotate(200grad) translateY(50%);
-    left: -70px;
+    left: -50px;
 }
 .event_right_ul .next{
     transform: translateY(-50%);
@@ -802,17 +808,88 @@ h2#income{
     background-color: #542AC8;
 }
 @media (max-width: 1690px) {
-
+    .gift_left{
+        width: 15%;
+    }
+    .gift_left li{
+        padding: 32px 10px;
+        height: 95px;
+    }
+    .gift_right{
+        width: 85%;
+    }
+    .emptyLi{
+        height: 61px;
+    }
 }
 @media (max-width: 1440px) {
     /* partner */
-
     .partner{
         background-position: left 600px;
     }
     /* /partner */
+    .gift_right_item{
+        margin-right: 20px;
+    }
+    /* event */
+    .events .container{
+        display: flex;
+        justify-content: center;
+    }
+    .events .event_right_ul{
+        width: 1000px !important;
+    }
+    .event_right ul li{
+        width: 300px !important;
+    }
+    .event_right a{
+        width: 250px;
+    }
+    .event_left{
+        display: none;
+    }
+    .event_right{
+        margin: 0;
+    }
+    /* /event */
 }
 @media (max-width: 1200px) {
+    .gift{
+        padding: 150px 0 200px 0;
+    }
+    .gift .container{
+        padding-right: 15px;
+    }
+    .gift_left{
+        width: 20%;
+    }
+    .gift_left li{
+        padding: 32px 15px;
+    }
+    .gift_right_item:last-child{
+        margin-right: 0;
+    }
+    .gift_right_item_body{
+        font-size: 1em;
+    }
+    .gift_right{
+        width: 80%;
+    }
+    /* event */
+    .events{
+        padding: 150px 0 50px 0;
+    }
+    .events .event_right_ul{
+        width: 850px !important;
+    }
+    .event_right ul li{
+        width: 270px !important;
+        height: 460px;
+    }
+    .event_right a{
+        width: 220px;
+    }
+    /* /event */
     .calc_main{
         width: 95%;
         margin: 125px auto;
@@ -842,6 +919,60 @@ h2#income{
         left: 40%;
         top: 20%;
     }
+    /* gift */
+    .emptyLi{
+        width: 8% !important;
+    }
+    .gift_left li:nth-child(2){
+        margin-right: 25px;
+    }
+    .gift .container{
+        flex-direction: column;
+        padding-right: 0;
+    }
+    .gift_left{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .gift_left li{
+        width: 20%;
+        background-color: transparent;
+        text-align: center;
+        font-size: 1.25em;
+    }
+    .gift_right{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .gift_right_item{
+        margin-right: 0;
+        flex-direction: row;
+        width: 50%;
+        max-width: 900px;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+    .gift_right_item_header{
+        position: absolute;
+        transform: rotate(-90deg) translate(-50%, -50%);
+        padding: 0;
+        left: 25%;
+        top: 20%;
+        width: 50px;
+    }
+    .gift .textWrapper{
+        width: 10%;
+        position: relative;
+    }
+    .gift_right_item_footer{
+        width: 40%;
+    }
+    .gift_right_item_body{
+        border: none;
+    }
+    /* /gift */
 }
 @media (max-width: 768px) {
     .promoContent h5{
@@ -870,6 +1001,26 @@ h2#income{
         top: 40%;
         transform: translateX(-50%);
     }
+    /* gift */
+    .emptyLi{
+        width: 11% !important;
+    }
+    .gift_left li:nth-child(2){
+        margin: 0;
+    }
+    .gift_left li{
+        width: 32%;
+    }
+    .gift_right_item{
+        width: 70%;
+    }
+    .gift_right_item_header{
+        left: 15%;
+    }
+    .gift .textWrapper{
+        width: 50px;
+    }
+    /* /gift */
     .calc_main{
         margin: 125px auto 50px;
     }
@@ -920,6 +1071,39 @@ h2#income{
         top: 25%;
         width: 100vw;
     }
+
+    /* gift */
+    .gift{
+        padding: 150px 0 100px 0;
+    }
+    .gift_head{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .gift_imgFooter{
+        width: 100%;
+    }
+    .emptyLi{
+        width: 15% !important;
+    }
+    .gift_left li{
+        padding: 25px 0 0 0;
+        width: 45%;
+    }
+    .gift_right_item{
+        width: 95%;
+    }
+    .gift_right_item_footer{
+        padding: 20px 0;
+    }
+    .gift .textWrapper{
+        width: 40px;
+    }
+    .gift_right_item_footer>h3{
+        width: 75%;
+    }
+    /* /gift */
+
     #depincome,
     #refincome,
     #income{
@@ -971,6 +1155,10 @@ h2#income{
     }
     .calc_main_body>div{
         width: 30%;
+    }
+    .calc_side{
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 @media all and (max-width: 850px) and (orientation : landscape) {
