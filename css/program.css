@@ -1413,9 +1413,31 @@ h2#income{
     }
     .participant_body_info_ul{
         width: 100%;
+        flex-direction: column;
+        border: 1px solid #6231D6;
+        padding: 20px 0;
+        margin-bottom: 25px;
     }
     .participant_body_info_ul_item{
-        width: 45%;
+        width: 100%;
+        justify-content: center;
+    }
+    .participant_body_info_ul_item_text h2{
+        margin-bottom: 5px;
+    }
+    .participant_body_info_ul_item:first-child{
+        margin-bottom: 15px;
+    }
+    .participant_body_info_right_item{
+        width: 100%;
+    }
+    .participant_body_info_right_itemImg svg{
+        width: 100%;
+    }
+    .participant_body_info_right_item_ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     /* /participant */
     /* partner */
