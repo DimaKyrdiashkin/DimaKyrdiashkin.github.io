@@ -885,12 +885,6 @@ h2#income{
     .participant_body_info_ul{
         margin-left: 0;
     }
-    /* .participant .bill_head{
-        color: #583ac8;
-    }
-    .bill_head path{
-        fill: #583ac8;
-    } */
     .participant_header_text_item{
         background-color: #583ac8;
     }
@@ -898,12 +892,10 @@ h2#income{
         position: relative;
         top: -60px;
     }
-    /* .participant_body_header{
-        padding-left: 100px;
-    } */
     .participant_body_info{
         justify-content: space-around;
     }
+    /* /participant */
     /* partner */
     .partner_right_ul_item{
         width: 250px !important;
@@ -952,6 +944,31 @@ h2#income{
     /* /event */
 }
 @media (max-width: 1200px) {
+    /* participant */
+    .participant{
+        margin-top: -1px;
+    }
+    .participant_cont{
+        height: fit-content;
+    }
+    .participant_header .container{
+        padding-top: 25px;
+    }
+    .participant_header_img{
+        width:
+         200px;
+    }
+    .participant_header{
+        min-height: 250px;
+    }
+    .participant_body_info{
+        width: 120%;
+        margin-left: -10%;
+    }
+    .participant_body{
+        top: -40px;
+    }
+    /* /participant */
     /* partner */
     .partner_right_ul_item_body_p{
         font-size: 1.125em;
@@ -1078,6 +1095,55 @@ h2#income{
         left: 40%;
         top: 20%;
     }
+    /* participant */
+    .participant_body{
+        top: 0;
+    }
+    .participant_header{
+        min-height: 430px;
+    }
+    .participant_header_text{
+        flex-direction: column;
+    }
+    .participant_header_text_item:first-child{
+        margin-right: 0;
+    }
+    .bill_head{
+        max-width: 300px;
+    }
+    .participant_header_text{
+        width: 285px;
+    }
+    .participant_header_text_item{
+        margin-bottom: 15px;
+    }
+    .participant_header_img{
+        width: 300px;
+    }
+    .participant_body_info{
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .participant_body_info_ul{
+        border: 1px solid #6231D6;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        padding: 30px 40px;
+        width: 120%;
+        margin-left: -10%;
+    }
+    .participant_body_info_ul_item{
+        margin-bottom: 0;
+        width: 45%;
+        justify-content: center;
+    }
+    .participant_body_info_right{
+        width: 100%;
+    }
+    /* /participant */
     /* partner */
     .partner{
         padding: 25px 0;
@@ -1197,6 +1263,33 @@ h2#income{
         top: 40%;
         transform: translateX(-50%);
     }
+    /* participant */
+    .participant_body_info_ul_item_svg{
+        display: none;
+    }
+    .participant_body_info_ul{
+        padding: 0;
+        margin-left: 0;
+        border: none;
+    }
+    .participant_body_info_ul_item{
+        width: 50%;
+    }
+    .participant_body_info_ul_item{
+        justify-content: inherit;
+    }
+    .participant_body_info_right_item{
+        width: 45%;
+    }
+    .participant_header_img{
+        width: 30vw;
+        position: absolute;
+        bottom: 0;
+    }
+    .participant_header .container{
+        height: 430px;
+    }
+    /* /participant */
     /* partner */
     .partner{
         background-position: left 150px;
@@ -1299,6 +1392,32 @@ h2#income{
         top: 25%;
         width: 100vw;
     }
+    /* participant */
+    .participant_header_img{
+        display: none;
+    }
+    .participant_header{
+        min-height: 330px;
+    }
+    .participant_header .container{
+        height: fit-content;
+    }
+    .participant_body_header{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
+    }
+    .participant_body_info{
+        padding-top: 100px;
+    }
+    .participant_body_info_ul{
+        width: 100%;
+    }
+    .participant_body_info_ul_item{
+        width: 45%;
+    }
+    /* /participant */
     /* partner */
     .partner{
         padding: 25px 0 50px;
