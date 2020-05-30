@@ -356,7 +356,7 @@ header.menu_open{
 	cursor: pointer;
 }
 .menu ul li:hover{
-	background: #FFFFFF;
+	background: #535366;
 	-webkit-transition: .2s;
 	-o-transition: .2s;
 	transition: .2s;
