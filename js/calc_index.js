@@ -8,9 +8,9 @@ $("#c-income-slider").val(0.0001);
 		let calc = {
 			defaults: {
 				interestSavings:{  	// накопительный процент в неделю
-					btc:  '1.75',
-					eth:  '2.09',
-					usdt: '2.08',
+					btc:  '0.95',
+					eth:  '1.23',
+					usdt: '1.34',
 				},
 				interestPam:{ 		// pam процент в неделю
 					btc:  '2.62',
@@ -253,7 +253,7 @@ $(function() {
         calculate();
     });
     $('#c-refill-amount').inputFilter(function(value) {
-        return /^-?\d*[.,]?\d{0,2}$/.test(value)
+        return /^-?\d*[.,]?\d{0,6}$/.test(value)
     });;
 
     function refillDisable(){
