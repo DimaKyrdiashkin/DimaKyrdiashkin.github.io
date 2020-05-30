@@ -1,3 +1,14 @@
+::-webkit-scrollbar {
+	width: 5px;
+  }
+::-webkit-scrollbar-track {
+	background: #542ac840;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+	background: #542ac8;
+    border-radius: 4px;
+}
 body{
 	background: url(../img/map/cell.png);
 }
@@ -33,7 +44,7 @@ body{
 	transition: 1s;
 }
 .menu_open{
-	width: 330px;
+	width: 320px;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
@@ -133,11 +144,11 @@ body{
 	border-bottom: 1px solid #F8F8FB;
 }
 .menu ul{
-	overflow-y: scroll;
+	overflow-y: auto;
 	width: -webkit-fit-content;
 	width: -moz-fit-content;
 	width: fit-content;
-	margin-left: 10%;
+	margin-left: 5%;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -266,6 +277,15 @@ ul.subM{
 	background-position: left top;
 	cursor: pointer;
 }
+.point .back-side{
+	background: #6231d6;
+}
+.point_2 .back-side{
+	background: #0683f7;
+}
+.point_3 .back-side{
+	background: #fece63;
+}
 .front-side p{
 	font-size: 1.5em;
 	color: #FFFFFF;
@@ -279,7 +299,8 @@ ul.subM{
 	background-image: url("./../img/map/point_3.svg");
 }
 .point_3 p{
-	color: #353742;
+	color: #353742 !important;
+	font-family: 'Gilroy-SemiBold';
 }
 .point:hover .back-side{
 	opacity: 1;
@@ -287,8 +308,8 @@ ul.subM{
 .back-side{
 	opacity: 0;
 	position: absolute;
-	top: -60px;
-	left: 25px;
+	bottom: 85px;
+	left: 35px;
 	padding: 10px;
 	background: #8C46FF;
 	border-radius: 10px 10px 10px 0;
