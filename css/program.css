@@ -1650,12 +1650,14 @@ h2#income{
     }
     .participant_body_info_ul{
         border: 1px solid #6231D6;
-    }
-    .partner{
-        padding: 350px 0 25px 0;
+        width: 100%;
+        margin-left: 0;
     }
     .partner_right_header h2{
         margin-left: 20px;
+    }
+    .partner_container{
+        height: fit-content;
     }
     .events{
         padding: 75px 0 50px 0;
