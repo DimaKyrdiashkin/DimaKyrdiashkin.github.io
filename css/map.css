@@ -47,7 +47,7 @@ body{
 	transition: 1s;
 }
 .menu_open{
-	width: 320px;
+	width: 320px !important;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
@@ -119,7 +119,7 @@ body{
     transform: rotate(90deg);
 }
 .menu_h1_open{
-	transform: rotate(90deg) translate(-50%, 50vw);
+	transform: translateX(-100vw);
 	transition: 1s;
 }
 .menu{
@@ -763,5 +763,32 @@ ul.subM{
 	.content-right,
 	.content-left{
 		overflow: hidden;
+	}
+	.side_bar{
+		width: 32px;
+	}
+	.menu_button{
+		width: 32px;
+		height: 32px;
+	}
+	.menu_button span{
+		height: 2px;
+		width: 14px;
+		margin: 2px;
+	}
+	.menu_h1{
+		font-size: 1.25em;
+		width: 32px;
+		height: calc(100vh - 32px);
+	}
+	.menu_open{
+		width: 100% !important;
+	}
+	.menu{
+		width: 100%;
+	}
+	.menu h1,
+	.menu p{
+		text-align: center;
 	}
 }
