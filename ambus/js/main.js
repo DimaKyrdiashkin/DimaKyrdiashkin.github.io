@@ -605,7 +605,7 @@ $(document).ready(function(){
                 if(country_text !=='Выбрать страну'){
                     massSort = sortCountry(massSort,country_text);
                 }
-                if(city_text !='Выбрать город'){
+                if(city_text !== 'Выберете город'){
                     massSort = sortCity(massSort,city_text);
                 }
 
