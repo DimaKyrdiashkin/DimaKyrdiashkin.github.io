@@ -760,4 +760,8 @@ ul.subM{
 		right: 0;
 		bottom: 0;
 	}
+	.content-right,
+	.content-left{
+		overflow: hidden;
+	}
 }
