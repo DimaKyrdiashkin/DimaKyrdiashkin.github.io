@@ -743,6 +743,9 @@ ul.subM{
 	}
 }
 @media (max-width: 480px){
+	.wrapper{
+		height: fit-content;
+	}
 	.city{
 		display: none;
 	}
@@ -760,12 +763,16 @@ ul.subM{
 		right: 0;
 		bottom: 0;
 	}
+	.content-right{
+		height: 400px;
+	}
 	.content-right,
 	.content-left{
-		overflow: hidden;
+		position: inherit;
 	}
 	.side_bar{
 		width: 32px;
+		position: fixed;
 	}
 	.menu_button{
 		width: 32px;
@@ -790,5 +797,53 @@ ul.subM{
 	.menu h1,
 	.menu p{
 		text-align: center;
+	}
+	.content-left{
+		margin-left: 0;
+		background: #fff;
+		min-height: 300px;
+	}
+	.content{
+		opacity: 0;
+		display: flex;
+		flex-direction: column-reverse;
+		width: calc(100vw - 32px);
+		min-height: fit-content;
+		margin-left: 32px;
+	}
+	.content>div{
+		width: 100%;
+	}
+	.content-left__content{
+		padding: 5% 10% 10%;
+	}
+	.content-right_top img{
+		width: 40%;
+	}
+	.content-right_top_svg{
+		display: none;
+	}
+	.content-right{
+		background: #e6e6e6e0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.content-right_bottom_btn{
+		padding: 15px 15px;
+	}
+	.content-right_bottom{
+		height: 25%;
+	}
+	.close_cross{
+		width: 25px;
+		height: 25px;
+	}
+	.content-left__head{
+		padding: 0 5%;
+	}
+	.content-right_top{
+		height: 75%;
 	}
 }

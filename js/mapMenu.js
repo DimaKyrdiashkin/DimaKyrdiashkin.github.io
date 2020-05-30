@@ -10,7 +10,11 @@ $(".menu_button").on("click", openMunu = () => {
         $(".span_mid").css("opacity", 1);
     }else{
         $(".side_bar").toggleClass("menu_open");
-        $("span").css("margin", "2px");
+        if(document.documentElement.clientWidth <=480){
+            $("span").css("margin", "1px");
+        }else{
+            $("span").css("margin", "2px");
+        };
         $(".span_bot").css("transform", "rotate(32deg)");
         $(".span_top").css("transform", "rotate(-32deg)");
         $(".span_mid").css("opacity", 0);
@@ -38,6 +42,11 @@ $(".menu_h1").on("click", openMunu = () => {
 });
 
 $('.menu a').on('click', (e) => {
+    if(document.documentElement.clientWidth <=480){
+        setTimeout(function(){
+            $('.content').css('opacity', 1);
+        }, 1200);
+    };
     const active = $(e.target).parent("li")[0];
     if($(active).children('ul').hasClass('menuUlActive')){
         $('.subM').removeClass('subMenu1_open subMenu2_open subMenu3_open subMenu4_open menuUlActive');
