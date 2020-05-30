@@ -25,6 +25,7 @@ h1{
     display: none;
 }
 .bill_head{
+    max-width: 650px;
     z-index: 21;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -32,6 +33,7 @@ h1{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     position: absolute;
     top: 50px;
@@ -79,13 +81,12 @@ h1{
     position: relative;
 }
 .participant_header_text{
-    margin-top: 115px;
     display: flex;
-    position: absolute;
     left: 10%;
+    margin-left: 5px;
 }
 .participant_header_text_item{
-    padding: 20px 30px;
+    padding: 20px;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
     color: #FFFFFF;
@@ -881,28 +882,28 @@ h2#income{
         padding-top: 0;
         min-height: 290px;
     }
+    .participant_body_info_ul{
+        margin-left: 0;
+    }
     .participant_header{
-        background:none;
+        /* background:none; */
     }
-    .participant_header_text{
-        padding-left: 100px;
-    }
-    .participant .bill_head{
+    /* .participant .bill_head{
         color: #583ac8;
     }
     .bill_head path{
         fill: #583ac8;
-    }
+    } */
     .participant_header_text_item{
         background-color: #583ac8;
     }
     .participant_body{
         position: relative;
-        top: -142px;
+        top: -50px;
     }
-    .participant_body_header{
+    /* .participant_body_header{
         padding-left: 100px;
-    }
+    } */
     .participant_body_info{
         justify-content: space-around;
     }
