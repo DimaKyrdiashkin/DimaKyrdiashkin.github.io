@@ -4,7 +4,11 @@ $(".menu_button").on("click", openMunu = () => {
         $('.subM').removeClass('subMenu1_open subMenu2_open subMenu3_open subMenu4_open menuUlActive');
         $(".side_bar").delay(1000).toggleClass("menu_open", 1000);
         $(".menu").delay(500).toggleClass("opacity", 500);
-        $("span").css("margin", "3px");
+        if(document.documentElement.clientWidth <=480){
+            $("span").css("margin", "2px");
+        }else{
+            $("span").css("margin", "3px");
+        };
         $(".span_bot").css("transform", "rotate(0deg)");
         $(".span_top").css("transform", "rotate(0deg)");
         $(".span_mid").css("opacity", 1);
