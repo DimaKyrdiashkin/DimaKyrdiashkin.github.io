@@ -113,8 +113,6 @@ h1{
     margin-bottom: 25px;
 }
 .participant_body_header_text h2{
-    font-weight: 600;
-    font-size: 2em;
     line-height: 120%;
     margin-bottom: 15px;
 }
@@ -230,7 +228,7 @@ h1{
     position: relative;
     background-image: url("./../img/program/partner_bg.png");
     background-repeat: no-repeat;
-    background-position: left 215px;
+    background-position: left 200px;
     background-size: cover;
     overflow: hidden;
 }
@@ -294,7 +292,7 @@ h1{
 }
 .partner_right_header_svg{
 	max-width: 715px;
-    width: 65%;
+    width: 60%;
 }
 .partner_right_ul{
 	width: 1090px;
@@ -345,7 +343,7 @@ h1{
 }
 .partner_right_ul_item_body_ul li{
 	width: 90%;
-	margin: 0 auto 15px;
+	margin: 0 auto 10px;
 	display: flex;
 	justify-content: space-between;
 	background-color: #6231D6;
@@ -874,6 +872,16 @@ h2#income{
     }
 }
 @media (max-width: 1440px) {
+    /* participant */
+    .participant_header_img{
+        margin-right: 0;
+        width: 250px;
+    }
+    .participant_header{
+        padding-top: 0;
+        min-height: 290px;
+    }
+    /* /participant */
     /* partner */
     .partner_right_ul_item{
         width: 250px !important;
