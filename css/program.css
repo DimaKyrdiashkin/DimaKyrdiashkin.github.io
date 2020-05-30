@@ -907,9 +907,6 @@ h2#income{
     .participant_body_info{
         justify-content: space-around;
     }
-    .participant_body_info{
-        margin-top: 40px;
-    }
     /* partner */
     .partner_right_ul_item{
         width: 250px !important;
