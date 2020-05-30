@@ -8,7 +8,7 @@ $(".menu_button").on("click", function(even){
     console.log();
     if(!click){
         $(".menu_button").addClass("isFlip");
-        $(".menu_button").delay(500).addClass("isFlip_right",1000);
+        // $(".menu_button").delay(500).addClass("isFlip_right",1000);
         $(".menu").addClass("menu_open");
         $("header").delay(500).addClass("menu_open", 500);
         $(".menu ul, .menu a, .licens").delay(1000).removeClass("hide", 500);
@@ -19,7 +19,7 @@ $(".menu_button").on("click", function(even){
         $(".menu_button").delay(500).removeClass("isFlip", 500);
         $("header").delay(1000).removeClass("menu_open", 500);
         $(".menu").delay(1500).removeClass("menu_open", 500);
-        setTimeout(function(){click = false;}, 2000);
+        setTimeout(function(){click = false;}, 1200);
     };
 });
 //menu/
