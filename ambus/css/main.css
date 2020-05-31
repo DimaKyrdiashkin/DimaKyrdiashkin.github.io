@@ -115,9 +115,7 @@ img {
 }
 
 * {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
+
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -233,7 +231,7 @@ header{
 }
 
 .desctop-menu{
-  position: initial;
+  position: initial!important;
 }
 section.first {
   padding: 0 0 100px;
