@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6, p, span, li{
 	width: 1.125em;
 }
 .mainSubmenu_open{
-	height: 90px !important;
+	height: 95px !important;
 	transition: .25s !important;
 }
 .mainSubmenu ul{
