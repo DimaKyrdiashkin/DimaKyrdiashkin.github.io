@@ -329,12 +329,9 @@ let country = [
 ]
 
 $(document).ready(function(){
-
     $('.sumo_select').SumoSelect();
-
     // генерация
     $ambs = mass;
-
     $.each($ambs,function(index, value){
         $name = value['name'];
         $country = value['country'];
