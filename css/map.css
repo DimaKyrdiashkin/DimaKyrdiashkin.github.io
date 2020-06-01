@@ -293,19 +293,19 @@ body{
 }
 
 li ul.subMenu1_open{
-	height: 675px;
+	height: 490px;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
 }
 li ul.subMenu2_open{
-	height: 100px;
+	height: 75px;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
 }
 li ul.subMenu3_open{
-	height: 270px;
+	height: 155px;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
