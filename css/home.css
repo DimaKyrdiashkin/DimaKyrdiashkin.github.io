@@ -1452,6 +1452,12 @@ footer .slick-initialized .slick-slide{
     .tabl{
         padding-top: 0!important;
     }
+    .tabl_cript img{
+        max-width: 25px;
+    }
+    .tabl_cript td{
+        padding: 10px 0 !important;
+    }
     /*  /tabl 1440  */
 
 
