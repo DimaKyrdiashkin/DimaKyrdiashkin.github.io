@@ -520,15 +520,15 @@ section.third.block .amb_box .pages .num_box a.active {
 
 
 section.third.block .amb_box a.button:nth-of-type(1):hover{
-  transform: scale(1.05) trahslateX(-10%);
-  -moz-transform: scale(1.05) trahslateX(-10%)
-  -webkit-transform: scale(1.05) trahslateX(-10%)
+  transform: scale(1.05) translateX(-10%);
+  -moz-transform: scale(1.05) translateX(-10%);
+  -webkit-transform: scale(1.05) translateX(-10%);
 }
 
 section.third.block .amb_box a.button:nth-of-type(2):hover{
-  transform: scale(1.05) trahslateX(10%);
-  -moz-transform: scale(1.05) trahslateX(10%)
-  -webkit-transform: scale(1.05) trahslateX(10%)
+  transform: scale(1.05) translateX(10%);
+  -moz-transform: scale(1.05) translateX(10%);
+  -webkit-transform: scale(1.05) translateX(10%);
 }
 
 
@@ -538,15 +538,15 @@ section.fourth.block {
 }
 
 section.fourth.block .container-fluid {
-  padding: 0px 0px
+  padding: 0 0;
 }
 
 section.fourth.block:before {
   position: absolute;
   width: 100%;
   height: 85%;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   content: '';
   background: #8c46ff;
   transform: skew(0deg, -45deg);
@@ -555,7 +555,7 @@ section.fourth.block:before {
 }
 
 section.fourth .text{
-  padding-left: 0%;
+  padding-left: 0;
   padding-right: 9%;
 }
 

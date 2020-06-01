@@ -30,7 +30,7 @@ let mass = [
         name: "Михаил Миско",
         country: "Белоруссия",
         tel:"+375 (29) 6871 289",
-        city:"./img/people/misko.png",
+        city:"Минск",
         pawer:"https://amir.capital/?partner=5e8cf33b-66d5-4094-8b78-6e0680551716",
         img:"./img/people/misko.png",
         status: "Regional_Ambassador",
