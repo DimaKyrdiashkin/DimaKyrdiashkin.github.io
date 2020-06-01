@@ -293,7 +293,7 @@ body{
 }
 
 li ul.subMenu1_open{
-	height: 525px;
+	height: 490px;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
@@ -305,7 +305,7 @@ li ul.subMenu2_open{
 	transition: 1s;
 }
 li ul.subMenu3_open{
-	height: 165px;
+	height: 155px;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
