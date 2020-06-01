@@ -11,6 +11,7 @@
 }
 body{
 	background: url(../img/map/cell.png);
+	position: fixed;
 }
 .wrapper{
 	height: 100vh;
@@ -128,9 +129,9 @@ body{
     line-height: normal;
     padding: 15px;
     text-align: center;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 }
 .menu_h1_open{
 	-webkit-transform: translateX(-100vw);
