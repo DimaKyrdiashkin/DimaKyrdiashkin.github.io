@@ -1,5 +1,5 @@
 // массив
-
+'user script'
 let mass = [
     {
         name: "Саяпин Павел Юрьевич",
@@ -251,7 +251,7 @@ let mass = [
         name: "Алексей Щукин",
         country: "Кипр",
         tel:"+7 (921) 616 8 175",
-        city:"",
+        city:"...",
         pawer:"https://amir.capital/?partner=594c9681-1cd6-4fe3-a9eb-78a289f13337",
         img:"./img/people/shukin.png",
         status: "Regional_Ambassador",
@@ -297,6 +297,8 @@ let mass = [
         }
     }
 ]
+
+
 let country = [
     {
         name: "Россия"
@@ -495,7 +497,7 @@ $(document).ready(function(){
      $('select.country').on('change', function(){
         const val = $(this).val();
         $('select.citi').html('');
-        $('select.citi').append("<option value='0' selected='selected'>Выберете город</option>");
+        $('select.citi').append("<option value='0' selected='selected'>Город</option>");
         $('select.citi')[0].sumo.reload();
          console.log(val)
          if (val == 0) {
@@ -586,60 +588,33 @@ $(document).ready(function(){
                 const country_text = $("select.country option:selected").text(),
                     city_text  = $(" select.citi option:selected").text(),
                     status_text = $("select.status option:selected").val();
-                let massSort = []
+                let massSort = [];
                 if(status_text !== "0"){
                     for(let i of items){
                         if(i.classList.contains(status_text)){
-                            massSort.push(i)
+                            massSort.push(i);
                         }
                     }
                 }
                 else{
                     for(let i of items){
-                        massSort.push(i)
+                        massSort.push(i);
                     }
                 }
-                if(country_text !=='Выбрать страну'){
+                if(country_text !=='Страну'){
                     massSort = sortCountry(massSort,country_text);
                 }
-                if(city_text !== 'Выберете город'){
+                if(city_text !== 'Город'){
                     massSort = sortCity(massSort,city_text);
                 }
 
                 for( let i of massSort){
-                    i.classList.remove('hide_search')
-                    i.classList.add('search_active')
-
+                    i.classList.remove('hide_search');
+                    i.classList.add('search_active');
                 }
 
 
-        // if($status_text != 0 && $citi_text !='Выбрать город'){
-        //
-        //     // console.log(massAct)
-        //     // for(let i of massAct){
-        //     //     console.log(i.has("p.city:contains(" + $status_text  + ")"))
-        //     //     $(i).has("p.city:contains(" + $status_text  + ")").addClass('search_active')
-        //     // }
-        // }
-        // if ($country_text !='Выбрать страну') {
-        //     items.has("p.country:contains(" + $country_text  + ")").addClass('search_active')
-        // }
-        // else if ($citi_text !='Выбрать город') {
-        //
-        //     items.has("p.city:contains(" + $citi_text  + ")").addClass('search_active')
-        // }
-        // else if ($status_text != 0) {
-        //
-        //     for( let i of items){
-        //         lo
-        //         console.log($(`${i} p.status`))
-        //     }
-        //     items.has("p.status:contains(" + $status_text + ")").addClass('search_active');
-        // }
-        // else if($("select.country option:selected").val() =='0' && $(" select.citi option:selected").val() =='0' && $("select.status option:selected").val() =='0'){
-        //     $('.hide_search').removeClass('hide_search');
-        //     $("section.third.block .amb_box .item").slice(12).remove();
-        // }
+
 
     })
 
@@ -705,7 +680,7 @@ soc = ( massSoc)=> {
     let res= ''
     for(let key in massSoc){
         if( key ==='email'){
-            res += "<a href='mailto: " + massSoc[key] + " ' class='link_icon d-flex align-self-center'><i class='fas fa-envelope'></i></a>";
+            res += "<a href='mailto: " + massSoc[key] + " ' class='link_icon d-flex align-self-center'><i class='fas fa-envelope fa-2x'></i></a>";
         }
         else{
             res += "<a href=' " + massSoc[key] + "' class='link_icon d-flex align-self-center'>"
