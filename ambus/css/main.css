@@ -257,6 +257,7 @@ section.first.block .bg {
   top: -3%;
   background-size: cover;
   -webkit-background-size: cover;
+  background-position: left bottom;
   background-image: url('../img/first_bg.svg');
 } 
  
