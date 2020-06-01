@@ -2,7 +2,7 @@
     vertical-align: baseline;
 }
 .settings .fp-tableCell, .setting .slide{
-    height: 650px !important;
+    height: 640px !important;
 }
 .calc-body input:focus{
     outline: none;
@@ -373,7 +373,7 @@
 	font-size: 1.25em;
     line-height: 24px;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #1E1E25;
     text-align: left;
 }
