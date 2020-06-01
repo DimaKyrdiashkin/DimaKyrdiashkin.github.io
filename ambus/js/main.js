@@ -358,7 +358,7 @@ $(document).ready(function(){
             $('section.third.block .amb_box .amb_box_wrap').append(
                 `<div class='item ${status} d-flex flex-wrap col-xl-3 col-lg-3 col-md-6'> <div class='avatar w-100' style='background-image: url(` + $img + ")'></div>" +
                 "<div class='text w-100 d-flex flex-wrap'> <p class='name w-100 d-flex justify-content-center'>" + $name + "</p>" +
-                "<p class='phone w-100 d-flex justify-content-center'>" + $phone + "</p>" +
+                "<p class='phone w-100 d-flex justify-content-center'><i class=\"fas fa-phone-alt\"></i>" + $phone + "</p>" +
                 "<p class='status w-100 d-flex flex-wrap'>" +
                 "<svg class='d-flex align-self-center' width='19' height='16' viewBox='0 0 19 16' fill='none' xmlns='http://www.w3.org/2000/svg'>"+
                 "<path d='M14.5595 15.0751V10.469C14.5595 10.1608 14.6099 8.62659 15.5965 8.62659C15.7826 8.62659 16.2519 8.67148 16.5749 9.08366C16.6545 9.18641 16.7305 9.28916 16.8043 9.38836C17.1051 9.79582 17.3028 10.0438 17.5065 10.0438C18.0355 10.0438 18.6254 9.14153 18.6254 7.84711C18.6254 6.55269 18.0355 5.65038 17.5065 5.65038C17.3028 5.65038 17.1062 5.89839 16.8043 6.30585C16.7305 6.40506 16.6545 6.50781 16.5749 6.61056C16.2519 7.02393 15.7826 7.06762 15.5965 7.06762C14.6087 7.06762 14.5595 5.53227 14.5595 5.2252V0.619141H9.99515C8.85108 0.619141 5.94278 0.619141 4.79876 0.619141H0.234373V15.0763H14.5595V15.0751Z' fill='"+ $color +"'/> </svg> " + status.replace('_', ' ') + " </p>" +
@@ -399,7 +399,7 @@ $(document).ready(function(){
                     $('section.third.block .amb_box .amb_box_wrap .item:last-of-type').after(
                         `<div class='item ${status} d-flex flex-wrap col-xl-3 col-lg-3 col-md-6'> <div class='avatar w-100' style='background-image: url(` + $img + ")'></div>" +
                         "<div class='text w-100 d-flex flex-wrap'> <p class='name w-100 d-flex justify-content-center'>" + $name + "</p>" +
-                        "<p class='phone w-100 d-flex justify-content-center'>" + $phone + "</p>" +
+                        "<p class='phone w-100 d-flex justify-content-center'><i class=\"fas fa-phone-alt\"></i>" + $phone + "</p>" +
                         "<p class='status w-100 d-flex flex-wrap'>" +
                         "<svg class='d-flex align-self-center' width='19' height='16' viewBox='0 0 19 16' fill='none' xmlns='http://www.w3.org/2000/svg'>"+
                         "<path d='M14.5595 15.0751V10.469C14.5595 10.1608 14.6099 8.62659 15.5965 8.62659C15.7826 8.62659 16.2519 8.67148 16.5749 9.08366C16.6545 9.18641 16.7305 9.28916 16.8043 9.38836C17.1051 9.79582 17.3028 10.0438 17.5065 10.0438C18.0355 10.0438 18.6254 9.14153 18.6254 7.84711C18.6254 6.55269 18.0355 5.65038 17.5065 5.65038C17.3028 5.65038 17.1062 5.89839 16.8043 6.30585C16.7305 6.40506 16.6545 6.50781 16.5749 6.61056C16.2519 7.02393 15.7826 7.06762 15.5965 7.06762C14.6087 7.06762 14.5595 5.53227 14.5595 5.2252V0.619141H9.99515C8.85108 0.619141 5.94278 0.619141 4.79876 0.619141H0.234373V15.0763H14.5595V15.0751Z' fill='"+ $color +"'/> </svg> " + status.replace('_', ' ') + " </p>" +
@@ -449,7 +449,7 @@ $(document).ready(function(){
                     $('section.third.block .amb_box .amb_box_wrap .item:last-of-type').after(
                         `<div class='item ${status} hide_search d-flex flex-wrap col-xl-3 col-lg-3 col-md-6'> <div class='avatar w-100' style='background-image: url(` + $img + ")'></div>" +
                         "<div class='text w-100 d-flex flex-wrap'> <p class='name w-100 d-flex justify-content-center'>" + $name + "</p>" +
-                        "<p class='phone w-100 d-flex justify-content-center'>" + $phone + "</p>" +
+                        "<p class='phone w-100 d-flex justify-content-center'><i class=\"fas fa-phone-alt\"></i>" + $phone + "</p>" +
                         "<p class='status w-100 d-flex flex-wrap'>" +
                         "<svg class='d-flex align-self-center' width='19' height='16' viewBox='0 0 19 16' fill='none' xmlns='http://www.w3.org/2000/svg'>"+
                         "<path d='M14.5595 15.0751V10.469C14.5595 10.1608 14.6099 8.62659 15.5965 8.62659C15.7826 8.62659 16.2519 8.67148 16.5749 9.08366C16.6545 9.18641 16.7305 9.28916 16.8043 9.38836C17.1051 9.79582 17.3028 10.0438 17.5065 10.0438C18.0355 10.0438 18.6254 9.14153 18.6254 7.84711C18.6254 6.55269 18.0355 5.65038 17.5065 5.65038C17.3028 5.65038 17.1062 5.89839 16.8043 6.30585C16.7305 6.40506 16.6545 6.50781 16.5749 6.61056C16.2519 7.02393 15.7826 7.06762 15.5965 7.06762C14.6087 7.06762 14.5595 5.53227 14.5595 5.2252V0.619141H9.99515C8.85108 0.619141 5.94278 0.619141 4.79876 0.619141H0.234373V15.0763H14.5595V15.0751Z' fill='"+ $color +"'/> </svg> " + status.replace('_', ' ') + " </p>" +
@@ -570,7 +570,7 @@ $(document).ready(function(){
                         `<div class='item ${status} hide_search d-flex flex-wrap col-xl-3 col-lg-3 col-md-6 '> ` +
                         "<div class='avatar w-100' style='background-image: url(" + img + ")'></div>" +
                         "<div class='text w-100 d-flex flex-wrap'> <p class='name w-100 d-flex justify-content-center'>" + name + "</p>" +
-                        "<p class='phone w-100 d-flex justify-content-center'>" + phone + "</p>" +
+                        "<p class='phone w-100 d-flex justify-content-center'><i class=\"fas fa-phone-alt\"></i>" + phone + "</p>" +
                         "<p class='status w-100 d-flex flex-wrap'>" +
                         "<svg class='d-flex align-self-center' width='19' height='16' viewBox='0 0 19 16' fill='none' xmlns='http://www.w3.org/2000/svg'>"+
                         "<path d='M14.5595 15.0751V10.469C14.5595 10.1608 14.6099 8.62659 15.5965 8.62659C15.7826 8.62659 16.2519 8.67148 16.5749 9.08366C16.6545 9.18641 16.7305 9.28916 16.8043 9.38836C17.1051 9.79582 17.3028 10.0438 17.5065 10.0438C18.0355 10.0438 18.6254 9.14153 18.6254 7.84711C18.6254 6.55269 18.0355 5.65038 17.5065 5.65038C17.3028 5.65038 17.1062 5.89839 16.8043 6.30585C16.7305 6.40506 16.6545 6.50781 16.5749 6.61056C16.2519 7.02393 15.7826 7.06762 15.5965 7.06762C14.6087 7.06762 14.5595 5.53227 14.5595 5.2252V0.619141H9.99515C8.85108 0.619141 5.94278 0.619141 4.79876 0.619141H0.234373V15.0763H14.5595V15.0751Z' fill='"+ color +"'/> </svg>"+status.replace('_', ' ') + " </p>" +
