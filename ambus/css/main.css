@@ -436,6 +436,7 @@ section.third.block .amb_box .item .avatar{
   height: 200px;
   position: relative;
   background-size: cover;
+  border-radius: 4px;
   background-repeat: no-repeat;
   overflow: hidden;
   margin-bottom: 5px;
