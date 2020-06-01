@@ -51,6 +51,7 @@ $('.menu a').on('click', (e) => {
             $('.content').css('opacity', 1);
         }, 1200);
     };
+    
     const active = $(e.target).parent("li")[0];
     if($(active).children('ul').hasClass('menuUlActive')){
         $('.subM').removeClass('subMenu1_open subMenu2_open subMenu3_open subMenu4_open menuUlActive');

@@ -209,7 +209,7 @@ body{
 .menu ul>li{
 	font-family: "Gilroy-Medium";
 	font-size: 1em;
-	margin: 10px 0;
+	margin: 5px 0;
 }
 .menu a{
 	-webkit-transition: all .3s;
