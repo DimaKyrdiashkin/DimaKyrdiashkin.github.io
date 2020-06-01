@@ -782,7 +782,7 @@ ul.subM{
 		transform: translateY(-5px);
 	}
 }
-@media (max-width: 850px){
+@media (max-width: 700px){
 	.city{
 		display: none;
 	}
