@@ -10,7 +10,7 @@
     border-radius: 4px;
 }
 body{
-	background: url(../img/map/cell.png);
+	
 	position: fixed;
 }
 .wrapper{
@@ -21,6 +21,7 @@ body{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	background: url(../img/map/cell.png);
 }
 .tablet_back{
 	display: none;
