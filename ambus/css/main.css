@@ -101,12 +101,13 @@ body::-webkit-scrollbar{
     border-radius: 5px;
 }
 
-body::-webkit-scrollbar-track{
-    background: #c9c2bc
-    }
+.options::-webkit-scrollbar-track{
+  width: 5px;
+  border-radius: 5px;
+  background: #c9c2bc
+}
 
 body::-webkit-scrollbar-thumb{
-    border-radius: 5px;
     background: #7038e4;
 }
 
@@ -425,7 +426,7 @@ section.third.block .amb_box .item .avatar{
   background-repeat: no-repeat;
   overflow: hidden;
   margin-bottom: 5px;
-  background-position: center;
+  background-position: center top;
 }
 
 section.third.block .amb_box .item .avatar:before {
@@ -433,7 +434,7 @@ section.third.block .amb_box .item .avatar:before {
   height: 100%;
   position: absolute;
   z-index: 1;
-  background: white;
+  background: rgb(248, 249, 255);
   content: '';
   bottom: -92%;
   -ms-transform: skew(0deg, -7deg);
@@ -494,14 +495,8 @@ section.third.block .amb_box .item .text .soc a[href=' undefined '] {
 }
 
 section.third.block .amb_box .item .text .soc a i {
-  font-size: 20px;
   color: #8c46ff;
   margin: 0px 5px
-}
-
-section.third.block .amb_box .item .text .soc a i {
-  font-size: 20px;
-  color: #8c46ff
 }
 
 section.third.block .amb_box .item .text .but {
