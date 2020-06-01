@@ -1101,13 +1101,13 @@
     width: 100%;
 }
 .device_ul_phone{
-    width: 15%;
+    width: 14%;
     max-width: 300px;
     position: relative;
     left: 3.5%;
 }
 .device_ul_PC{
-    width: 24%;
+    width: 23%;
     max-width: 550px;
     position: relative;
     left: 5%;
@@ -1163,7 +1163,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     max-width: 900px;
-    margin: auto;
+    margin: -10px auto 0;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
