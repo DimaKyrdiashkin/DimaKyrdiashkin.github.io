@@ -6,8 +6,8 @@ let mousePosition,
     sityW = $(".city").width()/200,
     sityH = $(".city").height()/200,
     div = document.querySelector(".city"),
-    widthImg = -4096,
-    heightImg = -2304;
+    widthImg = -3200,
+    heightImg = -1800;
 
 let city = document.querySelector(".city");
 

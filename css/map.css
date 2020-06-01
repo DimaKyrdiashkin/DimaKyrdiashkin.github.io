@@ -328,12 +328,12 @@ ul.subM{
 }
 .city{
 	position: fixed;
-	top: -1098px;
-	left: -1377px;
+	top: -700px;
+	left: -800px;
 	cursor: -webkit-grab;
 	cursor: grab;
-	width: 4096px;
-	height: 2304px;
+	width: 3200px;
+	height: 1800px;
 	background: url(../img/map/amircity.jpg);
 	background-size: cover;
 	background-position: center bottom;
@@ -395,118 +395,118 @@ ul.subM{
 	color: #fff;
 }
 .p1{
-	top: 1480px;
-	left: 2430px;
+	top: 1150px;
+    left: 1860px;
 }
 .p2{
-	top: 932px;
-	left: 2078px;
+	top: 710px;
+    left: 1615px;
 }
 .p3{
-	top: 1130px;
-	left: 1800px;
+	top: 805px;
+	left: 1395px;
 }
 .p4{
-	top: 1630px;
-	left: 2030px;
+	top: 1250px;
+	left: 1570px;
 }
 .p5{
-	top: 1480px;
-	left: 2170px;
+	top: 1150px;
+    left: 1680px;
 }
 .p6{
-	top: 1025px;
-	left: 3240px;
+	top: 785px;
+    left: 2535px;
 }
 .p7{
-	top: 922px;
-	left: 3186px;
+	top: 700px;
+    left: 2485px;
 }
 .p8{
-	top: 530px;
-	left: 3330px;
+	top: 350px;
+    left: 2580px;
 }
 .p9{
-	top: 930px;
-	left: 3630px;
+	top: 650px;
+    left: 2830px;
 }
 .p10{
-	top: 705px;
-	left: 3527px;
+	top: 480px;
+    left: 2750px;
 }
 .p11{
-	top: 1750px;
-	left: 3000px;
+	top: 1300px;
+    left: 2350px;
 }
 .p12{
-	top: 730px;
-	left: 2100px;
+	top: 460px;
+	left: 1670px;
 }
 .p13{
-	top: 1700px;
-	left: 1600px;
+	top: 1220px;
+	left: 1235px;
 }
 .p14{
-	top: 1680px;
-	left: 1300px;
+	top: 1250px;
+	left: 1040px;
 }
 .p15{
-	top: 150px;
-	left: 620px;
+	top: 100px;
+	left: 480px;
 }
 .p16{
-	top: 1300px;
-	left: 650px;
+	top: 970px;
+	left: 520px;
 }
 .p17{
-	top: 1050px;
-	left: 630px;
+	top: 780px;
+	left: 500px;
 }
 .p18{
-	top: 700px;
-	left: 780px;
+	top: 515px;
+	left: 610px;
 }
 .p19{
-	top: 480px;
-	left: 990px;
+	top: 350px;
+	left: 770px;
 }
 /* next */
 .p20{
-	top: 1740px;
-	left: 2670px;
+	top: 1340px;
+    left: 2070px
 }
 .p21{
-	top: 1540px;
-	left: 2530px;
+	top: 1170px;
+    left: 1950px;
 }
 .p22{
-	top: 1430px;
-	left: 2675px
+	top: 1130px;
+    left: 2065px;
 }
 /* next */
 .p23{
-	top: 780px;
-	left: 2960px;
+	top: 500px;
+    left: 2250px;
 }
 .p24{
-	top: 250px;
-	left: 2000px;
+	top: 100px;
+    left: 1575px;
 }
 .p25{
-	top: 365px;
-	left: 3150px;
+    top: 265px;
+    left: 2350px;
 }
 .p26{
-	top: 1080px;
-	left: 2800px;
+	top: 780px;
+    left: 2150px;
 }
 .p27{
-	top: 940px;
-	left: 1400px;
+	top: 640px;
+    left: 1150px;
 }
 .p28{
-	top: 265px;
-	left: 3680px;
+	top: 165px;
+    left: 2840px;
 }
 /* /control */
 
@@ -782,7 +782,7 @@ ul.subM{
 		transform: translateY(-5px);
 	}
 }
-@media (max-width: 850px){
+@media (max-width: 700px){
 	.city{
 		display: none;
 	}
