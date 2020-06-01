@@ -21,6 +21,16 @@ div.addEventListener('mousedown', (e) =>{
     ];
 }, true);
 
+div.addEventListener('touchstart', (e) =>{
+    div.style.transition = "0s";
+    div.style.cursor = "grabbing";
+    isDown = true;
+    offset = [
+        div.offsetLeft - e.touches[0].pageX,
+        div.offsetTop - e.touches[0].pageY
+    ];
+}, true);
+
 document.addEventListener('mousemove', (e) =>{
     e.preventDefault();
     if (isDown) {
@@ -34,7 +44,38 @@ document.addEventListener('mousemove', (e) =>{
     }
 }, true);
 
+document.addEventListener('touchmove', (e) =>{
+    // e.preventDefault();
+    if (isDown) {
+        mousePosition = {
+            x : e.touches[0].pageX,
+            y : e.touches[0].pageY
+
+        };
+        div.style.left = (mousePosition.x + offset[0]) + 'px';
+        div.style.top  = (mousePosition.y + offset[1]) + 'px';
+    }
+}, true);
+
 document.addEventListener('mouseup', ()=> {
+    isDown = false;
+    div.style.transition = "1s";
+    if(city.offsetTop > sityH*parseInt(scaleVal*100)){
+        div.style.top = sityH*parseInt(scaleVal*100)+"px";
+    }
+    if (city.offsetLeft > sityW*parseInt(scaleVal*100)+64){
+        div.style.left = sityW*parseInt(scaleVal*100)+64+"px";
+    }
+    if(city.offsetTop < (heightImg+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)){
+        div.style.top = (heightImg+document.documentElement.clientHeight)-sityH*parseInt(scaleVal*100)+"px";
+    };
+    if(city.offsetLeft < (widthImg+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)) {
+        div.style.left = (widthImg+document.documentElement.clientWidth)-sityW*parseInt(scaleVal*100)+"px";
+    };
+    div.style.cursor = "grab";
+}, true);
+
+document.addEventListener('touchend', ()=> {
     isDown = false;
     div.style.transition = "1s";
     if(city.offsetTop > sityH*parseInt(scaleVal*100)){

@@ -10,7 +10,8 @@
     border-radius: 4px;
 }
 body{
-	background: url(../img/map/cell.png);
+	
+	position: fixed;
 }
 .wrapper{
 	height: 100vh;
@@ -20,13 +21,14 @@ body{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	background: url(../img/map/cell.png);
 }
 .tablet_back{
 	display: none;
 }
 .side_bar{
 	z-index: 2;
-	position: relative;
+	position: fixed;
 	width: 64px;
 	height: 100%;
 	background: #fff;
@@ -128,9 +130,9 @@ body{
     line-height: normal;
     padding: 15px;
     text-align: center;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 }
 .menu_h1_open{
 	-webkit-transform: translateX(-100vw);
@@ -414,7 +416,7 @@ ul.subM{
 	left: 1300px;
 }
 .p15{
-	top: 200px;
+	top: 150px;
 	left: 620px;
 }
 .p16{
