@@ -607,8 +607,14 @@ $(document).ready(function(){
                 if(city_text !== 'Город'){
                     massSort = sortCity(massSort,city_text);
                 }
+                if(city_text === 'Город' && country_text ==='Страну' && status_text === "0"){
+                    for(let i of items){
+                        i.classList.add('hide_search');
+                        i.classList.remove('search_active');
+                    }
+                }
 
-                for( let i of massSort){
+                for( let i of items){
                     i.classList.remove('hide_search');
                     i.classList.add('search_active');
                 }

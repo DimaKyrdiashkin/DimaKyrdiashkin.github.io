@@ -1101,8 +1101,10 @@ section.second.block img {
    section.third.block .search_box .but {
      width: 100%;
      text-align: center;
-     padding: 10px 100px;
-     margin: 0px
+     padding: 10px 0;
+     display: flex;
+     justify-content: center;
+     margin: 0;
    }
 
    section.fourth.block .owl-carousel .slider_info > div > div {
