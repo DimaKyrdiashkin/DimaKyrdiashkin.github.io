@@ -7,7 +7,7 @@ window.onload=function(){
 
     setTimeout(()=>{
         document.querySelector(".loader").style.display = 'none'
-    },2500)
+    },1700)
 }
 
 let mousePosition,
