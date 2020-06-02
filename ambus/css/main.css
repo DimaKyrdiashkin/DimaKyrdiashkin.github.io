@@ -1162,6 +1162,7 @@ section.second.block img {
   }
   section.fourth.block .owl-carousel .main .title_box p{
     padding-left: 30px;
+    margin-bottom: 20px;
   }
   .owl-carousel .owl-nav,
   section.fourth.block .owl-carousel .owl-dots{
