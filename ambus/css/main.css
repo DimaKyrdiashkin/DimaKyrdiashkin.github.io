@@ -259,12 +259,12 @@ section.first.block .text {
 
 section.first.block .text:before {
   z-index: -1;
-  width: 160%;
-  height: 360%;
+  width: 550px;
+  height: 550%;
   content: '';
   position: absolute;
-  right: -30%;
-  top: -100%;
+  left: -15%;
+  top: -140%;
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
