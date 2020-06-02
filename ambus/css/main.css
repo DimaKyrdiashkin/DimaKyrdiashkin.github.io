@@ -213,10 +213,10 @@ p.title {
 header{
   color: #FFFFFF;
 }
-
+/* 
 .desctop-menu{
   position: initial!important;
-}
+} */
 section.first {
   padding: 0 0 100px;
   background: url(../../img/ambassadors/Promo.png);
@@ -1028,11 +1028,6 @@ section.second.block img {
                 flex: 0 0 50% !important;
         max-width: 50% !important; */
     }
-
-
-   .menu {
-     margin-left: -55px !important
-   }
 
    section.second.block * {
     text-align: center;
