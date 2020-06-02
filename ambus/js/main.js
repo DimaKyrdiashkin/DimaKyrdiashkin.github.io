@@ -689,7 +689,7 @@ soc = ( massSoc)=> {
     let res= ''
     for(let key in massSoc){
         if( key ==='email'){
-            res += "<a href='mailto: " + massSoc[key] + " ' class='link_icon d-flex align-self-center'><i class='fas fa-envelope fa-2x'></i></a>";
+            res += "<a href='mailto: " + massSoc[key] + " ' class='link_icon d-flex align-self-center'><i class='far fa-envelope fa-2x'></i></a>";
         }
         else{
             res += "<a href=' " + massSoc[key] + "' class='link_icon d-flex align-self-center'>"
