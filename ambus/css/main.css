@@ -1144,6 +1144,12 @@ section.second.block img {
     }
 }
 @media all and (max-width: 480px) {
+  section.first{
+    background-position: -75px center;
+  }
+  section.fourth.block .owl-carousel .block_box .bottom{
+    margin-bottom: 10px;
+  }
   .fourth_text{
     flex: 0 0 100%;
     max-width: 100%;
