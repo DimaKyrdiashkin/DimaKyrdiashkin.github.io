@@ -658,9 +658,9 @@ $(document).ready(function(){
 
     // карусель
     $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
+        loop: true,
+        margin: 10,
+        nav: true,
         items: 1,
         autoplay: false,
         autoplayHoverPause: true,
@@ -668,20 +668,20 @@ $(document).ready(function(){
         animateOut: 'fadeOut'
     })
 
-    $('.owl-carousel .owl-nav').remove()
-    $('section.fourth.block .owl-carousel .main .title_status').append('<div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>')
+    // $('.owl-carousel .owl-nav').remove()
+    // $('section.fourth.block .owl-carousel .main .slider_head').append('<div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>')
 
-    $('.owl-carousel .owl-dots').remove()
-    $('section.fourth.block .owl-carousel .main .title_status .owl-nav').append('<div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div>')
+    // $('.owl-carousel .owl-dots').remove()
+    // $('section.fourth.block .owl-carousel .main .slider_head .owl-nav').append('<div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div>')
 
     var slider = $('.owl-carousel');
 
     $('.owl-carousel .owl-nav .owl-next').click(function () {
-        slider.trigger('next.owl.carousel');
+        slider.trigger('next.owl.carousel' - 1);
     });
 
     $('.owl-carousel .owl-nav .owl-prev').click(function () {
-        slider.trigger('prev.owl.carousel');
+        slider.trigger('prev.owl.carousel' - 1);
     });
 })
 

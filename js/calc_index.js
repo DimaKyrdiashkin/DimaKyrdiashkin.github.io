@@ -831,13 +831,4 @@ $(function() {
             // alert( "Нет таких значений" );
         }
     };
-    $("#c-result-sum").click(function(){
-        if($("#c-result-sum").text() == "Выберите период"){
-            window.scrollTo({
-                top: document.documentElement.clientHeight,
-                behavior: "smooth"
-            });
-        };
-    });
-
 });
