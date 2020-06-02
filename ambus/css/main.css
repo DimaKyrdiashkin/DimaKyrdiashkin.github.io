@@ -22,7 +22,7 @@ html {
 
 a:hover {
   text-decoration: none;
-  color: inherit;
+  color: #fff;
 }
 
 .anim_dur,
@@ -433,6 +433,7 @@ section.third.block .amb_box .item:before {
 }
 
 section.third.block .amb_box .item .avatar{
+
   height: 200px;
   position: relative;
   background-size: cover;
@@ -441,21 +442,9 @@ section.third.block .amb_box .item .avatar{
   overflow: hidden;
   margin-bottom: 5px;
   background-position: center top;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 }
 
-section.third.block .amb_box .item .avatar:before {
-  width: 102%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  background: rgb(248, 249, 255);
-  content: '';
-  bottom: -92%;
-  -ms-transform: skew(0deg, -7deg);
-      transform: skew(0deg, -7deg);
-  -moz-transform: skew(0deg, -7deg);
-  -webkit-transform: skew(0deg, -7deg);
-}
 
 section.third.block .amb_box .item .text {
  padding: 0px 30px;
