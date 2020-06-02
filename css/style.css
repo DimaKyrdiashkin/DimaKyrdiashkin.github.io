@@ -934,6 +934,9 @@ p.circle_yellow{
 	
 }
 @media (max-width: 1200px) {
+	.second{
+		min-height: fit-content !important;
+	}
 	body{
 		font-size: 14px;
 	}
