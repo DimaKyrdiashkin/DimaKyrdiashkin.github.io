@@ -2476,5 +2476,10 @@
 	</script>
 	<script src="js/calc_index.js"></script>
 	<script src="js/menu.js"></script>
+<script>
+	if (/|iPhone|iPad|iPod|/i.test(navigator.userAgent)) {
+	document.querySelector('.device .container').style.backgroundSize = "contain";
+	}
+</script>
 </body>
 </html>
