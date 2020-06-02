@@ -1910,6 +1910,9 @@ footer .slick-initialized .slick-slide{
         z-index: 1;
         top: -150px;
     }
+    .diviseIos{
+        background-attachment: inherit!important;
+    }
 
     .device_ul_footer_li{
         -webkit-box-orient: vertical;
