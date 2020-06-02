@@ -226,7 +226,6 @@
     width: 60%;
 }
 .bill_left_text{
-    display: none;
     position: absolute;
     z-index: 20;
     top: 50%;
@@ -240,9 +239,7 @@
     font-size: 1em;
     line-height: 28px;
     text-align: center;
-}
-.bill_left_text_h2_activ{
-    display: block;
+    color: #6231D6;
 }
 
 .bill_left_text_h2_span{
@@ -792,6 +789,7 @@
 }
 
 .tabl table{
+
     width: 102%;
     text-align: center;
     border-spacing:0!important;
@@ -803,6 +801,9 @@
 }
 .tabl_year{
     color: #22232D;
+}
+.tabl table td{
+    font-family: "Gilroy-Medium";
 }
 .tabl_bg_color td{
     font-size: 1em;

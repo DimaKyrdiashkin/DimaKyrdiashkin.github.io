@@ -51,14 +51,16 @@ $('.menu a').on('click', (e) => {
             $('.content').css('opacity', 1);
         }, 1200);
     };
-    
-    const active = $(e.target).parent("li")[0];
-    if($(active).children('ul').hasClass('menuUlActive')){
+    const active = e.target.closest('li');
+
+    if(!! active.querySelector('ul.menuUlActive')){
+        $('.menu_a_span_active').removeClass('menu_a_span_active');
         $('.subM').removeClass('subMenu1_open subMenu2_open subMenu3_open subMenu4_open menuUlActive');
         return;
     }
+    $('.menu_a_span_active').removeClass('menu_a_span_active');
     $('.subM').removeClass('subMenu1_open subMenu2_open subMenu3_open subMenu4_open menuUlActive');
-    if($(e.target).parent("li").children('.subM').length<1) {
+    if(e.target.hasAttribute('data-point')) {
         openPoint(e.target.getAttribute('data-point'));
         openMunu()
         $(".content-left").addClass("open_content-left", 1000);
@@ -69,15 +71,18 @@ $('.menu a').on('click', (e) => {
     let num;
     for(let i in ulMenu){
         if(active == ulMenu[i]){
-            num =i;
+            num = parseInt(i);
             break;
         }
     }
-    if(num == 0){
+    if(!! active.querySelector('a span')){
+        active.querySelector('a').classList.add('menu_a_span_active')
+    }
+    if(num === 0){
         $(active).children('ul').toggleClass('subMenu1_open menuUlActive');
-    }else if(num == 1){
+    }else if(num === 1){
         $(active).children('ul').toggleClass('subMenu2_open menuUlActive');
-    }else if(num == 2){
+    }else if(num === 2){
         $(active).children('ul').toggleClass('subMenu3_open menuUlActive');
     }
 });

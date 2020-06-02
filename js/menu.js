@@ -22,7 +22,4 @@ $(".menu_button").on("click", function(even){
         setTimeout(function(){click = false;}, 1200);
     };
 });
-//menu/
-$(".menu ul li").on('click', function(event){    
-    window.location.href = $(event.target.children).attr('href');
-});
+// //menu/

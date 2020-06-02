@@ -362,14 +362,18 @@ header.menu_open{
 	padding-top: 20px;
 }
 .menu ul li{
+
+}
+.menu ul a{
 	padding: 13px 0 13px 0;
 	text-align: center;
 	-webkit-transition: .2s;
 	-o-transition: .2s;
 	transition: .2s;
 	cursor: pointer;
+	display: block;
 }
-.menu ul li:hover{
+.menu ul li a:hover{
 	background: #535366;
 	-webkit-transition: .2s;
 	-o-transition: .2s;

@@ -89,10 +89,10 @@
 						</div>
 						<ul class="hide">
 							<li><a href="index.html">Главная</a></li>
-							<li><a href="/#billik">Счета</a></li>
-							<li><a href="/#wallet">Amir&nbspWallet</a></li>
+							<li><a href="#billik">Счета</a></li>
+							<li><a href="#wallet">Amir&nbspWallet</a></li>
 							<li><a href="ambus/">Ambassadors</a></li>
-							<li><a href="/#about">О&nbspнас</a></li>
+							<li><a href="#about">О&nbspнас</a></li>
 						</ul>
 						<div class="licens hide">
 							<a href="https://drive.google.com/file/d/1y7vzTzOna2X-CakdleXnByqCmtSYZT7c/view" target="_blank">лицензия</a>
@@ -222,9 +222,9 @@
 						</svg>
 						<div class="bill_left_text" id="bill_left_body">
 							<h2 id='bill_left_pr' class="bill_left_text_h2">
-								<span id="bill_left_span" class="bill_left_text_h2_span">51</span>
+								<span id="bill_left_span" class="bill_left_text_h2_span">100</span>
 							%</h2>
-							<p id='bill_left_text' class="bill_left_text_text">pam</p>
+							<p id='bill_left_text' class="bill_left_text_text"></p>
 						</div>
 					</div>
 				</div>
@@ -2181,22 +2181,22 @@
 						</h3>
 						<p class="say_slider_item_p">
 						</p>
-						<a href="https://www.youtube.com/watch?time_continue=73&v=Nyx91M2mTLA&feature=emb_logo" class="say_slider_item_a">Перейти</a>
+						<a target="_blank" href="https://www.youtube.com/watch?time_continue=73&v=Nyx91M2mTLA&feature=emb_logo" class="say_slider_item_a">Перейти</a>
 					</li>
-					<li class="say_slider_item">
-						<h3 class="say_slider_item_h2">
-							Blockchain Life 2019
-						</h3>
-						<p class="say_slider_item_p"></p>
-						<a href="https://www.youtube.com/watch?time_continue=9&v=rrI_GZVDyKs&feature=emb_logo" class="say_slider_item_a">Перейти</a>
-					</li>
+<!--					<li class="say_slider_item">-->
+<!--						<h3 class="say_slider_item_h2">-->
+<!--							Blockchain Life 2019-->
+<!--						</h3>-->
+<!--						<p class="say_slider_item_p"></p>-->
+<!--						<a target="_blank" href="https://www.youtube.com/watch?time_continue=9&v=rrI_GZVDyKs&feature=emb_logo" class="say_slider_item_a">Перейти</a>-->
+<!--					</li>-->
 					<li class="say_slider_item">
 						<h3 class="say_slider_item_h2">
 							Форум <br>
 							Say&nbspFuture
 						</h3>
 						<p class="say_slider_item_p"></p>
-						<a href="https://www.youtube.com/watch?v=pa-M-K3-xO4&feature=emb_logo" class="say_slider_item_a">Перейти</a>
+						<a target="_blank" href="https://www.youtube.com/watch?v=pa-M-K3-xO4&feature=emb_logo" class="say_slider_item_a">Перейти</a>
 					</li>
 					<li class="say_slider_item">
 						<h3 class="say_slider_item_h2">
@@ -2205,23 +2205,30 @@
 							на РОСТ-FM:
 						</h3>
 						<p class="say_slider_item_p"></p>
-						<a href="https://rost.fm/person/marat-mynbaev/" class="say_slider_item_a">Перейти</a>
+						<a target="_blank" href="https://rost.fm/person/marat-mynbaev/" class="say_slider_item_a">Перейти</a>
 					</li>
-					<li class="say_slider_item">
-						<h3 class="say_slider_item_h2">
-							Павел Волков <br>
-							про Amir&nbspCapital
-						</h3>
-						<p class="say_slider_item_p"></p>
-						<a href="https://www.youtube.com/watch?time_continue=9&v=rrI_GZVDyKs&feature=emb_logo" class="say_slider_item_a">Перейти</a>
-					</li>
+<!--					<li class="say_slider_item">-->
+<!--						<h3 class="say_slider_item_h2">-->
+<!--							Павел Волков <br>-->
+<!--							про Amir&nbspCapital-->
+<!--						</h3>-->
+<!--						<p class="say_slider_item_p"></p>-->
+<!--						<a target="_blank" href="https://www.youtube.com/watch?time_continue=9&v=rrI_GZVDyKs&feature=emb_logo" class="say_slider_item_a">Перейти</a>-->
+<!--					</li>-->
 					<li class="say_slider_item">
 						<h3 class="say_slider_item_h2">
 							Интервью с <br>
 							Рустамом Буркеевым
 						</h3>
 						<p class="say_slider_item_p"></p>
-						<a href="https://www.youtube.com/watch?v=-Wb_Ns572xM" class="say_slider_item_a">Перейти</a>
+						<a target="_blank" href="https://www.youtube.com/watch?v=IT-xgIFM-LI" class="say_slider_item_a">Перейти</a>
+					</li>
+					<li class="say_slider_item">
+						<h3 class="say_slider_item_h2">
+							PROInvest 2020 <br>Online
+						</h3>
+						<p class="say_slider_item_p"></p>
+						<a target="_blank" href="https://www.youtube.com/watch?v=4gc2x2iGAMc" class="say_slider_item_a">Перейти</a>
 					</li>
 				</ul>
 			</div>
@@ -2469,5 +2476,10 @@
 	</script>
 	<script src="js/calc_index.js"></script>
 	<script src="js/menu.js"></script>
+<script>
+	if (/|iPhone|iPad|iPod|/i.test(navigator.userAgent)) {
+	document.querySelector('.device .container').style.backgroundSize = "contain";
+	}
+</script>
 </body>
 </html>

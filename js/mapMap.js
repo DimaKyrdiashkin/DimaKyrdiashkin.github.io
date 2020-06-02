@@ -1,3 +1,21 @@
+window.onload=function(){
+    setTimeout(
+        ()=>{
+            document.querySelector(".loader_active svg").style.opacity = 0;
+        },1000
+    )
+    setTimeout(
+        ()=>{
+
+            document.querySelector(".loader_active").classList.remove('loader_active');
+        },1500
+    )
+    //
+    setTimeout(()=>{
+        document.querySelector(".loader").style.display = 'none'
+    },2000)
+}
+
 let mousePosition,
     offset = [0,0],
     isDown = false,
@@ -93,54 +111,54 @@ document.addEventListener('touchend', ()=> {
     div.style.cursor = "grab";
 }, true);
 
-// $(window).bind('mousewheel', (e) => {
-//     if (e.originalEvent.wheelDelta >= 0) {
-//         if (scaleVal2 <= 2) {
-//             scaleVal += 0.01;
-//             scaleVal2 += 0.01;
-//             city.style.transform = `scale(${scaleVal2})`
-//         }else{
-//             window.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
-//         };
-//     } else{
-//         if (scaleVal2 >= 1.01) {
-//             scaleVal-=0.01;
-//             scaleVal2-=0.01;
-//             city.style.transform = `scale(${scaleVal2})`
-//             if(city.offsetTop > sityH*parseInt(scaleVal*100)){
-//                 div.style.top = sityH*parseInt(scaleVal*100)+"px";
-//             }
-//             if (city.offsetLeft > sityW * parseInt(scaleVal * 100) + 64){
-//                 div.style.left = sityW * parseInt(scaleVal * 100) + 64 + "px";
-//             }
-//             if(city.offsetTop < (heightImg+document.documentElement.clientHeight) - sityH * parseInt(scaleVal * 100)){
-//                 div.style.top = (heightImg+document.documentElement.clientHeight) - sityH * parseInt(scaleVal * 100) + "px";
-//             }
-//             if(city.offsetLeft < (widthImg+document.documentElement.clientWidth) - sityW * parseInt(scaleVal * 100)) {
-//                 div.style.left = (widthImg+document.documentElement.clientWidth) - sityW * parseInt(scaleVal * 100) + "px";
-//             }
-//         }else{
-//             window.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
-//             scaleVal = 0;
-//             if(city.offsetTop > sityH * parseInt(scaleVal * 100)){
-//                 div.style.top = sityH * parseInt(scaleVal * 100) + "px";
-//             }
-//             if(city.offsetLeft > sityW * parseInt(scaleVal * 100) + 64){
-//                 div.style.left = sityW * parseInt(scaleVal * 100) + 64 + "px";
-//             }
-//             if(city.offsetTop < (-1898+document.documentElement.clientHeight) - sityH * parseInt(scaleVal * 100)){
-//                 div.style.top = (heightImg+document.documentElement.clientHeight) - sityH * parseInt(scaleVal * 100)+"px";
-//             }
-//             if(city.offsetLeft < (widthImg+document.documentElement.clientWidth) - sityW * parseInt(scaleVal * 100)) {
-//                 div.style.left = (widthImg+document.documentElement.clientWidth) - sityW * parseInt(scaleVal * 100)+"px";
-//             };
-//         };
-//     };
-// });
+$(window).bind('mousewheel', (e) => {
+    if (e.originalEvent.wheelDelta >= 0) {
+        if (scaleVal2 <= 2) {
+            scaleVal += 0.01;
+            scaleVal2 += 0.01;
+            city.style.transform = `scale(${scaleVal2})`
+        }else{
+            window.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
+        };
+    } else{
+        if (scaleVal2 >= 1.01) {
+            scaleVal-=0.01;
+            scaleVal2-=0.01;
+            city.style.transform = `scale(${scaleVal2})`
+            if(city.offsetTop > sityH*parseInt(scaleVal*100)){
+                div.style.top = sityH*parseInt(scaleVal*100)+"px";
+            }
+            if (city.offsetLeft > sityW * parseInt(scaleVal * 100) + 64){
+                div.style.left = sityW * parseInt(scaleVal * 100) + 64 + "px";
+            }
+            if(city.offsetTop < (heightImg+document.documentElement.clientHeight) - sityH * parseInt(scaleVal * 100)){
+                div.style.top = (heightImg+document.documentElement.clientHeight) - sityH * parseInt(scaleVal * 100) + "px";
+            }
+            if(city.offsetLeft < (widthImg+document.documentElement.clientWidth) - sityW * parseInt(scaleVal * 100)) {
+                div.style.left = (widthImg+document.documentElement.clientWidth) - sityW * parseInt(scaleVal * 100) + "px";
+            }
+        }else{
+            window.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
+            scaleVal = 0;
+            if(city.offsetTop > sityH * parseInt(scaleVal * 100)){
+                div.style.top = sityH * parseInt(scaleVal * 100) + "px";
+            }
+            if(city.offsetLeft > sityW * parseInt(scaleVal * 100) + 64){
+                div.style.left = sityW * parseInt(scaleVal * 100) + 64 + "px";
+            }
+            if(city.offsetTop < (-1898+document.documentElement.clientHeight) - sityH * parseInt(scaleVal * 100)){
+                div.style.top = (heightImg+document.documentElement.clientHeight) - sityH * parseInt(scaleVal * 100)+"px";
+            }
+            if(city.offsetLeft < (widthImg+document.documentElement.clientWidth) - sityW * parseInt(scaleVal * 100)) {
+                div.style.left = (widthImg+document.documentElement.clientWidth) - sityW * parseInt(scaleVal * 100)+"px";
+            };
+        };
+    };
+});
 
-$(".point, svg.close").on("click",  () => {
-    $(".content-left").toggleClass("open_content-left", 1000);
-    $(".content-right").toggleClass("open_content-right", 1000);
+$(".point, .close_cross").on("click",  () => {
+    $(".content-left").toggleClass("open_content-left", 500);
+    $(".content-right").toggleClass("open_content-right", 500);
 });
 
 // point clicl
@@ -165,6 +183,7 @@ openPoint = (numberPoint) => {
     let father ='';
     numberPointActive = numberPoint;
     if(28 < numberPoint) numberPoint=1
+    else if(1>numberPoint) numberPoint= 28
     const BdName = `p${numberPoint}`;
     if(numberPoint<21){
         father = "Экосистема Amir Capital";
@@ -185,6 +204,12 @@ document.getElementById('nextPoint').addEventListener('click', ()=>{
     const textActive = titlePointBlock.innerHTML
     for(let i in mapBD){
         if(mapBD[i].title == textActive)openPoint(parseInt(i.split('p')[1])+1)
+    }
+})
+document.getElementById('poverPoint').addEventListener('click', ()=>{
+    const textActive = titlePointBlock.innerHTML
+    for(let i in mapBD){
+        if(mapBD[i].title == textActive)openPoint(parseInt(i.split('p')[1])-1)
     }
 })
 

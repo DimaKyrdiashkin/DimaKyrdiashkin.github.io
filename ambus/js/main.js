@@ -2,7 +2,7 @@
 'user script'
 let mass = [
     {
-        name: "Саяпин Павел Юрьевич",
+        name: "Саяпин Павел",
         country: "Россия",
         tel:"+7 (909) 671 9 999",
         city:["Москва","Владивосток","Находка","Канкун"],
@@ -53,7 +53,7 @@ let mass = [
         }
     },
     {
-        name: "Курбанова Альбина Салаватовна",
+        name: "Курбанова Альбина",
         country: "Татарстан",
         tel:"+7 (917) 281 9 462",
         city:"Казань",
@@ -212,7 +212,7 @@ let mass = [
         }
     },
     {
-        name: "Денис Унуковский Иванович",
+        name: "Денис Унуковский",
         country: "Белоруссия",
         tel:"+365 (33) 6629 975",
         city:"Минск",
@@ -236,7 +236,7 @@ let mass = [
         }
     },
     {
-        name: "Шаромов Дмитрий Михайлович",
+        name: "Шаромов Дмитрий",
         country: "Украина",
         tel:"+38 (097) 340 34 03",
         city:"Киев",
@@ -689,7 +689,7 @@ soc = ( massSoc)=> {
     let res= ''
     for(let key in massSoc){
         if( key ==='email'){
-            res += "<a href='mailto: " + massSoc[key] + " ' class='link_icon d-flex align-self-center'><i class='fas fa-envelope fa-2x'></i></a>";
+            res += "<a href='mailto: " + massSoc[key] + " ' class='link_icon d-flex align-self-center'><i class='far fa-envelope fa-2x'></i></a>";
         }
         else{
             res += "<a href=' " + massSoc[key] + "' class='link_icon d-flex align-self-center'>"

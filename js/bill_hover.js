@@ -78,20 +78,21 @@ document.querySelector('#bill_close').addEventListener('click',(e)=>{
     billClose();
 })
 function hov_svg(idSvg) {
-    bill_body.classList.add('bill_left_text_h2_activ')
+
     document.getElementById(idSvg).setAttribute('d',mass.hover[idSvg]);
     bill_h2.style.color = mass.color[idSvg];
     bill_span.innerText = mass.percent[idSvg];
     bill_text.innerText = mass.title[idSvg];
 }
 function normar_svg(idSvg) {
-    bill_body.classList.remove('bill_left_text_h2_activ')
+    bill_h2.style.color = '#6231D6';
+    bill_span.innerText = 100;
+    bill_text.innerText = '';
     document.getElementById(idSvg).setAttribute('d',mass.normal[idSvg]);
 }
 let flad_slider =true;
 function billOpen(id) {
     $('.contendBodyActive').removeClass('contendBodyActive')
-    bill_body.classList.add('bill_left_text_h2_activ')
     bill_h2.style.color = mass.color[id];
     bill_span.innerText = mass.percent[id];
     bill_text.innerText = "";
@@ -148,7 +149,9 @@ function billOpen(id) {
 }
 function billClose() {
     bill_head.innerText = text_defolt_h2;
-    bill_body.classList.remove('bill_left_text_h2_activ')
+    bill_h2.style.color = '#6231D6';
+    bill_span.innerText = 100;
+    bill_text.innerText = '';
     bill_left.classList.remove("bill_to_left");
     bill_right.classList.remove("bill_to_right");
     bill_container.classList.remove("bill_container_active");
