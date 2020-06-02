@@ -1,13 +1,19 @@
 window.onload=function(){
     setTimeout(
         ()=>{
-            document.querySelector(".loader_active").classList.remove('loader_active');
+            document.querySelector(".loader_active svg").style.opacity = 0;
         },1000
     )
+    setTimeout(
+        ()=>{
 
+            document.querySelector(".loader_active").classList.remove('loader_active');
+        },1500
+    )
+    //
     setTimeout(()=>{
         document.querySelector(".loader").style.display = 'none'
-    },1700)
+    },2000)
 }
 
 let mousePosition,
