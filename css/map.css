@@ -81,19 +81,19 @@ body{
 .back::before{
 	position: absolute;
     left: 15px;
-    top: 37%;
+    top: 38%;
     display: block;
     content: '';
     background: #fff;
     width: 12px;
 	height: 2px;
-	transform: rotate(-45deg);
+	transform: rotate(-45deg) ;
 	border-radius: 4px;
 }
 .back::after{
 	position: absolute;
     left: 15px;
-    bottom: 37%;
+    top: 58%;
     display: block;
     content: '';
     background: #fff;
@@ -137,6 +137,7 @@ body{
 	height: 64px;
 	width: 64px;
 	background: #542AC8;
+	position: relative;
 	border-radius: 0px 0px 0px 4px;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -161,14 +162,39 @@ body{
 	align-self: flex-end;
 }
 .menu_button span{
+	position: absolute;
 	display: block;
 	height: 3px;
-	background: #fff;
 	width: 28px;
-	margin: 3px;
+	border-radius: 4px;
+	background: #fff;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
+}
+.menu_button span:first-child{
+	top: 25%;
+	transform: translateY(-50%);
+}
+.menu_button span:nth-child(2){
+	top: 50%;
+	opacity: 1;
+	transform: translateY(-50%);
+}
+.menu_button span:last-child{
+	top: 75%;
+	transform: translateY(-50%);
+}
+.menu_button_active span:first-child{
+	top: 39%;
+	transform: translateY(-100%) rotate(-32deg);
+}
+.menu_button_active span:nth-child(2){
+	opacity: 0;
+}
+.menu_button_active span:last-child{
+	top: 50%;
+	transform: translateY(100%) rotate(32deg);
 }
 .menu_h1{
 	position: absolute;
@@ -364,6 +390,9 @@ body{
 	width: 100%!important;
 }
 
+.back_st{
+
+}
 li ul.subMenu1_open{
 	height: 490px;
 	-webkit-transition: 1s;
@@ -928,7 +957,6 @@ ul.subM{
 	.menu_button span{
 		height: 2px;
 		width: 14px;
-		margin: 2px;
 	}
 	.menu_h1{
 		font-size: 1.25em;
