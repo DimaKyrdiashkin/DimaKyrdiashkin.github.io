@@ -110,8 +110,8 @@ function billOpen(id) {
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 3,
-            prevArrow: "<img src='img/home/slider_slick_next.svg' class='prev' alt='1'>",
-            nextArrow: "<img src='img/home/slider_slick_next.svg' class='next' alt='2'>",
+            prevArrow: "<img src='img/slider_slick_next.svg' class='prev' alt='1'>",
+            nextArrow: "<img src='img/slider_slick_next.svg' class='next' alt='2'>",
             responsive: [
                 {
                     breakpoint: 1691,
