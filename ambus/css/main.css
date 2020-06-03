@@ -410,7 +410,7 @@ section.third.block .amb_box .item:before {
 }
 
 section.third.block .amb_box .item .avatar{
-  height: 200px;
+  height: 300px;
   position: relative;
   background-size: cover;
   border-radius: 4px;
