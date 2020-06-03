@@ -165,7 +165,7 @@ $(".point, .close_cross").on("click",  () => {
 let mapBD,
     numberPointActive = 1;
 $.ajax({
-    url: "./js/mapBd.json"
+    url: "../js/mapBd.json"
 }).done(function(data) {
     mapBD=data;
 })

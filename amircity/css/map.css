@@ -65,7 +65,7 @@ body{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	background: url(../img/map/cell.png);
+	background: url(../img/cell.png);
 }
 .back{
 	text-align: center;
@@ -435,7 +435,7 @@ ul.subM{
 	cursor: grab;
 	width: 3200px;
 	height: 1800px;
-	background: url(../img/map/amircity_2.jpg);
+	background: url(../img/amircity_2.jpg);
 	background-size: cover;
 	background-position: center bottom;
 	-webkit-transform-origin: center;
@@ -446,7 +446,7 @@ ul.subM{
 	position: absolute;
 	width: 68px;
 	height: 86px;
-	background-image: url("./../img/map/point_1.svg");
+	background-image: url("./../img/point_1.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: left top;
@@ -468,10 +468,10 @@ ul.subM{
 	text-align: center;
 }
 .point_2{
-	background-image: url("./../img/map/point_2.svg");
+	background-image: url("./../img/point_2.svg");
 }
 .point_3{
-	background-image: url("./../img/map/point_3.svg");
+	background-image: url("./../img/point_3.svg");
 }
 .point_3 p{
 	color: #353742 !important;
@@ -910,7 +910,7 @@ ul.subM{
 		position: fixed;
 		width: 100%;
 		height: 100%;
-		background: url(../img/map/amircity_small.png);
+		background: url(../img/amircity_small.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -930,7 +930,7 @@ ul.subM{
 		position: fixed;
 		width: 100%;
 		height: 100%;
-		background: url(../img/map/amircity_small.png);
+		background: url(../img/amircity_small.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
