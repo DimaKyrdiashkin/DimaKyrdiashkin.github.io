@@ -174,7 +174,7 @@ body{
 	position: relative;
 	width: 100vw;
 	height: 100vh;
-	background: #fff;
+	/* background: #fff; */
 }
 .promoContent_svg{
 	display: none;
@@ -197,7 +197,7 @@ body{
 }
 .promoContent video{
 	position: absolute;
-	z-index: 2;
+	z-index: -1;
 	min-width: 100vw;
 	min-height: 100%;
 	left: 50%;

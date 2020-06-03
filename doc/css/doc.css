@@ -6,6 +6,7 @@
     align-items: flex-end; */
     height: 70vh;
     overflow: inherit;
+    background: #fff;
 }
 .promoContent .container .img{
     width: 70%;
