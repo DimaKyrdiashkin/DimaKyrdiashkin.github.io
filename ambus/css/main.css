@@ -150,11 +150,7 @@ p.title {
   font-family: 'gsb';
   margin-bottom: 10px;
 }
-.status,
-.country,
-.city{
-  font-size: .85em;
-}
+
 .link {
   position: relative;
   cursor: pointer;

@@ -9,8 +9,8 @@ $(".say_slider").slick({
     focusOnSelect:true,
     autoplaySpeed:5000,
     arrows: true,
-    prevArrow: "<img src='img/home/slider_slick_next.svg' class='prev' alt='1'>",
-    nextArrow: "<img src='img/home/slider_slick_next.svg' class='next' alt='2'>",
+    prevArrow: "<img src='img/slider_slick_next.svg' class='prev' alt='1'>",
+    nextArrow: "<img src='img/slider_slick_next.svg' class='next' alt='2'>",
     responsive: [
         {
             breakpoint: 1200,
@@ -38,8 +38,8 @@ $("#footer_slider").slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4,
-    prevArrow: "<img src='img/home/slider_slick_next.svg' class='prev' alt='1'>",
-    nextArrow: "<img src='img/home/slider_slick_next.svg' class='next' alt='2'>",
+    prevArrow: "<img src='img/slider_slick_next.svg' class='prev' alt='1'>",
+    nextArrow: "<img src='img/slider_slick_next.svg' class='next' alt='2'>",
     responsive: [
         {
             breakpoint: 1200,
