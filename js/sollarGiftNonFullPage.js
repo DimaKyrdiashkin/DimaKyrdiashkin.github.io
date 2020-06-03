@@ -17,7 +17,7 @@ function fun_Full() {
         //Navigation
         menu: '#fp-nav',
         lockAnchors: false,
-        anchors: ['promoContent', "footer"],
+        anchors: ['promoContent', "bills","footer"],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: [],//название для поинтов навигации
@@ -82,32 +82,6 @@ function fun_Full() {
 
         //events
         onLeave: function (origin, destination, direction) {
-            if(destination.index === 0){
-                document.getElementById("promo_h1").style.zIndex = "12";
-            }
-            if(destination.index <= 1){
-                $('.marker').removeClass('marker_open', 500);
-            }else if(destination.index <= 4){
-                if(destination.index == 4 && direction == 'up'){
-                    $('.marker').removeClass('marker_open', 500);
-                }
-                $('.marker').delay(500).addClass('marker_open', 500);
-                setTimeout(() => $('.marker h5').text('ВЫГОДНО'), 400);
-            }else if(destination.index <= 5){
-                $('.marker').removeClass('marker_open', 500);
-                $('.marker').delay(500).addClass('marker_open', 500);
-                setTimeout(() => $('.marker h5').text('НАДЕЖНО'), 400);
-            }else if(destination.index <= 6){
-                $('.marker').removeClass('marker_open', 500);
-                $('.marker').delay(500).addClass('marker_open', 500);
-                setTimeout(() => $('.marker h5').text('ПОЛЕЗНО'), 400);
-            }else if(destination.index <= 7){
-                $('.marker').removeClass('marker_open', 500);
-                $('.marker').delay(500).addClass('marker_open', 500);
-                setTimeout(() => $('.marker h5').text('УДОБНО'), 400);
-            }else{
-                $('.marker').removeClass('marker_open', 500);
-            }
         },
         afterLoad: function (origin, destination, direction) {
         },
@@ -118,10 +92,6 @@ function fun_Full() {
         afterReBuild: function () {
         },
         afterResponsive: function (isResponsive) {
-            flag = false;
-            fullpage_api.destroy('all');
-            $('.marker').delay(200).removeClass('marker_open');
-            $('.fullpageId').css('transform', 'none');
         },
         afterSlideLoad: function (section, origin, destination, direction) {
         },

@@ -1,0 +1,30 @@
+.promoContent .container{
+    background: #6231D6;
+}
+.promoContent_text{
+    color: #FFFFFF;
+    min-width: 450px;
+}
+.promoContent_svg{
+    display: block;
+    position: absolute;
+}
+
+.promoContent_text h1{
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+.appendixPromoImg{
+    left: 40%;
+    width: 40%;
+    top: 29%;
+    position: relative;
+}
+
+/* balls */
+.balls .container{
+    max-width: 1480px;
+    width: 90%;
+    margin: auto;
+}
+/* /balls */
