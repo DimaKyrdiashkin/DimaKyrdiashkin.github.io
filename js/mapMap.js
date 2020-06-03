@@ -165,7 +165,7 @@ $(".point, .close_cross").on("click",  () => {
 let mapBD,
     numberPointActive = 1;
 $.ajax({
-    url: "./js/mapBd.json"
+    url: "../js/mapBd.json"
 }).done(function(data) {
     mapBD=data;
 })
@@ -197,7 +197,7 @@ openPoint = (numberPoint) => {
     fatherBlock.innerHTML = father;
     titlePointBlock.innerHTML = mapBD[BdName].title;
     textHomePointBlock.innerHTML = mapBD[BdName].text;
-    logoPointerBlock.src = "img/map/logoPoint/"+mapBD[BdName].imgUrl;
+    logoPointerBlock.src = "img/logoPoint/"+mapBD[BdName].imgUrl;
 }
 
 document.getElementById('nextPoint').addEventListener('click', ()=>{
