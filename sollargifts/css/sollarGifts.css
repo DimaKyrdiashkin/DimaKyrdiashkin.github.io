@@ -194,7 +194,32 @@
     margin-bottom: 16px;
 }
 /* /balls */
-
+/* gift */
+    .gift_head{
+        width: 100vw;
+        height: 200px;
+        background: #6231D6;
+        position: relative;
+    }
+    .gift_content{
+        height: calc(100vh - 200px);
+    }
+    .gift_top{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 50px;
+        left: 10%;
+    }
+    .gift_top svg{
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+    }
+    #gift_head_text{
+        color: #fff;
+    }
+/* /gift */
 @media (max-width: 1440px) {
 
 }
