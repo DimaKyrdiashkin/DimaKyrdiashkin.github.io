@@ -1,25 +1,53 @@
 .promoContent .container{
     background: #6231D6;
 }
-.promoContent_text{
-    color: #FFFFFF;
-    min-width: 450px;
-}
-.promoContent_svg{
-    display: block;
-    position: absolute;
+.promoContent_center{
+    display: flex;
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
 }
 
-.promoContent_text h1{
+.promoContent_center_left{
+    color: #FFFFFF;
+    min-width: 450px;
+    position: relative;
+    width: 40%;
+}
+
+.promoContent_center_left h1{
+    position: relative;
+    z-index: 2;
     line-height: 120%;
     margin-bottom: 20px;
 }
-.appendixPromoImg{
-    left: 40%;
-    width: 40%;
-    top: 29%;
+
+.promoContent_center_left h5{
     position: relative;
+    z-index: 2;
+    max-width: 316px  ;
 }
+
+.promoContent_svg{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    top: 30%;
+}
+.promoContent_svg svg{
+    width: 100%;
+}
+.promoLogoSvg{
+    width: 80%;
+    margin: 0 auto;
+}
+.promoLogoSvg{
+    position: relative;
+    z-index: 2;
+}
+
 .tabl_h2{
     margin-bottom: 5px !important;
     margin-left: 5%;
