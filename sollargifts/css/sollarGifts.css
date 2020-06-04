@@ -7,6 +7,7 @@
     width: 80%;
     margin: auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 .promoContent_center_left{
@@ -14,6 +15,9 @@
     min-width: 450px;
     position: relative;
     width: 40%;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
 }
 
 .promoContent_center_left h1{
@@ -34,20 +38,53 @@
     display: block;
     z-index: 1;
     width: 100%;
-    top: 30%;
+    top: 50%;
 }
 .promoContent_svg svg{
     width: 100%;
 }
 .promoLogoSvg{
     width: 80%;
-    margin: 0 auto;
-}
-.promoLogoSvg{
+    max-width: 333px;
+    margin-bottom: 23px;
     position: relative;
     z-index: 2;
 }
-
+.promoContent_right{
+    align-items: flex-start;
+    width: 50%;
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.promoContent_right>svg{
+    position: relative;
+}
+.promoContent_right_glass{
+    width: 30%;
+}
+.promoContent_right_headphones{
+    width: 35%;
+}
+.promoContent_right_console{
+    width: 30%;
+}
+.promoContent_right_headphones_2{
+    width: 25%;
+    margin-right: 50%;
+    margin-top: -5%;
+}
+.promoContent_right_column{
+    width: 30%;
+}
+.promoContent_right_PC{
+    width: 30%;
+    margin-top: -20%;
+}
+.promoContent_right_time{
+    width: 20%;
+}
 .tabl_h2{
     margin-bottom: 5px !important;
     margin-left: 5%;
