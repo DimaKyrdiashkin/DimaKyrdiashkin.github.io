@@ -11,6 +11,7 @@
     width: 80%;
     margin: auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 .promoContent_center_left{
@@ -18,6 +19,9 @@
     min-width: 450px;
     position: relative;
     width: 40%;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
 }
 
 .promoContent_center_left h1{
@@ -38,23 +42,57 @@
     display: block;
     z-index: 1;
     width: 100%;
-    top: 30%;
+    top: 50%;
 }
 .promoContent_svg svg{
     width: 100%;
 }
 .promoLogoSvg{
     width: 80%;
-    margin: 0 auto;
-}
-.promoLogoSvg{
+    max-width: 333px;
+    margin-bottom: 23px;
     position: relative;
     z-index: 2;
 }
-
+.promoContent_right{
+    align-items: flex-start;
+    width: 50%;
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.promoContent_right>svg{
+    position: relative;
+    transition: 1.5s;
+    transform: translateX(0) translateY(0);
+}
+.promoContent_right_glass{
+    width: 30%;
+}
+.promoContent_right_headphones{
+    width: 35%;
+}
+.promoContent_right_console{
+    width: 30%;
+}
+.promoContent_right_headphones_2{
+    width: 25%;
+    margin-right: 50%;
+    margin-top: -5%;
+}
+.promoContent_right_column{
+    width: 30%;
+}
+.promoContent_right_PC{
+    width: 30%;
+    margin-top: -20%;
+}
+.promoContent_right_time{
+    width: 20%;
+}
 .tabl_h2{
     margin-bottom: 5px !important;
-    margin-left: 5%;
     padding: 0;
     position: absolute;
     top: 50px;
@@ -84,11 +122,10 @@
     background-size: cover;
 }
 .balls .container{
-
     height: 100vh;
     position: relative;
-    max-width: 1480px;
-    width: 100%;
+    max-width: 1700px;
+    width: 85%;
     margin: auto;
 }
 .balls_items{
@@ -138,10 +175,8 @@
 .balls_item_right_li p{
     font-size: 1em;
     width: 90%;
-    color: #353742;
+    color: #FFFFFF;
     text-align: center;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     padding: 20px 10px;
 }
@@ -310,6 +345,21 @@
     }
     .gift_content__right img{
         width: 80%;
+    }
+    .balls_item_footer_svg{
+        width: 14%;
+        left: 40%;
+    }
+    .balls_item_right{
+        justify-content: space-around;
+        top: 50%;
+        width: 45%;
+    }
+    .balls_item_right_li{
+        padding: 9% 0;
+        margin: 0!important;
+        top: 0!important;
+        width: 34%;
     }
 }
 @media (max-width: 1200px) {
