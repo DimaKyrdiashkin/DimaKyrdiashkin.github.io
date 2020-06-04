@@ -209,7 +209,6 @@ h1{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 4px;
-    /* max-width: 264px; */
     width: 32%;
     margin-bottom: 10px;
 }
@@ -288,8 +287,8 @@ h1{
     color: #7038E4;
 }
 /* /participant */
-/* partner */
 
+/* partner */
 .partner{
     position: relative;
     background-image: url("../img/partner_bg.png");
@@ -444,9 +443,6 @@ h1{
 	text-align: center;
 	color: #353742;
 }
-.partner_right_ul_item_body_ul{
-
-}
 .partner_right_ul_item_body_ul li{
 	width: 90%;
 	margin: 0 auto 10px;
@@ -508,8 +504,6 @@ h1{
 .partnerRedDiv{
 	background-color: #F04564;
 }
-
-
 .partner .slide-slide {
 	margin: 0 20px;
 	height: inherit;
@@ -556,11 +550,6 @@ h1{
 	        transform: translateY(-50%);
 	right: -50px;
 }
-
-
-
-
-
 /* /partner */
 
 /* gift */
@@ -722,9 +711,6 @@ h1{
     color: #FFFFFF;
     text-align: center;
 }
-
-
-
 /* /gift */
 
 /* events */
@@ -764,7 +750,7 @@ h1{
             flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 50px;
+    top: 10px;
     left: 10%;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -819,7 +805,6 @@ h1{
             align-items: center;
     width: 360px!important;
     height: 520px;
-
     background-position: center !important;
     background-size: cover !important;
     border-radius: 4px;
@@ -916,7 +901,6 @@ h1{
             transform: translateY(-50%);
     right: -50px;
 }
-
 /* /events */
 
 /* calc */
@@ -958,7 +942,7 @@ h1{
 }
 .calc_side{
     position: absolute;
-    top: 50px;
+    top: 10px;
     left: 10%;
 }
 .calc_side__head{
@@ -1113,9 +1097,6 @@ h2#income{
     background-color: #542AC8;
 }
 @media (max-width: 1690px) {
-    .participant{
-        
-    }
     .gift_left{
         width: 15%;
     }
@@ -1256,8 +1237,7 @@ h2#income{
         padding-top: 25px;
     }
     .participant_header_img{
-        width:
-         200px;
+        width: 200px;
     }
     .participant_header{
         min-height: 250px;
