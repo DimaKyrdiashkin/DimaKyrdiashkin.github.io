@@ -294,9 +294,12 @@
         left: 40%;
     }
     .balls_item_right{
-        justify-content: space-between;
+        justify-content: space-around;
+        top: 50%;
+        width: 45%;
     }
-    .balls_item_right_li li{
+    .balls_item_right_li{
+        padding: 9% 0;
         margin: 0!important;
         top: 0!important;
         width: 34%;
