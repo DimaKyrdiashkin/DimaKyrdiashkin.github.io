@@ -1,3 +1,7 @@
+.orange{
+    color: #F25B00;
+    font-family: "Gilroy-Medium";
+}
 .promoContent .container{
     background: #6231D6;
 }
@@ -203,6 +207,28 @@
     }
     .gift_content{
         height: calc(100vh - 200px);
+        display: flex;
+        justify-content: space-between;
+        max-width: 1630px;
+        margin: 0 auto;
+    }
+    .gift_content__left{
+        width: 50%;
+    }
+    .gift_content__right{
+        max-width: 615px;
+        position: relative;
+        text-align: right;
+        padding-top: 5%;
+    }
+    .gift_content__right p{
+        margin-top: 35px;
+    }
+    .gift_content__right img{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
     .gift_top{
         position: absolute;
@@ -218,6 +244,13 @@
     }
     #gift_head_text{
         color: #fff;
+    }
+    .gift_head__img{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        max-width: 885px;
+        width: 100%;
     }
 /* /gift */
 @media (max-width: 1440px) {
