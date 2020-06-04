@@ -92,6 +92,9 @@ function fun_Full() {
         afterReBuild: function () {
         },
         afterResponsive: function (isResponsive) {
+            flag = false;
+            fullpage_api.destroy('all');
+            $('.fullpageId').css('transform', 'none');
         },
         afterSlideLoad: function (section, origin, destination, direction) {
         },
