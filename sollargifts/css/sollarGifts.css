@@ -539,6 +539,7 @@
         max-width: 260px;
     }
     .balls_item_footer_ul{
+        justify-content: space-around;
         flex-wrap: wrap;
     }
     .balls_item_footer_svg{
@@ -584,6 +585,9 @@
     }
     .balls .prev{
         left: -20px;
+    }
+    .balls_item_footer_ul p{
+        padding-bottom: 10px;
     }
     .balls .next{
         right: -20px;
