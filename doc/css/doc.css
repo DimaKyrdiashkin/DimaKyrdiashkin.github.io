@@ -78,6 +78,7 @@
 }
 .doc_ul_item_a:hover .item_svg path{
     fill: #FFFFFF;
+    stroke: #fff;
 }
 
 .item_svg{
