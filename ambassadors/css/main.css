@@ -373,8 +373,9 @@ section.third.block .search_box .SumoSelect .optWrapper li *{
 }
 
 section.third.block .search_box .SumoSelect .optWrapper li img {
-  margin-right:10px;
-  margin-top: -35px
+  margin-right: 10px;
+  margin-top: -30px;
+  width: 20px;
 }
 
 section.third.block .search_box .SumoSelect:nth-of-type(3) {
@@ -387,7 +388,7 @@ section.third.block .search_box .SumoSelect:nth-of-type(3) .optWrapper {
 
 section.third.block .search_box .SumoSelect:nth-of-type(2) {
   padding-left: 10px;
-  width: 100px
+  width: 100px;
 }
 
 section.third.block .amb_box {
