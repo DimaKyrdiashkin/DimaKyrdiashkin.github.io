@@ -157,6 +157,12 @@ $('.city').bind('mousewheel', (e) => {
 });
 
 $(".point, .close_cross").on("click",  () => {
+    if(document.querySelector('.content').style.opacity){
+        document.querySelector('.content').style.opacity = 0;
+    }
+    else{
+        document.querySelector('.content').style.opacity = 1;
+    }
     $(".content-left").toggleClass("open_content-left", 500);
     $(".content-right").toggleClass("open_content-right", 500);
 });

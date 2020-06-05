@@ -1,5 +1,6 @@
 $(".menu_button").on("click", openMunu = () => {
     $(".menu_h1").toggleClass("menu_h1_open");
+
     if($(".menu").hasClass("opacity")){
         $('.subM').removeClass('subMenu1_open subMenu2_open subMenu3_open subMenu4_open menuUlActive');
         $(".side_bar").delay(1000).toggleClass("menu_open", 1000);
@@ -20,6 +21,7 @@ $('.subM a').on('click', (e) =>{
         setTimeout(function(){
             $('.content').css('opacity', 1);
         }, 800);
+
     };
 });
 $('.menu a').on('click', (e) => {

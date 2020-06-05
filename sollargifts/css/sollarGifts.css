@@ -114,6 +114,9 @@
     margin-right: 10px;
 }
 /* balls */
+#balls_mob{
+    display: none;
+}
 .balls{
     background: rgb(255,255,255)!important;
     background: linear-gradient(183deg, rgba(255,255,255,1) 55%, rgba(246,245,250,1) 45%)!important;
@@ -551,7 +554,12 @@
         margin-right: 0;
         width: 45%;
     }
-
+    #balls_mob{
+        display: block;
+    }
+    #bialls_pc{
+        display: none;
+    }
     /* /ball */
 
     .slick-list{
