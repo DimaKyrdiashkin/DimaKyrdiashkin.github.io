@@ -15,12 +15,14 @@ $(".menu_h1").on("click", () => {
     openMunu()
 });
 
-$('.menu a').on('click', (e) => {
+$('.subM a').on('click', (e) =>{
     if(document.documentElement.clientWidth <=480){
         setTimeout(function(){
             $('.content').css('opacity', 1);
-        }, 1200);
+        }, 800);
     };
+});
+$('.menu a').on('click', (e) => {
     const active = e.target.closest('li');
 
     if(!! active.querySelector('ul.menuUlActive')){
