@@ -1035,6 +1035,7 @@ ul.subM{
 		height: 25%;
 	}
 	.close_cross{
+		margin-right: 0;
 		width: 25px;
 		height: 25px;
 	}
