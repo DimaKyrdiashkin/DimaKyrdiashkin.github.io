@@ -33,7 +33,7 @@ const mass={
     },
     title:{
         bill_saving: 'Накопительный',
-        bill_bright: 'Bright',
+        bill_bright: 'Стабильный +',
         bill_pam: 'PAM',
         bill_AmirWallet: 'Кошелек',
         bill_investments: 'Прямые инвестиции',
