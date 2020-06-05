@@ -111,7 +111,7 @@ document.addEventListener('touchend', ()=> {
     div.style.cursor = "grab";
 }, true);
 
-$(window).bind('mousewheel', (e) => {
+$('.city').bind('mousewheel', (e) => {
     if (e.originalEvent.wheelDelta >= 0) {
         if (scaleVal2 <= 2) {
             scaleVal += 0.01;

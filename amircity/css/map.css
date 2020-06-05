@@ -290,7 +290,7 @@ body{
 .menu ul{
 	overflow-y: auto;
 	width: -moz-fit-content;
-	width: fit-content;
+	width: 93%;
 	margin-left: 5%;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -390,11 +390,8 @@ body{
 	width: 100%!important;
 }
 
-.back_st{
-
-}
 li ul.subMenu1_open{
-	height: 490px;
+	height: 520px;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
@@ -406,7 +403,7 @@ li ul.subMenu2_open{
 	transition: 1s;
 }
 li ul.subMenu3_open{
-	height: 155px;
+	height: 182px;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
@@ -608,6 +605,14 @@ ul.subM{
 .p28{
 	top: 165px;
     left: 2840px;
+}
+.p29{
+	top: 1075px;
+    left: 950px;
+}
+.p30{
+	top: 930px;
+    left: 1010px;
 }
 /* /control */
 

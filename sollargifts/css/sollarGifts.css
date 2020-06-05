@@ -234,6 +234,9 @@
 }
 /* /balls */
 /* gift */
+    .gift{
+        overflow: hidden;
+    }
     .slider{
         width: 100%;
     }
