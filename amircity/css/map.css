@@ -290,7 +290,7 @@ body{
 .menu ul{
 	overflow-y: auto;
 	width: -moz-fit-content;
-	width: fit-content;
+	width: 93%;
 	margin-left: 5%;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -311,7 +311,6 @@ body{
 	font-family: "Gilroy-Medium";
 	font-size: 1em;
 	margin: 5px 0;
-	overflow: hidden;
 }
 .menu a{
 	width: fit-content;
@@ -392,7 +391,6 @@ body{
 }
 
 li ul.subMenu1_open{
-	width: 150%;
 	height: 520px;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
