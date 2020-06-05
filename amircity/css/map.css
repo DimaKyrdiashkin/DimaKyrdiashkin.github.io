@@ -982,6 +982,7 @@ ul.subM{
 		min-height: 300px;
 	}
 	.content{
+		transition: .7s;
 		opacity: 0;
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -1033,6 +1034,9 @@ ul.subM{
 	}
 	.content-right_bottom{
 		height: 25%;
+	}
+	.content-left__head_prevNext>div{
+		padding: 0 7px;
 	}
 	.close_cross{
 		margin-right: 0;
