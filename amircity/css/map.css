@@ -106,6 +106,7 @@ body{
 	display: none;
 }
 .side_bar{
+	user-select: none;
 	z-index: 2;
 	position: fixed;
 	width: 64px;
