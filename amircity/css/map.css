@@ -390,11 +390,8 @@ body{
 	width: 100%!important;
 }
 
-.back_st{
-
-}
 li ul.subMenu1_open{
-	height: 490px;
+	height: 520px;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
@@ -406,7 +403,7 @@ li ul.subMenu2_open{
 	transition: 1s;
 }
 li ul.subMenu3_open{
-	height: 155px;
+	height: 182px;
 	-webkit-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
