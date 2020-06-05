@@ -19,28 +19,26 @@ $("#gift_slider").slick({
         }
     ]
 });
-$(".balls_item_right").slick({
+$("#balls_mob").slick({
     dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    centerMode: true,
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     prevArrow: "<img src='img/slider_slick_next.svg' class='prev' alt='1'>",
     nextArrow: "<img src='img/slider_slick_next.svg' class='next' alt='2'>",
     responsive: [
         {
-            breakpoint: 999999,
-            settings: "unslick"
-        },
-        {
             breakpoint: 769,
             settings: {
-                centerMode: true,
-                dots: false,
-                slidesToShow: 1,
-                slidesToScroll: 1,
+
             }
-        }
+        },
+
     ]
 });
 // /gift_slider

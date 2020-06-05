@@ -157,7 +157,6 @@ $('.city').bind('mousewheel', (e) => {
 });
 
 $(".point, .close_cross").on("click",  () => {
-    console.log(!! document.querySelector('.content').style.opacity)
     if(document.querySelector('.content').style.opacity){
         document.querySelector('.content').style.opacity = 0;
     }
