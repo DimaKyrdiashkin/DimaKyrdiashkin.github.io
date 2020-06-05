@@ -224,7 +224,7 @@ header{
 } */
 section.first {
   padding: 0 0 100px;
-  background: url(../../img/ambassadors/Promo.png);
+  background: url(./../img/Promo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
