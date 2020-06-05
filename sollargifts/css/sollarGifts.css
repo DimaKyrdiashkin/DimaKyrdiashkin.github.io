@@ -355,12 +355,14 @@
     .balls_item_footer_svg{
         width: 14%;
         left: 40%;
+        bottom: 42%;
     }
     .balls_item_right{
         justify-content: space-around;
         top: 50%;
         width: 45%;
     }
+
     .balls_item_right_li{
         padding: 9% 0;
         margin: 0!important;
@@ -369,6 +371,59 @@
     }
 }
 @media (max-width: 1200px) {
+    /* promo */
+    .promoContent{
+        height: auto;
+    }
+
+    .promoContent_center{
+        margin-top: 50px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .promoContent .container{
+        height: auto;
+    }
+    .promoContent_center_left h5{
+        margin: auto;
+    }
+    .promoContent_center_left{
+        text-align: center;
+    }
+    .promoLogoSvg{
+        margin: 0 auto 25px;
+    }
+    .promoContent_right{
+        margin: 20px 0 ;
+    }
+    /* /promo */
+    /* balls */
+    .balls_items{
+        width: 100%;
+        margin-left: 0;
+    }
+    .balls_item{
+        margin-top: 18%;
+    }
+    .balls_item_right_li{
+        width: 49%;
+    }
+    .balls_item_right_li p{
+        padding: 20px 20px;
+    }
+    .balls .container{
+        min-height: 100vh;
+        height: auto;
+    }
+    .balls_item_right_li:last-child{
+        margin-top: -15% !important;
+    }
+    .balls_item_footer{
+        margin: 350px 0 60px;
+    }
+    /* /balls */
+
     .footer .container_bloc{
         padding-top: 0;
     }
@@ -382,14 +437,62 @@
         background-position: center bottom !important;
         background-size: auto;
     }
+    .gift{
+        overflow: hidden;
+    }
     .gift_content__left{
         width: 45%;
     }
     .gift_head__img{
         right: -400px;
     }
+
+
 }
 @media (max-width: 992px) {
+
+
+    /* bill */
+    .balls{
+        background: linear-gradient(183deg, rgba(255,255,255,1) 65%, rgba(246,245,250,1) 1%)!important;
+    }
+    .balls_item{
+        text-align: center;
+        justify-content: center;
+    }
+    .balls_item li:last-child{
+        display: none;
+    }
+    .balls_item_right{
+        margin: 25px auto 0;
+        position: relative;
+        transform: none;
+        width: 80%;
+        justify-content: center;
+    }
+    .balls_item_right_li{
+        width: 36%;
+    }
+    .balls_item_right_li:first-child{
+        margin-right: 2%!important;
+    }
+    .balls_item_right_li:nth-child(2){
+        margin-left: 2%!important;
+    }
+    .balls_item_right_li:last-child{
+        margin-top: -10% !important;
+    }
+    .balls_item_footer {
+        margin: 60px 0 73px;
+    }
+    .balls_item_footer_svg{
+        width: 18%;
+        left: 67%;
+        bottom: 30%;
+    }
+    /* /bill */
+
+
     .gift_content{
         flex-direction: column-reverse;
         height: fit-content;
@@ -413,11 +516,83 @@
     }
 }
 @media (max-width: 768px) {
+    /* ball */
+    .balls{
+    background: linear-gradient(183deg, rgba(255,255,255,1) 68%, rgba(246,245,250,1) 1%)!important;
+    }
+    .balls_item{
+        margin-top: 30%;
+    }
+    .balls_item_right{
+        height: fit-content;
+    }
+    .balls_item_right_li:last-child{
+        margin-top: 0!important;
+    }
+    .balls_item_right_li{
+        height: 325px;
+        display: flex!important;
+        justify-content: center;
+        margin: 0!important;
+    }
+    .balls_item_right_li p{
+        max-width: 260px;
+    }
+    .balls_item_footer_ul{
+        flex-wrap: wrap;
+    }
+    .balls_item_footer_svg{
+        display: none;
+    }
+    .balls_item_footer_ul li{
+        margin-top: 10px;
+        margin-right: 0;
+        width: 45%;
+    }
+
+    /* /ball */
+
     .slick-list{
         padding: 0 !important;
     }
 }
 @media (max-width: 480px) {
+    .promoContent_center_left {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .promoContent_right{
+        width: 90%;
+        margin: 40px 0 20px;
+    }
+    /* bill */
+
+
+    .balls_item{
+        margin-top: 45%;
+    }
+    .balls_item_footer{
+        margin-top: 0;
+    }
+
+    .balls_item_footer_p{
+        margin-bottom: 20px;
+    }
+    .balls_item_footer_ul{
+        justify-content: space-around;
+    }
+    .balls .prev{
+        left: -20px;
+    }
+    .balls .next{
+        right: -20px;
+    }
+
+    /* /bill */
+    .slick-slider{
+        margin-top: 0;
+    }
     .slick-arrow{
         width: 30px;
     }
