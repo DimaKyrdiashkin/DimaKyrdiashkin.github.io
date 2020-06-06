@@ -320,6 +320,8 @@ section.third.block h2 {
 
 section.third.block .block {
   padding: 0px 20px;
+  flex: 0 0 72% !important;
+  max-width: 72% !important;
 }
 
 section.third.block .search_box{
@@ -332,8 +334,12 @@ section.third.block .search_box{
 
 section.third.block .search_box .input_box {
   position: relative;
+  width: 43% !important;
 }
-
+.search_fill{
+  width: 57% !important;
+  justify-content: space-around !important;
+}
 section.third.block .search_box .input_box svg{
   position: absolute;
   top: 5px;
@@ -341,7 +347,7 @@ section.third.block .search_box .input_box svg{
 }
 
 section.third.block .search_box .input_box svg:nth-of-type(2) {
-  right: 18%;
+  right: 25px;
   left: initial;
   top: 13px;
   cursor: pointer;
@@ -760,10 +766,10 @@ ul,ol,dl{
   section.third.block .block {
     width: 83.333333% !important;
     -webkit-box-flex: 0 !important;
-    -webkit-flex: 0 0 83.333333% !important;
-        -ms-flex: 0 0 83.333333% !important;
-            flex: 0 0 83.333333% !important;
-    max-width: 83.333333% !important;
+    -webkit-flex: 0 0 85% !important;
+        -ms-flex: 0 0 85% !important;
+            flex: 0 0 85% !important;
+    max-width: 85% !important;
   }
 
   .but {
@@ -1006,6 +1012,9 @@ ul,ol,dl{
     width: 100% !Important;
     margin-bottom: 20px !important
   }
+  section.third.block .search_box .input_box{
+    width: 100% !important;
+  }
   section.third.block .amb_box .item .text {
     padding: 0px 30px
   }
@@ -1023,7 +1032,7 @@ ul,ol,dl{
   }
 
   section.third.block .search_box .SumoSelect {
-    width: 28% !important;
+    width: 27% !important;
   }
 
    section.third.block .search_box .SumoSelect:nth-of-type(1) {
