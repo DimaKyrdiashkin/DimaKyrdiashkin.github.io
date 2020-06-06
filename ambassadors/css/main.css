@@ -1107,6 +1107,7 @@ section.second.block img {
 } 
 
 @media all and (max-width: 576px) {
+  .SumoSelect.open>.optWrapper{top: 40px;}
   .fourth_text{
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 95%;
