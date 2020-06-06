@@ -829,8 +829,8 @@ h1{
             justify-content: center;
     height: 90px;
     width: 100%;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(58, 58, 58, 0.73)), to(rgba(58, 58, 58, 0.73)));
     background: -o-linear-gradient(bottom, rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73));
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(58, 58, 58, 0.73)), to(rgba(58, 58, 58, 0.73)));
     background: linear-gradient(0deg, rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73));
     -webkit-box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.5);
             box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.5);
