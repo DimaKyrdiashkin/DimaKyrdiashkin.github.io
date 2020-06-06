@@ -381,7 +381,7 @@ section.third.block .search_box .SumoSelect .optWrapper li img {
   top: 50%;
   transform: translateY(-85%);
 }
-li.opt>label{
+.sumo_status li.opt>label{
   margin-left: 30px;
 }
 section.third.block .search_box .SumoSelect:nth-of-type(3) {
