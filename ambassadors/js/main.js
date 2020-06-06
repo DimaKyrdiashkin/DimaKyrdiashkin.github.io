@@ -421,6 +421,10 @@ $(document).ready(function(){
     $('section.third.block .search_box .input_box input').on('keyup', function(){
         $items = $("section.third.block .amb_box .item");
 
+        for(let i of $items){
+            i.classList.add('hide_search');
+            i.classList.remove('search_active');
+        }
         // var val = $.trim(this.value)
         // capitalizeFirstLetter(val);
 
@@ -587,7 +591,8 @@ $(document).ready(function(){
                 }
                 const country_text = $("select.country option:selected").text(),
                     city_text  = $(" select.citi option:selected").text(),
-                    status_text = $("select.status option:selected").val();
+                    status_text = $("select.status option:selected").val(),
+                    search_text = $('#search').val();
                 let massSort = [];
                 if(status_text !== "0"){
                     for(let i of items){
@@ -601,13 +606,17 @@ $(document).ready(function(){
                         massSort.push(i);
                     }
                 }
+                console.log(search_text)
+                if(search_text != ""){
+                    massSort = sortName(massSort,search_text);
+                }
                 if(country_text !=='Страна'){
                     massSort = sortCountry(massSort,country_text);
                 }
                 if(city_text !== 'Город'){
                     massSort = sortCity(massSort,city_text);
                 }
-                else if(city_text === 'Город' && country_text ==='Страна' && status_text === "0"){
+                else if(city_text === 'Город' && country_text ==='Страна' && status_text === "0" && search_text === ""){
                     for( let i of items){
                         i.classList.remove('hide_search')
                         i.classList.add('search_active')
@@ -731,6 +740,16 @@ sortCity = (mass, text) => {
             massSort.push(i)
         }
     }
+    return massSort;
+}
+sortName = (mass, text) =>{
+    let massSort = [];
+    for(let i of mass){
+        if(i.querySelector('.item .name').innerText.indexOf(text) !== -1){
+            massSort.push(i)
+        }
+    }
+    console.log(massSort);
     return massSort;
 }
 
