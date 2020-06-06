@@ -376,10 +376,14 @@ section.third.block .search_box .SumoSelect .optWrapper li *{
 
 section.third.block .search_box .SumoSelect .optWrapper li img {
   margin-right: 10px;
-  margin-top: -30px;
   width: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-85%);
 }
-
+li.opt>label{
+  margin-left: 30px;
+}
 section.third.block .search_box .SumoSelect:nth-of-type(3) {
   margin-right: 10px
 }
