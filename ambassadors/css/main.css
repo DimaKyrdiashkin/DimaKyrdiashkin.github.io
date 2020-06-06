@@ -987,6 +987,10 @@ ul,ol,dl{
             flex: 0 0 70%;
     max-width: 70%;
   }
+  section.third.block .search_box .SumoSelect .optWrapper{
+    left: 0;
+    width: 100%;
+  }
   section.second.block img {
     margin-top: -100px;
     top: 0px;
