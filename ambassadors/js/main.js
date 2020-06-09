@@ -698,22 +698,25 @@ soc = ( massSoc)=> {
     let res= ''
     for(let key in massSoc){
         if( key ==='email'){
-            res += "<a href='mailto: " + massSoc[key] + " ' class='link_icon d-flex align-self-center'><i class='far fa-envelope fa-2x'></i></a>";
+            res += `<a href='mailto:${massSoc[key]}' class='link_icon d-flex align-self-center'><i class='far fa-envelope fa-2x'></i></a>`;
         }
         else{
-            res += "<a href=' " + massSoc[key] + "' class='link_icon d-flex align-self-center'>"
+            res += `<a href='${massSoc[key]}' class='link_icon d-flex align-self-center'>`;
             switch (key) {
-                case 'intargam':
-                    res+= "<i class=\"fab fa-instagram fa-2x\"></i>";
+                case 'instagram':
+                    res+= "<i class='fab fa-instagram fa-2x'></i>";
                     break;
                 case 'facebook':
-                    res+= "<i class=\"fab fa-facebook-square fa-2x\"></i>";
+                    res+= "<i class='fab fa-facebook-square fa-2x'></i>";
                     break;
                 case 'pinterest':
-                    res+= "<i class=\"fab fa-pinterest-square fa-2x\"></i>";
+                    res+= "<i class='fab fa-pinterest-square fa-2x'></i>";
                     break;
                 case 'telegram':
-                    res+= "<i class=\"fab fa-telegram fa-2x\"></i>";
+                    res+= "<i class='fab fa-telegram fa-2x'></i>";
+                    break;
+                case 'vk':
+                    res+= '<i class="fab fa-vk fa-2x"></i>';
                     break;
             }
             res+="</a>"
@@ -722,8 +725,6 @@ soc = ( massSoc)=> {
 
     return res;
 };
-
-
 sortCountry = (mass,text)=>{
     let massSort = [];
     for(let i of mass){
@@ -751,7 +752,6 @@ sortName = (mass, text) =>{
     }
     return massSort;
 }
-
 flagCountry = (country) =>{
     switch (country) {
         case 'Казахстан':

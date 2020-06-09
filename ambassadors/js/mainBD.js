@@ -310,28 +310,32 @@ const massAmbassadors = [
     }
 ],
     country = [
-    {
-        name: "Россия"
-    },
-    {
-        name: "Украина"
-    },
-    {
-        name: "Беларусь",
-        cities: []
-    },
-    {
-        name: "Казахстан",
-        cities: []
-    },
-    {
-        name: "Кыргызская Республика",
-        cities: []
-    },
-    {
-        name: "Кипр"
-    }
-];
+        {
+            name: "Россия",
+            cities: ["Москва","Санкт-Петербург","Самара","Иркутск","Екатеринбург","Владивосток","Находка","Канкун"]
+        },
+        {
+            name: "Украина",
+            cities: ["Киев","Днепр"],
+        },
+        {
+            name: "Беларусь",
+            cities: ["Минск"],
+        },
+        {
+            name: "Казахстан",
+            cities: ["Алматы","Астана"],
+        },
+        {
+            name: "Кыргызская Республика",
+            cities: ["Бишкек"],
+        },
+        {
+            name: "Кипр",
+            cities: [""]
+        }
+    ];
+
 let massSort =[];
 flagCountry = (country) =>{
     switch (country) {
@@ -394,10 +398,66 @@ sormName = (name) => {
     })
     return massFun
 }
-console.log(sortCountryCity(massAmbassadors, "city", 'Санкт-Петербург'))
-console.log(sortCountryCity(massAmbassadors, "country", 'Россия'))
-console.log(sortStatus(massAmbassadors, "Ambassador"))
-console.log(sormName("олай"))
+
+soc = ( massSoc)=> {
+    let res= ''
+    for(let key in massSoc){
+        let n = 0;
+        for(let i of massSoc[key]){
+            // console.log(key)
+            console.log(i)
+            if( key ==='email'){
+                res += "<a href='mailto: " + i + " ' class='link_icon d-flex align-self-center'><i class='far fa-envelope fa-2x'></i></a>";
+            }
+            else{
+                res += "<a href=' " + i + "' class='link_icon d-flex align-self-center'>"
+                switch (key) {
+                    case 'intargam':
+                        res+= "<i class=\"fab fa-instagram fa-2x\"></i>";
+                        break;
+                    case 'facebook':
+                        res+= "<i class=\"fab fa-facebook-square fa-2x\"></i>";
+                        break;
+                    case 'pinterest':
+                        res+= "<i class=\"fab fa-pinterest-square fa-2x\"></i>";
+                        break;
+                    case 'telegram':
+                        res+= "<i class=\"fab fa-telegram fa-2x\"></i>";
+                        break;
+                }
+                res+="</a>"
+            }
+        }
+        // if( key ==='email'){
+        //     res += "<a href='mailto: " + massSoc[key] + " ' class='link_icon d-flex align-self-center'><i class='far fa-envelope fa-2x'></i></a>";
+        // }
+        // else{
+        //     res += "<a href=' " + massSoc[key] + "' class='link_icon d-flex align-self-center'>"
+        //     switch (key) {
+        //         case 'intargam':
+        //             res+= "<i class=\"fab fa-instagram fa-2x\"></i>";
+        //             break;
+        //         case 'facebook':
+        //             res+= "<i class=\"fab fa-facebook-square fa-2x\"></i>";
+        //             break;
+        //         case 'pinterest':
+        //             res+= "<i class=\"fab fa-pinterest-square fa-2x\"></i>";
+        //             break;
+        //         case 'telegram':
+        //             res+= "<i class=\"fab fa-telegram fa-2x\"></i>";
+        //             break;
+        //     }
+        //     res+="</a>"
+        // }
+    }
+
+    return res;
+};
+// console.log(sortCountryCity(massAmbassadors, "city", 'Санкт-Петербург'))
+// console.log(sortCountryCity(massAmbassadors, "country", 'Россия'))
+// console.log(sortStatus(massAmbassadors, "Ambassador"))
+// console.log(sormName("олай"))
+console.log(soc(massAmbassadors[0].network))
 
 
 
