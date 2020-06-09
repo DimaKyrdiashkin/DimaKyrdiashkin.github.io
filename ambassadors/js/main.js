@@ -4,7 +4,7 @@ let mass = [
     {
         name: "Николай Полонский",
         country: "Беларусь",
-        tel:"",
+        tel:"+375 (44) 7966 025",
         city:["Минск"],
         pawer:"https://amir.capital/?partner=e411600e-9cec-4d0d-aa8d-43adafdd82eb",
         img:"./img/people/polonskiy.jpg",
@@ -441,16 +441,16 @@ $(document).ready(function(){
         }
         if (index < 12) {
             $('section.third.block .amb_box .amb_box_wrap').append(
-                `<div class='item ${status} d-flex flex-wrap col-xl-3 col-lg-3 col-md-6'> <div class='avatar w-100' style='background-image: url(` + img + ")'></div>" +
-                "<div class='text w-100 d-flex flex-wrap'> <p class='name w-100 d-flex justify-content-center'>" + name + "</p>" +
-                "<p class='phone w-100 d-flex justify-content-center'><i class=\"fas fa-phone-alt\"></i>" + phone + "</p>" +
-                "<p class='status w-100 d-flex flex-wrap'>" +
-                "<svg class='d-flex align-self-center' width='19' height='16' viewBox='0 0 19 16' fill='none' xmlns='http://www.w3.org/2000/svg'>"+
+                `<div class='item'> <div class='avatar' style='background-image: url(` + img + ")'></div>" +
+                "<div class='text'> <p class='name'>" + name + "</p>" +
+                "<p class='phone'>" + phone + "</p>" +
+                "<p class='status'>" +
+                "<svg width='19' height='16' viewBox='0 0 19 16' fill='none' xmlns='http://www.w3.org/2000/svg'>"+
                 "<path d='M14.5595 15.0751V10.469C14.5595 10.1608 14.6099 8.62659 15.5965 8.62659C15.7826 8.62659 16.2519 8.67148 16.5749 9.08366C16.6545 9.18641 16.7305 9.28916 16.8043 9.38836C17.1051 9.79582 17.3028 10.0438 17.5065 10.0438C18.0355 10.0438 18.6254 9.14153 18.6254 7.84711C18.6254 6.55269 18.0355 5.65038 17.5065 5.65038C17.3028 5.65038 17.1062 5.89839 16.8043 6.30585C16.7305 6.40506 16.6545 6.50781 16.5749 6.61056C16.2519 7.02393 15.7826 7.06762 15.5965 7.06762C14.6087 7.06762 14.5595 5.53227 14.5595 5.2252V0.619141H9.99515C8.85108 0.619141 5.94278 0.619141 4.79876 0.619141H0.234373V15.0763H14.5595V15.0751Z' fill='"+ color +"'/> </svg> " + status.replace('_', ' ') + " </p>" +
-                "<p class='country w-100 d-flex flex-wrap'>"+flagCountry(country) +
-                country + "</p><p class='city w-100 d-flex'> <svg width='13' height='17' viewBox='0 0 13 17' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M6.43132 0.0195312C3.17751 0.0195312 0.530273 2.82435 0.530273 6.27183C0.530273 9.64521 6.0051 15.5619 6.23826 15.8122L6.43132 16.0195L6.62438 15.8122C6.85754 15.5619 12.3324 9.64521 12.3324 6.27183C12.3324 2.82435 9.68513 0.0195312 6.43132 0.0195312ZM6.43132 4.71942C7.23908 4.71942 7.89634 5.41581 7.89634 6.27183C7.89634 7.12767 7.23908 7.82405 6.43132 7.82405C5.62357 7.82405 4.9663 7.12767 4.9663 6.27183C4.9663 5.41581 5.62357 4.71942 6.43132 4.71942Z' fill='#542AC8'/> </svg>"+ city +"</p>" +
-                "<div class='soc d-flex flex-wrap justify-content-center w-100'>" + soc(socialNetwork)+
-                "</div><div class='d-flex w-100 justify-content-center'><a href='" + link + "' class='but anim_dur transp'>Регистрация</a> </div></div></div>");
+                "<p class='country'>"+flagCountry(country) +
+                country + "</p><p class='city'> <svg width='13' height='17' viewBox='0 0 13 17' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M6.43132 0.0195312C3.17751 0.0195312 0.530273 2.82435 0.530273 6.27183C0.530273 9.64521 6.0051 15.5619 6.23826 15.8122L6.43132 16.0195L6.62438 15.8122C6.85754 15.5619 12.3324 9.64521 12.3324 6.27183C12.3324 2.82435 9.68513 0.0195312 6.43132 0.0195312ZM6.43132 4.71942C7.23908 4.71942 7.89634 5.41581 7.89634 6.27183C7.89634 7.12767 7.23908 7.82405 6.43132 7.82405C5.62357 7.82405 4.9663 7.12767 4.9663 6.27183C4.9663 5.41581 5.62357 4.71942 6.43132 4.71942Z' fill='#542AC8'/> </svg>"+ city +"</p>" +
+                "<div class='soc'>" + soc(socialNetwork)+
+                "</div><a href='" + link + "' class='but transp'>Регистрация</a></div></div>");
              }
     })
     // готово
@@ -721,10 +721,6 @@ $(document).ready(function(){
         $('section.third.block .amb_box .item').removeClass('hide_search');
 
         $("section.third.block .amb_box .item").slice(12).remove();
-
-        // $(".search_box select option:selected").siblings().removeAttr('disabled');
-        // $(".search_box select option:nth-of-type(1)").attr('selected', 'selected');
-
     })
 
 
@@ -751,12 +747,6 @@ $(document).ready(function(){
         dots: true,
         animateOut: 'fadeOut'
     })
-
-    // $('.owl-carousel .owl-nav').remove()
-    // $('section.fourth.block .owl-carousel .main .slider_head').append('<div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>')
-
-    // $('.owl-carousel .owl-dots').remove()
-    // $('section.fourth.block .owl-carousel .main .slider_head .owl-nav').append('<div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div>')
 
     var slider = $('.owl-carousel');
 
