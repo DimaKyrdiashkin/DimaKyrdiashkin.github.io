@@ -2,6 +2,19 @@
 'user script'
 let mass = [
     {
+        name: "Николай Полонский",
+        country: "Беларусь",
+        tel:"",
+        city:"Минск",
+        pawer:"https://amir.capital/?partner=e411600e-9cec-4d0d-aa8d-43adafdd82eb",
+        img:"./img/people/polonskiy.jpg",
+        status: "Standart_Ambassador",
+        network:{
+            intargam: "https://www.instagram.com/nick_polonsky/",
+            telegram: "https://t.me/polonikfin",
+        }
+    },
+    {
         name: "Павел Саяпин",
         country: "Россия",
         tel:"+7 (909) 671 9 999",

@@ -394,7 +394,7 @@
 									<h4>Shine</h4>
 								</div>
 								<ul class="participant_body_info_right_item_ul">
-									<li>Cвой счет от 1&#160;000&#160;USDT</li>
+									<li>Cвой счет от 10&#160;000&#160;USDT</li>
 									<li>Свой + структура <br>от 100&#160;000&#160;USDT</li>
 								</ul>
 							</li>
@@ -686,7 +686,7 @@
 									</div>
 								</div>
 								<ul class="partner_right_ul_item_header_ul">
-									<li>Свой счет 0&#160;usdt</li>
+									<li>Свой счет 0&#160;USDT</li>
 								</ul>
 							</div>
 							<div class="partner_right_ul_item_body">
@@ -711,8 +711,8 @@
 									</div>
 								</div>
 								<ul class="partner_right_ul_item_header_ul">
-									<li>Свой счет 100 usdt</li>
-									<li>Свой + структура от  1&#160;000&#160;usdt</li>
+									<li>Свой счет 100 USDT</li>
+									<li>Свой + структура от  1&#160;000&#160;USDT</li>
 								</ul>
 							</div>
 							<div class="partner_right_ul_item_body">
@@ -742,8 +742,8 @@
 									</div>
 								</div>
 								<ul class="partner_right_ul_item_header_ul">
-									<li>Свой счет 1&#160;000&#160;usdt</li>
-									<li>Свой + структура от 10&#160;000&#160;usdt</li>
+									<li>Свой счет 1&#160;000&#160;USDT</li>
+									<li>Свой + структура от 10&#160;000&#160;USDT</li>
 								</ul>
 							</div>
 							<div class="partner_right_ul_item_body">
@@ -778,8 +778,8 @@
 									</div>
 								</div>
 								<ul class="partner_right_ul_item_header_ul">
-									<li>Свой счет 10&#160;000&#160;usdt</li>
-									<li>Свой + структура от 100&#160;000&#160;usdt</li>
+									<li>Свой счет 10&#160;000&#160;USDT</li>
+									<li>Свой + структура от 100&#160;000&#160;USDT</li>
 								</ul>
 							</div>
 							<div class="partner_right_ul_item_body">
@@ -819,8 +819,8 @@
 									</div>
 								</div>
 								<ul class="partner_right_ul_item_header_ul">
-									<li>Свой счет 50&#160;000&#160;usdt</li>
-									<li>Свой + структура от 500&#160;000&#160;usdt</li>
+									<li>Свой счет 50&#160;000&#160;USDT</li>
+									<li>Свой + структура от 500&#160;000&#160;USDT</li>
 								</ul>
 							</div>
 							<div class="partner_right_ul_item_body">
@@ -901,7 +901,7 @@
 						<div class="textWrapper partnerBlueDiv">
 							<p class="gift_right_item_header">shine</p>
 						</div>
-						<h5 class="gift_right_item_body">Sunny Book</h5>
+						<h5 class="gift_right_item_body">Кардхолдер,<br> универсальный провод, держатель для проводов</h5>
 						<div class="gift_right_item_footer">
 							<h3>50%</h3>
 						</div>
@@ -1005,20 +1005,10 @@
 							</li>
 						</div>
 						<div>
-							<li class="items" style="background: url(img/event5.png), linear-gradient(0deg, rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73));">
-								<div class="event_right__head">
-									<span class="event_right__head-hr"></span>
-									<p class="date">20-28 марта</p>
-									<p class="year">2020</p>
-								</div>
-								<a >SunnyDay, Dubai</a>
-							</li>
-						</div>
-						<div>
 							<li class="items" style="background: url(img/event6.png), linear-gradient(0deg, rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73));">
 								<div class="event_right__head">
 									<span class="event_right__head-hr"></span>
-									<p class="date">31 февраля</p>
+									<p class="date">29 февраля</p>
 									<p class="year">2020</p>
 								</div>
 								<a >Paris Blockchain Week</a>
@@ -1393,6 +1383,31 @@
 		</footer>
 	</div>
 	<script> (function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0); var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h); })(window,document,'https://cdn.bitrix24.ru/b8830485/crm/site_button/loader_3_69xiln.js');
+	</script>
+	<script>
+		// Keep ref id when user surf the site
+	
+		function getParameterByName(name) {
+		  var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+		  return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+		}
+		
+		var queryPartner = getParameterByName('partner');
+		
+		if (queryPartner) {
+		  localStorage.setItem('partner', queryPartner);
+		}
+		
+		var allLinks = document.getElementsByTagName('a');
+		var partner = localStorage.getItem('partner');
+		
+		for (var link of allLinks) {
+		  if (link.href.includes('account.amir.capital') && partner) {
+			var href = link.getAttribute('href');
+			href += '?partner=' + partner;
+			link.setAttribute('href', href);
+		  }
+		}
 	</script>
 	<script type="text/javascript" src="../js/scrolloverflow.min.js"></script>
 	<script type="text/javascript" src="../js/fullpage.extensions.min.js"></script>
