@@ -3,11 +3,19 @@
 let mass = [
     {
         name: "Николай Полонский",
+<<<<<<< HEAD
+        country: "Беларусь",
+        tel:"+375 (44) 7966 025",
+        city:["Минск"],
+        pawer:"https://amir.capital/?partner=e411600e-9cec-4d0d-aa8d-43adafdd82eb",
+        img:"./img/people/polonskiy.jpg",
+=======
         country: ["Беларусь"],
         tel: ["+375 (44) 7966 025"],
         city: ["Минск"],
         pawer: "https://amir.capital/?partner=e411600e-9cec-4d0d-aa8d-43adafdd82eb",
         img: "./img/people/polonskiy.jpg",
+>>>>>>> 163e4af9dc3da2a92d1cdf7d7e713bcb369a6c28
         status: "Standart_Ambassador",
         network: {
             instagram: ["https://www.instagram.com/nick_polonsky/"],

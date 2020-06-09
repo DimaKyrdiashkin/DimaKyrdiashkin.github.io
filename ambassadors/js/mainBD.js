@@ -102,7 +102,7 @@ const massAmbassadors = [
     {
         name: "Эльвира Сафинова",
         country: ["Казахстан"],
-        tel:"+7 (777) 666 6 773",
+        tel:["+7 (777) 666 6 773"],
         city:["Алматы"],
         pawer:"https://amir.capital/?partner=923fb445-3fd2-48d5-a5be-e06fb08f18de",
         img:"./img/people/safinovaelvira.png",
@@ -334,9 +334,17 @@ const massAmbassadors = [
             name: "Кипр",
             cities: [""]
         }
-    ];
-
-let massSort =[];
+    ],
+    colorStatic ={
+        green: '#00a100',
+        blue: '#5064c8',
+        orange:'#f78c1c',
+        blue2 :'#0ea0de',
+        red: '#f20001',
+    },
+    massAmbassadorsLength = massAmbassadors.length -1
+let massSort =[],
+    numberAmbasActiv=0;
 flagCountry = (country) =>{
     switch (country) {
         case 'Россия':
@@ -398,21 +406,18 @@ sormName = (name) => {
     })
     return massFun
 }
-
 soc = ( massSoc)=> {
     let res= ''
     for(let key in massSoc){
         let n = 0;
         for(let i of massSoc[key]){
-            // console.log(key)
-            console.log(i)
             if( key ==='email'){
                 res += "<a href='mailto: " + i + " ' class='link_icon d-flex align-self-center'><i class='far fa-envelope fa-2x'></i></a>";
             }
             else{
                 res += "<a href=' " + i + "' class='link_icon d-flex align-self-center'>"
                 switch (key) {
-                    case 'intargam':
+                    case 'instagram':
                         res+= "<i class=\"fab fa-instagram fa-2x\"></i>";
                         break;
                     case 'facebook':
@@ -453,12 +458,58 @@ soc = ( massSoc)=> {
 
     return res;
 };
+addAmbassadors = (item) => {
+    let color ='#00a100'
+    switch (item.status) {
+        case 'Ambassador':
+            color = colorStatic.green
+            break;
+        case 'Regional Ambassador':
+            color = colorStatic.blue
+            break;
+        case 'International Ambassador':
+            color = colorStatic.orange
+            break;
+        case 'TOP Ambassador':
+            color = colorStatic.blue2
+            break;
+        case 'Член Правления':
+            color = colorStatic.red
+            break;
+    }
+    let res = `<div class='item'> <div class='avatar' style='background-image: url(${item.img})'></div>`;
+    res+= `<div class='text'><p class='name'>${item.name}</p>`;
+    res+= `<p class='phone'>${item.tel.join('<br>')}</p>`;
+    res+= "<p class='status'><svg width='19' height='16' viewBox='0 0 19 16' fill='none' xmlns='http://www.w3.org/2000/svg'>"
+    res+= `<path d='M14.5595 15.0751V10.469C14.5595 10.1608 14.6099 8.62659 15.5965 8.62659C15.7826 8.62659 16.2519 8.67148 16.5749 9.08366C16.6545 9.18641 16.7305 9.28916 16.8043 9.38836C17.1051 9.79582 17.3028 10.0438 17.5065 10.0438C18.0355 10.0438 18.6254 9.14153 18.6254 7.84711C18.6254 6.55269 18.0355 5.65038 17.5065 5.65038C17.3028 5.65038 17.1062 5.89839 16.8043 6.30585C16.7305 6.40506 16.6545 6.50781 16.5749 6.61056C16.2519 7.02393 15.7826 7.06762 15.5965 7.06762C14.6087 7.06762 14.5595 5.53227 14.5595 5.2252V0.619141H9.99515C8.85108 0.619141 5.94278 0.619141 4.79876 0.619141H0.234373V15.0763H14.5595V15.0751Z' fill='${color}'/> </svg> ${item.status} </p>`
+    res+= `<p class='country'> ${flagCountry(item.country[0])} `;
+    res+= `${item.country.join(', ')} </p><p class='city'> <svg width='13' height='17' viewBox='0 0 13 17' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M6.43132 0.0195312C3.17751 0.0195312 0.530273 2.82435 0.530273 6.27183C0.530273 9.64521 6.0051 15.5619 6.23826 15.8122L6.43132 16.0195L6.62438 15.8122C6.85754 15.5619 12.3324 9.64521 12.3324 6.27183C12.3324 2.82435 9.68513 0.0195312 6.43132 0.0195312ZM6.43132 4.71942C7.23908 4.71942 7.89634 5.41581 7.89634 6.27183C7.89634 7.12767 7.23908 7.82405 6.43132 7.82405C5.62357 7.82405 4.9663 7.12767 4.9663 6.27183C4.9663 5.41581 5.62357 4.71942 6.43132 4.71942Z' fill='#542AC8'/> </svg> ${item.city.join(', ')} </p>`
+    res+= `<div class='soc'> ${soc(item.network)}</div><a href='${item.link}' class='but transp'>Регистрация</a></div></div>`;
+    return res
+}
 // console.log(sortCountryCity(massAmbassadors, "city", 'Санкт-Петербург'))
 // console.log(sortCountryCity(massAmbassadors, "country", 'Россия'))
 // console.log(sortStatus(massAmbassadors, "Ambassador"))
 // console.log(sormName("олай"))
-console.log(soc(massAmbassadors[0].network))
+const  addAmbus = document.getElementById('addAmbus');
+for(let i= 0; i< 12;i++){
+    if(i <= massAmbassadorsLength){
+        addAmbus.innerHTML += addAmbassadors(massAmbassadors[i])
+        numberAmbasActiv = i;
+    }
+}
+addAmbasBtn =()=>{
+    console.log(numberAmbasActiv)
+    for(let i= numberAmbasActiv; i <= numberAmbasActiv + 12; i++){
+        if(i >= massAmbassadorsLength ) return;
+        console.log(i)
+        addAmbus.innerHTML += addAmbassadors(massAmbassadors[i])
+        numberAmbasActiv = i;
+    }
 
+}
+
+// console.log(document.getElementById('fillter').name)
 
 
 

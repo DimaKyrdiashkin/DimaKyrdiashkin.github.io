@@ -125,7 +125,7 @@
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="zoom">
                         <path d="M19.5044 17.1712C20.9729 14.9855 21.575 12.3313 21.1936 9.72586C20.8121 7.1204 19.4744 4.75026 17.441 3.0772C15.4076 1.40413 12.8241 0.54798 10.194 0.675537C7.56386 0.803094 5.0754 1.90522 3.21344 3.76721C1.35147 5.62919 0.249362 8.11766 0.121823 10.7478C-0.00571687 13.3779 0.85045 15.9614 2.52352 17.9948C4.19659 20.0282 6.56674 21.3659 9.17219 21.7473C11.7776 22.1288 14.4318 21.5266 16.6175 20.0581L20.6246 24.0652C21.0074 24.448 21.5266 24.6631 22.068 24.6631C22.6094 24.6631 23.1287 24.448 23.5115 24.0652C23.8943 23.6824 24.1094 23.1631 24.1094 22.6217C24.1094 22.0803 23.8943 21.5611 23.5115 21.1783L19.5044 17.1712ZM10.7168 19.4096C9.10708 19.4096 7.53348 18.9322 6.19503 18.0379C4.85657 17.1436 3.81338 15.8724 3.19736 14.3852C2.58134 12.898 2.42016 11.2615 2.73421 9.68264C3.04826 8.10382 3.82343 6.65357 4.9617 5.51531C6.09997 4.37704 7.55021 3.60188 9.12903 3.28783C10.7078 2.97379 12.3443 3.13497 13.8315 3.751C15.3188 4.36703 16.5899 5.41023 17.4842 6.7487C18.3786 8.08716 18.8559 9.66076 18.8559 11.2705C18.8535 13.4284 17.9952 15.4972 16.4693 17.023C14.9435 18.5489 12.8747 19.4071 10.7168 19.4096Z" fill="#E4E4EC"/>
                     </svg>
-                    <input type="text" placeholder="Показать амбассадора по имени">
+                    <input name="name" type="text" placeholder="Показать амбассадора по имени">
                     <a id="delForm" type="button" class="input_cross">
                         <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="15" height="2" transform="matrix(-0.731523 -0.681817 -0.681817 0.731523 12.4459 10.3904)" fill="#71718C"/>
@@ -178,11 +178,11 @@
                 </div> -->
             </div>
             <div class="col-xl-8 d-flex flex-wrap amb_box justify-content-center">
-                <div id="addAmbus" class=" amb_box_wrap">
+                <div id="addAmbus" class="amb_box_wrap">
                 </div>
                 <div class="w-75 d-flex pages flex-wrap justify-content-center">
                     <div class="num_box w-50 d-flex justify-content-center flex-wrap align-self-center">
-                        <div class="but d-flex">Загрузить больше</div>
+                        <div onclick="addAmbasBtn()" class="but d-flex">Загрузить больше</div>
                     </div>
                 </div>
             </div>
@@ -2219,8 +2219,8 @@
         new WOW().init();
     </script>
     <script src="./../js/menu.js"></script>
-<!--    <script src="js/owl.carousel.min.js"></script>-->
-<!--    <script src="js/jquery.sumoselect.min.js"></script>-->
-    <script src="js/mainBD.js?v=123x"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sumoselect.min.js"></script>
+    <script src="js/mainBD.js?v=12"></script>
 </body>
 </html>

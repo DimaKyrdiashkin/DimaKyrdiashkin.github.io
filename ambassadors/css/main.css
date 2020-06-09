@@ -452,6 +452,7 @@ section.third.block .search_box .SumoSelect:nth-of-type(2) {
   padding-left: 10px;
 }
 #addAmbus{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
