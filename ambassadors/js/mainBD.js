@@ -342,7 +342,7 @@ const massAmbassadors = [
         blue2 :'#0ea0de',
         red: '#f20001',
     },
-    massAmbassadorsLength = massAmbassadors.length -1
+    massAmbassadorsLength = massAmbassadors.length
 let massSort =[],
     numberAmbasActiv=0;
 flagCountry = (country) =>{
@@ -493,16 +493,17 @@ addAmbassadors = (item) => {
 // console.log(sormName("олай"))
 const  addAmbus = document.getElementById('addAmbus');
 for(let i= 0; i< 12;i++){
-    if(i <= massAmbassadorsLength){
-        addAmbus.innerHTML += addAmbassadors(massAmbassadors[i])
-        numberAmbasActiv = i;
-    }
+    if(i >= massAmbassadorsLength ) break;
+    addAmbus.innerHTML += addAmbassadors(massAmbassadors[i])
+    numberAmbasActiv = i;
 }
 addAmbasBtn =()=>{
-    console.log(numberAmbasActiv)
-    for(let i= numberAmbasActiv; i <= numberAmbasActiv + 12; i++){
-        if(i >= massAmbassadorsLength ) return;
-        console.log(i)
+    let n =numberAmbasActiv+13;
+    for(let i= numberAmbasActiv+1; i < n; i++){
+        if(i >= massAmbassadorsLength) {
+            addAmbasBtns.style.display = "none";
+         return
+        }
         addAmbus.innerHTML += addAmbassadors(massAmbassadors[i])
         numberAmbasActiv = i;
     }
