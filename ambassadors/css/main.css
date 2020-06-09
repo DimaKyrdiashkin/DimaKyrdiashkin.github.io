@@ -450,7 +450,6 @@ section.third.block .search_box .SumoSelect:nth-of-type(3) .optWrapper {
 
 section.third.block .search_box .SumoSelect:nth-of-type(2) {
   padding-left: 10px;
-  width: 100px;
 }
 #addAmbus{
     display: flex;
