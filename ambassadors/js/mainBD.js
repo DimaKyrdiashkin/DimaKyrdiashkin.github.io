@@ -491,7 +491,8 @@ addAmbassadors = (item) => {
 // console.log(sortCountryCity(massAmbassadors, "country", 'Россия'))
 // console.log(sortStatus(massAmbassadors, "Ambassador"))
 // console.log(sormName("олай"))
-const  addAmbus = document.getElementById('addAmbus');
+const  addAmbus = document.getElementById('addAmbus'),
+    addAmbasBtns = document.getElementById('addAmbasBtns');
 for(let i= 0; i< 12;i++){
     if(i >= massAmbassadorsLength ) break;
     addAmbus.innerHTML += addAmbassadors(massAmbassadors[i])
@@ -507,7 +508,6 @@ addAmbasBtn =()=>{
         addAmbus.innerHTML += addAmbassadors(massAmbassadors[i])
         numberAmbasActiv = i;
     }
-
 }
 
 // console.log(document.getElementById('fillter').name)
