@@ -2160,41 +2160,41 @@
             </div>
         </div>
     </section>
-    <script> (function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0); var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h); })(window,document,'https://cdn.bitrix24.ru/b8830485/crm/site_button/loader_3_69xiln.js');
-    </script>
-    <script>
-        // Keep ref id when user surf the site
-    
-        function getParameterByName(name) {
-          var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-          return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-        }
-        
-        var queryPartner = getParameterByName('partner');
-        
-        if (queryPartner) {
-          localStorage.setItem('partner', queryPartner);
-        }
-        
-        var allLinks = document.getElementsByTagName('a');
-        var partner = localStorage.getItem('partner');
-        
-        for (var link of allLinks) {
-          if (link.href.includes('account.amir.capital') && partner) {
-            var href = link.getAttribute('href');
-            href += '?partner=' + partner;
-            link.setAttribute('href', href);
-          }
-        }
-    </script>
+<!--    <script> (function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0); var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h); })(window,document,'https://cdn.bitrix24.ru/b8830485/crm/site_button/loader_3_69xiln.js');-->
+<!--    </script>-->
+<!--    <script>-->
+<!--        // Keep ref id when user surf the site-->
+<!--    -->
+<!--        function getParameterByName(name) {-->
+<!--          var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);-->
+<!--          return match && decodeURIComponent(match[1].replace(/\+/g, ' '));-->
+<!--        }-->
+<!--        -->
+<!--        var queryPartner = getParameterByName('partner');-->
+<!--        -->
+<!--        if (queryPartner) {-->
+<!--          localStorage.setItem('partner', queryPartner);-->
+<!--        }-->
+<!--        -->
+<!--        var allLinks = document.getElementsByTagName('a');-->
+<!--        var partner = localStorage.getItem('partner');-->
+<!--        -->
+<!--        for (var link of allLinks) {-->
+<!--          if (link.href.includes('account.amir.capital') && partner) {-->
+<!--            var href = link.getAttribute('href');-->
+<!--            href += '?partner=' + partner;-->
+<!--            link.setAttribute('href', href);-->
+<!--          }-->
+<!--        }-->
+<!--    </script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="./../js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
     <script src="./../js/menu.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.sumoselect.min.js"></script>
-    <script src="js/main.js"></script>
+<!--    <script src="js/owl.carousel.min.js"></script>-->
+<!--    <script src="js/jquery.sumoselect.min.js"></script>-->
+    <script src="js/mainBD.js?v=123x"></script>
 </body>
 </html>
