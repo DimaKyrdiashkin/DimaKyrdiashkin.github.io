@@ -167,7 +167,7 @@ const massAmbassadors = [
         city: ["Минск"],
         pawer: "https://amir.capital/?partner=dfbcbf86-b351-45da-9fda-c9cb53a39cca",
         img: "./img/people/egorkud.png",
-        status: "Regional_Ambassador",
+        status: "Regional Ambassador",
         network:{
             instagram: ["https://instagram.com/egokud/"],
         }
