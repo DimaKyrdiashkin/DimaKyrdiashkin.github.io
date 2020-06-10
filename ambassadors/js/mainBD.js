@@ -331,8 +331,12 @@ const massAmbassadors = [
             cities: ["Бишкек"],
         },
         {
+            name:"Татарстан",
+            cities: ['Казань']
+        },
+        {
             name: "Кипр",
-            cities: [""]
+            cities: []
         }
     ],
     colorStatic ={
@@ -341,8 +345,7 @@ const massAmbassadors = [
         orange:'#f78c1c',
         blue2 :'#0ea0de',
         red: '#f20001',
-    },
-    massAmbassadorsLength = massAmbassadors.length
+    };
 let massSort =[],
     numberAmbasActiv=0;
 flagCountry = (country) =>{
@@ -375,7 +378,6 @@ sortCountryCity = (mass, key, text) =>{
     let massFun = [];
     for(let i of mass){
         i[key].map(value =>{
-
             if(value === text){
                 massFun.push(i)
             }
@@ -392,13 +394,9 @@ sortStatus = (mass, text)=>{
     })
     return massFun
 }
-delFilter = ()=>{
-    massSort = [];
-}
-sormName = (name) => {
+sortName = (name) => {
     let massFun = [];
-    name = name.toLocaleString();
-    console.log(name)
+    name = name.toLocaleLowerCase();
     massAmbassadors.map(value => {
         if(value.name.toLocaleLowerCase().indexOf(name) !== -1){
             massFun.push(value)
@@ -409,7 +407,7 @@ sormName = (name) => {
 soc = ( massSoc)=> {
     let res= ''
     for(let key in massSoc){
-        let n = 0;
+        // let n = 0;
         for(let i of massSoc[key]){
             if( key ==='email'){
                 res += "<a href='mailto: " + i + " ' class='link_icon d-flex align-self-center'><i class='far fa-envelope fa-2x'></i></a>";
@@ -429,33 +427,14 @@ soc = ( massSoc)=> {
                     case 'telegram':
                         res+= "<i class=\"fab fa-telegram fa-2x\"></i>";
                         break;
+                    case 'vk':
+                        res+= '<i class="fab fa-vk fa-2x"></i>';
+                        break;
                 }
                 res+="</a>"
             }
         }
-        // if( key ==='email'){
-        //     res += "<a href='mailto: " + massSoc[key] + " ' class='link_icon d-flex align-self-center'><i class='far fa-envelope fa-2x'></i></a>";
-        // }
-        // else{
-        //     res += "<a href=' " + massSoc[key] + "' class='link_icon d-flex align-self-center'>"
-        //     switch (key) {
-        //         case 'intargam':
-        //             res+= "<i class=\"fab fa-instagram fa-2x\"></i>";
-        //             break;
-        //         case 'facebook':
-        //             res+= "<i class=\"fab fa-facebook-square fa-2x\"></i>";
-        //             break;
-        //         case 'pinterest':
-        //             res+= "<i class=\"fab fa-pinterest-square fa-2x\"></i>";
-        //             break;
-        //         case 'telegram':
-        //             res+= "<i class=\"fab fa-telegram fa-2x\"></i>";
-        //             break;
-        //     }
-        //     res+="</a>"
-        // }
     }
-
     return res;
 };
 addAmbassadors = (item) => {
@@ -487,33 +466,87 @@ addAmbassadors = (item) => {
     res+= `<div class='soc'> ${soc(item.network)}</div><a href='${item.link}' class='but transp'>Регистрация</a></div></div>`;
     return res
 }
-// console.log(sortCountryCity(massAmbassadors, "city", 'Санкт-Петербург'))
-// console.log(sortCountryCity(massAmbassadors, "country", 'Россия'))
-// console.log(sortStatus(massAmbassadors, "Ambassador"))
-// console.log(sormName("олай"))
 const  addAmbus = document.getElementById('addAmbus'),
     addAmbasBtns = document.getElementById('addAmbasBtns');
-for(let i= 0; i< 12;i++){
-    if(i >= massAmbassadorsLength ) break;
-    addAmbus.innerHTML += addAmbassadors(massAmbassadors[i])
-    numberAmbasActiv = i;
-}
 addAmbasBtn =()=>{
     let n =numberAmbasActiv+13;
-    for(let i= numberAmbasActiv+1; i < n; i++){
-        if(i >= massAmbassadorsLength) {
+    for(let i= numberAmbasActiv + 1; i < n; i++){
+        if(i >= massSort.length) {
             addAmbasBtns.style.display = "none";
-         return
+            return;
         }
-        addAmbus.innerHTML += addAmbassadors(massAmbassadors[i])
-        numberAmbasActiv = i;
+        addAmbus.innerHTML += addAmbassadors(massSort[i])
+        numberAmbasActiv = parseInt(i);
     }
 }
-
-// console.log(document.getElementById('fillter').name)
-
-
-
+// filter
+$('.sumo_select').SumoSelect();
+const countryCityStatusBlock = document.querySelectorAll(".CaptionCont.SelectBox span"),
+    selectCountryCityStatus = document.querySelectorAll("form select option[selected]"),
+    formsAmbas=document.getElementById('fillter');
+document.getElementById('delForm').addEventListener('click', ()=>{
+    for(let i of selectCountryCityStatus){
+        i.selected = true;
+    }
+    countryCityStatusBlock[0].innerHTML = selectCountryCityStatus[0].innerHTML;
+    countryCityStatusBlock[2].innerHTML = selectCountryCityStatus[2].innerHTML;
+    generationCity("0")
+    formsAmbas.name.value = ""
+    globalSort()
+    addAmbasBtns.style.display = "block";
+})
+formsAmbas.name.addEventListener('keyup',()=>{globalSort()})
+$(formsAmbas).change(()=>{
+    globalSort()})
+globalSort = ()=>{
+    if(formsAmbas.name.value != "") massSort = sortName(formsAmbas.name.value);
+    else{
+        massSort.length = 0;
+        massAmbassadors.map(value => massSort.push(value));
+    }
+    if(formsAmbas.country.value !== "0") massSort = sortCountryCity(massSort, 'country', formsAmbas.country.value);
+    if(formsAmbas.city.value !== "0") massSort = sortCountryCity(massSort, 'city', formsAmbas.city.value);
+    if(formsAmbas.status.value !== "0") massSort = sortStatus(massSort, formsAmbas.status.value);
+    addAmbus.innerHTML = ""
+    for(let i in massSort){
+        if(i >= 12 ) break;
+        addAmbus.innerHTML += addAmbassadors(massSort[i])
+        numberAmbasActiv = parseInt(i);
+    }
+    if(massSort.length<12){
+        addAmbasBtns.style.display = "none";
+    }
+    else {
+        addAmbasBtns.style.display = "block";
+    }
+}
+globalSort()
+const selectSity = $("select.city");
+generationCity = (n) => {
+    selectSity.html('');
+    selectSity.append("<option value='0' selected='selected'>Город</option>");
+    selectSity[0].sumo.reload();
+    if(n === "0"){
+        let mass = []
+        country.map(value =>mass = mass.concat(value.cities))
+        mass.sort();
+        mass.map((value) => $('select.city')[0].sumo.add(value, value))
+        return;
+    }
+    for(let i of country){
+        if(i.name === n) i.cities.map((value) => $('select.city')[0].sumo.add(value, value));
+    }
+}
+generationCity("0")
+country.map((value) => $('select.country')[0].sumo.add(value.name, value.name))
+$("select.country").on('change', (e)=>{
+    generationCity($(e.target).val());
+ })
+$('section.third.block .search_box .SumoSelect:nth-of-type(3) .options li:nth-of-type(2)').prepend("<img src=img/am1.svg>");
+$('section.third.block .search_box .SumoSelect:nth-of-type(3) .options li:nth-of-type(3)').prepend("<img src=img/am2.svg>");
+$('section.third.block .search_box .SumoSelect:nth-of-type(3) .options li:nth-of-type(4)').prepend("<img src=img/am3.svg>");
+$('section.third.block .search_box .SumoSelect:nth-of-type(3) .options li:nth-of-type(5)').prepend("<img src=img/am4.svg>");
+$('section.third.block .search_box .SumoSelect:nth-of-type(3) .options li:nth-of-type(6)').prepend("<img src=img/am5.svg>");
 
 
 
