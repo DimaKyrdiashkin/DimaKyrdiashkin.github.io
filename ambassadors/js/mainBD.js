@@ -542,11 +542,11 @@ country.map((value) => $('select.country')[0].sumo.add(value.name, value.name))
 $("select.country").on('change', (e)=>{
     generationCity($(e.target).val());
  })
-$('section.third.block .search_box .SumoSelect:nth-of-type(3) .options li:nth-of-type(2)').prepend("<img src=img/am1.svg>");
-$('section.third.block .search_box .SumoSelect:nth-of-type(3) .options li:nth-of-type(3)').prepend("<img src=img/am2.svg>");
-$('section.third.block .search_box .SumoSelect:nth-of-type(3) .options li:nth-of-type(4)').prepend("<img src=img/am3.svg>");
-$('section.third.block .search_box .SumoSelect:nth-of-type(3) .options li:nth-of-type(5)').prepend("<img src=img/am4.svg>");
-$('section.third.block .search_box .SumoSelect:nth-of-type(3) .options li:nth-of-type(6)').prepend("<img src=img/am5.svg>");
+$('.sumo_select:nth-of-type(3) .options li:nth-of-type(2)').prepend("<img src=img/am1.svg>");
+$('.sumo_select:nth-of-type(3) .options li:nth-of-type(3)').prepend("<img src=img/am2.svg>");
+$('.sumo_select:nth-of-type(3) .options li:nth-of-type(4)').prepend("<img src=img/am3.svg>");
+$('.sumo_select:nth-of-type(3) .options li:nth-of-type(5)').prepend("<img src=img/am4.svg>");
+$('.sumo_select:nth-of-type(3) .options li:nth-of-type(6)').prepend("<img src=img/am5.svg>");
 
 
 
