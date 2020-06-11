@@ -55,6 +55,12 @@ input:focus,
 button{
   outline: none
 }
+.apendixLogo svg path{
+  fill: #fff !important;
+}
+.apendixLogo{
+  margin-top: 0 !important;
+}
 body {
   background: #ffffff;
   color: #333;
@@ -204,13 +210,18 @@ header{
   color: #FFFFFF;
 }
 section.first {
-  padding: 0 0 100px;
   background: url(./../img/Promo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
   position: relative;
+}
+.promoWrapper{
+  position: relative;
+  max-width: 2200px;
+  height: 100%;
+  margin: 0 auto;
 }
 .promo_text{
     position: absolute;
@@ -220,13 +231,26 @@ section.first {
     max-width: 400px;
     z-index: 3;
 }
+.promo_text b{
+  font-family: 'Gilroy-Regular';
+  color: #542AC8;
+}
+.promo_text h1{
+  margin-bottom: 30px;
+}
+.promoContent_img{
+  position: absolute;
+  max-width: 800px;
+  width: 40%;
+  top: 55%;
+  right: 15%;
+  transform: translateY(-50%);
+}
+.promoContent_img2{
+  display: none;
+}
 section.first.block .container-fluid{
   min-height: 51vh;
-}
-
-section.first.block  h1 {
-  margin-top: -20px;
-  margin-bottom: 0 !important;
 }
 
 section.first.block .bg {
@@ -436,11 +460,11 @@ section.third.block .search_box .SumoSelect:nth-of-type(2) {
 #addAmbus{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 section.third.block .amb_box {
-  padding: 130px 0px;
+  padding: 130px 0px 100px;
   max-width: 1240px;
   margin: 0 auto;
 }
@@ -611,7 +635,7 @@ section.third.block .amb_box a.button:nth-of-type(2):hover{
 }
 .fourth {
   min-height: 800px;
-  padding: 0;
+  padding: 75px 0 0;
 }
 .fourth .content{
     position: relative;
@@ -647,12 +671,21 @@ section.third.block .amb_box a.button:nth-of-type(2):hover{
   flex-direction: column;
   justify-content: flex-end;
 }
-.slider_right>h5,
-.slider_right>h2,
+.hBlock{
+  border-right: 2px solid #ffffff17;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding-right: 20px;
+}
+.hBlock h5{
+  margin-left: 20px;
+}
 .slider_right__head{
   color: #fff;
   line-height: 150%;
-  width: 80%;
+  width: 100%;
   align-self: flex-end;
 }
 .slider_right__head{
@@ -663,14 +696,13 @@ section.third.block .amb_box a.button:nth-of-type(2):hover{
   align-items: center;
 }
 .slider_right__head .status{
-  margin-left: 15%;
+  /* margin-left: 15%; */
 }
 .sollar{
   height: 100%;
   display: flex;
   align-items: center;
   background: #8856EE;
-  border-radius: 15px 4px 0 0;
   padding: 0 100px;
 }
 .sollar h5{
@@ -690,7 +722,7 @@ section.third.block .amb_box a.button:nth-of-type(2):hover{
   text-align: center;
 }
 .slider_date__items:nth-child(2){
-  border-radius: 4px 0 0 4px;
+  border-radius: 0 0 0 4px;
 }
 .slider_date__items:last-child{
   border-radius: 0 0 4px 0;
@@ -705,16 +737,18 @@ section.fourth.block .container-fluid {
 section.fourth.block:before {
   position: absolute;
   width: 100%;
-  height: 85%;
+  height: 100%;
   z-index: -1;
   top: 0;
   left: 0;
   content: '';
   background: #542AC8;
-  -ms-transform: skew(0deg, -2deg);
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  /* -ms-transform: skew(0deg, -2deg);
       transform: skew(0deg, -2deg);
   -moz-transform: skew(0deg, -2deg);
-  -webkit-transform: skew(0deg, -2deg);
+  -webkit-transform: skew(0deg, -2deg); */
 }
 
 section.fourth .text{
@@ -967,11 +1001,14 @@ ul,ol,dl{
 }
 
 
-@media (max-width: 1200px) { 
-
-} 
-
-@media all and (max-width: 1200px)  {
+@media all and (max-width: 1200px) { 
+  .promoContent_img{
+    top: 50%;
+    right: 10%;
+  }
+  .promoContent_svg{
+    width: 550px;
+  }
   .block_box:nth-child(2){
     border-radius: 0;
   }
@@ -1035,6 +1072,15 @@ ul,ol,dl{
 }
 
 @media all and (max-width: 992px)  {
+  .apendixLogo{
+    display: none;
+  }
+  .promo_text{
+    left: 5%;
+  }
+  .promoContent_svg{
+    left: 0;
+  }
   .fourth_text{
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 70%;
@@ -1105,8 +1151,56 @@ ul,ol,dl{
 }
 
  @media all and (max-width: 768px){
+   .apendixLogo{
+     display: block;
+   }
+   .promoContent_img{
+     display: none;
+   }
+   .promoContent_img2{
+     display: block;
+   }
+   .promoWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .promoContent_img2{
+      width: 75%;
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+   }
+   .promoContent_img2 img{
+     width: 100%;
+   }
+   .promoContent_svg{
+     display: none !important;
+   }
   section.first{
-    background-position: -20px center;
+    background: #7038E4;
+  }
+  .promo_text,
+  .promoContent_img2{
+    position: unset;
+    height: 40%;
+  }
+  .promo_text{
+    text-align: center;
+    color: #fff;
+    transform: translateX(0);
+    height: fit-content;
+    margin: 60px 0 50px;
+  }
+  .promo_text b{
+    color: #fff;
+    font-weight: normal;
+  }
+  .promo_text p:nth-child(2){
+    margin-top: 15px ;
+  }
+  .promoContent_svg{
+    width: 500px;
   }
   section.second.block{
     padding-bottom: 50px !important
@@ -1240,9 +1334,23 @@ section.second.block img {
     }
 }
 @media all and (max-width: 480px) {
-
+  .apendixLogo{
+    width: 70%;
+  }
   section.first{
-    background-position: -75px center;
+    height: fit-content;
+  }
+  .promoContent_img2{
+    margin-top: 0;
+  }
+  .promoContent_svg{
+    width: 350px;
+  }
+  .promo_text{
+    margin: 60px 0 50px;
+  }
+  section.first{
+    background-position: -400px center;
   }
 
   .fourth_text{
@@ -1286,5 +1394,16 @@ section.second.block img {
   }
   .slider_head{
     width: 100% !important;
+  }
+}
+@media all and (max-width: 850px) and (orientation: landscape){
+  .promoContent_svg{
+    width: 500px;
+  }
+  .promo_text{
+    max-width: 315px;
+  }
+  section.first{
+    background-position: center;
   }
 }
