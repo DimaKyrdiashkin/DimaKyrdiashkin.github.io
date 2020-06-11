@@ -11,15 +11,11 @@ let arr = ['url("img/event/event1.png"), linear-gradient(0deg, rgba(58, 58, 58, 
             'url("img/event/event11.png"), linear-gradient(0d…, rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73))',
             'url("img/event/event12.png"), linear-gradient(0d…, rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73))',
             'url("img/event/event13.png"), linear-gradient(0d…, rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73))']
-
-
 $('#partner_slider').slick({
-    // dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     adaptiveHeight: true,
-    // autoplay:true,
     focusOnSelect: true,
     autoplaySpeed: 5000,
     arrows: true,
@@ -46,7 +42,6 @@ $('#partner_slider').slick({
         }
     ]
 })
-
 //event_slider
 $('#event_slider').slick({
     infinite: true,
@@ -88,6 +83,4 @@ $('#event_slider').slick({
         }        
     ]
 })
-
-// img/program/event1.png
 

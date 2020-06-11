@@ -256,5 +256,4 @@ setTimeout(()=>{
     if(!! localPoint){
         localPointFun(localPoint)
     }
-    localPointFun("Amir Wallet")
 }, 1000)

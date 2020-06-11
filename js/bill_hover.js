@@ -77,21 +77,20 @@ $('.bill_open_p').on('click',(e)=>{
 document.querySelector('#bill_close').addEventListener('click',(e)=>{
     billClose();
 })
-function hov_svg(idSvg) {
-
+const hov_svg =(idSvg) => {
     document.getElementById(idSvg).setAttribute('d',mass.hover[idSvg]);
     bill_h2.style.color = mass.color[idSvg];
     bill_span.innerText = mass.percent[idSvg];
     bill_text.innerText = mass.title[idSvg];
-}
-function normar_svg(idSvg) {
+} ,
+    normar_svg = (idSvg) => {
     bill_h2.style.color = '#6231D6';
     bill_span.innerText = 100;
     bill_text.innerText = '';
     document.getElementById(idSvg).setAttribute('d',mass.normal[idSvg]);
 }
 let flad_slider =true;
-function billOpen(id) {
+const billOpen = (id) => {
     $('.contendBodyActive').removeClass('contendBodyActive')
     bill_h2.style.color = mass.color[id];
     bill_span.innerText = mass.percent[id];
@@ -147,7 +146,7 @@ function billOpen(id) {
         });
     }
 }
-function billClose() {
+const billClose = () => {
     bill_head.innerText = text_defolt_h2;
     bill_h2.style.color = '#6231D6';
     bill_span.innerText = 100;
@@ -171,3 +170,15 @@ if(window.innerWidth <= 768){
     }
 }
 // /advantages
+
+// maps point open
+
+document.getElementById("investments_project_slider").addEventListener("click", (e) => {
+    if(e.target.nodeName === "A"){
+        localStorage.point = e.target.children[0].getAttribute("alt")
+    }
+    else if(e.target.nodeName === "IMG"){
+        localStorage.point = e.target.getAttribute("alt")
+    }
+
+});
