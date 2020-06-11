@@ -167,7 +167,7 @@ $(".point, .close_cross").on("click",  () => {
     $(".content-right").toggleClass("open_content-right", 500);
 });
 
-// point clicl
+// point click
 let mapBD,
     numberPointActive = 1;
 $.ajax({
@@ -185,7 +185,7 @@ $(".point").on("click",(e)=>{
     openPoint(numberPoint)
 });
 
-openPoint = (numberPoint) => {
+const openPoint = (numberPoint) => {
     let father ='';
     numberPointActive = numberPoint;
     if(28 < numberPoint) numberPoint=1
@@ -233,3 +233,28 @@ setInterval(
         }
     },2000
 )
+
+const localPoint = localStorage.test,
+    localPointFun = (name)=>{
+
+    for(let i in mapBD){
+        if(mapBD[i].title === name){
+            if(document.querySelector('.content').style.opacity && document.documentElement.clientWidth <= 480){
+                document.querySelector('.content').style.opacity = 0;
+            }
+            else{
+                document.querySelector('.content').style.opacity = 1;
+            }
+            $(".content-left").toggleClass("open_content-left", 500);
+            $(".content-right").toggleClass("open_content-right", 500);
+            let num = parseInt(i.match(/\d+/))
+            openPoint(num)
+        }
+    }
+}
+setTimeout(()=>{
+    localPointFun("Amir Wallet")
+}, 1000)
+if(!! localPoint){
+    localPointFun(localPoint)
+}
