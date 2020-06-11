@@ -234,7 +234,7 @@ setInterval(
     },2000
 )
 
-const localPoint = localStorage.test,
+const localPoint = localStorage.point,
     localPointFun = (name)=>{
 
     for(let i in mapBD){
@@ -253,8 +253,8 @@ const localPoint = localStorage.test,
     }
 }
 setTimeout(()=>{
+    if(!! localPoint){
+        localPointFun(localPoint)
+    }
     localPointFun("Amir Wallet")
 }, 1000)
-if(!! localPoint){
-    localPointFun(localPoint)
-}
