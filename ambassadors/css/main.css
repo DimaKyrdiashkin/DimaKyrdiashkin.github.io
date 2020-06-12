@@ -1175,7 +1175,8 @@ ul,ol,dl{
      display: none !important;
     }
     .first{
-    background: #7038E4;
+    background: #7038E4 !important;
+    height: fit-content !important;
     }
     .promo_text,
     .promoContent_img2{
@@ -1206,10 +1207,9 @@ ul,ol,dl{
     margin-top: -50px;
     }
     .block{
-    padding: 50px 0;
+      padding: 75px 0;
     }
-    .third.block .amb_box{
-  }
+
   section.third.block .amb_box{
     padding: 75px 0 50px;
     }
