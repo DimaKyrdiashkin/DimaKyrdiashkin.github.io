@@ -109,6 +109,7 @@ section.block {
   position: relative;
   width: 100%;
   float: left;
+  overflow-x: hidden;
 } 
 
 
@@ -187,6 +188,9 @@ p.title {
 .cdark_ch * {
   color: black
 }
+.SumoSelect:nth-child(3)>.optWrapper>.options li label{
+  margin-left: 30px;
+}
 header{
   color: #FFFFFF;
 }
@@ -197,6 +201,7 @@ section.first {
   background-position: center;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .promoWrapper{
   position: relative;
@@ -329,7 +334,7 @@ form{
     border-radius: 4px;
     padding: 15px 20px;
     max-width: 1200px;
-    width: 100%;
+    width: calc(85% - 40px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -338,6 +343,11 @@ form{
     display: flex;
     position: relative;
     width: 55%;
+}
+.selects{
+  width: 43%;
+  display: flex;
+  justify-content: space-between;
 }
 .zoom,
 .input_cross{
@@ -350,6 +360,8 @@ form{
 }
 .input_cross{
     right: 10px;
+    cursor: pointer;
+    padding: 6px;
 }
 section.third.block h2 {
   margin-bottom: 60px
@@ -398,14 +410,12 @@ section.third.block .search_box .input_box svg:nth-of-type(2) {
 
 .SumoSelect {
   margin-left: -10px;
-  padding-left: 30px;
-  width: 150px;
+  width: 100%;
   padding-top: 0px;
   ms-flex-item-align: center!important;
   -webkit-align-self: center!important;
       -ms-flex-item-align: center!important;
           align-self: center!important;
-  margin-right: 20px;
 }
 
 .SumoSelect .optWrapper {
@@ -423,12 +433,14 @@ section.third.block .search_box .input_box svg:nth-of-type(2) {
   width: 20px;
   position: absolute;
   top: 50%;
-  transform: translateY(-85%);
+  transform: translateY(-50%);
 }
-.sumo_status li.opt>label{
-  margin-left: 30px;
+.text .status{
+  display: flex;
 }
-
+.city svg{
+  margin-bottom: -3px;
+}
 .SumoSelect:nth-of-type(3) .optWrapper {
   padding-top: 20px;
 }
@@ -904,6 +916,12 @@ ul,ol,dl{
 }
 
 @media all and (max-width: 1440px){
+  .input-name{
+    width: 45%;
+  }
+  .selects{
+    width: 53%;
+  }
   .next{
     right: 41%;
   }
@@ -947,6 +965,9 @@ ul,ol,dl{
     /* /fourth */
 }
 @media all and (max-width: 1200px) {
+  .third .item{
+    width: 33.3333%;
+  }
   .next{
     right: 39%;
   }
@@ -978,6 +999,9 @@ ul,ol,dl{
   /* fourth */
     .input-name{
         width: 47%;
+    }
+    .selects{
+      width: 50%;
     }
   /* fourth */
   .fourth_text{
@@ -1017,6 +1041,9 @@ ul,ol,dl{
 }
 
 @media all and (max-width: 992px)  {
+  .SumoSelect:first-child{
+    border: 0;
+  }
   .fourth_head h2,
   .fourth_head p{
     width: 50%;
@@ -1087,8 +1114,9 @@ ul,ol,dl{
     max-width: 70%;
   }
     .SumoSelect .optWrapper{
-        left: 0;
-        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 125%;
     }
   section.second.block img {
     margin-top: -100px;
@@ -1124,7 +1152,13 @@ ul,ol,dl{
     .SumoSelect{
         width: 33%;
         margin: 0;
-        padding-left: 30px!important;
+        padding: 0 10px;
+    }
+    .SumoSelect:last-child{
+      padding-right: 1px;
+    }
+    .SumoSelect:nth-of-type(3) .optWrapper{
+      padding-top: 0;
     }
     .third .item{
         width: 49%;
@@ -1139,6 +1173,9 @@ ul,ol,dl{
 }
 
  @media all and (max-width: 768px){
+  .third{
+    margin-top: 0;
+  }
   .next{
     right: 30%;
   }
@@ -1172,7 +1209,8 @@ ul,ol,dl{
      display: none !important;
     }
     .first{
-    background: #7038E4;
+    background: #7038E4 !important;
+    height: fit-content !important;
     }
     .promo_text,
     .promoContent_img2{
@@ -1203,17 +1241,16 @@ ul,ol,dl{
     margin-top: -50px;
     }
     .block{
-    padding: 50px 0;
+      padding: 75px 0;
     }
-    .third.block .amb_box{
-  }
+
   section.third.block .amb_box{
     padding: 75px 0 50px;
     }
     .fourth .text{
         padding-right: 0;
     }
-    .second. img {
+    .second img {
     margin-bottom: 20px
     }
     .second * {
@@ -1233,11 +1270,19 @@ ul,ol,dl{
     }
     .SumoSelect {
         width: 100% !important;
-        margin-bottom: 20px;
         margin-right: 0px;
         border: none;
-        padding: 5px 0 10px 5px !important;
+        padding: 5px 0 0 5px !important;
         margin-left: 0;
+    }
+    .SumoSelect>.CaptionCont{
+      padding: 5px 0 0;
+    }
+    section.third.block .search_box{
+      padding: 10px;
+    }
+    .input_cross{
+      right: 0;
     }
     .SumoSelect.open>.optWrapper{top: 40px;}
 }
@@ -1266,10 +1311,6 @@ section.second.block img {
             flex: 0 0 55% !important;
     max-width: 55% !important;
    }
-
-
-
-}
 
 @media all and (max-width: 576px) {
   .fourth_head h2,
@@ -1356,12 +1397,21 @@ section.second.block img {
     }
 }
 @media all and (max-width: 480px) {
+  .SelectClass, .SumoUnder{
+    z-index: 1 !important;
+  }
+  .SumoSelect .optWrapper{
+    width: 100%;
+  }
+  .SumoSelect>.CaptionCont{
+    margin: 10px 0;
+  }
   section.fourth.block:before{
     -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 3%, 100% 0%, 100% 100%, 0% 100%);
   }
   .fourth{
-    padding: 50px 0 100px;
+    padding: 50px 0 100px !important;
   }
   .slider_date__items:nth-child(n+6){
     padding: 20px 22px 40px 22px;
@@ -1414,7 +1464,9 @@ section.second.block img {
   .ambuss_points{
     width: 120px;
   }
-
+  .selects{
+    flex-direction: column;
+  }
     /* third */
 
     .third .item{
@@ -1452,6 +1504,9 @@ section.second.block img {
   }
 }
 @media all and (max-width: 850px) and (orientation: landscape){
+  .SelectClass, .SumoUnder{
+    z-index: 1 !important;
+  }
   .promoContent_svg{
     width: 500px;
   }
