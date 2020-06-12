@@ -109,6 +109,7 @@ section.block {
   position: relative;
   width: 100%;
   float: left;
+  overflow-x: hidden;
 } 
 
 
@@ -1408,7 +1409,7 @@ section.second.block img {
     clip-path: polygon(0% 3%, 100% 0%, 100% 100%, 0% 100%);
   }
   .fourth{
-    padding: 50px 0 100px;
+    padding: 50px 0 100px !important;
   }
   .slider_date__items:nth-child(n+6){
     padding: 20px 22px 40px 22px;
