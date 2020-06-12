@@ -1326,6 +1326,13 @@ section.second.block img {
     }
 }
 @media all and (max-width: 480px) {
+  section.fourth.block:before{
+    -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 3%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .fourth{
+    padding: 50px 0 100px;
+  }
   .slider_date__items:nth-child(n+6){
     padding: 20px 22px 40px 22px;
   }
