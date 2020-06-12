@@ -1041,6 +1041,9 @@ ul,ol,dl{
 }
 
 @media all and (max-width: 992px)  {
+  .SumoSelect>.CaptionCont{
+    padding: 5px 0;
+  }
   .SumoSelect:first-child{
     border: 0;
   }
