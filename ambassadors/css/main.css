@@ -360,6 +360,7 @@ form{
 .input_cross{
     right: 10px;
     cursor: pointer;
+    padding: 6px;
 }
 section.third.block h2 {
   margin-bottom: 60px
@@ -1280,7 +1281,7 @@ ul,ol,dl{
       padding: 10px;
     }
     .input_cross{
-      right: 8px;
+      right: 0;
     }
     .SumoSelect.open>.optWrapper{top: 40px;}
 }
@@ -1502,6 +1503,9 @@ section.second.block img {
   }
 }
 @media all and (max-width: 850px) and (orientation: landscape){
+  .SelectClass, .SumoUnder{
+    z-index: 1 !important;
+  }
   .promoContent_svg{
     width: 500px;
   }
