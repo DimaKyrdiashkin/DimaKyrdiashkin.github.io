@@ -331,6 +331,7 @@ form{
     max-width: 1200px;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .input-name{
@@ -1013,19 +1014,16 @@ ul,ol,dl{
   section.third.block .amb_box{
     padding: 130px 0 50px;
   }
+  /* fourth */
+    .input-name{
+        width: 47%;
+    }
+  /* fourth */
   section.fourth.block{
     padding: 50px;
   }
 
-  .fiveth{
-    padding: 50px 0 100px !important;
-  }
-  .footer{
-    background-position: center bottom !important;
-  }
-  .footer .container_bloc{
-    padding-top: 0 !important;
-  }
+
   section.fourth.block:before{
     -ms-transform: skew(0deg, -3deg);
     transform: skew(0deg, -3deg);
@@ -1102,33 +1100,19 @@ ul,ol,dl{
   section.third.block .amb_box .pages  {
     width: 100% !important
   }
-  section.third.block .search_box > * {
-    width: 100% !Important;
-    margin-bottom: 20px !important
-  }
   section.third.block .search_box .input_box{
     width: 100% !important;
   }
   section.third.block .amb_box .item .text {
     padding: 0px 30px
   }
-  input {
-    padding: 10px 30px 10px 35px !important;
-    width: 100%; 
-    margin-bottom: 20px;
-    margin-top: 10px  
-  }
+
   section.third.block .search_box .input_box svg:nth-of-type(2),
   section.third.block .search_box .input_box svg:nth-of-type(1) {
     top : 15px;
     right: 20px;
     width: 20px;
   }
-
-  section.third.block .search_box .SumoSelect {
-    width: 27% !important;
-  }
-
    section.third.block .search_box .SumoSelect:nth-of-type(1) {
      border: transparent;
    }
