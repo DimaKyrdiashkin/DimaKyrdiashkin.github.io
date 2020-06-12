@@ -1394,6 +1394,9 @@ section.second.block img {
     }
 }
 @media all and (max-width: 480px) {
+  .SelectClass, .SumoUnder{
+    z-index: 1 !important;
+  }
   .SumoSelect .optWrapper{
     width: 100%;
   }
