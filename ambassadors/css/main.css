@@ -951,6 +951,9 @@ ul,ol,dl{
     /* /fourth */
 }
 @media all and (max-width: 1200px) {
+  .third .item{
+    width: 33.3333%;
+  }
   .next{
     right: 39%;
   }
