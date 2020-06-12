@@ -201,6 +201,7 @@ section.first {
   background-position: center;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .promoWrapper{
   position: relative;
