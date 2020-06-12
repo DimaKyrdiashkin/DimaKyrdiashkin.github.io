@@ -329,7 +329,7 @@ form{
     border-radius: 4px;
     padding: 15px 20px;
     max-width: 1200px;
-    width: 100%;
+    width: calc(85% - 40px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -338,6 +338,11 @@ form{
     display: flex;
     position: relative;
     width: 55%;
+}
+.selects{
+  width: 43%;
+  display: flex;
+  justify-content: space-between;
 }
 .zoom,
 .input_cross{
@@ -350,6 +355,7 @@ form{
 }
 .input_cross{
     right: 10px;
+    cursor: pointer;
 }
 section.third.block h2 {
   margin-bottom: 60px
@@ -398,14 +404,12 @@ section.third.block .search_box .input_box svg:nth-of-type(2) {
 
 .SumoSelect {
   margin-left: -10px;
-  padding-left: 30px;
-  width: 150px;
+  width: 100%;
   padding-top: 0px;
   ms-flex-item-align: center!important;
   -webkit-align-self: center!important;
       -ms-flex-item-align: center!important;
           align-self: center!important;
-  margin-right: 20px;
 }
 
 .SumoSelect .optWrapper {
@@ -423,12 +427,14 @@ section.third.block .search_box .input_box svg:nth-of-type(2) {
   width: 20px;
   position: absolute;
   top: 50%;
-  transform: translateY(-85%);
+  transform: translateY(-50%);
 }
-.sumo_status li.opt>label{
-  margin-left: 30px;
+.text .status{
+  display: flex;
 }
-
+.city svg{
+  margin-bottom: -3px;
+}
 .SumoSelect:nth-of-type(3) .optWrapper {
   padding-top: 20px;
 }
@@ -904,6 +910,12 @@ ul,ol,dl{
 }
 
 @media all and (max-width: 1440px){
+  .input-name{
+    width: 45%;
+  }
+  .selects{
+    width: 53%;
+  }
   .next{
     right: 41%;
   }
@@ -980,7 +992,10 @@ ul,ol,dl{
   }
   /* fourth */
     .input-name{
-        width: 47%;
+        width: 40%;
+    }
+    .selects{
+      width: 55%;
     }
   /* fourth */
   .fourth_text{
@@ -1142,6 +1157,9 @@ ul,ol,dl{
 }
 
  @media all and (max-width: 768px){
+  .third{
+    margin-top: 0;
+  }
   .next{
     right: 30%;
   }
