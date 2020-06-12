@@ -187,6 +187,9 @@ p.title {
 .cdark_ch * {
   color: black
 }
+.SumoSelect:nth-child(3)>.optWrapper>.options li label{
+  margin-left: 30px;
+}
 header{
   color: #FFFFFF;
 }
@@ -992,10 +995,10 @@ ul,ol,dl{
   }
   /* fourth */
     .input-name{
-        width: 40%;
+        width: 47%;
     }
     .selects{
-      width: 55%;
+      width: 50%;
     }
   /* fourth */
   .fourth_text{
@@ -1035,6 +1038,9 @@ ul,ol,dl{
 }
 
 @media all and (max-width: 992px)  {
+  .SumoSelect:first-child{
+    border: 0;
+  }
   .fourth_head h2,
   .fourth_head p{
     width: 50%;
@@ -1105,8 +1111,9 @@ ul,ol,dl{
     max-width: 70%;
   }
     .SumoSelect .optWrapper{
-        left: 0;
-        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 125%;
     }
   section.second.block img {
     margin-top: -100px;
@@ -1142,7 +1149,13 @@ ul,ol,dl{
     .SumoSelect{
         width: 33%;
         margin: 0;
-        padding-left: 30px!important;
+        padding: 0 10px;
+    }
+    .SumoSelect:last-child{
+      padding-right: 1px;
+    }
+    .SumoSelect:nth-of-type(3) .optWrapper{
+      padding-top: 0;
     }
     .third .item{
         width: 49%;
@@ -1234,7 +1247,7 @@ ul,ol,dl{
     .fourth .text{
         padding-right: 0;
     }
-    .second. img {
+    .second img {
     margin-bottom: 20px
     }
     .second * {
@@ -1254,11 +1267,19 @@ ul,ol,dl{
     }
     .SumoSelect {
         width: 100% !important;
-        margin-bottom: 20px;
         margin-right: 0px;
         border: none;
-        padding: 5px 0 10px 5px !important;
+        padding: 5px 0 0 5px !important;
         margin-left: 0;
+    }
+    .SumoSelect>.CaptionCont{
+      padding: 5px 0 0;
+    }
+    section.third.block .search_box{
+      padding: 10px;
+    }
+    .input_cross{
+      right: 8px;
     }
     .SumoSelect.open>.optWrapper{top: 40px;}
 }
@@ -1287,10 +1308,6 @@ section.second.block img {
             flex: 0 0 55% !important;
     max-width: 55% !important;
    }
-
-
-
-}
 
 @media all and (max-width: 576px) {
   .fourth_head h2,
@@ -1377,6 +1394,12 @@ section.second.block img {
     }
 }
 @media all and (max-width: 480px) {
+  .SumoSelect .optWrapper{
+    width: 100%;
+  }
+  .SumoSelect>.CaptionCont{
+    margin: 10px 0;
+  }
   section.fourth.block:before{
     -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 3%, 100% 0%, 100% 100%, 0% 100%);
@@ -1435,7 +1458,9 @@ section.second.block img {
   .ambuss_points{
     width: 120px;
   }
-
+  .selects{
+    flex-direction: column;
+  }
     /* third */
 
     .third .item{
