@@ -216,8 +216,8 @@ setTimeout(()=>{
     generationCity("0");
 },1000)
 $("select.country").on('change', (e)=>generationCity(e.target.value))
-$('.sumo_select:nth-of-type(3) .options li:nth-of-type(2)').prepend("<img src=img/am1.svg>");
-$('.sumo_select:nth-of-type(3) .options li:nth-of-type(3)').prepend("<img src=img/am2.svg>");
-$('.sumo_select:nth-of-type(3) .options li:nth-of-type(4)').prepend("<img src=img/am3.svg>");
-$('.sumo_select:nth-of-type(3) .options li:nth-of-type(5)').prepend("<img src=img/am4.svg>");
-$('.sumo_select:nth-of-type(3) .options li:nth-of-type(6)').prepend("<img src=img/am5.svg>");
+$('.sumo_status .options li:nth-of-type(2)').prepend("<img src=img/am1.svg>");
+$('.sumo_status .options li:nth-of-type(3)').prepend("<img src=img/am2.svg>");
+$('.sumo_status .options li:nth-of-type(4)').prepend("<img src=img/am3.svg>");
+$('.sumo_status .options li:nth-of-type(5)').prepend("<img src=img/am4.svg>");
+$('.sumo_status .options li:nth-of-type(6)').prepend("<img src=img/am5.svg>");
