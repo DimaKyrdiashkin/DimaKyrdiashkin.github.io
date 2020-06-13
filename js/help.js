@@ -1,5 +1,5 @@
 let  textItem,
-    massHeightText = []
+ massHeightText = []
 const funHeight = ()=>{
     textItem= document.querySelectorAll('.question_item_body')
     massHeightText.length =0;
@@ -10,7 +10,7 @@ const funHeight = ()=>{
     }
 }
 funHeight()
-$(window).resize(()=> funHeight() )
+$("window").resize(()=> funHeight() )
 
 let cc =document.querySelectorAll(".question_item");
 let num =0
