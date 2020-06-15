@@ -1,14 +1,26 @@
 .promoContent, .promoContent .container{
     height: auto;
-
 }
-
+h3, p{
+    user-select: auto!important;
+}
 .promoText{
     color: #1E1E25;
-    width: 100%;
+    width: 90%;
     height: 40vh;
+    margin: auto;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 /* question */
@@ -34,8 +46,17 @@
     position: relative;
     border-radius: 4px;
     padding: 20px 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
     z-index: 2;
@@ -48,6 +69,8 @@
 .question_item_open{
     width: 20px;
     height: 20px;
+    -webkit-transition: .7s;
+    -o-transition: .7s;
     transition: .7s;
     position: relative;
     margin-right: 30px;
@@ -63,15 +86,21 @@
     border-radius: 15px;
 }
 .question_item_open:after{
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(100grad);
+    -ms-transform: translateY(-50%) translateX(-50%) rotate(100grad);
     transform: translateY(-50%) translateX(-50%) rotate(100grad);
 }
 .question_item_open:before{
+    -webkit-transform: translateY(-50%) translateX(-50%) ;
+    -ms-transform: translateY(-50%) translateX(-50%) ;
     transform: translateY(-50%) translateX(-50%) ;
 }
 .question_items a{
     color: #0b4eb5;
 }
 .question_item_body{
+    -webkit-transition: .7s;
+    -o-transition: .7s;
     transition: .7s;
     position: relative;
     padding: 50px 30px;
@@ -82,9 +111,11 @@
     color: #636161;
 }
 .activeItem{
+    -webkit-transform: rotate(50grad);
+    -ms-transform: rotate(50grad);
     transform: rotate(50grad);
 }
 .closePadding {
-padding:  0!important;
+    padding:  0!important;
 }
 /* /question */
