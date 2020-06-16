@@ -1676,9 +1676,9 @@ footer .slick-initialized .slick-slide{
 }
 
 @media (max-width: 992px) {
-    .first_video{
+    /* .first_video{
         display: none;
-    }
+    } */
     /*threeSlide 992*/
     .threeSlide .container{
         -webkit-box-orient: vertical;

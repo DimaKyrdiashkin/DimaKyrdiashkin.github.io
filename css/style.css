@@ -72,9 +72,9 @@ ul {
 nobr {
     font-family: Gilroy-Medium;
 }
-.first_video__mob {
+/* .first_video__mob {
     display: none;
-}
+} */
 .b24-widget-button-position-bottom-right {
     bottom: 80px!important;
 }
@@ -707,9 +707,9 @@ p.circle_yellow {
     #promo_h1 {
         font-family: Gilroy-Regular;
     }
-    .first_video__mob {
+    /* .first_video__mob {
         display: block;
-    }
+    } */
     .promoContent video {
         bottom: -50vh;
         height: 250vh;
@@ -868,9 +868,9 @@ p.circle_yellow {
     body {
         font-size: 12px;
     }
-    .first_video {
+    /* .first_video {
         display: none;
-    }
+    } */
     .c-top-title {
         display: block;
     }
@@ -1093,13 +1093,13 @@ p.circle_yellow {
     #promo_h1 {
         font-family: Gilroy-Regular;
     }
-    .first_video__mob {
+    /* .first_video__mob {
         display: block;
-    }
+    } */
 }@media (width:768px) and (height:1024px) {
-    .first_video {
+    /* .first_video {
         display: none;
-    }
+    } */
     .promoContent video {
         bottom: -5vh;
         display: block;
