@@ -182,3 +182,16 @@ document.getElementById("investments_project_slider").addEventListener("click", 
     }
 
 });
+const  calcDoc = document.getElementsByClassName("calc_bg")[0],
+    bod= $("body")
+const activCalc = (name = false) =>{
+    bod.css("overflow-x", "scroll")
+    calcDoc.classList.toggle('calc_bg_active')
+    $(".c-account-check").prop( "checked", false );
+    if(name){
+        bod.css("overflow-x", "hidden")
+        console.log(name)
+        console.log($("#"+name))
+        $("#"+name).prop("checked", true)
+    }
+}

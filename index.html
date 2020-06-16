@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/menu&footer.css">
-    <link rel="stylesheet" href="css/calc_home_d.css">
+    <link rel="stylesheet" href="css/calc_home_d.css?v=sdf">
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<!--    slick-->
@@ -184,6 +184,202 @@
 					<div class="threeSlide_right_block_button">
 						<a href="https://drive.google.com/file/d/1y7vzTzOna2X-CakdleXnByqCmtSYZT7c/view" target="_blank" class="license">Лицензия</a>
 						<a href="https://drive.google.com/file/d/15IzHh27anwkqy5EWGIRfNtU-FYIlR9HU/view?usp=sharing" target="_blank" class="presentation">Презентация</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="calc_bg" id="calc">
+			<div class="calc_side">
+				<div class="calc_side__text">
+					<div class="calc_side__head calc_mob_none">
+						<svg viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.7999 13.1855C17.8005 13.9007 17.4191 14.5617 16.7998 14.9192L11.6612 17.8855C11.0418 18.2431 10.2787 18.2427 9.65971 17.8845L4.51033 14.9051C3.89294 14.5479 3.51252 13.8889 3.51195 13.1756L3.50716 7.22639C3.50659 6.51124 3.88791 5.8502 4.50728 5.49267L9.64584 2.52637C10.2652 2.16883 11.0283 2.16921 11.6473 2.52737L16.7967 5.5068C17.4141 5.86402 17.7945 6.52301 17.7951 7.2363L17.7999 13.1855Z" fill="#8C46FF"/>
+						</svg>
+						<h2>Калькулятор&nbspдоходности</h2>
+					</div>
+					<!-- <h2>Посчитай свой доход</h2> -->
+				</div>
+			</div>
+			<div class="calc-body">
+				<div class="f-row">
+					<div id="c-options-block">
+						<div class="choice-group">
+							<h4 class='c-primary-title'>Валюта</h4>
+							<div class="choice-box chb">
+								<input type="checkbox" checked="checked" class="c-currency-check" value="btc" id="c-btc">
+								<label for="c-btc">
+									<svg viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5673 8.39607C11.5324 7.85252 12.0555 6.76423 11.8771 5.67106C11.6482 3.98251 9.65528 3.34708 8.05115 3.21155V0.666504H6.47925V3.18156H5.43168V0.666504H3.85866V3.18156H0.714844V4.80679H1.8935C2.41784 4.80679 2.6789 4.96342 2.6789 5.38334V12.3519C2.6789 12.9285 2.39006 13.1118 2.07568 13.1118H0.870368L0.818156 14.7626H3.85866V17.3298H5.43057V14.7659H6.47814V17.3332H8.05004V14.7659H8.39109C11.6127 14.7659 12.688 13.194 12.688 11.0455C12.6626 9.78407 11.7926 8.69716 10.5673 8.39607ZM5.43169 4.91119H6.55813C7.34353 4.91119 8.89099 5.04228 8.89099 6.32647C8.94505 7.15889 8.34123 7.88933 7.51349 7.9928H5.4328L5.43169 4.91119ZM7.16134 12.9552H5.43169V9.60141H7.44906C7.92119 9.60141 9.65084 9.75916 9.65084 11.0167C9.65084 12.2742 8.83767 12.9563 7.16134 12.9563V12.9552Z" fill="#8C46FF"/>
+									</svg>
+									Bitcoin
+								</label>
+								<!-- <span class="c-label">BTC</span> -->
+							</div>
+							<div class="choice-box chb">
+								<input type="checkbox" class="c-currency-check" value="eth" id="c-eth">
+								<label for="c-eth">
+									<svg viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0119 8.4811L5.55359 0L1.0893 8.49153L5.55359 6.1721L10.0119 8.4811ZM5.54883 13.0313L0.548828 10.4237L5.54883 20L10.5488 10.4237L5.54883 13.0313ZM5.5524 11.7053L1.47502 9.59061L5.5524 7.47197L9.63573 9.5867L5.5524 11.7053Z" fill="#8C46FF"/>
+									</svg>
+									Ethereum
+								</label>
+								<!-- <span class="c-label">ETH</span> -->
+							</div>
+							<div class="choice-box chb">
+								<input type="checkbox" class="c-currency-check" value="usdt" id="c-usdt">
+								<label for="c-usdt">
+									<svg viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1758 3.00707V4.98714V4.98846C13.8136 5.15743 16.5488 5.88478 16.5488 6.75469C16.5488 7.6246 13.8136 8.35194 10.1758 8.52091V14.8571H6.93363V8.52751C3.2906 8.35723 0.548828 7.62988 0.548828 6.75865C0.548828 5.88741 3.28929 5.16007 6.93363 4.9911V3.01103H2.4496V0H14.6598V3.00707H10.1758ZM10.0514 7.99084C10.1142 7.98808 10.1549 7.98629 10.1758 7.98629V7.98365C13.3892 7.83977 15.7877 7.27347 15.7877 6.60024C15.7877 5.92702 13.3892 5.36072 10.1758 5.21683V7.42263C10.0828 7.43055 9.57978 7.47279 8.58027 7.47279C7.74713 7.47279 7.14454 7.43715 6.93363 7.42263V5.21683C3.71372 5.36072 1.30992 5.9257 1.30992 6.60156C1.30992 7.27743 3.71372 7.84241 6.93363 7.98629C7.4778 8.01069 8.02246 8.02213 8.56717 8.02061C9.37479 8.02061 9.83924 8.00018 10.0514 7.99084Z" fill="#8C46FF"/>
+									</svg>
+									USDT
+								</label>
+								<!-- <span class="c-label">USDT</span> -->
+							</div>
+						</div>
+						<div class="choice-group choice-group_none">
+							<h4 class='c-primary-title'>Счет</h4>
+							<div class="choice-box rb">
+								<input type="checkbox" checked="checked" class="c-account-check" value="savings" id="c-savings">
+								<label for="c-savings">Накопительный</label>
+								<!-- <span class="c-label">Накопительный</span> -->
+							</div>
+							<div class="choice-box rb">
+								<input type="checkbox" class="c-account-check" value="stable" id="c-stable">
+								<label for="c-stable">Стабильный +</label>
+								<!-- <span class="c-label">Bright</span> -->
+							</div>
+							<div class="choice-box rb">
+								<input type="checkbox" class="c-account-check" value="pam" id="c-pam">
+								<label for="c-pam">PAM</label>
+								<!-- <span class="c-label">PAM</span> -->
+							</div>
+						</div>
+					</div>
+					<div class="settings">
+						<div class="slide">
+							<div class="c-top-block">
+								<div class="calc_select">
+									<select>
+										<option value="0">Период</option>
+										<option value="1">6 мес. +2.5% за месяц</option>
+										<option value="2">12 мес. +3.0% за месяц</option>
+										<option value="3">18 мес. +3.5% за месяц</option>
+										<option value="4">24 мес. +4.0% за месяц</option>
+										<option value="5">36 мес. +4.5% за месяц</option>
+										<option value="6">60 мес. +5.0% за месяц</option>
+										<option value="7">96 мес. +6.0% за месяц</option>
+									</select>
+									<div class="select">
+										<div class="check">
+											<p class="checkP">Период</p>
+											<div class="arrow">
+												<span></span>
+											</div>
+										</div>
+										<div class="select_option">
+											<div class="option" id="s1">
+												<p>6 мес. +2.5% за месяц</p>
+											</div>
+											<div class="option" id="s2">
+												<p>12 мес. +3.0% за месяц</p>
+											</div>
+											<div class="option" id="s3">
+												<p>18 мес. +3.5% за месяц</p>
+											</div>
+											<div class="option" id="s4">
+												<p>24 мес. +4.0% за месяц</p>
+											</div>
+											<div class="option" id="s5">
+												<p>36 мес. +4.5% за месяц</p>
+											</div>
+											<div class="option" id="s6">
+												<p>60 мес. +5.0% за месяц</p>
+											</div>
+											<div class="option" id="s7">
+												<p>96 мес. +6.0% за месяц</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="c-info">
+									<h4 class="c-top-title" id="text_calc_vv">Инвестировать</h4>
+									<div id="c-income" class='c-primary-title c-editable' data-edit-id="#c-income-edit" data-slider-id="#c-income-slider">1000000$</div>
+									<div class="c-info--input"><input type="text" maxlenght='8' class="c-editor" id="c-income-edit" onkeyup="this.value = this.value.replace(/[A-Za-zА-Яа-яЁё]/,'');">
+										<svg viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="btc">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5673 8.39607C11.5324 7.85252 12.0555 6.76423 11.8771 5.67106C11.6482 3.98251 9.65528 3.34708 8.05115 3.21155V0.666504H6.47925V3.18156H5.43168V0.666504H3.85866V3.18156H0.714844V4.80679H1.8935C2.41784 4.80679 2.6789 4.96342 2.6789 5.38334V12.3519C2.6789 12.9285 2.39006 13.1118 2.07568 13.1118H0.870368L0.818156 14.7626H3.85866V17.3298H5.43057V14.7659H6.47814V17.3332H8.05004V14.7659H8.39109C11.6127 14.7659 12.688 13.194 12.688 11.0455C12.6626 9.78407 11.7926 8.69716 10.5673 8.39607ZM5.43169 4.91119H6.55813C7.34353 4.91119 8.89099 5.04228 8.89099 6.32647C8.94505 7.15889 8.34123 7.88933 7.51349 7.9928H5.4328L5.43169 4.91119ZM7.16134 12.9552H5.43169V9.60141H7.44906C7.92119 9.60141 9.65084 9.75916 9.65084 11.0167C9.65084 12.2742 8.83767 12.9563 7.16134 12.9563V12.9552Z" fill="#7A7F8A"/>
+										</svg>
+										<svg viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="eth">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0119 8.4811L5.55359 0L1.0893 8.49153L5.55359 6.1721L10.0119 8.4811ZM5.54883 13.0313L0.548828 10.4237L5.54883 20L10.5488 10.4237L5.54883 13.0313ZM5.5524 11.7053L1.47502 9.59061L5.5524 7.47197L9.63573 9.5867L5.5524 11.7053Z" fill="#7A7F8A"/>
+										</svg>
+										<svg viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="usdt">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1758 3.00707V4.98714V4.98846C13.8136 5.15743 16.5488 5.88478 16.5488 6.75469C16.5488 7.6246 13.8136 8.35194 10.1758 8.52091V14.8571H6.93363V8.52751C3.2906 8.35723 0.548828 7.62988 0.548828 6.75865C0.548828 5.88741 3.28929 5.16007 6.93363 4.9911V3.01103H2.4496V0H14.6598V3.00707H10.1758ZM10.0514 7.99084C10.1142 7.98808 10.1549 7.98629 10.1758 7.98629V7.98365C13.3892 7.83977 15.7877 7.27347 15.7877 6.60024C15.7877 5.92702 13.3892 5.36072 10.1758 5.21683V7.42263C10.0828 7.43055 9.57978 7.47279 8.58027 7.47279C7.74713 7.47279 7.14454 7.43715 6.93363 7.42263V5.21683C3.71372 5.36072 1.30992 5.9257 1.30992 6.60156C1.30992 7.27743 3.71372 7.84241 6.93363 7.98629C7.4778 8.01069 8.02246 8.02213 8.56717 8.02061C9.37479 8.02061 9.83924 8.00018 10.0514 7.99084Z" fill="#7A7F8A"/>
+										</svg>
+									</div>
+								</div>
+								<div class="c-slider-block">
+									<input id="c-income-slider" type="range" min="0.0001" max="1000" step="0.0001" value="">
+								</div>
+								<div class="range">
+									<span class="start">1</span>
+									<span class="end">100</span>
+								</div>
+							</div>
+							<div class="c-top-block c-info-field">
+								<div class="c-info">
+									<h4 class="c-top-title">На срок</h4>
+									<div id="c-period" class='c-primary-title c-editable' data-edit-id="#c-range-edit" data-slider-id="#c-period-slider">2 года</div>
+									<div><input type="text" class="c-editor" id="c-range-edit" value="1" onfocus="this.value = this.value;"></div>
+								</div>
+								<div class="c-slider-block">
+									<input id="c-period-slider" type="range" min="1" max="52" step="1" value="1" >
+								</div>
+								<div class="range">
+									<span>1 неделя</span>
+									<span>260 недель</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="result">
+						<div class="add-field">
+							<div class="add-field-col">
+								<div class="invest chb">
+									<input type="checkbox" id="c-refill-check">
+									<label for="c-refill-check">
+										<div class="switch"></div>
+										Ежемесячное пополнение
+									</label>
+								</div>
+								<div class="chb capotalization">
+									<input type="checkbox" id="capotalization" disabled>
+									<label for="capotalization">
+										<div class="switch"></div>
+										Капитализация
+									</label>
+								</div>
+								<div class="invest-field" id="invest_field">
+									<input type="text" id="c-refill-amount" disabled="disabled" placeholder="Введите сумму">
+								</div>
+							</div>
+						</div>
+						<div class="c-result-block-wrapper">
+							<div class="c-result-block-1">
+								<h4 class="c-primary-title" id="result_calc_vv">Ваш результат</h4>
+							</div>
+							<div class="c-result-block-2">
+								<h2 id="c-result-sum"></h2>
+							</div>
+							<div class="c-result-block-3">
+								<h4 class="c-primary-title">Чистый доход USDT</h4>
+							</div>
+							<div class="c-result-block-4">
+								<h2 id="c-result-sum">Выберите период</h2>
+							</div>
+						</div>
+					</div>
+					<div class="invest_button">
+						<a onclick="activCalc()">Назад</a>
+						<a href="https://account.amir.capital/front/login" id="calc_btn_a">Инвестировать</a>
 					</div>
 				</div>
 			</div>
@@ -603,7 +799,7 @@
 									<a href="https://account.amir.capital/front/dashboard/savings" target="_blank">Инвестировать</a>
 								</li>
 								<li>
-									<a onclick="fullpage_api.moveTo(4)">Рассчитать</a>
+									<a onclick="activCalc('c-savings')" data-calc="c-savings" id="c_savings_vv">Рассчитать</a>
 								</li>
 							</ul>
 						</div>
@@ -676,7 +872,7 @@
 									<a href="https://account.amir.capital/front/dashboard/new-stable-create" target="_blank">Инвестировать</a>
 								</li>
 								<li>
-									<a onclick="fullpage_api.moveTo(4);">Рассчитать</a>
+									<a onclick="activCalc('c-stable')" data-calc="c-stable" id="c_stable_vv">Рассчитать</a>
 								</li>
 							</ul>
 						</div>
@@ -735,7 +931,7 @@
 									<a href="mailto:support@amir.capital">Связаться с менеджером</a>
 								</li>
 								<li>
-									<a onclick="fullpage_api.moveTo(4);">Рассчитать</a>
+									<a onclick="activCalc('c-pam')" data-calc="c-pam" id="c_pam_vv">Рассчитать</a>
 								</li>
 							</ul>
 						</div>
@@ -846,201 +1042,6 @@
 								</li>
 							</ul>
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section calc_bg" id="calc">
-			<div class="calc_side">
-				<div class="calc_side__text">
-					<div class="calc_side__head">
-						<svg viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M17.7999 13.1855C17.8005 13.9007 17.4191 14.5617 16.7998 14.9192L11.6612 17.8855C11.0418 18.2431 10.2787 18.2427 9.65971 17.8845L4.51033 14.9051C3.89294 14.5479 3.51252 13.8889 3.51195 13.1756L3.50716 7.22639C3.50659 6.51124 3.88791 5.8502 4.50728 5.49267L9.64584 2.52637C10.2652 2.16883 11.0283 2.16921 11.6473 2.52737L16.7967 5.5068C17.4141 5.86402 17.7945 6.52301 17.7951 7.2363L17.7999 13.1855Z" fill="#8C46FF"/>
-						</svg>
-						<h2>Калькулятор&nbspдоходности</h2>
-					</div>
-					<!-- <h2>Посчитай свой доход</h2> -->
-				</div>
-			</div>
-			<div class="calc-body">
-				<div class="f-row">
-					<div id="c-options-block">
-						<div class="choice-group">
-							<h4 class='c-primary-title'>Валюта</h4>
-							<div class="choice-box chb">
-								<input type="checkbox" checked="checked" class="c-currency-check" value="btc" id="c-btc">
-								<label for="c-btc">
-									<svg viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5673 8.39607C11.5324 7.85252 12.0555 6.76423 11.8771 5.67106C11.6482 3.98251 9.65528 3.34708 8.05115 3.21155V0.666504H6.47925V3.18156H5.43168V0.666504H3.85866V3.18156H0.714844V4.80679H1.8935C2.41784 4.80679 2.6789 4.96342 2.6789 5.38334V12.3519C2.6789 12.9285 2.39006 13.1118 2.07568 13.1118H0.870368L0.818156 14.7626H3.85866V17.3298H5.43057V14.7659H6.47814V17.3332H8.05004V14.7659H8.39109C11.6127 14.7659 12.688 13.194 12.688 11.0455C12.6626 9.78407 11.7926 8.69716 10.5673 8.39607ZM5.43169 4.91119H6.55813C7.34353 4.91119 8.89099 5.04228 8.89099 6.32647C8.94505 7.15889 8.34123 7.88933 7.51349 7.9928H5.4328L5.43169 4.91119ZM7.16134 12.9552H5.43169V9.60141H7.44906C7.92119 9.60141 9.65084 9.75916 9.65084 11.0167C9.65084 12.2742 8.83767 12.9563 7.16134 12.9563V12.9552Z" fill="#8C46FF"/>
-									</svg>											
-									Bitcoin
-								</label>
-								<!-- <span class="c-label">BTC</span> -->
-							</div>
-							<div class="choice-box chb">
-								<input type="checkbox" class="c-currency-check" value="eth" id="c-eth">
-								<label for="c-eth">
-									<svg viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0119 8.4811L5.55359 0L1.0893 8.49153L5.55359 6.1721L10.0119 8.4811ZM5.54883 13.0313L0.548828 10.4237L5.54883 20L10.5488 10.4237L5.54883 13.0313ZM5.5524 11.7053L1.47502 9.59061L5.5524 7.47197L9.63573 9.5867L5.5524 11.7053Z" fill="#8C46FF"/>
-									</svg>											
-									Ethereum
-								</label>
-								<!-- <span class="c-label">ETH</span> -->
-							</div>
-							<div class="choice-box chb">
-								<input type="checkbox" class="c-currency-check" value="usdt" id="c-usdt">
-								<label for="c-usdt">
-									<svg viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1758 3.00707V4.98714V4.98846C13.8136 5.15743 16.5488 5.88478 16.5488 6.75469C16.5488 7.6246 13.8136 8.35194 10.1758 8.52091V14.8571H6.93363V8.52751C3.2906 8.35723 0.548828 7.62988 0.548828 6.75865C0.548828 5.88741 3.28929 5.16007 6.93363 4.9911V3.01103H2.4496V0H14.6598V3.00707H10.1758ZM10.0514 7.99084C10.1142 7.98808 10.1549 7.98629 10.1758 7.98629V7.98365C13.3892 7.83977 15.7877 7.27347 15.7877 6.60024C15.7877 5.92702 13.3892 5.36072 10.1758 5.21683V7.42263C10.0828 7.43055 9.57978 7.47279 8.58027 7.47279C7.74713 7.47279 7.14454 7.43715 6.93363 7.42263V5.21683C3.71372 5.36072 1.30992 5.9257 1.30992 6.60156C1.30992 7.27743 3.71372 7.84241 6.93363 7.98629C7.4778 8.01069 8.02246 8.02213 8.56717 8.02061C9.37479 8.02061 9.83924 8.00018 10.0514 7.99084Z" fill="#8C46FF"/>
-									</svg>											
-									USDT
-								</label>
-								<!-- <span class="c-label">USDT</span> -->
-							</div>
-						</div>
-						<div class="choice-group">
-							<h4 class='c-primary-title'>Счет</h4>
-							<div class="choice-box rb">
-								<input type="checkbox" checked="checked" class="c-account-check" value="savings" id="c-savings">
-								<label for="c-savings">Накопительный</label>
-								<!-- <span class="c-label">Накопительный</span> -->
-							</div>
-							<div class="choice-box rb">
-								<input type="checkbox" class="c-account-check" value="stable" id="c-stable">
-								<label for="c-stable">Стабильный +</label>
-								<!-- <span class="c-label">Bright</span> -->
-							</div>
-							<div class="choice-box rb">
-								<input type="checkbox" class="c-account-check" value="pam" id="c-pam">
-								<label for="c-pam">PAM</label>
-								<!-- <span class="c-label">PAM</span> -->
-							</div>
-						</div>
-					</div>
-					<div class="settings">
-						<div class="slide">
-							<div class="c-top-block">
-								<div class="calc_select">
-									<select>
-										<option value="0">Период</option>
-										<option value="1">6 мес. +2.5% за месяц</option>
-										<option value="2">12 мес. +3.0% за месяц</option>
-										<option value="3">18 мес. +3.5% за месяц</option>
-										<option value="4">24 мес. +4.0% за месяц</option>
-										<option value="5">36 мес. +4.5% за месяц</option>
-										<option value="6">60 мес. +5.0% за месяц</option>
-										<option value="7">96 мес. +6.0% за месяц</option>
-									</select>
-									<div class="select">
-										<div class="check">
-											<p class="checkP">Период</p>
-											<div class="arrow">
-												<span></span>
-											</div>
-										</div>
-										<div class="select_option">
-											<div class="option" id="s1">
-												<p>6 мес. +2.5% за месяц</p>
-											</div>
-											<div class="option" id="s2">
-												<p>12 мес. +3.0% за месяц</p>
-											</div>
-											<div class="option" id="s3">
-												<p>18 мес. +3.5% за месяц</p>
-											</div>
-											<div class="option" id="s4">
-												<p>24 мес. +4.0% за месяц</p>
-											</div>
-											<div class="option" id="s5">
-												<p>36 мес. +4.5% за месяц</p>
-											</div>
-											<div class="option" id="s6">
-												<p>60 мес. +5.0% за месяц</p>
-											</div>
-											<div class="option" id="s7">
-												<p>96 мес. +6.0% за месяц</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="c-info">
-									<h4 class="c-top-title" id="text_calc_vv">Инвестировать</h4>
-									<div id="c-income" class='c-primary-title c-editable' data-edit-id="#c-income-edit" data-slider-id="#c-income-slider">1000000$</div>
-									<div class="c-info--input"><input type="text" maxlenght='8' class="c-editor" id="c-income-edit" onkeyup="this.value = this.value.replace(/[A-Za-zА-Яа-яЁё]/,'');">
-										<svg viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="btc">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5673 8.39607C11.5324 7.85252 12.0555 6.76423 11.8771 5.67106C11.6482 3.98251 9.65528 3.34708 8.05115 3.21155V0.666504H6.47925V3.18156H5.43168V0.666504H3.85866V3.18156H0.714844V4.80679H1.8935C2.41784 4.80679 2.6789 4.96342 2.6789 5.38334V12.3519C2.6789 12.9285 2.39006 13.1118 2.07568 13.1118H0.870368L0.818156 14.7626H3.85866V17.3298H5.43057V14.7659H6.47814V17.3332H8.05004V14.7659H8.39109C11.6127 14.7659 12.688 13.194 12.688 11.0455C12.6626 9.78407 11.7926 8.69716 10.5673 8.39607ZM5.43169 4.91119H6.55813C7.34353 4.91119 8.89099 5.04228 8.89099 6.32647C8.94505 7.15889 8.34123 7.88933 7.51349 7.9928H5.4328L5.43169 4.91119ZM7.16134 12.9552H5.43169V9.60141H7.44906C7.92119 9.60141 9.65084 9.75916 9.65084 11.0167C9.65084 12.2742 8.83767 12.9563 7.16134 12.9563V12.9552Z" fill="#7A7F8A"/>
-										</svg>
-										<svg viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="eth">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0119 8.4811L5.55359 0L1.0893 8.49153L5.55359 6.1721L10.0119 8.4811ZM5.54883 13.0313L0.548828 10.4237L5.54883 20L10.5488 10.4237L5.54883 13.0313ZM5.5524 11.7053L1.47502 9.59061L5.5524 7.47197L9.63573 9.5867L5.5524 11.7053Z" fill="#7A7F8A"/>
-										</svg>
-										<svg viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="usdt">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M10.1758 3.00707V4.98714V4.98846C13.8136 5.15743 16.5488 5.88478 16.5488 6.75469C16.5488 7.6246 13.8136 8.35194 10.1758 8.52091V14.8571H6.93363V8.52751C3.2906 8.35723 0.548828 7.62988 0.548828 6.75865C0.548828 5.88741 3.28929 5.16007 6.93363 4.9911V3.01103H2.4496V0H14.6598V3.00707H10.1758ZM10.0514 7.99084C10.1142 7.98808 10.1549 7.98629 10.1758 7.98629V7.98365C13.3892 7.83977 15.7877 7.27347 15.7877 6.60024C15.7877 5.92702 13.3892 5.36072 10.1758 5.21683V7.42263C10.0828 7.43055 9.57978 7.47279 8.58027 7.47279C7.74713 7.47279 7.14454 7.43715 6.93363 7.42263V5.21683C3.71372 5.36072 1.30992 5.9257 1.30992 6.60156C1.30992 7.27743 3.71372 7.84241 6.93363 7.98629C7.4778 8.01069 8.02246 8.02213 8.56717 8.02061C9.37479 8.02061 9.83924 8.00018 10.0514 7.99084Z" fill="#7A7F8A"/>
-										</svg>
-									</div>
-								</div>
-								<div class="c-slider-block">
-									<input id="c-income-slider" type="range" min="0.0001" max="1000" step="0.0001" value="">
-								</div>
-								<div class="range">
-									<span class="start">1</span>
-									<span class="end">100</span>
-								</div>
-							</div>
-							<div class="c-top-block c-info-field">
-								<div class="c-info">
-									<h4 class="c-top-title">На срок</h4>
-									<div id="c-period" class='c-primary-title c-editable' data-edit-id="#c-range-edit" data-slider-id="#c-period-slider">2 года</div>
-									<div><input type="text" class="c-editor" id="c-range-edit" value="1" onfocus="this.value = this.value;"></div>
-								</div>
-								<div class="c-slider-block">
-									<input id="c-period-slider" type="range" min="1" max="52" step="1" value="1" >
-								</div>
-								<div class="range">
-									<span>1 неделя</span>
-									<span>260 недель</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="result">
-						<div class="add-field">
-							<div class="add-field-col">
-								<div class="invest chb">
-									<input type="checkbox" id="c-refill-check">
-									<label for="c-refill-check">
-										<div class="switch"></div>
-										Ежемесячное пополнение
-									</label>
-								</div>
-								<div class="chb capotalization">
-									<input type="checkbox" id="capotalization" disabled>
-									<label for="capotalization">
-										<div class="switch"></div>
-										Капитализация
-									</label>
-								</div>
-								<div class="invest-field" id="invest_field">
-									<input type="text" id="c-refill-amount" disabled="disabled" placeholder="Введите сумму">
-								</div>
-							</div>
-						</div>
-						<div class="c-result-block-wrapper">
-							<div class="c-result-block-1">
-								<h4 class="c-primary-title" id="result_calc_vv">Ваш результат</h4>
-							</div>
-							<div class="c-result-block-2">
-								<h2 id="c-result-sum"></h2>
-							</div>
-							<div class="c-result-block-3">
-								<h4 class="c-primary-title">Чистый доход USDT</h4>
-							</div>
-							<div class="c-result-block-4">
-								<h2 id="c-result-sum">Выберите период</h2>
-							</div>
-						</div>
-					</div>
-					<div class="invest_button">
-						<a href="https://account.amir.capital/front/login">Инвестировать</a>
 					</div>
 				</div>
 			</div>

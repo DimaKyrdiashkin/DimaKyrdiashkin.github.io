@@ -150,6 +150,9 @@
 /* /threeSlide */
 
 /* bill */
+.bill{
+    overflow: hidden;
+}
 .bill_cntG{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1131,6 +1134,19 @@
     width: 80%;
 }
 /* /useful */
+.calc_bg{
+    position: fixed;
+    width: 100%;
+    right: -200%;
+    transition: .7s;
+    background-color: #fff;
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 2000;
+}
+.calc_bg_active{
+    right: 0;
+}
 /* device */
 .device .container{
     max-width: 1511px;
@@ -1221,8 +1237,6 @@
 .device_ul_body_btn img{
     width: 100%;
 }
-
-
 .device_ul_footer{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1623,7 +1637,10 @@ footer .slick-initialized .slick-slide{
     }
     /* /bill */
 
+    .calc_bg{
+        top: 0;
 
+    }
     /*threeSlide 1200*/
     .threeSlide_left{
         width: 45%;
