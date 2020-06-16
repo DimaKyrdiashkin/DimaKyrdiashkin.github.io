@@ -695,13 +695,13 @@ section.third.block .amb_box a.button:nth-of-type(2):hover{
   padding: 24px 24px 50px 24px;
   text-align: center;
 }
-.slider_date__items:nth-child(2){
+.slider_date__items:first-child{
   border-radius: 0 0 0 4px;
 }
 .slider_date__items:last-child{
   border-radius: 0 0 4px 0;
 }
-.slider_date__items:nth-child(2n+1){
+.slider_date__items:nth-child(2n){
   background: #F6F5FA;
 }
 section.fourth.block .container-fluid {
@@ -1068,7 +1068,7 @@ ul,ol,dl{
   .ambuss_lavel{
     align-items: center;
   }
-  .slider_date__items:nth-child(2n+1){
+  .slider_date__items:nth-child(2n){
     background: #fff;
   }
   .slider_date__items:nth-child(n+5){
