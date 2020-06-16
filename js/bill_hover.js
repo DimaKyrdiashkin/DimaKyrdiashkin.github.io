@@ -170,7 +170,6 @@ if(window.innerWidth <= 768){
     }
 }
 // /advantages
-
 // maps point open
 
 document.getElementById("investments_project_slider").addEventListener("click", (e) => {
