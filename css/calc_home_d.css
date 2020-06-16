@@ -730,11 +730,8 @@ input[type="checkbox"]:disabled + label .switch{
     z-index: 1;
     position: relative;
 }
-
-.invest_button_z{
-    z-index: 0;
-}
 .invest_button a{
+    cursor: pointer;
     background: #8C46FF;
     padding: 12px 24px;
     margin-bottom: 10px;
@@ -744,9 +741,7 @@ input[type="checkbox"]:disabled + label .switch{
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
-
 }
-
 @-webkit-keyframes cb-pop {
     0% {
         -webkit-transform: scale(1);
