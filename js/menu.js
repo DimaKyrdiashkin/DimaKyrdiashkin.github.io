@@ -24,11 +24,22 @@ $(".menu_button").on("click", function(even){
 });
 // //menu/
 a = $('source');
-console.log($(a[0]));
+video = document.querySelector('video');
 
-// video
-if(document.documentElement.clientWidth <= 992){
-    $(a[0]).attr('src', 'video/index_mob.webm');
-    $(a[1]).attr('src', 'video/index_mob.mp4');
-    document.querySelector('video').load();
+function videoPlay(){
+    if(document.documentElement.clientWidth <= 992){
+        $(a[0]).attr('src', 'video/index_mob.webm');
+        $(a[1]).attr('src', 'video/index_mob.mp4');
+        video.load();
+        video.play();
+    }
+    else{
+        $(a[0]).attr('src', 'video/index.webm');
+        $(a[1]).attr('src', 'video/index.mp4');
+        video.load();
+        video.play();
+    };
 }
+// video
+window.addEventListener("resize", videoPlay);
+window.addEventListener("load", videoPlay);
