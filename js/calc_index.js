@@ -2,151 +2,122 @@
 $('#c-income-edit').attr('maxlength', 8)
 $('.btc').css('display', 'block');
 $("#c-income-slider").val(0.0001);
-		var min_income_for_pam = 500000;
-		var income_specify_step = 500;
+const min_income_for_pam = 500000;
+let income_specify_step = 500;
 
-		let calc = {
-			defaults: {
-				interestSavings:{  	// накопительный процент в неделю
-					btc:  '0.95',
-					eth:  '1.23',
-					usdt: '1.34',
-				},
-				interestPam:{ 		// pam процент в неделю
-					btc:  '2.62',
-					eth:  '3.14',
-					usdt: '3.12',
-				},
-				// interestBright:{  	// стабильный процент в неделю только usdt
-				// 	6:  '33.8225578',
-				// 	12: '89.8298558',
-				// 	18: '169.2772786',
-				// 	24: '281.9749662',
-				// 	36: '668.6086792',
-				// 	60: '3012.046307',
-				// 	96: '26775.90303',
-				// },
-				currencyList: ['btc', 'eth', 'usdt'],
-				accountList: ['savings','pam'],
-				// periodStable:[6, 12, 18, 24, 36, 60, 96],   , 'stable'
-				minSum: 0.0001,				// минимальная сумма
-				maxSum: 100000000,		// максимальная сумма
-				minPam: 500000,			// минимальная сумма на счете pam
-			},
-			inArray: function(arr, elem) {
-			   	return arr.indexOf(elem) != -1;
-			},
+const calc = {
+    defaults: {
+        interestSavings:{  	// накопительный процент в неделю
+            btc:  '0.95',
+            eth:  '1.23',
+            usdt: '1.34',
+        },
+        interestPam:{ 		// pam процент в неделю
+            btc:  '2.62',
+            eth:  '3.14',
+            usdt: '3.12',
+        },
+        // interestBright:{  	// стабильный процент в неделю только usdt
+        // 	6:  '33.8225578',
+        // 	12: '89.8298558',
+        // 	18: '169.2772786',
+        // 	24: '281.9749662',
+        // 	36: '668.6086792',
+        // 	60: '3012.046307',
+        // 	96: '26775.90303',
+        // },
+        currencyList: ['btc', 'eth', 'usdt'],
+        accountList: ['savings','pam'],
+        // periodStable:[6, 12, 18, 24, 36, 60, 96],   , 'stable'
+        minSum: 0.0001,				// минимальная сумма
+        maxSum: 100000000,		// максимальная сумма
+        minPam: 500000,			// минимальная сумма на счете pam
+    },
+    inArray: function(arr, elem) {
+        return arr.indexOf(elem) != -1;
+    },
 
-			isAccount: function(account){
-				return this.inArray(this.defaults.accountList, account);
-			},
+    isAccount: function(account){
+        return this.inArray(this.defaults.accountList, account);
+    },
 
-			isCurrency: function(currency){
-				return this.inArray(this.defaults.currencyList, currency);
-			},
+    isCurrency: function(currency){
+        return this.inArray(this.defaults.currencyList, currency);
+    },
 
-			// isPeriodStable: function(period){
-			// 	return this.inArray(this.defaults.periodStable, period);
-			// },
+    // isPeriodStable: function(period){
+    // 	return this.inArray(this.defaults.periodStable, period);
+    // },
 
-			// getPeriodStable: function(){return this.defaults.periodStable;},
+    // getPeriodStable: function(){return this.defaults.periodStable;},
 
-			do: function(account, sum, term, currency, refill){
-				if(!this.isAccount(account)){
-					console.log('account name error, valid accounts: ',
-						this.defaults.accountList);
-					return;
-				}
-				// console.log(this.defaults.minSum);
-				// console.log($('#c-income-slider').val());
-				if($('#c-income-slider').val() < this.defaults.minSum || $('#c-income-slider').val() >
-				 this.defaults.maxSum){
-					console.log('error: sum not in range, min = '+
-						this.defaults.minSum+', max = '+this.defaults.maxSum);
-					return;
-				}
-				refill = refill || 0;
-				return this.roundPlus(this[account](sum, term, currency, refill), 2);
-			},
+    do: function(account, sum, term, currency, refill){
+        if(!this.isAccount(account)){
+            return;
+        }
+        if($('#c-income-slider').val() < this.defaults.minSum || $('#c-income-slider').val() >
+            this.defaults.maxSum){
+            return;
+        }
+        refill = refill || 0;
+        return this.roundPlus(this[account](sum, term, currency, refill), 2);
+    },
 
-			savings: function(sum, term, currency, refill){
-				if(!this.isCurrency(currency)){
-					console.log('currency name error, valid currency: ',
-						this.defaults.currencyList);
-					return;
-				}
-				let total = sum;
-				let interest = this.defaults.interestSavings[currency];
-				let income = sum * interest / 100;
+    savings: function(sum, term, currency, refill){
+        if(!this.isCurrency(currency)){
+            return;
+        }
+        let total = sum,
+            interest = this.defaults.interestSavings[currency],
+            income = sum * interest / 100,
+            c = 1;
+        for (let i = 1; i <= term; i++) {
+            total += income;
+            income = total * interest / 100;
+            if(c == 4){
+                total += refill;
+                c = 1;
+            }
+            c++;
+        }
+        return total;
+    },
+    pam: function(sum, term, currency, refill){
+        if(!this.isCurrency(currency)){
+            return;
+        }
+        if(sum < this.defaults.minPam){
+            return;
+        }
+        let total = sum,
+            interest = this.defaults.interestPam[currency],
+            income = sum * interest / 100,
+            c = 1;
+        for (let i = 1; i <= term; i++) {
+            total += income;
+            if(c == 4){
+                total += refill;
+                income = total * interest / 100;
+                c = 1;
+            }
+            c++;
+        }
+        return total;
+    },
+    roundPlus: function(x, n) {
+        if(!$("#c-savings").prop("checked")){
+            if(isNaN(x) || isNaN(n)) return 'round problem';
+            var m = Math.pow(10,n);
+            var r = Math.round(x*m)/m;
+            return r.toFixed(n);
+        }else{
+            if(isNaN(x) || isNaN(n)) return 'round problem';
+            return x;
+        };
+    }
+}
 
-				let c = 1;
-				for (let i = 1; i <= term; i++) {
-					total += income;
-					income = total * interest / 100;
-					if(c == 4){
-						total += refill;
-						c = 1;
-					}
-					c++;
-				}
-				return total;
-			},
-
-			pam: function(sum, term, currency, refill){
-				if(!this.isCurrency(currency)){
-					console.log('currency name error, valid currency: ',
-						this.defaults.currencyList);
-					return;
-				}
-				if(sum < this.defaults.minPam){
-					console.log('error: min sum for pam = '+
-						this.defaults.minPam);
-
-					return;
-				}
-				let total = sum;
-				let interest = this.defaults.interestPam[currency];
-				let income = sum * interest / 100;
-
-				let c = 1;
-				for (let i = 1; i <= term; i++) {
-					total += income;
-					if(c == 4){
-						total += refill;
-						income = total * interest / 100;
-						c = 1;
-					}
-					c++;
-				}
-				return total;
-			},
-
-			// stable: function(sum, term){
-			// 	if(!this.isPeriodStable(term)){
-			// 		console.log('term error, valid terms: ',
-			// 			this.defaults.periodStable);
-			// 		return;
-			// 	}
-			// 	let total = sum;
-			// 	let interest = this.defaults.interestBright[term];
-			// 	let income = sum * interest / 100;
-			// 	return total + income;
-			// },
-
-			roundPlus: function(x, n) {
-				if(!$("#c-savings").prop("checked")){
-				    if(isNaN(x) || isNaN(n)) return 'round problem';
-				    var m = Math.pow(10,n);
-				    var r = Math.round(x*m)/m;
-				    return r.toFixed(n);
-				}else{
-					if(isNaN(x) || isNaN(n)) return 'round problem';
-				    return x;
-				};
-		    }
-		}
-	
-		$(function($) {
+$(function($) {
     $.fn.inputFilter = function(inputFilter) {
         return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function() {
             if (inputFilter(this.value)) {
@@ -163,8 +134,6 @@ $("#c-income-slider").val(0.0001);
 
 
 $(function() {
-
-
     Number.prototype.format = function(n, x, s, c) {
         if(!$("#c-savings").prop("checked")){
             var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\D' : '$') + ')',
@@ -198,7 +167,7 @@ $(function() {
         validate(account);
         let currency = $('.c-currency-check:checked').val();
         let income = parseFloat($('#c-income-edit').val());
-        
+
         let period = parseInt($('#c-period-slider').val());
         if($('#c-refill-check').prop('checked')){
             var refill = parseFloat($('#c-refill-amount').val());
@@ -222,15 +191,23 @@ $(function() {
 
     }
 
-
-    $('.c-account-check').bind('click', function(event) {
-        $(".c-account-check").prop( "checked", false );
-        $(this).prop( "checked", true );
-        if($(this).val() == 'stable'){
-            // $('#c-usdt').trigger('click');
-            // $('.c-currency-check').prop('disabled', true);
-            // refillDisable();
-        } else {
+    //не трогать работало
+    // $('.c-account-check').bind('click', function(event) {
+    //     // $(".c-account-check").prop( "checked", false );
+    //     // $(this).prop( "checked", true );
+    //     if($(this).val() == 'stable'){
+    //         // $('#c-usdt').trigger('click');
+    //         // $('.c-currency-check').prop('disabled', true);
+    //         // refillDisable();
+    //     } else {
+    //         $('.c-currency-check').prop('disabled', false);
+    //         $('#c-refill-check').prop('disabled', false);
+    //     }
+    //     calculate();
+    // });
+    // ----
+    $(' #c_pam_vv,#c_savings_vv,#c_stable_vv').bind('click', (e) =>{
+        if($(e.target).attr('data-calc') !== 'c-stable'){
             $('.c-currency-check').prop('disabled', false);
             $('#c-refill-check').prop('disabled', false);
         }
@@ -277,7 +254,7 @@ $(function() {
         if($('#c-stable').prop("checked")){
             BrightCap();
         };
-        $('#c-income-slider').val($('#c-income-edit').val());       
+        $('#c-income-slider').val($('#c-income-edit').val());
         calculate();
     });
     $('#c-range-edit').change(function(){
@@ -568,9 +545,9 @@ $(function() {
             $(".c-result-block-1 .c-primary-title").text("Ежемесячный доход");
         }
     });
-    $("#c-stable").click(function() {
+    $("#c-stable, #c_stable_vv").click(function() {
         $('.invest').css('display', 'none');
-        $('.invest_button a').text('Инвестировать');
+        $('#calc_btn_a').text('Инвестировать');
         document.getElementById("invest_field").classList.remove("invest-field-active");
         $(".c-result-block-4 #c-result-sum").text("Выберите период");
         $(".checkP").text("Период");
@@ -578,7 +555,7 @@ $(function() {
         $(".c-info-field").addClass("close");
         $(".calc_select").addClass("open");
         $(".c-result-block-2").css("height", "15%");
-		$(".c-result-block-4").css("height", "15%");
+        $(".c-result-block-4").css("height", "15%");
         $(".c-result-block-3").css("display", "flex");
         $(".c-result-block-4").css("display", "flex");
         $("span.hr").css("display", "block");
@@ -610,27 +587,27 @@ $(function() {
             BrightNotCap();
         };
     });
-    $("#c-pam").click(function() {
+    $("#c-pam, #c_pam_vv").click(function() {
         $('.eth, .btc').css('display', 'none');
         $('.usdt').css('display', 'block');
         $('.end').html('10 000 000');
-        var attributes = {
+        let attributes = {
             min: 1,
             max: 10000000,
             step: 1
         };
         $('#c-income-slider').attr(attributes);
         $('#c-income-slider').rangeslider('update', true);
-        $('.invest_button a').text('Связаться с менеджером');
+        $('#calc_btn_a').text('Связаться с менеджером');
     });
-    $("#c-savings, #c-pam").click(function() {
+    $("#c-savings, #c_savings_vv, #c-pam, #c_pam_vv").click(function() {
         $('.invest').css('display', 'block');
         $('.capotalization').css('display', 'none');
         $("select").val(0);
         $(".c-info-field").removeClass("close");
         $(".calc_select").removeClass("open");
         $("#capotalization").attr("disabled", true);
-		$("#capotalization").prop("checked", false);
+        $("#capotalization").prop("checked", false);
         $(".c-result-block-2").css("height", "fit-content");
         $("span.hr").css("display", "none");
         $(".c-result-block-3").css("display", "none");
@@ -653,8 +630,8 @@ $(function() {
             $(".c-result-block-1 .c-primary-title").text("Ваш результат USDT");
         };
     });
-    $('#c-savings').click(function(){
-        $('.invest_button a').text('Инвестировать');
+    $('#c-savings,#c_savings_vv').click(function(){
+        $('#calc_btn_a').text('Инвестировать');
         if($("#c-btc").prop("checked")){
             $('.end').html("100");
             label =  amount.format(0, 4, ' ', '.');
@@ -757,7 +734,7 @@ $(function() {
                 alert( "Нет таких значений" );
         }
     };
-    $('#c-income-slider').change(function(event) {
+    $('#c-income-slider').change(function() {
         if($("#capotalization").prop("checked")){
             BrightCap();
         }else{
