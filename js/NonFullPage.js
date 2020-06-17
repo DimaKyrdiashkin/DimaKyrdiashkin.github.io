@@ -77,7 +77,7 @@ function fun_Full() {
         slideSelector: '.slide',
         
 
-        lazyLoading: true,
+        lazyLoading: false,
 
         //events
         onLeave: function (origin, destination, direction) {

@@ -2459,6 +2459,15 @@
 	<script src="js/profitability.js"></script>
 	<script src="js/bill_hover.js?v=123"></script>
 	<script>
+		function init(){
+			var imgDefer = document.getElementsByTagName('img');
+			for (var i=0; i<imgDefer.length; i++) {
+				if(imgDefer[i].getAttribute('data-src')) {
+					imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+				}
+			}
+		}
+		window.onload = init;
 		if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
 			document.querySelector('.device .container').classList.add('diviseIos');
 		}
