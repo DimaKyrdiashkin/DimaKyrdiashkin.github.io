@@ -1,7 +1,3 @@
-// setInterval(() => {
-//     
-// }, 1);
-
 var myFullpage;
 let flag = true;
 
@@ -85,6 +81,7 @@ function fun_Full() {
 
         //events
         onLeave: function (origin, destination, direction) {
+            if(document.querySelector("video").pause) document.querySelector("video").play();
             if(destination.index === 0){
                 document.getElementById("promo_h1").style.zIndex = "12";
             }
@@ -129,7 +126,6 @@ function fun_Full() {
         afterSlideLoad: function (section, origin, destination, direction) {
         },
         onSlideLeave: function (section, origin, destination, direction) {
-            if(document.querySelector("video").pause) document.querySelector("video").play();
         }
     });
     return myFullpage;
