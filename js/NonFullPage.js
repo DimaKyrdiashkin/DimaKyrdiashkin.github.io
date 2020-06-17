@@ -1,5 +1,5 @@
 // setInterval(() => {
-//     if(document.querySelector("video").pause){} document.querySelector("video").play();
+//     
 // }, 1);
 
 var myFullpage;
@@ -129,6 +129,7 @@ function fun_Full() {
         afterSlideLoad: function (section, origin, destination, direction) {
         },
         onSlideLeave: function (section, origin, destination, direction) {
+            if(document.querySelector("video").pause) document.querySelector("video").play();
         }
     });
     return myFullpage;
