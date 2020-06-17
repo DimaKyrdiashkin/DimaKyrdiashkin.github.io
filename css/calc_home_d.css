@@ -1067,6 +1067,9 @@ i.down {
     .invest_button{
         width: 100%;
     }
+    .invest_button{
+        margin-bottom: 100px;
+    }
     label{
         padding: 6px 14px;
     }
