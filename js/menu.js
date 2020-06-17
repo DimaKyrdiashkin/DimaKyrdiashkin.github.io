@@ -39,7 +39,7 @@ function videoPlay(){
         video.load();
         video.play();
     };
-}
+};
 // video
 window.addEventListener("resize", videoPlay);
 window.addEventListener("load", videoPlay);
