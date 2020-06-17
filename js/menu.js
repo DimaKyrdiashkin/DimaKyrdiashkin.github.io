@@ -25,9 +25,10 @@ $(".menu_button").on("click", function(even){
 // //menu/
 a = $('source');
 video = document.querySelector('video');
+let widthScreen = document.documentElement.clientWidth;
 
 function videoPlay(){
-    if(document.documentElement.clientWidth <= 992){
+    if(widthScreen <= 992){
         $(a[0]).attr('src', 'video/index_mob.webm');
         $(a[1]).attr('src', 'video/index_mob.mp4');
         video.load();
@@ -40,6 +41,24 @@ function videoPlay(){
         video.play();
     };
 };
+function videoPlayRes(){
+    if(widthScreen != document.documentElement.clientWidth && document.documentElement.clientWidth <= 992){
+        $(a[0]).attr('src', 'video/index_mob.webm');
+        $(a[1]).attr('src', 'video/index_mob.mp4');
+        video.load();
+        video.play();
+        widthScreen = document.documentElement.clientWidth;
+    }
+    else if(widthScreen != document.documentElement.clientWidth && document.documentElement.clientWidth > 992){
+        $(a[0]).attr('src', 'video/index.webm');
+        $(a[1]).attr('src', 'video/index.mp4');
+        video.load();
+        video.play();
+        widthScreen = document.documentElement.clientWidth;
+    }else{
+
+    }
+};
 // video
-window.addEventListener("resize", videoPlay);
+window.addEventListener("resize", videoPlayRes);
 window.addEventListener("load", videoPlay);
