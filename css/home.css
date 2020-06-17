@@ -1022,7 +1022,7 @@
 
 /* useful */
 .useful{
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
 }
 .useful_bg_svg{
