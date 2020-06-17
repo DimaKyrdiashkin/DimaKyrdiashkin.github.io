@@ -147,7 +147,6 @@
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 39px;
 }
 .calc_select{
     display: none;
@@ -300,8 +299,8 @@
     flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
+    justify-content: flex-start;
+    padding-top: 10px;
 }
 .result{
     width: 46%;
@@ -729,12 +728,10 @@ input[type="checkbox"]:disabled + label .switch{
     display: flex;
     flex-wrap: wrap;
     z-index: 1;
-}
-
-.invest_button_z{
-    z-index: 0;
+    position: relative;
 }
 .invest_button a{
+    cursor: pointer;
     background: #8C46FF;
     padding: 12px 24px;
     margin-bottom: 10px;
@@ -744,9 +741,7 @@ input[type="checkbox"]:disabled + label .switch{
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
-
 }
-
 @-webkit-keyframes cb-pop {
     0% {
         -webkit-transform: scale(1);
@@ -871,7 +866,6 @@ input[type="checkbox"]:disabled + label .switch{
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    margin-top: 30px;
     width: 100%;
 }
 
