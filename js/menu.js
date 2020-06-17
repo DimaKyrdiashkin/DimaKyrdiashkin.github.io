@@ -47,12 +47,14 @@ function videoPlayRes(){
         $(a[1]).attr('src', 'video/index_mob.mp4');
         video.load();
         video.play();
+        widthScreen = document.documentElement.clientWidth;
     }
     else if(widthScreen != document.documentElement.clientWidth && document.documentElement.clientWidth > 992){
         $(a[0]).attr('src', 'video/index.webm');
         $(a[1]).attr('src', 'video/index.mp4');
         video.load();
         video.play();
+        widthScreen = document.documentElement.clientWidth;
     }else{
 
     }
