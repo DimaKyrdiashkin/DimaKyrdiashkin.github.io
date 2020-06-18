@@ -1444,6 +1444,15 @@
 }
 /* /say */
 /* footerSlider*/
+.container_bloc_team{
+    display: flex;
+}
+.marat{
+    width: 10%;
+}
+.footer_slider{
+    width: 90%;
+}
 .container_bloc_team_h2{
     color: #FFFFFF;
     margin-bottom: 51px;
