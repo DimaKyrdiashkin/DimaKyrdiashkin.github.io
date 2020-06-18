@@ -1071,9 +1071,6 @@ ul,ol,dl{
   .slider_date__items:nth-child(2n){
     background: #fff;
   }
-  .slider_date__items:nth-child(n+5){
-    width: 25%;
-  }
   .slider_date__items:nth-child(2){
     border-radius: 0;
   }
