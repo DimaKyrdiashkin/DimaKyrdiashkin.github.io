@@ -607,7 +607,7 @@ section.third.block .amb_box a.button:nth-of-type(2):hover{
   transform: translateX(-50%);
 }
 .fourth {
-  padding: 100px 0 150px;
+  padding: 100px 0;
 }
 .fourth .content{
     position: relative;
@@ -1303,10 +1303,10 @@ section.second.block img {
     padding: 100px 0;
   }
   .next{
-    right: 30%;
+    right: 20%;
   }
   .prev{
-    left: 30%;
+    left: 20%;
   }
   .SumoSelect.open>.optWrapper{top: 40px;}
   .fourth_text{
@@ -1363,7 +1363,7 @@ section.second.block img {
    }
 
     section.fourth.block {
-      padding: 50px 15px;
+      padding: 50px 15px 70px;
     }
 
     section.block.fiveth iframe {
