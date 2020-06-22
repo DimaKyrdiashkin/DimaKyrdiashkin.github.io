@@ -1536,6 +1536,7 @@ footer .slick-slide>div{
 }
 .footer_slider_item_img{
     width: 200px !important;
+    height: intrinsic;
 }
 footer .slick-initialized .slick-slide{
     display: -webkit-box!important;
@@ -1559,6 +1560,8 @@ footer .slick-initialized .slick-slide{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 1s;
+    opacity: 0;
 }
 .popup_content{
     width: 450px;
