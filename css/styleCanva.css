@@ -89,21 +89,9 @@
         width: 4px;
         height: 8px;
         border-color: #fff; } }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; }
-
 .app-title {
     text-align: center;
     margin-bottom: 1rem; }
-
-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem; }
-
 .theme-button {
     display: flex;
     justify-content: center; }
@@ -175,7 +163,6 @@ body.tg-night .app-title {
     display: none;
     max-width: 200px;
     min-width: 120px;
-    padding: 0.5rem;
     border-radius: 5px;
     border: 1px solid #dfe6eb;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
@@ -187,20 +174,20 @@ body.tg-night .app-title {
     left: 100px; }
 .tg-chart .tg-chart-tooltip .tooltip-title {
     text-align: center;
-    margin-bottom: .5rem;
+    padding: 10px 0;
     white-space: nowrap; }
 .tg-chart .tg-chart-tooltip .tooltip-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     list-style: none;
+    color: #ffffff!important;
     margin: 0;
-
     padding: 0; }
 .tg-chart .tg-chart-tooltip .tooltip-list-item {
     display: flex;
-    margin: 0 10px 5px;
     flex-direction: column;
     align-items: center;
+    padding: 5px;
     flex-grow: 1; }
 .tg-chart .tg-chart-tooltip .tooltip-list-item .name {
     font-size: .8rem; }
