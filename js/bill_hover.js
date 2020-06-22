@@ -192,12 +192,19 @@ const activCalc = (name = false) =>{
     }
 }
 //team
-$().click((e)=>{
-
+$('.footer_slider_item_img').click((e)=>{
+    $('.popupImg').attr('src', $(e.target).attr('src'));
+    $('.popupNama').text($(e.target).attr('alt'));
+    $('.popupPost').text($(e.target).attr('alt-post'));
+    $('.footer_popup').css('z-index', 2);
+    $('.footer_popup').delay(500).addClass('footer_popup_open', 1);
 })
 $( ".footer_popup, .cross" ).click(function() {
-
+    $('.footer_popup').removeClass('footer_popup_open', 1);
+    setTimeout(e=>{
+        $('.footer_popup').css('z-index', -1);
+    }, 1000);
 });
-$( ".popup div" ).click(function(event) {
+$( ".footer_popup div" ).click(function(event) {
     event.stopPropagation();
 });

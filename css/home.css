@@ -1451,7 +1451,7 @@
 }
 .marat{
     width: 25%;
-    height: 70%;
+    height: fit-content;
     text-align: center;
 }
 .marat img{
@@ -1565,6 +1565,15 @@ footer .slick-initialized .slick-slide{
     transition: 1s;
     opacity: 0;
     z-index: -1;
+}
+.popupPost{
+    width: 210px;
+    text-align: center;
+    font-size: 0.875em;
+}
+.footer_popup_open{
+    opacity: 1;
+    transition: 1s;
 }
 .popup_content{
     width: 450px;
