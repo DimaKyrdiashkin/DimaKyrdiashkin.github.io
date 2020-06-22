@@ -171,7 +171,6 @@ if(window.innerWidth <= 768){
 }
 // /advantages
 // maps point open
-
 document.getElementById("investments_project_slider").addEventListener("click", (e) => {
     if(e.target.nodeName === "A"){
         localStorage.point = e.target.children[0].getAttribute("alt")
