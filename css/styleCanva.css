@@ -194,6 +194,7 @@ body.tg-night .app-title {
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
+
     padding: 0; }
 .tg-chart .tg-chart-tooltip .tooltip-list-item {
     display: flex;
