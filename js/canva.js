@@ -175,7 +175,7 @@ let widthWindow= window.innerWidth*.9;
             return [Math.floor(Math.min.apply(null, t)), Math.ceil(Math.max.apply(null, t))];
         }
         function o({ pos: e, viewH: t, viewW: i, length: s, delta: a }) {
-            return [i / ((e.right - e.left) / 100) / (s - 2), a / t];
+            return [i / ((e.right - e.left) / 100) / (s - 2), a / t];// del canvass [i / ((e.right - e.left) / 100) / (s - 2), a / t]
         }
         function n({ data: e, yMin: t, viewH: i, xRatio: s, yRatio: a, margin: h }) {
             return e.map((e, o) => {
@@ -549,7 +549,7 @@ let widthWindow= window.innerWidth*.9;
                 if (!Object.keys(i).length) return;
                 this.$el.innerHTML = "";
                 const { height: s, width: a } = this.$el.getBoundingClientRect();
-                c(this.$el, { display: "block", top: `${e - s}px`, left: `${t + 10}px` }),
+                c(this.$el, { display: "block", top: `${e - s}px`, left: `${t + 5}px` }),
                     this.$el.insertAdjacentHTML(
                         "afterbegin",
                         `\n      <div class="tooltip-title">${i.title}</div>\n      <ul class="tooltip-list">\n        ${i.items
