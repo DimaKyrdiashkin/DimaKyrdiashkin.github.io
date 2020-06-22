@@ -1,5 +1,3 @@
-"user script"
-
 // bill
 const mass={
     id:['bill_saving','bill_bright','bill_pam','bill_AmirWallet','bill_investments'],
@@ -193,3 +191,13 @@ const activCalc = (name = false) =>{
         $("#"+name).prop("checked", true)
     }
 }
+//team
+$().click((e)=>{
+
+})
+$( ".footer_popup, .cross" ).click(function() {
+
+});
+$( ".popup div" ).click(function(event) {
+    event.stopPropagation();
+});

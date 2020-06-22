@@ -1465,6 +1465,7 @@ footer .slick-slide>div{
     margin-left: 40px;
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    cursor: pointer;
 }
 .slide_center{
     margin: -50px 0 0 0;
@@ -1562,6 +1563,7 @@ footer .slick-initialized .slick-slide{
     justify-content: center;
     transition: 1s;
     opacity: 0;
+    z-index: -1;
 }
 .popup_content{
     width: 450px;
