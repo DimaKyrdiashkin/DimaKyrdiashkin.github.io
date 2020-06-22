@@ -34,7 +34,7 @@ $(".say_slider").slick({
 
 // footer_slider
 $("#footer_slider").slick({
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,

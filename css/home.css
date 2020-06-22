@@ -1550,6 +1550,28 @@ footer .slick-initialized .slick-slide{
 .slide {
     height: 100%;
 }
+.footer_popup{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: #000000ad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup_content{
+    width: 450px;
+    height: 550px;
+    background: url(../img/home/popup.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+}
+.popupImg{
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
 @media (max-width: 1690px) {
     .container_li_img{
         bottom: -5px;
@@ -1718,19 +1740,35 @@ footer .slick-initialized .slick-slide{
     }
     /* /say */
     .footer .container{
-        flex-direction: column;
+        width: 93%;
         overflow: hidden;
     }
     .footer_slider{
         margin: 0 auto;
-        width: 95%;
-    }
-    .marat{
-        order: 1;
+        width: 70%;
     }
     .container_bloc_team_h2{
         padding-left: 0;
         text-align: center;
+    }
+    .footer_slider_item_img{
+        width: 150px !important;
+    }
+    .footer_slider_item svg{
+        width: 150px;
+    }
+    .slide_center {
+        margin: -35px 0 0 0;
+    }
+    .footer_slider .prev, .footer_slider .next{
+        height: 45px;
+        width: 45px;
+    }
+    footer .apendixLogo{
+        display: none;
+    }
+    .container_bloc_team{
+        margin-bottom: 50px !important;
     }
 }
 
@@ -1916,6 +1954,16 @@ footer .slick-initialized .slick-slide{
     }
     .marat{
         width: 30%;
+        order: 1;
+    }
+    footer .apendixLogo{
+        display: block;
+    }
+    .container_bloc_team{
+        flex-direction: column;
+    }
+    .footer_slider{
+        width: 100%;
     }
 }
 
@@ -2068,6 +2116,16 @@ footer .slick-initialized .slick-slide{
     .marat{
         width: 35%;
         max-width: 225px;
+        min-width: 180px;
+    }
+    .slick-dotted.slick-slider{
+        margin-bottom: 0 !important;
+    }
+    .slide_top img,
+    .slide_center img,
+    .slide_bottom img,
+    .apendixSlideSvg{
+        margin-left: 30px;
     }
 }
 
