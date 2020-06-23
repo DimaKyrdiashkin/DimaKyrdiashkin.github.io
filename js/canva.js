@@ -129,3 +129,13 @@ function drawChart_2020() {
     var chart = new google.visualization.LineChart(document.getElementById('chart_mob_2020'));
     chart.draw(data, options);
 }
+$(window).resize(()=>{
+    if(window.innerWidth<= 480) {
+        google.charts.setOnLoadCallback(drawChart_2018);
+        google.charts.setOnLoadCallback(drawChart_2019);
+        google.charts.setOnLoadCallback(drawChart_2020);
+    }
+    else{
+        google.charts.setOnLoadCallback(drawChart);
+    }
+})
