@@ -5,15 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:title" content="Amir Capital FAQ">
+    <meta property="og:site_name" content="Amir Capital">
+    <meta property="og:title" content="FAQ">
     <meta property="og:description" content="Здесь Вы найдете все ответы на актуальные вопросы по Amir Capital">
     <meta property="og:image" content="./logoOG.png">
     <meta property="og:url" content="https://amir.capital/help_desk">
     <title>Amir Capital FAQ</title>
     <link rel="shortcut icon" href="./../img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.min.css">
-    <link rel="stylesheet" href="css/help.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/help.min.css">
 </head>
 <body>
     <div class="fullpageId">
@@ -742,22 +742,19 @@
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script> (function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0); var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h); })(window,document,'https://cdn.bitrix24.ru/b8830485/crm/site_button/loader_3_69xiln.js');
     </script>
     <script>
         // Keep ref id when user surf the site
-
         function getParameterByName(name) {
             var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
             return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
         }
-
         var queryPartner = getParameterByName('partner');
-
         if (queryPartner) {
             localStorage.setItem('partner', queryPartner);
         }
-
         var allLinks = document.getElementsByTagName('a');
         var partner = localStorage.getItem('partner');
 

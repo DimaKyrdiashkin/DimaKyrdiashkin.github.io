@@ -5,6 +5,7 @@
 	<meta name="viewport"
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta property="og:site_name" content="Amir Capital">
 	<meta property="og:title" content="Amir Capital Sunrise Program">
 	<meta property="og:description" content="Программа вознаграждение от Amir Capital в виде начислений в личном кабинете и полезных сувениров.">
 	<meta property="og:image" content="./img/logoOG.png">
@@ -14,7 +15,6 @@
 	<link rel="shortcut icon" href="./../img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.min.css">
 	<link rel="stylesheet" href="css/program.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
 	<div class="fullpageId">
@@ -926,7 +926,6 @@
 							2020
 						</h2>
 					</div>
-					<!-- <h5>Как получить максимум пользы от Amir&#160;Capital</h5> -->
 				</div>
 				<div class="event_left">
 					<svg viewBox="0 0 372 624" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1325,25 +1324,21 @@
 			</div>
 		</footer>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script> (function(w,d,u){ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0); var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h); })(window,document,'https://cdn.bitrix24.ru/b8830485/crm/site_button/loader_3_69xiln.js');
 	</script>
 	<script>
 		// Keep ref id when user surf the site
-	
 		function getParameterByName(name) {
 		  var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
 		  return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
 		}
-		
 		var queryPartner = getParameterByName('partner');
-		
 		if (queryPartner) {
 		  localStorage.setItem('partner', queryPartner);
 		}
-		
 		var allLinks = document.getElementsByTagName('a');
 		var partner = localStorage.getItem('partner');
-		
 		for (var link of allLinks) {
 		  if (link.href.includes('account.amir.capital') && partner) {
 			var href = link.getAttribute('href');
