@@ -1584,6 +1584,7 @@ footer .slick-initialized .slick-slide{
     background: url(../img/home/popup.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     padding-bottom: 100px;
     /* background-size: cover; */
 }
@@ -1817,12 +1818,14 @@ footer .slick-initialized .slick-slide{
     .container_bloc_team{
         margin-bottom: 50px !important;
     }
+    .footer_popup{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
 }
 
 @media (max-width: 992px) {
-    /* .first_video{
-        display: none;
-    } */
     /*threeSlide 992*/
     .threeSlide .container{
         -webkit-box-orient: vertical;
@@ -2011,6 +2014,13 @@ footer .slick-initialized .slick-slide{
     }
     .footer_slider{
         width: 100%;
+    }
+    .popupImg{
+        max-width: 125px;
+    }
+    .popup_content{
+        width: 350px;
+        height: 375px;
     }
 }
 
