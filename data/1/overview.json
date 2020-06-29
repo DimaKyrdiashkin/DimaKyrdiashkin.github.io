@@ -119,5 +119,5 @@
   ],
   "types": { "y0": "line", "y1": "line", "y2":"line", "x": "x" },
   "names": { "y0": "USDT", "y1": "BTC", "y2":"ETH"},
-  "colors": { "y0": "#4BD964", "y1": "#FE3C30", "y2":"#ccc"}
+  "colors": { "y0": "#0EBB0B", "y1": "#F25B00", "y2":"#542AC8"}
 }

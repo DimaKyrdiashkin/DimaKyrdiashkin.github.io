@@ -144,6 +144,7 @@
     -ms-transform-origin: center right;
     -o-transform-origin: center right;
     transform-origin: center right;
+    color: #8C46FF;
     position: absolute;
     text-align: right;
     right: 0;
@@ -681,6 +682,8 @@
 }
 
 .a-chart__legend {
+    display: flex;
+    justify-content: center;
     color: #43484b;
     padding: 9px 15px 0;
     margin-top: -3px;
