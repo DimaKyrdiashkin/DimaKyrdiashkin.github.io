@@ -47,7 +47,8 @@ function formatDate(date, format) {
             case 'D':     result.push(date.getUTCDate()); break;
             case 'HH':    result.push(date.getUTCHours() < 10 ? '0' : '', date.getUTCHours()); break;
             case 'mm':    result.push(date.getUTCMinutes() < 10 ? '0' : '', date.getUTCMinutes()); break;
-            default:      result.push(format[i]); break;
+            default:      result.push(format[i]);
+            break;
         }
     }
     return result.join('');
@@ -97,6 +98,7 @@ function transformData(data) {
                 type: data.types[k],
                 color: data.colors[k],
             });
+
             type = data.types[k];
         } else {
             throw new Error('Unsupported series type: "' + data.types[k] + '"');
@@ -393,7 +395,6 @@ AChart.prototype.init = function(data) {
         }
         if ((initialTouch.pageX - currentTouch.pageX) * (initialTouch.pageX - currentTouch.pageX) +
             (initialTouch.pageY - currentTouch.pageY) * (initialTouch.pageY - currentTouch.pageY) > 3 * 3) {
-            //console.log('dismiss');
             clearTimeout(this.longpressTimeout);
             series[index].clickDismissed = true;
             series[index].clickProcessing = false;
@@ -1280,13 +1281,13 @@ AChart.prototype.updateSelection = function(render) {
                 } else {
                     this.selectionBoxRows[i].percentEl.style.display = 'none';
                 }
-
                 this.selectionBoxRows[i].labelEl.innerText = i == _series.length ? 'All' : _series[i].name;
                 this.selectionBoxRows[i].valueEl.style.color = i == _series.length ? 'inherit' : _series[i].color;
                 this.selectionBoxRows[i].valueEl.innerText = formatNumber(i == _series.length ? sum :
                     (this.PERCENTAGE && this.zooming > 0 ?
                         Math.round(_series[i].sum / _series[i].n) :
                         _series[i].pts[this.selectionIndex]));
+                this.selectionBoxRows[i].valueEl.innerText +="%"
             } else {
                 this.selectionBoxRows[i].el.style.display = 'none';
             }
@@ -1875,7 +1876,6 @@ AChart.prototype.render = function(renderView, renderOverview, isFinalAnimationT
             x = (label.x - this.minX + (this.type === 'bar' ? (this.zdt || this.dt) * 0.5 : 0)) * this.scaleX() + this.SIDE_PADDING;
             opacity = this.get('grid-x' + label.x + '-opacity');
             if (this.zooming > 0 && this.zooming < 1) {
-                //console.log(opacity);
                 opacity = (label.fmt === 'h') ? Math.max(0, opacity * 5 - 4) : 1;
             }
 
@@ -2364,8 +2364,6 @@ AChart.prototype.zoom = function(zoomIn) {
                     this.zmaxX = Math.ceil((this.zxs[this.zxs.length - 1] - TZ) / DAY) * DAY + TZ;
                     this.animate('gmaxX', this.zmaxX, this.ZOOM_DURATION);
                 }
-
-                //console.log(data);
                 if (this.Y_SCALED) {
                     this.updateRightScale();
                 }
