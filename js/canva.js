@@ -2000,8 +2000,6 @@ AChart.prototype.renderPie = function(ctx, pie) {
             }
             x = sector.cx + Math.cos(alpha) * d;
             y = sector.cy + Math.sin(alpha) * d + sz * 0.6;
-
-            ctx.font = 'bold ' + (sz * dp) + 'px Roboto, -apple-system, BlinkMacSystemFont, "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Verdana, sans-serif';
             ctx.fillText(v + '%', x * dp, y * dp);
 
             if (index === this.selectionSeriesIndex) {

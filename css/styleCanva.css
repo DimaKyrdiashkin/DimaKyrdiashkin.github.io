@@ -59,8 +59,8 @@
 
 /* a-chart */
 
-.a-chart {
-    margin: 50px 20px;
+.a-chart{
+    margin: 100px 20px 50px;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
