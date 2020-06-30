@@ -10,7 +10,7 @@ const calc = {
         interestSavings:{  	// накопительный процент в неделю
             btc:  '0.95',
             eth:  '1.23',
-            usdt: '1.34',
+            usdt: '1.18',
         },
         interestPam:{ 		// pam процент в неделю
             btc:  '2.62',
