@@ -12,6 +12,10 @@
 .categories_ul{
 
 }
+.order{
+    font-size: 48px;
+    line-height: 70%;
+}
 .categories_ul li{
     position: relative;
     width: 100%;
@@ -36,14 +40,27 @@
 }
 .categories_ul li div h2{
     text-transform: uppercase;
-    border-left:2px solid #542AC8;
+    /* border-left:2px solid #542AC8; */
     padding-left: 30px;
     margin-bottom: 20px;
     color: #000000;
+    position: relative;
+}
+.categories_ul li div h2::before{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #542AC8;
 }
 .categories_ul li div a{
     color: #542AC8;
     padding-left: 30px;
+    font-family: 'Gilroy-Bold';
 }
 
 @media (max-width: 1400px) {
