@@ -2,6 +2,16 @@
     min-height: 10vh;
     height: auto;
 }
+.categories {
+    width: 100%;
+}
+.categories .container{
+    width: 90%;
+    margin: 0 auto;
+}
+.categories_ul{
+
+}
 
 @media (max-width: 1400px) {
 
