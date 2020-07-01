@@ -522,14 +522,18 @@
 .bill_container_rel_btn li{
     margin-right: 55px;
     padding: 14px 0;
+    width: 27%;
 }
 .bill_container_rel_btn a{
+    display: block;
+    text-align: center;
     cursor: pointer;
     font-weight: 600;
     font-size: 1em;
     line-height: 20px;
     color: #FFFFFF;
-    padding: 14px 55px;
+    width: 100%;
+    padding: 14px 0;
     border: 1px solid #8C46FF;
     background-color: #8C46FF;
     border-radius: 4px;
