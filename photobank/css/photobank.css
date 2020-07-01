@@ -1,4 +1,5 @@
 .promoContent, .promoContent .container{
+    min-height: 10vh;
     height: auto;
 }
 
