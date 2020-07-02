@@ -130,48 +130,47 @@
                     <img src="img/cat1.jpg" alt="BLOCKCHAIN LIFE 2019">
                     <div class="annotation">
                         <h2>BLOCKCHAIN LIFE 2019</h2>
-                        <a href="#">Перейти к просмотру</a>
+                        <a onclick="addImg('BLOCKCHAIN LIFE 2019')">Перейти к просмотру</a>
                     </div>
                 </li>
                 <li>
                     <p class="order">02</p>
                     <img src="img/cat2.jpg" alt="BLOCKCHAIN WEEK 2019">
                     <div class="annotation">
-                        <h2>BLOCKCHAIN LIFE 2019</h2>
-                        <a href="#">Перейти к просмотру</a>
+                        <h2>BLOCKCHAIN WEEK 2019</h2>
+                        <a onclick="addImg('BLOCKCHAIN WEEK 2019')">Перейти к просмотру</a>
                     </div>
                 </li>
                 <li>
                     <p class="order">03</p>
                     <img src="img/cat3.jpg" alt="SUNNY DAY ANTALYA 2019">
                     <div class="annotation">
-                        <h2>BLOCKCHAIN LIFE 2019</h2>
-                        <a href="#">Перейти к просмотру</a>
+                        <h2>SUNNY DAY ANTALYA 2019</h2>
+                        <a onclick="addImg('SUNNY DAY ANTALYA 2019')">Перейти к просмотру</a>
                     </div>
                 </li>
                 <li>
                     <p class="order">04</p>
                     <img src="img/cat4.jpg" alt="SUNNY DAY MOSCOW 2019">
                     <div class="annotation">
-                        <h2>BLOCKCHAIN LIFE 2019</h2>
-                        <a href="#">Перейти к просмотру</a>
+                        <h2>SUNNY DAY MOSCOW 2019</h2>
+                        <a onclick="addImg('SUNNY DAY MOSCOW 2019')">Перейти к просмотру</a>
                     </div>
                 </li>
             </ul>
         </div>
     </section>
-    <section class="open_cat">
+    <section class="open_cat" id="modul">
         <div class="conteiner">
             <div class="header">
-                <p class="order">01</p>
-                <img src="img/cat1/head.jpg" alt=""></img>
+                <p class="order" id="modelOrder"></p>
+                <img src="" id="headModel" alt="head">
                 <div class="annotation">
-                    <h2>BLOCKCHAIN LIFE 2019</h2>
-                    <a href="#">Вернуться назад</a>
+                    <h2 id="modelH2"></h2>
+                    <a  id="delModul">Вернуться назад</a>
                 </div>
             </div>
-            <ul class="main_columns">
-                <li></li>
+            <ul class="main_columns" id="main_columns">
                 <li></li>
                 <li></li>
                 <li></li>
@@ -350,5 +349,6 @@
     }
 </script>
 <script src="../js/menu.js"></script>
+<script src="../js/photobank.js"></script>
 </body>
 </html>

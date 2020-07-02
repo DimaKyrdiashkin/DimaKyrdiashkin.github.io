@@ -36,7 +36,6 @@
 }
 .annotation h2{
     text-transform: uppercase;
-    /* border-left:2px solid #542AC8; */
     padding-left: 30px;
     margin-bottom: 20px;
     color: #000000;
@@ -57,14 +56,25 @@
     color: #542AC8;
     padding-left: 30px;
     font-family: 'Gilroy-Bold';
+    cursor: pointer;
 }
 .open_cat{
-    position: absolute;
+    transition: opacity 1s, z-index 3s;
+    opacity: 0;
+    position: fixed;
     top: 0;
     left: 0;
+    z-index: -21;
     width: 100vw;
-    height: 100%;
-    background: #666;
+    min-height: 100%;
+    background: #F1F1F1;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.open_cat_active{
+    transition: opacity 1s, z-index 0s;
+    z-index: 1;
+    opacity: 1;
 }
 .open_cat .conteiner{
     max-width: 1500px;
@@ -82,16 +92,23 @@
 .header img{
     width: 100%;
     border-radius: 4px;
+
 }
 .main_columns{
     display: flex;
+    align-items: flex-start;
     margin-top: 100px;
 }
 .main_columns li{
     flex-grow: 1;
-    background: #fff;
-    height: 200px;
-    margin-right: 50px;
+    width: 50%;
+    margin-right: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.main_columns li img{
+    width: 100%;
+    margin-bottom: 32px;
 }
 .main_columns li:last-child{
     margin-right: 0;
