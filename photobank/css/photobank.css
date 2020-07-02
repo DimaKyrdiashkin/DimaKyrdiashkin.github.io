@@ -8,21 +8,17 @@
 .categories .container{
     width: 90%;
     margin: 0 auto;
-}
-.categories_ul{
-
+    max-width: 1500px;
 }
 .order{
     font-size: 48px;
     line-height: 70%;
+    text-align: right;
 }
 .categories_ul li{
     position: relative;
     width: 100%;
     margin-bottom: 150px;
-}
-.categories_ul li p{
-    text-align: right;
 }
 .categories_ul li img{
     border-radius: 4px;
@@ -62,7 +58,16 @@
     padding-left: 30px;
     font-family: 'Gilroy-Bold';
 }
-
+.open_cat{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: #666;
+    max-width: 1500px;
+}
 @media (max-width: 1400px) {
 
 }
