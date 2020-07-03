@@ -92,7 +92,7 @@ h1 span{
     height: 100vh;
 }
 .open_cat_active{
-    transition: opacity 1s, z-index 0s;
+    transition: opacity 1.5s, z-index 0s;
     z-index: 1;
     opacity: 1;
 }
@@ -133,9 +133,9 @@ h1 span{
 .main_columns li:last-child{
     margin-right: 0;
 }
-.promoContent .apendixLogo{
+.promoContent .apendixLogo,.footer .apendixLogo{
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 @media (max-width: 1400px) {
 
@@ -167,4 +167,5 @@ h1 span{
     .header img{
         display: none;
     }
+
 }
