@@ -54,9 +54,24 @@
 }
 .annotation a{
     color: #542AC8;
-    padding-left: 30px;
+    margin-left: 30px;
     font-family: 'Gilroy-Bold';
     cursor: pointer;
+    position: relative;
+}
+.annotation a:after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: .7s;
+    border-radius: 10px;
+    background-color: #542AC8;
+}
+.annotation a:hover:after{
+    width: 100%;
 }
 .open_cat{
     transition: opacity 1s, z-index 3s;
@@ -113,6 +128,10 @@
 .main_columns li:last-child{
     margin-right: 0;
 }
+.promoContent .apendixLogo{
+    position: relative;
+    z-index: 1;
+}
 @media (max-width: 1400px) {
 
 }
@@ -124,7 +143,23 @@
 }
 @media (max-width: 768px) {
 
+    .annotation{
+        right: 0;
+    }
+    .main_columns{
+        flex-wrap: wrap;
+    }
+    .main_columns li{
+        width: 100%;
+        margin: auto;
+    }
+    .main_columns li img{
+        width: 90%;
+        margin: 0 auto 32px;
+    }
 }
 @media (max-width: 480px) {
-
+    .header img{
+        display: none;
+    }
 }
