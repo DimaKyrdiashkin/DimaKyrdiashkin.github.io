@@ -1,9 +1,13 @@
+h1 span{
+    color: #535366;
+}
 .promoContent, .promoContent .container{
     min-height: 10vh;
     height: auto;
 }
 .categories {
     width: 100%;
+    margin-top: 50px;
 }
 .categories .container{
     width: 90%;
@@ -14,6 +18,7 @@
     font-size: 48px;
     line-height: 70%;
     text-align: right;
+    font-family: 'Gilroy-Regular';
 }
 .categories_ul li{
     position: relative;
