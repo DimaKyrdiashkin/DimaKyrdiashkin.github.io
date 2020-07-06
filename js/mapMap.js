@@ -181,14 +181,17 @@ const  fatherBlock = document.getElementById("father"),
     logoPointerBlock = document.getElementById('logoPointer')
 
 $(".point").on("click",(e)=>{
-    const numberPoint = parseInt(e.target.closest('.point').children[0].children[0].innerHTML);
+    const numberPoint = parseInt(e.target.closest('.point').classList[1].slice(1));
+    console.log(numberPoint);
+    
     openPoint(numberPoint)
 });
 
 const openPoint = (numberPoint) => {
     let father ='';
     numberPointActive = numberPoint;
-    if(28 < numberPoint) numberPoint=1
+
+    if(29 < numberPoint) numberPoint=1
     else if(1>numberPoint) numberPoint= 28
     const BdName = `p${numberPoint}`;
     if(numberPoint<21){
