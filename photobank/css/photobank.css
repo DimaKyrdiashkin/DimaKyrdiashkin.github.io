@@ -18,10 +18,12 @@ h1 span{
     font-size: 48px;
     line-height: 70%;
     text-align: right;
+    color: #22232D;
     font-family: 'Gilroy-Regular';
 }
 .categories_ul li{
     position: relative;
+    cursor: pointer;
     width: 100%;
     margin-bottom: 150px;
 }
@@ -59,9 +61,24 @@ h1 span{
 }
 .annotation a{
     color: #542AC8;
-    padding-left: 30px;
+    margin-left: 30px;
     font-family: 'Gilroy-Bold';
     cursor: pointer;
+    position: relative;
+}
+.annotation a:after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: .7s;
+    border-radius: 10px;
+    background-color: #542AC8;
+}
+.categories_ul li:hover a:after{
+    width: 100%;
 }
 .open_cat{
     transition: opacity 1s, z-index 3s;
@@ -77,7 +94,7 @@ h1 span{
     height: 100vh;
 }
 .open_cat_active{
-    transition: opacity 1s, z-index 0s;
+    transition: opacity 1.5s, z-index 0s;
     z-index: 1;
     opacity: 1;
 }
@@ -118,6 +135,10 @@ h1 span{
 .main_columns li:last-child{
     margin-right: 0;
 }
+.promoContent .apendixLogo,.footer .apendixLogo{
+    position: relative;
+    z-index: 0;
+}
 @media (max-width: 1400px) {
 
 }
@@ -129,7 +150,24 @@ h1 span{
 }
 @media (max-width: 768px) {
 
+    .annotation{
+        right: 0;
+    }
+    .main_columns{
+        flex-wrap: wrap;
+    }
+    .main_columns li{
+        width: 100%;
+        margin: auto;
+    }
+    .main_columns li img{
+        width: 90%;
+        margin: 0 auto 32px;
+    }
 }
 @media (max-width: 480px) {
+    .header img{
+        display: none;
+    }
 
 }

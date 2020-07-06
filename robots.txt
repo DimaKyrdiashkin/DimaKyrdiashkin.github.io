@@ -1,0 +1,5 @@
+User-agent:
+Crawl-delay: 1
+Host: amir.capital
+Sitemap: http://amir.capital
+
