@@ -63,3 +63,41 @@ document.getElementById('delModul').addEventListener( "click",()=>{
         i.innerHTML = ''
     }
 })
+const btn_top =document.getElementById('btn_top'),
+    model =document.querySelector('.open_cat ')
+window.addEventListener('scroll', function() {
+    const heigthTop = document.querySelector('footer').offsetTop;
+
+    if(pageYOffset >50){
+        btn_top.style.display = 'block'
+    }
+    else {
+        btn_top.style.display = 'none'
+    }
+    if(pageYOffset + window.innerHeight - btn_top.clientHeight + 40 >= heigthTop){
+        btn_top.style.top = `${heigthTop -btn_top.clientHeight}px`
+        btn_top.style.position = "absolute"
+        btn_top.style.bottom = "auto"
+    }
+    else {
+        btn_top.style.top = "auto";
+        btn_top.style.position = "fixed"
+        btn_top.style.bottom = "50px"
+    }
+
+
+});
+
+model.addEventListener('scroll', function() {
+    if(model.scrollTop >50){
+        btn_top.style.display = 'block'
+    }
+    else {
+        btn_top.style.display = 'none'
+    }
+});
+btn_top.addEventListener("click", ()=>{
+    window.scrollTo(0,0);
+    model.scrollTo(0,0);
+})
+var a = document.querySelector('#btn_top'), b = null, P = 0;
