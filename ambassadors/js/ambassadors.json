@@ -1,6 +1,19 @@
 {
   "massAmbassadors": [
     {
+      "name": "Юрий Мелех",
+      "country": ["Беларусь"],
+      "tel": ["+375 (29) 1248 796"],
+      "city": ["Минск"],
+      "pawer": "https://amir.capital/?partner=d6371d07-fa1a-44b5-b066-4bccc1267ff3",
+      "img": "./img/people/meleh.jpg",
+      "status": "Ambassador",
+      "network": {
+        "instagram": ["https://instagram.com/yurymeleh"],
+        "facebook": ["https://www.facebook.com/profile.php?id=100027742338686"]
+      }
+    },
+    {
       "name": "Николай Полонский",
       "country": ["Беларусь"],
       "tel": ["+375 (44) 7966 025"],
@@ -153,7 +166,7 @@
       "tel": ["+7 (927) 601 4 595"],
       "city": ["Самара"],
       "pawer": "https://amir.capital/?partner=07147a7c-f8cf-45b5-a3da-acabf1f83f2f",
-      "img": "./img/people/kipaevandrei.png",
+      "img": "./img/people/kipaevandrei.jpg",
       "status": "Regional Ambassador",
       "network": {
         "email": ["9729808@mail.ru"],
