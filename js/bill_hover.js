@@ -80,7 +80,7 @@ const hov_svg =(idSvg) => {
     bill_h2.style.color = mass.color[idSvg];
     bill_span.innerText = mass.percent[idSvg];
     bill_text.innerText = mass.title[idSvg];
-},
+} ,
     normar_svg = (idSvg) => {
     bill_h2.style.color = '#6231D6';
     bill_span.innerText = 100;
@@ -152,14 +152,12 @@ const billClose = () => {
     bill_left.classList.remove("bill_to_left");
     bill_right.classList.remove("bill_to_right");
     bill_container.classList.remove("bill_container_active");
-    for(const i of document.querySelectorAll('.hover')){
-        i.classList.remove('hover')
-    }
-    for(const i of mass.id){
+    for(let i of mass.id){
         const pathSgg= document.getElementById(i);
         pathSgg.style.fill = mass.color[i];
         pathSgg.setAttribute('d', mass.normal[i]);
     }
+
 }
 // /bill
 // advantages
@@ -188,6 +186,8 @@ const activCalc = (name = false) =>{
     $(".c-account-check").prop( "checked", false );
     if(name){
         bod.css("overflow-x", "hidden")
+        console.log(name)
+        console.log($("#"+name))
         $("#"+name).prop("checked", true)
     }
 }

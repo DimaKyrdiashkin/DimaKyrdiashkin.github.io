@@ -520,16 +520,9 @@
     display: flex;
 }
 .bill_container_rel_btn li{
-    margin-right: 25px;
+    margin-right: 55px;
     padding: 14px 0;
-    width: 23%;
-}
-.bill_container_rel_btn li:first-child a{
-    background-color: #542AC8;
-}
-.bill_container_rel_btn li:last-child a{
-    background-color: transparent;
-    color: #22232D;
+    width: 27%;
 }
 .bill_container_rel_btn a{
     display: block;
