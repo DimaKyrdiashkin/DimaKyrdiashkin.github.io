@@ -29,29 +29,29 @@ let widthScreen = document.documentElement.clientWidth;
 
 function videoPlay(){
     if(widthScreen <= 992){
-        $(a[0]).attr('src', 'video/index_mob.webm');
-        $(a[1]).attr('src', 'video/index_mob.mp4');
+        $(a[0]).attr('src', '../video/index_mob.webm');
+        $(a[1]).attr('src', '../video/index_mob.mp4');
         video.load();
         video.play();
     }
     else{
-        $(a[0]).attr('src', 'video/index.webm');
-        $(a[1]).attr('src', 'video/index.mp4');
+        $(a[0]).attr('src', '../video/index.webm');
+        $(a[1]).attr('src', '../video/index.mp4');
         video.load();
         video.play();
     };
 };
 function videoPlayRes(){
     if(widthScreen != document.documentElement.clientWidth && document.documentElement.clientWidth <= 992){
-        $(a[0]).attr('src', 'video/index_mob.webm');
-        $(a[1]).attr('src', 'video/index_mob.mp4');
+        $(a[0]).attr('src', '../video/index_mob.webm');
+        $(a[1]).attr('src', '../video/index_mob.mp4');
         video.load();
         video.play();
         widthScreen = document.documentElement.clientWidth;
     }
     else if(widthScreen != document.documentElement.clientWidth && document.documentElement.clientWidth > 992){
-        $(a[0]).attr('src', 'video/index.webm');
-        $(a[1]).attr('src', 'video/index.mp4');
+        $(a[0]).attr('src', '../video/index.webm');
+        $(a[1]).attr('src', '../video/index.mp4');
         video.load();
         video.play();
         widthScreen = document.documentElement.clientWidth;
