@@ -151,11 +151,11 @@ $(function() {
 
     function periodText(number, titles) {
         let cases = [2, 0, 1, 1, 1, 2];
-        return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
+        return titles[ (number<2)? 0 : 1 ];
     }
 
     function periodWeek(number){
-        return periodText(number, ['неделя', 'недели', 'недель']);
+        return periodText(number, ['week', 'weeks']);
     }
 
     function periodMonth(number){
@@ -177,14 +177,14 @@ $(function() {
         let result = parseFloat(calc.do(account, income, period, currency, refill)).format(2, 3, ' ', '.');
         if($("#c-btc").prop("checked") && !$("#c-pam").prop("checked")){
 
-            $('#result_calc_vv').html("Ваш результат BTC");
+            $('#result_calc_vv').html("Your BTC result");
             $('#c-result-sum').html( result.toString());
         }else if($("#c-eth").prop("checked") && !$("#c-pam").prop("checked")){
-            $('#result_calc_vv').html("Ваш результат ETH");
+            $('#result_calc_vv').html("Your ETH result");
             $('#c-result-sum').html(result.toString());
         }else if (!$("#c-stable").prop("checked")) {
 
-            $('#result_calc_vv').html("Ваш результат USDT");
+            $('#result_calc_vv').html("Your USDT result");
             $('#c-result-sum').html(result.toString());
         };
 
@@ -345,17 +345,17 @@ $(function() {
 
 
             if($("#c-btc").prop("checked") && !$("#c-pam").prop("checked")){
-                $("#text_calc_vv").html("Инвестировать");
+                $("#text_calc_vv").html("Investment");
                 label = amount.format(0, 4, ' ', '.');
                 $("#c-income-edit").val(amount);
                 // $('#c-income').html(label);
             }else if($("#c-eth").prop("checked") && !$("#c-pam").prop("checked")){
                 $("#c-income-edit").val(amount);
-                $("#text_calc_vv").html("Инвестировать");
+                $("#text_calc_vv").html("Investment");
                 label = amount.format(0, 4, ' ', '.');
                 // $('#c-income').html(label);
             }else{
-                $("#text_calc_vv").html("Инвестировать");
+                $("#text_calc_vv").html("Investment");
                 label = amount.format(0, 3, ' ', '.');
                 // $('#c-income').html(label);
             };
@@ -366,16 +366,16 @@ $(function() {
             let label;
 
             if($("#c-btc").prop("checked") && !$("#c-pam").prop("checked")){
-                $("#text_calc_vv").html("Инвестировать");
+                $("#text_calc_vv").html("Investment");
                 label = parseFloat($("#c-income-edit").val()).format(0, 4, ' ', '.');
                 $('#c-income').html(label);
             }else if($("#c-eth").prop("checked") && !$("#c-pam").prop("checked")){
                 label = amount.format(0, 4, ' ', '.');
-                $("#text_calc_vv").html("Инвестировать");
+                $("#text_calc_vv").html("Investment");
                 $('#c-income').html(label);
             }else{
                 label = amount.format(0, 3, ' ', '.');
-                $("#text_calc_vv").html("Инвестировать");
+                $("#text_calc_vv").html("Investment");
                 $('#c-income').html(label);
             };
         },
@@ -540,17 +540,17 @@ $(function() {
             BrightNotCap();
         };
         if($("#capotalization").prop("checked")){
-            $(".c-result-block-1 .c-primary-title").text("Сумма в конце срока");
+            $(".c-result-block-1 .c-primary-title").text("The amount of the end of term");
         }else{
-            $(".c-result-block-1 .c-primary-title").text("Ежемесячный доход");
+            $(".c-result-block-1 .c-primary-title").text("Monthly income");
         }
     });
     $("#c-stable, #c_stable_vv").click(function() {
         $('.invest').css('display', 'none');
-        $('#calc_btn_a').text('Инвестировать');
+        $('#calc_btn_a').text('To invest');
         document.getElementById("invest_field").classList.remove("invest-field-active");
-        $(".c-result-block-4 #c-result-sum").text("Выберите период");
-        $(".checkP").text("Период");
+        $(".c-result-block-4 #c-result-sum").text("Choose the period");
+        $(".checkP").text("Period");
         $("select").val(0);
         $(".c-info-field").addClass("close");
         $(".calc_select").addClass("open");
@@ -565,9 +565,9 @@ $(function() {
         $(".c-currency-check").attr("disabled", true);
         $("#capotalization").attr("disabled", false);
         $("#c-usdt").prop("checked", true);
-        $('#c-result-sum').html('Выберите период');
+        $('#c-result-sum').html('Choose the period');
         let amount = parseInt($('#c-income-slider').val());
-        $("#text_calc_vv").html("Инвестировать")
+        $("#text_calc_vv").html("Investment")
         $('.end').html('500 000');
         $('.eth, .btc').css('display', 'none');
         $('.usdt').css('display', 'block');
@@ -577,9 +577,9 @@ $(function() {
         label =  amount.format(0, 3, ' ', '.');
         $('#c-income').html(label);
         if($("#capotalization").prop("checked")){
-            $(".c-result-block-1 .c-primary-title").text("Сумма в конце срока");
+            $(".c-result-block-1 .c-primary-title").text("The amount of the end of term");
         }else{
-            $(".c-result-block-1 .c-primary-title").text("Ежемесячный доход");
+            $(".c-result-block-1 .c-primary-title").text("Monthly income");
         }
         if($("#capotalization").prop("checked")){
             BrightCap();
@@ -598,7 +598,7 @@ $(function() {
         };
         $('#c-income-slider').attr(attributes);
         $('#c-income-slider').rangeslider('update', true);
-        $('#calc_btn_a').text('Связаться с менеджером');
+        $('#calc_btn_a').text('Contact manager');
     });
     $("#c-savings, #c_savings_vv, #c-pam, #c_pam_vv").click(function() {
         $('.invest').css('display', 'block');
@@ -615,41 +615,40 @@ $(function() {
         let amount = parseInt($('#c-income-slider').val());
         if($("#c-btc").prop("checked") && !$("#c-pam").prop("checked")){
             label = amount.format(0, 3, ' ', '.');
-            $("#text_calc_vv").html("Инвестировать");
+            $("#text_calc_vv").html("To invest");
             $('#c-income').html(label);
-            $(".c-result-block-1 .c-primary-title").text("Ваш результат BTC");
+            $(".c-result-block-1 .c-primary-title").text("Your BTC result");
         }else if($("#c-eth").prop("checked") && !$("#c-pam").prop("checked")){
             label = amount.format(0, 4, ' ', '.');
-            $("#text_calc_vv").html("Инвестировать");
+            $("#text_calc_vv").html("Investment");
             $('#c-income').html(label);
-            $(".c-result-block-1 .c-primary-title").text("Ваш результат ETH");
+            $(".c-result-block-1 .c-primary-title").text("Your ETH result");
         }else{
-            $("#text_calc_vv").html("Инвестировать");
+            $("#text_calc_vv").html("Investment");
             label = amount.format(0, 3, ' ', '.');
             $('#c-income').html(label);
-            $(".c-result-block-1 .c-primary-title").text("Ваш результат USDT");
+            $(".c-result-block-1 .c-primary-title").text("Your USDT result");
         };
     });
     $('#c-savings,#c_savings_vv').click(function(){
-        $('#calc_btn_a').text('Инвестировать');
+        $('#calc_btn_a').text('Investment');
         if($("#c-btc").prop("checked")){
             $('.end').html("100");
             label =  amount.format(0, 4, ' ', '.');
-            $("#text_calc_vv").html("Инвестировать");
+            $("#text_calc_vv").html("Investment");
             $('#c-income').html(label);
             $('.eth, .usdt').css('display', 'none');
             $('.btc').css('display', 'block');
         }else if($("#c-eth").prop("checked")){
             $('.end').html("1 000");
             label =  amount.format(0, 4, ' ', '.');
-            $("#text_calc_vv").html("Инвестировать");
+            $("#text_calc_vv").html("Investment");
             $('#c-income').html(label);
             $('.btc, .usdt').css('display', 'none');
             $('.eth').css('display', 'block');
         }else{
             $('.end').html("500 000");
-            $("#text_calc_vv").html("Инвестировать");
-            // label =  amount.format(0, 4, ' ', '.');
+            $("#text_calc_vv").html("Investment");
             $('#c-income').html(label);
             $('.eth, .btc').css('display', 'none');
             $('.usdt').css('display', 'block');
@@ -659,20 +658,20 @@ $(function() {
         let amount = parseFloat($('#c-income-slider').val());
         if($("#c-btc").prop("checked") && !$("#c-pam").prop("checked")){
             label =  amount.format(0, 4, ' ', '.');
-            $("#text_calc_vv").html("Инвестировать");
+            $("#text_calc_vv").html("Investment");
             $('#c-income').html(label);
             $('.end').html("100");
             $('.eth, .usdt').css('display', 'none');
             $('.btc').css('display', 'block');
         }else if($("#c-eth").prop("checked") && !$("#c-pam").prop("checked")){
             label =  amount.format(0, 4, ' ', '.');
-            $("#text_calc_vv").html("Инвестировать");
+            $("#text_calc_vv").html("Investment");
             $('#c-income').html(label);
             $('.end').html("1 000");
             $('.btc, .usdt').css('display', 'none');
             $('.eth').css('display', 'block');
         }else{
-            $("#text_calc_vv").html("Инвестировать");
+            $("#text_calc_vv").html("Investment");
             label =  amount.format(0, 3, ' ', '.');
             $('#c-income').html(label);
             $('.end').html("500 000");
@@ -805,7 +804,6 @@ $(function() {
                 $(".c-result-block-2 #c-result-sum").text(invest.toFixed(2));
                 break;
             default:
-            // alert( "Нет таких значений" );
         }
     };
 });
