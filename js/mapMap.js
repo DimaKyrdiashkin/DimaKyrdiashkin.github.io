@@ -206,7 +206,7 @@ const openPoint = (numberPoint) => {
     fatherBlock.innerHTML = father;
     titlePointBlock.innerHTML = mapBD[BdName].title;
     textHomePointBlock.innerHTML = mapBD[BdName].text;
-    logoPointerBlock.src = "img/logoPoint/"+mapBD[BdName].imgUrl;
+    logoPointerBlock.src = "./img/logoPoint/"+mapBD[BdName].imgUrl;
 }
 
 document.getElementById('nextPoint').addEventListener('click', ()=>{
