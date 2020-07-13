@@ -171,7 +171,7 @@ $(".point, .close_cross").on("click",  () => {
 let mapBD,
     numberPointActive = 1;
 $.ajax({
-    url: "../js/mapBd.json"
+    url: "../js/mapBd.json?v=12"
 }).done(function(data) {
     mapBD=data;
 })
@@ -200,13 +200,13 @@ const openPoint = (numberPoint) => {
     else if(numberPoint<23){
         father = "Cообщество Amir Partners (AmirID)";
     }
-    else if(numberPoint<29){
+    else if(numberPoint<28){
         father = "Social Evolution Company";
     }
     fatherBlock.innerHTML = father;
     titlePointBlock.innerHTML = mapBD[BdName].title;
     textHomePointBlock.innerHTML = mapBD[BdName].text;
-    logoPointerBlock.src = "./img/logoPoint/"+mapBD[BdName].imgUrl;
+    logoPointerBlock.src = "img/logoPoint/"+mapBD[BdName].imgUrl;
 }
 
 document.getElementById('nextPoint').addEventListener('click', ()=>{
