@@ -191,7 +191,7 @@ const openPoint = (numberPoint) => {
     let father ='';
     numberPointActive = numberPoint;
 
-    if(29 < numberPoint) numberPoint=1
+    if(28 < numberPoint) numberPoint=1
     else if(1>numberPoint) numberPoint= 28
     const BdName = `p${numberPoint}`;
     if(numberPoint<21){

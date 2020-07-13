@@ -171,7 +171,7 @@ $(".point, .close_cross").on("click",  () => {
 let mapBD,
     numberPointActive = 1;
 $.ajax({
-    url: "../js/mapBd.json"
+    url: "../js/mapBd.json?v=12"
 }).done(function(data) {
     mapBD=data;
 })
@@ -191,7 +191,7 @@ const openPoint = (numberPoint) => {
     let father ='';
     numberPointActive = numberPoint;
 
-    if(29 < numberPoint) numberPoint=1
+    if(28 < numberPoint) numberPoint=1
     else if(1>numberPoint) numberPoint= 28
     const BdName = `p${numberPoint}`;
     if(numberPoint<21){
@@ -200,7 +200,7 @@ const openPoint = (numberPoint) => {
     else if(numberPoint<23){
         father = "Cообщество Amir Partners (AmirID)";
     }
-    else if(numberPoint<29){
+    else if(numberPoint<28){
         father = "Social Evolution Company";
     }
     fatherBlock.innerHTML = father;
