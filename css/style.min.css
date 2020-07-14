@@ -4557,8 +4557,8 @@ header.menu_open {
 .back_button img {
     width: 40%}
 .back_button, .isFlip {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg) translate(0px, 0px);
+    transform: rotateY(180deg) translate(0px, 0px);
 }
 .button_middle {
     position: absolute;
