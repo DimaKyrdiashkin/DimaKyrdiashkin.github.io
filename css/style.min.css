@@ -4578,7 +4578,7 @@ header.menu_open {
     -o-transition: transform 1s;
     transition: transform 1s;
     transition: transform 1s, -webkit-transform 1s;
-    z-index: 1;
+    z-index: 3;
     top: 26px;
     left: 25px;
 }
