@@ -4335,6 +4335,9 @@ p.circle_yellow {
         bottom: -25vh;
     }
 }@media (max-width:992px) and (orientation:landscape) {
+    .menu_button{
+        top: 15px !important;
+    }
     .promoContent video {
         min-width: 100vw;
     }
@@ -4533,6 +4536,7 @@ header {
     transition: 1s;
     left: 150px;
     overflow: hidden;
+    max-height: 100vh;
 }
 .menu.menu_open {
     left: 0;
@@ -4651,6 +4655,7 @@ header.menu_open {
 }
 .menu ul {
     color: #fff;
+    overflow-y: auto;
 }
 .menu ul li:first-child {
     padding-top: 20px;
