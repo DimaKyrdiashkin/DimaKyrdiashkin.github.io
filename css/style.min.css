@@ -4538,7 +4538,7 @@ header.menu_open {
 .back_button, .front_button {
     position: absolute;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
     width: 100%;
     height: 100%;
     border-radius: 50%}
