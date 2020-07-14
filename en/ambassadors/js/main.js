@@ -14,25 +14,25 @@ request.onload = function() {
 };
 const flagCountry = (country) =>{
     switch (country) {
-        case 'Россия':
+        case 'Russia':
             return `<span class="flag-icon flag-icon-ru flag-icon-squared"></span>`;
             break;
-        case 'Украина':
+        case 'Ukraine':
             return `<span class="flag-icon flag-icon-ua flag-icon-squared"></span>`;
             break;
-        case 'Казахстан':
+        case 'Kazakhstan':
             return `<span class="flag-icon flag-icon-kz flag-icon-squared"></span>`;
             break;
-        case 'Беларусь':
+        case 'Belarus':
             return `<span class="flag-icon flag-icon-by flag-icon-squared"></span>`;
             break;
-        case 'Кипр':
+        case 'Cyprus':
             return `<span class="flag-icon flag-icon-cy flag-icon-squared"></span>`;
             break;
-        case 'Кыргызская Республика':
+        case 'Kyrgyz Republic':
             return `<span class="flag-icon flag-icon-kg flag-icon-squared"></span>`;
             break;
-        case 'Татарстан':
+        case 'Tatarstan':
             return `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="14" height="17"><rect fill="#008000" width="14" height="7"/><rect fill="#FFF" width="14" height="3" y="7"/><rect fill="#F00" width="14" height="7" y="10"/></svg>`;
             break;
     }
@@ -132,7 +132,7 @@ const sortCountryCity = (mass, key, text) =>{
         case 'TOP Ambassador':
             color = colorStatic.blue2
             break;
-        case 'Член Правления':
+        case 'Board Member':
             color = colorStatic.red
             break;
     }
@@ -197,7 +197,7 @@ const globalSort = ()=>{
 const selectSity = $("select.city");
 let generationCity = (n) => {
     selectSity.html('');
-    selectSity.append("<option value='0' selected='selected'>Город</option>");
+    selectSity.append("<option value='0' selected='selected'>City</option>");
     selectSity[0].sumo.reload();
     if(n === "0"){
         let mass = []
