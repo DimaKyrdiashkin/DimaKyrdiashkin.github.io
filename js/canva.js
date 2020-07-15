@@ -575,7 +575,7 @@ AChart.prototype.init = function(data) {
             this.selectionBubbleEls[i].classList.toggle('is-animated', !drag);
         }
         if (t < 400 && Math.abs(delta) < 10 && drag && this.zooming == 0 && !hasTouchSupport) {
-            this.zoom(true);
+            // this.zoom(true);
         } else
         if (!e.touches && !drag) {
             this.selectionIndex = null;
