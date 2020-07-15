@@ -4295,9 +4295,9 @@ p.circle_yellow {
         bottom: -25vh;
     }
 }@media (max-width:992px) and (orientation:landscape) {
-    /* .menu_button{
+    .menu_button{
         top: 15px !important;
-    } */
+    }
     .promoContent video {
         min-width: 100vw;
     }
