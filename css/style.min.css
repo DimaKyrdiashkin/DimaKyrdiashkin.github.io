@@ -5487,11 +5487,13 @@ header.menu_open {
     padding: 15px 64px 20px;
     margin: auto;
     border: 1px dotted #47556a;
-    border-bottom: none
+    border-bottom: none;
+    width: 50%;
 }
 
 .licens a:first-child {
-    left: 0
+    left: 0;
+    border-left: none;
 }
 
 .licens a:last-child {
