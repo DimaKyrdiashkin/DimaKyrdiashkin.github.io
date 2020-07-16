@@ -242,7 +242,7 @@
                     <nav class="footer_menu_nav">
                         <a href="../">Home</a>
                         <a href="/doc/">Documents</a>
-                        <a href="../#billik">Accounts</a>
+                        <a href="../#bill" class="bill_link">Accounts</a>
                         <a href="../sunriseprogram/">sunrise&nbspprogram</a>
                         <a href="https://amir.academy" target="_blank">academy</a>
                         <a href="../sollargifts/">sollar&nbspgifts</a>
@@ -338,6 +338,17 @@
     </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    function link(){
+        if(document.documentElement.clientWidth <= 1100){				
+            $('.bill_link').attr('href','../#billik')
+        }else{
+            $('.bill_link').attr('href','../#bill')
+        }
+    }
+    link()
+    window.addEventListener("resize", link);
+</script>
 <script>
     function getParameterByName(name) {
         var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);

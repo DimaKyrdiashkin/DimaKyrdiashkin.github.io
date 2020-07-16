@@ -767,7 +767,7 @@
 						<nav class="footer_menu_nav">
 							<a href="/">главная</a>
 							<a href="/doc/">Документы</a>
-							<a href="/#billik">счета</a>
+							<a href="/#bill" class="bill_link">счета</a>
 							<a href="/sunriseprogram/">sunrise&nbspprogram</a>
 							<a href="https://amir.academy" target="_blank">academy</a>
 							<a href="#">sollar&nbspgifts</a>
@@ -862,7 +862,18 @@
 			</div>
 		</footer>
 	</div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+		function link(){
+			if(document.documentElement.clientWidth <= 1100){				
+				$('.bill_link').attr('href','/#billik')
+			}else{
+				$('.bill_link').attr('href','/#bill')
+			}
+		}
+		link()
+		window.addEventListener("resize", link);
+	</script>
 	<script type='text/javascript'>
 		window['liv'+'e'+'Tex'] = true,
 		window['live'+'T'+'e'+'xI'+'D'] = 166744,
