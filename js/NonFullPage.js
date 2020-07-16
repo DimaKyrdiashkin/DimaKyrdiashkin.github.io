@@ -16,7 +16,7 @@ function fun_Full() {
         //Navigation
         menu: '#fp-nav',
         lockAnchors: false,
-        anchors: ['promoContent', "threeSlide", 'bill', 'calc1', 'tabl',"advantages", 'statistics', 'device','say', "footer"],
+        anchors: ['promoContent', "threeSlide", 'bill', 'calc1',"advantages", 'statistics', 'device','say', "footer"],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: [],//название для поинтов навигации
