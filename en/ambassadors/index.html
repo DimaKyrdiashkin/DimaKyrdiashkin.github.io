@@ -670,17 +670,6 @@
             </div>
         </div>
     </section>
-    <script>
-		function link(){
-			if(document.documentElement.clientWidth <= 1100){				
-				$('.bill_link').attr('href','../#billik')
-			}else{
-				$('.bill_link').attr('href','../#bill')
-			}
-		}
-		link()
-		window.addEventListener("resize", link);
-	</script>
     <!-- {literal} -->
 	<script type='text/javascript'>
         window['l'+'ive'+'Tex'] = true,
@@ -719,6 +708,17 @@
         }
     </script>
     <script src="js/libs.min.js?v=123"></script>
+    <script>
+		function link(){
+			if(document.documentElement.clientWidth <= 1100){				
+				$('.bill_link').attr('href','../#billik')
+			}else{
+				$('.bill_link').attr('href','../#bill')
+			}
+		}
+		link()
+		window.addEventListener("resize", link);
+	</script>
     <script>
         new WOW().init();
     </script>
