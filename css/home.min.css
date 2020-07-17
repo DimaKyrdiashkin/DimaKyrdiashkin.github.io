@@ -1875,9 +1875,6 @@ footer .apendixLogo {
 .bill_right {
     padding-top: 100px;
 }
-.contendBodyActive{
-    margin-top: 10px;
-}
 .bill_right_row {
     margin-top: 20px;
 }
@@ -1999,4 +1996,9 @@ footer .apendixLogo {
 .project_slider {
     width: 230px!important;
 }
+}
+@media (max-width: 850px) and (orientation: landscape){
+    .contendBodyActive{
+        margin-top: 10px;
+    }
 }
