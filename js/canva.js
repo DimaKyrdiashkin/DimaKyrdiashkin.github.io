@@ -613,10 +613,10 @@ AChart.prototype.init = function(data) {
     this.selectionBubbleEls = [];
     this.updateSelectionBubbles();
     this.selectionBoxEl = createEl(this.viewEl, 'selection-box');
-    this.selectionBoxEl.addEventListener(hasTouchSupport ? 'touchstart' : 'mousedown', function(e) {
-        this.zoom(true);
-        e.stopPropagation();
-    }.bind(this), true);
+    // this.selectionBoxEl.addEventListener(hasTouchSupport ? 'touchstart' : 'mousedown', function(e) {
+    //     this.zoom(true);
+    //     e.stopPropagation();
+    // }.bind(this), true);
     /*
     this.selectionBoxEl.addEventListener('mousemove', function(e) {
       if (!this.zoomed) {

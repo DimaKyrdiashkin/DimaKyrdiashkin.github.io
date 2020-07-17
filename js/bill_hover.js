@@ -75,6 +75,12 @@ $('.bill_open_p').on('click',(e)=>{
 document.querySelector('#bill_close').addEventListener('click',(e)=>{
     billClose();
 })
+$('#bill_inc').on('click',()=>{
+    $('.tabl').addClass('tabl-active');
+})
+$('#bill_inc_close').on('click',()=>{
+    $('.tabl').removeClass('tabl-active');
+})
 const hov_svg =(idSvg) => {
     document.getElementById(idSvg).setAttribute('d',mass.hover[idSvg]);
     bill_h2.style.color = mass.color[idSvg];
@@ -101,6 +107,11 @@ const billOpen = (id) => {
     bill_right.classList.add("bill_to_right");
     bill_container.classList.add("bill_container_active");
     $('#container_'+id).addClass("contendBodyActive");
+    if(id == 'bill_saving'){
+        $('#bill_inc').css('display', 'flex');
+    }else{
+        $('#bill_inc').css('display', 'none');
+    }
     if(id === 'bill_investments' && flad_slider){
         flad_slider= !flad_slider;
         $('#investments_project_slider').slick({
