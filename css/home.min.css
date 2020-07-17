@@ -1639,7 +1639,9 @@ footer .apendixLogo {
 .tabl_h2 {
     position: absolute;
     top: 0;
-    left: 10%}
+    left: 9%;
+    z-index: 99;    
+}
 .tabl {
     padding-bottom: 30px;
 }
