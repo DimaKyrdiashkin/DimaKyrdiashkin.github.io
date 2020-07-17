@@ -1475,7 +1475,7 @@ footer .slick-initialized .slick-slide {
     width: 90%;
 }
 .bill_left, .bill_right {
-    padding-top: 100px;
+    padding-top: 50px;
     height: auto;
     padding-bottom: 50px;
 }
@@ -2000,5 +2000,8 @@ footer .apendixLogo {
 @media (max-width: 850px) and (orientation: landscape){
     .contendBodyActive{
         margin-top: 10px;
+    }
+    .bill_saving_body_text_li svg{
+        width: 60px;
     }
 }
