@@ -1864,7 +1864,10 @@ footer .apendixLogo {
     font-size: .8em;
 }
 .bill {
-    height: 600px;
+    height: 700px;
+}
+.bill_link{
+    width: 100%;
 }
 .bill_left {
     display: none;
@@ -1877,10 +1880,6 @@ footer .apendixLogo {
 }
 .contendBodyActive {
     width: 100%}
-.bill_container_rel_close {
-    left: 0;
-    margin-left: 0;
-}
 .project_slider .next, .project_slider .prev {
     width: 25px;
 }
