@@ -2006,4 +2006,10 @@ footer .apendixLogo {
     .bill_saving_body_text_li svg{
         width: 60px;
     }
+    .tabl .container{
+        overflow-y: scroll;
+    }
+    #chart-0{
+        margin-top: 215px;
+    }
 }

@@ -2355,7 +2355,7 @@
 	}
 
 	function notifyFPS(title, duration, fps) {
-		console.log('Animation in ' + title + ' completed after ' + duration + 'ms, avg FPS = ', Math.round(fps * 10) / 10);
+		// console.log('Animation in ' + title + ' completed after ' + duration + 'ms, avg FPS = ', Math.round(fps * 10) / 10);
 
 		fpsEl.innerHTML = title + ': <b>' + Math.round(fps * (fps < 10 ? 10 : 1)) / (fps < 10 ? 10 : 1) + ' fps</b> (last ' + duration + 'ms)';
 		fpsEl.style.background = 'rgba(0, 0, 0, 0.6)';
