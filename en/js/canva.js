@@ -12,7 +12,7 @@ var dp = window.devicePixelRatio;
 }*/
 
 var WEEKDAYS = ['Вск', 'Mon', 'Втр', 'Срд', 'Чтв', 'Птн', 'Сбт'];
-var WEEKDAYS_FULL = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+var WEEKDAYS_FULL = ['Воскресенье', 'Monday', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
 var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
 var MONTHS_FULL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 var DAY = 24 * 60 * 60 * 1000;
@@ -575,7 +575,7 @@ AChart.prototype.init = function(data) {
             this.selectionBubbleEls[i].classList.toggle('is-animated', !drag);
         }
         if (t < 400 && Math.abs(delta) < 10 && drag && this.zooming == 0 && !hasTouchSupport) {
-            this.zoom(true);
+            // this.zoom(true);
         } else
         if (!e.touches && !drag) {
             this.selectionIndex = null;
@@ -613,10 +613,10 @@ AChart.prototype.init = function(data) {
     this.selectionBubbleEls = [];
     this.updateSelectionBubbles();
     this.selectionBoxEl = createEl(this.viewEl, 'selection-box');
-    this.selectionBoxEl.addEventListener(hasTouchSupport ? 'touchstart' : 'mousedown', function(e) {
-        this.zoom(true);
-        e.stopPropagation();
-    }.bind(this), true);
+    // this.selectionBoxEl.addEventListener(hasTouchSupport ? 'touchstart' : 'mousedown', function(e) {
+    //     this.zoom(true);
+    //     e.stopPropagation();
+    // }.bind(this), true);
     /*
     this.selectionBoxEl.addEventListener('mousemove', function(e) {
       if (!this.zoomed) {

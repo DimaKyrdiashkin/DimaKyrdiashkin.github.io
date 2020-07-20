@@ -463,14 +463,17 @@
 }
 .bill_income .bill_container_rel_close_svg{
     border-right: 1px solid #E35702;
+    transition: 1s;
+}
+.bill_income:hover .bill_container_rel_close_svg{
+    border-right: 1px solid #F08201;
+    transition: 1s;
 }
 .bill_link{
     display: flex;
 }
-#bill_inc_close{
-    /* position: absolute;
-    bottom: 150px;
-    left: 135px; */
+.bill_income:hover{
+    background: #FF8A00;
 }
 .bill_container_rel_close_svg {
     padding: 10px 15px 10px 0;
