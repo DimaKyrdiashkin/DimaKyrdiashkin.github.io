@@ -1907,6 +1907,7 @@ footer .slick-initialized .slick-slide{
         text-align: center;
         width: 100%;
         display: inline-block;
+        font-weight: normal;
     }
     /* /bill */
 
