@@ -16,7 +16,7 @@ $(".menu_h1").on("click", () => {
     openMunu()
 });
 
-$('.subM a').on('click', (e) =>{
+$('.subM a').on('click', () =>{
     if(document.documentElement.clientWidth <=480){
         setTimeout(function(){
             $('.content').css('opacity', 1);
