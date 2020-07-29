@@ -16,6 +16,14 @@
 	<link rel="stylesheet" href="css/home.min.css?v=521">
 	<link rel="stylesheet" href="css/styleCanva.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154557466-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -139,14 +147,12 @@
 				<div class="promoContent_text index">
 					<h1 id="promo_h1">Откройте&nbspсчет&nbspв инвестиционной&nbspкомпании</h1>
 				</div>
-				<video loop muted playsinline class="first_video">
+				<!-- <video loop muted playsinline class="first_video">
 					<source src="" type='video/webm'>
 					<source src="" type='video/mp4'>
-				</video>
-				<!-- <video loop muted autoplay playsinline class="first_video__mob">
-					<source src="video/index_mob.webm" type='video/webm'>
-					<source src="video/index_mob.mp4" type='video/mp4'>
 				</video> -->
+				<!-- <model-viewer class="b" src="scene2.glb" alt="A 3D model of an astronaut" background-color="none" camera-controls auto-rotate ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ios-src="1.usdz"> --><!-- </model-viewer> -->
+				  <model-viewer class="b" src="scene2.glb" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls auto-rotate alt="A 3D model of an astronaut" ios-src="1.usdz"></model-viewer>
 				<div class="promoContent_svg">
 					<svg width="780" height="722" viewBox="0 0 780 722" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M490.95 99.7354L680.126 288.912C681.011 289.797 681.356 291.087 681.031 292.295L611.454 551.062C611.13 552.267 610.188 553.209 608.983 553.533L350.216 623.111C349.008 623.436 347.718 623.09 346.833 622.206L157.656 433.029C156.771 432.144 156.426 430.854 156.751 429.645L226.329 170.879C226.653 169.674 227.595 168.732 228.8 168.408L487.566 98.8304C488.775 98.5054 490.065 98.8505 490.95 99.7354Z" stroke="#F1E9FF" stroke-width="3"/>
@@ -2241,6 +2247,15 @@
 			</div>
 		</footer>
 	</div>
+	<!-- Loads <model-viewer> for modern browsers: -->
+		<script type="module"
+		src="https://unpkg.com/@google/model-viewer@v0.3.1/dist/model-viewer.js">
+	</script>
+  
+	<!-- Loads <model-viewer> for old browsers like IE11: -->
+	<script nomodule
+		src="https://unpkg.com/@google/model-viewer@v0.3.1/dist/model-viewer-legacy.js">
+	</script>
 	<script>
 		// Keep ref id when user surf the site
 		function getParameterByName(name) {
