@@ -3702,6 +3702,9 @@ nobr, p {
     position: absolute;
     top: 0;
 }
+.show {
+    padding-left: 300px;
+}
 .first_video__mob {
     display: none
 }

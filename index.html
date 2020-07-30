@@ -151,9 +151,79 @@
 					<source src="" type='video/webm'>
 					<source src="" type='video/mp4'>
 				</video> -->
-				<!-- <model-viewer class="b" src="scene2.glb" alt="A 3D model of an astronaut" background-color="none" camera-controls auto-rotate ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ios-src="1.usdz"> --><!-- </model-viewer> -->
-				  <model-viewer class="b" src="scene7.glb" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls auto-rotate alt="A 3D model of an astronaut" ios-src="1.usdz"></model-viewer>
-				<div class="promoContent_svg">
+				<!-- <model-viewer src="scene2.glb" alt="A 3D model of an astronaut" background-color="none" camera-controls auto-rotate ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ios-src="1.usdz"></model-viewer> -->
+				  <!-- <model-viewer class="b" src="model1.glb" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls auto-rotate alt="A 3D model of an astronaut" ios-src="1.usdz"></model-viewer> -->
+				  <model-viewer class="b" src="model1.glb" camera-orbit="46.65deg 76.54deg 1.706m" field-of-view="45deg" camera-controls>
+					<button class="Hotspot" slot="hotspot-1" data-position="0.029140426096226663m 0.14916066048000243m -0.026301048902919302m" data-normal="0m 0.9999999999999999m 0m">
+						<div class="HotspotAnnotation">1</div>
+					</button><button class="Hotspot" slot="hotspot-2" data-position="0.3631222708056141m -0.37051236521048153m 0.06533132667271599m" data-normal="0m 0.9999999999999999m 0m" data-visibility-attribute="visible">
+						<div class="HotspotAnnotation">2</div>
+					</button>
+				</model-viewer>
+				<style>
+				.Hotspot {
+					background: #fff;
+					border-radius: 32px;
+					border: 0;
+					box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+					box-sizing: border-box;
+					cursor: pointer;
+					height: 24px;
+					padding: 8px;
+					position: relative;
+					transition: opacity 0.3s;
+					width: 24px;
+				}
+				
+				.Hotspot:not([data-visible]) {
+					background: transparent;
+					border: 4px solid #fff;
+					box-shadow: none;
+					height: 32px;
+					pointer-events: none;
+					width: 32px;
+				}
+				
+				.Hotspot:focus {
+					border: 4px solid rgb(0, 128, 200);
+					height: 32px;
+					outline: none;
+					width: 32px;
+				}
+				
+				.Hotspot>* {
+					opacity: 1;
+					transform: translateY(-50%);
+				}
+				
+				.HotspotAnnotation {
+					background: #fff;
+					border-radius: 4px;
+					box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+					color: rgba(0, 0, 0, 0.8);
+					display: block;
+					font-family: Futura, Helvetica Neue, sans-serif;
+					font-size: 18px;
+					font-weight: 700;
+					left: calc(100% + 1em);
+					max-width: 128px;
+					padding: 0.5em 1em;
+					position: absolute;
+					top: 50%;
+					width: max-content;
+				}
+				
+				.Hotspot:not([data-visible])>* {
+					opacity: 0;
+					pointer-events: none;
+					transform: translateY(calc(-50% + 4px));
+					transition: transform 0.3s, opacity 0.3s;
+				}
+				</style>
+				
+				
+				
+				  <div class="promoContent_svg">
 					<svg width="780" height="722" viewBox="0 0 780 722" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M490.95 99.7354L680.126 288.912C681.011 289.797 681.356 291.087 681.031 292.295L611.454 551.062C611.13 552.267 610.188 553.209 608.983 553.533L350.216 623.111C349.008 623.436 347.718 623.09 346.833 622.206L157.656 433.029C156.771 432.144 156.426 430.854 156.751 429.645L226.329 170.879C226.653 169.674 227.595 168.732 228.8 168.408L487.566 98.8304C488.775 98.5054 490.065 98.8505 490.95 99.7354Z" stroke="#F1E9FF" stroke-width="3"/>
 						<path d="M251.668 266.314L359.718 374.364C360.603 375.249 360.949 376.539 360.624 377.748L320.882 525.552C320.557 526.758 319.616 527.699 318.41 528.024L170.606 567.766C169.397 568.091 168.107 567.745 167.222 566.861L59.1719 458.81C58.287 457.925 57.9419 456.635 58.2669 455.427L98.0088 307.622C98.333 306.417 99.2746 305.475 100.48 305.151L248.285 265.409C249.493 265.084 250.783 265.429 251.668 266.314Z" stroke="#F1E9FF" stroke-width="3"/>
