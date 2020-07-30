@@ -195,10 +195,10 @@ const openPoint = (numberPoint) => {
     else if(1>numberPoint) numberPoint= 28
     const BdName = `p${numberPoint}`;
     if(numberPoint<21){
-        father = "Экосистема Amir Capital";
+        father = "Amir Capital ecosystem";
     }
     else if(numberPoint<23){
-        father = "Cообщество Amir Partners (AmirID)";
+        father = "Amir Partners Community (AmirID)";
     }
     else if(numberPoint<28){
         father = "Social Evolution Company";
