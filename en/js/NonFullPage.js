@@ -87,21 +87,21 @@ function fun_Full() {
             }
             if(destination.index <= 1){
                 $('.marker').removeClass('marker_open', 500);
-            }else if(destination.index <= 4){
-                if(destination.index == 4 && direction == 'up'){
+            }else if(destination.index <= 2){
+                if(destination.index == 2 && direction == 'up'){
                     $('.marker').removeClass('marker_open', 500);
                 }
                 $('.marker').delay(500).addClass('marker_open', 500);
                 setTimeout(() => $('.marker h5').text('PROFITABLE'), 400);
-            }else if(destination.index <= 5){
+            }else if(destination.index <= 3){
                 $('.marker').removeClass('marker_open', 500);
                 $('.marker').delay(500).addClass('marker_open', 500);
                 setTimeout(() => $('.marker h5').text('SECURE'), 400);
-            }else if(destination.index <= 6){
+            }else if(destination.index <= 4){
                 $('.marker').removeClass('marker_open', 500);
                 $('.marker').delay(500).addClass('marker_open', 500);
                 setTimeout(() => $('.marker h5').text('USEFUL'), 400);
-            }else if(destination.index <= 7){
+            }else if(destination.index <= 5){
                 $('.marker').removeClass('marker_open', 500);
                 $('.marker').delay(500).addClass('marker_open', 500);
                 setTimeout(() => $('.marker h5').text('COMFORTABLY'), 400);
