@@ -212,7 +212,7 @@ const openPoint = (numberPoint) => {
     titlePointBlock.innerHTML = mapBD[BdName].title;
     textHomePointBlock.innerHTML = mapBD[BdName].text;
     logoPointerBlock.src = "./img/logoPoint/" + mapBD[BdName].imgUrl;
-    if(mapBD[BdName].goToProject.length>5)aProjectSite.href = mapBD[BdName].goToProject;
+    if(mapBD[BdName].goToProject[1].length>5)aProjectSite.href = window.outerWidth >1200 ? mapBD[BdName].goToProject[0] :mapBD[BdName].goToProject[0];
 }
 
 document.getElementById('nextPoint').addEventListener('click', () => {
