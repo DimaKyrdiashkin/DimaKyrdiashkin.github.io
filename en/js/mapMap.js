@@ -186,7 +186,7 @@ $(".point").on("click",(e)=>{
     
     openPoint(numberPoint)
 });
-
+const aProjectSite = document.getElementById("projectSite");
 const openPoint = (numberPoint) => {
     let father ='';
     numberPointActive = numberPoint;
@@ -207,6 +207,7 @@ const openPoint = (numberPoint) => {
     titlePointBlock.innerHTML = mapBD[BdName].title;
     textHomePointBlock.innerHTML = mapBD[BdName].text;
     logoPointerBlock.src = "img/logoPoint/"+mapBD[BdName].imgUrl;
+    if(mapBD[BdName].goToProject.length>5)aProjectSite.href = mapBD[BdName].goToProject;
 }
 
 document.getElementById('nextPoint').addEventListener('click', ()=>{
