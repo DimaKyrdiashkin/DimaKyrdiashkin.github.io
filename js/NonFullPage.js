@@ -81,27 +81,27 @@ function fun_Full() {
 
         //events
         onLeave: function (origin, destination, direction) {
-            // if(document.querySelector("video").pause) document.querySelector("video").play();
+            if(document.querySelector("video").pause) document.querySelector("video").play();
             if(destination.index === 0){
                 document.getElementById("promo_h1").style.zIndex = "12";
             }
             if(destination.index <= 1){
                 $('.marker').removeClass('marker_open', 500);
-            }else if(destination.index <= 4){
-                if(destination.index == 4 && direction == 'up'){
+            }else if(destination.index <= 2){
+                if(destination.index == 2 && direction == 'up'){
                     $('.marker').removeClass('marker_open', 500);
                 }
                 $('.marker').delay(500).addClass('marker_open', 500);
                 setTimeout(() => $('.marker h5').text('ВЫГОДНО'), 400);
-            }else if(destination.index <= 5){
+            }else if(destination.index <= 3){
                 $('.marker').removeClass('marker_open', 500);
                 $('.marker').delay(500).addClass('marker_open', 500);
                 setTimeout(() => $('.marker h5').text('НАДЕЖНО'), 400);
-            }else if(destination.index <= 6){
+            }else if(destination.index <= 4){
                 $('.marker').removeClass('marker_open', 500);
                 $('.marker').delay(500).addClass('marker_open', 500);
                 setTimeout(() => $('.marker h5').text('ПОЛЕЗНО'), 400);
-            }else if(destination.index <= 7){
+            }else if(destination.index <= 5){
                 $('.marker').removeClass('marker_open', 500);
                 $('.marker').delay(500).addClass('marker_open', 500);
                 setTimeout(() => $('.marker h5').text('УДОБНО'), 400);

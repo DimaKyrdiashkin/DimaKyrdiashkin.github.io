@@ -94,9 +94,12 @@
 						</ul>
 					</li>
 				</ul>
-				<a href="/" class="back">
-					<span class="back_st"></span>
-					Главная</a>		
+				<div style="margin-top: 20px">
+					<a href="/" class="back">
+						<span class="back_st"></span>
+						Главная</a>
+					<a href="/en/amircity" class="back leng" >EN</a>
+				</div>
 			</div>
 		</div>
 		<div class="city" id="city">
@@ -378,17 +381,37 @@
 					</svg>
 				</div>
 				<div class="content-right_bottom">
-					<a class="content-right_bottom_btn" >Связаться с&#160;менеджером</a>
-					<a class="content-right_bottom_btn">Перейти на&#160;проект</a>
+					<a class="content-right_bottom_btn" onclick="
+					$('.lt-label').trigger('click')
+					document.querySelector('.lt-widget-mobile-wrap').classList.remove('lt-widget-hidden');
+					$('.lt-offline').css('display','block');
+				">Связаться с&#160;менеджером</a>
+					<a class="content-right_bottom_btn" target="_blank" id="projectSite">Перейти на&#160;проект</a>
 				</div>
 			</div>
 		</div>
 		<div class="tablet_back">
 		</div>
 	</div>
+	<!-- {literal} -->
+	<script type='text/javascript'>
+		window['liv'+'e'+'Tex'] = true,
+		window['live'+'T'+'e'+'xI'+'D'] = 166744,
+		window['live'+'Tex_ob'+'ject'] = true;
+		(function() {
+		var t = document['creat'+'eElem'+'ent']('script');
+		t.type ='text/javascript';
+		t.async = true;
+		t.src = '//'+'cs'+'15.li'+'vetex.'+'ru/js/cl'+'ient.js';
+		var c = document['get'+'Eleme'+'n'+'ts'+'ByTagN'+'ame']('script')[0];
+		if ( c ) c['pare'+'ntNod'+'e']['ins'+'er'+'tBe'+'fo'+'re'](t, c);
+		else document['d'+'ocument'+'E'+'l'+'ement']['f'+'i'+'r'+'s'+'tChi'+'ld']['app'+'end'+'Chil'+'d'](t);
+		})();
+    </script>
+    <!-- {/literal} -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script type="text/javascript" src="../js/mapMap.js?v=312"></script>
+	<script type="text/javascript" src="../js/mapMap.js"></script>
 	<script type="text/javascript" src="../js/mapMenu.js"></script>
 </body>
 </html>
