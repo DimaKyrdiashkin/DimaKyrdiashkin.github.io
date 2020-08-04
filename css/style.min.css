@@ -1,8 +1,13 @@
-.b{
+.b1{
     width: 100%;
-    height: 100%;
+    height: 110%;
     position: absolute;
     top: 0;
+    margin-left: 20%;
+}
+model-viewer:focus,
+canvas:focus{
+    outline: none !important;
 }
 @-webkit-keyframes a {
     0%, 20%, 53%, 80%, to {
@@ -3760,7 +3765,8 @@ body {
 }
 
 .promoContent .container {
-    width: 100vw
+    width: 100vw;
+    background: #fff;
 }
 
 .promoContent_svg, .promoContent_text {
@@ -4525,6 +4531,11 @@ p.circle_yellow {
 }
 
 @media (max-width: 1200px) {
+    .b1{
+        height: 80%;
+        margin-left: 0;
+        top: 20%;
+    }
     .second {
         min-height: -webkit-fit-content !important;
         min-height: -moz-fit-content !important;
@@ -5110,6 +5121,11 @@ p.circle_yellow {
 }
 
 @media (max-width: 992px) and (orientation: landscape) {
+    .b1{
+        top: unset;
+        bottom: -45%;
+        height: 100%;
+    }
     .promoContent video {
         min-width: 100vw
     }
