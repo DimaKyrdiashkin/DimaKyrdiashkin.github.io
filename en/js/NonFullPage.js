@@ -105,6 +105,14 @@ function fun_Full() {
                 $('.marker').removeClass('marker_open', 500);
                 $('.marker').delay(500).addClass('marker_open', 500);
                 setTimeout(() => $('.marker h5').text('COMFORTABLY'), 400);
+            }else if(destination.index <= 6){
+                $('.marker').removeClass('marker_open', 500);
+                $('.marker').delay(500).addClass('marker_open', 500);
+                setTimeout(() => $('.marker h5').text('USEFUL'), 400);
+            }else if(destination.index <= 7){
+                $('.marker').removeClass('marker_open', 500);
+                $('.marker').delay(500).addClass('marker_open', 500);
+                setTimeout(() => $('.marker h5').text('SECURE'), 400);
             }else{
                 $('.marker').removeClass('marker_open', 500);
             }

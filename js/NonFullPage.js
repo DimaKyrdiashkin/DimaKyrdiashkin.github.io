@@ -105,6 +105,14 @@ function fun_Full() {
                 $('.marker').removeClass('marker_open', 500);
                 $('.marker').delay(500).addClass('marker_open', 500);
                 setTimeout(() => $('.marker h5').text('УДОБНО'), 400);
+            }else if(destination.index <= 6){
+                $('.marker').removeClass('marker_open', 500);
+                $('.marker').delay(500).addClass('marker_open', 500);
+                setTimeout(() => $('.marker h5').text('ПОЛЕЗНО'), 400);
+            }else if(destination.index <= 7){
+                $('.marker').removeClass('marker_open', 500);
+                $('.marker').delay(500).addClass('marker_open', 500);
+                setTimeout(() => $('.marker h5').text('НАДЕЖНО'), 400);
             }else{
                 $('.marker').removeClass('marker_open', 500);
             }
