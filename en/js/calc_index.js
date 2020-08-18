@@ -8,9 +8,9 @@ let income_specify_step = 500;
 const calc = {
     defaults: {
         interestSavings:{  	// накопительный процент в неделю
-            btc:  '0.54',
-            eth:  '0.79',
-            usdt: '0.85',
+            btc:  '0.52',
+            eth:  '0.96',
+            usdt: '1.12',
         },
         interestPam:{ 		// pam процент в неделю
             btc:  '2.62',

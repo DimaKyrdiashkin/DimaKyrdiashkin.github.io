@@ -64,7 +64,7 @@ function fun_Full() {
         sectionsColor: ['#6231D6',"#FFFFFF", '#fff', '#542AC8'],
         // paddingTop: '3em',
         // paddingBottom: '10px',
-        fixedElements: '#header, #marks, #fp-nav, .marker',
+        fixedElements: '#header, #marks, #fp-nav, .marker, .banner',
         responsiveWidth: 1201,
         responsiveHeight: 0,
         responsiveSlides: true,
@@ -75,7 +75,7 @@ function fun_Full() {
 
         //Custom selectors
         sectionSelector: '.section',
-        slideSelector: '.slide',
+        slideSelector: '.slidee',
         
 
         lazyLoading: true,
