@@ -1,3 +1,4 @@
+
 .promoContent .container {
     background: url(../img/background.png);
     background-repeat: no-repeat;
@@ -1015,7 +1016,24 @@ h2#income {
     background-image: none;
     background-color: #542ac8
 }
-
+.footer_menu_nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_menu_nav a{
+    width: 33%;
+    margin-right: 0;
+}
+.footer_menu_mail span {
+    text-transform: initial;
+    padding: 0;
+}
+.footer_menu_nav a:nth-child(n+4) {
+    margin-top: 10px;
+}
+.footer_menu .container {
+    align-items: end;
+}
 @media (max-width: 1690px) {
     .gift_left {
         width: 15%
@@ -1322,6 +1340,14 @@ h2#income {
 }
 
 @media (max-width: 992px) {
+    .footer_menu_mail{
+        font-size: 1.2em;
+        text-align: center;
+        margin: 25px 0;
+    }
+    .footer_menu_mail span{
+        padding: 0 10px;
+    }
     .promoContent .container {
         background: url(../img/background_table.png);
         background-repeat: no-repeat;
