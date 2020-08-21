@@ -52,7 +52,8 @@
 //     item.addEventListener("click", ()=>{open(i)});
 // });
 $('.card_button').click(function(){
-    $(this).parent().find('.hidden').slideToggle(300);
+    $('.hidden').slideUp(900);
+    $(this).parent().find('.hidden').slideToggle(900);
 })
 // menu
 const mBut = document.querySelector('.mobButton');
