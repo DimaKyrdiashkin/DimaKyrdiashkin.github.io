@@ -52,8 +52,13 @@
 //     item.addEventListener("click", ()=>{open(i)});
 // });
 $('.card_button').click(function(){
+    $(this).toggleClass('open');
     $('.hidden').slideUp(900);
-    $(this).parent().find('.hidden').slideToggle(900);
+    if($(this).hasClass('open')){
+        $(this).parent().find('.hidden').slideToggle(900);
+    }else{
+        return false
+    }
 })
 // menu
 const mBut = document.querySelector('.mobButton');
