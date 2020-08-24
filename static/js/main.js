@@ -45,7 +45,7 @@ const open=(i)=>{
         button[i].classList.remove("open");
         return false
     }else{
-        cardBottom[i].style.transform = `translateY(-180px)`;
+        cardBottom[i].style.transform = `translateY(-170px)`;
     }
     // if(textFull[i].innerText.length >153){
     //     card[i].style.height = `${minH[i]}px`;
