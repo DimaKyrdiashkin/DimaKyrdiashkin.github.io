@@ -1,11 +1,12 @@
 const card =  document.querySelectorAll('.cardT');
+const cardBottom = document.querySelectorAll('.card_bottom');
 const cardHeight = [];
 const minH = [];
 
 card.forEach((item)=>{
     cardHeight.push(item.clientHeight + 2)
 });
-document.querySelector('.cardT').style.maxHeight = "76px";
+// document.querySelector('.cardT').style.maxHeight = "76px";
 // // cut text
 // const textFull = document.querySelectorAll('.cardT');
 const button = document.querySelectorAll('.card_button');
@@ -40,11 +41,11 @@ const button = document.querySelectorAll('.card_button');
 const open=(i)=>{
     // document.querySelector('.card_button').className.split(' ')[1]
     if(button[i].className.split(' ')[1] == 'open'){
-        card[i].style.maxHeight = '76px';
+        cardBottom[i].style.transform = 'translateY(0px)';
         button[i].classList.remove("open");
         return false
     }else{
-        card[i].style.maxHeight = `${cardHeight[i]}px`;
+        cardBottom[i].style.transform = `translateY(-180px)`;
     }
     // if(textFull[i].innerText.length >153){
     //     card[i].style.height = `${minH[i]}px`;
