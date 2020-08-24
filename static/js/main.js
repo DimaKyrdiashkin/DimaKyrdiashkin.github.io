@@ -41,11 +41,11 @@ const button = document.querySelectorAll('.card_button');
 const open=(i)=>{
     // document.querySelector('.card_button').className.split(' ')[1]
     if(button[i].className.split(' ')[1] == 'open'){
-        cardBottom[i].style.transform = 'translateY(0px)';
+        cardBottom[i].classList.remove("open");
         button[i].classList.remove("open");
         return false
     }else{
-        cardBottom[i].style.transform = `translateY(-170px)`;
+        cardBottom[i].classList.add('open');
     }
     // if(textFull[i].innerText.length >153){
     //     card[i].style.height = `${minH[i]}px`;
