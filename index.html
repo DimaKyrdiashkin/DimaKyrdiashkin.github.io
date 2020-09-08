@@ -10,8 +10,10 @@
 </head>
 <body>
     <div class="wrapper">
-        <section class="promo">
-            <div class="filter parallax-window" data-parallax="scroll" data-image-src="static/img/background.jpg"></div>
+        <section class="promo" >
+            <div class="filter">
+                <img src="static/img/background.jpg" alt="">
+            </div>
             <div class="conteiner" >
                 <header>
                     <img src="static/svg/LogoGorizontal.svg" alt="logo" class="logoG">
@@ -1132,11 +1134,10 @@
     <script src="static/js/libs.min.js"></script>
     <script src="static/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="static/js/parallax.min.js"></script>
+    <script src="static/js/parlx.js"></script>
     <script>
-        var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene, {
-            relativeInput: true
+        $(window).on("load resize scroll", function() {
+            $('.parlx').parlx();
         });
     </script>
 </body>
