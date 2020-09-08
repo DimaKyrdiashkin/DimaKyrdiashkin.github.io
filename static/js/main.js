@@ -91,3 +91,10 @@ mobButton.forEach((item, i)=>{
     })
 });
 
+//Parallax
+// pageYOffset
+let filter = document.querySelector('.filter');
+
+window.addEventListener('scroll', ()=>{
+    filter.style.transform = `translateY(${-pageYOffset/2.5}px)`;
+})
