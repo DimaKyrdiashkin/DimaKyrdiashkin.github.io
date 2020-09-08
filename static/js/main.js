@@ -93,8 +93,10 @@ mobButton.forEach((item, i)=>{
 
 //Parallax
 // pageYOffset
-let filter = document.querySelector('.filter');
+let filter = document.querySelector('.promo');
+let filter2 = document.querySelector('.filter');
 
 window.addEventListener('scroll', ()=>{
-    filter.style.transform = `translateY(${-pageYOffset/2.8}px)`;
+    filter.style.transform = `translateY(${pageYOffset/2}px)`;
+    filter2.style.transform = `translateY(${pageYOffset/2.5}px)`;
 })
