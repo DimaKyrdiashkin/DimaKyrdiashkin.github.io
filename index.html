@@ -10,9 +10,9 @@
 </head>
 <body>
     <div class="wrapper">
-        <section class="promo">
+        <section class="promo parallax-window" id="scene" data-parallax="scroll" data-image-src="static/img/background.jpg">
             <div class="filter"></div>
-            <div class="conteiner">
+            <div class="conteiner" >
                 <header>
                     <img src="static/svg/LogoGorizontal.svg" alt="logo" class="logoG">
                     <img src="static/svg/LogoVertical.svg" alt="logo" class="logoV">
@@ -50,6 +50,18 @@
                         <img src="static/img/Promo.png" alt="promo">
                     </div>
                 </div>
+                <svg width="10" height="35" viewBox="0 0 10 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="down">
+                    <g clip-path="url(#clip0)">
+                    <path id="arrow3" fill-rule="evenodd" clip-rule="evenodd" d="M4.24264 33.9914C4.63316 34.3819 5.26633 34.3819 5.65685 33.9914L9.19239 30.4558C9.58291 30.0653 9.58291 29.4321 9.19239 29.0416C8.80186 28.6511 8.1687 28.6511 7.77817 29.0416L4.94975 31.87L2.12132 29.0416C1.7308 28.6511 1.09763 28.6511 0.707107 29.0416C0.316582 29.4321 0.316582 30.0653 0.707107 30.4558L4.24264 33.9914Z" fill="white"/>
+                    <path id="arrow2" opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M4.24264 20.0919C4.63316 20.4824 5.26633 20.4824 5.65685 20.0919L9.19239 16.5564C9.58291 16.1658 9.58291 15.5327 9.19239 15.1421C8.80186 14.7516 8.1687 14.7516 7.77817 15.1421L4.94975 17.9706L2.12132 15.1421C1.7308 14.7516 1.09763 14.7516 0.707107 15.1421C0.316582 15.5327 0.316582 16.1658 0.707107 16.5563L4.24264 20.0919Z" fill="white"/>
+                    <path id="arrow1" opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M4.24264 6.19241C4.63316 6.58293 5.26633 6.58293 5.65685 6.19241L9.19239 2.65688C9.58291 2.26635 9.58291 1.63319 9.19239 1.24266C8.80186 0.852137 8.1687 0.852137 7.77817 1.24266L4.94975 4.07109L2.12132 1.24266C1.7308 0.852137 1.09763 0.852137 0.707107 1.24266C0.316582 1.63319 0.316582 2.26635 0.707107 2.65687L4.24264 6.19241Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="10" height="35" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
             </div>
         </section>
         <section class="tariffs" id="tariffs">
@@ -1119,5 +1131,13 @@
     </div>
     <script src="static/js/libs.min.js"></script>
     <script src="static/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="static/js/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene, {
+            relativeInput: true
+        });
+    </script>
 </body>
 </html>
