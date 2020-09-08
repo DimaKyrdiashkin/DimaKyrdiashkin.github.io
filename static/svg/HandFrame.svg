@@ -1,0 +1,7 @@
+<svg width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="1" width="478" height="478" rx="17" fill="#FCFCFC" stroke="#DCDCDC" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M75 27H32C29.7909 27 28 28.7909 28 31V74" stroke="#3693FF"/>
+<path d="M405 451L448 451C450.209 451 452 449.209 452 447L452 404" stroke="#3693FF"/>
+<path d="M452 74L452 31C452 28.7909 450.209 27 448 27L405 27" stroke="#3693FF"/>
+<path d="M28 404L28 447C28 449.209 29.7909 451 32 451L75 451" stroke="#3693FF"/>
+</svg>
