@@ -97,23 +97,23 @@ let filter = document.querySelector('.promo_main');
 let filter2 = document.querySelector('.filter');
 let count = pageYOffset;
 if(count <700){
-    filter.style.transform = `translateY(${count/5}px)`;
-    filter2.style.transform = `translateY(${count/8}px)`;
+    // filter.style.transform = `translateY(${count/5}px)`;
+    // filter2.style.transform = `translateY(${count/8}px)`;
 }else{
     count = 700;
-    filter.style.transform = `translateY(${count/5}px)`;
-    filter2.style.transform = `translateY(${count/8}px)`;
+    // filter.style.transform = `translateY(${count/5}px)`;
+    // filter2.style.transform = `translateY(${count/8}px)`;
 }
 
-window.addEventListener('scroll', ()=>{
-    if(pageYOffset < 0){
-        filter.style.transform = `translateY(${0}px)`;
-        filter2.style.transform = `translateY(${0}px)`;
-    }else{
-        filter.style.transform = `translateY(${Math.round(pageYOffset/2)}px)`;
-        filter2.style.transform = `translateY(${Math.round(pageYOffset/2.5)}px)`;
-    }
-});
+// window.addEventListener('scroll', ()=>{
+//     if(pageYOffset < 0){
+//         filter.style.transform = `translateY(${0}px)`;
+//         filter2.style.transform = `translateY(${0}px)`;
+//     }else{
+//         filter.style.transform = `translateY(${Math.round(pageYOffset/2)}px)`;
+//         filter2.style.transform = `translateY(${Math.round(pageYOffset/2.5)}px)`;
+//     }
+// });
 
 // $('body').bind('mousewheel', (e) => {
 //     if (e.originalEvent.wheelDelta >= 0 && count > 0) {
