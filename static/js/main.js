@@ -97,6 +97,11 @@ let filter = document.querySelector('.promo');
 let filter2 = document.querySelector('.filter');
 
 window.addEventListener('scroll', ()=>{
-    filter.style.transform = `translateY(${pageYOffset/2}px)`;
-    filter2.style.transform = `translateY(${pageYOffset/2.5}px)`;
+    if(pageYOffset < 0){
+        filter.style.transform = `translateY(${0}px)`;
+        filter2.style.transform = `translateY(${0}px)`;
+    }else{
+        filter.style.transform = `translateY(${pageYOffset/2}px)`;
+        filter2.style.transform = `translateY(${pageYOffset/2.5}px)`;
+    }
 })
