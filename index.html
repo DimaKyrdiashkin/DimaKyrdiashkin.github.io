@@ -1293,7 +1293,13 @@
     <script src="static/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
-        new WOW().init();
+        window.addEventListener("resize, load", ()=>{
+            if(document.documentElement.clientWidth > 850 && document.documentElement.clientWidth > document.documentElement.clientHeight ){
+                new WOW().init();
+            }else{
+                return false
+            }
+        });
     </script>
 </body>
 </html>
