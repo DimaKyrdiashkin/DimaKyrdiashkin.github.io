@@ -95,13 +95,54 @@ mobButton.forEach((item, i)=>{
 // pageYOffset
 let filter = document.querySelector('.promo');
 let filter2 = document.querySelector('.filter');
+let count = pageYOffset;
+if(count <700){
+    filter.style.transform = `translateY(${count/5}px)`;
+    filter2.style.transform = `translateY(${count/8}px)`;
+}else{
+    count = 700;
+    filter.style.transform = `translateY(${count/5}px)`;
+    filter2.style.transform = `translateY(${count/8}px)`;
+}
 
-window.addEventListener('scroll', ()=>{
-    if(pageYOffset < 0){
-        filter.style.transform = `translateY(${0}px)`;
-        filter2.style.transform = `translateY(${0}px)`;
-    }else{
-        filter.style.transform = `translateY(${pageYOffset/2}px)`;
-        filter2.style.transform = `translateY(${pageYOffset/2.5}px)`;
+// window.addEventListener('scroll', ()=>{
+//     if(pageYOffset < 0){
+//         filter.style.transform = `translateY(${0}px)`;
+//         filter2.style.transform = `translateY(${0}px)`;
+//     }else{
+//         filter.style.transform = `translateY(${1}px)`;
+//         filter2.style.transform = `translateY(${1}px)`;
+//     }
+// });
+$('body').bind('mousewheel', (e) => {
+    if (e.originalEvent.wheelDelta >= 0 && count > 0) {
+        count-=pageYOffset
+        // alert(1)
+    } else if(count < 700){
+        count+=pageYOffset
+        // alert(2)
+    };
+    filter.style.transform = `translateY(${count/5}px)`;
+    filter2.style.transform = `translateY(${count/8}px)`;
+});
+var lastY;
+$('body').bind('touchmove', (e) => {
+    var currentY = e.originalEvent.touches[0].clientY;
+    if(currentY > lastY && count > 0){
+        count-=10
+    }else if(currentY < lastY && count < 800){
+        count+=10
     }
-})
+    lastY = currentY;
+    filter.style.transform = `translateY(${count/5}px)`;
+    filter2.style.transform = `translateY(${count/8}px)`;
+    // if (e.originalEvent.wheelDelta >= 0 && count > 0) {
+    //     count-=pageYOffset
+    //     // alert(1)
+    // } else if(count < 700){
+    //     count+=pageYOffset
+    //     // alert(2)
+    // };
+    // filter.style.transform = `translateY(${count/5}px)`;
+    // filter2.style.transform = `translateY(${count/8}px)`;
+});
