@@ -110,8 +110,8 @@ window.addEventListener('scroll', ()=>{
         filter.style.transform = `translateY(${0}px)`;
         filter2.style.transform = `translateY(${0}px)`;
     }else{
-        filter.style.transform = `translateY(${pageYOffset/2}px)`;
-        filter2.style.transform = `translateY(${pageYOffset/2.5}px)`;
+        filter.style.transform = `translateY(${Math.round(pageYOffset/2)}px)`;
+        filter2.style.transform = `translateY(${Math.round(pageYOffset/2.5)}px)`;
     }
 });
 
