@@ -90,3 +90,13 @@ mobButton.forEach((item, i)=>{
         mBut.classList.remove('open');
     })
 });
+
+const wrap = document.querySelector(".wrapper");
+
+window.addEventListener('scroll', ()=>{  
+    if(pageYOffset>document.documentElement.clientHeight){
+        wrap.classList.add("scroll");
+    }else{
+        wrap.classList.remove("scroll");
+    }
+})
