@@ -94,7 +94,7 @@ mobButton.forEach((item, i)=>{
 const wrap = document.querySelector(".wrapper");
 
 window.addEventListener('scroll', ()=>{  
-    if(pageYOffset+100>document.documentElement.clientHeight){
+    if(pageYOffset-250>document.documentElement.clientHeight){
         wrap.classList.add("scroll");
     }else{
         wrap.classList.remove("scroll");
